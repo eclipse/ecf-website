@@ -25,77 +25,95 @@
     &nbsp;ECF Goals</font></b></td>
   </tr>
   <tr>
-    <td>
-      The goal of the Pollinate project is to build an Eclipse 3.1 based IDE and
-      tool set that leverages the open source
-      <a target="_top" href="http://incubator.apache.org/beehive/">Apache
-      Beehive</a> application framework.
-      <a target="_top" href="http://edocs.bea.com/workshop/docs81/doc/en/core/index.html">
-      WebLogic Workshop 8.1</a> (WLW) serves as a rough guide as to what
-      Pollinate hopes to achieve, although none of the WLW implementation
-      (except present in Beehive) will be used in implementing Pollinate.<p>
-      Pollinate will provide a full-featured Java development environment that
-      enables developers to visually build and assemble enterprise-scale web
-      applications, JSPs, web services, and leverage the Java controls framework
-      for creating and consuming J2EE components; optimized for a
-      service-oriented architecture. This will be accomplished by creating a
-      broad set of Eclipse plug-ins and user interface components for building
-      projects on top of the Apache Beehive framework. Beehive is an Apache
-      open-source project that uses the innovations in JDK 1.5 to help simplify
-      programming on J2EE and other Web Application containers.</p>
-      <p>Our goal is to deploy Pollinate as:</p>
+    <td>The goal of the ECF Project is to provide an open source framework to
+      support the creation of communications applications on the Eclipse platform.
+      The framework will consist of Eclipse plugins that provide high-level APIs
+      to support asynchronous and real-time messaging for human-to-human, human-to-component,
+      and component-to-component communications and collaboration. <br>
+&nbsp;    </td>
+  </tr>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    ECF-Enabled Applications</font></b></td>
+  </tr>
+  <tr>
+    <td><p>A wide variety of Eclipse applications will be easily creatable within
+        this framework: </p>
       <ul>
-        <li>a standalone IDE based upon Eclipse</li>
-        <li>an optional feature of an existing Eclipse-based IDE installed via
-        the Eclipse 3.1 Update Manager</li>
-        <li>a set of plug-ins for an existing Eclipse-based IDE installed via a
-        zip file</li>
+        <li><b>Human Communication and Collaboration:</b> Instant Messaging,
+          Chat, Application Sharing, File Sharing, Video/Audio Conferencing,
+          others </li>
+        <li><b>Communication with Web and Peer-Based Services:</b> Access to
+          web-based services via the Eclipse platform such as Weblogs, RSS, Web-based
+          Content Creation, Web-based Project Management Systems, others </li>
+        <li><b>Component-to-Component Communication:</b> Distributed Modeling,
+          Remote Debugging, Team Content Management, Team Workflow Applications,
+          others </li>
       </ul>
-      <p>The <a href="documentation.html">Pollinate Specification</a> documents
-      development details.<br>
-&nbsp;
-    </td>
+      <p>As part of the framework develoment and testing, the ECF team will implement
+        a reference subset of applications to demonstrate the utility, and usability
+        of the framework. We will also work with plugin developers, application
+        developers, and the Eclipse community to support the creation of other
+        applications that use this framework. Our ultimate goal is that plugin
+        developers use and/or extend this framework to allow them to build compelling
+        communications applications with the Eclipse platform.
+      .<br>
+ </p></td>
   </tr>
   <tr>
     <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;Tight focus on Beehive</font></b></td>
+    &nbsp;Technical Goals</font></b></td>
   </tr>
   <tr>
-    <td>
-      Pollinate is focused on technology related to the open source Apache
-      Beehive application framework, therefore, by definition, everything else
-      is secondary. This means that functionality needed by Pollinate but not
-      directly related to Beehive, such as a JSP editor, will probably not be
-      built by the Pollinate team. Hopefully we can obtain technology such as a
-      JSP editor from outside of the Pollinate Project, or for example, assist
-      the Web Tools Project in building it if we have time in our schedule. If
-      secondary technology is not available and we don't have time in the
-      Pollinate schedule to do it, then we will probably do the simplest thing
-      possible, such as, in the case of a JSP editor, just rely on the standard
-      Eclipse text editing functionality.<br>
-&nbsp; </td>
-  </tr>
-  <tr>
-    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;What about the Web Tools Project?</font></b></td>
-  </tr>
-  <tr>
-    <td>
-      Pollinate is to WTP as Equinox is to Eclipse.<p>Pollinate is tightly
-      focused on delivering a Beehive related toolset where as WTP, like Eclipse
-      itself, is much broader and deeper. Anything that Pollinate can reuse from
-      WTP, it will. No NIH syndrome here ;-)</p>
-      <p>At this early stage of the game I'm not going to assume that WTP will
-      adopt any of the work done in Pollinate, but if our work is of good
-      quality then I hope that WTP will consider it in the future. Pollinate's
-      approach is not to compete with WTP but to explore a toolset related to
-      Beehive that may reuse WTP technology when possible. In the future,
-      Pollinate might be promoted to a subproject of WTP or the Pollinate
-      technology might be incorported into WTP in various places, but first lets
-      get started and see how far we get.</td>
+    <td><h4>Communication Components</h4>
+      <p>The framework will provide a small set of high-level communications
+        abstractions. Rather than provide yet another messaging API, the ECF
+        project will look to provide plugin programmers with a component API
+        for communications applications so that high-level communications components
+        (e.g. real-time IM/chat, presence, file sharing, audio/video conferencing,
+        etc) may be reused in multiple application contexts and with multiple
+        user interfaces. </p>
+      <h4>Interoperability</h4>
+      <p>The framework will provide a simple API for accessing multiple IP-based
+        protocols, allowing plugin developers to focus on providing application-level
+        integration of communications features and the rapid composition of distributed
+        applications. </p>
+      <p>To allow interoperability with existing servers and clients, ECF APIs
+        will provide extension points so that multiple protocols may be plugged
+        in to the framework, allowing Eclipse-based applications to interoperate
+        with other clients via standard protocols such as XMPP, SIP/SIMPLE and
+        others, while also being able to easily support communications with legacy
+        and proprietary systems. </p>
+      <h4>Security</h4>
+      <p>The ECF framework will provide for application-level flexibility in
+        the use of authentication, user and component identity, encryption, and
+        authentication. The framework will allow third parties to substitute
+        alternative open source and/or proprietary implementations of any/all
+        of these security mechanisms to support integration with existing security
+        systems, and the satisfaction of application-specific security requirements. </p>
+      <p>ECF will also provide security mechanisms for authorization and runtime
+        restriction of fine-grained components for controlling the behavior of
+        potentially untrusted components. </p>
+      <h4>Application Extensibility</h4>
+      <p>The framework will support the runtime distribution of components and
+        dynamic introduction of new protocols to allow for dynamic composition
+        of communication and collaboration applications. </p>
+      <p>In summary, the major technical goals of ECF will be:</p>
+      <ol>
+        <li><b>Simple-Yet-General Communications Abstractions:</b> To support
+          both peer-to-peer and client-server applications</li>
+        <li><b>Interoperability:</b> Through the use of open, layered, replaceable
+          protocols</li>
+        <li><b>Security:</b> Identity/Authentication, Encryption, and Authorization
+          for applications and fine-grained components</li>
+        <li><b>Application Extensibility:</b> Via dynamic distribution of components</li>
+        <li><b>Component/Plugin Architecture Integrated with Eclipse 3.0:</b> Use
+          of the OSGI Component and Service Models Present in Eclipse 3.0</li>
+    </ol>
+	</td>
   </tr>
 
-  </table>
+</table>
 
 </body>
 </html>
