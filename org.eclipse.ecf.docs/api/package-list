@@ -7,6 +7,7 @@ org.eclipse.ecf.core.identity.provider
 org.eclipse.ecf.core.provider
 org.eclipse.ecf.core.util
 org.eclipse.ecf.provider
+org.eclipse.ecf.provider.app
 org.eclipse.ecf.provider.comm.tcp
 org.eclipse.ecf.provider.generic
 org.eclipse.ecf.provider.generic.events
