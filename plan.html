@@ -1,0 +1,239 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>eclipse communication framework plan</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+</table>
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+  <td width="69%" class="bannertext"><font class="indextop style2">eclipse communication framework<br>plan</font>
+      <br><br>
+      <font class="indexsub">an eclipse technology subproject</font>
+   </td>
+  <td width="31%"><div align="center"><img src="../images/Idea.jpg" width="120" height="86"
+          hspace="50" align="middle"></div></td>
+    </tr>
+  </tbody>
+</table>
+<table border=0 cellspacing=5 cellpadding=2 width="100%" >
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;ECF Plan</font></b></td>
+  </tr>
+ <tr>
+    <td><p><a href="goals.html">Pollinate's goal </a>is to build an Eclipse-based IDE and toolset that leverages
+the open source <a target="_top" href="http://incubator.apache.org/beehive/">Apache
+Beehive</a> application framework. There is a
+tight focus on Beehive related functionality making everything else that
+Pollinate needs secondary. Pollinate will reuse what it
+can from the Web Tools Project.<br>
+&nbsp; </p>
+</td>
+  </tr>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;ECF Project Dependencies</font></b></td>
+  </tr>
+  <tr>
+    <td>
+      <p>Naturally, Pollinate is closely tied to
+<a target="_top" href="http://incubator.apache.org/beehive/">Apache
+Beehive</a>, and will track its builds closely.</p>
+<p>Also, Pollinate will draw on the
+fruits of the <a target="_top" href="http://www.eclipse.org/webtools/index.html">Eclipse Web
+Tools Platform Project</a> (WTP) as it can. Since WTP is just getting under way, it is too soon to
+say how Pollinate will relate to it, although it is likely that Pollinate will
+in some fashion be a consumer of WTP artifacts. If a WTP piece of functionality
+is needed by Pollinate, but not yet complete, then we may contribute energy to
+WTP to get that functionality completed.</p>
+<p>The JDT Core team is feverishly at work on J2SE 1.5 features (see
+<a target="_top" href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=36938">Bug
+36938</a>) including annotation support (<a target="_top" href="http://jcp.org/en/jsr/detail?id=175">JSR 175</a>),
+on which we depend.</p>
+<p>Beehive also specifies some web services, so
+<a target="_top" href="http://jcp.org/en/jsr/detail?id=181">JSR 181</a> will be of interest in
+the future.<br>
+&nbsp;&nbsp; </p>
+      </td>
+  </tr>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;<img border="0" src="images/plan/finished.gif" width="14" height="14">Milestone 1 Plan
+    - September 30, 2004</font></b></td>
+  </tr>
+  <tr>
+    <td>
+      <p dir="ltr">Milestone 1 is&nbsp; devoted to implementing the &quot;create,
+      edit, and deploy a web application&quot; use case. The earliest implementations
+      of that use case will be very primitive, consisting of a new project
+      wizard, a Java editor that does some annotation validation, the builder
+      and other infrastructure to support that, and a script for building and
+      deploying the web application. The idea is to make some basic progress on
+      implementation while getting project management issues like setting up a
+      build process out of the way.</p>
+      <p dir="ltr">The initial focus is on <b>NetUI PageFlows</b>, leaving <b>
+      Controls </b>and <b>Web Services </b>for future milestones.</p>
+      <ul>
+  <li><b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>Simple pollinate feature including beehive and tomcat plugins</li>
+  <li><b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>No extra install... no need for user to install tomcat or beehive</li>
+  <li><b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>Simple wizard to create a new webapp project</li>
+  <li><b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>Simple wizard to create page flow</li>
+  <li><b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>Simple command to launch tomcat on webapp project in Eclipse</li>
+  <li><b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>Pollinate feature installable via update manager</li>
+</ul>
+
+<p>The user must not need to install Beehive or Tomcat to
+use Pollinate. Both will be included as plugins as part of the Pollinate
+deliverable. We want this usable &quot;right out of the box&quot; using the Eclipse update
+manager.</td>
+  </tr>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;<img border="0" src="images/plan/finished.gif" width="14" height="14">Milestone
+    2 Plan - November 11, 2004</font></b></td>
+  </tr>
+  <tr>
+    <td>
+      Milestone 2 has been rescheduled from mid-December to November 11 so that
+      Pollinate can be presented together with Beehive at ApacheCon. Obviously
+      that will mean cutting back on what we were planning to accomplish in M2,
+      but it seemed like a reasonable request.
+      <p>For Milestone 2, we are focusing on editors and views for the code that
+      we build and execute. We will have to build specialized parts such as a
+      page flow editor, but perhaps we can pull in other parts, such as a JSP
+      editor, from WTP or others.</p>
+      <ul>
+        <li>
+        <b><font color="#FFFFFF" face="Arial,Helvetica">
+        <img border="0" src="images/plan/finished.gif" width="14" height="14"></font></b>
+        <a href="../org.eclipse.pollinate.docs/specs/ui-pageflow-editor.html">
+        java page flow editor</a> - navigation only (Carl)</li>
+        <li>
+        <b><font color="#FFFFFF" face="Arial,Helvetica">
+        <img border="0" src="images/plan/finished.gif" width="14" height="14"></font></b>
+        continue work on runtime launching (Alex)</li>
+        <li>
+        <b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>move build and update site to proper Eclipse.org download servers
+        (Dan)</li>
+        <li>
+        <b><font color="#FFFFFF" face="Arial,Helvetica">
+    <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>moved to
+        latest version of  Beehive (Carl)</li>
+        <li>
+        [mostly complete] automated nightly build - build script in place but
+        not quite fully automated yet (Dan)</li>
+        <li>
+        [deferred to M3]
+        enhancing the various Pollinate wizards (Lee)</li>
+        <li>
+        [deferred to M3]
+        runtime console view (if we have time)</li>
+      </ul>
+      <p>&nbsp;
+    </td>
+  </tr>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;Milestone 3 Plan - end of Feb 2005 just before EclipseCon</font></b></td>
+  </tr>
+  <tr>
+    <td>
+      Milestone 3 is focused on finishing page flow support and adding some
+      support for Beehive controls. <br>
+      We intend to ship right before EclipseCon and demo what we have
+      accomplished there.<p dir="ltr">Some things we want to tackle based upon <a href="goals.html">Pollinate's goal</a>
+      include:</p>
+      <ul>
+        <li>
+        <img border="0" src="images/plan/progress.gif" width="14" height="5">
+        <a href="../org.eclipse.pollinate.docs/specs/ui-pageflow-editor.html">
+        java page flow editor</a> - visual editing, missing annotation support,
+        and bug fixes (Carl)</li>
+        <li>
+        <img border="0" src="images/plan/progress.gif" width="14" height="5">
+        enhancing the various Pollinate wizards (Lee)</li>
+        <li>
+        <img border="0" src="images/plan/progress.gif" width="14" height="5"> support files named *.jpf (currently java page flow files have to be
+        named *.java) (Carl)</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14">
+        runtime support for beehive controls &amp; PetStore example - assuming that the JDT supports
+        runtime annotations (see
+        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=36938">bug 36938</a>)</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14">
+        explore using WTP server tooling in Pollinate (Alex)</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14"> Allow debugging of web apps from Pollinate
+        - part of WTP server tooling (Alex)</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14">
+        move to new version of Tomcat (Alex)</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14"> move to new version of  Beehive
+        (Carl)</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14"> review WTP JSP editor (if there is one) or other existing
+        contributions (Lee)</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14">
+        web-services runtime support (Lee)</li>
+        <li>other beehive specific editors such as those for visually editing
+        controls</li>
+        <li>JUnit tests</li>
+        <li>how do we get rid of our reliance on the &quot;tools.jar&quot; ?</li>
+        <li>new deployment UI similar to java launching and external tools
+        launching dialogs? </li>
+        <li>
+        you can also use Bugzilla to
+        <a href="https://bugs.eclipse.org/bugs/buglist.cgi?product=Pollinate&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&target_milestone=M3">
+        List Outstanding Bugs and Issues for M3</a></li>
+      </ul>
+      <p>In the future once Pollinate has implemented the basic
+      infrastructure and editors for Beehive, I think Pollinate should explore
+      the new capabilities that Beehive provide, i.e. VISUALLY (!) create,
+      compose an application and deploy J2EE components without a lot of
+      &quot;plumbing&quot;. An added value of Pollinate project can be to explore
+      different visualization techniques in addition to standard IDE tasks like
+      project management, code editing, one touch deployment process, etc. Using
+      example of Action view page for JPF, I would say the ultimate goal will be
+      to make it less &quot;read-only&quot; but more agile and convenient for manipulating
+      different artifacts properties for the Flow Pages. The key is finding a
+      way to display a complex set of objects and their relationships in a
+      simple and intuitive way. These are areas we need to discuss and explore.</td>
+  </tr>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;Plan Legend</font></b></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li><b><font color="#FFFFFF" face="Arial,Helvetica">
+        <img border="0" src="images/plan/finished.gif" width="14" height="14"> </font></b>
+        = item is finished</li>
+        <li>
+        <img border="0" src="images/plan/progress.gif" width="14" height="5"> =
+        item is under development</li>
+        <li>
+        <img border="0" src="images/plan/investigation.gif" width="14" height="14">
+        = item is under investigation.</li>
+      </ul>
+    </td>
+  </tr>
+
+  </table>
+
+</body>
+</html>
