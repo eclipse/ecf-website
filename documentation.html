@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
 </head>
 <body bgcolor="#FFFFFF">
+<a name="top"></a>
 </table>
 <table border=0 cellspacing=5 cellpadding=2 width="100%">
   <tbody>
@@ -31,7 +32,11 @@
   <tr>
     <td>
       <ul>
-        <li> <a href="org.eclipse.ecf.docs/archoverview/index.html">ECF Architectural Overview</a></li>
+        <li>ECF Architectural Overview
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Shared Object Containers">Introduction: ECF Communication via Shared Object Containers</a>
+		<br>&nbsp;&nbsp;&nbsp;<a href="#SharedObjectContainer Lifecycle">SharedObjectContainer Lifecycle</a>
+		<br>&nbsp;&nbsp;&nbsp;<a href="#ISharedObject Lifecycle">ISharedObject Lifecycle</a>
+		</li>
         <li><a href="org.eclipse.ecf.docs/api">ECF API (javadocs)</a></li>
         <li><a href="goals.html">Goals</a> - Project Goals for the Eclipse Communication Framework project</li>
         <li><a href="plan.html">Plan</a> - Milestone Release Plan</li>
@@ -42,7 +47,7 @@
   </tr>
   <tr>
     <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;Introduction:  ECF Communication via Shared Object Containers</font></b></td>
+    &nbsp;<a name="Shared Object Containers"></a>Introduction:  ECF Communication via Shared Object Containers</font></b></td>
   </tr>
   <tr>
     <td>
@@ -68,11 +73,12 @@
        container model is based upon a group model of communication rather than client/server, where a 
        given shared object can communicate with one or many remote processes either 
        asynchronously and/or synchronously with a single primitive.
+	   <br><a href="#top"><i>back to top</i></a>
             </td>
   </tr>
   <tr>
     <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;SharedObjectContainer Lifecycle</font></b></td>
+    &nbsp;<a name="SharedObjectContainer Lifecycle"></a>SharedObjectContainer Lifecycle</font></b></td>
   </tr>
  
  
@@ -115,13 +121,14 @@ When the ISharedObjectContainer is no longer needed at all the ISharedObjectCont
 can be called to free any resources managed by the container or it's associated ISharedObjects.
 </li>
 </ol>
+<a href="#top"><i>back to top</i></a>
   </td>
   </tr>
 
 
   <tr>
     <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;ISharedObject Lifecycle</font></b></td>
+    &nbsp;<a name="ISharedObject Lifecycle"></a>ISharedObject Lifecycle</font></b></td>
   </tr>
 
   <tr>
@@ -185,6 +192,7 @@ Note this creates and adds to the container a ISharedObject instance of class "T
 null constructor is called, followed by a call to ISharedObject.init(ISharedObjectConfig) by the enclosing container.
 The container also sends an 'activated' event to the ISharedObject by calling its handleEvent method with
 an event of type org.eclipse.core.events.SharedObjectActivatedEvent.
+<br><a href="#top"><i>back to top</i></a>
   </td>
   </tr>
 </table>
