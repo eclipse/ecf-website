@@ -13,3 +13,4 @@ org.eclipse.ecf.provider.generic
 org.eclipse.ecf.provider.generic.events
 org.eclipse.ecf.provider.generic.gmm
 org.eclipse.ecf.provider.generic.sobject
+org.eclipse.ecf.provider.generic.user
