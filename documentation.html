@@ -140,7 +140,7 @@ A SharedObject can be instantiated two ways:
 
 <h4>Initialization</h4>
 
-After it has been constructed the container to which it was added will invoke the ISharedObject.init method passing a non-null ISharedObjectConfig. ISharedObjects created outside of a container, will have their ISharedObjectConfig.init method invoked immediately as part of being added to the container.
+After it has been constructed the container to which it was added will invoke the ISharedObject.init method passing a non-null ISharedObjectConfig. ISharedObjects created outside of a container, will have their ISharedObject.init method invoked immediately as part of being added to the container.
 <br>
 Although not required, a typical implementation of 'init' will cache the ISharedObjectConfig for later usage by the ISharedObject:
 <br>
@@ -160,7 +160,7 @@ After init completes successfully, containers are required to immediately delive
 ISharedObject via ISharedObject.handleEvent(SharedObjectActivatedEvent).
 <h4>Relationship to its container</h4>
 ISharedObjects can be created outside of a ISharedObjectContainer and then later added to it using the
-ISharedObjectContainer.addSharedObject() method.
+ISharedObjectContainer.getSharedObjectManager().addSharedObject() method.
 <br><br>
 The only semantics that an ISharedObjectContainer requires of ISharedObjects is that they implement the ISharedObject interface.
 <h4>Communications</h4>
