@@ -34,7 +34,9 @@
       </p>
     <ul>
       <li><a href="#requirements">System requirements</a></li>
-      <li><a href="#downloads">Downloads</a></li><br>
+      <li><a href="#downloads">Downloads</a></li>
+      <li><a href="#connecting">Connecting an ECF Collaboration Client to a Test Server</a></li>
+      <li><a href="#running">Running a Collaboration Server on Localhost</a></li><br>
     </ul>
     </td>
   </tr>
@@ -51,13 +53,19 @@
        by Eclipse. For components that might not run on Eclipse (e.g. servers), all
        ECF-created code will be built to depend only upon pure Java Standard Edition
       (1.4+). We also will look to support OSGI Foundation as a minimum runtime platform.</p>
-     <p>You will need the following already installed on your machine</p>
+     <p>You will need the following already installed on your machine:</p>
 <ul>
-  <li>JDK 1.4.x - or newer
+  <li>Java version 1.4.2 or newer...1.5 OK also
     <pre>java version &quot;1.4.2_04&quot;<br>Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2_04-b05)<br>Java HotSpot(TM) Client VM (build 1.4.2_04-b05, mixed model</pre>
   </li>
   <li>
-    <pre>Eclipse 3.1 - M2 or M3<pre>Earlier Eclipse Platform versions may work, but we have not tested them.</pre>
+    <a href="http://download.eclipse.org/downloads/drops/S-3.1M4-200412162000/index.php">Eclipse version 3.1M4</a><br><br>
+    Earlier Eclipse Platform versions may work, but we have not tested them.<br>
+  </li>
+  <br>
+  <li>
+    <a href="http://download.eclipse.org/tools/emf/scripts/downloads.php">EMF SDK 2.1.0 (still on integration builds)</a><br><br>
+    The EMF SDK is needed to use the shared datagraph editor, and will be needed for SETO.  It is <b>not</b> needed to be able to use the other ECF application-level features (chat, url sharing, etc).  It is needed to in order to compile the entire ECF source base.
   </li>
 </ul>
     </td>
@@ -71,26 +79,108 @@
       <p>&nbsp; <br>
       <b>Option 1 - <u>ECF Update Site</u></b></p>
   <ul>
-    <li>&nbsp;<strong><em>Under Construction</em></strong></li>
+    <li>&nbsp;<strong><em>Coming Soon</em></strong></li>
 </ul>
 <p><b>Option 2 - <u>ECF from ZIP</u></b></p>
 <ul>
-  <li>&nbsp;<strong><em>Under Construction</em></strong></li>
+  <li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+    <tbody><tr>
+      <th bgcolor="#c0c0c0">File</th>
+      <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp;Build Date&nbsp;&nbsp;</th>
+    </tr>
+    <tr>
+      <td>
+  <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-1.0.0.I20050204.zip">
+  org.eclipse.ecf-1.0.0.I20050204.zip</a>
+      &nbsp;</td>
+      <td align="center">2005-02-04</td>
+    </tr>
+  </tbody></table>
+  </li>
+  <br>
+  <li>Unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
+  <li>Launch Eclipse (you may need to use the <b>-clean </b>command line switch
+  or delete your configuration directory)</li>
+  <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
 </ul>
 <p><b>Option 3 - <u>ECF from CVS</u></b></p>
 <ul>
-  <li>Create a new workspace (recommended)</li>
+  <li>Create a new workspace (recommended).</li>
+  <li>Define a new Java Classpath Variable named <b>JAVA_HOME </b>that points to
+    your JDK 1.4.x installation (e.g. C:\jdk1.4.2).</li>
   <li>Import the ECF team project set for anonymous access:
   <b><a href="org.eclipse.ecf.docs/ecf-anonymous.psf">
   http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf</a></b><br>
   or ECF team project set for committer's access:
   <b><a href="org.eclipse.ecf.docs/ecf-comitter.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-comitter.psf</a></b><br>
-  &nbsp;&nbsp;&nbsp; (when using anonymous access, enter &quot;anonymous&quot; as the
-  username, leave the password field empty, and check &quot;save password&quot;)</li>
+  (when using anonymous access, enter &quot;anonymous&quot; as the
+  username, leave the password field empty, and check &quot;save password&quot;).</li>
+  <li>Launch either or both of the following run configs: <b>ECF Example
+     Collab Client 1</b> or <b>ECF Example Collab Client 2</b> with either the
+     Eclipse Run->Run... or Run->Debug... config dialogs.</li>
 </ul>
     </td>
   </tr>
-
+  <tr>
+    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;<a name="connecting"></a>Connecting an ECF Collaboration Client to a Test Server</font></b></td>
+  </tr>
+  <tr>
+  <td>
+  <ol><li>
+  Make sure ECF plugins are installed in one of three ways described above.
+  </li><li>
+  Open the Navigator View or the Package Explorer View.
+  </li><li>
+  Select any Project (first create some new project if none previously exists).
+  </li><li>
+  Right-click on the project to bring up the context menu for the selected project.
+  </li><li>
+  Select the ECF menu toward the bottom of the menu and select one of:
+  </li>
+  <ul>
+  <li>
+  'Join Collaboration...' This will allow you to specify an URL of the group to join.
+  You must know of a currently running server (and know it's URL) to use this option.
+  </li>
+  <li>
+  'Join Test Collaboration (Localhost)'  This will connect you directly to a test
+   server running on localhost. See below for instructions for <b>Running a Collaboration
+   Server on Localhost</b> if you wish to run this way.
+  </li>
+  <li>
+  'Join Test Collaboration (Composent)'  This will connect you directly to a test server running
+  on composent.com. This is a test server setup for the ECF team usage.  You are welcome
+  to try out connecting to this server to test out/use the ECF example client.  The server's
+  availability may not be consistent, however.
+  </li>
+  </ul>
+  </ol>
+  </td>
+  </tr>
+  <tr>
+    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;<a name="running"></a>Running a Collaboration Server on Localhost</font></b></td>
+  </tr>
+  <tr>
+  <td>
+  <ol><li>
+  Download ECF projects from CVS as described above.
+  </li><li>
+  Choose Run... or Debug... from the Eclipse Run Menu.
+  </li><li>
+  Under 'Java Application' choose 'ECF Collab Server'.
+  </li><li>
+  Choose 'Run' (or Debug).
+  </li><li>
+  This will run a simple server on your localhost machine with the ECF URL:
+  ecftcp://localhost:3282/server. You can then connect to this server with
+  an Eclipse client as described in Connecting an ECF Collaboration Client
+  to an Existing Server above.
+  </li>
+  </ol>
+  </td>
+  </tr>
   </table>
 
 </body>
