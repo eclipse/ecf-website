@@ -18,4 +18,5 @@
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.provider,org.eclipse.ecf.test.provider"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.ui,org.eclipse.ecf.test.ui"/>
 	</provider>
+	
 </psf>
