@@ -1,4 +1,6 @@
 org.eclipse.ecf.core
+org.eclipse.ecf.core.comm
+org.eclipse.ecf.core.comm.provider
 org.eclipse.ecf.core.events
 org.eclipse.ecf.core.identity
 org.eclipse.ecf.core.identity.provider
