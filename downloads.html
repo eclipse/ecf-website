@@ -30,7 +30,7 @@
 
       <p>
         <img border="0" src="../images/new.gif" width="31" height="14">
-	    Eclipse Communications Framework <b>pre-Milestone 1</b> is now available
+	    Eclipse Communications Framework <b>Milestone 1</b> is now available
       </p>
     <ul>
       <li><a href="#requirements">System requirements</a></li>
@@ -59,8 +59,8 @@
     <pre>java version &quot;1.4.2_04&quot;<br>Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2_04-b05)<br>Java HotSpot(TM) Client VM (build 1.4.2_04-b05, mixed model</pre>
   </li>
   <li>
-    <a href="http://download.eclipse.org/downloads/drops/S-3.1M4-200412162000/index.php">Eclipse version 3.1M4</a><br><br>
-    Earlier Eclipse Platform versions may work, but we have not tested them.<br>
+    <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.1M6-200504011645/index.php">Eclipse version Eclipse 3.1M6</a><br><br>
+    Graphshare Example Requires EMF Runtime (for 3.1M6).<br>
   </li>
   <br>
   <li>
@@ -81,34 +81,20 @@
   <ul>
     <li>&nbsp;<strong><em>Coming Soon</em></strong></li>
 </ul>
-<p><b>Option 2 - <u>ECF from ZIP</u></b></p>
+<p><b>Option 2a - <u>ECF SDK</u></b>&nbsp;&nbsp;The zip below contains all ECF core plugins and example applications.  First-time users can get started quickly by simply downloading and installing this zip:</p>
 <ul>
   <li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
-    <tbody><tr>
+    <tbody>
+    <tr>
       <th bgcolor="#c0c0c0">File</th>
       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
     </tr>
-       <tr>
+		<tr>
       <td>
-  <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-1.0.0.I20050224.zip">
-  org.eclipse.ecf-1.0.0.I20050224.zip</a>
-      &nbsp;</td>
-      <td align="center">2005-02-24</td>
-    </tr>
-    <tr>
-      <td>     <tr>
-      <td>
-  <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-1.0.0.I20050216.zip">
-  org.eclipse.ecf-1.0.0.I20050216.zip</a>
-      &nbsp;</td>
-      <td align="center">2005-02-16</td>
-    </tr>
-    <tr>
-      <td>
-  <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-1.0.0.I20050211.zip">
-  org.eclipse.ecf-1.0.0.I20050211.zip</a>
-      &nbsp;</td>
-      <td align="center">2005-02-11</td>
+  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-1.0.0.M1.zip">
+  			org.eclipse.ecf-1.0.0.M1.zip</a>&nbsp;
+      </td>
+      <td align="center">2005-03-31</td>
     </tr>
   </tbody></table>
   </li>
@@ -118,43 +104,137 @@
   or delete your configuration directory) </li>
   <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
   <br>
-   <li>Major changes in ECF <b>Build Date</b> 2005-02-24, from previous builds:</li>
+   <li>Major changes in ECF SDK 1.0.0.M1 <b>Build Date</b> 2005-03-31, from previous builds:</li>
  	<ol><li>
-	New top-level menu and toolbar icon for creating workspace-level collaboration groups.
+	XMPP Provider, Buddy List View, and IM window for communicating via XMPP/Jabber protocol with Eclipse-based or other clients.
 	</li><li>
-	Many collaboration UI look and feel improvements.
+	2 Graphshare Shared Editors:  One tree-based and the other a shared graphical editor.
 	</li><li>
-	New preferences for text chat font selection, whether to show timestamp for chat.
+	ECF Generic Container and Multipoint Real-Time Collab Functions: chat, extended user presence, file sharing, url launching, remote opening of eclipse views.
 	</li><li>
-	Additional properties associated with user presence.
+	'Join ECF Group' action in main menu and project context menu for connecting to XMPP server and/or Generic ECF Server.
 	</li><li>
-	Fix for bug in handling of server failure conditions.
+	'Hello World' plugin.
 	</li><li>
-	SDO API improvements and simplifications.
+	ECF Programmer's Guide.
 	</li><li>
-	Additions to online documentation.
+	Test plugin for running test cases.
+  	</li>
+	</li><li>
+	Bug fixes.
   	</li>
  	</ol>
- 
-  <li>Major changes in ECF <b>Build Date</b> 2005-02-16, from previous builds:</li>
- 	<ol><li>
-	Improvements to collab ui...addition of font preferences, time display preference, separate chat window (optional).
-	</li><li>
-	Addition of documentation in ECF programmers guide (in online help).
-	</li><li>
-	Addition of org.eclipse.ecf.example.library plugin for 'library'  EMF model.
-	</li><li>
-	Ability to associate a separate collab client with each/every project.
-	</li><li>
-	Ability to associate multiple collab sessions from different providers with every project.
-	</li><li>
-	Improved UI for Join ECF Collaboration dialog.
-	</li><li>
-	Additions to org.eclipse.ecf.ui 'comm user interface' api.
-  	</li>
- 	</ol>
+ 	<br>
   </ul>
-
+<p><b>Option 2b - <u>ECF Individual Plugins</u></b>&nbsp;&nbsp;Below are listed the various individual ECF features.  These features can be downloaded and installed separately.  If you wish to have/install all the ECF features, see Option 2a above.</p>
+<ul>
+  <li><b>Core</b></li>
+	<ul>
+		<li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+		     <tbody>
+		     <tr>
+		       <th bgcolor="#c0c0c0">File</th>
+		       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+		     </tr>
+		 		<tr>
+		       <td>
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-1.0.0.M1.zip">
+		   			org.eclipse.ecf.core-1.0.0.M1.zip</a>&nbsp;
+		       </td>
+		       <td align="center">2005-03-31</td>
+		     </tr>
+		  </tbody>
+  </table>
+		</li>
+	</ul>
+  <li><b>ECF Protocol Providers</b></li>
+  <ul>
+		<li>XMPP Provider</li>
+		<ul>
+			<li>Download <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+     <tbody>
+     <tr>
+       <th bgcolor="#c0c0c0">File</th>
+       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+     </tr>
+ 		<tr>
+       <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-1.0.0.M1.zip">
+   			org.eclipse.ecf.xmpp-1.0.0.M1.zip</a>&nbsp;
+       </td>
+       <td align="center">2005-03-31</td>
+     </tr>
+  </tbody>
+  </table>
+			</li>
+		</ul>
+	</ul>
+  <li><b>Example Applications</b> </li>
+  <ul>
+		<li>Real-time Collaboration Features</li>
+		<ul>
+			<li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+     <tbody>
+     <tr>
+       <th bgcolor="#c0c0c0">File</th>
+       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+     </tr>
+ 		<tr>
+       <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.collab-1.0.0.M1.zip">
+   			org.eclipse.ecf.example.collab-1.0.0.M1.zip</a>&nbsp;
+       </td>
+       <td align="center">2005-03-31</td>
+     </tr>
+  </tbody>
+  </table>
+		 </li>
+		</ul>
+	</ul>
+  <ul>
+		<li>Graphshare</li>
+		<ul>
+			<li>Download <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+     <tbody>
+     <tr>
+       <th bgcolor="#c0c0c0">File</th>
+       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+     </tr>
+ 		<tr>
+       <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.graphshare-1.0.0.M1.zip">
+   			org.eclipse.ecf.example.graphshare-1.0.0.M1.zip</a>&nbsp;
+       </td>
+       <td align="center">2005-03-31</td>
+     </tr>
+  </tbody>
+  </table>
+			</li>
+		</ul>
+	</ul>
+  <li><b>Tests</b> </li>
+  <ul>
+		<li>All Tests</li>
+		<ul>
+			<li>Download <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+     <tbody>
+     <tr>
+       <th bgcolor="#c0c0c0">File</th>
+       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+     </tr>
+ 		<tr>
+       <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.test-1.0.0.M1.zip">
+   			org.eclipse.ecf.test-1.0.0.M1.zip</a>&nbsp;
+       </td>
+       <td align="center">2005-03-31</td>
+     </tr>
+  </tbody>
+  </table>
+			</li>
+		</ul>
+	</ul>
+	<br>
 <p><b>Option 3 - <u>ECF from CVS</u></b></p>
 <ul>
   <li>Create a new workspace (recommended).</li>
