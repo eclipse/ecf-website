@@ -33,13 +33,161 @@
       <ul>
         <li> <a href="org.eclipse.ecf.docs/archoverview/index.html">ECF Architectural Overview</a></li>
         <li><a href="org.eclipse.ecf.docs/api">ECF API (javadocs)</a></li>
-        <li><a href="goals.html">Goals</a> - Project Goals for the
-        Eclipse Communication Framework project</li>
+        <li><a href="goals.html">Goals</a> - Project Goals for the Eclipse Communication Framework project</li>
         <li><a href="plan.html">Plan</a> - Milestone Release Plan</li>
       </ul>
-      <p>&nbsp; </td>
+      <p>&nbsp;&nbsp;&nbsp;<strong>Note:</strong> bookmark for the ECF API (javadocs) web pages is 
+	  <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api</a></p>
+    </td>
   </tr>
-  </table>
+  <tr>
+    <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;Introduction:  ECF Communication via Shared Object Containers</font></b></td>
+  </tr>
+  <tr>
+    <td>
+       The two fundamental concepts in ECF are the <b>SharedObjectContainer</b> and the <b>SharedObject</b>. 
+       SharedObjectContainers provide a specific <b><i>communications context</i></b> for contained SharedObject instances.  
+       The context provided
+       by ECF SharedObjectContainers allows contained SharedObjects to communicate with a group of remote processes
+       using protocols provided by the container.
+       <br><br>
+       In the ECF model, SharedObjects represent communications components or whole communications applications.  Components use 
+       container-provided messaging to implement their necessary communications, but are 
+       completely free to implement whatever other functionality is required.
+       All a given ECF component must do is implement a single interface (org.eclipse.ecf.core.ISharedObject), and add 
+       itself/be added to some instance of a container.
+              <br><br>
+       ECF itself defines the basic required interfaces for SharedObjectContainers and SharedObjects.  ECF also 
+       provides implementations of various common communications protocols, in the form of specific type
+       of containers, and various sorts of application-level communications (e.g conferencing or chat) via
+       communications components implemented as SharedObjects.  
+       <br><br>
+       In some respects, the ECF container/shared object design resembles the design of other container 
+       architectures such a Servlet container.  The difference, however, is that the ECF
+       container model is based upon a group model of communication rather than client/server, where a 
+       given shared object can communicate with one or many remote processes either 
+       asynchronously and/or synchronously with a single primitive.
+            </td>
+  </tr>
+  <tr>
+    <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;SharedObjectContainer Lifecycle</font></b></td>
+  </tr>
+ 
+ 
+  <tr>
+  <td>
+  SharedObjectContainers can provide access to arbitrary communications protocols.  So, for example, 
+  communication with a 
+  remote instant messaging client, a server-based web service, or a distributed multi-point application 
+  can all be represented through an implementation of a SharedObjectContainer that understands the 
+  specific application-level protocol or protocols necessary to communicate with a given service or
+  set of services. The primary role of the SharedObjectContainer is to 
+  provide SharedObjects with 
+  <ol><li>a consistent API for achieving secure access to a remote service</li><li>a 
+  consistent API for sending and receiving asynchronous messages to/from an arbitrary communications 
+  service</li><li>consistent information about message reliability and group membership
+  </li></ol>
+All ECF containers must implement <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a>.  ECF also defines an extensible factory for 
+creating ISharedObjectContainer instances called <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectContainerFactory.html">SharedObjectContainerFactory</a>.
+<br><br>
+The lifecycle of a ISharedObjectContainer is typically as follows:
+<ol><li>
+An ISharedObjectContainer instance is created via SharedObjectContainerFactory.makeSharedObjectContainer()
+</li><li>
+ISharedObjects are created and added to the ISharedObjectContainer 
+</li><li>
+The ISharedObjectContainer 'joins/connects' with a remote communications group via 
+ISharedObjectContainer.joinGroup()
+</li><li>
+The ISharedObject instances created/added in step #2 above send asynchronous messages and receive asynchronous 
+events from the remote services
+</li><li>
+ISharedObject implementation code presents/manages user interfaces, handles user input, keeps local state, 
+communicates with replicas or external services, exposes/introduces local Eclipse-provided services to 
+remotes, etc.
+</li><li>
+When the ISharedObjectContainer is no longer needed for communication, the ISharedObjectContainer can be 
+directed to leave the group, or leave the group on its own.
+</li><li>
+When the ISharedObjectContainer is no longer needed at all the ISharedObjectContainer.dispose() method 
+can be called to free any resources managed by the container or it's associated ISharedObjects.
+</li>
+</ol>
+  </td>
+  </tr>
+
+
+  <tr>
+    <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;ISharedObject Lifecycle</font></b></td>
+  </tr>
+
+  <tr>
+  <td>
+<h4>ISharedObject Construction</h4>
+
+A SharedObject can be instantiated two ways:
+
+<ol><li>By invoking one of the 'createSharedObject' methods of an ISharedObjectContainer. These methods require a SharedObjectDescription parameter (which among other things defines the class of object to instantiate).
+</li><li>By calling the constructor of an object class which implements the ISharedObject interface outside of any container.
+</li></ol>
+
+<h4>Initialization</h4>
+
+After it has been constructed the container to which it was added will invoke the ISharedObject.init method passing a non-null ISharedObjectConfig. ISharedObjects created outside of a container, will have their ISharedObjectConfig.init method invoked immediately as part of being added to the container.
+<br>
+Although not required, a typical implementation of 'init' will cache the ISharedObjectConfig for later usage by the ISharedObject:
+<br>
+<pre>
+ public void init(ISharedObjectConfig config) throws 
+	SharedObjectInitException {
+	this.config = config;
+  	...
+ }
+</pre>
+<b>Note</b>: The ISharedObjectConfig parameter provides the ISharedObject with access to it's 
+container-provided context (<a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html">ISharedObjectContext</a>) via a call to ISharedObjectConfig.getContext(). 
+The ISharedObject is not considered initialized until after the init method is completed, and 
+therefore the ISharedObjectContext is not available until after the init method returns. 
+<br><br>
+After init completes successfully, containers are required to immediately deliver an 'activated' event to the newly added
+ISharedObject via ISharedObject.handleEvent(SharedObjectActivatedEvent).
+<h4>Relationship to its container</h4>
+ISharedObjects can be created outside of a ISharedObjectContainer and then later added to it using the 
+ISharedObjectContainer.addSharedObject() method.
+<br><br>
+The only semantics that an ISharedObjectContainer requires of ISharedObjects is that they implement the ISharedObject interface.
+<h4>Communications</h4>
+<h5>Sending Messages</h5>
+Eclipse ECF provides the ISharedObject with a simple asynchronous messaging API to send/receive 
+arbitrary messages via the container-provided <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html">ISharedObjectContext</a>.  On the 
+ISharedObjectContext, are methods to send arbitrary messages to remotes (sendMessage).  For details see
+the methods on <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html">ISharedObjectContext</a>.
+<br>
+<h5>Receiving Events</h5>
+Containers can asynchronously deliver messages to SharedObjects in the form of Events.  When a message is received
+for a given ISharedObject, the enclosing container wraps that message in the form of an event of a certain type,
+and calls that ISharedObject's handleEvent method with the Event instance.  
+<h4>ISharedObject removal from a container</h4>
+When an ISharedObject is removed from a container (or removes itself), it's enclosing container calls the
+ISharedObject.dispose() method.
+<h4>Example Creation Code</h4>
+Here is a code snippet that creates a container and adds a single shared object to that container:
+<pre>
+ISharedObjectContainer container = SharedObjectContainerFactory.makeSharedObjectContainer('standalone');
+ID newID = IDFactory.makeStringID('foo');
+SharedObjectDescription sd = new SharedObjectDescription(newID,TestSharedObject.class);
+container.getSharedObjectManager().createSharedObject(sd,null);
+</pre>
+Note this creates and adds to the container a ISharedObject instance of class "TestSharedObject".  The TestSharedObject
+null constructor is called, followed by a call to ISharedObject.init(ISharedObjectConfig) by the enclosing container.
+The container also sends an 'activated' event to the ISharedObject by calling its handleEvent method with
+an event of type org.eclipse.core.events.SharedObjectActivatedEvent.
+  </td>
+  </tr>
+</table>
 
 </body>
 </html>
