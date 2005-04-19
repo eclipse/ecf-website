@@ -10,6 +10,7 @@
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.provider.xmpp,org.eclipse.ecf.provider.xmpp"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.presence,org.eclipse.ecf.presence"/>		
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.sdo.editor,org.eclipse.ecf.example.sdo.editor"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.sdo.gefeditor,org.eclipse.ecf.example.sdo.gefeditor"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.sdo,org.eclipse.ecf.sdo"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.ui,org.eclipse.ecf.ui"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf-feature,org.eclipse.ecf-feature"/>
