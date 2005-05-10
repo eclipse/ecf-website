@@ -83,7 +83,7 @@
 	<xsl:if test="count(feature)  &gt; count(feature/category)">
 	<tr class="header">
 		<td class="sub-header" colspan="2">
-		Uncategorized
+		ECF Features
 		</td>
 	</tr>
 	</xsl:if>
