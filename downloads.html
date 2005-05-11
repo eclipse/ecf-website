@@ -3,7 +3,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<title>eclipse communication framework downloads</title>
+<title>eclipse communication framework updates and downloads</title>
 <link rel="stylesheet" href="../default_style.css" type="text/css">
 
 </head>
@@ -30,11 +30,12 @@
 
       <p>
         <img border="0" src="../images/new.gif" width="31" height="14">
-	    Eclipse Communications Framework <b>Milestone 1</b> is now available
+	    Eclipse Communications Framework <b>0.2.0</b> is now available
       </p>
     <ul>
       <li><a href="#requirements">System requirements</a></li>
-      <li><a href="#downloads">Downloads</a></li>
+      <li><a href="#downloads">ECF Downloads</a></li>
+      <li><a href="#updates">ECF JAR (Java Archive) Files via Eclipse Update Manager</a></li>
       <li><a href="#connecting">Connecting an ECF Collaboration Client to a Test Server</a></li>
       <li><a href="#running">Running a Collaboration Server on Localhost</a></li><br>
     </ul>
@@ -52,14 +53,14 @@
       <p>ECF plugins will be built in Java and will be portable to any platform supported
        by Eclipse. For components that might not run on Eclipse (e.g. servers), all
        ECF-created code will be built to depend only upon pure Java Standard Edition
-      (1.4+). We also will look to support OSGI Foundation as a minimum runtime platform.</p>
+      (1.4). We also will look to support OSGI Foundation as a minimum runtime platform.</p>
      <p>You will need the following already installed on your machine:</p>
 <ul>
   <li>Java version 1.4.2 or newer...1.5 OK also
     <pre>java version &quot;1.4.2_04&quot;<br>Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2_04-b05)<br>Java HotSpot(TM) Client VM (build 1.4.2_04-b05, mixed model</pre>
   </li>
   <li>
-    <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.1M6-200504011645/index.php">Eclipse 3.1M5 or M6</a><br><br>
+    <a href="http://download.eclipse.org/eclipse/downloads/drops/S-3.1M6-200504011645/index.php">Eclipse 3.1M6 or M7</a><br><br>
     Graphshare Example Requires EMF Runtime (for appropriate platform version).<br>
   </li>
   <br>
@@ -70,16 +71,16 @@
 </ul>
     </td>
   </tr>
-  <tr>
+	<tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="downloads"></a>Downloads</font></b></td>
+    &nbsp;<a name="downloads"></a>ECF Downloads</font></b></td>
   </tr>
   <tr>
     <td>
       <p>&nbsp; <br>
       <b>Option 1 - <u>ECF Update Site</u></b></p>
   <ul>
-    <li>&nbsp;<strong><em>Coming Soon</em></strong></li>
+    <li>&nbsp;See <strong><a href="#updates">ECF JAR (Java Archive) Files via Eclipse Update Manager</a></strong> below</li>
 </ul>
 <p><b>Option 2a - <u>ECF SDK</u></b>&nbsp;&nbsp;The zip below contains all ECF core plugins and example applications.  First-time users can get started quickly by simply downloading and installing this zip:</p>
 <ul>
@@ -91,17 +92,10 @@
     </tr>
 		<tr>
       <td>
-  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-1.0.0.I20050415.zip">
-  			org.eclipse.ecf-1.0.0.I20050415.zip</a>&nbsp;
+  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-0.2.0.I20050509.zip">
+  			org.eclipse.ecf-0.2.0.I20050509.zip</a>&nbsp;
       </td>
-      <td align="center">2005-04-15</td>
-    </tr>
-		<tr>
-      <td>
-  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-1.0.0.M1.zip">
-  			org.eclipse.ecf-1.0.0.M1.zip</a>&nbsp;
-      </td>
-      <td align="center">2005-03-31</td>
+      <td align="center">2005-05-09</td>
     </tr>
   </tbody></table>
   </li>
@@ -110,40 +104,31 @@
   <li>Launch Eclipse (you may need to use the <b>-clean </b>command line switch
   or delete your configuration directory) </li>
   <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
-  <br>
-   <li>Major changes in ECF SDK 1.0.0.I20050415 <b>Build Date</b> 2005-04-15, from previous builds:</li>
- 	<ol><li>
-	More functionality in ECF Buddy List view:  add/remove roster entries, subscribe/unsubscribe requests.
-	</li><li>
-	Enhancement of presence api (in org.eclipse.ecf.presence).  Added IAccountManger, ISubscribeListener, enhanced IPresenceContainer.
-	</li><li>
-	Bug fixes in XMPP provider, xmpp client, and collab client.
-	</li><li>
-	Update to 1.5.0 version of Smack XMPP API.
-	</li>
- 	</ol>
-   <li>Major changes in ECF SDK 1.0.0.M1 <b>Build Date</b> 2005-03-31, from previous builds:</li>
- 	<ol><li>
-	XMPP Provider, Buddy List View, and IM window for communicating via XMPP/Jabber protocol with Eclipse-based or other clients.
-	</li><li>
-	2 Graphshare Shared Editors:  One tree-based and the other a shared graphical editor.
-	</li><li>
-	ECF Generic Container and Multipoint Real-Time Collab Functions: chat, extended user presence, file sharing, url launching, remote opening of eclipse views.
-	</li><li>
-	'Join ECF Group' action in main menu and project context menu for connecting to XMPP server and/or Generic ECF Server.
-	</li><li>
-	'Hello World' plugin.
-	</li><li>
-	ECF Programmer's Guide.
-	</li><li>
-	Test plugin for running test cases.
-  	</li>
-	</li><li>
-	Bug fixes.
-  	</li>
- 	</ol>
- 	<br>
-  </ul>
+  <br><br>
+   <li>Major changes in ECF SDK 0.2.0.I20050509 <b>Build Date</b> 2005-05-09, from previous builds:
+   <ul>
+   	<li><b>Core</b><br>
+   		New API for ISharedObjectContainer.joinGroup to eliminate need for provider-specific authentication info.  Authentication info provided via (new) IJoinContext context instance.
+   	</li>
+   	<li><b>Server</b>
+   	<ol>
+   		<li>XML server configuration file to allow the automated creation of multiple groups hosted by a single connector</li>
+			<li>Server startup scripts</li>
+   	</ol>
+   	</li>
+   	<li><b>Graphshare</b></li>
+   	<ol>
+   		<li>Added wizard for creating new example graphs</li>
+			<li>Better handling of various error conditions</li>
+			<li>Bug fixes</li>
+   	</ol>
+   	<li><b>Collaboration Example Client</b></li>
+   	<ol>
+   		<li>Bug fixes</li>
+   		<li>Adjusted API for M6 compatibility</li>
+   	</ol>
+   </ul>
+   </li>
 <p><b>Option 2b - <u>ECF Individual Plugins</u></b>&nbsp;&nbsp;Below are listed the various individual ECF features.  These features can be downloaded and installed separately.  If you wish to have/install all the ECF features, see Option 2a above.</p>
 <ul>
   <li><b>Core</b></li>
@@ -156,23 +141,36 @@
 		     </tr>
 		 		<tr>
 		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-1.0.0.I20050415.zip">
-		   			org.eclipse.ecf.core-1.0.0.I20050415.zip</a>&nbsp;
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.2.0.I20050509.zip">
+		   			org.eclipse.ecf.core-0.2.0.I20050509.zip</a>&nbsp;
 		       </td>
-		       <td align="center">2005-04-15</td>
-		     </tr>
-		 		<tr>
-		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-1.0.0.M1.zip">
-		   			org.eclipse.ecf.core-1.0.0.M1.zip</a>&nbsp;
-		       </td>
-		       <td align="center">2005-03-31</td>
+		       <td align="center">2005-05-09</td>
 		     </tr>
 		  </tbody>
   </table>
 		</li>
 	</ul>
-  <li><b>ECF Protocol Providers</b></li>
+  <li><b>ECF Generic Collaboration Server</b></li>
+	<ul>
+		<li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+		     <tbody>
+		     <tr>
+		       <th bgcolor="#c0c0c0">File</th>
+		       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+		     </tr>
+		 		<tr>
+		       <td>
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.server-0.2.0.I20050509.zip">
+		   			org.eclipse.ecf.server-0.2.0.I20050509.zip</a>&nbsp;
+		       </td>
+		       <td align="center">2005-05-09</td>
+		     </tr>
+		  </tbody>
+  </table>
+		</li>
+	</ul>
+
+	<li><b>ECF Protocol Providers</b></li>
   <ul>
 		<li>XMPP Provider</li>
 		<ul>
@@ -184,17 +182,10 @@
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-1.0.0.I20050415.zip">
-   			org.eclipse.ecf.xmpp-1.0.0.I20050415.zip</a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.provider.xmpp-0.2.0.I20050509.zip">
+   			org.eclipse.ecf.provider.xmpp-0.2.0.I20050509.zip</a>&nbsp;
        </td>
-       <td align="center">2005-04-15</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-1.0.0.M1.zip">
-   			org.eclipse.ecf.xmpp-1.0.0.M1.zip</a>&nbsp;
-       </td>
-       <td align="center">2005-03-31</td>
+       <td align="center">2005-05-09</td>
      </tr>
   </tbody>
   </table>
@@ -213,17 +204,10 @@
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.collab-1.0.0.I20050415.zip">
-   			org.eclipse.ecf.example.collab-1.0.0.I20050415.zip</a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.2.0.I20050509.zip">
+   			org.eclipse.ecf.collab-0.2.0.I20050509.zip</a>&nbsp;
        </td>
-       <td align="center">2005-04-15</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.collab-1.0.0.M1.zip">
-   			org.eclipse.ecf.example.collab-1.0.0.M1.zip</a>&nbsp;
-       </td>
-       <td align="center">2005-03-31</td>
+       <td align="center">2005-05-09</td>
      </tr>
   </tbody>
   </table>
@@ -241,17 +225,10 @@
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.graphshare-1.0.0.I20050415.zip">
-   			org.eclipse.ecf.example.graphshare-1.0.0.I20050415.zip</a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.2.0.I20050509.zip">
+   			org.eclipse.ecf.graphshare-0.2.0.I20050509.zip</a>&nbsp;
        </td>
-       <td align="center">2005-04-15</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.graphshare-1.0.0.M1.zip">
-   			org.eclipse.ecf.example.graphshare-1.0.0.M1.zip</a>&nbsp;
-       </td>
-       <td align="center">2005-03-31</td>
+       <td align="center">2005-05-09</td>
      </tr>
   </tbody>
   </table>
@@ -298,7 +275,77 @@
      Eclipse Run->Run... or Run->Debug... config dialogs.</li>
 </ul>
     </td>
+
   </tr>
+  <tr><td><br></td></tr>
+  <tr>
+    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;<a name="updates"></a>ECF JAR (Java Archive) Files via Eclipse Update Manager</font></b></td>
+  </tr>
+	<tr>
+		<td align=left valign=top bgcolor="#FFFFFF">
+	 	<p>The following Eclipse Communications Framework JAR files are available via the Eclipse Update Manager:</p>
+		<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+    <tbody>
+    <tr>
+      <th bgcolor="#c0c0c0">File</th>
+      <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+    </tr>
+		<tr>
+      <td>org.eclipse.ecf.collab - 0.2.0&nbsp;</td>
+      <td align="center">2005-05-09</td>
+    </tr>
+		<tr>
+      <td>org.eclipse.ecf.core - 0.2.0&nbsp;</td>
+      <td align="center">2005-05-09</td>
+    </tr>
+		<tr>
+      <td>org.eclipse.ecf.graphshare - 0.2.0&nbsp;</td>
+      <td align="center">2005-05-09</td>
+    </tr>
+		<tr>
+      <td>org.eclipse.ecf.serverfeature - 0.2.0&nbsp;</td>
+      <td align="center">2005-05-09</td>
+    </tr>
+		<tr>
+      <td>org.eclipse.ecf.xmpp - 0.2.0&nbsp;</td>
+      <td align="center">2005-05-09</td>
+    </tr>
+  	</tbody>
+    </table>
+  	</td>
+	</tr>
+	<tr>
+		<td><b>Directions to configure Eclipse for ECF JAR file updates</b><br></td>
+	</tr>
+	<tr>
+		<td>&nbsp;&nbsp;In Eclipse, go to <b>Help</b> menu <b>> Help Contents > Workbook User Guide</b><br></td>
+	</tr>
+
+	<tr>
+	<td>
+	<ul>
+		<li>In the <b>Workbook User Guide</b>, navigate to:<br>
+		<ul>
+		<li>Tasks</li>
+		<li>&nbsp;&nbsp;Updating features with the update manager</li>
+		<li>&nbsp;&nbsp;&nbsp;&nbsp;Installing new features with the update manager</li>
+		</ul>
+		</li>
+		<li>In <b>Installing new features with the update manager</b>, follow steps 1 through 13</li>
+			<ul>
+				<li>In step #4, in the <b>New Update Site</b> dialog:<br>
+				<ul>
+					<li>For "CompanyA" enter: ECF</li>
+					<li>For the URL enter: http://www.eclipse.org/ecf/update</li>
+				</ul>
+				As shown in this dialog:<br>
+				<img border="0" src="images/new-update-site.jpg" width="363" height="135">
+		</li>
+		</ul>
+	</ul>
+	</td>
+	</tr>
   <tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
     &nbsp;<a name="connecting"></a>Connecting an ECF Collaboration Client to a Test Server</font></b></td>
