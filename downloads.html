@@ -38,6 +38,7 @@
       <li><a href="#updates">ECF JAR (Java Archive) Files via Eclipse Update Manager</a></li>
       <li><a href="#connecting">Connecting an ECF Collaboration Client to a Test Server</a></li>
       <li><a href="#running">Running a Collaboration Server on Localhost</a></li><br>
+			<li><a href="#server-running">Running the ECF Generic Collaboration Server Using the Server Feature</a></li><br>
     </ul>
     </td>
   </tr>
@@ -150,7 +151,7 @@
   </table>
 		</li>
 	</ul>
-  <li><b>ECF Generic Collaboration Server</b></li>
+  <li><a name="server-download"><b>ECF Generic Collaboration Server</b></li>
 	<ul>
 		<li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
 		     <tbody>
@@ -166,8 +167,9 @@
 		       <td align="center">2005-05-09</td>
 		     </tr>
 		  </tbody>
-  </table>
 		</li>
+  </table>
+		<li><a href="#server-running">Running ECF Generic Collaboration Server</a></li>
 	</ul>
 
 	<li><b>ECF Protocol Providers</b></li>
@@ -408,12 +410,13 @@
   </tr>
   <tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<img border="0" src="../images/new.gif" width="31" height="14"><a name="running"></a>Running a Collaboration Server Using the Server Feature</font></b></td>
+    &nbsp;<img border="0" src="../images/new.gif" width="31" height="14">
+    <a name="server-running"></a>Running the ECF Generic Collaboration Server Using the Server Feature</font></b></td>
   </tr>
   <tr>
   <td>
   <ol><li>
-  <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.server-0.2.0.I20050509.zip">Download Server Feature</a>
+  <a href="#server-download">Download ECF Generic Collaboration Server</a>
   </li><li>
   Unzip contents to desired install location <b>&lt;installdir&gt;</b>.
   </li><li>
@@ -431,15 +434,15 @@
   This corresponds to the following client URL:  <b>ecftcp://localhost:3282/server</b>.
   <p></p>
   Note that if the <b>hostname</b> attribute is omitted, the hostname will default to the fully qualified
-  domain name of the given machine (e.g. www.eclipse.org).  
+  domain name of the given machine (e.g. www.eclipse.org).
   <p></p>
-  Note also that there can be as many groups as 
+  Note also that there can be as many groups as
   desired defined within a given port/connector,
   and each group will define a unique url.  For example for group name="server1", or group name="server2",
   the URLS would be:  ecftcp://localhost:3282/server1, ecftcp://localhost:3282/server2, respectively.
   </li>
   <li>
-  Start the server by changing directory to <b>&lt;installdir&gt;/features/org.eclipse.ecf.serverfeature_0.2.0/bin</b> and 
+  Start the server by changing directory to <b>&lt;installdir&gt;/features/org.eclipse.ecf.serverfeature_0.2.0/bin</b> and
   running either startserver.sh or startserver.cmd/bat as appropriate to your OS.
   </li>
   </ol>
