@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.ecf.core_0.3.0.jar" id="org.eclipse.ecf.core" version="0.3.0">
+      <category name="ECF"/>
+   </feature>
+   <feature url="features/org.eclipse.ecf.collab_0.3.0.jar" id="org.eclipse.ecf.collab" version="0.3.0">
+      <category name="ECF"/>
+   </feature>
+   <feature url="features/org.eclipse.ecf.graphshare_0.3.0.jar" id="org.eclipse.ecf.graphshare" version="0.3.0">
+      <category name="ECF"/>
+   </feature>
+   <feature url="features/org.eclipse.ecf.serverfeature_0.3.0.jar" id="org.eclipse.ecf.serverfeature" version="0.3.0">
+      <category name="ECF"/>
+   </feature>
+   <feature url="features/org.eclipse.ecf.xmpp_0.3.0.jar" id="org.eclipse.ecf.xmpp" version="0.3.0">
+      <category name="ECF"/>
+   </feature>
+   <category-def name="ECF" label="Eclipse Communications Framework">
+      <description>
+         ECF Core Features
+      </description>
+   </category-def>
+</site>
