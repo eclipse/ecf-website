@@ -30,7 +30,7 @@
 
       <p>
         <img border="0" src="../images/new.gif" width="31" height="14">
-	    Eclipse Communications Framework <b>0.3.1</b> is now available
+	    Eclipse Communications Framework <b>0.3.2</b> is now available
 	    </br>
         <img border="0" src="../images/new.gif" width="31" height="14">
 	    with ECF 0.3.1: <b>Datashare</b> Example Application
@@ -64,7 +64,7 @@
     <pre>java version &quot;1.4.2_04&quot;<br>Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2_04-b05)<br>Java HotSpot(TM) Client VM (build 1.4.2_04-b05, mixed model</pre>
   </li>
   <li>
-    <a href="http://download.eclipse.org/downloads/index.php">Eclipse 3.1RCn</a><br><br>
+    <a href="http://download.eclipse.org/downloads/index.php">Eclipse 3.1</a><br><br>
     Graphshare Example Requires EMF Runtime (for appropriate platform version).<br>
   </li>
   <br>
@@ -96,17 +96,17 @@
     </tr>
 		<tr>
       <td>
-  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-0.3.1.I20050618.zip">
-  			org.eclipse.ecf-0.3.1.I20050618.zip</a>&nbsp;
+  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-0.3.2.I20050701.zip">
+  			org.eclipse.ecf-0.3.2.I20050701.zip</a>&nbsp;
       </td>
-      <td align="center">2005-06-18 </td>
+      <td align="center">2005-07-01 </td>
     </tr>
 		<tr>
       <td>
-  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-0.3.0.I20050602.zip ">
-  			org.eclipse.ecf-0.3.0.I20050602.zip </a>&nbsp;
+  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf-0.3.1.I20050618.zip ">
+  			org.eclipse.ecf-0.3.1.I20050618.zip </a>&nbsp;
       </td>
-      <td align="center">2005-06-02</td>
+      <td align="center">2005-06-18</td>
     </tr>
   </tbody></table>
   </li>
@@ -115,7 +115,20 @@
   <li>Launch Eclipse (you may need to use the <b>-clean </b>command line switch
   or delete your configuration directory) </li>
   <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
-  <br><br>
+  <br>
+   <li>Major features/changes in ECF SDK 0.3.2.I20050701 Build Date 2005-07-01, from previous builds:
+		<ol>
+		 	<li><b>Datashare</b> provides a generic data sharing and synchronization framework built on top of the basic ECF shared object container model.
+		 	This allows application developers to define simple rules for distributing and
+		 	synchronizing complex data models in a multi-point distributed application.
+		 	Useful for building shared editors.</li>
+			<li>Changes/additions to documentation</li>
+			<li>Added IContainer super interface for ISharedObjectContainer.  If they wish, clients can now use the simpler
+			IContainer interface rather than the ISharedObjectContainer interface:<br>
+			&nbsp;&nbsp;IContainer cont = SharedObjectContainerFactory.getDefault().makeSharedObjectContainer(<name>);  // work with IContainer instance</li>
+	   <li>Added dependency on 'org.eclipse.core.runtime.IAdaptable' for IContainer/ISharedObjectContainer.</li>
+ 		</ol>
+	</br>
    <li>Major features/changes in ECF SDK 0.3.1.I20050618 Build Date 2005-06-18, from previous builds:
 		 <ol>
 		 	<li><b>Datashare</b> provides a generic data sharing and synchronization framework built on top of the basic ECF shared object container model.
@@ -143,23 +156,6 @@
 			</ol>
 		</ol
  		</li>
-	</br>
-  <li>Changes in ECF SDK 0.3.0.I20050602 <b>Build Date</b> 2005-06-02, from previous builds:
-	 	 <ul>
-	 	   <li><b>What's New</b><br>
-	 	    NEW Lookup and Discovery API -- org.eclipse.ecf.discovery plugin.<br>
-	 			Additional API documentation
-	 	    </li>
-	 	   <li><b>Bug Fixes</b><br>
-	 	    <ol>
-	 	    <li>Changed URL co-browsing behavior to use external browser.</li>
-	 			<li>Fixed XMPP subscribe/unsubscribe behavior and UI.</li>
-	 			<li>Allowed handling of optional '%' character in XMPP username (bug #90428).</li>
-	 			<li>Fixed generic server message handling logic (bug #96026).</li>
-	 			</ol>
-	 	   </li>
-	 		</ul>
-	  </li>
 	</ul>
 <p><b>Option 2b - <u>ECF Individual Plugins</u></b>&nbsp;&nbsp;Below are listed the various individual ECF features.  These features can be downloaded and installed separately.  If you wish to have/install all the ECF features, see Option 2a above.</p>
 <ul>
@@ -173,17 +169,17 @@
 		     </tr>
 		 		<tr>
 		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.3.1.I20050618.zip">
-		   			org.eclipse.ecf.core-0.3.1.I20050618.zip</a>&nbsp;
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.3.2.I20050701.zip">
+		   			org.eclipse.ecf.core-0.3.2.I20050701.zip</a>&nbsp;
 		       </td>
-		       <td align="center">2005-06-18</td>
+		       <td align="center">2005-07-01</td>
 		     </tr>
 		 		<tr>
 		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.3.0.I20050602.zip ">
-		   			org.eclipse.ecf.core-0.3.0.I20050602.zip </a>&nbsp;
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.3.1.I20050618.zip ">
+		   			org.eclipse.ecf.core-0.3.1.I20050618.zip </a>&nbsp;
 		       </td>
-		       <td align="center">2005-06-02</td>
+		       <td align="center">2005-06-18</td>
 		     </tr>
 		  </tbody>
   </table>
@@ -199,17 +195,17 @@
 		     </tr>
 		 		<tr>
 		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.server-0.3.1.I20050618.zip">
-		   			org.eclipse.ecf.server-0.3.1.I20050618.zip</a>&nbsp;
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.server-0.3.2.I20050701.zip">
+		   			org.eclipse.ecf.server-0.3.2.I20050701.zip</a>&nbsp;
 		       </td>
-		       <td align="center">2005-06-18</td>
+		       <td align="center">2005-07-01</td>
 		     </tr>
 		 		<tr>
 		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.server-0.3.0.I20050602.zip ">
-		   			org.eclipse.ecf.server-0.3.0.I20050602.zip </a>&nbsp;
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.server-0.3.1.I20050618.zip ">
+		   			org.eclipse.ecf.server-0.3.1.I20050618.zip </a>&nbsp;
 		       </td>
-		       <td align="center">2005-06-02</td>
+		       <td align="center">2005-06-18</td>
 		     </tr>
 		  </tbody>
   </table>
@@ -229,17 +225,17 @@
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-0.3.1.I20050618.zip">
-   			org.eclipse.ecf.xmpp-0.3.1.I20050618.zip</a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-0.3.2.I20050701.zip">
+   			org.eclipse.ecf.xmpp-0.3.2.I20050701.zip</a>&nbsp;
        </td>
-       <td align="center">2005-06-18</td>
+       <td align="center">2005-07-01</td>
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-0.3.0.I20050602.zip ">
-   			org.eclipse.ecf.xmpp-0.3.0.I20050602.zip </a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-0.3.1.I20050618.zip ">
+   			org.eclipse.ecf.xmpp-0.3.1.I20050618.zip </a>&nbsp;
        </td>
-       <td align="center">2005-06-02</td>
+       <td align="center">2005-06-18</td>
      </tr>
   </tbody>
   </table>
@@ -258,17 +254,17 @@
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.3.1.I20050618.zip">
-   			org.eclipse.ecf.collab-0.3.1.I20050618.zip</a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.3.2.I20050701.zip">
+   			org.eclipse.ecf.collab-0.3.2.I20050701.zip</a>&nbsp;
        </td>
-       <td align="center">2005-06-18</td>
+       <td align="center">2005-07-01</td>
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.3.0.I20050602.zip ">
-   			org.eclipse.ecf.collab-0.3.0.I20050602.zip </a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.3.1.I20050618.zip ">
+   			org.eclipse.ecf.collab-0.3.1.I20050618.zip </a>&nbsp;
        </td>
-       <td align="center">2005-06-02</td>
+       <td align="center">2005-06-18</td>
      </tr>
   </tbody>
   </table>
@@ -276,15 +272,20 @@
 		</ul>
 	</ul>
   <ul>
-		<li>
-		<img border="0" src="../images/new.gif" width="31" height="14">
-		Datashare</li>
+		<li>Datashare</li>
 		<ul>
 			<li>Download <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
      <tbody>
      <tr>
        <th bgcolor="#c0c0c0">File</th>
        <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+     </tr>
+ 		<tr>
+       <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.datashare-0.3.2.I20050701.zip">
+   			org.eclipse.ecf.datashare-0.3.2.I20050701.zip</a>&nbsp;
+       </td>
+       <td align="center">2005-07-01</td>
      </tr>
  		<tr>
        <td>
@@ -309,17 +310,17 @@
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.3.1.I20050618.zip">
-   			org.eclipse.ecf.graphshare-0.3.1.I20050618.zip</a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.3.2.I20050701.zip">
+   			org.eclipse.ecf.graphshare-0.3.2.I20050701.zip</a>&nbsp;
        </td>
-       <td align="center">2005-06-18</td>
+       <td align="center">2005-07-01</td>
      </tr>
  		<tr>
        <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.3.0.I20050602.zip ">
-   			org.eclipse.ecf.graphshare-0.3.0.I20050602.zip </a>&nbsp;
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.3.1.I20050618.zip ">
+   			org.eclipse.ecf.graphshare-0.3.1.I20050618.zip </a>&nbsp;
        </td>
-       <td align="center">2005-06-02</td>
+       <td align="center">2005-06-18</td>
      </tr>
   </tbody>
   </table>
@@ -369,28 +370,28 @@
       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.collab - 0.3.1&nbsp;</td>
-      <td align="center">2005-06-18</td>
+      <td>org.eclipse.ecf.collab - 0.3.2&nbsp;</td>
+      <td align="center">2005-07-01</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.core - 0.3.1&nbsp;</td>
-      <td align="center">2005-06-18</td>
+      <td>org.eclipse.ecf.core - 0.3.2&nbsp;</td>
+      <td align="center">2005-07-01</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.datashare - 0.3.1&nbsp;</td>
-      <td align="center">2005-06-18</td>
+      <td>org.eclipse.ecf.datashare - 0.3.2&nbsp;</td>
+      <td align="center">2005-07-01</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.graphshare - 0.3.1&nbsp;</td>
-      <td align="center">2005-06-18</td>
+      <td>org.eclipse.ecf.graphshare - 0.3.2&nbsp;</td>
+      <td align="center">2005-07-01</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.serverfeature - 0.3.1&nbsp;</td>
-      <td align="center">2005-06-18</td>
+      <td>org.eclipse.ecf.server - 0.3.2&nbsp;</td>
+      <td align="center">2005-07-01</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.xmpp - 0.3.1&nbsp;</td>
-      <td align="center">2005-06-18</td>
+      <td>org.eclipse.ecf.xmpp - 0.3.2&nbsp;</td>
+      <td align="center">2005-07-01</td>
     </tr>
   	</tbody>
     </table>
@@ -489,7 +490,7 @@
   </tr>
   <tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<img border="0" src="../images/new.gif" width="31" height="14">
+    &nbsp;
     <a name="server-running"></a>Running the ECF Generic Collaboration Server Using the Server Feature</font></b></td>
   </tr>
   <tr>
