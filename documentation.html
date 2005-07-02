@@ -100,7 +100,7 @@ creating ISharedObjectContainer instances called <a href="org.eclipse.ecf.docs/a
 <br><br>
 The lifecycle of a ISharedObjectContainer is typically as follows:
 <ol><li>
-An ISharedObjectContainer instance is created via SharedObjectContainerFactory.makeSharedObjectContainer()
+An ISharedObjectContainer instance is created via SharedObjectContainerFactory.getDefault().makeSharedObjectContainer()
 </li><li>
 ISharedObjects are created and added to the ISharedObjectContainer
 </li><li>
@@ -180,7 +180,7 @@ ISharedObject.dispose() method.
 <h4>Example Creation Code</h4>
 Here is a code snippet that creates a container and adds a single shared object to that container:
 <pre>
-ISharedObjectContainer container = SharedObjectContainerFactory.makeSharedObjectContainer('standalone');
+ISharedObjectContainer container = SharedObjectContainerFactory.getDefault().makeSharedObjectContainer('standalone');
 ID newID = IDFactory.makeStringID('foo');
 SharedObjectDescription sd = new SharedObjectDescription(newID,TestSharedObject.class);
 container.getSharedObjectManager().createSharedObject(sd,null);
