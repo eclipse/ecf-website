@@ -33,13 +33,14 @@
     <td>
       <ul>
         <li>ECF Architectural Overview -- DRAFT
-        <br>&nbsp;&nbsp;&nbsp;<a href="#Shared Object Containers">Introduction: ECF Communication via Shared Object Containers</a>
-		<br>&nbsp;&nbsp;&nbsp;<a href="#SharedObjectContainer Lifecycle">SharedObjectContainer Lifecycle</a>
-		<br>&nbsp;&nbsp;&nbsp;<a href="#ISharedObject Lifecycle">ISharedObject Lifecycle</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Containers">Introduction: ECF Containers</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Instance Creation">Container Instance Creation</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Container Connection">Container Connection</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Example Connection Code">Example Container Connection Code</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Extensibility">Extensibility through Adapters</a>
 		</li>
         <li><a href="org.eclipse.ecf.docs/api">ECF API (javadocs)</a></li>
-        <li><a href="goals.html">Goals</a> - Project Goals for the Eclipse Communication Framework project</li>
-        <li><a href="plan.html">Plan</a> - Milestone Release Plan</li>
+        <li><a href="sharedobjectcontainerdocumentation.html">Component Model:  Shared Object Containers</a></li>
       </ul>
       <p>&nbsp;&nbsp;&nbsp;<strong>Note:</strong> standalone bookmark for the ECF API (javadocs) web pages. Copy and paste:
 	  http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api</p>
@@ -47,148 +48,76 @@
   </tr>
   <tr>
     <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="Shared Object Containers"></a>Introduction:  ECF Communication via Shared Object Containers - DRAFT</font></b></td>
+    &nbsp;<a name="Containers"></a>Introduction:  ECF Containers</font></b></td>
   </tr>
   <tr>
     <td>
-       The two fundamental concepts in ECF are the <b>SharedObjectContainer</b> and the <b>SharedObject</b>.
-       SharedObjectContainers provide a specific <b><i>communications context</i></b> for contained SharedObject instances.
-       The context provided
-       by ECF SharedObjectContainers allows contained SharedObjects to communicate with a group of remote processes
-       using protocols provided by the container.
-       <br><br>
-       In the ECF model, SharedObjects represent communications components or whole communications applications.  Components use
-       container-provided messaging to implement their necessary communications, but are
-       completely free to implement whatever other functionality is required.
-       All a given ECF component must do is implement a single interface (org.eclipse.ecf.core.ISharedObject), and add
-       itself/be added to some instance of a container.
-              <br><br>
-       ECF itself defines the basic required interfaces for SharedObjectContainers and SharedObjects.  ECF also
-       provides implementations of various common communications protocols, in the form of specific type
-       of containers, and various sorts of application-level communications (e.g conferencing or chat) via
-       communications components implemented as SharedObjects.
-       <br><br>
-       In some respects, the ECF container/shared object design resembles the design of other container
-       architectures such a Servlet container.  The difference, however, is that the ECF
-       container model is based upon a group model of communication rather than client/server, where a
-       given shared object can communicate with one or many remote processes either
-       asynchronously and/or synchronously with a single primitive.
-	   <br><a href="#top"><i>back to top</i></a>
-            </td>
-  </tr>
-  <tr>
-    <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="SharedObjectContainer Lifecycle"></a>SharedObjectContainer Lifecycle - DRAFT</font></b></td>
-  </tr>
-
-
-  <tr>
-  <td>
-  SharedObjectContainers can provide access to arbitrary communications protocols.  So, for example,
-  communication with a
-  remote instant messaging client, a server-based web service, or a distributed multi-point application
-  can all be represented through an implementation of a SharedObjectContainer that understands the
-  specific application-level protocol or protocols necessary to communicate with a given service or
-  set of services. The primary role of the SharedObjectContainer is to
-  provide SharedObjects with
-  <ol><li>a consistent API for achieving secure access to a remote service</li><li>a
-  consistent API for sending and receiving asynchronous messages to/from an arbitrary communications
-  service</li><li>consistent information about message reliability and group membership
-  </li></ol>
-All ECF containers must implement <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a>.  ECF also defines an extensible factory for
-creating ISharedObjectContainer instances called <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectContainerFactory.html">SharedObjectContainerFactory</a>.
-<br><br>
-The lifecycle of a ISharedObjectContainer is typically as follows:
-<ol><li>
-An ISharedObjectContainer instance is created via SharedObjectContainerFactory.getDefault().makeSharedObjectContainer()
-</li><li>
-ISharedObjects are created and added to the ISharedObjectContainer
-</li><li>
-The ISharedObjectContainer 'joins/connects' with a remote communications group via
-ISharedObjectContainer.joinGroup()
-</li><li>
-The ISharedObject instances created/added in step #2 above send asynchronous messages and receive asynchronous
-events from the remote services
-</li><li>
-ISharedObject implementation code presents/manages user interfaces, handles user input, keeps local state,
-communicates with replicas or external services, exposes/introduces local Eclipse-provided services to
-remotes, etc.
-</li><li>
-When the ISharedObjectContainer is no longer needed for communication, the ISharedObjectContainer can be
-directed to leave the group, or leave the group on its own.
-</li><li>
-When the ISharedObjectContainer is no longer needed at all the ISharedObjectContainer.dispose() method
-can be called to free any resources managed by the container or it's associated ISharedObjects.
-</li>
-</ol>
-<a href="#top"><i>back to top</i></a>
-  </td>
-  </tr>
-  <tr>
-    <td ALIGN=left VALIGN=top BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="ISharedObject Lifecycle"></a>ISharedObject Lifecycle - DRAFT</font></b></td>
-  </tr>
-  <tr>
-  <td>
-<h4>ISharedObject Construction</h4>
-
-A SharedObject can be instantiated two ways:
-
-<ol><li>By invoking one of the 'createSharedObject' methods of an ISharedObjectContainer. These methods require a SharedObjectDescription parameter (which among other things defines the class of object to instantiate).
-</li><li>By calling the constructor of an object class which implements the ISharedObject interface outside of any container.
-</li></ol>
-
-<h4>Initialization</h4>
-
-After it has been constructed the container to which it was added will invoke the ISharedObject.init method passing a non-null ISharedObjectConfig. ISharedObjects created outside of a container, will have their ISharedObject.init method invoked immediately as part of being added to the container.
-<br>
-Although not required, a typical implementation of 'init' will cache the ISharedObjectConfig for later usage by the ISharedObject:
-<br>
-<pre>
- public void init(ISharedObjectConfig config) throws
-	SharedObjectInitException {
-	this.config = config;
-  	...
- }
-</pre>
-<b>Note</b>: The ISharedObjectConfig parameter provides the ISharedObject with access to it's
-container-provided context (<a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html">ISharedObjectContext</a>) via a call to ISharedObjectConfig.getContext().
-The ISharedObject is not considered initialized until after the init method is completed, and
-therefore the ISharedObjectContext is not available until after the init method returns.
-<br><br>
-After init completes successfully, containers are required to immediately deliver an 'activated' event to the newly added
-ISharedObject via ISharedObject.handleEvent(SharedObjectActivatedEvent).
-<h4>Relationship to its container</h4>
-ISharedObjects can be created outside of a ISharedObjectContainer and then later added to it using the
-ISharedObjectContainer.getSharedObjectManager().addSharedObject() method.
-<br><br>
-The only semantics that an ISharedObjectContainer requires of ISharedObjects is that they implement the ISharedObject interface.
-<h4>Communications</h4>
-<h5>Sending Messages</h5>
-Eclipse ECF provides the ISharedObject with a simple asynchronous messaging API to send/receive
-arbitrary messages via the container-provided <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html">ISharedObjectContext</a>.  On the
-ISharedObjectContext, are methods to send arbitrary messages to remotes (sendMessage).  For details see
-the methods on <a href="org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html">ISharedObjectContext</a>.
-<br>
-<h5>Receiving Events</h5>
-Containers can asynchronously deliver messages to SharedObjects in the form of Events.  When a message is received
-for a given ISharedObject, the enclosing container wraps that message in the form of an event of a certain type,
-and calls that ISharedObject's handleEvent method with the Event instance.
-<h4>ISharedObject removal from a container</h4>
-When an ISharedObject is removed from a container (or removes itself), it's enclosing container calls the
-ISharedObject.dispose() method.
-<h4>Example Creation Code</h4>
-Here is a code snippet that creates a container and adds a single shared object to that container:
-<pre>
-ISharedObjectContainer container = SharedObjectContainerFactory.getDefault().makeSharedObjectContainer('standalone');
-ID newID = IDFactory.makeStringID('foo');
-SharedObjectDescription sd = new SharedObjectDescription(newID,TestSharedObject.class);
-container.getSharedObjectManager().createSharedObject(sd,null);
-</pre>
-Note this creates and adds to the container a ISharedObject instance of class "TestSharedObject".  The TestSharedObject
-null constructor is called, followed by a call to ISharedObject.init(ISharedObjectConfig) by the enclosing container.
-The container also sends an 'activated' event to the ISharedObject by calling its handleEvent method with
-an event of type org.eclipse.ecf.core.events.SharedObjectActivatedEvent.
+       ECF introduces the concept of a communications <b>container</b>.  ECF containers represent access to 
+       a protocol-specific communications context. For connection-oriented communications, an ECF container loosely 
+       corresponds to the traditional notion of a communications <b>session</b>, but the more general container concept is also
+       useful for capturing context even if the communications are non connection-oriented.
+       <p></p>
+       ECF containers can represent both point-to-point communications (e.g. client/server) or 
+       publish-and-subscribe (group) communications.  Container instances can provide access to synchronous
+       communications only, asynchronous communications only, or both together.  This flexibility allows
+       many communications applications to be constructed out of one or more containers...each of which
+       provides access to some specific communications context and some protocol for communicating within
+       that context.
+       <h3><a name="Instance Creation"></a>Instance Creation</h3>       
+       Container instance creation is done via ECF-provided factory APIs.  For example, here's code to create 
+       and IContainer instance:
+       <pre>
+       IContainer container = ContainerFactory.getDefault().makeContainer("containertype");
+       </pre>
+       Once constructed, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances may be used in the manner appropriate for the given application.  When
+       no longer required the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#dispose()">IContainer.dispose()</a> method should be called to release any resources associated with
+       the container instance upon construction.
+       <h3><a name="Container Connection"></a>Container Connection/Disconnection</h3>
+       The IContainer interface exposes two key methods:  <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#connect(org.eclipse.ecf.core.identity.ID,%20org.eclipse.ecf.core.security.IConnectContext)">connect(ID targetID, IConnectContect connectContext)</a> and disconnect().  
+       As is obvious, these two methods allow
+       container implementations to initiate communication with remote services, 
+       either server-based or group-based communications.
+       <p></p>
+       Notice the first parameter to the connect method...<b>targetID</b>.  TargetID is of 
+       type <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>.  The <b>targetID</b> parameter 
+       <b>identifies the target server or group</b> for the connect operation.  It is of type <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a> so that the
+       to allow the target communications service to be of many kinds...e.g. client-server or peer-to-peer.  For example, for http communication the targetID would consist of
+       the URL specifying a particular file at a particular path on a particular server...e.g: <b>http://www.eclipse.org/ecf</b>.  For some
+       other communications protocol the ID provided would be different...e.g:  <b>sip:someone@example.com;transport=tcp</b>.  All such targets for
+       connect may be represented via an instance of the ID interface.
+       <h3><a name="Example Connection Code"></a>Example Container Creation and Connection Code</h3>
+       Here's an example code snippet that shows the creation and connection of an ECF container:
+       <pre>
+       // make container instance
+       IContainer cont = ContainerFactory.getDefault().makeContainer("org.eclipse.ecf.provider.generic.Client");
+       // make targetID
+       ID targetID = IDFactory.getDefault().makeID(cont.getConnectNamespace(),"ecftcp://ecf1.osuosl.org:3282/server");
+       // then connect to targetID
+       cont.connect(targetID,null);
+       </pre>       
+       <h3><a name="Extensibility"></a>Container Extensibility through Adapters</h3>
+       In order to support run-time extensibility, the IContainer interface inherits from org.eclipse.core.runtime.IAdaptable.  This 
+       interface exposes the 'getAdapter(Class intf)' method.  In the case of IContainer instances,
+       this allows clients to query the container at runtime about it's exposed interfaces, and get
+       access to those interfaces if available.  So, for example, perhaps we're interested in creating an 
+       instant messaging application and wish to use the capabilities exposed by the 
+       <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/IPresenceContainer.html">IPresenceContainer</a> interface.
+       To do this, we simply query the IContainer instance at runtime to see if it provides access
+       to IPresenceContainer capabilities:
+       <pre>
+       IPresenceContainer pc = (IPresenceContainer) cont.getAdapter(IPresenceContainer.class);
+       if (pc != null) {
+           // The container DOES exposed IPresenceContainer capabilities, so we can use them!
+       } else {
+           // The container does not expose IPresenceContainer capabilities...we're out of luck
+       }
+       </pre>
+       Among other positive characteristics, this adapter mechanism provides a consistent-yet-simple way for
+       a wide variety of container types to be defined and used without the need to update the ECF
+       IContainer abstractions.
+       <p></p>
+       UNDER CONSTRUCTION - 9/9/05
+       <p></p>
 <br><a href="#top"><i>back to top</i></a>
   </td>
   </tr>
