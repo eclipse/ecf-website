@@ -38,6 +38,7 @@
         <br>&nbsp;&nbsp;&nbsp;<a href="#Container Connection">Container Connection</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Example Connection Code">Example Container Connection Code</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Extensibility">Extensibility through Adapters</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Identity">Identity in ECF</a>
 		</li>
         <li><a href="org.eclipse.ecf.docs/api">ECF API (javadocs)</a></li>
         <li><a href="sharedobjectcontainerdocumentation.html">Component Model:  Shared Object Containers</a></li>
@@ -95,7 +96,7 @@
        // then connect to targetID
        cont.connect(targetID,null);
        </pre>       
-       <h3><a name="Extensibility"></a>Container Extensibility through Adapters</h3>
+       <h3><a name="Extensibility"></a>Extensibility through Adapters</h3>
        In order to support run-time extensibility, the IContainer interface inherits from org.eclipse.core.runtime.IAdaptable.  This 
        interface exposes the 'getAdapter(Class intf)' method.  In the case of IContainer instances,
        this allows clients to query the container at runtime about it's exposed interfaces, and get
@@ -115,6 +116,10 @@
        Among other positive characteristics, this adapter mechanism provides a consistent-yet-simple way for
        a wide variety of container types to be defined and used without the need to update the ECF
        IContainer abstractions.
+       <p></p>
+       See the documentation for the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#getAdapter(java.lang.Class)">IContainer.getAdapter()</a> method.
+       Also see the example usage in the org.eclipse.ecf.example.collab project, in the org.eclipse.ecf.example.collab.Client class.
+       <h3><a name="Identity"></a>ECF Identity</h3>
        <p></p>
        UNDER CONSTRUCTION - 9/9/05
        <p></p>
