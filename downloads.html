@@ -36,9 +36,6 @@
       <li><a href="#requirements">System requirements</a></li>
       <li><a href="#downloads">ECF Downloads</a></li>
       <li><a href="#updates">ECF JAR (Java Archive) Files via Eclipse Update Manager</a></li>
-      <li><a href="#connecting">Connecting an ECF Collaboration Client to a Test Server</a></li>
-      <li><a href="#running">Running a Collaboration Server on Localhost</a></li>
-			<li><a href="#server-running">Running the ECF Generic Collaboration Server Using the Server Feature</a></li>
 			<li><a href="#build-types">ECF Build Types</a></li><br>
     </ul>
     </td>
@@ -390,106 +387,6 @@
 	</ul>
 	</td>
 	</tr>
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="connecting"></a>Connecting an ECF Collaboration Client to a Test Server</font></b></td>
-  </tr>
-  <tr>
-  <td>
-  <ol><li>
-  Make sure ECF plugins are installed in one of three ways described above.
-  </li><li>
-  Open the Navigator View or the Package Explorer View.
-  </li><li>
-  Select any Project (first create some new project if none previously exists).
-  </li><li>
-  Right-click on the project to bring up the context menu for the selected project.
-  </li><li>
-  Select the ECF menu toward the bottom of the menu and select one of:
-  </li>
-  <ul>
-  <li>
-  'Join Collaboration...' This will allow you to specify an URL of the group to join.
-  You must know of a currently running server (and know it's URL) to use this option.
-  </li>
-  <li>
-  'Join Test Collaboration (Localhost)'  This will connect you directly to a test
-   server running on localhost. See below for instructions for <b>Running a Collaboration
-   Server on Localhost</b> if you wish to run this way.
-  </li>
-  <li>
-  'Join Test Collaboration (Composent)'  This will connect you directly to a test server running
-  on composent.com. This is a test server setup for the ECF team usage.  You are welcome
-  to try out connecting to this server to test out/use the ECF example client.  The server's
-  availability may not be consistent, however.
-  </li>
-  </ul>
-  </ol>
-  </td>
-  </tr>
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="running"></a>Running a Collaboration Server on Localhost</font></b></td>
-  </tr>
-  <tr>
-  <td>
-  <ol><li>
-  Download ECF projects from CVS as described above.
-  </li><li>
-  Choose Run... or Debug... from the Eclipse Run Menu.
-  </li><li>
-  Under 'Java Application' choose 'ECF Collab Server'.
-  </li><li>
-  Choose 'Run' (or Debug).
-  </li><li>
-  This will run a simple server on your localhost machine with the ECF URL:
-  ecftcp://localhost:3282/server. You can then connect to this server with
-  an Eclipse client as described in Connecting an ECF Collaboration Client
-  to an Existing Server above.
-  </li>
-  </ol>
-  </td>
-  </tr>
-  <tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;
-    <a name="server-running"></a>Running the ECF Generic Collaboration Server Using the Server Feature</font></b></td>
-  </tr>
-  <tr>
-  <td>
-  <ol><li>
-  <a href="#server-download">Download ECF Generic Collaboration Server</a>
-  </li><li>
-  Unzip contents to desired install location <b>&lt;installdir&gt;</b>.
-  </li><li>
-  Modify the config file appropriately located in <b>&lt;installdir&gt;/features/org.eclipse.ecf.serverfeature_0.2.0/conf/server.xml</b>
-  </li><li>
-  Here is an example server.xml:
-<pre>
-&lt;server&gt;
-	&lt;connector hostname="localhost" port="3282"&gt;
-		&lt;group name="server"/&gt;
-	&lt;/connector&gt;
-&lt;/server&gt;
-  </pre>
-  This example configures a server that listens on port 3282, with hostname "localhost", and supporting a single group named "server".
-  This corresponds to the following client URL:  <b>ecftcp://localhost:3282/server</b>.
-  <p></p>
-  Note that if the <b>hostname</b> attribute is omitted, the hostname will default to the fully qualified
-  domain name of the given machine (e.g. www.eclipse.org).
-  <p></p>
-  Note also that there can be as many groups as
-  desired defined within a given port/connector,
-  and each group will define a unique url.  For example for group name="server1", or group name="server2",
-  the URLS would be:  ecftcp://localhost:3282/server1, ecftcp://localhost:3282/server2, respectively.
-  </li>
-  <li>
-  Start the server by changing directory to <b>&lt;installdir&gt;/features/org.eclipse.ecf.serverfeature_0.2.0/bin</b> and
-  running either startserver.sh or startserver.cmd/bat as appropriate to your OS.
-  </li>
-  </ol>
-  </td>
-  </tr>
   </table>
 	<table border=0 cellspacing=5 cellpadding=2 width="100%" >
 		<tr>
