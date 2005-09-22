@@ -19,7 +19,8 @@
         <br><br>
         <font class="indextop style2">New and Noteworthy</font><br>0.4.0 Stable Release</font>
         <br><br><br>
-        Return to <a href="http://www.eclipse.org/ecf/downloads.html">ECF download page</a>     
+        Return to <a href="downloads.html">ECF download page</a></br>
+        Return to <a href="comm_resources.html">ECF communication resources page</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -37,7 +38,7 @@
   <TR><TD colSpan=2><H2>Instant Messaging Improvements</H2></TD>
 
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p></p>
         <P align=left>
 	<B>Support for Jabber/XMPP MultiUser Chat</B>
@@ -54,7 +55,7 @@
     </TD>
   </TR>
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Interoperability with Google Talk IM</B>
@@ -62,15 +63,15 @@
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The XMPP provider now provides support for using your Google Talk IM/Gmail account.  
-      To connect to your google talk/gmail account, bring up the 'Join ECF Group' dialog 
+      <P>The XMPP provider now provides support for using your Google Talk IM/Gmail account.
+      To connect to your google talk/gmail account, bring up the 'Join ECF Group' dialog
       via the ECF  toolbar button <img src="images/screens/small_guy.png">:<br><br>
       <img src="images/screens/joingroupdialog.png"><br>
       <p>Once logged into the account your Google Talk buddies will appear in the ECF Buddy List and you can IM them via the buddy list context menu</p>
     </TD>
   </TR>
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Support for Multiple Jabber/XMPP Accounts</B>
@@ -79,7 +80,7 @@
     <TD vAlign=top width="70%">
       <p><br></p>
       <P>The Buddy List view now supports presenting buddy lists from multiple Jabber/XMPP accounts.
-      Opening up the 'Join ECF Group' dialog 
+      Opening up the 'Join ECF Group' dialog
       via the ECF toolbar button <img src="images/screens/small_guy.png"> and connecting to multiple Jabber/XMPP accounts
       will present all the buddies for all connected accounts:</p>
       <IMG src="images/screens/buddy_list_expand.png">
@@ -90,7 +91,7 @@
   </TR>
   <TR><TD colSpan=2><H2>Team Collaboration Improvements</H2></TD>
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Access to ECF Collaboration Server Groups</B>
@@ -99,7 +100,7 @@
     <TD vAlign=top width="70%">
       <p><br></p>
       <P>The org.eclipse.ecf.example.collab plugin provides access to ECF generic server-provided collaboration groups.
-      These collaboration groups provide access to multi-user chat, group file sharing, group co-web-browsing and a few 
+      These collaboration groups provide access to multi-user chat, group file sharing, group co-web-browsing and a few
       other features.  These collaboration groups can be joined with the 'Join ECF Group' dialog via the ECF  toolbar button <img src="images/screens/small_guy.png">:</p>
       <img src="images/screens/joingroupdialog_generic.png">
       <p>Or, the project context menu:</p>
@@ -113,7 +114,7 @@
   </TR>
   <TR><TD colSpan=2><H2>New ECF Provider Implementations</H2></TD>
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Java Messaging Service (JMS) Provider Implementation</B>
@@ -128,7 +129,7 @@
   </TR>
 
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Zeroconf Discovery Provider Implementation</B>
@@ -137,8 +138,8 @@
     <TD vAlign=top width="70%">
       <p><br></p>
       <P>An ECF provider implementing the org.eclipse.ecf.discovery API is now available that uses the
-      <a href="http://www.zeroconf.org/">Zeroconf</a>/<a href="http://www.apple.com/macosx/features/bonjour/">Bonjour</a> protocols.  
-      To use this provider immediately, 
+      <a href="http://www.zeroconf.org/">Zeroconf</a>/<a href="http://www.apple.com/macosx/features/bonjour/">Bonjour</a> protocols.
+      To use this provider immediately,
       please contact the ECF team directly at <a href="mailto:ecf-dev@eclipse.org">ECF dev mailing list</a>.</p>
     </TD>
   </TR>
@@ -148,7 +149,7 @@
   </TR>
   <TR><TD colSpan=2><H2>ECF API Changes</H2></TD>
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Simplification of ECF Namespace Extension Point</B>
@@ -164,7 +165,7 @@
   </TR>
 
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Simplification of ECF Container Factory Extension Point</B>
@@ -173,18 +174,18 @@
     <TD vAlign=top width="70%">
       <p><br></p>
       <P>Previously, ECF provider implementers had to provide an extension for the ECF 'containerFactory' extension point, and this
-      extension point required that the supplied containerFactory had to create instances of 
-      the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a> interface.  
+      extension point required that the supplied containerFactory had to create instances of
+      the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a> interface.
       The requirements on containerFactory extensions
       have been simplified so to that they now only must produce instances that implement the much
-      simpler <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> interface. 
+      simpler <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> interface.
       This makes it significantly easier for ECF providers to be created that have very simple and lightweight
-      functionality, without requiring support for the distributed component model required 
+      functionality, without requiring support for the distributed component model required
       by <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a></p></TD>
   </TR>
 
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>API Method and Class Name Changes</B>
@@ -198,7 +199,7 @@
   </TR>
 
   <TR>
-    <TD vAlign=top align=left width="30%"> 
+    <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
 	<B>Revised Architectural Overview Documentation</B>
