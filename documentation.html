@@ -39,6 +39,7 @@
         <br>&nbsp;&nbsp;&nbsp;<a href="#Example Connection Code">Example Container Connection Code</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Extensibility">Extensibility through Adapters</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Identity">Identity in ECF</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Namespace Extension Point">ECF Namespace Extension Point</a>
 		</li>
         <li><a href="org.eclipse.ecf.docs/api">ECF API (javadocs)</a></li>
         <li><a href="sharedobjectcontainerdocumentation.html">Component Model:  Shared Object Containers</a></li>
@@ -121,8 +122,50 @@
        Also see the example usage in the org.eclipse.ecf.example.collab project, in the org.eclipse.ecf.example.collab.Client class.
        <h3><a name="Identity"></a>ECF Identity</h3>
        <p></p>
-       UNDER CONSTRUCTION - 9/9/05
+       In ECF, identity of local or remote entities such as users, remote services, and groups are all represented
+       via the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a> interface.  
+       This interface provides the basic contract for addressing uniquely identified entities.  ID instances belong
+       to a given <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html">Namespace</a>
+       Namespaces define the range of allowable values of the ID instances belonging to that Namespace.  So, for example, the Namespace of
+       Jabber/XMPP user identities is defined by <a href="http://www.ietf.org/rfc/rfc3920.txt">XMPP RFC3920</a> as having the following structure
+       <pre>
+      jid             = [ node "@" ] domain [ "/" resource ]
+      domain          = fqdn / address-literal
+      fqdn            = (sub-domain 1*("." sub-domain))
+      sub-domain      = (internationalized domain label)
+      address-literal = IPv4address / IPv6address
+      example         = slewis@ecf1.osuosl.org/ecf
+       </pre>
+      The ECF XMPP provider implementation restricts jids to this syntax by providing a Namespace that is responsible
+      for constructing ID instances that follow the rules defined by the protocol specification.  Other protocols have
+      their own Namespaces (e.g. ftp, http, sip, irc, etc, etc), each with it's own requirements for addressing and
+      identity.  The <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
+      contract is not bound to any specific protocol, and makes it possible to create client applications that are
+      insensitive to the addressing differences between protocols while still guaranteeing uniqueness within a given
+      namespace.
        <p></p>
+        <h3><a name="Namespace Extension Point"></a>ECF Namespace Extension Point</h3>
+       <p></p>
+       The <b>org.eclipse.ecf</b> core plugin defines a namespace extension point, so that ECF provider plugins can provide
+       their own Namespace implementations.  For example, here is the namespace extension definition for the 
+       <b>org.eclipse.ecf.provider.xmpp</b> plugin:
+       <pre>
+   &lt;extension point="org.eclipse.ecf.namespace">
+      &lt;namespace
+            class="org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace"
+            description="XMPP Namespace"
+            name="xmpp.jive"/>
+   &lt;/extension>
+       </pre>
+       This assigns the name "xmpp.jive" to the class <b>org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace</b>.  Notice that this
+       class <b>must</b> be a subclass of <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html">org.eclipse.ecf.core.identity.Namespace</a>.  This XMPPNamespace class provides the
+       XMPP namespace implementation and as described above implements the XMPP namespace restrictions.  It is also responsible for
+       constructing new ID instances via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/IIDFactory.html">IDFactory</a>.
+       For example, to construct an instance of and XMPP ID, a client could use the following code:
+       <pre>
+       ID newID = IDFactory.getDefault().makeID("xmpp.jive","slewis@ecf1.osuosl.org");
+       </pre>
+       UNDER CONSTRUCTION 9/27/05
 <br><a href="#top"><i>back to top</i></a>
   </td>
   </tr>
