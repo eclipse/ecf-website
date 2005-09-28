@@ -38,8 +38,8 @@
         <br>&nbsp;&nbsp;&nbsp;<a href="#Container Connection">Container Connection</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Example Connection Code">Example Container Connection Code</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Extensibility">Extensibility through Adapters</a>
-        <br>&nbsp;&nbsp;&nbsp;<a href="#Identity">Identity in ECF</a>
-        <br>&nbsp;&nbsp;&nbsp;<a href="#Namespace Extension Point">ECF Namespace Extension Point</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Identity">Identity</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Namespace Extension Point">Namespace Extension Point</a>
 		</li>
         <li><a href="org.eclipse.ecf.docs/api">ECF API (javadocs)</a></li>
         <li><a href="sharedobjectcontainerdocumentation.html">Component Model:  Shared Object Containers</a></li>
@@ -120,7 +120,7 @@
        <p></p>
        See the documentation for the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#getAdapter(java.lang.Class)">IContainer.getAdapter()</a> method.
        Also see the example usage in the org.eclipse.ecf.example.collab project, in the org.eclipse.ecf.example.collab.Client class.
-       <h3><a name="Identity"></a>ECF Identity</h3>
+       <h3><a name="Identity"></a>Identity</h3>
        <p></p>
        In ECF, identity of local or remote entities such as users, remote services, and groups are all represented
        via the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a> interface.  
@@ -144,7 +144,7 @@
       insensitive to the addressing differences between protocols while still guaranteeing uniqueness within a given
       namespace.
        <p></p>
-        <h3><a name="Namespace Extension Point"></a>ECF Namespace Extension Point</h3>
+        <h3><a name="Namespace Extension Point"></a>Namespace Extension Point</h3>
        <p></p>
        The <b>org.eclipse.ecf</b> core plugin defines a namespace extension point, so that ECF provider plugins can provide
        their own Namespace implementations.  For example, here is the namespace extension definition for the 
