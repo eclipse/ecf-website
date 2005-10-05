@@ -1,0 +1,138 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>7.27.05 Eclipse Committer Gathering</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style2">eclipse committer gathering</font>
+        <br><br>
+        <font class="indexsub">Held July 27, 2005</font>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table border=0 cellspacing=5 cellpadding=2 width="100%" >
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;</font></b></td>
+  </tr>
+  <tr>
+    <td>
+  On July 27, 2005 representatives from four Eclipse projects met informally to 
+  discuss cross-project dependencies, identify areas for cross-project coordinated
+  work, and discuss general committer community maintenance issues.
+  <br><br>
+  <b>When</b>:  July 27th, 2005,  12:30pm-4:30pm
+  <br>
+<b>Projects</b>:  <a href="http://www.eclipse.org/platform/index.html">Platform</a>, 
+<a href="http://www.eclipse.org/webtools/index.html">Web Tools Platform</a>, 
+<a href="http://www.eclipse.org/tptp/index.html">Test and Performance Tools Platform</a>, 
+<a href="http://www.eclipse.org/ecf">Eclipse Communication Framework</a>
+<br>
+<b>Where</b>:  <a href="http://www.opentechcenter.com">Open Technology Business Center</a>, Beaverton Oregon
+<br><br><b>Attendees</b><br><br>
+<b><a href="http://www.eclipse.org/ecf">ECF</a></b>:  Scott Lewis, Pete Mackie
+<br>
+<b><a href="http://www.eclipse.org/platform/index.html">Platform</a></b>: Luc Bourlier, Jared Burns, John Wiegand
+<br>
+<b><a href="http://www.eclipse.org/webtools/index.html">TPTP</a></b>:  Karla Callaghan, Sri Doddapaneni, Anurag Gupta, Guru Ngarajan, Tyler Thessian
+<br>
+<b><a href="http://www.eclipse.org/webtools/index.html">WTP</a></b>:  Ted Bashor, Konstantin Komissarchik, Tim Wagner
+<h4>
+Informal Meeting Agenda</h4>
+<ul>
+<li>Provide Comments/Needs Input to Committer Board Representatives</li>
+<li>Cross-project Technical Fiscussion:  Platform 3.2 Plan</li>
+</ul>
+</td>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;Notes: Discussion with Committer Board Reps</font></b></td>
+  </tr>
+<td>
+Committer Board Reps Present:  Scott Lewis, John Wiegand
+<ul>
+<li>Projects need more ways to report process ideas/successes/failures 
+to other projects</li>
+<li>Need more/better ways for cross-project reporting of
+	<ul><li>API changes</li>
+	<li>Project plan changes</li></ul>
+</li>
+<li>Email/Mailing Lists:  Need to add cross-project dependencies
+<li>Need Wiki with development practices content (see bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=87949">#87949</a>)
+<li>Automate cross-project change notifications for plan documents
+<li>Support/require better coordination of release timing across projects (see <a href="http://www.eclipse.org/org/processes/master-timeline.php">Release timeline</a>)
+<li>Provide project dashboard (see bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=109224">#109224</a>)
+<li>Web site improvement (emphasize/support <a href="http://www.eclipse.org/phoenix/">project Phoenix</a>)
+<li>Create/encourage opportunities for projects to share success stories, developed technologies, and best practices with other projects/committers
+<li>Bugzilla Improvement Ideas
+<ul><li>
+	Enhancement tracking (see bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111005">#111005</a>)
+	<li>
+	Enhance/detail committer guidelines for bugzilla usage
+	<li>
+	Detail conventions for use of 'priority' and 'severity' fields
+	<li>
+	<a href="">TPTP project</a> has created sets of custom queries: generalize and provide to all projects
+</ul>
+</li>
+<li>Have committer input/reviews of EMO-provided infrastructure changes (see bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=104097">#104097</a>...work request tracking system)
+<li>Provide basic committer community statistics:  How many committers?  Affiliation?  By project?  (see bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106559">#106559</a>)
+<li>Provide committer reputation system (bugzilla impl or not, whatevers easier)
+<li>Provide assistance for developers/contributors prior to becoming committers (see bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=105637">#105637</a>)
+	<ul>
+	<li>More support systems for learning best practices, codebase
+	<li>CVS lacking pserver proxy support for non-committers
+	<li>How can we help contributors and developers ramp up to become full committers?
+    </ul>
+</li>
+</ul>
+</td>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;Notes:  Cross-Project Technical Issues</font></b></td>
+  </tr>
+  <td>
+John Wiegand presented <a href="http://www.eclipse.org/eclipse/development/eclipse_project_plan_3_2.html">Platform 3.2 pre-release plans</a> and received input/feedback from WTP, TPTP, and ECF committers
+<br>
+<h4>Areas for Greater Future Cross-Project Interaction</h4>
+<ul>
+	<li>WTP -> Platform: Improved builder architecture (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=37723">bug # 37723</a>)
+	<li>WTP -> Platform: Support for hierarchical projects?  More flexible workspaces. (see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106176">bug #106176</a>)
+	<li>ECF -> TPTP:  ECF use of TPTP communications.  ECF could use TPTP communications API as ECF provider.
+	<li>TPTP -> ECF:  DSDP, TPTP, ECF...commonalities?  ECF could provide support for communications needs for several projects, including <a href="http://www.eclipse.org/dsdp">Device Software Development Platform</a>
+	<li>ECF -> WTP:  Runtime access to DOM in embedded Browser or ECF-enabled shared web browsing
+	<li>ECF > Platform/RCP:  Support for <a href="http://www.eclipse.org/ecf/documentation.html#Identity">namespaces and identity</a>
+</ul>
+</td>
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;Attendee Observations about Meeting</font></b></td>
+  </tr>
+<td>
+<ul>
+<li>Cross-project interaction beneficial
+<li>Format good (very informal but with technical focus)
+<li>Include/allow different people at subsequent events
+<li>Improves awareness of other project activities
+<li>Face-to-face good for establishing/strengthening committer community
+<li>Continue with other venues, other projects, other representatives
+</ul>
+<h4><a href="cgtips.html">Tips for Holding Other Committer Gatherings</a></h4>
+
+</td>
+  </table>
+
+</body>
+</html>
