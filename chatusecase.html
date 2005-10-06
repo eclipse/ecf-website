@@ -1,0 +1,114 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>eclipse communication framework use cases</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+</head>
+<body bgcolor="#FFFFFF">
+</table>
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+  <td width="69%" class="bannertext"><font class="indextop style2">eclipse communication framework use cases</font>
+      <br><br>
+      <font class="indexsub"></font>
+   </td>
+  <td width="31%"><div align="center"><img src="../images/Idea.jpg" width="120" height="86"
+          hspace="50" align="middle"></div></td>
+    </tr>
+  </tbody>
+</table>
+<table border=0 cellspacing=5 cellpadding=2 width="100%" >
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0">
+	  <font color="#FFFFFF" face="Arial,Helvetica">
+        &nbsp;<b>Chat Use Case</b>
+	   </font>
+	</td>
+  </tr>
+    <tr>
+    <td valign="top">
+    <p>The ECF development team is considering at least four distinct types of chat use
+    cases depending on whether GroupIDs and chat SharedObject IDs are well-known or not.
+    We have given each of the types a name suggested by the manner in which it would be
+    used. This name is not really the important issue. What's important here is the
+    combination of well-known and individualized IDs.</p>
+   <hr>
+    <h4>1. ChatRoom -- GroupID well-known, Chat SharedObject ID well-known</h4>
+    <p>In this case everyone knows a common familiar GroupID, e.g., "server.com" and joins
+    that container. They also create a SharedObject with the well-known ID, "chat".
+    This is a big space that anyone with permission to use "server.com" may enter.</p>
+
+    <h4>2. IM -- GroupID well-known, Chat SharedObject ID individualized</h4>
+    <p>We all join a well-known container for some purpose. It doesn't have to be to chat.
+    We might have joined the container for the purpose of learning about people's
+    online status. Then, you decide that you would like to chat with someone, but don't
+    want to go to the trouble of creating a new container for that purpose. So, instead,
+    you create a ChatSharedObject, but give it a unique ID. Then, you direct some other
+    group member to create that ChatSharedObject as well. Now, we can use the chat, but
+    others are not aware of our chat and cannot participate.</p>
+    <p><u>Note</u>: The privacy afforded by this approach depends somewhat on whether
+    getSharedObjectIDs returns all the IDs known at the container or only the ones
+    created by any user.</p>
+
+    <h4>3. Chat Meeting -- GroupID individualized, Chat SharedObject ID well-known</h4>
+
+    </p>This case requires two containers: one for the actual chat and one to communicate
+    the individualized GroupID of that chat.</p>
+
+    <ol>
+      <li>We all join a well-known container that we call the Lobby.
+      Let's say it has  a GroupID of "server.com/lobby" and provides some
+      way to send invitations from one user to another.</li><br>
+      <li>One user creates a new container and joins it by creating a unique
+      GroupID for the chat, e.g., "server.com/mychat". In addition, the
+      user adds a ChatSharedObject with the well-known ID, "chat".</li><br>
+      <li>This first user sends an invitation to another user via the lobby
+      to let the second user know that they are invited to the
+      "server.com/mychat" container. (Presumably, it would also be good
+      to send information about the container type, just in case we want
+      to support multiple types of meetings.</li><br>
+      <li>The second user joins the meeting by creating the appropriate chat
+      container, adding in the appropriate chat object, and joining with
+      the "server.com/mychat" GroupID.</li>
+    </ol>
+
+	<h4>4. Whisper -- GroupID individualized, Chat SharedObject ID individualized</h4>
+
+    <p>Let's imagine that the ChatMeeting identified above has been joined by many people
+    and we now want to support a private conversation among a subset of the participants.
+    Assuming we are too lazy to create a new container for the purpose, one user might
+    create a new chat object with an individualized ID, then, as in the IM case, they
+    would instruct another user to create the object as well.</p>
+    </p><u>Note</u>: The privacy afforded by this approach depends somewhat on whether
+    getSharedObjectIDs returns all the IDs known at the container or only the ones created
+    by any user.</p>
+   <hr>
+    <h4>Chat Use Case Considerations</h4>
+	<p>One thing the ECF development team with these use cases is to begin to tie specific
+    communication features to patterns in the use of ECF containers and shared objects. For
+    example, say that you had a 'well-known' chat, and you wanted to have a feature that
+    started a shared whiteboard with the same set of participants. Well, one way to implement
+    this would be to have the chat create a new shared object (a whiteboard component) that
+    implemented the whiteboard communications functionality (i.e. keeping the whiteboard
+    state synchronized) and the whiteboard UI. In this way, the whiteboard functionality
+    would be separable from the chat, and usable within different communications contexts.
+    The whiteboard component could even be implemented to run similarly on multiple container
+    implementations (multiple providers)...e.g. SIP or XMPP or whatever. In this way a library
+    of components could be created, implemented as shared objects (in this case), or
+    combinations of shared objects and provider implementations (less desirable from a
+    component design point of view).</p>
+    <p>In any event, we think that with a variety of use cases (these and others) and a
+    couple of functioning providers (coming very shortly), we can experiment a little bit
+    with the design of communications components, and begin to connect various features
+    with individual components or sets of components (implemented as independent shared
+    objects, shared objects with connectors, patterns of classes used by shared objects,
+    custom containers, etc).</p>
+
+    </td>
+  <tr>
+  </table>
+
+</body>
+</html>

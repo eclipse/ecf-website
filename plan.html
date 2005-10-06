@@ -51,8 +51,6 @@
       See the <a href="#feature_developement_plan">ECF Feature Development Plan</a>.</p>
       <b>Application Features</b>
       <ul>
-        <li><img border="0" src="images/plan/progress.gif" width="14" height="5">
-          <a href="#seto">Shared Editor for Team Outlining</a></li>
         <li><img border="0" src="images/plan/finished.gif" width="14" height="14">
           <a href="#prss">EMF/SDO Data Graph Editing</a></li>
         <li><img border="0" src="images/plan/finished.gif" width="14" height="14">
@@ -85,35 +83,27 @@
   </tr>
   <tr>
     <td>
-      <p>Deploy initial set of demonstration applications upon the communications
-        framework. Finalize APIs and extension points for identity/authentication, asynch
-        communication, and component abstraction after community usage and review.</p>
-      <b>Application Features</b>
-      <ul>
-        <li><img border="0" src="images/plan/investigation.gif" width="14" height="14">
-          <a href="#calendar">Project Calendar</a></li>
-        <li><img border="0" src="images/plan/progress.gif" width="14" height="5">
-          Application Sharing</li>
-        <li><img border="0" src="images/plan/investigation.gif" width="14" height="14">
-          Shared Whiteboard</li>
-        <li><img border="0" src="images/plan/progress.gif" width="14" height="5">
-          Team Remote Control of Eclipse</li>
-        <li><img border="0" src="images/plan/investigation.gif" width="14" height="14">
-          Team Debugging</li>
-      </ul>
+      <p>Finalize APIs and extension points for identity/namespace handling.  Create new provider implementations to
+      test out and streamline provider APIs</p>
       <b>Core Features</b>
       <ul>
         <li>
           <a href="#core_framework_features">Provider Implementations</a></li>
-        <li><img border="0" src="images/plan/progress.gif" width="14" height="5">
+        <li><img border="0" src="images/plan/finished.gif" width="14" height="5">
           <a href="#jms">JMS</a></li>
+        <li><img border="0" src="images/plan/finished.gif" width="14" height="5">
+          <a href="#jmdns">Dynamic Discovery API</a></li>
+        <li><img border="0" src="images/plan/finished.gif" width="14" height="5">
+          <a href="#jmdns">JMDNS - Bonjour/Zeroconf Discovery Provider Implementation</a></li>
         <li><img border="0" src="images/plan/investigation.gif" width="14" height="14">
           <a href="#bit_torrent">BitTorrent</a></li>
         <li><img border="0" src="images/plan/investigation.gif" width="14" height="14">
           <a href="#sip_simple">SIP</a></li>
+
       </ul>
     </td>
   </tr>
+
   <tr>
     <td align=left valign=top bgcolor="#0080C0">
 	  <font color="#FFFFFF" face="Arial,Helvetica">
@@ -123,9 +113,8 @@
   <tr>
     <td>
 	  <p>Deliver additional demonstration applications, and a broader set of user-level
-      features. Finalize APIs for component model, extension points, and security.
-      Provide working, integrated Eclipse applications for instant messaging/chat,
-      file sharing, data/voice conferencing, and shared debugging.</p>
+      features. Provide working, integrated Eclipse applications for instant messaging/chat,
+      file sharing and deploy supporting services via Eclipse.org</p>
 	</td>
   </tr>
    <tr>
@@ -176,8 +165,7 @@
       <a href="#ecf_plugin_developers">Plugin Developers</a> and
       <a href="#user_teams">User Teams</a> for descriptions of these sub-groups.</p>
 	  <p>In order to create both user team added value and plugin developer added
-	  value we propose 3 'feature vectors' for ECF applications: '<b>asynchronous
-	  communications features</b>', '<b>synchronous communications features</b>' and
+	  value we propose 2 'feature vectors' for ECF applications: '<b>synchronous application features</b>' and
 	  '<b>core framework features</b>'.These vectors will allow the ECF team to:</p>
 	  <ol>
         <li>Define an initial sequence of ECF features to design/implement for each milestone release</li><br>
@@ -189,81 +177,11 @@
         <li>Allow the community to participate in an open development process</li><br>
         <li>Allow us on the ECF team to easily coordinate and build upon each other's ideas</li>
 	  </ol>
-	  <p>Below are listed a number of features for each of the three categories of
-	  'asynchronous', 'synchronous', and 'core framework features'.</p>
+	  <p>Below are listed a number of features for each of the two categories of
+	  'synchronous', and 'core framework features'.</p>
 	<a href="#ecf_milestones"><i>back to ECF Milestones</i></a>
 
-	  <h4>Asynchronous Features</h3>
-	  <p>ECF needs some innovative collaboration features for user teams to show off
-	  the general power of the framework. Given Eclipse's power as a generic tool
-	  integration framework, we think we should focus on shared model creation and editing.</p>
-	  <p>What do we mean by 'shared model and editing'? We mean using Eclipse to create
-	  and persist, and ECF to share all the models and documents that are created in a
-	  typical software development project: e.g. feature lists, design docs, development
-	  plans, frameworks, test cases, prototypes, design (e.g. UML) models, design
-	  justification, use cases, source code, api documentation, user documentation,
-	  tools, technology assessments, etc.</p>
-	  <p>ECF can provide a general way for *all* team artifacts to be shared
-	  <b>appropriately</b> among communities of interest. Further, ECF can support the
-	  team creation and editing of artifacts specifically in it's appropriate
-	  context...given the team culture, the organizational structures and processes, the
-	  type of project, the roles of the various team member, and the project function of
-	  the artifact.</p>
-	  <p>ECF can provide team sharing of structured models. ECF can ultimately be able
-	  to support the real-time or asynchronous sharing of arbitrary models, among
-	  appropriate team members, as well as the serialization and synchronization of
-	  those shared models.</p>
-	  <p>Using technologies like EMF for model creation and transformation, XMI for
-	  model serialization, and SDO for persistence <font color="#000000">and incremental
-	  synchronization</font>, we should be able to focus ECF's added value in the
-	  dynamic distribution and synchronization of models among team members, as
-	  appropriate to the team, the project, and the processes in use.</p>
- <hr><a name="asynchronous_features_table"></a>
-<table border=0 cellpadding=2 cellspacing=3>
-	<col width=130>
-	<col width=280>
-	<col width=60>
-	<col width=400>
-	<tr>
-		<td valign="bottom"><b>Asynchronous<br><u>Feature Name</u></b></td>
-		<td valign="bottom"><u><b>Description</b></u></td>
-		<td valign="bottom"><b>Delivery<br><u>Target</u></b></td>
-		<td valign="bottom"><u><b>ECF Team Comments</b></u></td>
-	</tr>
-	<tr>
-      <td valign="top"><a href="#shared_editor_team_outlining">Shared Editor for Team Outlining (SETO)</a></td>
-      <td valign="top"><a name="seto"></a>A Shared Editor for Team Outlining (SETO). Allow team members to
-        create team-shared outlines, and associate tasks and individual with project
-        features for agile project planning</td>
-      <td valign="top" align="center">M1</td>
-      <td valign="top">These are really two smaller features: 1) shared tasks and 2)
-        project features. UI will have integration with Eclipse's TaskList
-        view. Use ecore model to represent types and relations</td>
-	</tr>
-	<tr>
-      <td valign="top"><a href="#project_syndication">EMF/SDO Data Graph Editing</a></td>
-      <td valign="top"><a name="prss"></a>Shared editing of arbitrary EMF/SDO models</td>
-      <td valign="top" align="center">M1</td>
-      <td valign="top"></td>
-	</tr>
-	<tr>
-      <td valign="top"><a href="#project_calendar">Project Calendar</a></td>
-      <td valign="top"><a name="calendar"></a>Dynamically updating project calendar, with team events, milestones, and appropriate individual events</td>
-      <td valign="top" align="center">M2</td>
-      <td valign="top"> This could also be done using EMF; we can start by
-		creating the model and integrating with calendar UI</td>
-	</tr>
-	<tr>
-      <td valign="top"><a href="#eclipse_trust_framework">Eclipse Trust Framework Integration</a></td>
-      <td valign="top">Use of ETF structures to support the management of
-	    personal information, the establishment and enforcement of trusted relationships</td>
-      <td valign="top" align="center">1.0</td>
-      <td valign="top">&nbsp;</td>
-	</tr>
-</table>
-<hr><a href="#ecf_milestones"><i>back to ECF Milestones</i></a>
-
-      <h4>Synchronous Features</h4>
+      <h4>Synchronous Application Features</h4>
 	  <p>The synchronous features will provide some 'traditional' real-time collaboration
 	  functionality for teams of end-users. These features will not be intended to represent
 	  a complete application, but rather present a sufficient set of features that teams
@@ -390,19 +308,19 @@
       <td valign="top"><a name="xmpp_jabber">XMPP/Jabber</a></td>
       <td valign="top">&nbsp</td>
       <td valign="top" align="center">M1</td>
-      <td valign="top">Probably be able to use <a href="http://www.jivesoftware.org/smack/">Smack API</td>
+      <td valign="top"><a href="http://www.jivesoftware.org/smack/">Smack API</td>
     </tr>
-	<tr>
-      <td valign="top"><a name="composent"></a>Composent</td>
-      <td valign="top">&nbsp</td>
-      <td valign="top" align="center">M1</P></td>
-      <td valign="top"><a href="http://www.composent.com/">http://www.composent.com</a></td>
-	</tr>
 	<tr>
       <td valign="top"><a name="jms">JMS (Java Messaging Service)</a></td>
       <td valign="top">&nbsp</td>
       <td valign="top" align="center">M2</td>
       <td valign="top">Apache-Licensed JMS Implementation: <a href="http://www.activemq.org/">ActiveMQ</a></td>
+	</tr>
+	<tr>
+      <td valign="top"><a name="jmdns">JMDNS - Dynamic Lookup and Discovery with Bonjour/Zeroconf Protocol</a></td>
+      <td valign="top">&nbsp</td>
+      <td valign="top" align="center">M2</td>
+      <td valign="top">Apache-Licensed Implementation: <a href="http://jmdns.sourceforge.net/">JMDNS</a></td>
 	</tr>
 	<tr>
       <td valign="top"><a name="bit_torrent">BitTorrent<a></td>
@@ -574,152 +492,7 @@
      </ul>
 	<a href="#feature_developement_plan"><i>back to ECF Feature Development Plan</i></a>
     </td>
-  <tr>
-    <td align=left valign=top bgcolor="999999"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="shared_editor_team_outlining">Shared Editor for Team Outlining</a></font></b></td>
-  </tr>
-  <tr>
-    <td valign="top">
-	  <p>The focus for ECF M1 should be on supporting the sharing of information critical
-	  to distributed development team effectiveness. One project-team-critical sort of
-	  information is feature and tasks planning.  Ideally, in XP-like development processes,
-	  there is a tight relationship between the definition of the user-required features
-	  for a product, the definition and scoping of tasks necessary to build those features,
-	  and the coordination of the people that are to perform those tasks. These relationships
-	  optimally need to be defined/constructed by team members.</p>
-	  <p>Simple outliners and todo lists are a common tool for people to organize their personal tasks.</p>
-	  <p>As an initial example of an asynchronous team communication application, we should
-	  create a multi-user outliner that allows team members to jointly create and edit
-	  feature lists, associated tasks, task dependency relationships, and individual and
-	  team sub-tasks.</p>
-	  <p>Such an outliner could start with the simplifying assumption that everything is
-	  related hierarchically, and create an interface that allows team members to see (but
-	  not edit) the organizations created by other team members. Then, the hierarchy
-      assumption could be relaxed, and the access controls to information created by a
-      given user may also be relaxed.</p>
-	<a href="#asynchronous_features_table"><i>back to Asynchronous Feature table</i></a>
-    </td>
-  <tr>
-  <tr>
-    <td align=left valign=top bgcolor="999999"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="project_syndication">Project Syndication</a></font></font></b></td>
-  </tr>
-  <tr>
-    <td valign="top">
-    <strong><em>Under construction...</em></strong>
-	<br><br>
-	<a href="#asynchronous_features_table"><i>back to Asynchronous Feature table</i></a>
-    </td>
-  </tr>
-  <tr>
-    <td align=left valign=top bgcolor="999999"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="project_calendar">Project Calendar</a></font></b>
-    </td>
-  </tr>
-  <tr>
-    <td valign="top">
-    <strong><em>Under construction...</em></strong>
-	<br><br>
-	<a href="#asynchronous_features_table"><i>back to Asynchronous Feature table</i></a>
-    </td>
-  <tr>
-  <tr>
-    <td align=left valign=top bgcolor="999999"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="eclipse_trust_framework">Eclipse Trust Framework (ETF) Integration</a></font></b></td>
-  </tr>
-  <tr>
-    <td valign="top">
-	See <a href="http://www.eclipse.org/proposals/etf/index.html">Eclipse Trust Framework proposal</a>
-	<br><br>
-	<a href="#asynchronous_features_table"><i>back to Asynchronous Feature table</i></a>
-    </td>
-  <tr>
-  <tr>
-    <td align=left valign=top bgcolor="999999"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="chat_use_cases">Chat Use Cases</a></font></b></td>
-  </tr>
-  <tr>
-    <td valign="top">
-    <p>The ECF development team is considering at least four distinct types of chat use
-    cases depending on whether GroupIDs and chat SharedObject IDs are well-known or not.
-    We have given each of the types a name suggested by the manner in which it would be
-    used. This name is not really the important issue. What's important here is the
-    combination of well-known and individualized IDs.</p>
-   <hr>
-    <h4>1. ChatRoom -- GroupID well-known, Chat SharedObject ID well-known</h4>
-    <p>In this case everyone knows a common familiar GroupID, e.g., "server.com" and joins
-    that container. They also create a SharedObject with the well-known ID, "chat".
-    This is a big space that anyone with permission to use "server.com" may enter.</p>
 
-    <h4>2. IM -- GroupID well-known, Chat SharedObject ID individualized</h4>
-    <p>We all join a well-known container for some purpose. It doesn't have to be to chat.
-    We might have joined the container for the purpose of learning about people's
-    online status. Then, you decide that you would like to chat with someone, but don't
-    want to go to the trouble of creating a new container for that purpose. So, instead,
-    you create a ChatSharedObject, but give it a unique ID. Then, you direct some other
-    group member to create that ChatSharedObject as well. Now, we can use the chat, but
-    others are not aware of our chat and cannot participate.</p>
-    <p><u>Note</u>: The privacy afforded by this approach depends somewhat on whether
-    getSharedObjectIDs returns all the IDs known at the container or only the ones
-    created by any user.</p>
-
-    <h4>3. Chat Meeting -- GroupID individualized, Chat SharedObject ID well-known</h4>
-
-    </p>This case requires two containers: one for the actual chat and one to communicate
-    the individualized GroupID of that chat.</p>
-
-    <ol>
-      <li>We all join a well-known container that we call the Lobby.
-      Let's say it has  a GroupID of "server.com/lobby" and provides some
-      way to send invitations from one user to another.</li><br>
-      <li>One user creates a new container and joins it by creating a unique
-      GroupID for the chat, e.g., "server.com/mychat". In addition, the
-      user adds a ChatSharedObject with the well-known ID, "chat".</li><br>
-      <li>This first user sends an invitation to another user via the lobby
-      to let the second user know that they are invited to the
-      "server.com/mychat" container. (Presumably, it would also be good
-      to send information about the container type, just in case we want
-      to support multiple types of meetings.</li><br>
-      <li>The second user joins the meeting by creating the appropriate chat
-      container, adding in the appropriate chat object, and joining with
-      the "server.com/mychat" GroupID.</li>
-    </ol>
-
-	<h4>4. Whisper -- GroupID individualized, Chat SharedObject ID individualized</h4>
-
-    <p>Let's imagine that the ChatMeeting identified above has been joined by many people
-    and we now want to support a private conversation among a subset of the participants.
-    Assuming we are too lazy to create a new container for the purpose, one user might
-    create a new chat object with an individualized ID, then, as in the IM case, they
-    would instruct another user to create the object as well.</p>
-    </p><u>Note</u>: The privacy afforded by this approach depends somewhat on whether
-    getSharedObjectIDs returns all the IDs known at the container or only the ones created
-    by any user.</p>
-   <hr>
-    <h4>Chat Use Case Considerations</h4>
-	<p>One thing the ECF development team with these use cases is to begin to tie specific
-    communication features to patterns in the use of ECF containers and shared objects. For
-    example, say that you had a 'well-known' chat, and you wanted to have a feature that
-    started a shared whiteboard with the same set of participants. Well, one way to implement
-    this would be to have the chat create a new shared object (a whiteboard component) that
-    implemented the whiteboard communications functionality (i.e. keeping the whiteboard
-    state synchronized) and the whiteboard UI. In this way, the whiteboard functionality
-    would be separable from the chat, and usable within different communications contexts.
-    The whiteboard component could even be implemented to run similarly on multiple container
-    implementations (multiple providers)...e.g. SIP or XMPP or whatever. In this way a library
-    of components could be created, implemented as shared objects (in this case), or
-    combinations of shared objects and provider implementations (less desirable from a
-    component design point of view).</p>
-    <p>In any event, we think that with a variety of use cases (these and others) and a
-    couple of functioning providers (coming very shortly), we can experiment a little bit
-    with the design of communications components, and begin to connect various features
-    with individual components or sets of components (implemented as independent shared
-    objects, shared objects with connectors, patterns of classes used by shared objects,
-    custom containers, etc).</p>
-
-	<a href="#synchronous_features_table"><i>back to Synchronous Feature table</i></a>
-    </td>
-  <tr>
   </table>
 
 </body>
