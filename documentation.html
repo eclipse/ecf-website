@@ -36,10 +36,10 @@
         <br>&nbsp;&nbsp;&nbsp;<a href="#Containers">Introduction: ECF Containers</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Instance Creation">Container Instance Creation</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Container Connection">Container Connection</a>
-        <br>&nbsp;&nbsp;&nbsp;<a href="#Example Connection Code">Example Container Connection Code</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Example Connection Code">Example:  Container Connection Code</a>
+        <br>&nbsp;&nbsp;&nbsp;<a href="#Namespace Extension Point">Namespaces and Identity</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Extensibility">Extensibility through Adapters</a>
         <br>&nbsp;&nbsp;&nbsp;<a href="#Identity">Identity</a>
-        <br>&nbsp;&nbsp;&nbsp;<a href="#Namespace Extension Point">Namespace Extension Point</a>
 		</li>
         <li><a href="org.eclipse.ecf.docs/api">ECF API (javadocs)</a></li>
         <li><a href="sharedobjectcontainerdocumentation.html">Component Model:  Shared Object Containers</a></li>
@@ -60,24 +60,27 @@
        ECF introduces the concept of a communications <b>container</b>.  ECF containers represent access to 
        a protocol-specific communications context. For connection-oriented communications, an ECF container loosely 
        corresponds to the traditional notion of a communications <b>session</b>, but the more general container concept is also
-       useful for capturing context even if the communications are non connection-oriented.
+       useful for capturing context even if the communications are not connection-oriented.
        <p></p>
        ECF containers can represent both point-to-point communications (e.g. client/server) or 
        publish-and-subscribe (group) communications.  Container instances can provide access to synchronous
        communications only, asynchronous communications only, or both together.  This flexibility allows
-       many communications applications to be constructed out of one or more containers...each of which
-       provides access to some specific communications context and some protocol for communicating within
+       many communications applications to be constructed out of one or more ECF containers...each of which
+       provides access to some specific communications context and some protocol(s) for communicating within
        that context.
-       <h3><a name="Instance Creation"></a>Container Instance Creation</h3>       
+       <h4><a name="Instance Creation"></a>Instance Creation</h4>       
        Container instance creation is done via ECF-provided factory APIs.  For example, here's code to create 
        and IContainer instance:
        <pre>
        IContainer container = ContainerFactory.getDefault().makeContainer("containertype");
        </pre>
-       Once constructed, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances may be used in the manner appropriate for the given application.  When
+       Once constructed, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances may be used in the manner appropriate for the given application.  
+       <h4><a name="Instance Disposal"></a>Instance Disposal</h4>       
+       When
        no longer required the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#dispose()">IContainer.dispose()</a> method should be called to release any resources associated with
-       the container instance upon construction.
-       <h3><a name="Container Connection"></a>Container Connection/Disconnection</h3>
+       the container instance upon its construction or used during its lifecycle (e.g. network resources, etc).
+       
+       <h4><a name="Container Connection"></a>Connection/Disconnection</h4>
        The IContainer interface exposes two key methods:  <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#connect(org.eclipse.ecf.core.identity.ID,%20org.eclipse.ecf.core.security.IConnectContext)">connect(ID targetID, IConnectContect connectContext)</a> and disconnect().  
        As is obvious, these two methods allow
        container implementations to initiate communication with remote services, 
@@ -90,21 +93,54 @@
        the URL specifying a particular file at a particular path on a particular server...e.g: <b>http://www.eclipse.org/ecf</b>.  For some
        other communications protocol the ID provided would be different...e.g:  <b>sip:someone@example.com;transport=tcp</b>.  All such targets for
        connect may be represented via an instance of the ID interface.
-       <h3><a name="Example Connection Code"></a>Example Container Creation and Connection Code</h3>
+       <h4><a name="Example Connection Code"></a>Example Code: Container Creation and Connection</h4>
        Here's an example code snippet that shows the creation and connection of an ECF container:
        <pre>
        // make container instance
        IContainer cont = ContainerFactory.getDefault().makeContainer("org.eclipse.ecf.provider.generic.Client");
        // make targetID
        ID targetID = IDFactory.getDefault().makeID(cont.getConnectNamespace(),"ecftcp://ecf1.osuosl.org:3282/server");
-       // then connect to targetID
+       // then connect to targetID with null authentication data
        cont.connect(targetID,null);
        </pre>       
-       <h3><a name="Extensibility"></a>Extensibility through Adapters</h3>
-       In order to support run-time extensibility, the IContainer interface inherits from org.eclipse.core.runtime.IAdaptable.  This 
-       interface exposes the 'getAdapter(Class intf)' method.  In the case of IContainer instances,
-       this allows clients to query the container at runtime about it's exposed interfaces, and get
-       access to those interfaces if available.  So, for example, perhaps we're interested in creating an 
+        <h4><a name="Namespace Extension Point"></a>Namespaces and ID Construction</h4>
+       The <b>org.eclipse.ecf</b> core plugin defines a namespace extension point, so that ECF provider plugins can provide
+       their own Namespace implementations.  For example, here is the namespace extension definition for the 
+       <b>org.eclipse.ecf.provider.xmpp</b> plugin:
+       <pre>
+   &lt;extension point="org.eclipse.ecf.namespace">
+      &lt;namespace
+            class="org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace"
+            description="XMPP Namespace"
+            name="xmpp.jive"/>
+   &lt;/extension>
+       </pre>
+       This assigns the name "xmpp.jive" to the class <b>org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace</b>.  Notice that this
+       class <b>must</b> be a subclass of <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html">org.eclipse.ecf.core.identity.Namespace</a>.  
+       The XMPPNamespace class provides the
+       XMPP namespace implementation and as described above implements the XMPP namespace restrictions.  It is also responsible for
+       constructing new ID instances via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/IIDFactory.html">IDFactory</a>.
+       For example, to construct an instance of and XMPP ID, a client could use the following code:
+       <pre>
+       ID newID = IDFactory.getDefault().makeID("xmpp.jive","slewis@ecf1.osuosl.org");
+       </pre>
+       Underneath the covers of the IDFactory.makeID method the following occurs:
+       <ol>
+       <li>The name "xmpp.jive" is used to lookup it's associated Namespace class (in this case XMPPNamespace).  This lookup is done via the
+       Eclipse extension registry.
+       <li>The XMPPNamespace.makeInstance method is called to manufacture an <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
+       that is in the XMPPNamespace from the string "slewis@ecf1.osuosl.org"
+       <li>The new <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a> is
+       returned to the caller
+       </ol>
+       Note that there are other IDFactory.makeID(...) methods that allow parameters other than Strings to be used for 
+       ID construction (e.g. URIs).
+       <br>
+       <h4><a name="Extensibility"></a>Container Extensibility through Adapters</h4>
+       To support run-time extensibility, the IContainer interface inherits from org.eclipse.core.runtime.IAdaptable.  This 
+       interface exposes a single method: the 'getAdapter(Class intf)' method.  In the case of IContainer instances,
+       this allows client applications to query the IContainer instance at runtime about it's exposed capabilities, and get
+       access to those capabilities if they are available.  So, for example, perhaps we're interested in creating an 
        instant messaging application and wish to use the capabilities exposed by the 
        <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/IPresenceContainer.html">IPresenceContainer</a> interface.
        To do this, we simply query the IContainer instance at runtime to see if it provides access
@@ -112,7 +148,7 @@
        <pre>
        IPresenceContainer pc = (IPresenceContainer) cont.getAdapter(IPresenceContainer.class);
        if (pc != null) {
-           // The container DOES exposed IPresenceContainer capabilities, so we can use them!
+           // The container DOES expose IPresenceContainer capabilities, so we can use them!
        } else {
            // The container does not expose IPresenceContainer capabilities...we're out of luck
        }
@@ -122,10 +158,8 @@
        IContainer abstractions.
        <p></p>
        See the documentation for the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#getAdapter(java.lang.Class)">IContainer.getAdapter()</a> method.
-       Also see the example usage in the org.eclipse.ecf.example.collab project, in the org.eclipse.ecf.example.collab.Client class.
-       <p></p>
-       See a terrific <a href="http://www.eclipsezone.com/articles/what-is-iadaptable/">article on EclipseZone about usage of IAdaptable for runtime extensibility</a>
-       <h3><a name="Identity"></a>Identity</h3>
+       See also a terrific <a href="http://www.eclipsezone.com/articles/what-is-iadaptable/">article on EclipseZone about usage of IAdaptable for runtime extensibility</a>
+       <h4><a name="Identity"></a>Identity</h4>
        <p></p>
        In ECF, identity of local or remote entities such as users, remote services, and groups are all represented
        via the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a> interface.  
@@ -141,36 +175,34 @@
       address-literal = IPv4address / IPv6address
       example         = slewis@ecf1.osuosl.org/ecf
        </pre>
-      The ECF XMPP provider implementation restricts jids to this syntax by providing a Namespace that is responsible
-      for constructing ID instances that follow the rules defined by the protocol specification.  Other protocols have
+      The ECF XMPP provider implementation restricts jids to this syntax by providing a Namespace subclass responsible
+      for constructing ID instances that follow the rules defined by the protocol specification.  Other communications protocols 
+      and their associated service identities have
       their own Namespaces (e.g. ftp, http, sip, irc, etc, etc), each with it's own requirements for addressing and
       identity.  The <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
       contract is not bound to any specific protocol, and makes it possible to create client applications that are
-      insensitive to the addressing differences between protocols while still guaranteeing uniqueness within a given
-      namespace.
+      insensitive to the addressing differences between protocols while still guaranteeing basic addressability and
+      satisfying uniqueness requirements within a given namespace.
        <p></p>
-        <h3><a name="Namespace Extension Point"></a>Namespace Extension Point</h3>
-       <p></p>
-       The <b>org.eclipse.ecf</b> core plugin defines a namespace extension point, so that ECF provider plugins can provide
-       their own Namespace implementations.  For example, here is the namespace extension definition for the 
-       <b>org.eclipse.ecf.provider.xmpp</b> plugin:
+       <h4><a name="Extensibility Example"></a>Example:  Container creation, ID creation, container adapter, and connection</h4>
        <pre>
-   &lt;extension point="org.eclipse.ecf.namespace">
-      &lt;namespace
-            class="org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace"
-            description="XMPP Namespace"
-            name="xmpp.jive"/>
-   &lt;/extension>
+         // Create the new container 
+		IContainer client = ContainerFactory
+				.getDefault().makeContainer(containerType);
+		// Create the targetID 
+		ID targetID = IDFactory.getDefault().makeID(client.getConnectNamespace(), uri);
+	    // Check for IPresenceContainer....if it is, setup presence UI, if not setup shared object container
+		IPresenceContainer pc = (IPresenceContainer) client
+				.getAdapter(IPresenceContainer.class);
+		if (pc != null) {
+			// Setup presence UI
+			presenceContainerUI = new PresenceContainerUI(pc);
+			presenceContainerUI.setup(client, targetID, username);
+		} else throw new NullPointerException("IPresenceContainer interface not exposed by client with type "+containerType);
+		// connect
+		client.connect(targetID, getJoinContext(username, connectData));
        </pre>
-       This assigns the name "xmpp.jive" to the class <b>org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace</b>.  Notice that this
-       class <b>must</b> be a subclass of <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html">org.eclipse.ecf.core.identity.Namespace</a>.  This XMPPNamespace class provides the
-       XMPP namespace implementation and as described above implements the XMPP namespace restrictions.  It is also responsible for
-       constructing new ID instances via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/IIDFactory.html">IDFactory</a>.
-       For example, to construct an instance of and XMPP ID, a client could use the following code:
-       <pre>
-       ID newID = IDFactory.getDefault().makeID("xmpp.jive","slewis@ecf1.osuosl.org");
-       </pre>
-       UNDER CONSTRUCTION 9/27/05
+       UNDER CONSTRUCTION 10/29/05
 <br><a href="#top"><i>back to top</i></a>
   </td>
   </tr>
