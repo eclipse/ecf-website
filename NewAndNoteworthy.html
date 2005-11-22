@@ -17,10 +17,12 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.4.0 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.5.2 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -41,49 +43,41 @@
     <TD vAlign=top align=left width="30%">
     <p></p>
         <P align=left>
-	<B>Support for XMPP (Jabber) MultiUser Chat</B>
+	<B>Disconnecting from accounts individually</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
     <p></p>
-      <P>The XMPP provider now provides access to server chat rooms.  Once connected to
-      a XMPP server, the ECF Buddy List view provide a list of available chat rooms via the
-      icon with small plus and 'C' in the upper right of the buddy list view:<br><br>
-      <IMG src="images/screens/buddy_list_chat1.png">      </P>
-      <p>Selecting this toolbar button will produce a list of chat rooms:</p>
-      <p><img src="images/screens/chatroomlist.png"></p>
+      <P>The context menu for accounts listed in the ECF Buddy List now allow disconnection
+      from that account as well as showing chat rooms available just for that account.  </P>
+      <p><img src="images/screens/buddylistaccountcontext.png"></p>
     </TD>
   </TR>
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Interoperability with Google Talk IM</B>
+	<B>Username customization for XMPP Chat</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The XMPP provider now provides support for using your Google Talk IM/Gmail account.
-      To connect to your google talk/gmail account, bring up the 'Join ECF Group' dialog
-      via the ECF  toolbar button <img src="images/screens/small_guy.png">:<br><br>
-      <img src="images/screens/joingroupdialog.png"><br>
-      <p>Once logged into the account your Google Talk buddies will appear in the ECF Buddy List and you can IM them via the buddy list context menu</p>
+      <P>When entering an XMPP chat the user is now prompted for a username for the chat, rather
+      than using the IM username always.  The default is, however, still the
+      IM username</p>
     </TD>
   </TR>
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Support for Multiple XMPP (Jabber) Accounts</B>
+	<B>XMPP over SSL</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The Buddy List view now supports presenting buddy lists from multiple XMPP (Jabber) accounts.
-      Opening up the 'Join ECF Group' dialog
-      via the ECF toolbar button <img src="images/screens/small_guy.png"> and connecting to multiple Jabber/XMPP accounts
-      will present all the buddies for all connected accounts:</p>
-      <IMG src="images/screens/buddy_list_expand.png">
+      <P>For XMPP servers that support it, ECF now supports XMPP over SSL</p>
+      <IMG src="images/screens/xmppoverssl.png">
     </TD>
   </TR>
   <TR> <!----------------------------------------------------->
@@ -94,18 +88,37 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Access to ECF Collaboration Server Groups</B>
+	<B>Remotely Launch Editors on Team Project Resources</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The org.eclipse.ecf.example.collab plugin provides access to ECF generic server-provided collaboration groups.
-      These collaboration groups provide access to multi-user chat, group file sharing, group co-web-browsing and a few
-      other features.  These collaboration groups can be joined with the 'Join ECF Group' dialog via the ECF  toolbar button <img src="images/screens/small_guy.png">:</p>
-      <img src="images/screens/joingroupdialog_generic.png">
-      <p>Or, the project context menu:</p>
-      <img src="images/screens/packageeplorercontext.png">
-
+      <P>For Team projects where collaboration participants all have access to the same resources, one can now
+      remotely launch an editor on the chosen resource</p>
+      <p>Each team member must connect the team project to a collaboration group:</p>
+      <ul>
+      <li>In Navigator or Package Explorer open context menu for a team project<br><br>
+      <IMG src="images/screens/projectcontextconnectproject.png"><br><br></li>
+      <li>
+      Choose 'ECF Generic' provider, and connect to a specific collaboration group
+      <br><br>
+      <IMG src="images/screens/projectconnectproject.png"><br><br>
+      </li>
+      <li>Once the project is connected you should see team members listed in the ECF Collaboration view
+      <br><br>
+      <img src="images/screens/projectcollaborationview.png"><br><br>
+      </li>
+      <li>
+      Select a text file (e.g. source file) in team project, and choose ECF->Open Shared Editor
+      <br><br>
+      <img src="images/screens/opensharededitor.png"><br><br>
+      </li>
+      <li>
+      You (and others in the same collaboration group, should then see an open editor on the selected resource
+      <br><br>
+      <img src="images/screens/editoropen.png"><br><br>
+      </li>
+      </ul>
     </TD>
   </TR>
 
@@ -123,8 +136,11 @@
     <TD vAlign=top width="70%">
       <p><br></p>
       <P>An ECF provider that uses <a href="http://www.activemq.com">ActiveMQ's</a> implementation of the
-      <a href="http://java.sun.com/jms">Java Messaging Service</a> is now available.  To use this provider immediately,
-      please contact the ECF team directly at <a href="mailto:ecf-dev@eclipse.org">ECF dev mailing list</a>.</p>
+      <a href="http://java.sun.com/jms">Java Messaging Service</a> is now available.  To download this plugin goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
+      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
+      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
     </TD>
   </TR>
 
@@ -139,75 +155,129 @@
       <p><br></p>
       <P>An ECF provider implementing the org.eclipse.ecf.discovery API is now available that uses the
       <a href="http://www.zeroconf.org/">Zeroconf</a>/<a href="http://www.apple.com/macosx/features/bonjour/">Bonjour</a> protocols.
-      To use this provider immediately,
-      please contact the ECF team directly at <a href="mailto:ecf-dev@eclipse.org">ECF dev mailing list</a>.</p>
+      To download this this provider goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
+      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
+      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Internet Relay Chat Provider Implementation</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>An ECF provider implementing the IRC protocol is now available that uses the
+      <a href="http://moepii.sourceforge.net/">IRCLib API</a>.
+      To use download this provider goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
+      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
+      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
     </TD>
   </TR>
 
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
   </TR>
-  <TR><TD colSpan=2><H2>ECF API Changes</H2></TD>
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Simplification of ECF Namespace Extension Point</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The ECF Namespace extension point has been vastly simplified.  This allows plugin developers
-      to easily substitute their own Namespace implementation for the creation of ID instances.
-      See the schema documentation in the org.eclipse.ecf/schema/namespace.exsd schema definition
-      file or in the Eclipse ECF Developers Guide in the Eclipse Online Help.</p>
-    </TD>
-  </TR>
+  <TR><TD colSpan=2><H2>RCP Application</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Simplification of ECF Container Factory Extension Point</B>
+	<B>RCPChat Application</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>Previously, ECF provider implementers had to provide an extension for the ECF 'containerFactory' extension point, and this
-      extension point required that the supplied containerFactory had to create instances of
-      the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a> interface.
-      The requirements on containerFactory extensions
-      have been simplified so to that they now only must produce instances that implement the much
-      simpler <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> interface.
-      This makes it significantly easier for ECF providers to be created that have very simple and lightweight
-      functionality, without requiring support for the distributed component model required
-      by <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a></p></TD>
+      <P>A new RCP application is available that uses the XMPP provider plugin to create a simple IM client.
+      To use download this provider goto
+      <br><br>
+      <img src="images/screens/rcpchat.png"><br><br>
+      To use download this application goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+    </TD>
   </TR>
 
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>API Method and Class Name Changes</B>
+	<B>Core Support For Transactional State Distribution Protocols</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>A number of class and method name changes have occurred for consistency and API usability.  For example, previously the
-      core methods for initiating a connection with a single or group of remote
-      processes was IContainer.joinGroup().  Now, it is <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#connect(org.eclipse.ecf.core.identity.ID,%20org.eclipse.ecf.core.security.IConnectContext)">IContainer.connect()</a></p></TD>
-  </TR>
+      <P>For reliability, it's frequently desireable to have state distribution done via transactional protocols where either
+      all participants successfully receive a given piece of application state, or all 'abort' and fail back to a 
+      known state.  
+      <p>
+      This new set of classes allows applications to easily implement 'all-or-nothing' semantics for arbitrary state distribution 
+      in ECF applications.  
+      </p>
+      <p>ECF has added a new package, <b>org.eclipse.ecf.core.sharedobject</b> that provides an API for application developers to
+      create shared objects whose state is distributed via transactional protocols.  So, for example, here is some code that
+      creates a shared object with a Boolean as its state and by inheriting from org.eclipse.ecf.sharedobject.TransactionSharedObject 
+      it automatically uses a transactional protocol (two-phase commit) for istributing its state (in this case a Boolean variable value)
+      to replicas.
+      
+      <pre>
+package org.eclipse.ecf.test.sharedobjects;
 
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Revised Architectural Overview Documentation</B>
-        </P>
+import java.util.HashMap;
+import java.util.Map;
+import org.eclipse.ecf.core.SharedObjectDescription;
+import org.eclipse.ecf.core.identity.ID;
+import org.eclipse.ecf.core.sharedobject.TransactionSharedObject;
+
+public class TestTransactionSharedObject extends TransactionSharedObject {
+
+    Boolean state = null;
+	
+    public TestTransactionSharedObject(Boolean val, int timeout) {
+        super(timeout);
+        state = val;
+    }
+    public TestTransactionSharedObject() {
+        super();
+        state = null;
+    }
+	
+    protected SharedObjectDescription getReplicaDescription(ID receiver) {
+    	// This method is executed on primary to determine initial state 
+    	// for replicas
+    	
+    	// include primary state in properties
+    	Map properties = new HashMap();
+    	properties.put("state", state);
+    	
+    	return new SharedObjectDescription(getID(), getClass().getName(),
+        		properties);
+    }
+    protected void initialize() {
+    	// This method is executed on both primary and replicas
+    	super.initialize();
+    	// Only set state via properties if we are replica (not primary)
+    	if (!isPrimary()) {
+	    	Map properties = getConfig().getProperties();
+	    	if (properties != null) {
+	    		state = (Boolean) properties.get("state");
+	    	}
+    	}
+    }
+}
+      </pre>
     </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>See <a href="http://www.eclipse.org/ecf/documentation.html">architectural overview documentation</a></p></TD>
   </TR>
 
 </table>
