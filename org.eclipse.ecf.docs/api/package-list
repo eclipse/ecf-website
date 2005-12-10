@@ -9,7 +9,6 @@ org.eclipse.ecf.core.sharedobject
 org.eclipse.ecf.core.user
 org.eclipse.ecf.core.util
 org.eclipse.ecf.discovery
-org.eclipse.ecf.example.clients
 org.eclipse.ecf.presence
 org.eclipse.ecf.presence.impl
 org.eclipse.ecf.provider
@@ -19,9 +18,6 @@ org.eclipse.ecf.provider.generic
 org.eclipse.ecf.provider.generic.events
 org.eclipse.ecf.provider.generic.gmm
 org.eclipse.ecf.provider.generic.sobject
-org.eclipse.ecf.provider.jmdns
-org.eclipse.ecf.provider.jmdns.container
-org.eclipse.ecf.provider.jmdns.identity
 org.eclipse.ecf.provider.xmpp
 org.eclipse.ecf.provider.xmpp.container
 org.eclipse.ecf.provider.xmpp.events
