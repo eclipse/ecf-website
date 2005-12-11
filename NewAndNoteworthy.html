@@ -17,12 +17,13 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.5.2 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.5.4 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
         <br><br>
-        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -37,174 +38,53 @@
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
   </TR>
-  <TR><TD colSpan=2><H2>Instant Messaging Improvements</H2></TD>
+  <TR><TD colSpan=2><H2>ECF Shared Editor Improvements</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p></p>
         <P align=left>
-	<B>Disconnecting from accounts individually</B>
+	<B>Event History for Open Editor and Share Selection Events</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
     <p></p>
-      <P>The context menu for accounts listed in the ECF Buddy List now allow disconnection
-      from that account as well as showing chat rooms available just for that account.  </P>
-      <p><img src="images/screens/buddylistaccountcontext.png"></p>
+      <P>Shared editor events are now presented in the text chat output.</P>
+      <p><img src="images/screens/sharededitorlinks.png"></p>
+      <p>Clicking on these links later will 'replay' the event, and allow participants to control their own
+      display open editor and share selection events.  For a description of how to use the open editor and share selection
+      features see <a href="NewAndNoteworthy_0.5.2.html">New and noteworthy for 0.5.2</a>.</p>
+      <p>This feature and the other 0.5.4 shared editor features are encapsulated in enhancement 
+      request <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=119206">119206</a>
     </TD>
   </TR>
+  
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
+    <p></p>
         <P align=left>
-	<B>Username customization for XMPP Chat</B>
+	<B>Local preferences for receiving open editor and share selection events</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>When entering an XMPP chat the user is now prompted for a username for the chat, rather
-      than using the IM username always.  The default is, however, still the
-      IM username</p>
+    <p></p>
+      <P>Remote users opening editors on local machines can be disconcerting if prepared for it.  So that
+      users can control how open editor and share selection events are handled, preferences have been added for the 
+      collaboration example plugin <b>org.eclipse.ecf.example.collab</b>.  The first preference is whether or not shared
+      editor events are played immediately. </p> 
+      <p><img src="images/screens/sharededitoraskpref.png"></p>
+      <p>
+      The 'Play shared editor events immediately' preference, if checked, plays open editor events immediately when they are
+      received.  If unchecked, open editor
+      events are rather only placed into the text chat history (see above) and no editor will be launched.</p>
+      <p>The second preference is determines whether the user is asked (via a dialog) whether
+      editor should be opened.  This preference is only relevant when the preference described
+      above is checked.  If both preferences are checked, the user will be presented with the following
+      when a shared editor event is received</p>
+      <p><img src="images/screens/sharededitorcheckuserdialog.png"></p>
     </TD>
   </TR>
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>XMPP over SSL</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>For XMPP servers that support it, ECF now supports XMPP over SSL</p>
-      <IMG src="images/screens/xmppoverssl.png">
-    </TD>
-  </TR>
-  <TR> <!----------------------------------------------------->
-    <TD colSpan=2> <HR> </TD>
-  </TR>
-  <TR><TD colSpan=2><H2>Team Collaboration Improvements</H2></TD>
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Remotely Launch Editors on Team Project Resources</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>For Team projects where collaboration participants all have access to the same resources, one can now
-      remotely launch an editor on the chosen resource</p>
-      <p>Each team member must connect the team project to a collaboration group:</p>
-      <ul>
-      <li>In Navigator or Package Explorer open context menu for a team project<br><br>
-      <IMG src="images/screens/projectcontextconnectproject.png"><br><br></li>
-      <li>
-      Choose 'ECF Generic' provider, and connect to a specific collaboration group
-      <br><br>
-      <IMG src="images/screens/projectconnectproject.png"><br><br>
-      </li>
-      <li>Once the project is connected you should see team members listed in the ECF Collaboration view
-      <br><br>
-      <img src="images/screens/projectcollaborationview.png"><br><br>
-      </li>
-      <li>
-      Select a text file (e.g. source file) in team project, and choose ECF->Open Shared Editor
-      <br><br>
-      <img src="images/screens/opensharededitor.png"><br><br>
-      </li>
-      <li>
-      You (and others in the same collaboration group, should then see an open editor on the selected resource
-      <br><br>
-      <img src="images/screens/editoropen.png"><br><br>
-      </li>
-      </ul>
-    </TD>
-  </TR>
-
-  <TR> <!----------------------------------------------------->
-    <TD colSpan=2> <HR> </TD>
-  </TR>
-  <TR><TD colSpan=2><H2>New ECF Provider Implementations</H2></TD>
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Java Messaging Service (JMS) Provider Implementation</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>An ECF provider that uses <a href="http://www.activemq.com">ActiveMQ's</a> implementation of the
-      <a href="http://java.sun.com/jms">Java Messaging Service</a> is now available.  To download this plugin goto
-      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
-      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
-      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
-      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
-    </TD>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Zeroconf Discovery Provider Implementation</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>An ECF provider implementing the org.eclipse.ecf.discovery API is now available that uses the
-      <a href="http://www.zeroconf.org/">Zeroconf</a>/<a href="http://www.apple.com/macosx/features/bonjour/">Bonjour</a> protocols.
-      To download this this provider goto
-      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
-      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
-      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
-      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
-    </TD>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Internet Relay Chat Provider Implementation</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>An ECF provider implementing the IRC protocol is now available that uses the
-      <a href="http://moepii.sourceforge.net/">IRCLib API</a>.
-      To use download this provider goto
-      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
-      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
-      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
-      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
-    </TD>
-  </TR>
-
-  <TR> <!----------------------------------------------------->
-    <TD colSpan=2> <HR> </TD>
-  </TR>
-  <TR><TD colSpan=2><H2>RCP Application</H2></TD>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>RCPChat Application</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>A new RCP application is available that uses the XMPP provider plugin to create a simple IM client.
-      To use download this provider goto
-      <br><br>
-      <img src="images/screens/rcpchat.png"><br><br>
-      To use download this application goto
-      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
-    </TD>
-  </TR>
-
+  
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
   </TR>
@@ -213,69 +93,48 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Core Support For Transactional State Distribution Protocols</B>
+	<B>XMPP Provider Implements ISharedObjectContainer</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>For reliability, it's frequently desireable to have state distribution done via transactional protocols where either
-      all participants successfully receive a given piece of application state, or all 'abort' and fail back to a 
-      known state.  
-      <p>
-      This new set of classes allows applications to easily implement 'all-or-nothing' semantics for arbitrary state distribution 
-      in ECF applications.  
-      </p>
-      <p>ECF has added a new package, <b>org.eclipse.ecf.core.sharedobject</b> that provides an API for application developers to
-      create shared objects whose state is distributed via transactional protocols.  So, for example, here is some code that
-      creates a shared object with a Boolean as its state and by inheriting from org.eclipse.ecf.sharedobject.TransactionSharedObject 
-      it automatically uses a transactional protocol (two-phase commit) for istributing its state (in this case a Boolean variable value)
-      to replicas.
-      
+      <P>The XMPP provider now implements ISharedObjectContainer interface via:
       <pre>
-package org.eclipse.ecf.test.sharedobjects;
+      ISharedObjectContainer socontainer = (ISharedObjectContainer) xmppcontainer.getAdapter(ISharedObjectContainer.class);
+      </pre>
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/IPresenceContainer.html">IPresenceContainer</a> for
+      presence and chat access, and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a>.  The
+      ISharedObjectContainer implementation allows other applications to be built upon XMPP IM and XMPP multi-user chat protocol.  For example,
+      the org.eclipse.ecf.example.collab application is implemented upon the ISharedObjectContainer API, and soon it will be ported to run
+      on the XMPP implementation. </p>
+    </TD>
+  </TR>
 
-import java.util.HashMap;
-import java.util.Map;
-import org.eclipse.ecf.core.SharedObjectDescription;
-import org.eclipse.ecf.core.identity.ID;
-import org.eclipse.ecf.core.sharedobject.TransactionSharedObject;
-
-public class TestTransactionSharedObject extends TransactionSharedObject {
-
-    Boolean state = null;
-	
-    public TestTransactionSharedObject(Boolean val, int timeout) {
-        super(timeout);
-        state = val;
-    }
-    public TestTransactionSharedObject() {
-        super();
-        state = null;
-    }
-	
-    protected SharedObjectDescription getReplicaDescription(ID receiver) {
-    	// This method is executed on primary to determine initial state 
-    	// for replicas
-    	
-    	// include primary state in properties
-    	Map properties = new HashMap();
-    	properties.put("state", state);
-    	
-    	return new SharedObjectDescription(getID(), getClass().getName(),
-        		properties);
-    }
-    protected void initialize() {
-    	// This method is executed on both primary and replicas
-    	super.initialize();
-    	// Only set state via properties if we are replica (not primary)
-    	if (!isPrimary()) {
-	    	Map properties = getConfig().getProperties();
-	    	if (properties != null) {
-	    		state = (Boolean) properties.get("state");
-	    	}
-    	}
-    }
-}
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>ConnectContextFactory helper class</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>The signature for <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#connect(org.eclipse.ecf.core.identity.ID,%20org.eclipse.ecf.core.security.IConnectContext)">IContainer.connect()</a>
+      requires an IConnectContext instance to provide the authentication context for connecting to a remote container.  In general
+      this context varies by the type of provider (i.e. some providers require password for authentication, others require other
+      credentials like certificates, etc).  A new helper class <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/security/ConnectContextFactory.html">
+      ConnectContextFactory</a> is now available to allow the easy creation of typical connect context...e.g. those that are based
+      upon password.  So code that used to need to explicitly create an IConnectContext instance:</p>
+      <pre>
+      ...
+      IConnectContext cc = createMyConnectContext(password);
+      container.connect(targetid, cc);
+      </pre>
+      <p>Can now accomplish the same result more simply by using the ConnectContextFactory</p>
+      <pre>
+      ...
+      container.connect(targetid, ConnectContextFactory.makePasswordConnectContext(password));
+      ...
       </pre>
     </TD>
   </TR>

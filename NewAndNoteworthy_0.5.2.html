@@ -1,0 +1,285 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology subproject</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>0.5.2 Stable Release</font>
+        <br><br><br>
+        Return to <a href="downloads.html">ECF download page</a></br>
+        Return to <a href="comm_resources.html">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>Instant Messaging Improvements</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p></p>
+        <P align=left>
+	<B>Disconnecting from accounts individually</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p></p>
+      <P>The context menu for accounts listed in the ECF Buddy List now allow disconnection
+      from that account as well as showing chat rooms available just for that account.  </P>
+      <p><img src="images/screens/buddylistaccountcontext.png"></p>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Username customization for XMPP Chat</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>When entering an XMPP chat the user is now prompted for a username for the chat, rather
+      than using the IM username always.  The default is, however, still the
+      IM username</p>
+    </TD>
+  </TR>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>XMPP over SSL</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>For XMPP servers that support it, ECF now supports XMPP over SSL</p>
+      <IMG src="images/screens/xmppoverssl.png">
+    </TD>
+  </TR>
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>Team Collaboration Improvements</H2></TD>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Remotely Launch Editors on Team Project Resources</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>For Team projects where collaboration participants all have access to the same resources, one can now
+      remotely launch an editor on the chosen resource</p>
+      <p>Each team member must connect the team project to a collaboration group:</p>
+      <ul>
+      <li>In Navigator or Package Explorer open context menu for a team project<br><br>
+      <IMG src="images/screens/projectcontextconnectproject.png"><br><br></li>
+      <li>
+      Choose 'ECF Generic' provider, and connect to a specific collaboration group
+      <br><br>
+      <IMG src="images/screens/projectconnectproject.png"><br><br>
+      </li>
+      <li>Once the project is connected you should see team members listed in the ECF Collaboration view
+      <br><br>
+      <img src="images/screens/projectcollaborationview.png"><br><br>
+      </li>
+      <li>
+      Select a text file (e.g. source file) in team project, and choose ECF->Open Shared Editor
+      <br><br>
+      <img src="images/screens/opensharededitor.png"><br><br>
+      </li>
+      <li>
+      You (and others in the same collaboration group, should then see an open editor on the selected resource
+      <br><br>
+      <img src="images/screens/editoropen.png"><br><br>
+      </li>
+      </ul>
+    </TD>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>New ECF Provider Implementations</H2></TD>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Java Messaging Service (JMS) Provider Implementation</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>An ECF provider that uses <a href="http://www.activemq.com">ActiveMQ's</a> implementation of the
+      <a href="http://java.sun.com/jms">Java Messaging Service</a> is now available.  To download this plugin goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
+      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
+      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Zeroconf Discovery Provider Implementation</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>An ECF provider implementing the org.eclipse.ecf.discovery API is now available that uses the
+      <a href="http://www.zeroconf.org/">Zeroconf</a>/<a href="http://www.apple.com/macosx/features/bonjour/">Bonjour</a> protocols.
+      To download this this provider goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
+      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
+      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Internet Relay Chat Provider Implementation</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>An ECF provider implementing the IRC protocol is now available that uses the
+      <a href="http://moepii.sourceforge.net/">IRCLib API</a>.
+      To use download this provider goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+      <p><B>PLEASE NOTE:  This provider is not yet reviewed and approved under the terms of the <a href="http://www.eclipse.org/legal/epl-v10.html>Eclipse Public License (EPL)</a>.  It contains
+      code licensed under both the <a href="http://www.eclipse.org/legal/epl-v10.html>EPL</a> and the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache 2 license</a>
+      and anyone using it are subject to the terms and conditions of both licenses.  See the about.html of this plugin for further details.</b></p>
+    </TD>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>RCP Application</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>RCPChat Application</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>A new RCP application is available that uses the XMPP provider plugin to create a simple IM client.
+      To use download this provider goto
+      <br><br>
+      <img src="images/screens/rcpchat.png"><br><br>
+      To use download this application goto
+      <a href="http://ecf1.osuosl.org">ECF Extras Web Server</a>.</p>
+    </TD>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Core Support For Transactional State Distribution Protocols</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>For reliability, it's frequently desireable to have state distribution done via transactional protocols where either
+      all participants successfully receive a given piece of application state, or all 'abort' and fail back to a 
+      known state.  
+      <p>
+      This new set of classes allows applications to easily implement 'all-or-nothing' semantics for arbitrary state distribution 
+      in ECF applications.  
+      </p>
+      <p>ECF has added a new package, <b>org.eclipse.ecf.core.sharedobject</b> that provides an API for application developers to
+      create shared objects whose state is distributed via transactional protocols.  So, for example, here is some code that
+      creates a shared object with a Boolean as its state and by inheriting from org.eclipse.ecf.sharedobject.TransactionSharedObject 
+      it automatically uses a transactional protocol (two-phase commit) for istributing its state (in this case a Boolean variable value)
+      to replicas.
+      
+      <pre>
+package org.eclipse.ecf.test.sharedobjects;
+
+import java.util.HashMap;
+import java.util.Map;
+import org.eclipse.ecf.core.SharedObjectDescription;
+import org.eclipse.ecf.core.identity.ID;
+import org.eclipse.ecf.core.sharedobject.TransactionSharedObject;
+
+public class TestTransactionSharedObject extends TransactionSharedObject {
+
+    Boolean state = null;
+	
+    public TestTransactionSharedObject(Boolean val, int timeout) {
+        super(timeout);
+        state = val;
+    }
+    public TestTransactionSharedObject() {
+        super();
+        state = null;
+    }
+	
+    protected SharedObjectDescription getReplicaDescription(ID receiver) {
+    	// This method is executed on primary to determine initial state 
+    	// for replicas
+    	
+    	// include primary state in properties
+    	Map properties = new HashMap();
+    	properties.put("state", state);
+    	
+    	return new SharedObjectDescription(getID(), getClass().getName(),
+        		properties);
+    }
+    protected void initialize() {
+    	// This method is executed on both primary and replicas
+    	super.initialize();
+    	// Only set state via properties if we are replica (not primary)
+    	if (!isPrimary()) {
+	    	Map properties = getConfig().getProperties();
+	    	if (properties != null) {
+	    		state = (Boolean) properties.get("state");
+	    	}
+    	}
+    }
+}
+      </pre>
+    </TD>
+  </TR>
+
+</table>
+</body>
+</html>
