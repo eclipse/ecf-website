@@ -112,21 +112,21 @@
       &lt;namespace
             class="org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace"
             description="XMPP Namespace"
-            name="xmpp.jive"/>
+            name="ecf.xmpp"/>
    &lt;/extension>
        </pre>
-       This assigns the name "xmpp.jive" to the class <b>org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace</b>.  Notice that this
+       This assigns the name "ecf.xmpp" to the class <b>org.eclipse.ecf.provider.xmpp.identity.XMPPNamespace</b>.  Notice that this
        class <b>must</b> be a subclass of <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html">org.eclipse.ecf.core.identity.Namespace</a>.  
        The XMPPNamespace class provides the
        XMPP namespace implementation and as described above implements the XMPP namespace restrictions.  It is also responsible for
        constructing new ID instances via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/IIDFactory.html">IDFactory</a>.
        For example, to construct an instance of and XMPP ID, a client could use the following code:
        <pre>
-       ID newID = IDFactory.getDefault().makeID("xmpp.jive","slewis@ecf1.osuosl.org");
+       ID newID = IDFactory.getDefault().makeID("ecf.xmpp","slewis@ecf1.osuosl.org");
        </pre>
        Underneath the covers of the IDFactory.makeID method the following occurs:
        <ol>
-       <li>The name "xmpp.jive" is used to lookup it's associated Namespace class (in this case XMPPNamespace).  This lookup is done via the
+       <li>The name "ecf.xmpp" is used to lookup it's associated Namespace class (in this case XMPPNamespace).  This lookup is done via the
        Eclipse extension registry.
        <li>The XMPPNamespace.makeInstance method is called to manufacture an <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
        that is in the XMPPNamespace from the string "slewis@ecf1.osuosl.org"
