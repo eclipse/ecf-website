@@ -72,10 +72,152 @@
        Container instance creation is done via ECF-provided factory APIs.  For example, here's code to create 
        and IContainer instance:
        <pre>
-       IContainer container = ContainerFactory.getDefault().makeContainer("containertype");
+       IContainer container = ContainerFactory.getDefault().makeContainer(&lt;Container Type&gt;);
        </pre>
        Once constructed, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances may be used in the manner appropriate for the given application.  
-       <h4><a name="Instance Disposal"></a>Instance Disposal</h4>       
+       <br/><br/>
+       Here is a table of available ecf container types and their associated required plugins:<br>
+       <br/>
+<TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=96>
+	<COL WIDTH=109>
+	<COL WIDTH=164>
+	<COL WIDTH=266>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=96>
+				<P ALIGN=CENTER>Protocol</P>
+
+			</TH>
+			<TH WIDTH=109>
+				<P ALIGN=CENTER>Container Type</P>
+			</TH>
+			<TH WIDTH=164>
+				<P ALIGN=CENTER>Implementing Plugin</P>
+			</TH>
+			<TH WIDTH=266>
+
+				<P ALIGN=CENTER>Adapters</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>XMPP</FONT></P>
+
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.xmpp.smack</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.xmpp</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.presence.IPresenceContainer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>XMPP SSL</FONT></P>
+
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.xmpps.smack</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.xmpp</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.presence.IPresenceContainer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>ECF Generic Client</FONT></P>
+
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.generic.client</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>ECF Generic Server</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.generic.server</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>Zeroconf/Bonjour</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.discovery.jmdns</FONT></P>
+
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jmdns</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.discovery.IDiscoveryContainer</FONT></P>
+			</TD>
+		</TR>
+
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>IRC</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.irc.irclib</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.irc</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.presence.chat.IChatRoomManager</FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+
+				<P ALIGN=CENTER><FONT SIZE=2>JMS</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jms.tcp.client</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jms</FONT></P>
+
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+       <h4><a name="Container Instance Disposal"></a>Container Instance Disposal</h4>       
        When
        no longer required the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#dispose()">IContainer.dispose()</a> method should be called to release any resources associated with
        the container instance upon its construction or used during its lifecycle (e.g. network resources, etc).
@@ -97,7 +239,7 @@
        Here's an example code snippet that shows the creation and connection of an ECF container:
        <pre>
        // make container instance
-       IContainer cont = ContainerFactory.getDefault().makeContainer("org.eclipse.ecf.provider.generic.Client");
+       IContainer cont = ContainerFactory.getDefault().makeContainer("ecf.generic.client");
        // make targetID
        ID targetID = IDFactory.getDefault().makeID(cont.getConnectNamespace(),"ecftcp://ecf1.osuosl.org:3282/server");
        // then connect to targetID with null authentication data
