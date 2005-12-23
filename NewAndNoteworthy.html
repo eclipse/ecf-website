@@ -23,7 +23,8 @@
         Return to <a href="comm_resources.html">ECF communication resources page</a>
         <br><br>
         <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
-        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.4</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -38,50 +39,20 @@
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
   </TR>
-  <TR><TD colSpan=2><H2>ECF Shared Editor Improvements</H2></TD>
+  <TR><TD colSpan=2><H2>ECF Collaboration Example Improvements</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p></p>
         <P align=left>
-	<B>Event History for Open Editor and Share Selection Events</B>
+	<B>Co-Browse URL launches internal browser</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
     <p></p>
-      <P>Shared editor events are now presented in the text chat output.</P>
-      <p><img src="images/screens/sharededitorlinks.png"></p>
-      <p>Clicking on these links later will 'replay' the event, and allow participants to control their own
-      display open editor and share selection events.  For a description of how to use the open editor and share selection
-      features see <a href="NewAndNoteworthy_0.5.2.html">New and noteworthy for 0.5.2</a>.</p>
-      <p>This feature and the other 0.5.4 shared editor features are encapsulated in enhancement 
-      request <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=119206">119206</a>
-    </TD>
-  </TR>
-  
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p></p>
-        <P align=left>
-	<B>Local preferences for receiving open editor and share selection events</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p></p>
-      <P>Remote users opening editors on local machines can be disconcerting if prepared for it.  So that
-      users can control how open editor and share selection events are handled, preferences have been added for the 
-      collaboration example plugin <b>org.eclipse.ecf.example.collab</b>.  The first preference is whether or not shared
-      editor events are played immediately. </p> 
-      <p><img src="images/screens/sharededitoraskpref.png"></p>
-      <p>
-      The 'Play shared editor events immediately' preference, if checked, plays open editor events immediately when they are
-      received.  If unchecked, open editor
-      events are rather only placed into the text chat history (see above) and no editor will be launched.</p>
-      <p>The second preference is determines whether the user is asked (via a dialog) whether
-      editor should be opened.  This preference is only relevant when the preference described
-      above is checked.  If both preferences are checked, the user will be presented with the following
-      when a shared editor event is received</p>
-      <p><img src="images/screens/sharededitorcheckuserdialog.png"></p>
+      <P>The collaboration example context menu item 'Co-Browse URL...' now launches the 
+      internal browser on remote participant's machines</P>
+      <p><img src="images/screens/urlshareinternal.png"></p>
     </TD>
   </TR>
   
@@ -93,52 +64,19 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>XMPP Provider Implements ISharedObjectContainer</B>
+	<B>ECF provider container type name changes</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The XMPP provider now implements ISharedObjectContainer interface via:
-      <pre>
-      ISharedObjectContainer socontainer = (ISharedObjectContainer) xmppcontainer.getAdapter(ISharedObjectContainer.class);
-      </pre>
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/IPresenceContainer.html">IPresenceContainer</a> for
-      presence and chat access, and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a>.  The
-      ISharedObjectContainer implementation allows other applications to be built upon XMPP IM and XMPP multi-user chat protocol.  For example,
-      the org.eclipse.ecf.example.collab application is implemented upon the ISharedObjectContainer API, and soon it will be ported to run
-      on the XMPP implementation. </p>
+      <P>The container type names have changed for available ECF provider to have a consistent naming scheme.  
+      See <a href="http://www.eclipse.org/ecf/documentation.html#Instance%20Creation">here for container instance creation documentation</a></p>
     </TD>
   </TR>
 
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>ConnectContextFactory helper class</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The signature for <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#connect(org.eclipse.ecf.core.identity.ID,%20org.eclipse.ecf.core.security.IConnectContext)">IContainer.connect()</a>
-      requires an IConnectContext instance to provide the authentication context for connecting to a remote container.  In general
-      this context varies by the type of provider (i.e. some providers require password for authentication, others require other
-      credentials like certificates, etc).  A new helper class <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/security/ConnectContextFactory.html">
-      ConnectContextFactory</a> is now available to allow the easy creation of typical connect context...e.g. those that are based
-      upon password.  So code that used to need to explicitly create an IConnectContext instance:</p>
-      <pre>
-      ...
-      IConnectContext cc = createMyConnectContext(password);
-      container.connect(targetid, cc);
-      </pre>
-      <p>Can now accomplish the same result more simply by using the ConnectContextFactory</p>
-      <pre>
-      ...
-      container.connect(targetid, ConnectContextFactory.makePasswordConnectContext(password));
-      ...
-      </pre>
-    </TD>
-  </TR>
 
 </table>
+
+
 </body>
 </html>
