@@ -72,7 +72,7 @@
        Container instance creation is done via ECF-provided factory APIs.  For example, here's code to create 
        and IContainer instance:
        <pre>
-       IContainer container = ContainerFactory.getDefault().makeContainer(&lt;Container Type&gt;);
+       IContainer container = ContainerFactory.getDefault().createContainer(&lt;Container Type&gt;);
        </pre>
        Once constructed, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances may be used in the manner appropriate for the given application.  
        <br/><br/>
@@ -239,9 +239,9 @@
        Here's an example code snippet that shows the creation and connection of an ECF container:
        <pre>
        // make container instance
-       IContainer cont = ContainerFactory.getDefault().makeContainer("ecf.generic.client");
+       IContainer cont = ContainerFactory.getDefault().createContainer("ecf.generic.client");
        // make targetID
-       ID targetID = IDFactory.getDefault().makeID(cont.getConnectNamespace(),"ecftcp://ecf1.osuosl.org:3282/server");
+       ID targetID = IDFactory.getDefault().createID(cont.getConnectNamespace(),"ecftcp://ecf1.osuosl.org:3282/server");
        // then connect to targetID with null authentication data
        cont.connect(targetID,null);
        </pre>       
@@ -264,18 +264,18 @@
        constructing new ID instances via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/IIDFactory.html">IDFactory</a>.
        For example, to construct an instance of and XMPP ID, a client could use the following code:
        <pre>
-       ID newID = IDFactory.getDefault().makeID("ecf.xmpp","slewis@ecf1.osuosl.org");
+       ID newID = IDFactory.getDefault().createID("ecf.xmpp","slewis@ecf1.osuosl.org");
        </pre>
-       Underneath the covers of the IDFactory.makeID method the following occurs:
+       Underneath the covers of the IDFactory.createID method the following occurs:
        <ol>
        <li>The name "ecf.xmpp" is used to lookup it's associated Namespace class (in this case XMPPNamespace).  This lookup is done via the
        Eclipse extension registry.
-       <li>The XMPPNamespace.makeInstance method is called to manufacture an <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
+       <li>The XMPPNamespace.createInstance method is called to manufacture an <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
        that is in the XMPPNamespace from the string "slewis@ecf1.osuosl.org"
        <li>The new <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a> is
        returned to the caller
        </ol>
-       Note that there are other IDFactory.makeID(...) methods that allow parameters other than Strings to be used for 
+       Note that there are other IDFactory.createID(...) methods that allow parameters other than Strings to be used for 
        ID construction (e.g. URIs).
        <br>
        <h4><a name="Extensibility"></a>Container Extensibility through Adapters</h4>
@@ -330,9 +330,9 @@
        <pre>
          // Create the new container 
 		IContainer client = ContainerFactory
-				.getDefault().makeContainer(containerType);
+				.getDefault().createContainer(containerType);
 		// Create the targetID 
-		ID targetID = IDFactory.getDefault().makeID(client.getConnectNamespace(), uri);
+		ID targetID = IDFactory.getDefault().createID(client.getConnectNamespace(), uri);
 	    // Check for IPresenceContainer....if it is, setup presence UI, if not setup shared object container
 		IPresenceContainer pc = (IPresenceContainer) client
 				.getAdapter(IPresenceContainer.class);
