@@ -17,14 +17,14 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.5.4 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.6.0 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
         <br><br>
         <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
         <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
-        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.4</a>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -39,41 +39,115 @@
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
   </TR>
-  <TR><TD colSpan=2><H2>ECF Collaboration Example Improvements</H2></TD>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p></p>
-        <P align=left>
-	<B>Co-Browse URL launches internal browser</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p></p>
-      <P>The collaboration example context menu item 'Co-Browse URL...' now launches the 
-      internal browser on remote participant's machines</P>
-      <p><img src="images/screens/urlshareinternal.png"></p>
-    </TD>
-  </TR>
-  
-  <TR> <!----------------------------------------------------->
-    <TD colSpan=2> <HR> </TD>
-  </TR>
   <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
+
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>ECF provider container type name changes</B>
+	<B>New Extension Point:  sharedObjectFactory</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The container type names have changed for available ECF provider to have a consistent naming scheme.  
-      See <a href="http://www.eclipse.org/ecf/documentation.html#Instance%20Creation">here for container instance creation documentation</a></p>
+      <P>There is now a new ECF extension point: sharedObjectFactory.  This extension point allows plugins to define extensions to the
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectFactory.html">SharedObjectFactory</a>.
+      Here's an example extension definition for this extension point: 
+      <pre>
+   &lt;extension
+         point="org.eclipse.ecf.sharedObjectFactory"&gt;
+      &lt;sharedObjectFactory
+            class="org.eclipse.ecf.test.provider.TestSharedObjectInstantiator"
+            name="ecf.test.sharedobjectfactory"/&gt;
+   &lt;/extension>
+      </pre>
+      This extension sets up the class <b>org.eclipse.ecf.test.provider.TestSharedObjectInstantiator</b> as
+      the extension factory associated with the name "ecf.test.sharedobjectfactory".
+      Note that the given class must implement the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/ISharedObjectInstantiator.html">ISharedObjectInstantiator</a> interface.
+      See also documentation in the sharedObjectFactory extension point schema.
+      </p>
     </TD>
   </TR>
 
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Factory method name changes</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>For consistency with Eclipse Platform conventions, all ECF factory method names previously of the form 'makeX' have
+      been changed to to 'createX'.  So, for example, in the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainerFactory.html">IContainerFactory</a>
+      the <b>makeContainer</b> methods have been changed to <b>createContainer</b>.  In the <a href="">IIDFactory</a> <b>makeID</b> has been changed to <b>createID</b>.
+       </p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>ContainerDescription class renamed to ContainerTypeDescription</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>The <b>ContainerDescription</b> class has been renamed to <b>ContainerTypeDescription</b> to be more descriptive of the description's function.</p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>SharedObjectDescription class refactored</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>The <b>SharedObjectDescription</b> class has been refactored into three (super and sub) classes:  
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectTypeDescription.html">SharedObjectTypeDescription</a> 
+      for describing the type of a given shared object,
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectDescription.html">SharedObjectDescription</a>
+      for describing shared object instances,
+      and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ReplicaSharedObjectDescription.html">ReplicaSharedObjectDescription</a>.  
+      SharedObjectDescription instances are used (e.g.) for creating instances within a container, as in <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectManager.html#createSharedObject(org.eclipse.ecf.core.SharedObjectDescription)">ISharedObjectManager.createSharedObject()</a>.
+      ReplicaSharedObjectDescription instances are used to send messages to remote containers for creating replicas of a given shared object...as in
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html#sendCreate(org.eclipse.ecf.core.identity.ID,%20org.eclipse.ecf.core.ReplicaSharedObjectDescription)">ISharedObjectContext.sendCreate()</a>.</p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Generic Server Changes</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>The ECF 'generic' server available in the <b>org.eclipse.ecf.provider</b> plugin has a number of changes, which make it
+      incompatible with clients previous to 0.6.0.  Users of the ecftcp://ecf.eclipse.org:3282/server collaboration group will
+      need to upgrade to 0.6.0 version of clients.  See <a href="http://www.eclipse.org/ecf/downloads.html">here</a> to get the 0.6.0 code.</p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>JmDNS Discovery Provider Implementation</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>The JmDNS discovery provider plugin is now available as the primary implementation of the <b>org.eclipse.ecf.discovery</b> API.
+      Several bugs in the underlying Zeroconf/Bonjour protocol implementation were fixed for the 0.6.0 release, including a bug that
+      would cause the plugin to hang on shutdown.</p>
+    </TD>
+  </TR>
 
 </table>
 
