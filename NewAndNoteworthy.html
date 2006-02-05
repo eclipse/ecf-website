@@ -17,14 +17,15 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.6.0 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.6.2 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
         <br><br>
         <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
         <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
-        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -45,26 +46,44 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>New Extension Point:  sharedObjectFactory</B>
+	<B>Revised Datashare API</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>There is now a new ECF extension point: sharedObjectFactory.  This extension point allows plugins to define extensions to the
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectFactory.html">SharedObjectFactory</a>.
-      Here's an example extension definition for this extension point: 
+      <P>The revised datashare API <b>org.eclipse.ecf.datashare</b> allows clients
+      to create channels for distributing arbitrary data.  Here's some example code showing the
+      creation of a channel and use to distribute some test data: 
       <pre>
-   &lt;extension
-         point="org.eclipse.ecf.sharedObjectFactory"&gt;
-      &lt;sharedObjectFactory
-            class="org.eclipse.ecf.test.provider.TestSharedObjectInstantiator"
-            name="ecf.test.sharedobjectfactory"/&gt;
-   &lt;/extension>
+// Create container
+IContainer container = ContainerFactory.getDefault().createContainer(
+		CHANNEL_CONTAINER);
+// Connect container
+container.connect(serverID, null);
+
+// Get IChannelContainer adapter
+IChannelContainer channelContainer = (IChannelContainer) container
+		.getAdapter(IChannelContainer.class);
+// Create channel listener
+IChannelListener listener = new IChannelListener() {
+	public void handleChannelEvent(IChannelEvent event) {
+		System.out.println("handleChannelEvent(evt=" + event + ")");
+	}
+};
+// Create channel named "mychannel"
+IChannel channel = channelContainer.createChannel(IDFactory.getDefault().createStringID("channel1"), listener,
+		new HashMap());
+// Send data on channel
+for (int i = 0; i < 10; i++) {
+	channel.sendMessage("hello".getBytes());
+	Thread.sleep(200);
+}
       </pre>
-      This extension sets up the class <b>org.eclipse.ecf.test.provider.TestSharedObjectInstantiator</b> as
-      the extension factory associated with the name "ecf.test.sharedobjectfactory".
-      Note that the given class must implement the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/ISharedObjectInstantiator.html">ISharedObjectInstantiator</a> interface.
-      See also documentation in the sharedObjectFactory extension point schema.
+      See the javadocs for the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/package-summary.html">org.eclipse.ecf.datashare package</a>
+      , and the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/events/package-summary.html">org.eclipse.ecf.datashare.events</a>
+      package. 
       </p>
     </TD>
   </TR>
@@ -73,79 +92,75 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Factory method name changes</B>
+	<B>New Fileshare API</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>For consistency with Eclipse Platform conventions, all ECF factory method names previously of the form 'makeX' have
-      been changed to to 'createX'.  So, for example, in the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainerFactory.html">IContainerFactory</a>
-      the <b>makeContainer</b> methods have been changed to <b>createContainer</b>.  In the <a href="">IIDFactory</a> <b>makeID</b> has been changed to <b>createID</b>.
-       </p>
-    </TD>
-  </TR>
+      <P>The new Fileshare API provides clients with a mechanism for asynchronously sending and retrieving files.  Here's 
+      some example code that sends a file to all of the other connected participants within the given <b>IContainer</b>
+      instance:
+      <pre>
+// Create container
+IContainer container = ContainerFactory.getDefault().createContainer(
+		FILESHARE_CONTAINER);
+// Connect container
+container.connect(serverID, null);
 
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>ContainerDescription class renamed to ContainerTypeDescription</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The <b>ContainerDescription</b> class has been renamed to <b>ContainerTypeDescription</b> to be more descriptive of the description's function.</p>
-    </TD>
-  </TR>
+// Get fileshare adapter
+IFileShareContainer fileshareContainer = (IFileShareContainer) container
+		.getAdapter(IFileShareContainer.class);
+// Create fileshare listener
+IFileShareListener listener = new IFileShareListener() {
+	public void handleFileShareEvent(IFileShareEvent event) {
+		System.out.println("handleChannelEvent(" + event + ")");
+	}
+};
+// Create ID for new fileshare instance
+ID fileshareID = IDFactory.getDefault().createGUID();
+// Create ID to specify remote file name...in this case make remote name same as local name
+ID remoteFileID = IDFactory.getDefault().createID(
+		fileshareContainer.getFileNamespace(), filename);
+// Create fileshare instance in container
+IFileShare fileshare = fileshareContainer.createSender(fileshareID,
+		new FileInputStream(filename), remoteFileID, listener,
+		new HashMap());
+// Start sending asynchronously...this actualy sends the local file 'filename'
+// to all in container
+fileshare.start();
+      </pre>
+      Here is example code that asynchronously retrieves a file from a web server:
+      <pre>
+// Create container
+IContainer container = ContainerFactory.getDefault().createContainer(
+		FILESHARE_CONTAINER);
+// Connect container
+container.connect(serverID, null);
 
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>SharedObjectDescription class refactored</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The <b>SharedObjectDescription</b> class has been refactored into three (super and sub) classes:  
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectTypeDescription.html">SharedObjectTypeDescription</a> 
-      for describing the type of a given shared object,
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/SharedObjectDescription.html">SharedObjectDescription</a>
-      for describing shared object instances,
-      and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ReplicaSharedObjectDescription.html">ReplicaSharedObjectDescription</a>.  
-      SharedObjectDescription instances are used (e.g.) for creating instances within a container, as in <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectManager.html#createSharedObject(org.eclipse.ecf.core.SharedObjectDescription)">ISharedObjectManager.createSharedObject()</a>.
-      ReplicaSharedObjectDescription instances are used to send messages to remote containers for creating replicas of a given shared object...as in
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContext.html#sendCreate(org.eclipse.ecf.core.identity.ID,%20org.eclipse.ecf.core.ReplicaSharedObjectDescription)">ISharedObjectContext.sendCreate()</a>.</p>
-    </TD>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Generic Server Changes</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The ECF 'generic' server available in the <b>org.eclipse.ecf.provider</b> plugin has a number of changes, which make it
-      incompatible with clients previous to 0.6.0.  Users of the ecftcp://ecf.eclipse.org:3282/server collaboration group will
-      need to upgrade to 0.6.0 version of clients.  See <a href="http://www.eclipse.org/ecf/downloads.html">here</a> to get the 0.6.0 code.</p>
-    </TD>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>JmDNS Discovery Provider Implementation</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The JmDNS discovery provider plugin is now available as the primary implementation of the <b>org.eclipse.ecf.discovery</b> API.
-      Several bugs in the underlying Zeroconf/Bonjour protocol implementation were fixed for the 0.6.0 release, including a bug that
-      would cause the plugin to hang on shutdown.</p>
+// Get fileshare adapter
+IFileShareContainer fileshareContainer = (IFileShareContainer) container
+		.getAdapter(IFileShareContainer.class);
+// Create fileshare listener
+IFileShareListener listener = new IFileShareListener() {
+	public void handleFileShareEvent(IFileShareEvent event) {
+		// Note...here is where the retrieved file contents
+		// Should be saved...when IFileShareRetrieveData events are received
+		System.out.println("handleChannelEvent(" + event + ")");
+	}
+};
+// Create ID for new fileshare instance
+ID fileshareID = IDFactory.getDefault().createGUID();
+// Create ID for the remote file...e.g. fileurl = 'http://www.eclipse.org/index.html'
+ID fileID = IDFactory.getDefault().createID(
+		fileshareContainer.getFileNamespace(), fileurl);
+// Create fileshare instance in container
+IFileShare fileshare = fileshareContainer.createRetriever(fileshareID,
+		fileID, listener, new HashMap());
+// Start receiving asynchronously...this actualy retrieves the remote file
+// 'filename'
+fileshare.start();
+      </pre>
+      </p>
     </TD>
   </TR>
 
