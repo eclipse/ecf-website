@@ -22,5 +22,10 @@
 		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.provider,org.eclipse.ecf.test.provider"/>
 		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.ui,org.eclipse.ecf.test.ui"/>
 		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.ui,org.eclipse.ecf.ui"/>
+		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.library,org.eclipse.ecf.example.library"/>
+		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.sdo.editor,org.eclipse.ecf.example.sdo.editor"/>
+		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.sdo.gefeditor,org.eclipse.ecf.example.sdo.gefeditor"/>
+		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.sdo,org.eclipse.ecf.sdo"/>
+		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.datashare,org.eclipse.ecf.test.datashare"/>
 	</provider>
 </psf>
