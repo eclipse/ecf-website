@@ -27,5 +27,6 @@
 		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.sdo.gefeditor,org.eclipse.ecf.example.sdo.gefeditor"/>
 		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.sdo,org.eclipse.ecf.sdo"/>
 		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.datashare,org.eclipse.ecf.test.datashare"/>
+		<project reference="1.0,:pserver:dev.eclipse.org:/home/technology,org.eclipse.ecf/features/org.eclipse.ecf.server-feature,org.eclipse.ecf.server-feature"/>
 	</provider>
 </psf>
