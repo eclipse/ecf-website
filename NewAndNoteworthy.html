@@ -25,7 +25,8 @@
         <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
         <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
         <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
-        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -46,134 +47,21 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Revised Datashare API</B>
+	<B>VOIP Call Setup API (experimental)</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The revised datashare API <b>org.eclipse.ecf.datashare</b> allows clients
-      to create channels for distributing arbitrary data.  Here's some example code showing the
-      creation of a channel and use to distribute some test data: 
-      <pre>
-// Create container
-IContainer container = ContainerFactory.getDefault().createContainer(
-		CHANNEL_CONTAINER);
-// Connect container
-container.connect(serverID, null);
-
-// Get IChannelContainer adapter
-IChannelContainer channelContainer = (IChannelContainer) container
-		.getAdapter(IChannelContainer.class);
-// Create channel listener
-IChannelListener listener = new IChannelListener() {
-	public void handleChannelEvent(IChannelEvent event) {
-		System.out.println("handleChannelEvent(evt=" + event + ")");
-	}
-};
-// Create channel named "mychannel"
-IChannel channel = channelContainer.createChannel(IDFactory.getDefault().createStringID("channel1"), listener,
-		new HashMap());
-// Send data on channel
-for (int i = 0; i < 10; i++) {
-	channel.sendMessage("hello".getBytes());
-	Thread.sleep(200);
-}
-      </pre>
-      See the javadocs for the 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/package-summary.html">org.eclipse.ecf.datashare package</a>
-      , and the 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/events/package-summary.html">org.eclipse.ecf.datashare.events</a>
-      package. 
+      <p>A new experimental API for doing VOIP call setup has been introduced in plugin <b>org.eclipse.ecf.call</b>.  This API is still under development,
+      and no provider implementations yet exist that implement the ICallContainer entry point adapter interface.  The initial API is being released to
+      get community feedback to guide the further development of the API and the selection/ordering of provider implementations.</p>
+      <p>
+            See the javadocs for the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/call/package-summary.html">org.eclipse.ecf.call</a>, and the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/call/events/package-summary.html">org.eclipse.ecf.call.events</a>
+      <p>Please provide any thoughts/comments/feedback to either the ecf-dev@eclipse.org mailing list or the <b>eclipse.technology.ecf</b> newsgroup.  
+      For access to these forums see <a href="http://www.eclipse.org/ecf/resources.html">here</a>.
       </p>
-    </TD>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>New Fileshare API</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The new Fileshare API provides clients with a mechanism for asynchronously sending and retrieving files.  Here's 
-      some example code that sends a file to all of the other connected participants within the given <b>IContainer</b>
-      instance:
-      <pre>
-// Create container
-IContainer container = ContainerFactory.getDefault().createContainer(
-		FILESHARE_CONTAINER);
-// Connect container
-container.connect(serverID, null);
-
-// Get fileshare adapter
-IFileShareContainer fileshareContainer = (IFileShareContainer) container
-		.getAdapter(IFileShareContainer.class);
-// Create fileshare listener
-IFileShareListener listener = new IFileShareListener() {
-	public void handleFileShareEvent(IFileShareEvent event) {
-		System.out.println("handleChannelEvent(" + event + ")");
-	}
-};
-// Create ID for new fileshare instance
-ID fileshareID = IDFactory.getDefault().createGUID();
-// Create ID to specify remote file name...in this case make remote name same as local name
-ID remoteFileID = IDFactory.getDefault().createID(
-		fileshareContainer.getFileNamespace(), filename);
-// Create fileshare instance in container
-IFileShare fileshare = fileshareContainer.createSender(fileshareID,
-		new FileInputStream(filename), remoteFileID, listener,
-		new HashMap());
-// Start sending asynchronously...this actualy sends the local file 'filename'
-// to all in container
-fileshare.start();
-      </pre>
-      Here is example code that asynchronously retrieves a file from a web server:
-      <pre>
-// Create container
-IContainer container = ContainerFactory.getDefault().createContainer(
-		FILESHARE_CONTAINER);
-// Connect container
-container.connect(serverID, null);
-
-// Get fileshare adapter
-IFileShareContainer fileshareContainer = (IFileShareContainer) container
-		.getAdapter(IFileShareContainer.class);
-// Create fileshare listener
-IFileShareListener listener = new IFileShareListener() {
-	public void handleFileShareEvent(IFileShareEvent event) {
-		// Note...here is where the retrieved file contents
-		// Should be saved...when IFileShareRetrieveData events are received
-		System.out.println("handleChannelEvent(" + event + ")");
-	}
-};
-// Create ID for new fileshare instance
-ID fileshareID = IDFactory.getDefault().createGUID();
-// Create ID for the remote file...e.g. fileurl = 'http://www.eclipse.org/index.html'
-ID fileID = IDFactory.getDefault().createID(
-		fileshareContainer.getFileNamespace(), fileurl);
-// Create fileshare instance in container
-IFileShare fileshare = fileshareContainer.createRetriever(fileshareID,
-		fileID, listener, new HashMap());
-// Start receiving asynchronously...this actualy retrieves the remote file
-// 'filename'
-fileshare.start();
-      </pre>
-      </p>
-    </TD>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>New example RobotApplication added to example clients</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The <b>org.eclipse.ecf.example.clients</b> plugin has a new XMPP-based 'robot' in the <b>RobotApplication</b> class.</p>
     </TD>
   </TR>
 
