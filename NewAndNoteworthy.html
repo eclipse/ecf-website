@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.6.2 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.7.5 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
@@ -26,7 +26,8 @@
         <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
         <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
         <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
-        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
+        <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -38,16 +39,25 @@
 </table>
 
 <table>
-  <TR> <!----------------------------------------------------->
-    <TD colSpan=2> <HR> </TD>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>0.7.0: Added Graphshare Example Back into Build/Update Site</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Added build/deploy of graphshare example application (real-time shared manipulation of EMF and GEF
+      graphical model).  See <a href="http://www.eclipse.org/ecf/downloads.html">download page</a></p>
+    </TD>
   </TR>
-  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>VOIP Call Setup API (experimental)</B>
+	<B>0.7.0: Added Call API feature and included call API plugin in ECF SDK</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -65,6 +75,67 @@
     </TD>
   </TR>
 
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>0.7.1: Added org.eclipse.ecf.server plugin</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Added new server plugin org.eclipse.ecf.server.  This new plugin allows the running
+      of an ECF generic server within the <a href="http://www.eclipse.org/equinox/incubator/server/">Equinox Incubator under 'Embedding in Servlet Container'</a></p>.
+      When started by the Equinox platform (via console), the org.eclipse.ecf.server plugin reads the conf/server.xml 
+      configuration file and starts the specified servers listening on the specified ports.  Currently the ECF generic server at
+      ecftcp://ecf.eclipse.org:3282/server is run in this manner.</p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>0.7.2: Fixes for IRC provider spontaneous disconnects</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>IRC provider available <a href="http://ecf1.osuosl.org">available here</a> was having problems with spontaneous client disconnects
+      caused by a mishandling of certain IRC events</p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>0.7.3: New Workspace Connect Dialog</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>New connect dialog for workspace connect:  <br><br>
+      <IMG src="images/screens/connect.png">      </p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>0.7.3: Connect dialog optionally remembers password</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Connect dialog will optionally remember password and store as user preference.
+      This is disabled by default, but to enable password storage go to Window->Preferences...->ECF Collaboration.  <b>NOTE:  If enabled,
+      passwords
+      stored in cleartext in preference store and so should not be considered secure</b>:  <br><br>
+      <IMG src="images/screens/storepasswords.png">      </p>
+    </TD>
+  </TR>
 
 </table>
 
