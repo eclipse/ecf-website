@@ -12,6 +12,7 @@ org.eclipse.ecf.core.user
 org.eclipse.ecf.core.util
 org.eclipse.ecf.datashare
 org.eclipse.ecf.datashare.events
+org.eclipse.ecf.datashare.mergeable
 org.eclipse.ecf.discovery
 org.eclipse.ecf.fileshare
 org.eclipse.ecf.fileshare.events
