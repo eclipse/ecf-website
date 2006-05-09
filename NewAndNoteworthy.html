@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.7.6 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.8.0 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
@@ -28,7 +28,8 @@
         <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
         <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
         <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
-        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.6</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -40,21 +41,26 @@
 </table>
 
 <table>
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF New and Cool Things</H2></TD>
+
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>IContainer.dispose() Called by Framework</B>
+	<B>New Example App:  Real-time Shared Text Editing</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <p>Before ECF 0.7.6 stable it was necessary for clients that created <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances 
-      (via <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ContainerFactory.html">ContainerFactory</a>), to call
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#dispose()">IContainer.dispose()</a> on their own when finished using
-      the IContainer.  Now, however, ECF will call dispose() on all IContainer instances created via the ECF ContainerFactory to reclaim any system resources
-      used by the IContainer instance.  Clients do not need to call IContainer.dispose() on any IContainer instances that they create via the ECF ContainerFactory.
-      Only if IContainer instances are created via some other means (e.g. directly via constructor), are clients then responsible for calling dispose()</p>
+      <P>There is a new example plugin: <b>org.eclipse.ecf.example.collab.editor</b>.  This plugin provides an example
+      of real-time shared editing of text files.  See <a href="http://www.eclipse.org/ecf/downloads.html">here</a> to download and install
+      (see "Shared Text Editor"), and 
+      <a href="http://wiki.eclipse.org/index.php/Example_Shared_Text_Editor">here</a> for an explanation of how to 
+      setup and run this example application.</P>
+      <img src="images/screens/sharededitor.jpg">
     </TD>
   </TR>
 
@@ -62,15 +68,15 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>ECF Core Plugin Dynamic Aware</B>
+	<B>Add Buddy Menu Item</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <p>The ECF core plugin (org.eclipse.ecf) has been made fully dynamic aware.  
-      As plugins that extend ECF extension points are installed and uninstalled, the ECF extension 
-      caches are automatically updated.  So, for example, for the ECF container factory extension point, as extension plugins are 
-      added the ECF ContainerFactory will automatically expose to clients the ability to create new types of IContainer instances.</p>
+      <P>There is now an 'Add Buddy' menu item in the context menu for accounts
+      in ECF buddy list view.  This supports the sending of an authorization request to 
+      a propective buddy.</P>
+      <img src="images/screens/addbuddy.png">
     </TD>
   </TR>
 
@@ -78,32 +84,108 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<b>New Tutorial Plugin:  <i>org.eclipse.ecf.tutorial</i></B>
+	<B>Change Password Menu Item</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <p>New ECF plugin <b>org.eclipse.ecf.tutorial</b>.  This plugin provides example clients created for 
-      the <a href="http://www.eclipsecon.org/2006/Sub.do?id=46">ECF EclipseCon 2006 tutorial</a>.  To retrieve this plugin, see the 
-      <a href="http://www.eclipse.org/ecf/resources.html">ECF Dev Resources page</a> Anonymous CVS access to ECF source.  The clients
-      include a simple datashare test client, and a simple datashare-based whiteboard application refered to as 'scribbleshare'.  
+      <P>There is now an 'Change Password' menu item in the context menu for accounts
+      in ECF buddy listview.  This supports the changing of a password on XMPP servers.</P>
+      <img src="images/screens/changepassword.png">
+    </TD>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>New Extension Point:  org.eclipse.ecf.startup</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>There is now a new ECF extension point <b>org.eclipse.ecf.startup</b>.  This extension point allows plugins to be
+      called in a separate Job during ECF startup.  This so that ECF client applications can create IContainer
+      instances and connect to remote services upon ECF startup.  Extensions must implement the
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/start/IECFStart.html">IECFStart</a> interface.
+      Upon ECF start, the <b>startup</b> method will be called via a separate Thread/Job.
+      Here's an example extension definition for this extension point: 
+      <pre>
+   &lt;extension
+         point="org.eclipse.ecf.startup">
+      &lt;ecfstart
+            class="org.eclipse.ecf.example.collab.start.CollabStart"/>
+   &lt;/extension>
+      </pre>
+      At ECF startup time the <b>org.eclipse.ecf.example.collab.start.CollabStart.startup</b> method will be called by a new Job.  The ProgressMonitor
+      parameter will be non-null.
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Removed unnecessary method in org.eclipse.ecf.core.events.ISharedObjectActivatedEvent</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>Previously, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/events/ISharedObjectActivatedEvent.html">ISharedObjectActivatedEvent</a>
+      had a method getGroupMemberIDs().  This method is superfluous so removed from ISharedObjectActivatedEvent and implementing class org.eclipse.ecf.core.events.SharedObjectActivatedEvent.
+       </p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Made IContainerEvent notifications for ISharedObjectContainer consistent</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>Made the IContainer event notifications include shared object activated (ISharedObjectActivatedEvent), deactivated (ISharedObjectDeactivatedEvent)
+      consistent and added to <b>org.eclipse.ecf.provider</b> implementation the appropriate construction and delivery of these events via any listeners
+      added to the IContainer via <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#addListener(org.eclipse.ecf.core.IContainerListener,%20java.lang.String)">IContainer.addListener</a></p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Refactored Presence API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>Refactored the interfaces in the <b>org.eclipse.ecf.presence</b> API, specifically in the
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/package-summary.html">org.eclipse.ecf.presence.chat package</a>
+      <p>Changes to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IChatRoomManager.html">IChatRoomManager</a></p>
+      <ul>
+      <li>ADDED <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IChatRoomManager.html#getParent()">IChatRoomManager.getParent()</a></li>
+	  <li>ADDED <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IChatRoomManager.html#getChildren()">IChatRoomManger.getChildren()</a></li>
+	  <li>REMOVED createChatRoomContainer()</li>
+	  </ul>
+      <p>Changes to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IRoomInfo.html">IRoomInfo</a></p>
+      <ul>
+      <li>Reparented IRoomInfo to extend IAdaptable</a></li>
+	  <li>ADDED <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IRoomInfo.html#createChatRoomContainer()">IRoomInfo.createChatRoomContainer()</a></li>
+	  </ul>
+	  Now, the typical way to connect to a chat room is shown by this example code:
+	  <pre>
+	  IRoomInfo roominfo = chatroommanager.getChatRoomInfo("roomname");
+	  IChatRoomContainer chatroom = roominfo.createChatRoomContainer();
+	  chatroom.connect(roominfo.getRoomID(),null);
+	  </pre>
       </p>
-    </TD>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>EclipseCon ECF Tutorial and ECF Short Talk Presentations</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>At EclipseCon 2006, there was an <a href="http://www.eclipsecon.org/2006/Sub.do?id=46">ECF Tutorial</a>, and an 
-      <a href="http://www.eclipsecon.org/2006/Sub.do?id=385">ECF short talk</a>.  The presentation 
-      materials for the tutorial is <a href="presentations/EclipseCon.2006.ECF.Tutorial.42.pdf">here</a> 
-      and for the short talk <a href="presentations/EclipseCon.2006.ECF.Talk.385.pdf">here</a></p>
     </TD>
   </TR>
 
