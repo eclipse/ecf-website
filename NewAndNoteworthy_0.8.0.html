@@ -1,0 +1,216 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology subproject</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>0.8.0 Stable Release</font>
+        <br><br><br>
+        Return to <a href="downloads.html">ECF download page</a></br>
+        Return to <a href="comm_resources.html">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
+        <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.6</a>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF New Applications and Features</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>New Example App:  Real-time Shared Text Editing</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>There is a new example plugin: <b>org.eclipse.ecf.example.collab.editor</b>.  This plugin provides an example
+      of real-time shared editing of text files.  See <a href="http://www.eclipse.org/ecf/downloads.html">here</a> to download and install
+      (see "Shared Text Editor"), and 
+      <a href="http://wiki.eclipse.org/index.php/Example_Shared_Text_Editor">here</a> for an explanation of how to 
+      setup and run this example application.</P>
+      <img src="images/screens/sharededitor.jpg">
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Add Buddy Menu Item</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>There is now an 'Add Buddy' menu item in the context menu for accounts
+      in ECF buddy list view.  This supports the sending of an authorization request to 
+      a propective buddy.</P>
+      <img src="images/screens/addbuddy.png">
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Change Password Menu Item</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>There is now an 'Change Password' menu item in the context menu for accounts
+      in ECF buddy listview.  This supports the changing of a password on XMPP servers.</P>
+      <img src="images/screens/changepassword.png">
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Autologin for ECF Accounts</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>It's now possible to have ECF automatically login in to a set of accounts upon Eclipse startup.  To have ECF login to a given account,
+      simply open the ECF 'Connect' dialog and select the 'Login automatically at startup' check box before choosing OK:
+      </P>
+      <img src="images/screens/autologin.png">
+      <p></p>
+      The next time that you start Eclipse, this account will automatically be logged into with the given information.  To remove an automatic login 
+      simply login again with the autologin check box left unselected.  <b>NOTE</b>: the password information is stored in cleartext in the Preference store for
+      a given workspace, and so is insecure.
+    </TD>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>New Extension Point:  org.eclipse.ecf.startup</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>There is now a new ECF extension point <b>org.eclipse.ecf.startup</b>.  This extension point allows plugins to be
+      called in a separate Job during ECF startup.  This so that ECF client applications can create IContainer
+      instances and connect to remote services upon ECF startup.  Extensions must implement the
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/start/IECFStart.html">IECFStart</a> interface.
+      Upon ECF start, the <b>startup</b> method will be called via a separate Thread/Job.
+      Here's an example extension definition for this extension point: 
+      <pre>
+   &lt;extension
+         point="org.eclipse.ecf.startup">
+      &lt;ecfstart
+            class="org.eclipse.ecf.example.collab.start.CollabStart"/>
+   &lt;/extension>
+      </pre>
+      At ECF startup time the <b>org.eclipse.ecf.example.collab.start.CollabStart.startup</b> method will be called by a new Job.  The ProgressMonitor
+      parameter will be non-null.
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Removed unnecessary method in org.eclipse.ecf.core.events.ISharedObjectActivatedEvent</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>Previously, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/events/ISharedObjectActivatedEvent.html">ISharedObjectActivatedEvent</a>
+      had a method getGroupMemberIDs().  This method is superfluous so removed from ISharedObjectActivatedEvent and implementing class org.eclipse.ecf.core.events.SharedObjectActivatedEvent.
+       </p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Made IContainerEvent notifications for ISharedObjectContainer consistent</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>Made the IContainer event notifications include shared object activated (ISharedObjectActivatedEvent), deactivated (ISharedObjectDeactivatedEvent)
+      consistent and added to <b>org.eclipse.ecf.provider</b> implementation the appropriate construction and delivery of these events via any listeners
+      added to the IContainer via <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#addListener(org.eclipse.ecf.core.IContainerListener,%20java.lang.String)">IContainer.addListener</a></p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Refactored Presence API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>Refactored the interfaces in the <b>org.eclipse.ecf.presence</b> API, specifically in the
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/package-summary.html">org.eclipse.ecf.presence.chat package</a>
+      <p>Changes to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IChatRoomManager.html">IChatRoomManager</a></p>
+      <ul>
+      <li>ADDED <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IChatRoomManager.html#getParent()">IChatRoomManager.getParent()</a></li>
+	  <li>ADDED <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IChatRoomManager.html#getChildren()">IChatRoomManger.getChildren()</a></li>
+	  <li>REMOVED createChatRoomContainer()</li>
+	  </ul>
+      <p>Changes to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IRoomInfo.html">IRoomInfo</a></p>
+      <ul>
+      <li>Reparented IRoomInfo to extend IAdaptable</a></li>
+	  <li>ADDED <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/chat/IRoomInfo.html#createChatRoomContainer()">IRoomInfo.createChatRoomContainer()</a></li>
+	  </ul>
+	  Now, the typical way to connect to a chat room is shown by this example code:
+	  <pre>
+	  IRoomInfo roominfo = chatroommanager.getChatRoomInfo("roomname");
+	  IChatRoomContainer chatroom = roominfo.createChatRoomContainer();
+	  chatroom.connect(roominfo.getRoomID(),null);
+	  </pre>
+      </p>
+    </TD>
+  </TR>
+
+</table>
+
+
+</body>
+</html>
