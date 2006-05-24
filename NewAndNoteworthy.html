@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.8.1 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.8.2 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
@@ -30,7 +30,8 @@
         <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
         <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
         <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.6</a><br>
-        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a>
+        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a><br>
+        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.1</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -46,35 +47,86 @@
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
   </TR>
-  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
+  <TR><TD colSpan=2><H2>New Features</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
         <P align=left>
-	<B>Datashare API for Channel Lifecycle Events</B>
+	<B>Preference Page for Managing Automatic Logins</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>IChannel lifecycle events are now delivered via: <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/IChannelContainerListener.html">IChannelContainerListener</a>.
-      Methods <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/IAbstractChannelContainer.html#addChannelContainerListener(org.eclipse.ecf.datashare.IChannelContainerListener)">IChannelContainer.addChannelContainerListener</a>
-      and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/IAbstractChannelContainer.html#removeChannelContainerListener(org.eclipse.ecf.datashare.IChannelContainerListener)">IChannelContainer.removeChannelContainerListener</a>
-      have been added to <b>IChannelContainer</b> allow the registration of listeners prior to the creation of <b>IChannels</b> within the <b>IChannelContainer</b>.  
-      </p><p>Datashare provider implementations <b>must</b> deliver IChannelContainerListeners instances of the following events when IChannel instances are
-      created, either via local calls to IChannelContainer.createChannel, or via remote calls to create replica <b>IChannels</b>.  In either the local or remote case,
-      the following events are to be
-      delivered to IChannelContainerListeners:</p>
-      <p></p>
-      <p><b>IChannelContainerChannelActivatedEvent</b> - delivered when an IChannel within this container is first activated</p>
-      <p><b>IChannelContainerChannelDeactivatedEvent</b> - delivered when an IChannel within this container is deactivated</p>
-      Instances of these events must be delivered synchronously to all <b>IChannelContainerListeners</b>.  In the case of the <b>IChannelContainerChannelActivatedEvent</b>, the event should
-      be delivered to all <b>IChannelContainerListeners</b> before any other messages are delivered to the channel.</p>
-      <p>Note that the reception of the <b>IChannelContainerChannelActivatedEvent</b> can be responded to by (for example), setting the IChannelListener on 
-      the channel to the desired channel message handler (for handling <b>IChannelMessageEvents</b>). 
-      
-      </p>
-      <p>See example test code in the <b>org.eclipse.ecf.test.datashare</b> plugin, in the <b>DatashareFixedChannelTest</b>, <b>DatashareDynamicChannelTest</b>, and <b>DatashareCustomChannelTest</b> test classes.</p>
+      <P>A preference page underneath the 'Team' category has been added to allow the removal of automatic logins.  </p>
+     <p><img src="images/screens/autologinpref.png"></p>
+     <p></p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>New Test Case for Zeroconf Discovery</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>There is a new test case in the <b>org.eclipse.ecf.test</b> plugin to test the Zeroconf-based discovery <b>DiscoveryTest</b></p>
+      <pre>
+package org.eclipse.ecf.test;
+
+import org.eclipse.ecf.core.ContainerFactory;
+import org.eclipse.ecf.core.IContainer;
+import org.eclipse.ecf.core.identity.ServiceID;
+import org.eclipse.ecf.discovery.IDiscoveryContainer;
+import org.eclipse.ecf.discovery.IServiceEvent;
+import org.eclipse.ecf.discovery.IServiceListener;
+import org.eclipse.ecf.discovery.IServiceTypeListener;
+import junit.framework.TestCase;
+
+public class DiscoveryTest extends TestCase {
+	
+	static IContainer container = null;
+	static IDiscoveryContainer discoveryContainer = null;
+	
+	public final void testDiscovery() throws Exception {
+		container = ContainerFactory.getDefault().createContainer(
+				"ecf.discovery.jmdns");
+		container.connect(null, null);
+		discoveryContainer = (IDiscoveryContainer) container
+				.getAdapter(IDiscoveryContainer.class);
+		discoveryContainer
+				.addServiceTypeListener(new CollabServiceTypeListener());
+		
+		System.out.println("Discovery started.  Waiting 20s for discovered services");
+		Thread.sleep(20000);
+	}
+
+	class CollabServiceTypeListener implements IServiceTypeListener {
+		public void serviceTypeAdded(IServiceEvent event) {
+			System.out.println("serviceTypeAdded(" + event + ")");
+			ServiceID svcID = event.getServiceInfo().getServiceID();
+			discoveryContainer.addServiceListener(svcID,
+					new CollabServiceListener());
+			discoveryContainer.registerServiceType(svcID);
+		}
+	}
+	class CollabServiceListener implements IServiceListener {
+		public void serviceAdded(IServiceEvent event) {
+			System.out.println("serviceAdded(" + event + ")");
+			discoveryContainer.requestServiceInfo(event.getServiceInfo()
+					.getServiceID(), 3000);
+		}
+		public void serviceRemoved(IServiceEvent event) {
+			System.out.println("serviceRemoved(" + event + ")");
+		}
+		public void serviceResolved(IServiceEvent event) {
+			System.out.println("serviceResolved(" + event + ")");
+		}
+	}
+
+}
+      </pre>
     </TD>
   </TR>
 </table>

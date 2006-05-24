@@ -1,0 +1,84 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology subproject</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>0.8.1 Stable Release</font>
+        <br><br><br>
+        Return to <a href="downloads.html">ECF download page</a></br>
+        Return to <a href="comm_resources.html">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
+        <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.6</a><br>
+        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Datashare API for Channel Lifecycle Events</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>IChannel lifecycle events are now delivered via: <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/IChannelContainerListener.html">IChannelContainerListener</a>.
+      Methods <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/IAbstractChannelContainer.html#addChannelContainerListener(org.eclipse.ecf.datashare.IChannelContainerListener)">IChannelContainer.addChannelContainerListener</a>
+      and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/datashare/IAbstractChannelContainer.html#removeChannelContainerListener(org.eclipse.ecf.datashare.IChannelContainerListener)">IChannelContainer.removeChannelContainerListener</a>
+      have been added to <b>IChannelContainer</b> allow the registration of listeners prior to the creation of <b>IChannels</b> within the <b>IChannelContainer</b>.  
+      </p><p>Datashare provider implementations <b>must</b> deliver IChannelContainerListeners instances of the following events when IChannel instances are
+      created, either via local calls to IChannelContainer.createChannel, or via remote calls to create replica <b>IChannels</b>.  In either the local or remote case,
+      the following events are to be
+      delivered to IChannelContainerListeners:</p>
+      <p></p>
+      <p><b>IChannelContainerChannelActivatedEvent</b> - delivered when an IChannel within this container is first activated</p>
+      <p><b>IChannelContainerChannelDeactivatedEvent</b> - delivered when an IChannel within this container is deactivated</p>
+      Instances of these events must be delivered synchronously to all <b>IChannelContainerListeners</b>.  In the case of the <b>IChannelContainerChannelActivatedEvent</b>, the event should
+      be delivered to all <b>IChannelContainerListeners</b> before any other messages are delivered to the channel.</p>
+      <p>Note that the reception of the <b>IChannelContainerChannelActivatedEvent</b> can be responded to by (for example), setting the IChannelListener on 
+      the channel to the desired channel message handler (for handling <b>IChannelMessageEvents</b>). 
+      
+      </p>
+      <p>See example test code in the <b>org.eclipse.ecf.test.datashare</b> plugin, in the <b>DatashareFixedChannelTest</b>, <b>DatashareDynamicChannelTest</b>, and <b>DatashareCustomChannelTest</b> test classes.</p>
+    </TD>
+  </TR>
+</table>
+
+
+</body>
+</html>
