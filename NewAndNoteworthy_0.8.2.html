@@ -1,0 +1,136 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology subproject</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>0.8.2 Stable Release</font>
+        <br><br><br>
+        Return to <a href="downloads.html">ECF download page</a></br>
+        Return to <a href="comm_resources.html">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
+        <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.6</a><br>
+        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a><br>
+        <a href="NewAndNoteworthy_0.8.1.html">New and Noteworthy for 0.8.1</a>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>New Features</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Preference Page for Managing Automatic Logins</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>A preference page underneath the 'Team' category has been added to allow the removal of automatic logins.  </p>
+     <p><img src="images/screens/autologinpref.png"></p>
+     <p></p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>New Test Case for Zeroconf Discovery</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <P>There is a new test case in the <b>org.eclipse.ecf.test</b> plugin to test the Zeroconf-based discovery <b>DiscoveryTest</b></p>
+      <pre>
+package org.eclipse.ecf.test;
+
+import org.eclipse.ecf.core.ContainerFactory;
+import org.eclipse.ecf.core.IContainer;
+import org.eclipse.ecf.core.identity.ServiceID;
+import org.eclipse.ecf.discovery.IDiscoveryContainer;
+import org.eclipse.ecf.discovery.IServiceEvent;
+import org.eclipse.ecf.discovery.IServiceListener;
+import org.eclipse.ecf.discovery.IServiceTypeListener;
+import junit.framework.TestCase;
+
+public class DiscoveryTest extends TestCase {
+	
+	static IContainer container = null;
+	static IDiscoveryContainer discoveryContainer = null;
+	
+	public final void testDiscovery() throws Exception {
+		container = ContainerFactory.getDefault().createContainer(
+				"ecf.discovery.jmdns");
+		container.connect(null, null);
+		discoveryContainer = (IDiscoveryContainer) container
+				.getAdapter(IDiscoveryContainer.class);
+		discoveryContainer
+				.addServiceTypeListener(new CollabServiceTypeListener());
+		
+		System.out.println("Discovery started.  Waiting 20s for discovered services");
+		Thread.sleep(20000);
+	}
+
+	class CollabServiceTypeListener implements IServiceTypeListener {
+		public void serviceTypeAdded(IServiceEvent event) {
+			System.out.println("serviceTypeAdded(" + event + ")");
+			ServiceID svcID = event.getServiceInfo().getServiceID();
+			discoveryContainer.addServiceListener(svcID,
+					new CollabServiceListener());
+			discoveryContainer.registerServiceType(svcID);
+		}
+	}
+	class CollabServiceListener implements IServiceListener {
+		public void serviceAdded(IServiceEvent event) {
+			System.out.println("serviceAdded(" + event + ")");
+			discoveryContainer.requestServiceInfo(event.getServiceInfo()
+					.getServiceID(), 3000);
+		}
+		public void serviceRemoved(IServiceEvent event) {
+			System.out.println("serviceRemoved(" + event + ")");
+		}
+		public void serviceResolved(IServiceEvent event) {
+			System.out.println("serviceResolved(" + event + ")");
+		}
+	}
+
+}
+      </pre>
+    </TD>
+  </TR>
+</table>
+
+
+</body>
+</html>
