@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.8.4 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.8. Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.html">ECF download page</a></br>
         Return to <a href="comm_resources.html">ECF communication resources page</a>
@@ -32,7 +32,8 @@
         <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.6</a><br>
         <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a><br>
         <a href="NewAndNoteworthy_0.8.1.html">New and Noteworthy for 0.8.1</a><br>
-        <a href="NewAndNoteworthy_0.8.2.html">New and Noteworthy for 0.8.2</a>
+        <a href="NewAndNoteworthy_0.8.2.html">New and Noteworthy for 0.8.2</a><br>
+        <a href="NewAndNoteworthy_0.8.4.html">New and Noteworthy for 0.8.4</a>
       </td>
       <td width="31%">
         <div align="center">
@@ -48,64 +49,33 @@
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
   </TR>
-  <TR><TD colSpan=2><H2>Application-Defined Peer-to-Peer Protocols Using XMPP</H2></TD>
+  <TR><TD colSpan=2><H2>Remote Control via XMPP</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>New Example Application</B>
+	<B>Remotely Open Eclipse View Using XMPP/IM</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <P>The <b>org.eclipse.ecf.example.clients</b> plugin has a new example client: <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/example/clients/XMPPSORobotApplication.html">XMPPSORobotApplication</a>.
-      This application shows the use an XMPP's extension mechanism to implement new protocols that can run directly on XMPP.  
+      <P>In <a href="NewAndNoteworthy_0.8.4.html">New and Noteworthy v0.8.4</a> a new example application was introduced showing how to create
+      new protocols using XMPP ("Application-Defined Peer-to-Peer Protocols Using XMPP").  Using this capability, it is now possible to remotely
+      show and Eclipse view via the ECF Roster View</p>
       <p>
-      This can be accomplished because the ECF XMPP provider (<b>ecf.xmpp.smack</b>) implements the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObjectContainer.html">ISharedObjectContainer</a> API.  
-      The ISharedObjectContainer API allows applications to design, implement, and use new protocols, by creating components implementing the
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ISharedObject.html">ISharedObject</a> interface.  These components
-      may then be added to an ISharedObjectContainer instance at runtime.  So, for example,
-      consider the following snippet:
-      <pre>
-      // Get shared object container from xmpp container instance
-      ISharedObjectContainer socontainer = (ISharedObjectContainer) xmppcontainer.getAdapter(ISharedObjectContainer.class);
-      // Create shared object ID...this will be a singleton so the ID can be the class name
-      ID newID = IDFactory.getDefault().createStringID(TrivialSharedObject.class.getName());
-      // Create shared object itself
-      ISharedObject sharedObject = new TrivialSharedObject();
-      // Add shared object to container
-      soontainer.getSharedObjectManager().addSharedObject(newID, sharedObject, null);
-      </pre>
-      <p>
-      In the case of this example application, the ISharedObject component is implemented by the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/example/clients/TrivialSharedObject.html">TrivialSharedObject</a> class.
-      See the source code for this class to examine the implementation of the custom protocol.  The source code for all ECF plugins is available via anonymous CVS access described on 
-      the <a href="http://www.eclipse.org/ecf/resources.html">ECF Dev Resources Page</a>.
+      To remotely open an Eclipse view, select a buddy in the roster view and right click to open the context menu for that buddy.
       </p>
-      Other ECF clients may define any point-to-point protocol they wish using similar mechanisms (implemented as ISharedObject instances like TrivialSharedObject), and this new protocol will then 
-      run on XMPP without requiring modification to existing XMPP servers.  Other XMPP clients (e.g. GAIM, Google Talk, etc.) that do not know about the new protocol will simply
-      ignore any messages directed sent to them.</p>
-     <p></p>
-    </TD>
-  </TR>
-
-  <TR> <!----------------------------------------------------->
-    <TD colSpan=2> <HR> </TD>
-  </TR>
-  <TR><TD colSpan=2><H2>Call API Additions/Changes</H2></TD>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Enhancements to Support <a href="http://www.jabber.org/jeps/jep-0166.html">Jingle/JEP-166</a></B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <P>The ECF plugin <b>org.eclipse.ecf.call</b> is intended to provide an abstract 'Call' API, to allow clients to do call setup in a protocol independent
-      manner.  The API is not finished yet (still experimental), but the ECF team is working on an implementation based upon <a href="http://talk.google.com">Google Talk's</a> 
-      <a href="http://www.jabber.org/jeps/jep-0166.html">Jingle protocol</a>.
-      The new/enhanced API javadocs are <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/call/package-frame.html">here</a><p>
-    </TD>
+      <p>
+      <img src="images/screens/soviewmsg1.png">
+      </p>
+      Then select a view from the list
+      <p>
+      <img src="images/screens/soviewmsg2.png">
+      </p>
+      Then select OK and it will then be opened on the remote user's ECF client.  If the remote user does not have an ECF client (i.e. using Google Talk, GAIM, or some
+      other XMPP client, then the view open request will simply be ignored).
+      <p>
+     </TD>
   </TR>
 
 </table>
