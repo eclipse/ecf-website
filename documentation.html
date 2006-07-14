@@ -357,8 +357,7 @@
       their own Namespaces (e.g. ftp, http, sip, irc, etc, etc), each with it's own requirements for addressing and
       identity.  The <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
       contract is not bound to any specific protocol, and makes it possible to create client applications that are
-      insensitive to the addressing differences between protocols while still guaranteeing basic addressability and
-      satisfying uniqueness requirements within a given namespace.
+      insensitive to the addressing differences between protocols while still guaranteeing basic uniqueness requirements within a given namespace.
        <p></p>
        <h4><a name="Extensibility Example"></a>Example:  Container creation, ID creation, container adapter, and connection</h4>
        <pre>
@@ -378,7 +377,7 @@
 		// connect
 		client.connect(targetID, getJoinContext(username, connectData));
        </pre>
-       UNDER CONSTRUCTION 10/29/05
+       UNDER CONSTRUCTION 7/13/06
 <br><a href="#top"><i>back to top</i></a>
   </td>
   </tr>
