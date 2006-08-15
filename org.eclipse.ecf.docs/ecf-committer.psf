@@ -18,6 +18,7 @@
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.provider,org.eclipse.ecf.provider"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.provider.jmdns,org.eclipse.ecf.provider.jmdns"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.provider.xmpp,org.eclipse.ecf.provider.xmpp"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.provider.irc,org.eclipse.ecf.provider.irc"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.jivesoftware.smack,org.jivesoftware.smack"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test,org.eclipse.ecf.test"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.provider,org.eclipse.ecf.test.provider"/>
