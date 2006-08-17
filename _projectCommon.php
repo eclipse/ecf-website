@@ -18,7 +18,7 @@
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 	$Nav->addNavSeparator("ECF Home", "/ecf/");
-	$Nav->addCustomNav("Downloads", 				"/ecf/downloads.html", 		"_self", 1);
+	$Nav->addCustomNav("Downloads", 				"/ecf/downloads.php", 		"_self", 1);
         $Nav->addCustomNav("Project Plans",                      "http://wiki.ecl
 ipse.org/index.php/Eclipse_Communication_Framework_Project",    "_self", 1);
 
