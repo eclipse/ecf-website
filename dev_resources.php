@@ -34,63 +34,72 @@ ob_start();
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
 		<h2>Developer Resources</h2>
-		<p> Eclipse is an open source community whose projects are focused on providing an extensible development platform and application frameworks for building software. Eclipse provides extensible tools and frameworks that span the software development lifecycle, including support for modeling, language development environments for Java, C/C++ and others, testing and performance, business intelligence, rich client applications and embedded development. A large, vibrant ecosystem of major technology vendors, innovative start-ups, universities and research institutions and individuals extend, complement and support the Eclipse Platform.<br /> <a href="#">more about eclipse &raquo;</a> </p>
-		<div class="homeitem">
-			<h3>Community News</h3>
-			<ul>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
-		<div class="homeitem">
-			<h3>Community News</h3>
-			<ul>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
-		<div class="homeitem">
-			<h3>Community News</h3>
-			<ul>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-				<li><a href="#">Eclipse Magazin, Volume 3 - Titelthema: Eclipse Rich Clients</a>. Zudem stellt das Eclipse Magazin seine <a href="#">'Eclipse Plug-in Collection'</a> vor, die ab sofort online verf&uuml;gbar ist. <span class="dates">02/05/05</span></li>
-			</ul>
-		</div>
-		<hr class="clearer" />
-	</div>
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>New to Eclipse?</h6>
-			<ul>
-				<li><a href="#">Community Resources</a></li>
-				<li><a href="#">News Corner</a></li>
-				<li><a href="#">Newsgroup</a></li>
-				<li><a href="#">Registration</a></li>
-				<li><a href="#">Downloads</a></li>
-				<li><a href="#">Legal</a></li>
-				<li><a href="#">Eclipse Roadmap</a></li>
-				<li><a href="#">Document</a></li>
-			</ul>
-		</div>
-		<div class="sideitem">
-			<h6>Project Links</h6>
-			<ul>
-				<li><a href="#">Business Intelligence and Reporting</a></li>
-				<li><a href="#">Platform</a></li>
-				<li><a href="#">Technology Project</a></li>
-				<li><a href="#">Test &amp; Performance Tools Platform</a></li>
-				<li><a href="#">Web Tools</a></li>
-				<li><a href="#">Project Proposals</a></li>
-				<li><img src="images/jdj.jpg" width="40" height="42" class="inset" /><a href="#">Cast your vote for Eclipse</a></li>
-				<li><a href="#">Eclipse wins Jolt Award</a><br /><img src="images/jolt.jpg" width="100" height="68" /></li>
-			</ul>
-		</div>
+<table border=0 cellspacing=5 cellpadding=2 width="100%" >
+  <tr>
+    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
+    &nbsp;ECF User Resources</font></b></td>
+  </tr>
+  <tr>
+    <td>
+      <h3>ECF Newsgroup</h3>
+      <p>The Eclipse Communications Framework newsgroup is for anything and everything ECF related.<br>
+      You will need a newsgroup
+      <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">username
+      and password from Eclipse.org</a> to participate</p>
+      <blockquote>
+        <p><a href="news://news.eclipse.org/eclipse.technology.ecf">
+        news://news.eclipse.org/eclipse.technology.ecf</a></p>
+      </blockquote>
+      <h3>Bug Reporting</h3>
+      <p>Please report any bugs you find using Bugzilla.<ul>
+        <li>Reporting and Viewing <a href="bugs.html">ECF Bugs</a></li>
+        </ul>
+      <p><p>
+    </td>
+  </tr>
+  <tr>
+    <td align=left valign=tpo bgcolor="#0080C0">
+      <b><font color="#FFFFFF" face="Arial,Helvetica">&nbsp;ECF Developer Resources</font></b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>ECF Developers mailing list</h3>
+      <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br>
+      If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br>
+      please post questions on the <b><u>newsgroup</u> </b>rather than the
+      developers mailing list.</p>
+      <blockquote>
+        <p><a href="mailto:ecf-dev@eclipse.org">ecf-dev@eclipse.org</a></p>
+      </blockquote>
+      You must <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev"> subscribe to the
+      ecf-dev mailing list</a> if you want to send email to that list.
+      <p></p>
+      You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> without joining the list.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <h3>Anonymous CVS access to ECF source</h3>
+      <ol>
+      <li>Download the following project set file to local disk <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf</a></li>
+      <li>Within Eclipse, choose File->Import->Team Project Set and choose the .psf file downloaded</li>
+      <li>Give 'anonymous' for username and leave password field empty</li>
+      </ol>
+      <h4>Anonymous CVS server info</h4>
+      If you want to connect via anonymous CVS to ECF area:
+      <ul>
+      <li>Host: dev.eclipse.org</li>
+      <li>Repository Path:  /home/technology</li>
+      <li>User: anonymous</li>
+      <li>Password:  <empty></li>
+      <li>Connection method: pserver</li>
+      <li>Module:  org.eclipse.ecf/plugins</li>
+      </ul> 
+    </td>
+  </tr>
+
+  </table>
 	</div>
 
 <?php
