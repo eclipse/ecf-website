@@ -1,8 +1,4 @@
-<?php  
-	# Note: $_SERVER['DOCUMENT_ROOT'] is not available, replaced by:
-	#       ini_get('doc_root')
-
-		require_once(ini_get('doc_root')."/eclipse.org-common/system/app.class.php");	require_once(ini_get('doc_root')."/eclipse.org-common/system/nav.class.php"); 	require_once(ini_get('doc_root')."/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include("_projectCommon.php");    # All on the same line to unclutter the user's desktop'
+<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
