@@ -24,12 +24,4 @@
 	$Nav->addCustomNav("Overview Documentation", 		"documentation.php", "_self", 1);
 	$Nav->addCustomNav("Developer Resources (CVS, mailing list and newsgroup)", "dev_resources.php", 	"_self", 1);
 	$Nav->addCustomNav("ECF Bugs", "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=", "_blank", 1);
-/*
-	$Nav->addCustomNav("Downloads", 				"/ecf/downloads.php", 		"_self", 1);
-	$Nav->addCustomNav("Project Plans","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project",    "_self", 1);
-	$Nav->addCustomNav("ECF APIs (Javadocs)","/ecf/org.eclipse.ecf.docs/api", "_blank", 1);
-	$Nav->addCustomNav("Overview Documentation", 		"/ecf/documentation.php",			 	"_self", 1);
-	$Nav->addCustomNav("Developer Resources (CVS, mailing list and newsgroup)", 		"/ecf/dev_resources.php", 	"_self", 1);
-	$Nav->addCustomNav("ECF Bugs", 					"https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=", 	"_self", 1);
-*/
 ?>
