@@ -17,13 +17,13 @@
 
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
-	$Nav->addNavSeparator("ECF Home", "/", "_self", 1);
-	$Nav->addCustomNav("Downloads", "downloads.php", 		"_self", 1);
-	$Nav->addCustomNav("Project Plans","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project",    "_self", 1);
+	$Nav->addNavSeparator("ECF Home", "/ecf/");
+	$Nav->addCustomNav("Downloads", "downloads.php", 	"_self", 1);
+	$Nav->addCustomNav("Project Plans","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project", "_blank", 1);
 	$Nav->addCustomNav("ECF APIs (Javadocs)","org.eclipse.ecf.docs/api", "_blank", 1);
-	$Nav->addCustomNav("Overview Documentation", 		"documentation.php",			 	"_self", 1);
-	$Nav->addCustomNav("Developer Resources (CVS, mailing list and newsgroup)", 		"dev_resources.php", 	"_self", 1);
-	$Nav->addCustomNav("ECF Bugs", 					"https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=", 	"_self", 1);
+	$Nav->addCustomNav("Overview Documentation", 		"documentation.php", "_self", 1);
+	$Nav->addCustomNav("Developer Resources (CVS, mailing list and newsgroup)", "dev_resources.php", 	"_self", 1);
+	$Nav->addCustomNav("ECF Bugs", "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=", "_blank", 1);
 /*
 	$Nav->addCustomNav("Downloads", 				"/ecf/downloads.php", 		"_self", 1);
 	$Nav->addCustomNav("Project Plans","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project",    "_self", 1);
