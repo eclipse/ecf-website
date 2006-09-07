@@ -192,10 +192,6 @@ ob_start();
 	</ul>
   <br>
 	<li><b>ECF Protocol Providers</b></li>
-	<ul>
-		Available from: <a href="http://ecf1.osuosl.org"><b>Oregon State University, Open Source Lab</b></a>
-		</li>
-	</ul
   <ul>
 		<li>IRC Provider</li>
 		<ul>
