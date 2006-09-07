@@ -42,7 +42,7 @@ ob_start();
 
       <p>
         <img border="0" src="../images/new.gif" width="31" height="14">
-	    Eclipse Communications Framework <b>0.9.0</b> &quot;Stable&quot; build is now available.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.
+	    Eclipse Communications Framework <b>0.9.1</b> &quot;Stable&quot; build is now available.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.
       </p>
       <p>
         <img border="0" src="../images/new.gif" width="31" height="14">
@@ -110,17 +110,17 @@ ob_start();
     </tr>
 		<tr>
       <td>
-  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.0.S20060817.zip">
-  			org.eclipse.ecf.sdk-0.9.0.S20060817.zip</a>&nbsp;
+  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.1.S20060906.zip">
+  			org.eclipse.ecf.sdk-0.9.1.S20060906.zip</a>&nbsp;
       </td>
-      <td align="center">2006-08-17</td>
+      <td align="center">2006-09-06</td>
     </tr>
 		<tr>
       <td>
-			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.8.9.S20060724.zip">
-  			org.eclipse.ecf.sdk-0.8.9.S20060724.zip</a>&nbsp;
+			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.0.S20060817.zip">
+  			org.eclipse.ecf.sdk-0.9.0.S20060817.zip</a>&nbsp;
       </td>
-      <td align="center">2006-07-24</td>
+      <td align="center">2006-08-17</td>
     </tr>
   </tbody></table>
   </li>
@@ -130,8 +130,8 @@ ob_start();
   or delete your configuration directory) </li>
   <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
   <br>
-		<li>Major features/changes in 0.9.0.S20060817 &quot;Stable&quot; Build Date 2006-08-17, from previous builds:<br>
-		&nbsp;&nbsp;See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this ECF SDK 0.9.0 release.
+		<li>Major features/changes in 0.9.1.S20060906 &quot;Stable&quot; Build Date 2006-09-06, from previous builds:<br>
+		&nbsp;&nbsp;See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this ECF SDK 0.9.1 release.
 		</li>
 	</br>
   <br>
@@ -147,17 +147,17 @@ ob_start();
 		     </tr>
 		 		<tr>
 		       <td>
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.9.1.S20060906.zip">
+		   			org.eclipse.ecf.core-0.9.1.S20060906.zip</a>&nbsp;
+		       </td>
+		       <td align="center">2006-09-06</td>
+		     </tr>
+		 		<tr>
+		       <td>
 		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.9.0.S20060817.zip">
 		   			org.eclipse.ecf.core-0.9.0.S20060817.zip</a>&nbsp;
 		       </td>
 		       <td align="center">2006-08-17</td>
-		     </tr>
-		 		<tr>
-		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.8.9.S20060724.zip">
-		   			org.eclipse.ecf.core-0.8.9.S20060724.zip</a>&nbsp;
-		       </td>
-		       <td align="center">2006-07-24</td>
 		     </tr>
 		  </tbody>
   </table>
@@ -173,17 +173,17 @@ ob_start();
 		     </tr>
 		 		<tr>
 		       <td>
+		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.serverfeature-0.9.1.S20060906.zip">
+		   			org.eclipse.ecf.serverfeature-0.9.1.S20060906.zip</a>&nbsp;
+		       </td>
+		       <td align="center">2006-09-06</td>
+		     </tr>
+		 		<tr>
+		       <td>
 		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.serverfeature-0.9.0.S20060817.zip">
 		   			org.eclipse.ecf.serverfeature-0.9.0.S20060817.zip</a>&nbsp;
 		       </td>
 		       <td align="center">2006-08-17</td>
-		     </tr>
-		 		<tr>
-		       <td>
-		   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.serverfeature-0.8.9.S20060724.zip">
-		   			org.eclipse.ecf.serverfeature-0.8.9.S20060724.zip</a>&nbsp;
-		       </td>
-		       <td align="center">2006-07-24</td>
 		     </tr>
 		  </tbody>
   </table>
@@ -197,6 +197,26 @@ ob_start();
 		</li>
 	</ul
   <ul>
+		<li>IRC Provider</li>
+		<ul>
+			<li>Download <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+     <tbody>
+     <tr>
+       <th bgcolor="#c0c0c0">File</th>
+       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+     </tr>
+ 		<tr>
+       <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.provider.irc-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.provider.irc-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+  </tbody>
+  </table>
+			</li>
+		</ul>
+	</ul>  <ul>
 		<li>JMDNS Provider</li>
 		<ul>
 			<li>Download <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
@@ -207,17 +227,17 @@ ob_start();
      </tr>
  		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.provider.jmdns-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.provider.jmdns-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+ 		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.provider.jmdns-0.9.0.S20060817.zip">
    			org.eclipse.ecf.provider.jmdns-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.provider.jmdns-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.provider.jmdns-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -235,17 +255,17 @@ ob_start();
      </tr>
  		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.xmpp-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+ 		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-0.9.0.S20060817.zip">
    			org.eclipse.ecf.xmpp-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.xmpp-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.xmpp-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -263,17 +283,17 @@ ob_start();
      </tr>
   		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.call-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.call-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.call-0.9.0.S20060817.zip">
    			org.eclipse.ecf.call-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
-		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.call-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.call-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -295,17 +315,17 @@ ob_start();
      </tr>
  		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.collab.editor-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.example.collab.editor-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+  		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.collab.editor-0.9.0.S20060817.zip">
    			org.eclipse.ecf.example.collab.editor-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
-  		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.collab.editor-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.example.collab.editor-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
  </tbody>
   </table>
@@ -323,17 +343,17 @@ ob_start();
      </tr>
  		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.collab-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+ 		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.9.0.S20060817.zip">
    			org.eclipse.ecf.collab-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.collab-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.collab-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -351,17 +371,17 @@ ob_start();
      </tr>
 		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.clients-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.example.clients-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+  	<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.clients-0.9.0.S20060817.zip">
    			org.eclipse.ecf.example.clients-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
-  	<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.example.clients-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.example.clients-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -379,17 +399,17 @@ ob_start();
      </tr>
  		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.datashare-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.datashare-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+ 		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.datashare-0.9.0.S20060817.zip">
    			org.eclipse.ecf.datashare-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.datashare-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.datashare-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -407,17 +427,17 @@ ob_start();
      </tr>
 		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.datashare-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.fileshare-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+  		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.datashare-0.9.0.S20060817.zip">
    			org.eclipse.ecf.fileshare-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
-  		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.datashare-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.fileshare-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -435,17 +455,17 @@ ob_start();
      </tr>
  		<tr>
        <td>
+   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.9.1.S20060906.zip">
+   			org.eclipse.ecf.graphshare-0.9.1.S20060906.zip</a>&nbsp;
+       </td>
+       <td align="center">2006-09-06</td>
+     </tr>
+ 		<tr>
+       <td>
    			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.9.0.S20060817.zip">
    			org.eclipse.ecf.graphshare-0.9.0.S20060817.zip</a>&nbsp;
        </td>
        <td align="center">2006-08-17</td>
-     </tr>
- 		<tr>
-       <td>
-   			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.graphshare-0.8.9.S20060724.zip">
-   			org.eclipse.ecf.graphshare-0.8.9.S20060724.zip</a>&nbsp;
-       </td>
-       <td align="center">2006-07-24</td>
      </tr>
   </tbody>
   </table>
@@ -491,49 +511,53 @@ ob_start();
       <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.call - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.call - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
 		<tr>
 		<tr>
-      <td>org.eclipse.ecf.collab - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.collab - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.collab.editor - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.collab.editor - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.core - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.core - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
    	<tr>
-      <td>org.eclipse.ecf.datashare - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.datashare - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
    	<tr>
-      <td>org.eclipse.ecf.fileshare - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.fileshare - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
    	<tr>
-      <td>org.eclipse.ecf.graphshare - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.graphshare - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
    	<tr>
-      <td>org.eclipse.ecf.example.clients - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.example.clients - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.provider.jmdns - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.provider.irc - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.serverfeature - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.provider.jmdns - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
 		<tr>
-      <td>org.eclipse.ecf.xmpp - 0.9.0&nbsp;</td>
-      <td align="center">2006-08-17</td>
+      <td>org.eclipse.ecf.serverfeature - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
+    </tr>
+		<tr>
+      <td>org.eclipse.ecf.xmpp - 0.9.1&nbsp;</td>
+      <td align="center">2006-09-06</td>
     </tr>
   	</tbody>
     </table>

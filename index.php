@@ -64,11 +64,17 @@
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>August 17, 2006 - ECF 0.9.0-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation</b>
+						<b>September 6, 2006 - ECF 0.9.1-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation</b>
 				</td>
-
         <tr>
 
+					<td align="left" valign="top" height="12" width="23">
+						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
+					</td>
+					<td valign="top">
+						<b>August 17, 2006 - ECF 0.9.0-stable build released on eclipse.org.
+				</td>
+        <tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
@@ -76,7 +82,6 @@
 						<b>June 24, 2006 - ECF 0.8.9-stable build released on eclipse.org.
 				</td>
         <tr>
-
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
