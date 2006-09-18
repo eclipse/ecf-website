@@ -34,12 +34,16 @@ org.eclipse.ecf.provider.irc.identity
 org.eclipse.ecf.provider.jmdns
 org.eclipse.ecf.provider.jmdns.container
 org.eclipse.ecf.provider.jmdns.identity
+org.eclipse.ecf.provider.remoteservice
+org.eclipse.ecf.provider.remoteservice.generic
 org.eclipse.ecf.provider.xmpp
 org.eclipse.ecf.provider.xmpp.container
 org.eclipse.ecf.provider.xmpp.events
 org.eclipse.ecf.provider.xmpp.identity
 org.eclipse.ecf.provider.xmpp.smack
 org.eclipse.ecf.provider.xmpp.smack.test
+org.eclipse.ecf.remoteservice
+org.eclipse.ecf.remoteservice.events
 org.eclipse.ecf.server
 org.eclipse.ecf.ui
 org.eclipse.ecf.ui.dialogs
