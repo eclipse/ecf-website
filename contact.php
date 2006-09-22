@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Eclipse Communication Framework";
+	$pageTitle 		= "Please Contact Us!";
 	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
@@ -33,16 +33,16 @@ ob_start();
 
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<h2>Please contact us!</h2>
+		<h2></h2>
 		<p>We would appreciate hearing from you about your needs for ECF, 
 		what you are doing or want to do with ECF,
 		what we can do to make ECF more useful for you,
 		and your ideas of what sort of applications you would like to see built on ECF by us and/or others.</p>
 		<p><ul><li>Newsgroup: <a href="news://news.eclipse.org/eclipse.technology.ecf">eclipse.technology.ecf at news.eclipse.org</a></li>
 		<li>Mailing List: <a href="mailto:ecf-dev@eclipse.org">ecf-dev@eclipse.org</a></li>
-		<li>Wiki: <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF planning wiki</a></li>
+		<li>Wiki: <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF planning</a></li>
 		<li>Conference Call: <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project#ECF_Team_Meetings">Bi-Monthy Open Conference Calls (please join)</a></li>
-        <li>Team Lead: <a href="slewis@composent.com">Scott Lewis, slewis at composent.com</a></li>
+        <li>Committer Project Lead: <a href="slewis@composent.com">Scott Lewis, email: slewis at composent.com</a></li>
         </ol>
 		<p>
 		If you have an ECF bug to report, the quickest thing to get our immediate attention is to 
