@@ -44,7 +44,12 @@ ob_start();
 		<li>Conference Call: <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project#ECF_Team_Meetings">Bi-Monthy Open Conference Calls (please join)</a></li>
         <li>Committer Project Lead: <a href="slewis@composent.com">Scott Lewis, email: slewis at composent.com</a></li>
         </ol>
-		<p>
+<p>ECF also has ongoing public and private chat groups.  Please join!
+</p><p>IRC (public):  <b>irc.freenode.net</b>  channel: <b>#eclipse-ecf</b>  ECF URL: <b><a href="irc://irc.freenode.net/#eclipse-ecf" class='external text' title="irc://irc.freenode.net/#eclipse-ecf" rel="nofollow">irc://&lt;user&gt;@irc.freenode.net/#eclipse-ecf</a></b><br />
+
+XMPP (private): <b>&lt;user&gt;@ecf.eclipse.org</b> multi-user chat: <b>ecf</b><br />
+ECF Generic (public):  <b>ecftcp://ecf.eclipse.org:3282/server</b>
+</p>		<p>
 		If you have an ECF bug to report, the quickest thing to get our immediate attention is to 
 		file a <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content="> ECF bug report</a></p>
 	</div>
