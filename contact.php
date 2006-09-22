@@ -33,16 +33,17 @@ ob_start();
 
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<h2>Contact ECF Team</h2>
-		<p>Please contact us!  We would appreciate hearing from you about your needs for ECF, 
+		<h2>Please contact us!</h2>
+		<p>We would appreciate hearing from you about your needs for ECF, 
 		what you are doing or want to do with ECF,
 		what we can do to make ECF more useful for you,
 		and your ideas of what sort of applications you would like to see built on ECF by us and/or others.</p>
-		<p>We can be reached on the <a href="news://news.eclipse.org/eclipse.technology.ecf">ECF newsgroup</a>, via
-		the <a href="mailto:ecf-dev@eclipse.org">ecf-dev@eclipse.org mailing list</a>, the <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF planning wiki</a> or via the bi-monthly 
-		<a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project#ECF_Team_Meetings">ECF conference calls</a>.  Also,
-		please feel free to contact the ECF project team lead, Scott Lewis directly at <a href="slewis@composent.com">slewis at composent.com</a>...particularly
-		if you have contributions to make to support the project, are using ECF successfully already, or have nice things to say about what we're doing :).</p>
+		<p><ul><li>Newsgroup: <a href="news://news.eclipse.org/eclipse.technology.ecf">eclipse.technology.ecf at news.eclipse.org</a></li>
+		<li>Mailing List: <a href="mailto:ecf-dev@eclipse.org">ecf-dev@eclipse.org</a></li>
+		<li>Wiki: <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF planning wiki</a></li>
+		<li>Conference Call: <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project#ECF_Team_Meetings">Bi-Monthy Open Conference Calls (please join)</a></li>
+        <li>Team Lead: <a href="slewis@composent.com">Scott Lewis, slewis at composent.com</a></li>
+        </ol>
 		<p>
 		If you have an ECF bug to report, the quickest thing to get our immediate attention is to 
 		file a <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content="> ECF bug report</a></p>

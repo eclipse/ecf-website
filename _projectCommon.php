@@ -20,9 +20,9 @@
 	$Nav->addNavSeparator("ECF Home", "/ecf/");
 	$Nav->addCustomNav("Downloads", "downloads.php", 	"_self", 1);
 	$Nav->addCustomNav("Contact Us", "contact.php", 	"_self", 1);
-	$Nav->addCustomNav("Project Plans and Meeting Schedule","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project", "_blank", 1);
+	$Nav->addCustomNav("Project Planning and Team Conference Schedule","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project", "_blank", 1);
 	$Nav->addCustomNav("Overview Documentation", 		"documentation.php", "_self", 1);
 	$Nav->addCustomNav("ECF APIs (Javadocs)","org.eclipse.ecf.docs/api", "_blank", 1);
-	$Nav->addCustomNav("Developer Resources (CVS, mailing list and newsgroup)", "dev_resources.php", 	"_self", 1);
+	$Nav->addCustomNav("Developer Resources (Anonymous CVS access to source, developer's mailing list)", "dev_resources.php", 	"_self", 1);
 	$Nav->addCustomNav("ECF Bugs", "https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=", "_blank", 1);
 ?>
