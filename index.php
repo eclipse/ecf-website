@@ -50,7 +50,7 @@
     ECF also provides an open distributed component model based upon the <a href="http://www.eclipse.org/equinox/">Equinox runtime</a>, along with a growing set of extensible communications components.  All APIs, components, and ECF protocol provider may be reused, extended, or replaced by developers.
 
     <br><br>
-    To test and demonstrate the framework, the committers and other community members have built applications with features such as user presence and instant messaging, multi-user chat, file sharing, co-browsing, shared drawing/whiteboard, and real-time collaborative editing.  See <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">plans and subprojects</a> for application efforts currently underway...or to propose or make available your own ECF-based sub-project.
+    To test and demonstrate the framework, the committers and other community members have built applications with features such as user presence and instant messaging, multi-user chat, file sharing, co-browsing, shared drawing/whiteboard, and real-time collaborative editing.  See <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">plans and subprojects</a> for efforts currently underway.
 
 	
 	</div>
