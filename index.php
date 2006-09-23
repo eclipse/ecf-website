@@ -44,13 +44,13 @@
      	<h3>About the ECF Project</h3>
      	<div style="margin:10px;">
 	    <b>ECF</b> is a set of plugins for supporting the development of distributed Eclipse-based tools and applications.
-    The framework can be used to more easily create plugins, tools, or full <a href="http://www.eclipse.org/rcp">Eclipse RCP</a> applications that require
+    The framework can be used to create other plugins, tools, or full <a href="http://www.eclipse.org/rcp">Eclipse RCP</a> applications that require
     asynchronous messaging and real-time communications.
     <br/><br/>
     ECF also provides an open distributed component model based upon the <a href="http://www.eclipse.org/equinox/">Equinox runtime</a>, along with a growing set of extensible communications components.  All APIs, components, and ECF protocol provider may be reused, extended, or replaced by developers.
 
     <br><br>
-    To test and demonstrate the framework, the committers and other community members have built applications with features such as user presence and instant messaging, multi-user chat, file sharing, co-browsing, shared drawing/whiteboard, and real-time collaborative editing.  See <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">plans and subprojects</a> for application efforts currently underway or to propose your own.
+    To test and demonstrate the framework, the committers and other community members have built applications with features such as user presence and instant messaging, multi-user chat, file sharing, co-browsing, shared drawing/whiteboard, and real-time collaborative editing.  See <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">plans and subprojects</a> for application efforts currently underway...or to propose or make available your own ECF-based sub-project.
 
 	
 	</div>
