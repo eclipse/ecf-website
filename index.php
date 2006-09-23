@@ -43,7 +43,7 @@
 	<div class="homeitem3col">	
      	<h3>About the ECF Project</h3>
      	<div style="margin:10px;">
-	    <b>ECF</b> is a small set of plugins designed to simplify the development of distributed Eclipse-based tools and applications.
+	    <b>ECF</b> is a set of plugins for supporting the development of distributed Eclipse-based tools and applications.
     The framework can be used to more easily create plugins, tools, or full <a href="http://www.eclipse.org/rcp">Eclipse RCP</a> applications that require
     asynchronous messaging and real-time communications.
     <br/><br/>
