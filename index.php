@@ -58,16 +58,21 @@
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
           <table cellSpacing="5" cellPadding="2" width="100%" border="0">
-
         <tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>September 6, 2006 - ECF 0.9.1-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation</b>
+						<b>October 6, 2006 - ECF 0.9.1-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation</b>
 				</td>
         <tr>
-
+					<td align="left" valign="top" height="12" width="23">
+						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
+					</td>
+					<td valign="top">
+						<b>September 6, 2006 - ECF 0.9.1-stable build released on eclipse.org.
+				</td>
+        <tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
