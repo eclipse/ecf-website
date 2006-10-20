@@ -15,6 +15,7 @@ org.eclipse.ecf.datashare
 org.eclipse.ecf.datashare.events
 org.eclipse.ecf.datashare.mergeable
 org.eclipse.ecf.discovery
+org.eclipse.ecf.discovery.identity
 org.eclipse.ecf.fileshare
 org.eclipse.ecf.fileshare.events
 org.eclipse.ecf.filetransfer
