@@ -1,6 +1,5 @@
 org.eclipse.ecf.call
 org.eclipse.ecf.call.events
-org.eclipse.ecf.core
 org.eclipse.ecf.core.comm
 org.eclipse.ecf.core.comm.provider
 org.eclipse.ecf.core.events
