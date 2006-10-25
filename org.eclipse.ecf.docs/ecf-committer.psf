@@ -3,6 +3,7 @@
 	<provider id="org.eclipse.team.cvs.core.cvsnature">
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf,org.eclipse.ecf"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.core.identity,org.eclipse.ecf.core.identity"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.core.sharedobject,org.eclipse.ecf.core.sharedobject"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.discovery,org.eclipse.ecf.discovery"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.doc,org.eclipse.ecf.doc"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.call,org.eclipse.ecf.call"/>
