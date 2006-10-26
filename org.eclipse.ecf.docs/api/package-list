@@ -1,7 +1,6 @@
 org.eclipse.ecf.call
 org.eclipse.ecf.call.events
-org.eclipse.ecf.core.comm
-org.eclipse.ecf.core.comm.provider
+org.eclipse.ecf.core
 org.eclipse.ecf.core.events
 org.eclipse.ecf.core.identity
 org.eclipse.ecf.core.provider
@@ -27,14 +26,10 @@ org.eclipse.ecf.presence.chat
 org.eclipse.ecf.presence.impl
 org.eclipse.ecf.presence.provider
 org.eclipse.ecf.provider.app
+org.eclipse.ecf.provider.comm
 org.eclipse.ecf.provider.comm.tcp
-org.eclipse.ecf.provider.datashare
-org.eclipse.ecf.provider.fileshare
-org.eclipse.ecf.provider.filetransfer
 org.eclipse.ecf.provider.generic
 org.eclipse.ecf.provider.generic.gmm
-org.eclipse.ecf.provider.remoteservice
-org.eclipse.ecf.provider.remoteservice.generic
 org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.events
 org.eclipse.ecf.server
