@@ -47,7 +47,7 @@
     The framework can be used to create other plugins, tools, or full <a href="http://www.eclipse.org/rcp">Eclipse RCP</a> applications that require
     asynchronous messaging and real-time communications.
     <br/><br/>
-    ECF also provides an open distributed component model based upon the <a href="http://www.eclipse.org/equinox/">Equinox runtime</a>, along with a growing set of extensible communications components.  All APIs, components, and ECF protocol provider may be reused, extended, or replaced by developers.
+    ECF also provides an open distributed component model based upon the <a href="http://www.eclipse.org/equinox/">Equinox runtime</a>, along with a growing set of extensible communications components.  All APIs, components, and ECF protocol providers may be reused, extended, or replaced by developers.
 
     <br><br>
     To test and demonstrate the framework, the committers and other community members have built applications with features such as user presence and instant messaging, multi-user chat, file sharing, co-browsing, shared drawing/whiteboard, and real-time collaborative editing.  See <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">plans and subprojects</a> for efforts currently underway.
