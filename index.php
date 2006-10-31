@@ -181,7 +181,7 @@
 					<td valign="top">
 
 					<b>March 21, 2006 - EclipseCon 2006 <a href="http://www.eclipsecon.org/2006/Sub.do?id=385">ECF Short Talk</a>.  Presentation
-					materials (pdf) available here <a href="presentations/EclipseCon.2006.ECF.Tutorial.42.pdf">here</a></b>
+					materials (pdf) available here <a href="presentations/EclipseCon.2006.ECF.Talk.385.pdf">here</a></b>
 				</td>
     		</tr>
          <tr>
@@ -191,7 +191,7 @@
 
 					<td valign="top">
 					<b>March 20, 2006 - EclipseCon 2006 <a href="http://www.eclipsecon.org/2006/Sub.do?id=46">ECF Tutorial</a>.  Presentation
-					materials (pdf) available here <a href="presentations/EclipseCon.2006.ECF.Talk.385.pdf">here</a></b>
+					materials (pdf) available here <a href="presentations/EclipseCon.2006.ECF.Tutorial.42.pdf">here</a></b>
 				</td>
     		</tr>
          <tr>
