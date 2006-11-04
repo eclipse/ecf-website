@@ -82,6 +82,9 @@ ob_start();
 				<li> 
 				Paul Trevithick
 				</li>
+				<li> 
+				Rick Hamnett
+				</li>
 			</ul> 
 		</div>
 
