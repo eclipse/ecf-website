@@ -99,7 +99,7 @@
 
 					</td>
 					<td valign="top">
-						<b>June 19, 2006 - ECF Tutorial by Chris Anisczcyk for the 2006 Rational Software Developer's Conference. <a href="presentations/ecf_rsdc2006.pdf">Here are the tutorial slides (pdf)</a>.
+						<b>June 19, 2006 - ECF Tutorial by Chris Aniszczyk for the 2006 Rational Software Developer's Conference. <a href="presentations/ecf_rsdc2006.pdf">Here are the tutorial slides (pdf)</a>.
     		</tr>
         <tr>
 					<td align="left" valign="top" height="12" width="23">
