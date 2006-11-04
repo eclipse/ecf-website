@@ -74,6 +74,9 @@ ob_start();
 				<li>
 				Marcello Mayworm 
 				</li>
+				<li>
+				Roland Fru
+				</li>
 			</ul> 
 		</div>
 		   <div class="homeitem3col">
