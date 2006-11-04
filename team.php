@@ -90,8 +90,6 @@ ob_start();
 
 	</div> 
 	
-EOHTML;
-
 <?php
 	$html = ob_get_contents();
 	ob_end_clean();
