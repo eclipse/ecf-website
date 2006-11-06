@@ -80,6 +80,26 @@ ob_start();
   </tr>
   <tr>
     <td>
+      <h3>Committer CVS access to ECF source</h3>
+      <ol>
+      <li>Download the following project set file to local disk <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf</a></li>
+      <li>Within Eclipse, choose File->Import->Team Project Set and choose the .psf file downloaded</li>
+      <li>With Eclipse 3.3M3 you can also choose File->Import->Team Project Set->Browse and copy/paste the URL <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf</a>
+      into the File name: field
+      </li>
+      <li>Give your committer username and password</li>
+      </ol>
+      <h4>Committer CVS server info</h4>
+      <ul>
+      <li>Host: dev.eclipse.org</li>
+      <li>Repository Path:  /home/technology</li>
+      <li>User: <username></li>
+      <li>Password:  <password></li>
+      <li>Connection method: extssh</li>
+      <li>Module:  org.eclipse.ecf/plugins</li>
+      </ul> 
+    </td>
+    <td>
       <h3>Anonymous CVS access to ECF source</h3>
       <ol>
       <li>Download the following project set file to local disk <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf</a></li>
