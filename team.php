@@ -42,11 +42,11 @@ ob_start();
                     [bugs resolved]</a>
                 </li>
 				<li>
-                	Boris Bokowski
-                </li>
-				<li>
 					<a href="http://mea-bloga.blogspot.com/">Chris Aniszczyk</a>
 				</li>
+				<li>
+                	Boris Bokowski
+                </li>
 				<li>
                 	Ken Gilmer
                 </li>
