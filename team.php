@@ -66,16 +66,19 @@ ob_start();
 			<h3>Contributors</h3>
 			<ul>
 				<li>
-				Remy Suen
+				Roland Fru
 				</li>
 				<li>
 				Mustafa Isik
 				</li>
 				<li>
+				Erkki Lindpere
+				</li>
+				<li>
 				Marcello Mayworm 
 				</li>
 				<li>
-				Roland Fru
+				Remy Suen
 				</li>
 			</ul> 
 		</div>
