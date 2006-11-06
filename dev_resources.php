@@ -105,6 +105,9 @@ ob_start();
       <ol>
       <li>Download the following project set file to local disk <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf</a></li>
       <li>Within Eclipse, choose File->Import->Team Project Set and choose the .psf file downloaded</li>
+      <li>With Eclipse 3.3M3 you can also choose File->Import->Team Project Set->Browse and copy/paste the URL <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf</a>
+      into the File name: field
+      </li>
       <li>Give 'anonymous' for username and leave password field empty</li>
       </ol>
       <h4>Anonymous CVS server info</h4>
