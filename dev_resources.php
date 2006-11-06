@@ -99,6 +99,7 @@ ob_start();
       <li>Module:  org.eclipse.ecf/plugins</li>
       </ul> 
     </td>
+    <tr>
     <td>
       <h3>Anonymous CVS access to ECF source</h3>
       <ol>
