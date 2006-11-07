@@ -230,9 +230,27 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
       the discovery API plugin (<b>org.eclipse.ecf.discovery</b>) in the <b><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/identity/package-summary.html">org.eclipse.ecf.discovery.identity</a></b>
       package.
       </p>
-</tr>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Container adapter interfaces now use common naming--CONVENTION</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Previously, the container adapter interfaces in the various extension APIs (e.g. discovery) did not have a common naming convention.  For 
+      example, <b>org.eclipse.ecf.discovery.IDiscoveryContainer</b>, or <b>org.eclipse.ecf.datashare.IChannelContainer</b>.  Now, all of these
+      adapter interfaces have the convention of <b>I&lt;type&gt;ContainerAdapter.class</b>.  So, for example, <b>org.eclipse.ecf.discovery.IDiscoveryContainer.class</b> is now
+      called <b>org.eclipse.ecf.discovery.IDiscoveryContainerAdapter.class</b>, and <b>org.eclipse.ecf.datashare.IChannelContainer</b> is now
+      called <b>org.eclipse.ecf.datashare.IChannelContainerAdapter</b>.
+      </p>
+  </tr>
+
 
 </table>
 
 </body>
-</html>
+</<bhtml>
