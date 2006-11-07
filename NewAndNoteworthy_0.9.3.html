@@ -1,0 +1,239 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology subproject</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>0.9.3 Stable Release</font>
+        <br><br><br>
+        Return to <a href="downloads.php">ECF download page</a></br>
+        Return to <a href="comm_resources.php">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
+        <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
+        <a href="NewAndNoteworthy_0.7.6.html">New and Noteworthy for 0.7.6</a><br>
+        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a><br>
+        <a href="NewAndNoteworthy_0.8.1.html">New and Noteworthy for 0.8.1</a><br>
+        <a href="NewAndNoteworthy_0.8.2.html">New and Noteworthy for 0.8.2</a><br>
+        <a href="NewAndNoteworthy_0.8.4.html">New and Noteworthy for 0.8.4</a><br>
+        <a href="NewAndNoteworthy_0.8.5.html">New and Noteworthy for 0.8.5</a><br>
+        <a href="NewAndNoteworthy_0.8.6.html">New and Noteworthy for 0.8.6</a><br>
+        <a href="NewAndNoteworthy_0.8.7.html">New and Noteworthy for 0.8.7</a><br>
+        <a href="NewAndNoteworthy_0.8.9.html">New and Noteworthy for 0.8.9</a><br>
+        <a href="NewAndNoteworthy_0.9.0.html">New and Noteworthy for 0.9.0</a><br>
+        <a href="NewAndNoteworthy_0.9.1.html">New and Noteworthy for 0.9.1</a><br>
+        <a href="NewAndNoteworthy_0.9..html">New and Noteworthy for 0.9.2</a><br>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<table>
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF API Refactoring</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Core Plugin Split into 3 Plugins</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Previously, there was one core ECF plugin <b>org.eclipse.ecf</b>.  This plugin
+      was approximately 150K of code.  In response to <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg00391.html">mailing list postings about ECF code size and applicability in multiple runtime environments</a> we
+      went about refactoring the ECF core plugins so that there was less code, and less code was required for extension APIs (like filetransfer, datashare,
+      discovery, remoteservices).
+      </p>
+      <p>
+      There are now two core plugins: <b>org.eclipse.ecf.identity</b> and <b>org.eclipse.ecf</b>.  <b>org.eclipse.ecf</b> depends upon <b>org.eclipse.ecf.identity</b>.<br></br>
+      <p>
+      </p>
+      
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<THEAD>
+		<TR VALIGN=TOP>
+
+			<TH WIDTH=20%>
+				<P>Plugin/Bundle ID</P>
+			</TH>
+			<TH WIDTH=20%>
+				<P>New Size (Kbytes)</P>
+			</TH>
+			<TH WIDTH=20%>
+				<P>Dependencies</P>
+			</TH>
+			<TH WIDTH=20%>
+				<P>Project Name</P>
+			</TH>
+			<TH WIDTH=20%>
+				<P><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/">API Javadocs</a></P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>org.eclipse.ecf.identity</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>30</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>(packages) org.eclipse.core.runtime org.osgi.framework</P>
+
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>org.eclipse.ecf.core.identity</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/package-summary.html">org.eclipse.ecf.core.identity</a></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>org.eclipse.ecf</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>43</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>(bundle) org.eclipse.ecf.identity</P>
+
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>org.eclipse.ecf</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/package-summary.html">org.eclipse.ecf.core</a> 
+				<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/events/package-summary.html">org.eclipse.ecf.core.events</a> 
+				<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/package-summary.html">org.eclipse.ecf.core.provider</a> 
+				<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/security/package-summary.html">org.eclipse.ecf.core.security</a> 
+				<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/start/package-summary.html">org.eclipse.ecf.core.start</a> 
+				<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/user/package-summary.html">org.eclipse.ecf.core.user</a> 
+				<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/util/package-summary.html">org.eclipse.ecf.core.util</a> 
+				</P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<p></p>
+These are now the only plugins required for use of ECF, so the total code size for minimal ECF applications is 73K.  All other ECF extension APIs
+depend on these two plugins <b>org.eclipse.ecf.identity</b> and <b>org.eclipse.ecf</b>.  The <b>org.eclipse.ecf</b> plugin exports the packages
+and classes from <b>org.eclipse.ecf.identity</b>, so it is not necessary for the <b>org.eclipse.ecf.identity</b> plugin to be added to
+dependencies.
+<p></p>
+There is now also a third core plugin <b>org.eclipse.ecf.sharedobject</b>:
+<p></p>
+<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<COL WIDTH=64*>
+	<THEAD>
+		<TR VALIGN=TOP>
+
+			<TH WIDTH=20%>
+				<P>Plugin/Bundle ID</P>
+			</TH>
+			<TH WIDTH=20%>
+				<P>New Size (Kbytes)</P>
+			</TH>
+			<TH WIDTH=20%>
+				<P>Dependencies</P>
+
+			</TH>
+			<TH WIDTH=20%>
+				<P>Project Name</P>
+			</TH>
+			<TH WIDTH=20%>
+				<P><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/">API Javadocs</a></P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>org.eclipse.ecf.sharedobject</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>71</P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>(plugin) org.eclipse.ecf</P>
+
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER>org.eclipse.ecf.core.sharedobject</a></P>
+			</TD>
+			<TD WIDTH=20%>
+				<P ALIGN=CENTER><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/">org.eclipse.ecf.core.sharedobject</a></P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<p></p>
+This plugin is <b>not</b> required for other ECF API plugins (e.g. filetransfer, discovery, remoteservices, datashare), but
+is useful as an API...particularly for implementing ECF providers.
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>File Transfer API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>A new API has been introduced for easily doing file retrieval and initiating file sends.  The ECF file transfer API is found in the plugin:  <b>org.eclipse.ecf.fileshare</b>.
+      </p>
+      <p>
+            See the javadocs for the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/filetransfer/package-summary.html">org.eclipse.ecf.filetransfer package</a>, and the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/filetransfer/events/package-summary.html">org.eclipse.ecf.filetransfer.events</a>
+      package.  Also see the test
+      code in plugin <b>org.eclipse.ecf.test.fileshare.FileTransferRetrieveTest</b>.</p>
+    </TD>
+  </TR>
+
+</table>
+
+</body>
+</html>
