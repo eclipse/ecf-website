@@ -245,7 +245,15 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
       example, <b>org.eclipse.ecf.discovery.IDiscoveryContainer</b>, or <b>org.eclipse.ecf.datashare.IChannelContainer</b>.  Now, all of these
       adapter interfaces have the convention of <b>I&lt;type&gt;ContainerAdapter.class</b>.  So, for example, <b>org.eclipse.ecf.discovery.IDiscoveryContainer.class</b> is now
       called <b>org.eclipse.ecf.discovery.IDiscoveryContainerAdapter.class</b>, and <b>org.eclipse.ecf.datashare.IChannelContainer</b> is now
-      called <b>org.eclipse.ecf.datashare.IChannelContainerAdapter</b>.
+      called <b>org.eclipse.ecf.datashare.IChannelContainerAdapter</b>.  These interfaces are intended to be used as adapters for <b>org.eclipse.ecf.core.IContainer</b>
+      instances, e.g.:
+      <p></p>
+      <pre>
+      IContainer container = ContainerFactory.getDefault().createContainer("type");
+      IDiscoveryContainerAdapter discovery = 
+      		(IDiscoveryContainerAdapter) container.getAdapter(IDiscoveryContainerAdapter.class);
+      </pre
+      <p></p>
       </p>
   </tr>
 
