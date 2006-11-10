@@ -224,6 +224,30 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
+	<B>ECF Core and API plugins Now Able to Run on CDC 1.0/Foundation 1.0 Execution Environments</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>The following plugins are now able to run on a minimum of the CDC 1.0/Foundation 1.0 execution environment:
+      <b>
+      <ul>
+      <li>org.eclipse.ecf.identity</li>
+      <li>org.eclipse.ecf</li>
+      <li>org.eclipse.ecf.sharedobject</li>
+      <li>org.eclipse.ecf.discovery</li>
+      <li>org.eclipse.ecf.datashare</li>
+      <li>org.eclipse.ecf.filetransfer</li>
+      <li>org.eclipse.ecf.remoteservice</li>
+      </ul>
+      </b>
+      </p>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
 	<B><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/package-summary.html">ecf.core.identity package changes</a></B>
         </P>
     </TD>
@@ -349,13 +373,14 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Moved number of classes to *.internal* names</B>
+	<B>Moved classes to *.internal* names</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <p>In accord with the Eclipse Platform naming conventions, a number of classes and interfaces previously exposed are now
-      in package names of the form <b>org.eclipse.ecf.internal.*</b>, and marked as x-internal:true in the Export-Packages
+      <p>In accord with the Eclipse Platform <a href="http://wiki.eclipse.org/index.php/Naming_Conventions">naming conventions</a>, a number of classes and interfaces previously exposed are now
+      in internal packages with names of the form <b>org.eclipse.ecf.internal.*</b>.  These packages are 
+      further marked as <b>x-internal:=true</b> in the <b>Export-Packages</b> section within <b>MANIFEST.MF</b>.
       </p>
   </tr>
 
