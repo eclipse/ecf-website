@@ -63,7 +63,7 @@ NOTE: For brevity, bundles and packages named "<b>org.eclipse.ecf.foo<b>" will s
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>org.eclipse.ecf Core Bundle Split into 3 Bundles</B>
+	<B>ECF Core Bundle Split into 3 Bundles</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -211,12 +211,11 @@ There is now also a third core plugin <b>ecf.sharedobject</b>:
 This plugin is <b>not</b> required for other ECF API plugins (e.g. filetransfer, discovery, remoteservices, datashare), but
 is useful as an API...particularly for implementing ECF providers.
 <p>
-NOTE:  One consequence of this refactoring is that the shared object API interfaces and classes (ISharedObject, ISharedObjectContainer, etc) that
+<b>NOTE</b>:  One consequence of this refactoring is that the shared object API interfaces and classes (ISharedObject, ISharedObjectContainer, etc) that
 were present in the <b>org.eclipse.ecf.core</b> package are now no longer in that package.  These classes can, however, be found in the <b>org.eclipse.ecf.core.sharedobject</b>
 package, which is now in the <b>org.eclipse.ecf.sharedobject</b> plugin (the <b>org.eclipse.ecf.core.sharedobject</b> project).  In most cases,
-adding the <b>org.eclipse.ecf.sharedobject</b> plugin to list of your plugin's dependencies and then do an 'Organize Imports' these dependencies
-should then be resolved with new package names...e.g. what was <b>org.eclipse.ecf.core.ISharedObject</b> in the <b>org.eclipse.ecf</b> plugin
-is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.eclipse.ecf.sharedobject</b> plugin.
+adding the <b>org.eclipse.ecf.sharedobject</b> plugin to list of your plugin's dependencies and then having Eclipse "Add Import" or "Organize Imports"
+should fix with new package names.
 </p>
 </tr>
 
@@ -241,14 +240,15 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
       <li>org.eclipse.ecf.remoteservice</li>
       </ul>
       </b>
+      See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149024">#149024</a>.
       </p>
   </tr>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
-        <P align=left>
-	<B><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/package-summary.html">ecf.core.identity package changes</a></B>
+        <P align=left>Package Changes for 
+	<B><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/package-summary.html">ecf.core.identity</a></B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -282,12 +282,11 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/package-summary.html">ecf.core</a>, 
+	<B>Package Changes for <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/package-summary.html">ecf.core</a>, 
 	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/events/package-summary.html">ecf.core.events</a>, 
 	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/security/package-summary.html">ecf.core.security</a>, 
 	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/package-summary.html">ecf.core.provider</a>, 
-	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/util/package-summary.html">ecf.core.util</a> packages changes</B>
-        </P>
+	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/util/package-summary.html">ecf.core.util</a></b></P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
@@ -348,7 +347,22 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>NEW CONVENTION:  Container adapter interfaces now use common naming</B>
+	<B>Added org.eclipse.ecf.filetransfer plugin, removed org.eclipse.ecf.fileshare plugin</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>For filetransfer, the plugin <b>org.eclipse.ecf.filetransfer</b> was created/added.  Further,
+      the <b>org.eclipse.ecf.fileshare</b> plugin was removed from the main distribution and will no longer
+      be supported.  </p>
+  </tr>
+
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>NEW ECF CONVENTION</b>:  Container adapter interfaces now use common naming
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -373,7 +387,7 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Moved classes to *.internal* names</B>
+	<B>Moved classes to *.internal* names and fixed other naming conventions</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -388,7 +402,7 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>ECFException now inherits from CoreException rather than Exception</B>
+	<B>org.eclipse.ecf.core.util.ECFException now inherits from CoreException</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -396,6 +410,45 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
       <p><b>org.eclipse.ecf.core.util.ECFException</b> formerly inherited from <b>java.lang.Exception</b>.  It now inherits from <b>org.eclipse.core.runtime.CoreException</b>.
        This should allow ECFException to run on the CDC 1.0/Foundation 1.0 execution environment, as that execution environment does not support
        java.lang.Exception constructors:  Exception(Throwable) and Exception(String,Throwable)</p>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Add 'removeListener' methods</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Added 'removeListener' methods to <b>org.eclipse.ecf.presence.chat.IChatRoomContainer</b> and <b>org.eclipse.ecf.presence.IPresenceContainer</b>.  See 
+      bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=160968">#160968</a>.</p>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Moved org.eclipse.ecf.presence.IInvitationListener</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Moved (in <b>org.eclipse.ecf.presence</b> API) access to <b>IInvitationListener</b> to <b>IChatRoomManager</b> rather than <b>IPresenceContainer</b>.  See 
+      bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=160137">#160137</a>.</p>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Allowed extending org.eclipse.ecf.provider.generic.ClientSOContainer for authentication</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Streamlined handling of creating/passing in connect data for new kind of authentication.  See 
+      bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150398">#150398</a>.</p>
   </tr>
 
 </table>
