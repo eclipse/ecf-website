@@ -53,6 +53,9 @@
 
 <hr>
 
+NOTE: For brevity, bundles and packages named "<b>org.eclipse.ecf.foo<b>" will sometimes be referred to as "<b>ecf.foo</b>" below.
+
+<hr>
 <table>
   <TR><TD colSpan=2><H2>ECF API Refactoring</H2></TD>
 
@@ -60,14 +63,14 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Core Plugin Split into 3 Plugins</B>
+	<B>org.eclipse.ecf Core Bundle Split into 3 Bundles</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <p>Previously, there was one core ECF plugin <b>org.eclipse.ecf</b>.  This plugin
-      was approximately 150K of code.  In response to <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg00391.html">mailing list postings about ECF code size and applicability in multiple runtime environments</a> we
-      went about refactoring the ECF core plugins so that there was less code, and less code was required for extension APIs (like filetransfer, datashare,
+      <p>Previously, there was one core ECF bundle <b>org.eclipse.ecf</b>.  This bundle
+      was approximately 150K of code.  In response to <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg00391.html">dev mailing list postings about ECF code size and applicability in multiple runtime environments</a> we
+      went about refactoring the ECF core plugins so that there was less code, and less code was required for other ECF APIs (like filetransfer, datashare,
       discovery, remoteservices).
       </p>
       <p>
@@ -150,10 +153,10 @@
 		</TBODY>
 	</TABLE>
 <p></p>
-These are now the only plugins required for use of ECF, so the total code for minimal ECF applications is 73K.  The <b>org.eclipse.ecf</b> plugin exports the packages
-and classes from <b>org.eclipse.ecf.identity</b>, so it is not necessary for the <b>org.eclipse.ecf.identity</b> plugin to be explicitly added.
+These are now the only plugins required for use of ECF, so the total code for minimal ECF applications is 73K.  The <b>ecf</b> plugin exports the packages
+and classes from <b>ecf.identity</b>, so it is not necessary for the <b>ecf.identity</b> plugin to be explicitly added.
 <p></p>
-There is now also a third core plugin <b>org.eclipse.ecf.sharedobject</b>:
+There is now also a third core plugin <b>ecf.sharedobject</b>:
 <p></p>
 	<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
 		<COL WIDTH=64*>
@@ -221,14 +224,99 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>ServiceID class moved from core.identity to ecf.discovery.identity</B>
+	<B><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/package-summary.html">ecf.core.identity package changes</a></B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <p>Previously, the <b>org.eclipse.ecf.core.identity.ServiceID</b> class was present in <b>org.eclipse.ecf.core.identity</b>.  Now it is in in 
+      <p>
+      <ul>
+      <li>
+      <b><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a></b>
+      <ul>
+      <li>toURI() method removed</li>
+      <li><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html#toExternalForm()">toExternalForm()</a> method added</li>
+      </ul></li>
+      
+      <li>Classes updated to implement ID.toExternalForm():  
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/BaseID.html">BaseID</a>, 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html">Namespace</a>, 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/StringID.html">StringID</a>, 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/GUID.html">GUID</a>, 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/LongID.html">LongID</a></li>
+      
+      <li><b>ServiceID</b> class moved from <b>core.identity</b> to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/identity/ServiceID.html"><b>ecf.discovery.identity.ServiceID</b></a>.  Previously, the <b>org.eclipse.ecf.core.identity.ServiceID</b> class was present in <b>org.eclipse.ecf.core.identity</b>.  Now it is in in 
       the discovery API plugin (<b>org.eclipse.ecf.discovery</b>) in the <b><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/identity/package-summary.html">org.eclipse.ecf.discovery.identity</a></b>
-      package.
+      package.</li>
+      
+      </ul>
+      </p>
+    </td>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/package-summary.html">ecf.core</a>, 
+	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/events/package-summary.html">ecf.core.events</a>, 
+	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/security/package-summary.html">ecf.core.security</a>, 
+	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/package-summary.html">ecf.core.provider</a>, 
+	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/util/package-summary.html">ecf.core.util</a> packages changes</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Many of the classes previously in these packages have moved to the <b>org.eclipse.ecf.sharedobject</b> bundle.  The classes are now in the following packages
+      in that bundle:  
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/package-summary.html"><b>ecf.core.sharedobject</b></a>, 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/events/package-summary.html"><b>ecf.core.sharedobject.events</b></a>, 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/provider/package-summary.html"><b>ecf.core.sharedobject.provider</b></a>,
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/security/package-summary.html"><b>ecf.core.sharedobject.security</b></a>, 
+      and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/util/package-summary.html"><b>ecf.core.sharedobject.util</b></a>.  To use 
+      the classes it's now necessary to include (via Require-Bundle or Import-Package) from the <b>org.eclipse.ecf.sharedobject</b> bundle.</p>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Extension Point Changes</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Previously there were four extension points defined in the <b>org.eclipse.ecf</b> bundle: 
+      <b>org.eclipse.ecf.namespace</b>, <b>org.eclipse.ecf.containerFactory</b>, <b>org.eclipse.ecf.connectionFactory</b>, <b>org.eclipse.ecf.startup</b>,
+      and <b>org.eclipse.ecf.sharedObjectFactory</b>.
+      The following changes have been made to these extention points:
+      <ol>
+      <li><b>org.eclipse.ecf.namespace</b>
+      <ol>
+      <li>Moved extension point to <b>org.eclipse.ecf.identity</b> bundle</li>
+      <li>Changed id for extension point to <b>org.eclipse.ecf.identity.namespace</b></li>
+      <li>Simplified signature for superclass <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html#createInstance(java.lang.Object[])">Namespace.createInstance()</a></li>
+      </ol>
+      </li>
+      
+      <li><b>org.eclipse.ecf.containerFactory</b>
+      <ol>
+      <li>Simplified signature for factory interface <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/IContainerInstantiator.html">IContainerInstantiator</a></li>
+      </ol>
+      </li>
+      
+      <li><b>org.eclipse.ecf.start</b> -- <b>Unchanged</b></li>
+      <li><b>org.eclipse.ecf.connectionFactory</b> -- <b>REMOVED</b></li>
+
+      <li><b>org.eclipse.ecf.sharedObjectFactory</b>
+      <ol>
+      <li>Moved extension point to <b>org.eclipse.ecf.sharedobject</b> bundle</li>
+      <li>Changed id for extension point to <b>org.eclipse.ecf.sharedobject.sharedObjectFactory</b></li>
+      <li>Simplified signature for factory interface <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/provider/ISharedObjectInstantiator.html">ISharedObjectInstantiator</a></li>
+      </ol>
+      </li>
+
+      </ol>
       </p>
   </tr>
 
@@ -236,7 +324,7 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Container adapter interfaces now use common naming--CONVENTION</B>
+	<B>NEW CONVENTION:  Container adapter interfaces now use common naming</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -257,6 +345,19 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
       </p>
   </tr>
 
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Moved number of classes to *.internal* names</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>In accord with the Eclipse Platform naming conventions, a number of classes and interfaces previously exposed are now
+      in package names of the form <b>org.eclipse.ecf.internal.*</b>, and marked as x-internal:true in the Export-Packages
+      </p>
+  </tr>
 
 </table>
 
