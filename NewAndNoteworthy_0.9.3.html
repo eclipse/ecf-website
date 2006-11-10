@@ -384,6 +384,20 @@ is now the <b>org.eclipse.ecf.core.sharedobject.ISharedObject</b> in the <b>org.
       </p>
   </tr>
 
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>ECFException now inherits from CoreException rather than Exception</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p><b>org.eclipse.ecf.core.util.ECFException</b> formerly inherited from <b>java.lang.Exception</b>.  It now inherits from <b>org.eclipse.core.runtime.CoreException</b>.
+       This should allow ECFException to run on the CDC 1.0/Foundation 1.0 execution environment, as that execution environment does not support
+       java.lang.Exception constructors:  Exception(Throwable) and Exception(String,Throwable)</p>
+  </tr>
+
 </table>
 
 </body>
