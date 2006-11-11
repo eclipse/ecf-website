@@ -451,6 +451,20 @@ should fix with new package names.
       bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150398">#150398</a>.</p>
   </tr>
 
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Added query methods to org.eclipse.ecf.core.ContainerTypeDescription</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Two methods were added to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ContainerTypeDescription.html"><b>org.eclipse.ecf.core.ContainerTypeDescription</b></a>.  These two methods are <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ContainerTypeDescription.html#getSupportedAdapterTypes()">ContainerTypeDescription.getSupportedAdapterTypes()</a>, and
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ContainerTypeDescription.html#getSupportedParameterTypes()">ContainerTypeDescription.getSupportedParameterTypes()</a>.  These two methods are available so that
+      client code can inspect the adapter types and parameter types appropriate for a given IContainer instance <b>before<b> it is actually created.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=164154">#164154</a>.</p>
+  </tr>
+
 </table>
 
 </body>
