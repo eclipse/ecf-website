@@ -14,6 +14,9 @@
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.ui,org.eclipse.ecf.ui"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.server,org.eclipse.ecf.server"/>
 
+        <!-- documentation project -->
+		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.doc,org.eclipse.ecf.doc"/>
+        
         <!-- provider projects -->
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.provider.datashare,org.eclipse.ecf.provider.datashare"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.provider.filetransfer,org.eclipse.ecf.provider.filetransfer"/>
