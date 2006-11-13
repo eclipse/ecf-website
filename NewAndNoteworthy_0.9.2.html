@@ -1,0 +1,124 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology subproject</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>0.9.2 Stable Release</font>
+        <br><br><br>
+        Return to <a href="downloads.php">ECF download page</a></br>
+        Return to <a href="comm_resources.php">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
+        <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
+        <a href="NewAndNoteworthy_0.7.6.html">New and Noteworthy for 0.7.6</a><br>
+        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a><br>
+        <a href="NewAndNoteworthy_0.8.1.html">New and Noteworthy for 0.8.1</a><br>
+        <a href="NewAndNoteworthy_0.8.2.html">New and Noteworthy for 0.8.2</a><br>
+        <a href="NewAndNoteworthy_0.8.4.html">New and Noteworthy for 0.8.4</a><br>
+        <a href="NewAndNoteworthy_0.8.5.html">New and Noteworthy for 0.8.5</a><br>
+        <a href="NewAndNoteworthy_0.8.6.html">New and Noteworthy for 0.8.6</a><br>
+        <a href="NewAndNoteworthy_0.8.7.html">New and Noteworthy for 0.8.7</a><br>
+        <a href="NewAndNoteworthy_0.8.9.html">New and Noteworthy for 0.8.9</a><br>
+        <a href="NewAndNoteworthy_0.9.0.html">New and Noteworthy for 0.9.0</a><br>
+        <a href="NewAndNoteworthy_0.9.1.html">New and Noteworthy for 0.9.1</a><br>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<table>
+  <TR><TD colSpan=2><H2>ECF New Features</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>IRC Improvements</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>A number of improvements were made to the handling of multiple IRC servers and channels.  For example, now a separate view is
+      provided for each server account.</p>
+    </TD>
+  </TR>
+
+</table>
+
+<table>
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  <TR><TD colSpan=2><H2>ECF API Additions and Changes</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Remote OSGi Services API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>A new API has been introduced for accessing remote OSGi services.  The ECF remoteservices API is found in the plugin:  <b>org.eclipse.ecf.remoteservice</b>.
+      This API resembles the OSGi services API, but is designed to specifically support accessing remote services via either synchronous or asynchronous
+      messaging.  That is, remote services can be invoked with call-return semantics, as with local services, but the remote services API also exposes asynchronous
+      invocation of remote OSGi services as an option for the client of the service.  See also the test code in the plugin <b>org.eclipse.ecf.test.remoteservice</b></p>
+      <p>
+            See the javadocs for the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/package-summary.html">org.eclipse.ecf.remoteservice package</a>, and the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/events/package-summary.html">org.eclipse.ecf.remoteservices.events</a>
+      package.  See wiki discussion about remote OSGi services <a href="http://wiki.eclipse.org/index.php/Remote_OSGI_Services">here</a>.  </p>
+    </TD>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>File Transfer API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>A new API has been introduced for easily doing file retrieval and initiating file sends.  The ECF file transfer API is found in the plugin:  <b>org.eclipse.ecf.fileshare</b>.
+      </p>
+      <p>
+            See the javadocs for the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/filetransfer/package-summary.html">org.eclipse.ecf.filetransfer package</a>, and the 
+      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/filetransfer/events/package-summary.html">org.eclipse.ecf.filetransfer.events</a>
+      package.  Also see the test
+      code in plugin <b>org.eclipse.ecf.test.fileshare.FileTransferRetrieveTest</b>.</p>
+    </TD>
+  </TR>
+
+</table>
+
+</body>
+</html>
