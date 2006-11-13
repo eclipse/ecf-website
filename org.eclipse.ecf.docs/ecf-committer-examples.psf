@@ -2,8 +2,8 @@
 <psf version="2.0">
 	<provider id="org.eclipse.team.cvs.core.cvsnature">
         <!-- examples -->
-		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.clients,org.eclipse.ecf.example.clients"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.collab,org.eclipse.ecf.example.collab"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.collab.editor,org.eclipse.ecf.example.collab.editor"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.clients,org.eclipse.ecf.example.clients"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.collab,org.eclipse.ecf.example.collab"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.collab.editor,org.eclipse.ecf.example.collab.editor"/>
 	</provider>
 </psf>

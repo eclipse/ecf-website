@@ -2,9 +2,9 @@
 <psf version="2.0">
 	<provider id="org.eclipse.team.cvs.core.cvsnature">
         <!-- tests -->
-		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test,org.eclipse.ecf.test"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.discovery,org.eclipse.ecf.test.discovery"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.filetransfer,org.eclipse.ecf.test.filetransfer"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/home/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.datashare,org.eclipse.ecf.test.datashare"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test,org.eclipse.ecf.test"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.discovery,org.eclipse.ecf.test.discovery"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.filetransfer,org.eclipse.ecf.test.filetransfer"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.datashare,org.eclipse.ecf.test.datashare"/>
 	</provider>
 </psf>
