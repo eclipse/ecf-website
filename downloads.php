@@ -46,7 +46,7 @@ ob_start();
          <p></p>
          <h3>ECF Install via Update Site (preferred method)</h3>
          <p>
-	        For detailed instructions on using the Eclipse install/update mechanism to install ECF see <a href="update_install.php">here</a>.  See below for 
+	        For <a href="update_install.php">detailed instructions on using the Eclipse install/update mechanism to install ECF see here</a>.  See below for 
 	        quick install.
             <ol>
 		       <li>In Eclipse, choose <b>Help -> Software Updates -> Find and Install...</b></li>
