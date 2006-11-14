@@ -92,7 +92,7 @@ ob_start();
          <ul>
             <li>Close Eclipse (if running) and unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
             <li>Launch Eclipse</li>
-            <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> and <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=">file a bug report</b>.</li>
+            <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> and <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=">file a bug report</a></b>.</li>
          </ul>
          
          <h3>ECF Source Code</h3>
