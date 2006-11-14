@@ -60,7 +60,8 @@ ob_start();
 		   </ul>
   		   <img border="0" src="images/new-update-site.jpg" width="373" height="170">
 	    </ol>
-      
+     </td>
+  </tr>
 <p><b>Option 2a - <u>ECF SDK</u></b>&nbsp;&nbsp;The zip below contains all ECF core plugins and example applications.  First-time users can get started quickly by simply downloading and installing this zip:</p>
 <ul>
   <li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
