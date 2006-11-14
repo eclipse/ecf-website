@@ -45,8 +45,47 @@ ob_start();
          you will need to change the radio button to indicate that this is a new install.</p>
          <img src="images/install-2.png" alt="Install screen" />
 
-	     
+	     <h4>Step 3:</h4>
+
+<p>This screen will vary depending on the features you have installed already.  You want
+to click on the New Remote Site button.</p>
+<img src="images/install-3.png" alt="Install screen" />
+
+<h4>Step 4:</h4>
+<p>This screen is showing the New Remote Site dialog, filled in with the correct information
+to install ECF</p>
+<pre>
+    Name: ECF
+    URL:  http://download.eclipse.org/technology/ecf/update
+</pre>
+<img src="images/install-4.png" alt="Install screen" />
 	   
+	   <h4>Step 5:</h4>
+<p>When you first come back to this screen, the site you added will NOT be selected.  Be sure
+to select it before clicking Next.</p>
+
+<img src="images/install-5.png" alt="Install screen" />
+
+<h4>Step 6:</h4>
+<p>This next screen shows all of the features that are available to install.</p>
+<img src="images/install-6.png" alt="Install screen" />
+
+<h4>Step 7:</h4>
+<p>Click the button to accept the license agreement.</p>
+<img src="images/install-7.png" alt="Install screen" />
+
+<h4>Step 8:</h4>
+<p>Confirm the install location</p>
+
+<img src="images/install-8.png" alt="Install screen" />
+
+<h4>Step 9:</h4>
+The ECF plugins will be downloaded and installed.
+
+<h4>Step 10:</h4>
+<p>Eclipse needs to be restarted after installing ECF.</p>
+
+
        </div>
     </div>
 	
