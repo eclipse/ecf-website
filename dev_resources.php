@@ -86,16 +86,16 @@ ob_start();
       <li>Download/Save Link As the desired project set file to local disk</li>
       <li>Within Eclipse, choose <b>File -> Import -> Team Project Set</b> and open the .psf file downloaded in step 1</li>
       </ol>
-      Project Set Files
+      <p>Project Set Files.  Save one of the below project set files to local disk by choosing File -> Save Link As... in your browser</p>
+      
       <ul>
       <li><a href="org.eclipse.ecf.docs/ecf-anonymous.psf">ECF core, examples, and test plugins</a></li>
       <li><a href="org.eclipse.ecf.docs/ecf-anonymous-core.psf">ECF core plugins</a></li>
-      <li><a href="ecf/org.eclipse.ecf.docs/ecf-anonymous-examples.psf">ECF example plugins</a></li>
-      <li><a href="ecf/org.eclipse.ecf.docs/ecf-anonymous-tests.psf">ECF test plugins</a></li>
+      <li><a href="org.eclipse.ecf.docs/ecf-anonymous-examples.psf">ECF example plugins</a></li>
+      <li><a href="org.eclipse.ecf.docs/ecf-anonymous-tests.psf">ECF test plugins</a></li>
       </ul>
       
       <h4>Anonymous CVS server info</h4>
-      If you want to connect via anonymous CVS to ECF area:
       <ul>
       <li>Host: dev.eclipse.org</li>
       <li>Repository Path:  /cvsroot/technology</li>
