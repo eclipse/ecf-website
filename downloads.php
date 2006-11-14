@@ -62,7 +62,7 @@ ob_start();
          <p></p>
          <h3>ECF Install via zip</h3>
          <p>
-         <p><b>The zip below contains ECF core plugins and example applications.</b></p>
+         <p><b>The zip below contains ECF core plugins, and example plugins.</b></p>
          <ul>
             <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
             <tbody>
@@ -88,6 +88,7 @@ ob_start();
          </table>
   </li>
   <br>
+  <li>To Install</li>
   <li>Unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
   <li>Launch Eclipse (you may need to use the <b>-clean </b>command line switch
   or delete your configuration directory) </li>
