@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Eclipse Communication Framework Downloads";
+	$pageTitle 		= "ECF Download";
 	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
@@ -41,22 +41,42 @@ ob_start();
       
       <p>
         <img border="0" src="../images/new.gif" width="31" height="14">
-	    Eclipse Communications Framework <b>0.9.2</b> &quot;Stable&quot; build is now available.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.
+	    Eclipse Communications Framework <b>0.9.2</b> &quot;Stable&quot; build is now available.  Please see <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.
       </p>
-    <ul>
-      <li><a href="#downloads">ECF Downloads</a></li>
-			<li><a href="#build-types">ECF Build Types</a></li><br>
-    </ul>
+      <p>
+      The ECF SDK requires <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse 3.2+</a>.  
     </td>
   </tr>
 	<tr>
     <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="downloads"></a>ECF Downloads</font></b></td>
+    &nbsp;<a name="downloads"></a>ECF Download</font></b></td>
   </tr>
   <tr>
     <td>
       <p>&nbsp; <br>
-      <b>Option 1 - <u>ECF Update Site</u></b></p>
+      <b><u>ECF Update Site</u></b></p>
+      
+      	<ul>
+		<li>In the <b>Workbench User Guide</b>, navigate to:<br>
+		<ul>
+		<li>Tasks</li>
+		<li>&nbsp;&nbsp;Updating features with the update manager</li>
+		<li>&nbsp;&nbsp;&nbsp;&nbsp;Installing new features with the update manager</li>
+		</ul>
+		</li>
+		<li>In <b>Installing new features with the update manager</b>, follow steps 1 through 13</li>
+			<ul>
+				<li>In step #4, in the <b>New Update Site</b> dialog:<br>
+				<ul>
+					<li>For "CompanyA" enter: ECF updates</li>
+					<li>For the URL enter: http://download.eclipse.org/technology/ecf/update</li>
+				</ul>
+				As shown in this dialog:<br>
+				<img border="0" src="images/new-update-site.jpg" width="373" height="170">
+		</li>
+		</ul>
+	</ul>
+      
   <ul>
     <li>&nbsp;See <strong><a href="#updates">ECF JAR (Java Archive) Files via Eclipse Update Manager</a></strong> below</li>
 </ul>
