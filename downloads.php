@@ -47,34 +47,21 @@ ob_start();
       The ECF SDK requires <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse 3.2+</a>.  
     </td>
   </tr>
-	<tr>
-    <td ALIGN=LEFT VALIGN=TOP BGCOLOR="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;<a name="downloads"></a>ECF Download</font></b></td>
-  </tr>
   <tr>
     <td>
-      <p>&nbsp; <br>
-      <b><u>ECF Update Site</u></b></p>
-      
+      <p><b><u>Install ECF via Update Site</u></b></p>
       	<ul>
-		<li>In the <b>Workbench User Guide</b>, navigate to:<br>
-		<ul>
-		<li>Tasks</li>
-		<li>&nbsp;&nbsp;Updating features with the update manager</li>
-		<li>&nbsp;&nbsp;&nbsp;&nbsp;Installing new features with the update manager</li>
-		</ul>
-		</li>
-		<li>In <b>Installing new features with the update manager</b>, follow steps 1 through 13</li>
-			<ul>
-				<li>In step #4, in the <b>New Update Site</b> dialog:<br>
+		<li>In Eclipse, choose <b>Help->Software Updates->Find and Install...</b></li>
+		<li>Choose <b>Search for New Features to Install->Next</b></li>
+		<li>Choose <b>New Remote Site</b></li>
+		<li>
 				<ul>
-					<li>For "CompanyA" enter: ECF updates</li>
+					<li>For "Name" enter: ECF updates</li>
 					<li>For the URL enter: http://download.eclipse.org/technology/ecf/update</li>
 				</ul>
 				As shown in this dialog:<br>
 				<img border="0" src="images/new-update-site.jpg" width="373" height="170">
 		</li>
-		</ul>
 	</ul>
       
   <ul>
