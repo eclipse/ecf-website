@@ -64,9 +64,7 @@ ob_start();
          <p>
          <p><b>The zip below contains ECF core plugins and example applications.</b></p>
          <ul>
-            <li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5"></li>
-            <li>
-         <table border=0 cellspacing=5 cellpadding=2 width="100%">
+            <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
             <tbody>
                <tr>
                <th bgcolor="#c0c0c0">File</th>
@@ -87,7 +85,6 @@ ob_start();
                   <td align="center">2006-09-06</td>
                </tr>
             </tbody>
-            </li>
          </table>
   </li>
   <br>
