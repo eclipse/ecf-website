@@ -40,7 +40,6 @@ ob_start();
                   <li>Eclipse 3.2+ is required</li>
                   <li>Applications based upon 0.9.3 will not work with older servers (before 0.9.3)
                   <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers
-                  <li></li>
                </ul>
             <h4><b>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a> for details about API changes</b></h4>
          </p>
@@ -61,7 +60,7 @@ ob_start();
 	        </ol>
          </p>
          <p></p>
-         <h3>ECF Install via zip file</h3>
+         <h3>ECF Install via Zip</h3>
          <p>
          <p><b>The ECF SDK zip contains ECF core plugins, and example plugins.</b></p>
          <ul>
@@ -93,7 +92,7 @@ ob_start();
          <ul>
             <li>Close Eclipse (if running) and unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
             <li>Launch Eclipse</li>
-            <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a>.</li>
+            <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> and <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=specific&order=relevance+desc&bug_status=__open__&product=ECF&content=">file a bug report</b>.</li>
          </ul>
          
          <h3>ECF Source Code</h3>

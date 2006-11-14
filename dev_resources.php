@@ -84,7 +84,7 @@ ob_start();
       <li>Host: <b>dev.eclipse.org</b></li>
       <li>Repository Path:  <b>/cvsroot/technology</b></li>
       <li>User: <b>anonymous</b></li>
-      <li>Password:  ;&lt empty ;&gt</li>
+      <li>Password:  &lt;empty&gt;</li>
       <li>Connection method: <b>pserver</b></li>
       <li>Module:  <b>org.eclipse.ecf/plugins</b></li>
       </ul> 
