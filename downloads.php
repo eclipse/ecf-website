@@ -35,7 +35,7 @@ ob_start();
 	   <div class="homeitem3col">
 		 <h3><?= $pageTitle ?></h3>
          <b>Below on this page, you can find the latest builds for the <a href="http://www.eclipse.org/ecf">ECF Project</a>.</p>
-         <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communications Framework 0.9.2</b> &quot;Stable&quot; build is now available.  Please see <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.</p>
+         <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.2</b> &quot;Stable&quot; build is now available.  Please see <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.</p>
          <p>The ECF SDK and example applications require <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse 3.2+</a>.</p>
          
          <h3>NOTE:  This release (0.9.3) is a compatibility-breaking release, meaning that</h3>
