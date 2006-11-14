@@ -44,7 +44,7 @@ ob_start();
                   <li><h4>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy</a> for details about 0.9.3 API changes</h4></li>
                </ul>
          </p>
-         
+         <p></p>
          <h3>ECF Install via Update Site (preferred)</h3>
          <p>
             <ol>
@@ -59,7 +59,7 @@ ob_start();
 	        </ol>
 	        For detailed instructions for using the Eclipse install/update mechanism to install ECF see <a href="update_install.php">here</a>.
          </p>
-         
+         <p></p>
          <h3>ECF Install via zip</h3>
          <p>
          <p><b>The zip below contains ECF core plugins and example applications.</b></p>
