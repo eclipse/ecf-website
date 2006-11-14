@@ -35,15 +35,28 @@ ob_start();
 	   <div class="homeitem3col">
 		 <h3><?= $pageTitle ?></h3>
          <p>Below you will find the latest builds for the <b><a href="http://www.eclipse.org/ecf">ECF Project</a></b>.</p>
-         <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.2</b> &quot;Stable&quot; build is now available.  Please see <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.</p>
+         <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.2</b> &quot;Stable&quot; build is now available.</p>
          <p>The ECF SDK and example applications require <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse 3.2+</a>.</p>
+         <p><h4>PLEASE NOTE:  This release (0.9.3) is a <b>compatibility-breaking release</b>, meaning that</h4>
+               <ul>
+                  <li>Code based upon 0.9.3 will not work with older servers (before 0.9.3)
+                  <li>Clients based upon released previous to 0.9.3 will not work with 0.9.3 servers
+               </ul>
+            <h4>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy</a> for details about 0.9.3 API changes</h4>
+         </p>
+         
+         <h3>Update Site Install</h3>
          <p>
-         <h4>NOTE:  This release (0.9.3) is a compatibility-breaking release, meaning that</h4>
-            <ul>
-               <li>Code based upon 0.9.3 will not work with older servers (before 0.9.3)
-               <li>Clients based upon released previous to 0.9.3 will not work with 0.9.3 servers
-            </ul>
-         <h4>Please see <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details about the API changes</h4>
+            <ol>
+		       <li>In Eclipse, choose <b>Help->Software Updates->Find and Install...</b></li>
+		       <li>Choose <b>Search for New Features to Install->Next</b></li>
+		       <li>Choose <b>New Remote Site</b></li>
+		       <ul>
+			      <li>Name: <b>ECF updates</b></li>
+			      <li>URL: <b>http://download.eclipse.org/technology/ecf/update</a></b></li>
+		       </ul>
+  		       <img border="0" src="images/new-update-site.jpg" width="373" height="170">
+	       </ol>
          </p>
 	   </div>
 	</div>
