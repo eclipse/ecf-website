@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Eclipse Communication Framework";
+	$pageTitle 		= "Eclipse Communication Framework Downloads";
 	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
@@ -33,60 +33,20 @@ ob_start();
 
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
-		<h2>ECF Software Downloads</h2>
 <table border=0 cellspacing=5 cellpadding=2 width="100%" >
   <tr>
     <td align=left valign=top>
-	  There are several different ways that you can download and install ECF.<br>
-      See the <a href="#downloads">Downloads</a> below for details about ECF installation.
-
+    
+      On this page, you can find the latest builds for the <a href="http://www.eclipse.org/ecf">ECF Project</a>.
+      
       <p>
         <img border="0" src="../images/new.gif" width="31" height="14">
 	    Eclipse Communications Framework <b>0.9.2</b> &quot;Stable&quot; build is now available.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.
       </p>
-      <p>
-        <img border="0" src="../images/new.gif" width="31" height="14">
-	    Shared text editor in the org.eclipse.ecf.example.collab.editor plugin. See <a href="http://wiki.eclipse.org/index.php/Example_Shared_Text_Editor"><b>Example Shared Text Editor</b></a> for deployment details.
-      </p>
-      <p>
-	    IBM developerWorks® Article: <a href="http://www-128.ibm.com/developerworks/opensource/library/os-ecl-commfwk/"><b>Getting started with the Eclipse Communication Framework</b></a>
-      </p>
     <ul>
-      <li><a href="#requirements">System requirements</a></li>
       <li><a href="#downloads">ECF Downloads</a></li>
-      <li><a href="#updates">ECF JAR (Java Archive) Files via Eclipse Update Manager</a></li>
 			<li><a href="#build-types">ECF Build Types</a></li><br>
     </ul>
-    </td>
-  </tr>
-  <tr>
-    <td align=left valign=top bgcolor="#0080C0">
-	  <font color="#FFFFFF" face="Arial,Helvetica">
-        &nbsp;<b><a name="requirements"></a>System&nbsp;Requirements</b>
-	  </font>
-	</td>
-  </tr>
-  <tr>
-    <td align=left valign=top bgcolor="#FFFFFF">
-      <p>ECF plugins will be built in Java and will be portable to any platform supported
-       by Eclipse. For components that might not run on Eclipse (e.g. servers), all
-       ECF-created code will be built to depend only upon pure Java Standard Edition
-      (1.4). We also will look to support OSGI Foundation as a minimum runtime platform.</p>
-     <p>You will need the following already installed on your machine: </p>
-<ul>
-  <li>Java version 1.4.2 or newer...1.5 OK also
-    <pre>java version &quot;1.4.2_04&quot;<br>Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2_04-b05)<br>Java HotSpot(TM) Client VM (build 1.4.2_04-b05, mixed model</pre>
-  </li>
-  <li>
-    <a href="http://download.eclipse.org/downloads/index.php">Eclipse 3.1</a><br><br>
-    Graphshare Example Requires EMF Runtime (for appropriate platform version).<br>
-  </li>
-  <br>
-  <li>
-    <a href="http://download.eclipse.org/tools/emf/scripts/downloads.php">EMF SDK 2.1.2</a><br><br>
-    The EMF SDK is needed to use the shared datagraph editor.  It is <b>not</b> needed to be able to use the other ECF application-level features (chat, url sharing, etc).  It is needed to in order to compile the Graphshare example source.
-  </li>
-</ul>
     </td>
   </tr>
 	<tr>
