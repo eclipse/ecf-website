@@ -35,18 +35,20 @@ ob_start();
 	   <div class="homeitem3col">
 		 <h3><?= $pageTitle ?></h3>
          <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.2</b> &quot;Stable&quot; build is now available.</p>
-         <p>The ECF SDK and example applications require <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse 3.2+</a>.</p>
          <p><h4>PLEASE NOTE:  This release (0.9.3) is a <b>compatibility-breaking release</b>, meaning that</h4>
                <ul>
+                  <li>Eclipse 3.2+ is required</li>
                   <li>Applications based upon 0.9.3 will not work with older servers (before 0.9.3)
                   <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers
-                  <li><h4>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy</a> for details about 0.9.3 API changes</h4></li>
+                  <li></li>
                </ul>
+            <h4><b>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a> for details about API changes</b></h4>
          </p>
          <p></p>
-         <h3>ECF Install via Update Site (preferred)</h3>
+         <h3>ECF Install via Update Site (preferred method)</h3>
          <p>
-	        For detailed instructions on using the Eclipse install/update mechanism to install ECF see <a href="update_install.php">here</a>.
+	        For detailed instructions on using the Eclipse install/update mechanism to install ECF see <a href="update_install.php">here</a>.  See below for 
+	        quick install.
             <ol>
 		       <li>In Eclipse, choose <b>Help -> Software Updates -> Find and Install...</b></li>
 		       <li>Choose <b>Search for New Features to Install -> Next</b></li>
@@ -87,13 +89,12 @@ ob_start();
             </table>
          </ul>
          <br>
-  To Install from zip file:
+          To Install from zip file:
          <ul>
             <li>Close Eclipse (if running) and unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
             <li>Launch Eclipse</li>
             <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a>.</li>
          </ul>
-         
          
          <h3>ECF Source Code</h3>
          <p>For source code access to all ECF plugins, see the <a href="dev_resources.php">ECF developer resources</a> page</p>
