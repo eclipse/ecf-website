@@ -38,8 +38,8 @@ ob_start();
          <p>The ECF SDK and example applications require <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse 3.2+</a>.</p>
          <p><h4>PLEASE NOTE:  This release (0.9.3) is a <b>compatibility-breaking release</b>, meaning that</h4>
                <ul>
-                  <li>Code based upon 0.9.3 will not work with older servers (before 0.9.3)
-                  <li>Clients based upon released previous to 0.9.3 will not work with 0.9.3 servers
+                  <li>Applications based upon 0.9.3 will not work with older servers (before 0.9.3)
+                  <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers
                   <li><h4>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy</a> for details about 0.9.3 API changes</h4></li>
                </ul>
          </p>
@@ -61,7 +61,7 @@ ob_start();
          <p></p>
          <h3>ECF Install via zip file</h3>
          <p>
-         <p><b>The zip below contains ECF core plugins, and example plugins.</b></p>
+         <p><b>The ECF SDK zip contains ECF core plugins, and example plugins.</b></p>
          <ul>
             <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
             <tbody>
@@ -95,8 +95,8 @@ ob_start();
          </ul>
          
          
-         <h3>ECF Source Code Access</h3>
-         
+         <h3>ECF Source Code</h3>
+         <p>For source code access to all ECF plugins, see the <a href="dev_resources.php">ECF developer resources</a> page</p>
          
          <h3>ECF Build Types</h3>
          	<table border=0 cellspacing=5 cellpadding=2 width="100%" >

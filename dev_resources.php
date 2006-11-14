@@ -80,46 +80,31 @@ ob_start();
   </tr>
   <tr>
     <td>
-      <h3>Committer CVS access to ECF source</h3>
-      <ol>
-      <li>Download the following project set file to local disk <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf</a></li>
-      <li>Within Eclipse, choose File->Import->Team Project Set and choose the .psf file downloaded</li>
-      <li>With Eclipse 3.3M3 you can also choose File->Import->Team Project Set->Browse and copy/paste the URL <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf</a>
-      into the File name: field
-      </li>
-      <li>Give your committer username and password</li>
-      </ol>
-      <h4>Committer CVS server info</h4>
-      <ul>
-      <li>Host: dev.eclipse.org</li>
-      <li>Repository Path:  /home/technology</li>
-      <li>User: <username></li>
-      <li>Password:  <password></li>
-      <li>Connection method: extssh</li>
-      <li>Module:  org.eclipse.ecf/plugins</li>
-      </ul> 
-    </td>
-    <tr>
-    <td>
       <h3>Anonymous CVS access to ECF source</h3>
+      To download ECF source code into your workspace follow the following instructions with one of the project set files listed below
       <ol>
-      <li>Download the following project set file to local disk <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-anonymous.psf</a></li>
-      <li>Within Eclipse, choose File->Import->Team Project Set and choose the .psf file downloaded</li>
-      <li>With Eclipse 3.3M3 you can also choose File->Import->Team Project Set->Browse and copy/paste the URL <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf">http://www.eclipse.org/ecf/org.eclipse.ecf.docs/ecf-committer.psf</a>
-      into the File name: field
-      </li>
-      <li>Give 'anonymous' for username and leave password field empty</li>
+      <li>Download/Save Link As the desired project set file to local disk</li>
+      <li>Within Eclipse, choose <b>File -> Import -> Team Project Set</b> and open the .psf file downloaded in step 1</li>
       </ol>
+      Project Set Files
+      <ul>
+      <li><a href="org.eclipse.ecf.docs/ecf-anonymous.psf">ECF core, examples, and test plugins</a></li>
+      <li><a href="org.eclipse.ecf.docs/ecf-anonymous-core.psf">ECF core plugins</a></li>
+      <li><a href="ecf/org.eclipse.ecf.docs/ecf-anonymous-examples.psf">ECF example plugins</a></li>
+      <li><a href="ecf/org.eclipse.ecf.docs/ecf-anonymous-tests.psf">ECF test plugins</a></li>
+      </ul>
+      
       <h4>Anonymous CVS server info</h4>
       If you want to connect via anonymous CVS to ECF area:
       <ul>
       <li>Host: dev.eclipse.org</li>
-      <li>Repository Path:  /home/technology</li>
+      <li>Repository Path:  /cvsroot/technology</li>
       <li>User: anonymous</li>
       <li>Password:  <empty></li>
       <li>Connection method: pserver</li>
       <li>Module:  org.eclipse.ecf/plugins</li>
       </ul> 
+      
     </td>
   </tr>
 
