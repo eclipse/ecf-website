@@ -61,32 +61,6 @@ ob_start();
          </p>
          
          <h3>ECF Install via zip</h3>
-         <table border=0 cellspacing=5 cellpadding=2 width="100%">
-<p><b>Option 2a - <u>ECF SDK</u></b>&nbsp;&nbsp;The zip below contains all ECF core plugins and example applications.  First-time users can get started quickly by simply downloading and installing this zip:</p>
-<ul>
-  <li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
-    <tbody>
-    <tr>
-      <th bgcolor="#c0c0c0">File</th>
-      <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
-    </tr>
-		<tr>
-      <td>
-  			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.2.S20061006.zip">
-  			org.eclipse.ecf.sdk-0.9.2.S20061006.zip</a>&nbsp;
-      </td>
-      <td align="center">2006-10-06</td>
-    </tr>
-		<tr>
-      <td>
-			<a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.1.S20060906.zip">
-  			org.eclipse.ecf.sdk-0.9.1.S20060906.zip</a>&nbsp;
-      </td>
-      <td align="center">2006-09-06</td>
-    </tr>
-  </tbody>
-</table>
-         
          <p>
          <p><b>The zip below contains ECF core plugins and example applications.</b></p>
          <ul>
