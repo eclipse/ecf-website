@@ -54,13 +54,11 @@ ob_start();
 		   <li>In Eclipse, choose <b>Help->Software Updates->Find and Install...</b></li>
 		   <li>Choose <b>Search for New Features to Install->Next</b></li>
 		   <li>Choose <b>New Remote Site</b></li>
-		   <li>
 		      <ul>
 			     <li>Name: <b>ECF updates</b></li>
 			     <li>URL: <b>http://download.eclipse.org/technology/ecf/update</b></li>
 		      </ul>
   		      <img border="0" src="images/new-update-site.jpg" width="373" height="170">
-  		   </li>
 	    </ol>
      </td>
   </tr>
