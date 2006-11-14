@@ -41,23 +41,66 @@ ob_start();
                <ul>
                   <li>Code based upon 0.9.3 will not work with older servers (before 0.9.3)
                   <li>Clients based upon released previous to 0.9.3 will not work with 0.9.3 servers
+                  <li><h4>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy</a> for details about 0.9.3 API changes</h4></li>
                </ul>
-            <h4>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy</a> for details about 0.9.3 API changes</h4>
          </p>
          
-         <h3>Update Site Install</h3>
+         <h3>ECF Install via Update Site (preferred)</h3>
          <p>
             <ol>
-		       <li>In Eclipse, choose <b>Help->Software Updates->Find and Install...</b></li>
-		       <li>Choose <b>Search for New Features to Install->Next</b></li>
+		       <li>In Eclipse, choose <b>Help -> Software Updates -> Find and Install...</b></li>
+		       <li>Choose <b>Search for New Features to Install -> Next</b></li>
 		       <li>Choose <b>New Remote Site</b></li>
 		       <ul>
 			      <li>Name: <b>ECF updates</b></li>
 			      <li>URL: <b>http://download.eclipse.org/technology/ecf/update</a></b></li>
 		       </ul>
   		       <img border="0" src="images/new-update-site.jpg" width="373" height="170">
-	       </ol>
+	        </ol>
+	        For detailed instructions for using the Eclipse install/update mechanism to install ECF see <a href="update_install.php">here</a>.
          </p>
+         
+         <h3>ECF Install via zip</h3>
+         <p>
+         <table border=0 cellspacing=5 cellpadding=2 width="100%">
+         <p><b>The zip below contains all ECF core plugins and example applications.  First-time users can get started quickly by downloading and installing this zip:</p>
+         <ul>
+            <li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+            <tbody>
+               <tr>
+               <th bgcolor="#c0c0c0">File</th>
+               <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+               </tr>
+		       <tr>
+                  <td>
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.2.S20061006.zip">
+  			          org.eclipse.ecf.sdk-0.9.2.S20061006.zip</a>&nbsp;
+                  </td>
+                  <td align="center">2006-10-06</td>
+               </tr>
+		       <tr>
+                  <td>
+			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.1.S20060906.zip">
+  			          org.eclipse.ecf.sdk-0.9.1.S20060906.zip</a>&nbsp;
+                  </td>
+                  <td align="center">2006-09-06</td>
+               </tr>
+            </tbody>
+         </table>
+  </li>
+  <br>
+  <li>Unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
+  <li>Launch Eclipse (you may need to use the <b>-clean </b>command line switch
+  or delete your configuration directory) </li>
+  <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
+  <br>
+		<li>Major features/changes in 0.9.2.S20061006 &quot;Stable&quot; Build Date 2006-10-06, from previous builds:<br>
+		&nbsp;&nbsp;See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this ECF SDK 0.9.2 release.
+		</li>
+	</br>
+  <br>
+         </p>
+         
 	   </div>
 	</div>
 	
@@ -85,7 +128,7 @@ ob_start();
 		   <li>Choose <b>Search for New Features to Install->Next</b></li>
 		   <li>Choose <b>New Remote Site</b></li>
 		      <ul>
-			     <li>Name: <b>ECF updates</b></li>
+			     <li>Name: <b>ECF</b></li>
 			     <li>URL: <b>http://download.eclipse.org/technology/ecf/update</b></li>
 		      </ul>
   		      <img border="0" src="images/new-update-site.jpg" width="373" height="170">
