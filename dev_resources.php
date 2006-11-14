@@ -81,12 +81,12 @@ ob_start();
       </ol>
       <h5>Anonymous CVS server info</h5>
       <ul>
-      <li>Host: dev.eclipse.org</li>
-      <li>Repository Path:  /cvsroot/technology</li>
-      <li>User: anonymous</li>
+      <li>Host: <b>dev.eclipse.org</b></li>
+      <li>Repository Path:  <b>/cvsroot/technology</b></li>
+      <li>User: <b>anonymous</b></li>
       <li>Password:  ;&lt empty ;&gt</li>
-      <li>Connection method: pserver</li>
-      <li>Module:  org.eclipse.ecf/plugins</li>
+      <li>Connection method: <b>pserver</b></li>
+      <li>Module:  <b>org.eclipse.ecf/plugins</b></li>
       </ul> 
 	</div>
 	</div>
