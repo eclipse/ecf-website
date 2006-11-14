@@ -89,18 +89,10 @@ ob_start();
   </li>
   <br>
   <li>To Install</li>
-  <li>Unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
-  <li>Launch Eclipse (you may need to use the <b>-clean </b>command line switch
-  or delete your configuration directory) </li>
+  <li>Close Eclipse (if running) and unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
+  <li>Launch Eclipse</li>
   <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
   <br>
-		<li>Major features/changes in 0.9.2.S20061006 &quot;Stable&quot; Build Date 2006-10-06, from previous builds:<br>
-		&nbsp;&nbsp;See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this ECF SDK 0.9.2 release.
-		</li>
-	</br>
-  <br>
-         </p>
-         
 	   </div>
 	</div>
 	
