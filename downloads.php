@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "ECF Download";
+	$pageTitle 		= "Eclipse Communication Framework Download";
 	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
@@ -32,10 +32,19 @@ ob_start();
 ?>		
 
 	<div id="midcolumn">
-	<div class="homeitem3col">
-		<h3><?= $pageTitle ?></h3>
-
-	</div>
+	   <div class="homeitem3col">
+		 <h3><?= $pageTitle ?></h3>
+         <b>Below on this page, you can find the latest builds for the <a href="http://www.eclipse.org/ecf">ECF Project</a>.</p>
+         <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communications Framework 0.9.2</b> &quot;Stable&quot; build is now available.  Please see <a href="NewAndNoteworthy.html">New and Noteworthy</a> for this release.</p>
+         <p>The ECF SDK and example applications require <a href="http://download.eclipse.org/eclipse/downloads/">Eclipse 3.2+</a>.</p>
+         
+         <h3>NOTE:  This release (0.9.3) is a compatibility-breaking release, meaning that</h3>
+            <ul>
+               <li>Code based upon 0.9.3 will not work with older servers (before 0.9.3)
+               <li>Clients based upon released previous to 0.9.3 will not work with 0.9.3 servers
+            </ul>
+         <h3>Please see <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details about the API changes</h3>
+	   </div>
 	</div>
 	
 	<div id="midcolumn">
