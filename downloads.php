@@ -47,6 +47,7 @@ ob_start();
          <p></p>
          <h3>ECF Install via Update Site (preferred)</h3>
          <p>
+	        For detailed instructions on using the Eclipse install/update mechanism to install ECF see <a href="update_install.php">here</a>.
             <ol>
 		       <li>In Eclipse, choose <b>Help -> Software Updates -> Find and Install...</b></li>
 		       <li>Choose <b>Search for New Features to Install -> Next</b></li>
@@ -57,10 +58,9 @@ ob_start();
 		       </ul>
   		       <img border="0" src="images/new-update-site.jpg" width="373" height="170">
 	        </ol>
-	        For detailed instructions for using the Eclipse install/update mechanism to install ECF see <a href="update_install.php">here</a>.
          </p>
          <p></p>
-         <h3>ECF Install via zip</h3>
+         <h3>ECF Install via zip file</h3>
          <p>
          <p><b>The zip below contains ECF core plugins, and example plugins.</b></p>
          <ul>
@@ -85,16 +85,22 @@ ob_start();
                   <td align="center">2006-09-06</td>
                </tr>
             </tbody>
-         </table>
-  </li>
-  <br>
-  <li>To Install</li>
-  <li>Close Eclipse (if running) and unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
-  <li>Launch Eclipse</li>
-  <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a> entries.</li>
-  <br>
-	   </div>
-	</div>
+            </table>
+         </ul>
+         <br>
+  To Install from zip file:
+         <ul>
+            <li>Close Eclipse (if running) and unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
+            <li>Launch Eclipse</li>
+            <li><b>Problems?</b> Check the <a href="faq.html">FAQ</a>.</li>
+         </ul>
+  </div>
+  
+  </div>
+	
+	
+	
+	
 	
 	<div id="midcolumn">
 		<h1><?= $pageTitle ?></h1>
