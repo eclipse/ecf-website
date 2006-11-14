@@ -14,7 +14,7 @@
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "Eclipse Communication Framework";
+	$pageTitle 		= "ECF Resources";
 	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
@@ -32,16 +32,9 @@ ob_start();
 ?>		
 
 	<div id="midcolumn">
-		<h1><?= $pageTitle ?></h1>
-		<h2>Developer Resources</h2>
-<table border=0 cellspacing=5 cellpadding=2 width="100%" >
-  <tr>
-    <td align=left valign=top bgcolor="#0080C0"><b><font color="#FFFFFF" face="Arial,Helvetica">
-    &nbsp;ECF User Resources</font></b></td>
-  </tr>
-  <tr>
-    <td>
-      <h3>ECF Newsgroup</h3>
+	   <div class="homeitem3col">
+		<h3>ECF User Resources</h3>
+      <h4>ECF Newsgroup</h4>
       <p>The Eclipse Communications Framework newsgroup is for anything and everything ECF related.<br>
       You will need a newsgroup
       <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">username
@@ -54,17 +47,9 @@ ob_start();
       <p>Please report any bugs you find using Bugzilla.<ul>
         <li>Reporting and Viewing <a href="bugs.html">ECF Bugs</a></li>
         </ul>
-      <p><p>
-    </td>
-  </tr>
-  <tr>
-    <td align=left valign=tpo bgcolor="#0080C0">
-      <b><font color="#FFFFFF" face="Arial,Helvetica">&nbsp;ECF Developer Resources</font></b>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>ECF Developers mailing list</h3>
+      </p><p></p>
+      <h3>ECF Developer Resources</h3>
+      <h4>ECF Developers mailing list</h4>
       <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br>
       If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br>
       please post questions on the <b><u>newsgroup</u> </b>rather than the
@@ -76,11 +61,8 @@ ob_start();
       ecf-dev mailing list</a> if you want to send email to that list.
       <p></p>
       You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> without joining the list.
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h3>Anonymous CVS Access to ECF Source Code</h3>
+
+      <h4>Anonymous CVS Access to ECF Source Code</h4>
       To load ECF source code into your workspace download and use one of the project set files below
       <p>Save one of the below project set files to local disk by choosing File -> Save Link As... in your browser</p>
 
@@ -96,7 +78,7 @@ ob_start();
       <li>Download/Save Link As... the desired project set file to local disk</li>
       <li>Within Eclipse, choose <b>File -> Import -> Team Project Set</b> and open the .psf file downloaded in step 1</li>
       </ol>
-      <h4>Anonymous CVS server info</h4>
+      <h5>Anonymous CVS server info</h5>
       <ul>
       <li>Host: dev.eclipse.org</li>
       <li>Repository Path:  /cvsroot/technology</li>
@@ -105,11 +87,7 @@ ob_start();
       <li>Connection method: pserver</li>
       <li>Module:  org.eclipse.ecf/plugins</li>
       </ul> 
-      
-    </td>
-  </tr>
-
-  </table>
+	</div>
 	</div>
 
 <?php
