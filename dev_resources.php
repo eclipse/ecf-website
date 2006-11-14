@@ -81,12 +81,7 @@ ob_start();
   <tr>
     <td>
       <h3>Anonymous CVS Access to ECF Source Code</h3>
-      To load ECF source code into your workspace follow the instructions with one of the project set files listed below
-      <ol>
-      Instructions for Using Project Set Files
-      <li>Download/Save Link As... the desired project set file to local disk</li>
-      <li>Within Eclipse, choose <b>File -> Import -> Team Project Set</b> and open the .psf file downloaded in step 1</li>
-      </ol>
+      To load ECF source code into your workspace download and use one of the project set files below
       <p>Save one of the below project set files to local disk by choosing File -> Save Link As... in your browser</p>
 
       <ul>
@@ -96,6 +91,11 @@ ob_start();
       <li><a href="org.eclipse.ecf.docs/ecf-anonymous-tests.psf">ECF test plugins</a></li>
       </ul>
       
+      <ol>
+      <p>Instructions for Using Project Set Files</p>
+      <li>Download/Save Link As... the desired project set file to local disk</li>
+      <li>Within Eclipse, choose <b>File -> Import -> Team Project Set</b> and open the .psf file downloaded in step 1</li>
+      </ol>
       <h4>Anonymous CVS server info</h4>
       <ul>
       <li>Host: dev.eclipse.org</li>
