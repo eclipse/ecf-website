@@ -34,7 +34,7 @@ ob_start();
 	<div id="midcolumn">
 	   <div class="homeitem3col">
 		<h3>ECF User Resources</h3>
-      <h4>ECF Newsgroup</h4>
+      <h4>Newsgroup</h4>
       <p>The Eclipse Communications Framework newsgroup is for anything and everything ECF related.<br>
       You will need a newsgroup
       <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">username
@@ -49,7 +49,7 @@ ob_start();
         </ul>
       </p><p></p>
       <h3>ECF Developer Resources</h3>
-      <h4>ECF Developers mailing list</h4>
+      <h4>Mailing List</h4>
       <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br>
       If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br>
       please post questions on the <b><u>newsgroup</u> </b>rather than the
@@ -61,8 +61,9 @@ ob_start();
       ecf-dev mailing list</a> if you want to send email to that list.
       <p></p>
       You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> without joining the list.
-
+      <p></p>
       <h4>Anonymous CVS Access to ECF Source Code</h4>
+      <p></p>
       To load ECF source code into your workspace download and use one of the project set files below
       <p>Save one of the below project set files to local disk by choosing File -> Save Link As... in your browser</p>
 
@@ -83,7 +84,7 @@ ob_start();
       <li>Host: dev.eclipse.org</li>
       <li>Repository Path:  /cvsroot/technology</li>
       <li>User: anonymous</li>
-      <li>Password:  ;&ltempty;&gt</li>
+      <li>Password:  ;&lt empty ;&gt</li>
       <li>Connection method: pserver</li>
       <li>Module:  org.eclipse.ecf/plugins</li>
       </ul> 
