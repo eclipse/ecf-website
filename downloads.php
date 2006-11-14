@@ -49,24 +49,18 @@ ob_start();
   </tr>
   <tr>
     <td>
-      <p><b><u>Install ECF via Update Site</u></b></p>
-      	<ul>
-		<li>In Eclipse, choose <b>Help->Software Updates->Find and Install...</b></li>
-		<li>Choose <b>Search for New Features to Install->Next</b></li>
-		<li>Choose <b>New Remote Site</b></li>
-		<li>
-				<ul>
-					<li>For "Name" enter: ECF updates</li>
-					<li>For the URL enter: http://download.eclipse.org/technology/ecf/update</li>
-				</ul>
-				As shown in this dialog:<br>
-				<img border="0" src="images/new-update-site.jpg" width="373" height="170">
-		</li>
-	</ul>
+      <p><b><u>Install ECF via Eclipse Install/Update Site</u></b></p>
+      	<ol>
+		   <li>In Eclipse, choose <b>Help->Software Updates->Find and Install...</b></li>
+		   <li>Choose <b>Search for New Features to Install->Next</b></li>
+		   <li>Choose <b>New Remote Site</b></li>
+		   <ul>
+			  <li>Name: <b>ECF updates</li>
+			  <li>URL: <b>http://download.eclipse.org/technology/ecf/update</b></li>
+		   </ul>
+  		   <img border="0" src="images/new-update-site.jpg" width="373" height="170">
+	    </ol>
       
-  <ul>
-    <li>&nbsp;See <strong><a href="#updates">ECF JAR (Java Archive) Files via Eclipse Update Manager</a></strong> below</li>
-</ul>
 <p><b>Option 2a - <u>ECF SDK</u></b>&nbsp;&nbsp;The zip below contains all ECF core plugins and example applications.  First-time users can get started quickly by simply downloading and installing this zip:</p>
 <ul>
   <li>Download<table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
