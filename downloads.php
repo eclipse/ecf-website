@@ -76,7 +76,7 @@ ob_start();
          <p></p>
          <h3>ECF Install via Zip</h3>
          <p>
-         <p><b>The ECF SDK zip contains ECF core plugins, and example plugins.</b></p>
+         <p><b>The ECF SDK zip contains ECF core and example plugins, as well as source code for all plugins.</b></p>
          <ul>
             <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
             <tbody>
