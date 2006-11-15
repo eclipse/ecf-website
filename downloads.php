@@ -87,10 +87,10 @@ ob_start();
 		       <tr>
                   <td>
                   
-  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.3.S20061114.zip">
-  			          org.eclipse.ecf.sdk-0.9.3.S20061114.zip</a>&nbsp;
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.3.S20061115.zip">
+  			          org.eclipse.ecf.sdk-0.9.3.S20061115.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-10-14</td>
+                  <td align="center">2006-11-15</td>
                </tr>
 		       <tr>
                   <td>
@@ -112,8 +112,8 @@ ob_start();
                </tr>
 		       <tr>
                   <td>
-  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.core-0.9.3.S20061114.zip">
-  			          org.eclipse.ecf.core-0.9.3.S20061114.zip</a>&nbsp;
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.core-0.9.3.S20061115.zip">
+  			          org.eclipse.ecf.core-0.9.3.S20061115.zip</a>&nbsp;
                   </td>
                   <td align="center">2006-11-14</td>
                </tr>
@@ -130,8 +130,8 @@ ob_start();
                </tr>
 		       <tr>
                   <td>
-  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.examples-0.9.3.S20061114.zip">
-  			          org.eclipse.ecf.examples-0.9.3.S20061114.zip</a>&nbsp;
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.examples-0.9.3.S20061115.zip">
+  			          org.eclipse.ecf.examples-0.9.3.S20061115.zip</a>&nbsp;
                   </td>
                   <td align="center">2006-11-14</td>
                </tr>
