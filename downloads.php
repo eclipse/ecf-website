@@ -149,8 +149,8 @@ ob_start();
          <h3>ECF Source Code</h3>
          <p>For source code access to all ECF plugins, see the <a href="dev_resources.php">ECF developer resources</a> page</p>
 
-         <h3>ECF Extras at OSU Open Source Lab</h3>
-         <p><a href="http://ecf1.osuosl.org>ECF 'Extras' plugins are available via our site</a> at the <a href="http://www.osuosl.org">Oregon State University Open Source Lab</a>.</p>
+         <h3>ECF Extras Plugins at OSU Open Source Lab</h3>
+         <p><a href="http://ecf1.osuosl.org">ECF 'Extras' plugins are available via our site</a> at the <a href="http://www.osuosl.org">Oregon State University Open Source Lab</a>.</p>
          
          <h3>ECF Build Types</h3>
          	<table border=0 cellspacing=5 cellpadding=2 width="100%" >
