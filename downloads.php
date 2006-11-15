@@ -50,7 +50,7 @@ ob_start();
                   <li>Applications based upon 0.9.3 will not work with older servers (<= 0.9.2).  
                   <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers.  The public
                   ECF server at 
-                  <b>ecftcp://ecf.eclipse.org:3282/server</b> will be moving to 0.9.3 on ~11.16.2006 and will therefore no longer
+                  <b>ecftcp://ecf.eclipse.org:3282/server</b> will be moving to 0.9.3 on ~11.16.2006 and will thereafter no longer
                   support old clients (0.9.2).</b></li>
                </ul>
             <h4><b>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a> for details about API changes</b></h4>
