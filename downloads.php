@@ -72,23 +72,59 @@ ob_start();
                </tr>
 		       <tr>
                   <td>
-  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.2.S20061006.zip">
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-org.eclipse.ecf.sdk-0.9.3.S20061114.zip">
+  			          org.eclipse.ecf.sdk-0.9.3.S20061114.zip</a>&nbsp;
+                  </td>
+                  <td align="center">2006-10-14</td>
+               </tr>
+		       <tr>
+                  <td>
+			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.2.S20061006.zip">
   			          org.eclipse.ecf.sdk-0.9.2.S20061006.zip</a>&nbsp;
                   </td>
                   <td align="center">2006-10-06</td>
                </tr>
+            </tbody>
+            </table>
+         </ul>
+         <p><b>This zip file contains ECF core plugins.</b></p>
+         <ul>
+            <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+            <tbody>
+               <tr>
+               <th bgcolor="#c0c0c0">File</th>
+               <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+               </tr>
 		       <tr>
                   <td>
-			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.1.S20060906.zip">
-  			          org.eclipse.ecf.sdk-0.9.1.S20060906.zip</a>&nbsp;
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.core-0.9.3.S20061114.zip">
+  			          org.eclipse.ecf.core-0.9.3.S20061114.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-09-06</td>
+                  <td align="center">2006-11-14</td>
+               </tr>
+            </tbody>
+            </table>
+         </ul>
+         <p><b>This zip file contains ECF examples plugins.</b></p>
+         <ul>
+            <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="" cellspacing="5">
+            <tbody>
+               <tr>
+               <th bgcolor="#c0c0c0">File</th>
+               <th colspan="1" bgcolor="#c0c0c0">&nbsp;&nbsp; Build Date &nbsp;&nbsp;</th>
+               </tr>
+		       <tr>
+                  <td>
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.examples-0.9.3.S20061114.zip">
+  			          org.eclipse.ecf.examples-0.9.3.S20061114.zip</a>&nbsp;
+                  </td>
+                  <td align="center">2006-11-14</td>
                </tr>
             </tbody>
             </table>
          </ul>
          <br>
-          To Install from zip file:
+          To Install from zip files:
          <ul>
             <li>Close Eclipse (if running) and unzip into your Eclipse installation directory (e.g. C:\eclipse)</li>
             <li>Launch Eclipse</li>
