@@ -115,7 +115,7 @@ ob_start();
   			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.core-0.9.3.S20061115.zip">
   			          org.eclipse.ecf.core-0.9.3.S20061115.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-11-14</td>
+                  <td align="center">2006-11-15</td>
                </tr>
             </tbody>
             </table>
@@ -133,7 +133,7 @@ ob_start();
   			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/org.eclipse.ecf.examples-0.9.3.S20061115.zip">
   			          org.eclipse.ecf.examples-0.9.3.S20061115.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-11-14</td>
+                  <td align="center">2006-11-15</td>
                </tr>
             </tbody>
             </table>
