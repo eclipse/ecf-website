@@ -35,7 +35,7 @@ ob_start();
 	   <div class="homeitem3col">
 		 <h3><?= $pageTitle ?></h3>
          <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.3</b> Stable build is now available.</p>
-         <p><img border="0" src="../images/new.gif" width="31" height="14"><h4>IMPORTANT:  The 0.9.3 release is a <b>compatibility-breaking release</b>, meaning that</h4>
+         <p><h4><img border="0" src="../images/new.gif" width="31" height="14">IMPORTANT:  The 0.9.3 release is a <b>compatibility-breaking release</b>, meaning that</h4>
                <ul>
                   <li>If you are using a previous version of ECF (<= 0.9.2), it is necessary to <b>uninstall</b> this
                   version <b>before</b> installing 0.9.3.  To uninstall the previous version:
