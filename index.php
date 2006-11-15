@@ -63,7 +63,9 @@
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>November 14, 2006 - ECF 0.9.3-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation</b>
+						<b>November 14, 2006 - ECF 0.9.3-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  NOTE:  0.9.3 is 
+						a compatibility-breaking release, with major API changes and improvements.  If you are using 0.9.2 or previous versions it will 
+						be necessary to recompile applications.</b>
 				</td>
         <tr>
 					<td align="left" valign="top" height="12" width="23">
