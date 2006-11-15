@@ -45,7 +45,7 @@ ob_start();
                      <li>Right click to bring up context menu and choose <b>Uninstall</b></li>
                      <li>Answer Yes/OK to questions</li>
                      <li>Stop/restart Eclipse</li>
-                     Now you may install 0.9.3 (via update site or zip)
+                     Now you may install 0.9.3 (via update site or zip).  See below for instructions.
                   </ul></li>
                   <li>Applications based upon 0.9.3 will not work with older servers (<= 0.9.2).  
                   <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers.  The public
@@ -69,6 +69,8 @@ ob_start();
 			      <li>URL: <b>http://download.eclipse.org/technology/ecf/update</a></b></li>
 		       </ul>
   		       <img border="0" src="images/new-update-site.jpg" width="373" height="170">
+  		       <li>
+  		       Choose <b>both</b> the <b>ECF Core</b> and the <b>ECF Examples</b> features to install.</li>
 	        </ol>
          </p>
          <p></p>
