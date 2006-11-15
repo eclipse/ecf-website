@@ -35,11 +35,23 @@ ob_start();
 	   <div class="homeitem3col">
 		 <h3><?= $pageTitle ?></h3>
          <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.2</b> &quot;Stable&quot; build is now available.</p>
-         <p><h4>PLEASE NOTE:  This release (0.9.3) is a <b>compatibility-breaking release</b>, meaning that</h4>
+         <p><h4>IMPORTANT:  This release (0.9.3) is a <b>compatibility-breaking release</b>, meaning that</h4>
                <ul>
-                  <li>Eclipse 3.2+ is required</li>
-                  <li>Applications based upon 0.9.3 will not work with older servers (before 0.9.3)
-                  <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers
+                  <li>If you are using a previous version of ECF (e.g. 0.9.2 or before), it is necessary to <b>uninstall</b> the
+                  older version <b>before</b> installing 0.9.3.  To uninstall the previous version:
+                  <ul>
+                     <li>In Eclipse, go to <b>Help -> Software Updates -> Manage Configuration</b></li>
+                     <li>Select all the features that start with "ECF ...".</li>
+                     <li>Right click to bring up context menu and choose <b>Uninstall</b></li>
+                     <li>Answer Yes/OK to questions</li>
+                     <li>Stop/restart Eclipse</li>
+                     Now you may install 0.9.3 (via update site or zip)
+                  </ul></li>
+                  <li>Applications based upon 0.9.3 will not work with older servers (<= 0.9.2).  
+                  <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers.  The public
+                  ECF server at 
+                  <b>ecftcp://ecf.eclipse.org:3282/server</b> will be moving to 0.9.3 on ~11.16.2006 and will therefore no longer
+                  support old clients (0.9.2).</b></li>
                </ul>
             <h4><b>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a> for details about API changes</b></h4>
          </p>
