@@ -62,6 +62,9 @@ ob_start();
       <p></p>
       You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> without joining the list.
       <p></p>
+      <h4>Project IP Log</h4>
+      The ECF Project IP Log is available <a href="ip_log.html">here</a>
+      <p></p>
       <h4>Anonymous CVS Access to ECF Source Code</h4>
       <p></p>
       To load ECF source code into your workspace download and use one of the project set files below
