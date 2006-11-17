@@ -491,6 +491,32 @@ should fix with new package names.
       IPresenceContainerAdapter.removeSubscripionListener -> IPresenceContainerAdapter.removeRosterSubscriptionListener</p>
   </tr>
 
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Changed exception names</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>Exception class names from <b>*InstantiationException</b> to <b>*CreateException</b>.  For example, <b>IDInstantiation</b> exception
+      is now <b>IDCreateException</b>.  <b>ContainerInstantiationException</b> is now <b>ContainerCreateException</b>.</p>
+  </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Changed method signature for IContainer.addListener</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      <p>The method signature for <b>IContainer.addListener(IContainerListener listener, String filter)</b> has changed to
+      <b>IContainer.addListener(IContainerListener listener)</b></p>
+  </tr>
+
 </table>
 
 </body>
