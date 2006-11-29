@@ -1,45 +1,8 @@
 <project>
-  <!--
-     - This example is annotated to be instructive. In order to be instructive, the
-     - example is a mish-mash of information from a variety of projects. Obviously, 
-     - when you write the project-info.xml file for your project, the file will 
-     - contain information only about your one project.
-    -->
-  <!--
-     - Unless otherwise specified, all URLs are to be specified using rooted relative
-     - paths. In other words:
-     -    CORRECT: "/webtools/foo/bar.php"
-     -    INCORRECT: "foo/bar.php"
-     -    INCORRECT: "http://www.eclipse.org/webtools/foo/bar.php"
-    -->
-  
-  <!--
-     - Each Eclipse project as an official name, e.g., 
-     - "AJDT - AspectJ Development Tools Project" and a foundation database 
-     - key, e.g., "technology.ajdt". These are stored in an Eclipse Foundation
-     - database; You can override the name stored on the database by filling 
-     - the <name/> tag
-    -->
-  <name>AspectJ Development Tools Project</name>
-    
-  <!--     
-     - Each project can also have a short name to be used in HTML lists and 
-     - other horizontally challenged places.
-    -->
-  <short-name>AJDT</short-name>
-  
-  <!--
-     - Each Eclipse project has one or more Bugzilla products and components.
-     - Some projects also have a separate web page describing how to submit
-     - a bug, how bugs are prioritized, and other useful information.
-     - The <bugzilla> collects this information.
-     - 
-     - <bugzilla url="..."> <product name="..."/> ... </bugzilla>
-     - The url is optional; if absent, the url will default to the Bugzilla
-     - page of the first product. Multiple <product>s are allowed.
-    -->
+  <name>Eclipse Communication Framework Project</name>
+  <short-name>ECF</short-name>
   <bugzilla>
-    <product name="Mylar"/>
+    <product name="ECF"/>
   </bugzilla>
 
   <!--
@@ -49,31 +12,15 @@
      - they are the project leaders.  The <team> element contains the 
      - URL of the project's pages listing these important people.
     -->
-  <team url="/webtools/people/contributors.html"/>
+    <!-- To Do: uncomment this line once the ECF Web page exists -->
+    <!-- <team url="/webtools/people/contributors.html"/> -->
   
-  <!--
-     - The source code of each Eclipse project is stored in CVS. Eclipse maintains
-     - a number of CVS repositories, thus the <cvs> element specifies which
-     - CVS repository and (if applicable) which root path stores this project's
-     - source code.
-     -
-     - A top-level project typically specifies only the repository:
-     -     <cvs repository="/cvsroot/tptp"/>
-     - A sub-project includes the root path as well:
-     -     <cvs repository="/cvsroot/technology/">
-     -       <module path="org.eclipse.higgins" />
-     -     </cvs>
-    -->
-  <cvs repository="/cvsroot/tools/">
-    <module path="org.eclipse.cdt-build" /> 
-    <module path="org.eclipse.cdt-contrib" /> 
-    <module path="org.eclipse.cdt-core" /> 
-    <module path="org.eclipse.cdt-cppunit" /> 
-    <module path="org.eclipse.cdt-debug" /> 
-    <module path="org.eclipse.cdt-doc" /> 
-    <module path="org.eclipse.cdt-build" /> 
-    <module path="org.eclipse.cdt-build" /> 
-    <module path="org.eclipse.cdt-build" /> 
+  <cvs repository="/cvsroot/technology/">
+    <module path="org.eclipse.ecf-builds" /> 
+    <module path="org.eclipse.ecf-features" /> 
+    <module path="org.eclipse.ecf-plugins" /> 
+    <module path="org.eclipse.ecf-tests" /> 
+    <module path="org.eclipse.ecf-tutorials" /> 
   </cvs>
 
   <!--
@@ -91,9 +38,11 @@
      -       This file is often stored in the /project-info/ directory, thus the
      -       url would be something like "/tptp/project-info/description.html".
     -->
-  <description url="/tptp/home/project_info/general/whatisTPTP.html"
+    <!-- To Do: uncomment this line once the ECF Web page exists -->
+    <!-- 
+    <description url="/ecf/home/project_info/general/whatisTPTP.html"
      paragraph-url="/webtools/project-page-paragraph.html"/>
-  
+    -->
   <!--
      - In addition to the description, each Eclipse project is also required to
      - provide an up-to-date status summary. "Up to date" means revised at least
@@ -104,8 +53,10 @@
      - This file is often stored in the /project-info/ directory, thus the
      - url would be something like "/technology/project-info/executive-summary.html".
     -->
+  <!-- To Do: uncomment this line once the ECF Web page exists -->
+  <!-- 
   <summary paragraph-url="/technology/project-info/executive-summary.html"/>
-
+    -->
   <!--
      - It is important to help new users get started with an Eclipse project
      - because most Eclipse projects are solving some difficult technical
@@ -146,27 +97,12 @@
      - Note that currently mailing lists must be redundantly listed in
      - the separate project-info/maillist file as well.
     -->
-  <mailing-lists url="/birt/index.php?page=community.html">
-    <list name="birt-news"/>
-    <list name="birt-pmc"/>
-    <list name="birt-dev"/>
-    <list name="birt-charting-dev"/>
-    <list name="birt-report-engine-dev"/>
-    <list name="birt-report-designer-dev"/>
+  <mailing-lists url="/ecf/dev_resources.php">
+    <list name="ecf-dev"/>
   </mailing-lists>
   
-  <!--
-     - Each Eclipse project has one or more newsgroups.
-     - Some projects also have a separate web page describing these lists
-     - while others rely on the main Eclipse newsgroups page.
-     - 
-     - <newsgroups url="..."> <newsgroup name="..."/> ... </newsgroups>
-     - The url is optional; if absent, the url will default to the Eclipse
-     - newsgroups page. Multiple <newsgroups>s are allowed.
-    -->
   <newsgroups>
-    <newsgroup name="eclipse.platform.rcp"/>
-    <newsgroup name="eclipse.platform.swt"/>
+    <newsgroup name="eclipse.technology.ecf"/>
   </newsgroups>
   
   <!--
@@ -177,13 +113,17 @@
      - them into the liveness measure (or rather, "will incorporate").
     -->
   <articles>
-    <article url="/articles/Article-Forms/article.html"/>
-    <article url="http://www.onjava.com/pub/a/onjava/2002/12/11/eclipse.html"/>
+    <article url="http://www-128.ibm.com/developerworks/opensource/library/os-ecl-commfwk/"/>
+    <article url="http://www.eclipsezone.com/articles/ecf-interview/"/>
   </articles>
   
+  <!-- To Do: Commented out as we don't have a blog, just wikis -->
+  <!-- i.e., http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project -->
+  <!--
   <blogs>
     <blog rss="http://eclipse-projects.blogspot.com/atom.xml"/>
   </blogs>
+  -->
   
   <!--
      - Each Eclipse project needs to have a plan both for its internal purposes
@@ -191,8 +131,11 @@
      - community and ecosystem to understand what will be delivered and when
      - it will be delivered.
     -->
+  <!-- To Do: Commented out as we don't have a project plan Web page -->
+  <!--
   <project-plan url="/birt/index.php?page=project/project_plan_R2_0_0_Draft.html"/>
-
+  -->
+  
   <!--
      - Each Eclipse project creates (optional) nightly builds and milestone builds,
      - but the important builds of a project are the releases. This section of the
@@ -210,7 +153,8 @@
      - tentative release.
     -->
   <releases>
-    <release 
+ <!--
+    <release  
        status="completed"
        name="3.0.2"
        date="02/2005"
@@ -239,5 +183,6 @@
        status="tentative"
        name="4.3"
        date="4Q2006" />
+-->
   </releases>
 </project>
