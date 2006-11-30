@@ -6,5 +6,7 @@
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.discovery,org.eclipse.ecf.test.discovery"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.filetransfer,org.eclipse.ecf.test.filetransfer"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.datashare,org.eclipse.ecf.test.datashare"/>
+
+        <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests,org.eclipse.ecf.tests"/>
 	</provider>
 </psf>
