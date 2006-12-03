@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.9.3 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>0.9.4 Stable Release</font>
         <br><br><br>
         Return to <a href="downloads.php">ECF download page</a></br>
         Return to <a href="comm_resources.php">ECF communication resources page</a>
@@ -41,6 +41,7 @@
         <a href="NewAndNoteworthy_0.9.0.html">New and Noteworthy for 0.9.0</a><br>
         <a href="NewAndNoteworthy_0.9.1.html">New and Noteworthy for 0.9.1</a><br>
         <a href="NewAndNoteworthy_0.9.2.html">New and Noteworthy for 0.9.2</a><br>
+        <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a><br>
       </td>
       <td width="31%">
         <div align="center">
@@ -53,469 +54,57 @@
 
 <hr>
 
-NOTE: For brevity, bundles and packages named "<b>org.eclipse.ecf.foo<b>" will sometimes be referred to as "<b>ecf.foo</b>" below.
-
-<hr>
 <table>
-  <TR><TD colSpan=2><H2>ECF API Refactoring</H2></TD>
+  <TR><TD colSpan=2><H2>ECF UI Refactoring</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>ECF Core Bundle Split into 3 Bundles</B>
+	<B>New ECF UI Extension Points</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      <p>Previously, there was one core ECF bundle <b>org.eclipse.ecf</b>.  This bundle
-      was approximately 150K of code.  In response to <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg00391.html">dev mailing list postings about ECF code size and applicability in multiple runtime environments</a> we
-      went about refactoring the ECF core plugins so that there was less code, and less code was required for other ECF APIs (like filetransfer, datashare,
-      discovery, remoteservices).
-      </p>
-      <p>
-      There are now two core plugins: <b>org.eclipse.ecf.identity</b> and <b>org.eclipse.ecf</b>.  <b>org.eclipse.ecf</b> depends upon <b>org.eclipse.ecf.identity</b>.<br></br>
-      <p>
-      </p>
-      
-	<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<THEAD>
-			<TR VALIGN=TOP>
-	
-				<TH WIDTH=20%>
-					<P>Plugin/Bundle ID</P>
-				</TH>
-				<TH WIDTH=20%>
-					<P>New Size (Kbytes)</P>
-				</TH>
-				<TH WIDTH=20%>
-					<P>Dependencies</P>
-				</TH>
-				<TH WIDTH=20%>
-					<P>Project Name</P>
-				</TH>
-				<TH WIDTH=20%>
-					<P><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/">API Javadocs</a></P>
-				</TH>
-			</TR>
-		</THEAD>
-		<TBODY>
-			<TR VALIGN=TOP>
-	
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>org.eclipse.ecf.identity</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>30</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>(packages) org.eclipse.core.runtime org.osgi.framework</P>
-	
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>org.eclipse.ecf.core.identity</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/package-summary.html">org.eclipse.ecf.core.identity</a></P>
-				</TD>
-			</TR>
-			<TR VALIGN=TOP>
-	
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>org.eclipse.ecf</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>43</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>(bundle) org.eclipse.ecf.identity</P>
-	
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>org.eclipse.ecf</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/package-summary.html">org.eclipse.ecf.core</a> 
-					<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/events/package-summary.html">org.eclipse.ecf.core.events</a> 
-					<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/package-summary.html">org.eclipse.ecf.core.provider</a> 
-					<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/security/package-summary.html">org.eclipse.ecf.core.security</a> 
-					<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/start/package-summary.html">org.eclipse.ecf.core.start</a> 
-					<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/user/package-summary.html">org.eclipse.ecf.core.user</a> 
-					<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/util/package-summary.html">org.eclipse.ecf.core.util</a> 
-					</P>
-				</TD>
-			</TR>
-		</TBODY>
-	</TABLE>
-<p></p>
-These are now the only plugins required for use of ECF, so the total code for minimal ECF applications is 73K.  The <b>ecf</b> plugin exports the packages
-and classes from <b>ecf.identity</b>, so it is not necessary for the <b>ecf.identity</b> plugin to be explicitly added.
-<p></p>
-There is now also a third core plugin <b>ecf.sharedobject</b>:
-<p></p>
-	<TABLE WIDTH=100% BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<COL WIDTH=64*>
-		<THEAD>
-			<TR VALIGN=TOP>
-	
-				<TH WIDTH=20%>
-					<P>Plugin/Bundle ID</P>
-				</TH>
-				<TH WIDTH=20%>
-					<P>New Size (Kbytes)</P>
-				</TH>
-				<TH WIDTH=20%>
-					<P>Dependencies</P>
-	
-				</TH>
-				<TH WIDTH=20%>
-					<P>Project Name</P>
-				</TH>
-				<TH WIDTH=20%>
-					<P><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/">API Javadocs</a></P>
-				</TH>
-			</TR>
-		</THEAD>
-		<TBODY>
-			<TR VALIGN=TOP>
-	
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>org.eclipse.ecf.sharedobject</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>71</P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>(plugin) org.eclipse.ecf</P>
-	
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER>org.eclipse.ecf.core.sharedobject</a></P>
-				</TD>
-				<TD WIDTH=20%>
-					<P ALIGN=CENTER><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/">org.eclipse.ecf.core.sharedobject</a></P>
-				</TD>
-			</TR>
-		</TBODY>
-	</TABLE>
-<p></p>
-This plugin is <b>not</b> required for other ECF API plugins (e.g. filetransfer, discovery, remoteservices, datashare), but
-is useful as an API...particularly for implementing component-based ECF providers.
-<p>
-<b>NOTE</b>:  One consequence of this refactoring is that the shared object API interfaces and classes (ISharedObject, ISharedObjectContainer, etc) that
-were present in the <b>org.eclipse.ecf.core</b> package are now no longer in that package.  These classes can, however, be found in the <b>org.eclipse.ecf.core.sharedobject</b>
-package, which is now in the <b>org.eclipse.ecf.sharedobject</b> plugin (the <b>org.eclipse.ecf.core.sharedobject</b> project).  In most cases,
-adding the <b>org.eclipse.ecf.sharedobject</b> plugin to list of your plugin's dependencies and then having Eclipse "Add Import" or "Organize Imports"
-should fix with new package names.
-</p>
-</tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>ECF Core and API plugins Now Able to Run on CDC 1.0/Foundation 1.0 Execution Environments</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>The following plugins are now able to run on a minimum of the CDC 1.0/Foundation 1.0 execution environment:
-      <b>
-      <ul>
-      <li>org.eclipse.ecf.identity</li>
-      <li>org.eclipse.ecf</li>
-      <li>org.eclipse.ecf.sharedobject</li>
-      <li>org.eclipse.ecf.discovery</li>
-      <li>org.eclipse.ecf.datashare</li>
-      <li>org.eclipse.ecf.filetransfer</li>
-      <li>org.eclipse.ecf.presence</li>
-      <li>org.eclipse.ecf.remoteservice</li>
-      </ul>
-      </b>
-      See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149024">#149024</a>.
-      </p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>Package Changes for 
-	<B><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/package-summary.html">ecf.core.identity</a></B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>
-      <ul>
-      <li>
-      <b><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a></b>
-      <ul>
-      <li>toURI() method removed</li>
-      <li><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html#toExternalForm()">toExternalForm()</a> method added</li>
-      </ul></li>
-      
-      <li>Classes updated to implement ID.toExternalForm():  
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/BaseID.html">BaseID</a>, 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html">Namespace</a>, 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/StringID.html">StringID</a>, 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/GUID.html">GUID</a>, 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/LongID.html">LongID</a></li>
-      
-      <li><b>ServiceID</b> class moved from <b>core.identity</b> to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/identity/ServiceID.html"><b>ecf.discovery.identity.ServiceID</b></a>.  Previously, the <b>org.eclipse.ecf.core.identity.ServiceID</b> class was present in <b>org.eclipse.ecf.core.identity</b>.  Now it is in in 
-      the discovery API plugin (<b>org.eclipse.ecf.discovery</b>) in the <b><a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/identity/package-summary.html">org.eclipse.ecf.discovery.identity</a></b>
-      package.</li>
-      
-      </ul>
-      </p>
-    </td>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Package Changes for <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/package-summary.html">ecf.core</a>, 
-	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/events/package-summary.html">ecf.core.events</a>, 
-	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/security/package-summary.html">ecf.core.security</a>, 
-	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/package-summary.html">ecf.core.provider</a>, 
-	<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/util/package-summary.html">ecf.core.util</a></b></P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Many of the classes previously in these packages have moved to the <b>org.eclipse.ecf.sharedobject</b> bundle.  The classes are now in the following packages
-      in that bundle:  
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/package-summary.html"><b>ecf.core.sharedobject</b></a>, 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/events/package-summary.html"><b>ecf.core.sharedobject.events</b></a>, 
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/provider/package-summary.html"><b>ecf.core.sharedobject.provider</b></a>,
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/security/package-summary.html"><b>ecf.core.sharedobject.security</b></a>, 
-      and <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/util/package-summary.html"><b>ecf.core.sharedobject.util</b></a>.  To use 
-      the classes it's now necessary to include (via Require-Bundle or Import-Package) from the <b>org.eclipse.ecf.sharedobject</b> bundle.</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Extension Point Changes</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Previously there were four extension points defined in the <b>org.eclipse.ecf</b> bundle: 
-      <b>org.eclipse.ecf.namespace</b>, <b>org.eclipse.ecf.containerFactory</b>, <b>org.eclipse.ecf.connectionFactory</b>, <b>org.eclipse.ecf.startup</b>,
-      and <b>org.eclipse.ecf.sharedObjectFactory</b>.
-      The following changes have been made to these extention points:
-      <ol>
-      <li><b>org.eclipse.ecf.namespace</b>
-      <ol>
-      <li>Moved extension point to <b>org.eclipse.ecf.identity</b> bundle</li>
-      <li>Changed id for extension point to <b>org.eclipse.ecf.identity.namespace</b></li>
-      <li>Simplified signature for superclass <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/Namespace.html#createInstance(java.lang.Object[])">Namespace.createInstance()</a></li>
-      </ol>
-      </li>
-      
-      <li><b>org.eclipse.ecf.containerFactory</b>
-      <ol>
-      <li>Simplified signature for factory interface <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/provider/IContainerInstantiator.html">IContainerInstantiator</a></li>
-      </ol>
-      </li>
-      
-      <li><b>org.eclipse.ecf.start</b> -- <b>Unchanged</b></li>
-      <li><b>org.eclipse.ecf.connectionFactory</b> -- <b>REMOVED</b></li>
-
-      <li><b>org.eclipse.ecf.sharedObjectFactory</b>
-      <ol>
-      <li>Moved extension point to <b>org.eclipse.ecf.sharedobject</b> bundle</li>
-      <li>Changed id for extension point to <b>org.eclipse.ecf.sharedobject.sharedObjectFactory</b></li>
-      <li>Simplified signature for factory interface <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/sharedobject/provider/ISharedObjectInstantiator.html">ISharedObjectInstantiator</a></li>
-      </ol>
-      </li>
-
-      </ol>
-      </p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Added org.eclipse.ecf.filetransfer plugin, removed org.eclipse.ecf.fileshare plugin</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>For filetransfer, the plugin <b>org.eclipse.ecf.filetransfer</b> was created/added.  Further,
-      the <b>org.eclipse.ecf.fileshare</b> plugin was removed from the main distribution and will no longer
-      be supported.  </p>
-  </tr>
-
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>NEW ECF CONVENTION</b>:  Container adapter interfaces now use common naming
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Previously, the container adapter interfaces in the various extension APIs (e.g. discovery) did not have a common naming convention.  For 
-      example, <b>org.eclipse.ecf.discovery.IDiscoveryContainer</b>, or <b>org.eclipse.ecf.datashare.IChannelContainer</b>.  Now, all of these
-      adapter interfaces have the convention of <b>I&lt;type&gt;ContainerAdapter.class</b>.  So, for example, <b>org.eclipse.ecf.discovery.IDiscoveryContainer.class</b> is now
-      called <b>org.eclipse.ecf.discovery.IDiscoveryContainerAdapter.class</b>, and <b>org.eclipse.ecf.datashare.IChannelContainer</b> is now
-      called <b>org.eclipse.ecf.datashare.IChannelContainerAdapter</b>.  These interfaces are intended to be used as adapters for <b>org.eclipse.ecf.core.IContainer</b>
-      instances, e.g.:
+      There are two new ECF UI extension points:  <b>org.eclipse.ecf.ui.configurationWizards</b> and <b>org.eclipse.ecf.ui.connectWizards</b>.
+      These two extension points allow provider implementations to specify wizard user interfaces for the creation/configuration and connection
+      of ECF IContainer instances.  
       <p></p>
-      <pre>
-      IContainer container = ContainerFactory.getDefault().createContainer("type");
-      IDiscoveryContainerAdapter discovery = 
-      		(IDiscoveryContainerAdapter) container.getAdapter(IDiscoveryContainerAdapter.class);
-      </pre
+      Here's an exmample of using the <b>org.eclipse.ecf.ui.connectWizards</b> extension to supply a connect 
+      wizard for a given container type name.  The following would be placed in your plugin's plugin.xml:
       <p></p>
-      </p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Moved classes to *.internal* names and fixed other naming conventions</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>In accord with the Eclipse Platform <a href="http://wiki.eclipse.org/index.php/Naming_Conventions">naming conventions</a>, a number of classes and interfaces previously exposed are now
-      in internal packages with names of the form <b>org.eclipse.ecf.internal.*</b>.  These packages are 
-      further marked as <b>x-internal:=true</b> in the <b>Export-Packages</b> section within <b>MANIFEST.MF</b>.
-      </p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>org.eclipse.ecf.core.util.ECFException now inherits from CoreException</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p><b>org.eclipse.ecf.core.util.ECFException</b> formerly inherited from <b>java.lang.Exception</b>.  It now inherits from <b>org.eclipse.core.runtime.CoreException</b>.
-       This should allow ECFException to run on the CDC 1.0/Foundation 1.0 execution environment, as that execution environment does not support
-       java.lang.Exception constructors:  Exception(Throwable) and Exception(String,Throwable)</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Add 'removeListener' methods</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Added 'removeListener' methods to <b>org.eclipse.ecf.presence.chat.IChatRoomContainer</b> and <b>org.eclipse.ecf.presence.IPresenceContainer</b>.  See 
-      bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=160968">#160968</a>.</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Moved org.eclipse.ecf.presence.IInvitationListener</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Moved (in <b>org.eclipse.ecf.presence</b> API) access to <b>IInvitationListener</b> to <b>IChatRoomManager</b> rather than <b>IPresenceContainer</b>.  See 
-      bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=160137">#160137</a>.</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Allowed extending org.eclipse.ecf.provider.generic.ClientSOContainer for authentication</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Streamlined handling of creating/passing in connect data for new kind of authentication.  See 
-      bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150398">#150398</a>.</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Added query methods to org.eclipse.ecf.core.ContainerTypeDescription</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Two methods were added to <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ContainerTypeDescription.html"><b>org.eclipse.ecf.core.ContainerTypeDescription</b></a>.  These two methods are <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ContainerTypeDescription.html#getSupportedAdapterTypes()">ContainerTypeDescription.getSupportedAdapterTypes()</a>, and
-      <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/ContainerTypeDescription.html#getSupportedParameterTypes()">ContainerTypeDescription.getSupportedParameterTypes()</a>.  These two methods are available so that
-      client code can inspect the adapter types and parameter types appropriate for a given IContainer instance <b>before<b> it is actually created.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=164154">#164154</a>.</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Removed URI references from discovery API</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Removed references to <b>java.net.URI</b> class from <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/"><b>org.eclipse.ecf.discovery</b></a> plugin.</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Changed method names in <b>org.eclipse.ecf.presence</b> API</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Changed a number of method names in <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/"><b>org.eclipse.ecf.presence</b></a> API for clarity and consistency.  For example,
-      IPresenceContainerAdapter.removeSubscripionListener -> IPresenceContainerAdapter.removeRosterSubscriptionListener</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Changed exception names</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>Exception class names from <b>*InstantiationException</b> to <b>*CreateException</b>.  For example, <b>IDInstantiation</b> exception
-      is now <b>IDCreateException</b>.  <b>ContainerInstantiationException</b> is now <b>ContainerCreateException</b>.</p>
-  </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Changed method signature for IContainer.addListener</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      <p>The method signature for <b>IContainer.addListener(IContainerListener listener, String filter)</b> has changed to
-      <b>IContainer.addListener(IContainerListener listener)</b></p>
-  </tr>
+<pre>
+  &lt;extension
+        point=&quot;org.eclipse.ecf.ui.connectWizards&quot;&gt;
+     &lt;wizard
+           class=&quot;org.my.client.MyClientConnectWizard&quot;
+           containerFactoryName=&quot;org.my.client&quot;
+           id=&quot;my.client.connect.wizard&quot;
+           name=&quot;My Client Connect Wizard&quot;
+           icon=&quot;icons/connect.png&quot;&gt;
+     &lt;/wizard&gt;
+  &lt;/extension&gt;
+</pre>
+<p></p>
+Note the <b>containerFactoryName</b> ("org.my.client").  This value must match the name of the provider container factory registered under the <b>org.eclipse.ecf.containerFactory</b>
+extension point.  The specified <b>class</b> ("org.my.client.MyClientConnectWizard") must implement the <b>org.eclipse.ecf.ui.IConnectWizard</b> interface.
+<p></p>
+Clients can then display this wizard using the following:
+<p></p>
+<pre>
+		ConnectWizardDialog cwd = new ConnectWizardDialog(window.getShell(),
+				window.getWorkbench(), new ContainerHolder(container,
+						ContainerFactory.getDefault().getDescriptionByName("org.my.client"));
+		cwd.open();
+</pre>
+Where the container is a non-null IContainer instance to connect.
+<p></p>
+Here's a wizard used for the generic provider:
+<p></p>
+<p><img src="images/screens/connectWizard.png"></p>
+<p></p>
+Also see the documentation for both extension points in the Eclipse help under ECF Programmers Guide -> Reference -> Extension Points
+    </tr>
 
 </table>
 
