@@ -33,7 +33,7 @@ ob_start();
         </div>
 
 <p></p>
-See <a href="">Wiki for Sub-Projects and Longer-Range Planning</a>
+<a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">See Wiki for Sub-Project Info, Conference Call Schedule, and Longer-Range Planning</a>
 <p></p>
 <!-- Milestone 0.9.4 -->
 <a name="0.9.4"><h2>0.9.4</h2></a>
@@ -103,7 +103,7 @@ Actual Release Date: 12/03/2006
        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
    </tr>
  
-  <tr class="not done">   
+  <tr class="notdone">   
    <td>
      Add persistence to RosterView
    </td>
@@ -116,7 +116,7 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-  <tr class="not done">   
+  <tr class="notdone">   
    <td>
      Refactor RosterView to allow easier extension
    </td>
@@ -129,7 +129,21 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-   <tr class="not done">   
+   <tr class="notdone">   
+   <td>
+     Additional UI features for multi-user chat
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
+   </td>   
+ </tr>
+ 
+ 
+   <tr class="notdone">   
    <td>
      Update IRCLib to v1.10
    </td>
@@ -142,7 +156,7 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-    <tr class="not done">   
+    <tr class="notdone">   
    <td>
      Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
    </td>
@@ -155,9 +169,9 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-     <tr class="not done">   
+     <tr class="notdone">   
    <td>
-     [provider] filetransfer provider based upon httpclient 3.0
+     [provider] filetransfer provider based upon httpclient 3.0.1
    </td>
 
    <td>
@@ -168,7 +182,7 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-      <tr class="not done">   
+      <tr class="progress">   
    <td>
      [provider] BitTorrent provider for file transfer (receive) API 
    </td>
@@ -180,6 +194,33 @@ Actual Release Date: 12/03/2006
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=144133">#144133</a>
    </td>   
  </tr>
+ 
+       <tr class="progress">   
+   <td>
+     [IRC] Able to open links in internal browser
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=148874">#148874</a>
+   </td>   
+ </tr>
+ 
+      <tr class="notdone">   
+   <td>
+     Documentation about running the test suite
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=126505">#126505</a>
+   </td>   
+ </tr>
+ 
  
 </table>
 
@@ -200,7 +241,7 @@ Target Release Date: 1/3/2007
    <th>Enhancement Request/Bug</th>
  </tr>
   
- <tr class="not done">   
+ <tr class="notdone">   
    <td>
    Move ECF source into separate plugin
    </td>
@@ -213,7 +254,7 @@ Target Release Date: 1/3/2007
    </td>   
  </tr>
  
-  <tr class="not done">   
+  <tr class="notdone">   
    <td>
    TBD
    </td>
