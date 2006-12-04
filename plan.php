@@ -1,7 +1,7 @@
 <?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "ECF Plan";
+	$pageTitle 		= "ECF Release Plan";
 	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
@@ -29,13 +29,14 @@ ob_start();
 		<p>
 
 		<div class="right">
-            Last modified on December 1, 2006
+            Last modified on December 4, 2006 by slewis
         </div>
 
 <!-- Milestone 0.9.4 -->
-<h2>0.9.4</h2>
+<a name="0.9.4><h2>0.9.4</h2></a>
 
-Date: 12/02/2006
+Target Release Date: 12/02/2006
+Actual Release Date: 12/03/2006
 
 <p>
 <table class="milestones">
@@ -44,47 +45,32 @@ Date: 12/02/2006
 
    <th>Features</th>
    <th>Owners</th>
-   <th>Progress</th>
+   <th>Bugzilla</th>
  </tr>
- 
- 
  
  <tr class="done">   
    <td>
-      Document <b>org.eclipse.ecf.ui.configurationWizards</b> and <b>org.eclipse.ecf.ui.connectWizards</b> extension points
+      Document new <b>org.eclipse.ecf.ui.configurationWizards</b> and <b>org.eclipse.ecf.ui.connectWizards</b> extension points
    </td>
 
    <td>
       Scott Lewis
    </td>
-   <td>   
-      Complete
+   <td>
+     See <a href="http://www.eclipse.org/ecf/NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a>   
    </td>   
  </tr>
  
- <tr class="notdone">
-   <td>
-     
-   </td>
-   <td>
-      
-   </td>
-   <td class="notdone">
-     Not Done
-   </td>
-
- </tr>
- 
-   
 </table>
 
 
 <p>
 
 <!-- Milestone 0.9.5 -->
-<h2>0.9.5</h2>
+<a name="0.9.5"><h2>0.9.5</h2></a>
 <p>
-Date: December 15, 2006
+
+Target Release Date: 12/15/2006
 
 <table class="milestones">
  
@@ -92,35 +78,60 @@ Date: December 15, 2006
 
    <th>Features</th>
    <th>Owners</th>
-   <th>Progress</th>
+   <th>Bugzilla</th>
  </tr>
   
- <tr class="not done">   
+ <tr class="progress">   
    <td>
-     Move source over to separate plugin
-   </td>
-
-   <td>
-      Scott Lewis/Pete Mackie
-   </td>
-   <td>   
-      Not Done
-   </td>   
- </tr>
- 
- 
-  <tr class="progress">   
-   <td>
-      Organize and refactor test code as in bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#1613497</a>
+      Refactor test code and move into org.eclipse.ecf.tests plugin
    </td>
    <td>
       Scott Lewis
    </td>
 
    <td>   
-      50%
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#1613497</a>   </td>   
+   </tr>
+ 
+  
+ <tr class="not done">   
+   <td>
+   Move ECF source into separate plugin
+   </td>
+
+   <td>
+      Scott Lewis/Pete Mackie
+   </td>
+   <td>   
    </td>   
  </tr>
+ 
+  <tr class="not done">   
+   <td>
+     Add persistence to RosterView
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166670">#166670</a>
+   </td>   
+ </tr>
+ 
+  <tr class="not done">   
+   <td>
+     Refactor RosterView to allow easier extension
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166675">#166675</a>
+   </td>   
+ </tr>
+ 
  
 </table>
 

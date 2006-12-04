@@ -1,0 +1,112 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology subproject</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>0.9.4 Stable Release</font>
+        <br><br><br>
+        Return to <a href="downloads.php">ECF download page</a></br>
+        Return to <a href="comm_resources.php">ECF communication resources page</a>
+        <br><br>
+        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
+        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
+        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
+        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
+        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
+        <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
+        <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
+        <a href="NewAndNoteworthy_0.7.6.html">New and Noteworthy for 0.7.6</a><br>
+        <a href="NewAndNoteworthy_0.8.0.html">New and Noteworthy for 0.8.0</a><br>
+        <a href="NewAndNoteworthy_0.8.1.html">New and Noteworthy for 0.8.1</a><br>
+        <a href="NewAndNoteworthy_0.8.2.html">New and Noteworthy for 0.8.2</a><br>
+        <a href="NewAndNoteworthy_0.8.4.html">New and Noteworthy for 0.8.4</a><br>
+        <a href="NewAndNoteworthy_0.8.5.html">New and Noteworthy for 0.8.5</a><br>
+        <a href="NewAndNoteworthy_0.8.6.html">New and Noteworthy for 0.8.6</a><br>
+        <a href="NewAndNoteworthy_0.8.7.html">New and Noteworthy for 0.8.7</a><br>
+        <a href="NewAndNoteworthy_0.8.9.html">New and Noteworthy for 0.8.9</a><br>
+        <a href="NewAndNoteworthy_0.9.0.html">New and Noteworthy for 0.9.0</a><br>
+        <a href="NewAndNoteworthy_0.9.1.html">New and Noteworthy for 0.9.1</a><br>
+        <a href="NewAndNoteworthy_0.9.2.html">New and Noteworthy for 0.9.2</a><br>
+        <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a><br>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<table>
+  <TR><TD colSpan=2><H2>ECF UI Refactoring</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>New ECF UI Extension Points</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      There are two new ECF UI extension points:  <b>org.eclipse.ecf.ui.configurationWizards</b> and <b>org.eclipse.ecf.ui.connectWizards</b>.
+      These two extension points allow provider implementations to specify wizard user interfaces for the creation/configuration and connection
+      of ECF IContainer instances.  
+      <p></p>
+      Here's an exmample of using the <b>org.eclipse.ecf.ui.connectWizards</b> extension to supply a connect 
+      wizard for a given container type name.  The following would be placed in your plugin's plugin.xml:
+      <p></p>
+<pre>
+  &lt;extension
+        point=&quot;org.eclipse.ecf.ui.connectWizards&quot;&gt;
+     &lt;wizard
+           class=&quot;org.my.client.MyClientConnectWizard&quot;
+           containerFactoryName=&quot;org.my.client&quot;
+           id=&quot;my.client.connect.wizard&quot;
+           name=&quot;My Client Connect Wizard&quot;
+           icon=&quot;icons/connect.png&quot;&gt;
+     &lt;/wizard&gt;
+  &lt;/extension&gt;
+</pre>
+<p></p>
+Note the <b>containerFactoryName</b> ("org.my.client").  This value must match the name of the provider container factory registered under the <b>org.eclipse.ecf.containerFactory</b>
+extension point.  The specified <b>class</b> ("org.my.client.MyClientConnectWizard") must implement the <b>org.eclipse.ecf.ui.IConnectWizard</b> interface.
+<p></p>
+Clients can then display this wizard using the following:
+<p></p>
+<pre>
+		ConnectWizardDialog cwd = new ConnectWizardDialog(window.getShell(),
+				window.getWorkbench(), new ContainerHolder(container,
+						ContainerFactory.getDefault().getDescriptionByName("org.my.client"));
+		cwd.open();
+</pre>
+Where the container is a non-null IContainer instance to connect.
+<p></p>
+Here's a wizard used for the generic provider:
+<p></p>
+<p><img src="images/screens/connectWizard.png"></p>
+<p></p>
+Also see the documentation for both extension points in the Eclipse help under ECF Programmers Guide -> Reference -> Extension Points
+    </tr>
+
+</table>
+
+</body>
+</<bhtml>
