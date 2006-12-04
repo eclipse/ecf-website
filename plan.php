@@ -49,7 +49,7 @@ Actual Release Date: 12/03/2006
  <tr>
 
    <th>Features</th>
-   <th>Owners</th>
+   <th>Committer/Contributor</th>
    <th>Enhancement Request</th>
  </tr>
  
@@ -84,8 +84,8 @@ Actual Release Date: 12/03/2006
  <tr>
 
    <th>Features</th>
-   <th>Owners</th>
-   <th>Enhancement Request</th>
+   <th>Committer/Contributor</th>
+   <th>Enhancement Request/Bug</th>
  </tr>
   
  <tr class="progress">   
@@ -126,6 +126,19 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
+   <tr class="not done">   
+   <td>
+     Update IRCLib to v1.10
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166418">#166418</a>
+   </td>   
+ </tr>
+ 
 </table>
 
 <p></p>
@@ -141,8 +154,8 @@ Target Release Date: 1/3/2007
  <tr>
 
    <th>Features</th>
-   <th>Owners</th>
-   <th>Enhancement Request</th>
+   <th>Committer/Contributor</th>
+   <th>Enhancement Request/Bug</th>
  </tr>
   
  <tr class="not done">   
