@@ -32,6 +32,9 @@ ob_start();
             Last modified on December 4, 2006 by slewis
         </div>
 
+<p></p>
+See <a href="">Wiki for Sub-Projects and Longer-Range Planning</a>
+<p></p>
 <!-- Milestone 0.9.4 -->
 <a name="0.9.4"><h2>0.9.4</h2></a>
 
@@ -50,7 +53,7 @@ Actual Release Date: 12/03/2006
 
    <th>Features</th>
    <th>Committer/Contributor</th>
-   <th>Enhancement Request</th>
+   <th>Enhancement Request/Bug</th>
  </tr>
  
  <tr class="done">   
@@ -136,6 +139,45 @@ Actual Release Date: 12/03/2006
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166418">#166418</a>
+   </td>   
+ </tr>
+ 
+    <tr class="not done">   
+   <td>
+     Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
+   </td>
+
+   <td>
+      Scott Lewis
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
+   </td>   
+ </tr>
+ 
+     <tr class="not done">   
+   <td>
+     [provider] filetransfer provider based upon httpclient 3.0
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166079">#166079</a>
+   </td>   
+ </tr>
+ 
+      <tr class="not done">   
+   <td>
+     [provider] BitTorrent provider for file transfer (receive) API 
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=144133">#144133</a>
    </td>   
  </tr>
  

@@ -21,7 +21,8 @@
 	$Nav->addCustomNav("Team", "team.php", 	"_self", 1);
 	$Nav->addCustomNav("Downloads", "downloads.php", 	"_self", 1);
 	$Nav->addCustomNav("Contact Us", "contact.php", 	"_self", 1);
-	$Nav->addCustomNav("Project Planning and Team Conference Schedule","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project", "_blank", 1);
+	$Nav->addCustomNav("Plan","plan.php", "_blank", 1);
+	$Nav->addCustomNav("Wiki","http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project", "_blank", 1);
 	$Nav->addCustomNav("Overview Documentation", 		"documentation.php", "_self", 1);
 	$Nav->addCustomNav("ECF APIs (Javadocs)","org.eclipse.ecf.docs/api", "_blank", 1);
 	$Nav->addCustomNav("Developer Resources", "dev_resources.php", 	"_self", 1);
