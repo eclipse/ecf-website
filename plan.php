@@ -33,11 +33,15 @@ ob_start();
         </div>
 
 <!-- Milestone 0.9.4 -->
-<a name="0.9.4"><h2>0.9.4</h2></a> - <a href="downloads.php">Download</a>
+<a name="0.9.4"><h2>0.9.4</h2></a>
 
-Target Release Date: 12/02/2006
+<b>Target Release Date: 12/02/2006
+<br>
 Actual Release Date: 12/03/2006
-<a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy</a>
+<br>
+<a href="downloads.php">Download</a>
+<br>
+<a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy</a></b>
 
 <p></p>
 <table class="milestones">
@@ -46,7 +50,7 @@ Actual Release Date: 12/03/2006
 
    <th>Features</th>
    <th>Owners</th>
-   <th>Bugzilla</th>
+   <th>Enhancement Request</th>
  </tr>
  
  <tr class="done">   
@@ -71,7 +75,9 @@ Actual Release Date: 12/03/2006
 <a name="0.9.5"><h2>0.9.5</h2></a>
 <p></p>
 
-Target Release Date: 12/15/2006
+<b>Target Release Date: 12/15/2006</b>
+
+<p></p>
 
 <table class="milestones">
  
@@ -79,7 +85,7 @@ Target Release Date: 12/15/2006
 
    <th>Features</th>
    <th>Owners</th>
-   <th>Bugzilla</th>
+   <th>Enhancement Request</th>
  </tr>
   
  <tr class="progress">   
@@ -136,7 +142,7 @@ Target Release Date: 1/3/2007
 
    <th>Features</th>
    <th>Owners</th>
-   <th>Bugzilla</th>
+   <th>Enhancement Request</th>
  </tr>
   
  <tr class="not done">   
