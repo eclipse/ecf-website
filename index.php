@@ -60,7 +60,14 @@ that require asynchronous point-to-point or publish-and-subscribe messaging.</p>
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>November 15, 2006 - ECF 0.9.3-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  NOTE:  0.9.3 is 
+						<b>December 4, 2006 - ECF 0.9.4-stable build released on eclipse.org. See <a href="downloads.php">download</a> and <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+				</td>
+        <tr>
+					<td align="left" valign="top" height="12" width="23">
+						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
+					</td>
+					<td valign="top">
+						<b>November 15, 2006 - ECF 0.9.3-stable build released on eclipse.org. See <a href="downloads.php">download</a> and <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  NOTE:  0.9.3 is 
 						a compatibility-breaking release, with major API changes and improvements.  If you are using 0.9.2 or previous versions it will 
 						be necessary to recompile applications.</b>
 				</td>
