@@ -26,19 +26,20 @@ ob_start();
 
 	<div id="midcolumn">
 		<h1>ECF Project Milestone Plan</h1>
-		<p>
+		<p></p>
 
 		<div class="right">
             Last modified on December 4, 2006 by slewis
         </div>
 
 <!-- Milestone 0.9.4 -->
-<a name="0.9.4><h2>0.9.4</h2></a>
+<a name="0.9.4"><h2>0.9.4</h2></a> - <a href="downloads.php">Download</a>
 
 Target Release Date: 12/02/2006
 Actual Release Date: 12/03/2006
+<a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy</a>
 
-<p>
+<p></p>
 <table class="milestones">
  
  <tr>
@@ -64,11 +65,11 @@ Actual Release Date: 12/03/2006
 </table>
 
 
-<p>
+<p></p>
 
 <!-- Milestone 0.9.5 -->
 <a name="0.9.5"><h2>0.9.5</h2></a>
-<p>
+<p></p>
 
 Target Release Date: 12/15/2006
 
@@ -90,21 +91,8 @@ Target Release Date: 12/15/2006
    </td>
 
    <td>   
-       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#1613497</a>   </td>   
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
    </tr>
- 
-  
- <tr class="not done">   
-   <td>
-   Move ECF source into separate plugin
-   </td>
-
-   <td>
-      Scott Lewis/Pete Mackie
-   </td>
-   <td>   
-   </td>   
- </tr>
  
   <tr class="not done">   
    <td>
@@ -132,6 +120,63 @@ Target Release Date: 12/15/2006
    </td>   
  </tr>
  
+</table>
+
+<p></p>
+
+<!-- Milestone 0.9.6 -->
+<a name="0.9.6"><h2>0.9.6</h2></a>
+<p></p>
+
+Target Release Date: 1/3/2007
+
+<table class="milestones">
+ 
+ <tr>
+
+   <th>Features</th>
+   <th>Owners</th>
+   <th>Bugzilla</th>
+ </tr>
+  
+ <tr class="not done">   
+   <td>
+   Move ECF source into separate plugin
+   </td>
+
+   <td>
+      Scott Lewis/Pete Mackie
+   </td>
+   <td>   
+     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
+   </td>   
+ </tr>
+ 
+  <tr class="not done">   
+   <td>
+   TBD
+   </td>
+
+   <td>
+      TBD
+   </td>
+   <td>   
+     TBD
+   </td>   
+ </tr>
+ 
+  <tr class="not done">   
+   <td>
+   TBD
+   </td>
+
+   <td>
+   TBD
+   </td>
+   <td>   
+     TBD
+   </td>   
+ </tr>
  
 </table>
 
