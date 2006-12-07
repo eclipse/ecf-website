@@ -169,13 +169,13 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-     <tr class="notdone">   
+     <tr class="progress">   
    <td>
      [provider] filetransfer provider based upon httpclient 3.0.1
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166079">#166079</a>
