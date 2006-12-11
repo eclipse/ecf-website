@@ -158,6 +158,19 @@ Actual Release Date: 12/03/2006
  
     <tr class="notdone">   
    <td>
+     Refactor presence API in <b>org.eclipse.ecf.presence</b> bundle
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=167363">#167363</a>
+   </td>   
+ </tr>
+ 
+    <tr class="notdone">   
+   <td>
      Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
    </td>
 
