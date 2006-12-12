@@ -116,7 +116,7 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-  <tr class="notdone">   
+  <tr class="progress">   
    <td>
      Refactor RosterView to allow easier extension
    </td>
@@ -143,7 +143,7 @@ Actual Release Date: 12/03/2006
  </tr>
  
  
-   <tr class="progress">   
+   <tr class="done">   
    <td>
      Update IRCLib to v1.10
    </td>
