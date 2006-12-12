@@ -143,7 +143,7 @@ Actual Release Date: 12/03/2006
  </tr>
  
  
-   <tr class="notdone">   
+   <tr class="progress">   
    <td>
      Update IRCLib to v1.10
    </td>
@@ -169,7 +169,7 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-    <tr class="notdone">   
+    <tr class="progress">   
    <td>
      Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
    </td>
@@ -182,7 +182,7 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-     <tr class="progress">   
+     <tr class="done">   
    <td>
      [provider] filetransfer provider based upon httpclient 3.0.1
    </td>
