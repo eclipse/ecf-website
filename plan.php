@@ -234,6 +234,31 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
+       <tr class="notdone">   
+   <td>
+     Create New Connect Wizard for XMPP Client
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165508">#165508</a>
+   </td>   
+ </tr>
+ 
+        <tr class="notdone">   
+   <td>
+     Create New Connect Wizard for IRC Client
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#165511</a>
+   </td>   
+ </tr>
  
 </table>
 
