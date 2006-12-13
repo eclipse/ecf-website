@@ -91,7 +91,7 @@ Actual Release Date: 12/03/2006
    <th>Enhancement Request/Bug</th>
  </tr>
   
- <tr class="progress">   
+ <tr class="done">   
    <td>
       Refactor test code and move into org.eclipse.ecf.tests plugin
    </td>
@@ -149,7 +149,7 @@ Actual Release Date: 12/03/2006
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166418">#166418</a>
@@ -169,13 +169,13 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-    <tr class="progress">   
+    <tr class="notdone">   
    <td>
      Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
    </td>
 
    <td>
-      Scott Lewis
+      Unassigned
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
@@ -266,6 +266,19 @@ Target Release Date: 1/3/2007
      <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
    </td>   
  </tr>
+ 
+  <tr class="notdone">   
+   <td>
+      Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
+   </td>
+   <td>
+      Scott Lewis
+   </td>
+
+   <td>   
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
+   </tr>
+ 
  
   <tr class="notdone">   
    <td>
