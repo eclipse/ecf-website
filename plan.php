@@ -156,13 +156,13 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-    <tr class="notdone">   
+    <tr class="progress">   
    <td>
      Refactor presence API in <b>org.eclipse.ecf.presence</b> bundle
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=167363">#167363</a>
