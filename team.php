@@ -69,9 +69,6 @@ ob_start();
 			<h3>Contributors</h3>
 			<ul>
 				<li>
-				Roland Fru
-				</li>
-				<li>
 				Mustafa Isik
 				</li>
 				<li>
