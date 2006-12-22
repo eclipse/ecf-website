@@ -72,7 +72,7 @@ ob_start();
        ECF introduces the concept of a communications <b>container</b>.  ECF containers represent access to 
        a protocol-specific communications context. For connection-oriented communications, an ECF container loosely 
        corresponds to the traditional notion of a communications <b>session</b>, but the more general container concept is also
-       useful for capturing context even if the communications are not connection-oriented.
+       useful for capturing context even if the communications are not session-oriented.
        <p></p>
        ECF containers can represent both point-to-point communications (e.g. client/server) or 
        publish-and-subscribe (group) communications.  Container instances can provide access to synchronous
