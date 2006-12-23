@@ -181,7 +181,7 @@ Target Release Date: 1/06/2007
   
  <tr class="notdone">   
    <td>
-   Basic Integration of New ECF Roster with Mylar
+   Integration of ECF Roster with Mylar 1.0
    </td>
 
    <td>
@@ -333,19 +333,6 @@ Target Release Date: 1/06/2007
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#165511</a>
-   </td>   
- </tr>
- 
-  <tr class="not done">   
-   <td>
-   TBD
-   </td>
-
-   <td>
-   TBD
-   </td>
-   <td>   
-     TBD
    </td>   
  </tr>
  
