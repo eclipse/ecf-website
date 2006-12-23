@@ -29,7 +29,7 @@ ob_start();
 		<p></p>
 
 		<div class="right">
-            Last modified on December 4, 2006 by slewis
+            Last modified on December 22, 2006 by slewis
         </div>
 
 <p></p>
@@ -78,9 +78,13 @@ Actual Release Date: 12/03/2006
 <a name="0.9.5"><h2>0.9.5</h2></a>
 <p></p>
 
-<b>Target Release Date: 12/15/2006</b>
-
-<p></p>
+<b>Target Release Date: 12/02/2006
+<br>
+Actual Release Date: 12/22/2006
+<br>
+<a href="downloads.php">Download</a>
+<br>
+<a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy</a></b>
 
 <table class="milestones">
  
@@ -103,45 +107,18 @@ Actual Release Date: 12/03/2006
        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
    </tr>
  
-  <tr class="notdone">   
-   <td>
-     Add persistence to RosterView
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166670">#166670</a>
-   </td>   
- </tr>
- 
-  <tr class="progress">   
+  <tr class="done">   
    <td>
      Refactor RosterView to allow easier extension
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166675">#166675</a>
    </td>   
  </tr>
- 
-   <tr class="notdone">   
-   <td>
-     Additional UI features for multi-user chat
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
-   </td>   
- </tr>
- 
  
    <tr class="done">   
    <td>
@@ -156,7 +133,7 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-    <tr class="progress">   
+    <tr class="done">   
    <td>
      Refactor presence API in <b>org.eclipse.ecf.presence</b> bundle
    </td>
@@ -166,19 +143,6 @@ Actual Release Date: 12/03/2006
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=167363">#167363</a>
-   </td>   
- </tr>
- 
-    <tr class="notdone">   
-   <td>
-     Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
    </td>   
  </tr>
  
@@ -195,7 +159,105 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
-      <tr class="progress">   
+ 
+</table>
+
+<p></p>
+
+<!-- Milestone 0.9.6 -->
+<a name="0.9.6"><h2>0.9.6</h2></a>
+<p></p>
+
+Target Release Date: 1/06/2007
+
+<table class="milestones">
+ 
+ <tr>
+
+   <th>Features</th>
+   <th>Committer/Contributor</th>
+   <th>Enhancement Request/Bug</th>
+ </tr>
+  
+ <tr class="notdone">   
+   <td>
+   Move ECF source into separate plugin
+   </td>
+
+   <td>
+      Scott Lewis/Pete Mackie
+   </td>
+   <td>   
+     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
+   </td>   
+ </tr>
+ 
+   <tr class="notdone">   
+   <td>
+     Additional UI features for multi-user chat
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
+   </td>   
+ </tr>
+ 
+ <tr class="notdone">   
+   <td>
+     Create New Connect Wizard for JXTA Client
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165514">#165514</a>
+   </td>   
+ </tr>
+ 
+ 
+  <tr class="progress">   
+   <td>
+      Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
+   </td>
+   <td>
+      Scott Lewis
+   </td>
+
+   <td>   
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
+   </tr>
+ 
+   <tr class="notdone">   
+   <td>
+     Add persistence to RosterView
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166670">#166670</a>
+   </td>   
+ </tr>
+ 
+ <tr class="notdone">   
+   <td>
+     Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
+   </td>   
+ </tr>
+ 
+       <tr class="progress">   
    <td>
      [provider] BitTorrent provider for file transfer (receive) API 
    </td>
@@ -260,15 +322,26 @@ Actual Release Date: 12/03/2006
    </td>   
  </tr>
  
+  <tr class="not done">   
+   <td>
+   TBD
+   </td>
+
+   <td>
+   TBD
+   </td>
+   <td>   
+     TBD
+   </td>   
+ </tr>
+ 
 </table>
 
+<!-- Milestone 0.9.7 -->
+<a name="0.9.7"><h2>0.9.7</h2></a>
 <p></p>
 
-<!-- Milestone 0.9.6 -->
-<a name="0.9.6"><h2>0.9.6</h2></a>
-<p></p>
-
-Target Release Date: 1/3/2007
+Target Release Date: 2/3/2007
 
 <table class="milestones">
  
@@ -279,44 +352,19 @@ Target Release Date: 1/3/2007
    <th>Enhancement Request/Bug</th>
  </tr>
   
- <tr class="notdone">   
+   <tr class="notdone">   
    <td>
-   Move ECF source into separate plugin
+     Additional UI features for multi-user chat
    </td>
 
    <td>
-      Scott Lewis/Pete Mackie
+      Unassigned
    </td>
    <td>   
-     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
    </td>   
  </tr>
  
-  <tr class="notdone">   
-   <td>
-      Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
-   </td>
-   <td>
-      Scott Lewis
-   </td>
-
-   <td>   
-       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
-   </tr>
- 
- 
-  <tr class="notdone">   
-   <td>
-   TBD
-   </td>
-
-   <td>
-      TBD
-   </td>
-   <td>   
-     TBD
-   </td>   
- </tr>
  
   <tr class="not done">   
    <td>
@@ -332,6 +380,9 @@ Target Release Date: 1/3/2007
  </tr>
  
 </table>
+
+
+
 
 </div>
 
