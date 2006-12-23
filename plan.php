@@ -78,7 +78,7 @@ Actual Release Date: 12/03/2006
 <a name="0.9.5"><h2>0.9.5</h2></a>
 <p></p>
 
-<b>Target Release Date: 12/02/2006
+<b>Target Release Date: 12/15/2006
 <br>
 Actual Release Date: 12/22/2006
 <br>
@@ -181,7 +181,21 @@ Target Release Date: 1/06/2007
   
  <tr class="notdone">   
    <td>
-   Move ECF source into separate plugin
+   Basic Integration of New ECF Roster with Mylar
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111218">#111218</a>
+     <br><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
+   </td>   
+ </tr>
+
+ <tr class="notdone">   
+   <td>
+   Move ECF source into separate plugin for Europa deployment
    </td>
 
    <td>
@@ -194,7 +208,7 @@ Target Release Date: 1/06/2007
  
    <tr class="notdone">   
    <td>
-     Additional UI features for multi-user chat
+     Additional UI features for IM and multi-user chat
    </td>
 
    <td>
@@ -341,7 +355,7 @@ Target Release Date: 1/06/2007
 <a name="0.9.7"><h2>0.9.7</h2></a>
 <p></p>
 
-Target Release Date: 2/3/2007
+Target Release Date: 2/16/2007
 
 <table class="milestones">
  
