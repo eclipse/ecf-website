@@ -34,25 +34,25 @@ ob_start();
 	<div id="midcolumn">
 	   <div class="homeitem3col">
 		 <h3><?= $pageTitle ?></h3>
-         <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.4</b> Stable build is now available.</p>
-         <p><h4><img border="0" src="../images/new.gif" width="31" height="14">IMPORTANT:  The 0.9.3 release is a <b>compatibility-breaking release</b>, meaning that</h4>
+         <p><img border="0" src="../images/new.gif" width="31" height="14"><b>Eclipse Communication Framework 0.9.5</b> Stable build is now available.</p>
+         <p><h4><img border="0" src="../images/new.gif" width="31" height="14">IMPORTANT:  The 0.9.3, and newer, releases are a <b>compatibility-breaking release</b>, meaning that:</h4>
                <ul>
                   <li>If you are using a previous version of ECF (<= 0.9.2), it is necessary to <b>uninstall</b> this
-                  version <b>before</b> installing 0.9.4.  To uninstall the previous version:
+                  version <b>before</b> installing 0.9.5.  To uninstall the previous version:
                   <ul>
                      <li>In Eclipse, go to <b>Help -> Software Updates -> Manage Configuration</b></li>
                      <li>Select all the features that start with "ECF ...".</li>
                      <li>Right click to bring up context menu and choose <b>Uninstall</b></li>
                      <li>Answer Yes/OK to questions</li>
                      <li>Stop/restart Eclipse</li>
-                     Now you may install 0.9.4 (via update site or zip).  See below for instructions.
+                     Now you may install 0.9.5 (via update site or zip).  See below for instructions.
                   </ul></li>
-                  <li>Applications based upon 0.9.4 will not work with older servers (<= 0.9.2).  
+                  <li>Applications based upon 0.9.5 will not work with older servers (<= 0.9.2).  
                   <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers.  The public
                   ECF server at 
-                  <b>ecftcp://ecf.eclipse.org:3282/server</b> has moved to 0.9.4. The ECF server no longer support old clients (0.9.2).</b></li>
+                  <b>ecftcp://ecf.eclipse.org:3282/server</b> has moved to 0.9.5. The ECF server no longer support old clients (0.9.2).</b></li>
                </ul>
-            <h4><b>Please see <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a> for details about API changes</b></h4>
+            <h4><b>Please see <a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy for 0.9.5</a> for details about API changes</b></h4>
          </p>
          <p></p>
          <h3>ECF Install via Update Site (preferred method)</h3>
@@ -86,17 +86,17 @@ ob_start();
 		       <tr>
                   <td>
                   
-  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.4.S20061202.zip">
-  			          org.eclipse.ecf.sdk-0.9.4.S20061202.zip</a>&nbsp;
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.5.S20061222.zip">
+  			          org.eclipse.ecf.sdk-0.9.5.S20061222.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-12-03</td>
+                  <td align="center">2006-12-22</td>
                </tr>
 					<tr>
            	<td>
-			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.3.S20061115.zip">
-  			          org.eclipse.ecf.sdk-0.9.3.S20061115.zip</a>&nbsp;
+			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk- 0.9.4.S20061202.zip">
+  			          org.eclipse.ecf.sdk- 0.9.4.S20061202.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-11-15
+                  <td align="center">2006-12-02
             </td>
            </tr>
             </tbody>
@@ -112,17 +112,17 @@ ob_start();
                </tr>
 		       <tr>
                   <td>
-  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.9.4.S20061202.zip">
-  			          org.eclipse.ecf.core-0.9.4.S20061202.zip</a>&nbsp;
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.9.5.S20061222.zip">
+  			          org.eclipse.ecf.core-0.9.5.S20061222.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-12-03</td>
+                  <td align="center">2006-12-22</td>
                </tr>
 					<tr>
            	<td>
-			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.9.3.S20061115.zip">
-  			          org.eclipse.ecf.core-0.9.3.S20061115.zip</a>&nbsp;
+			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core- 0.9.4.S20061202.zip">
+  			          org.eclipse.ecf.core- 0.9.4.S20061202.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-11-15
+                  <td align="center">2006-12-02
             </td>
            </tr>
             </tbody>
@@ -138,17 +138,17 @@ ob_start();
                </tr>
 		       <tr>
                   <td>
-  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples-0.9.4.S20061202.zip">
-  			          org.eclipse.ecf.examples-0.9.4.S20061202.zip</a>&nbsp;
+  			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples-0.9.5.S20061222.zip">
+  			          org.eclipse.ecf.examples-0.9.5.S20061222.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-12-03</td>
+                  <td align="center">2006-12-22</td>
                </tr>
  					<tr>
            	<td>
-			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples-0.9.3.S20061115.zip">
-  			          org.eclipse.ecf.examples-0.9.3.S20061115.zip</a>&nbsp;
+			         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples- 0.9.4.S20061202.zip">
+  			          org.eclipse.ecf.examples- 0.9.4.S20061202.zip</a>&nbsp;
                   </td>
-                  <td align="center">2006-11-15
+                  <td align="center">2006-12-02
             </td>
            </tr>
            </tbody>
