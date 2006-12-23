@@ -56,31 +56,39 @@
 <hr>
 
 <table>
-  <TR><TD colSpan=2><H2>ECF Presence API Refactoring</H2></TD>
+  <TR><TD colSpan=2><H2>API Changes</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Presence API Supports JFace ITreeContentProvider</B>
+	<B>Presence API Refactoring to Support JFace Content Providers</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      TBD 12/23/2006
-      <p></p>
-    </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>New Plugin:  org.eclipse.ecf.presence.ui</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      TBD 12/23/2006
+      The presence API (plugin: <b>org.eclipse.ecf.presence</b>) has been enhanced to support JFace viewers.  Specifically,
+      the roster interface classes (IRosterManager, IRoster, IRosterEntry, IRosterGroup, IRosterItem) have been enhanced
+      so that they can easily be used as the basis of an JFace ITreeContentProvider.  This allows the
+      use and automatic update of a roster (buddy) list by an ECF provider that implements the presence API (e.g. the XMPP provider).  For example, here is code in the new plugin 
+      <b>org.eclipse.ecf.presence.ui</b> that creates a tree viewer to display multiple rosters:
+      <pre>
+      	protected void setupTreeViewer(Composite parent) {
+		    treeViewer = new TreeViewer(parent, SWT.BORDER | SWT.MULTI
+				| SWT.V_SCROLL);
+		    getSite().setSelectionProvider(treeViewer);
+		    multiRosterContentProvider = new MultiRosterContentProvider();
+		    multiRosterLabelProvider = new MultiRosterLabelProvider();
+		    treeViewer.setLabelProvider(multiRosterLabelProvider);
+		    treeViewer.setContentProvider(multiRosterContentProvider);
+		    treeViewer.setInput(new Object());
+	    }
+      </pre>
+      With this approach, the UI/viewer code does not need to know anything about the messaging to change/update the roster
+      model.  This model is managed by the ECF provider (XMPP) and when 
+      The MultiRosterContentProvider class (and others to support this new approach) are available
+      in the (new) plugin:  <b>org.eclipse.ecf.presence.ui</b>.  See the classes in the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/ui/package-summary.html">org.eclipse.ecf.presence.ui package</a>.
+      
       <p></p>
     </tr>
 
