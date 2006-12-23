@@ -56,13 +56,13 @@
 <hr>
 
 <table>
-  <TR><TD colSpan=2><H2>API Changes</H2></TD>
+  <TR><TD colSpan=2><H2>API Enhancements</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Presence API Refactoring to Support JFace Content Providers</B>
+	<B>Refactoring to Support JFace Content Providers</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -87,8 +87,53 @@
       With this approach, the UI/viewer code does not need to know anything about the messaging to change/update the roster
       model.  This model is managed by the ECF provider (XMPP) and when 
       The MultiRosterContentProvider class (and others to support this new approach) are available
-      in the (new) plugin:  <b>org.eclipse.ecf.presence.ui</b>.  See the classes in the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/ui/package-summary.html">org.eclipse.ecf.presence.ui package</a>.
+      in the (new) plugin:  <b>org.eclipse.ecf.presence.ui</b>.  See the classes in the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/ui/package-summary.html">org.eclipse.ecf.presence.ui package</a>
+      for example usage and reusable base classes.
       
+      <p></p>
+    </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>IRCLib Update</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      The IRC provider plugin (<b>org.eclipse.ecf.provider.irc</b>) is based upon the IRCLib by Christoph Schwering.  This 
+      library was update from 1.04 to 1.10 with specific improvements to support ECF usage.
+      <p></p>
+    </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Filetransfer Provider Uses Apache HttpClient 3.0.1</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      The filetransfer provider implementation (plugin <b>org.eclipse.ecf.provider.filetransfer</b>) previously was based
+      upon the JDK <b>java.net.URLConnection</b> class for http file transfer support.  Now this plugin uses the Apache
+      HttpClient code v3.0.1.  API was added to support the use of http authentication and http proxies.
+      <p></p>
+    </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Overall Improvements to Presence API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      A number of improvements were made by refactoring the presence API (plugin: <b>org.eclipse.ecf.presence</b>).  Interface and 
+      class names were changed for more consistency, interfaces and classes were moved around, and the API was simplified in many
+      ways.  For details see bug:  <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=167363">#167363</a>
       <p></p>
     </tr>
 
