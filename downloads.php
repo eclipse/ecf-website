@@ -30,6 +30,14 @@
 	# Paste your HTML content between the markers!	
 ob_start();
 ?>		
+<div id="rightcolumn">
+ <div class="sideitem">
+   <h6>Incubation</h6>
+   <div align="center"><a href="/projects/gazoo.php"><img 
+        align="center" src="/images/gazoo-incubation.jpg" 
+        border="0" /></a></div>
+ </div>
+</div>
 
 	<div id="midcolumn">
 	   <div class="homeitem3col">
