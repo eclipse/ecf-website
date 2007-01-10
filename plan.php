@@ -179,20 +179,6 @@ Target Release Date: 1/12/2007
    <th>Enhancement Request/Bug</th>
  </tr>
   
- <tr class="notdone">   
-   <td>
-   Integration of ECF Roster with Mylar 1.0
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111218">#111218</a>
-     <br><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
-   </td>   
- </tr>
-
    <tr class="notdone">   
    <td>
      Add persistence to RosterView
@@ -212,7 +198,7 @@ Target Release Date: 1/12/2007
    </td>
 
    <td>
-      Unassigned
+      Remy Suen and Scott Lewis
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=144133">#144133</a>
@@ -225,23 +211,10 @@ Target Release Date: 1/12/2007
    </td>
 
    <td>
-      Unassigned
+      Remy Suen
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=148874">#148874</a>
-   </td>   
- </tr>
- 
-      <tr class="notdone">   
-   <td>
-     Documentation about running the test suite
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=126505">#126505</a>
    </td>   
  </tr>
  
@@ -251,7 +224,7 @@ Target Release Date: 1/12/2007
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165508">#165508</a>
@@ -275,6 +248,34 @@ Target Release Date: 2/16/2007
    <th>Enhancement Request/Bug</th>
  </tr>
   
+      <tr class="notdone">   
+   <td>
+     Documentation about running the test suite
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=126505">#126505</a>
+   </td>   
+ </tr>
+ 
+  <tr class="notdone">   
+   <td>
+   Integration of ECF Roster with Mylar 1.0
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111218">#111218</a>
+     <br><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
+   </td>   
+ </tr>
+
+ 
  <tr class="notdone">   
    <td>
    Move ECF source into separate plugin for Europa deployment
