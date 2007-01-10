@@ -193,20 +193,6 @@ Target Release Date: 1/12/2007
    </td>   
  </tr>
 
- <tr class="notdone">   
-   <td>
-     Create New Connect Wizard for JXTA Client
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165514">#165514</a>
-   </td>   
- </tr>
- 
- 
    <tr class="notdone">   
    <td>
      Add persistence to RosterView
@@ -365,6 +351,21 @@ Target Release Date: 2/16/2007
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150756">#150756</a>
    </td>   
  </tr>
+ 
+  <tr class="notdone">   
+   <td>
+     Create New Connect Wizard for JXTA Client
+   </td>
+
+   <td>
+      Pierre Henry-Perret
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165514">#165514</a>
+   </td>   
+ </tr>
+ 
+ 
  
 </table>
 
