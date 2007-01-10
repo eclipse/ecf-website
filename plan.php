@@ -185,7 +185,7 @@ Target Release Date: 1/12/2007
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166670">#166670</a>
