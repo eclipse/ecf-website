@@ -355,14 +355,14 @@ Target Release Date: 2/16/2007
  
   <tr class="not done">   
    <td>
-   TBD
+   Complete bulletin board API, get IP approval for contribution, and integrate in with ECF on dev.eclipse.org
    </td>
 
    <td>
-   TBD
+     Erkki Lindpere and Scott Lewis
    </td>
    <td>   
-     TBD
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#150756</a>
    </td>   
  </tr>
  
