@@ -195,32 +195,6 @@ Target Release Date: 1/12/2007
 
  <tr class="notdone">   
    <td>
-   Move ECF source into separate plugin for Europa deployment
-   </td>
-
-   <td>
-      Scott Lewis/Pete Mackie
-   </td>
-   <td>   
-     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
-   </td>   
- </tr>
- 
-   <tr class="notdone">   
-   <td>
-     Additional UI features for IM and multi-user chat
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
-   </td>   
- </tr>
- 
- <tr class="notdone">   
-   <td>
      Create New Connect Wizard for JXTA Client
    </td>
 
@@ -233,18 +207,6 @@ Target Release Date: 1/12/2007
  </tr>
  
  
-  <tr class="progress">   
-   <td>
-      Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
-   </td>
-   <td>
-      Scott Lewis
-   </td>
-
-   <td>   
-       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
-   </tr>
- 
    <tr class="notdone">   
    <td>
      Add persistence to RosterView
@@ -255,19 +217,6 @@ Target Release Date: 1/12/2007
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166670">#166670</a>
-   </td>   
- </tr>
- 
- <tr class="notdone">   
-   <td>
-     Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
    </td>   
  </tr>
  
@@ -322,20 +271,7 @@ Target Release Date: 1/12/2007
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165508">#165508</a>
    </td>   
  </tr>
- 
-        <tr class="notdone">   
-   <td>
-     Create New Connect Wizard for IRC Client
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#165511</a>
-   </td>   
- </tr>
- 
+  
 </table>
 
 <!-- Milestone 0.9.7 -->
@@ -353,9 +289,22 @@ Target Release Date: 2/16/2007
    <th>Enhancement Request/Bug</th>
  </tr>
   
+ <tr class="notdone">   
+   <td>
+   Move ECF source into separate plugin for Europa deployment
+   </td>
+
+   <td>
+      Scott Lewis/Pete Mackie
+   </td>
+   <td>   
+     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
+   </td>   
+ </tr>
+ 
    <tr class="notdone">   
    <td>
-     Additional UI features for multi-user chat
+     Additional UI features for IM and multi-user chat
    </td>
 
    <td>
@@ -366,6 +315,43 @@ Target Release Date: 2/16/2007
    </td>   
  </tr>
  
+   <tr class="progress">   
+   <td>
+      Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
+   </td>
+   <td>
+      Scott Lewis
+   </td>
+
+   <td>   
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
+   </tr>
+ 
+  <tr class="notdone">   
+   <td>
+     Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
+   </td>   
+ </tr>
+ 
+         <tr class="notdone">   
+   <td>
+     Create New Connect Wizard for IRC Client
+   </td>
+
+   <td>
+      Unassigned
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#165511</a>
+   </td>   
+ </tr>
  
   <tr class="not done">   
    <td>
