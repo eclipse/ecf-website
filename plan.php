@@ -362,7 +362,7 @@ Target Release Date: 2/16/2007
      Erkki Lindpere and Scott Lewis
    </td>
    <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#150756</a>
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150756">#150756</a>
    </td>   
  </tr>
  
