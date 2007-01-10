@@ -168,7 +168,7 @@ Actual Release Date: 12/22/2006
 <a name="0.9.6"><h2>0.9.6</h2></a>
 <p></p>
 
-Target Release Date: 1/06/2007
+Target Release Date: 1/12/2007
 
 <table class="milestones">
  
