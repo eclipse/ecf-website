@@ -205,7 +205,7 @@ Target Release Date: 1/12/2007
    </td>   
  </tr>
  
-       <tr class="progress">   
+       <tr class="done">   
    <td>
      [IRC] Able to open links in internal browser
    </td>
@@ -228,6 +228,19 @@ Target Release Date: 1/12/2007
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165508">#165508</a>
+   </td>   
+ </tr>
+ 
+       <tr class="done">   
+   <td>
+     [IRC] Do not automatically disconnect on any error
+   </td>
+
+   <td>
+      Remy Suen
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=156057">#156057</a>
    </td>   
  </tr>
   
