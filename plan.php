@@ -243,6 +243,19 @@ Target Release Date: 1/12/2007
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=156057">#156057</a>
    </td>   
  </tr>
+ 
+         <tr class="done">   
+   <td>
+     Create New Connect Wizard for IRC Client
+   </td>
+
+   <td>
+      Remy Suen
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#165511</a>
+   </td>   
+ </tr>
   
 </table>
 
@@ -337,19 +350,6 @@ Target Release Date: 2/16/2007
    </td>
    <td>   
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
-   </td>   
- </tr>
- 
-         <tr class="notdone">   
-   <td>
-     Create New Connect Wizard for IRC Client
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#165511</a>
    </td>   
  </tr>
  
