@@ -1,4 +1,10 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php 
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
+	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	
+	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();
+	echo $_SERVER['DOCUMENT_ROOT'];
+//	include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
@@ -60,18 +66,22 @@ that require asynchronous point-to-point or publish-and-subscribe messaging.</p>
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>December 22, 2006 - ECF 0.9.5-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.</b>
+						<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.</b>
 				</td>
-				</tr>
-         <tr>
+        <tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>December 2, 2006 - ECF 0.9.4-stable build released on eclipse.org. <br/>NOTE:  0.9.3 is 
-						a compatibility-breaking release, with major API changes and improvements. If you are using 0.9.2 or previous versions it will be necessary to recompile applications.</b>
+						<b>December 22, 2006 - ECF 0.9.4-stable build released on eclipse.org.
 				</td>
-				</tr>
+        <tr>
+					<td align="left" valign="top" height="12" width="23">
+						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
+					</td>
+					<td valign="top">
+						<b>December 2, 2006 - ECF 0.9.4-stable build released on eclipse.org.
+				</td>
          <tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
