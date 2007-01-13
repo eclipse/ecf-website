@@ -179,7 +179,7 @@ Target Release Date: 1/12/2007
    <th>Enhancement Request/Bug</th>
  </tr>
   
-   <tr class="notdone">   
+   <tr class="progress">   
    <td>
      Add persistence to RosterView
    </td>
@@ -205,7 +205,7 @@ Target Release Date: 1/12/2007
    </td>   
  </tr>
  
-       <tr class="progress">   
+       <tr class="done">   
    <td>
      [IRC] Able to open links in internal browser
    </td>
