@@ -62,6 +62,9 @@ ob_start();
                 <li>
                 	Pierre-Henry Perret
                 </li>
+				<li>
+				    Remy Suen
+				</li>
 			</ul> 
 		</div>
 
@@ -82,9 +85,6 @@ ob_start();
 				</li>
 				<li>
 				Christoph Schwering
-				</li>
-				<li>
-				Remy Suen
 				</li>
 			</ul> 
 		</div>
