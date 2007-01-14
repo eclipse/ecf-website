@@ -66,7 +66,7 @@ that require asynchronous point-to-point or publish-and-subscribe messaging.</p>
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  See <a href="downloads.php">here</a> to download.</b>
+						<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  <a href="downloads.php">Click here to download</a>.</b>
 					</td>
         <tr>
 					<td align="left" valign="top" height="12" width="23">
