@@ -93,6 +93,13 @@ that require asynchronous point-to-point or publish-and-subscribe messaging.</p>
 					</td>
 				</tr>
 -->
+        <tr>
+					<td align="left" valign="top" height="12" width="23">
+						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
+					</td>
+					<td valign="top">
+						<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.</b>
+					</td>
        	<tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
