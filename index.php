@@ -61,13 +61,12 @@ that require asynchronous point-to-point or publish-and-subscribe messaging.</p>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
           <table cellSpacing="5" cellPadding="2" width="100%" border="0">
- <!--
         <tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
 					</td>
 					<td valign="top">
-						<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.</b>
+						<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  See <a href="downloads.php">here</a> to download.</b>
 					</td>
         <tr>
 					<td align="left" valign="top" height="12" width="23">
@@ -92,14 +91,6 @@ that require asynchronous point-to-point or publish-and-subscribe messaging.</p>
 						a compatibility-breaking release, with major API changes and improvements. If you are using 0.9.2 or previous versions it will be necessary to recompile applications.</b>
 					</td>
 				</tr>
--->
-        <tr>
-					<td align="left" valign="top" height="12" width="23">
-						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
-					</td>
-					<td valign="top">
-						<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.</b>
-					</td>
        	<tr>
 					<td align="left" valign="top" height="12" width="23">
 						<img src="../images/Adarrow.gif" border="0" width="16" height="16">
