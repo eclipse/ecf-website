@@ -169,7 +169,13 @@ Actual Release Date: 12/22/2006
 <p></p>
 
 Target Release Date: 1/12/2007
-
+<br>
+Actual Release Date: 1/13/2007
+<br>
+<br>
+<a href="downloads.php">Download</a>
+<br>
+<a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy</a></b>
 <table class="milestones">
  
  <tr>
