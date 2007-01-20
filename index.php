@@ -32,6 +32,8 @@
 	# $Nav->addCustomNav("My Link", "mypage.php", "_self");
 	# $Nav->addCustomNav("Google", "http://www.google.com/", "_blank");
 
+	$Nav->addCustomNav("Committers", "committers/index.php", "_self");
+
 	# End: page-specific settings
 	#
 	
