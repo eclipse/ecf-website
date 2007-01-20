@@ -22,7 +22,7 @@ ob_start();
 			<h3>ECF Committers</h3>
 			<table width="100%" border="0">
               <tr>
-                <td width="25%"><p align="center"><img src="chris_aniszczyk.gif" alt="Chris Aniszczyk" width="200" height="280"></p>
+                <td width="25%"><p align="center"><img src="zx.gif" alt="Chris Aniszczyk" width="200" height="280"></p>
                   <p align="center"><strong><a href="http://mea-bloga.blogspot.com">Chris Aniszczyk</a></strong></p>
                   <p align="center">Committer, IBM Austin Labs</p>               
                   <p align="center">&nbsp;</p>
