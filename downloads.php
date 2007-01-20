@@ -180,7 +180,7 @@ ob_start();
          	<table border=0 cellspacing=5 cellpadding=2 width="100%" >
 		<font size="-1" face="arial,helvetica,geneva">
 		<tr>
-			<td align=right valign=top><img src="http://dev.eclipse.org/images/Adarrow.gif" border=0 height=16 width=16></td>
+			<td align=right valign=top><img src="../images/Adarrow.gif" border=0 height=16 width=16></td>
 			<td>
 				<p><b>Releases</b><br>
 				Releases are builds that have been declared major releases by the ECF development
@@ -192,7 +192,7 @@ ob_start();
 				<br></p>
 			</td>
 		</tr>
-		<tr><td align=right valign=top><img src="http://dev.eclipse.org/images/Adarrow.gif" border=0 height=16 width=16></td>
+		<tr><td align=right valign=top><img src="../images/Adarrow.gif" border=0 height=16 width=16></td>
 			<td>
 				<b>Stable Builds</b><br>
 				Stable builds are integration builds that have been found to be stable enough for
@@ -206,7 +206,7 @@ ob_start();
 			 </td>
 		</tr>
 		<tr>
-			<td align=right valign=top><img src="http://dev.eclipse.org/images/Adarrow.gif" border=0 height=16 width=16></td>
+			<td align=right valign=top><img src="../images/Adarrow.gif" border=0 height=16 width=16></td>
 			<td>
 				<p><b>Integration Builds</b><br>
 				Periodically, component teams version off their work in what they believe is
@@ -220,7 +220,7 @@ ob_start();
 			</td>
 		</tr>
 		<tr>
-			<td align=right valign=top><img src="http://dev.eclipse.org/images/Adarrow.gif" border=0 height=16 width=16></td>
+			<td align=right valign=top><img src="../images/Adarrow.gif" border=0 height=16 width=16></td>
 			<td><b>Nightly Builds</b><br>
 				Nightly builds are produced over night from whatever has been released into the
 				HEAD stream of the CVS repository. They are completely untested and will almost
@@ -231,7 +231,7 @@ ob_start();
 			</td>
 		</tr>
 		<tr>
-			<td align=right valign=top><img src="http://dev.eclipse.org/images/Adarrow.gif" border=0 height=16 width=16></td>
+			<td align=right valign=top><img src="../images/Adarrow.gif" border=0 height=16 width=16></td>
 			<td><b>Maintenance Builds</b><br>
 				Periodically builds for maintenance of the current release will be performed.
 				They will not necessarily be stable builds. When the maintenace is finalized and

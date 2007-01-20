@@ -1,4 +1,10 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  																	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
+$App 	= new App();
+$Nav	= new Nav();
+$Menu 	= new Menu();
+include($App->getProjectCommon());
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Release Plan";
@@ -23,8 +29,17 @@ ob_start();
 </head>
 <div id="maincontent">
 		
+<div id="rightcolumn">
+ <div class="sideitem">
+   <h6>Incubation</h6>
+   <div align="center"><a href="/projects/gazoo.php"><img
+        align="center" src="/images/gazoo-incubation.jpg"
+        border="0" /></a></div>
+ </div>
+</div>
 
 	<div id="midcolumn">
+<h1 style="color:#fff;background-image:url(/eclipse.org-common/themes/Phoenix/images/header_bg.gif)">ECF Plan</h1>
 		<h1>ECF Project Milestone Plan</h1>
 		<p></p>
 
@@ -84,7 +99,10 @@ Actual Release Date: 12/22/2006
 <br>
 <a href="downloads.php">Download</a>
 <br>
-<a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy</a></b>
+<a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy</a>
+</b>
+
+<p></p>
 
 <table class="milestones">
  
@@ -120,6 +138,7 @@ Actual Release Date: 12/22/2006
    </td>   
  </tr>
  
+ 
    <tr class="done">   
    <td>
      Update IRCLib to v1.10
@@ -133,7 +152,7 @@ Actual Release Date: 12/22/2006
    </td>   
  </tr>
  
-    <tr class="done">   
+<tr class="done">
    <td>
      Refactor presence API in <b>org.eclipse.ecf.presence</b> bundle
    </td>
@@ -141,11 +160,11 @@ Actual Release Date: 12/22/2006
    <td>
       Scott Lewis
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=167363">#167363</a>
-   </td>   
+   </td>
  </tr>
- 
+
      <tr class="done">   
    <td>
      [provider] filetransfer provider based upon httpclient 3.0.1
@@ -159,7 +178,6 @@ Actual Release Date: 12/22/2006
    </td>   
  </tr>
  
- 
 </table>
 
 <p></p>
@@ -168,7 +186,7 @@ Actual Release Date: 12/22/2006
 <a name="0.9.6"><h2>0.9.6</h2></a>
 <p></p>
 
-Target Release Date: 1/12/2007
+<b>Target Release Date: 1/12/2007
 <br>
 Actual Release Date: 1/13/2007
 <br>
@@ -176,6 +194,8 @@ Actual Release Date: 1/13/2007
 <a href="downloads.php">Download</a>
 <br>
 <a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy</a></b>
+
+
 <table class="milestones">
  
  <tr>
@@ -185,7 +205,7 @@ Actual Release Date: 1/13/2007
    <th>Enhancement Request/Bug</th>
  </tr>
   
-   <tr class="progress">   
+   <tr class="progress">
    <td>
      Add persistence to RosterView
    </td>
@@ -193,25 +213,25 @@ Actual Release Date: 1/13/2007
    <td>
       Scott Lewis
    </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166670">#166670</a>
-   </td>   
- </tr>
- 
-       <tr class="progress">   
    <td>
-     [provider] BitTorrent provider for file transfer (receive) API 
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166670">#166670</a>
+   </td>
+ </tr>
+
+       <tr class="progress">
+   <td>
+     [provider] BitTorrent provider for file transfer (receive) API
    </td>
 
    <td>
       Remy Suen and Scott Lewis
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=144133">#144133</a>
-   </td>   
+   </td>
  </tr>
- 
-       <tr class="done">   
+
+       <tr class="done">
    <td>
      [IRC] Able to open links in internal browser
    </td>
@@ -219,12 +239,13 @@ Actual Release Date: 1/13/2007
    <td>
       Remy Suen
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=148874">#148874</a>
-   </td>   
+   </td>
  </tr>
+
  
-       <tr class="done">   
+      <tr class="done">
    <td>
      Create New Connect Wizard for XMPP Client
    </td>
@@ -232,12 +253,12 @@ Actual Release Date: 1/13/2007
    <td>
       Scott Lewis
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165508">#165508</a>
-   </td>   
+   </td>
  </tr>
- 
-         <tr class="done">   
+
+         <tr class="done">
    <td>
      Create New Connect Wizard for IRC Client
    </td>
@@ -245,11 +266,10 @@ Actual Release Date: 1/13/2007
    <td>
       Remy Suen
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165511">#165511</a>
-   </td>   
+   </td>
  </tr>
-  
 </table>
 
 <!-- Milestone 0.9.7 -->
@@ -259,15 +279,15 @@ Actual Release Date: 1/13/2007
 Target Release Date: 2/16/2007
 
 <table class="milestones">
- 
+
  <tr>
 
    <th>Features</th>
    <th>Committer/Contributor</th>
    <th>Enhancement Request/Bug</th>
  </tr>
-  
-      <tr class="notdone">   
+
+      <tr class="notdone">
    <td>
      Documentation about running the test suite
    </td>
@@ -275,12 +295,12 @@ Target Release Date: 2/16/2007
    <td>
       Unassigned
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=126505">#126505</a>
-   </td>   
+   </td>
  </tr>
- 
-  <tr class="notdone">   
+
+  <tr class="notdone">
    <td>
    Integration of ECF Roster with Mylar 1.0
    </td>
@@ -288,14 +308,14 @@ Target Release Date: 2/16/2007
    <td>
       Unassigned
    </td>
-   <td>   
+   <td>
      <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111218">#111218</a>
      <br><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
-   </td>   
+   </td>
  </tr>
 
- 
- <tr class="notdone">   
+
+ <tr class="notdone">
    <td>
    Move ECF source into separate plugin for Europa deployment
    </td>
@@ -303,12 +323,12 @@ Target Release Date: 2/16/2007
    <td>
       Scott Lewis/Pete Mackie
    </td>
-   <td>   
+   <td>
      <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
-   </td>   
+   </td>
  </tr>
- 
-   <tr class="notdone">   
+
+   <tr class="notdone">
    <td>
      Additional UI features for IM and multi-user chat
    </td>
@@ -316,12 +336,12 @@ Target Release Date: 2/16/2007
    <td>
       Unassigned
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
-   </td>   
+   </td>
  </tr>
- 
-   <tr class="progress">   
+
+   <tr class="progress">
    <td>
       Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
    </td>
@@ -329,11 +349,11 @@ Target Release Date: 2/16/2007
       Scott Lewis
    </td>
 
-   <td>   
-       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
+   <td>
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>
    </tr>
- 
-  <tr class="notdone">   
+
+  <tr class="notdone">
    <td>
      Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
    </td>
@@ -341,12 +361,12 @@ Target Release Date: 2/16/2007
    <td>
       Unassigned
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
-   </td>   
+  </td>
  </tr>
- 
-  <tr class="not done">   
+
+  <tr class="not done">
    <td>
    Complete bulletin board API, get IP approval for contribution, and integrate in with ECF on dev.eclipse.org
    </td>
@@ -354,12 +374,12 @@ Target Release Date: 2/16/2007
    <td>
      Erkki Lindpere and Scott Lewis
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150756">#150756</a>
-   </td>   
+   </td>
  </tr>
- 
-  <tr class="notdone">   
+
+  <tr class="notdone">
    <td>
      Create New Connect Wizard for JXTA Client
    </td>
@@ -367,17 +387,12 @@ Target Release Date: 2/16/2007
    <td>
       Pierre Henry-Perret
    </td>
-   <td>   
+   <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165514">#165514</a>
-   </td>   
+   </td>
  </tr>
- 
- 
- 
+
 </table>
-
-
-
 
 </div>
 

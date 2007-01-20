@@ -1,4 +1,11 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  	
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
+$App 	= new App();
+$Nav	= new Nav();
+$Menu 	= new Menu();
+include($App->getProjectCommon());
 
 	#*****************************************************************************
 	#
@@ -6,7 +13,8 @@
 	#
 	# Author: 		Denis Roy
 	# Date:			2005-06-16
-	#
+        #
+	#      
 	# Description: Type your page comments here - these are not sent to the browser
 	#
 	#
@@ -15,7 +23,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Resources";
-	$pageKeywords	= "Type, page, keywords, here";
+	$pageKeywords	        = "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
 	# Add page-specific Nav bars here
@@ -31,24 +39,19 @@
 ob_start();
 ?>		
 
-	<div id="midcolumn">
-	   <div class="homeitem3col">
-		<h3>ECF User Resources</h3>
-      <h4>Newsgroup</h4>
-      <p>The Eclipse Communications Framework newsgroup is for anything and everything ECF related.<br>
-      You will need a newsgroup
-      <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">username
-      and password from Eclipse.org</a> to participate</p>
-      <blockquote>
-        <p><a href="news://news.eclipse.org/eclipse.technology.ecf">
-        news://news.eclipse.org/eclipse.technology.ecf</a></p>
-      </blockquote>
-      <h3>Bug Reporting</h3>
-      <p>Please report any bugs you find using Bugzilla.<ul>
-        <li>Reporting and Viewing <a href="bugs.html">ECF Bugs</a></li>
-        </ul>
-      </p><p></p>
-      <h3>ECF Developer Resources</h3>
+<div id="rightcolumn">
+ <div class="sideitem">
+   <h6>Incubation</h6>
+   <div align="center"><a href="/projects/gazoo.php"><img
+        align="center" src="/images/gazoo-incubation.jpg"
+        border="0" /></a></div>
+ </div>
+</div>
+
+<div id="midcolumn">
+ <div class="homeitem3col">
+  <h3>ECF Contributors</h3>
+
       <h4>Mailing List</h4>
       <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br>
       If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br>
@@ -61,9 +64,6 @@ ob_start();
       ecf-dev mailing list</a> if you want to send email to that list.
       <p></p>
       You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> without joining the list.
-      <p></p>
-      <h4>Project IP Log</h4>
-      The ECF Project IP Log is available <a href="ip_log.html">here</a>
       <p></p>
       <h4>Anonymous CVS Access to ECF Source Code</h4>
       <p></p>

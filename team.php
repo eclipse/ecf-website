@@ -1,4 +1,10 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php  																	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
+$App 	= new App();
+$Nav	= new Nav();
+$Menu 	= new Menu();
+include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
 
 	#*****************************************************************************
 	#
@@ -30,11 +36,22 @@
 	# Paste your HTML content between the markers!	
 ob_start();
 ?>		
+<div id="rightcolumn">
+ <div class="sideitem">
+   <h6>Incubation</h6>
+   <div align="center"><a href="/projects/gazoo.php"><img
+        align="center" src="/images/gazoo-incubation.jpg"
+        border="0" /></a></div>
+ </div>
+</div>
 
 	<div id="midcolumn">
 		<!--	<div align="center"><h1>$pageTitle</h1></div> -->
-		<i>Last updated: 2006-11-03</i></p>
+		<i>Last updated: 2007-1-19</i></p>
 		<div class="homeitem3col">
+		    <h3>ECF Team</h3>
+                    <p>The ECF Team consists of Contributors and Committers. 
+                    We also list past Committers and Contributors and thank them for their work.</p>
 		    <h3>Committers</h3>
 			<ul>
 				<li>
@@ -63,7 +80,7 @@ ob_start();
                 	Pierre-Henry Perret
                 </li>
 				<li>
-				    Remy Suen
+				Remy Suen
 				</li>
 			</ul> 
 		</div>
@@ -74,9 +91,9 @@ ob_start();
 				<li>
 				Mustafa Isik
 				</li>
-				<li>
-				Ted Kubaska
-				</li>
+                                <li>
+                	<a href="http://www.markcasimer.com">Ted Kubaska</a>
+                                </li>
 				<li>
 				Erkki Lindpere
 				</li>
