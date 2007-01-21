@@ -1,7 +1,7 @@
 <project>
   <name>Eclipse Communication Framework Project</name>
   <short-name>ECF</short-name>
-  <bugs url="/ecf/bugs.php"/>
+  <bugs url="/ecf/bugs.php"></bugs>
   <bugzilla>
     <product name="ECF"/>
   </bugzilla>
