@@ -33,8 +33,8 @@ ob_start();
                   <p align="center">&nbsp;</p>
                 </td>
                 <td width="25%"><p align="center"><img src="pete_mackie.jpg" alt="Pete Mackie" width="200" height="280"></p>
-                  <p align="center"><strong>Pete Mackie, Seaquest Software</strong></p>
-                  <p align="center">Committer, Independent</p>
+                  <p align="center"><strong>Pete Mackie</strong></p>
+                  <p align="center">Committer, Seaquest Software</p>
                   <p align="center">&nbsp;</p>
                 </td>
               </tr>
