@@ -1,8 +1,8 @@
 <project>
   <name>Eclipse Communication Framework Project</name>
   <short-name>ECF</short-name>
-  <bugs url="/ecf/bugs.php"></bugs>
-  <bugzilla>
+
+  <bugzilla url="http://eclipse.org/ecf/bugs.php">
     <product name="ECF"/>
   </bugzilla>
 
@@ -83,6 +83,7 @@
      - instead and then include the IP Log information on the Legal web page.
     -->
     
+  <ip-log url="/ecf/legal.php"/> 
   <legal url="/ecf/legal.php"/> 
 
   <!--
