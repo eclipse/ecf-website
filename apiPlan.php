@@ -49,6 +49,15 @@ ob_start();
  </div>
 </div>
 
+	<div id="midcolumn">
+        <div class="homeitem3col">
+	<h3>ECF Plan </h3>
+           <p>To look at the project plan, click 
+           <a href="http://www.eclipse.org/ecf/plan.php">here</a>.
+           </p>
+
+        <h3></h3>
+	</div>
 
 	<div id="midcolumn">
         <div class="homeitem3col">
