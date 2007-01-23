@@ -44,7 +44,7 @@ ob_start();
 		<p></p>
 
 		<div class="right">
-            Last modified on December 22, 2006 by slewis
+            Last modified on Jan 21, 2007 by slewis
         </div>
 
 <p></p>
@@ -328,7 +328,7 @@ Target Release Date: 2/16/2007
    </td>
  </tr>
 
-   <tr class="notdone">
+   <tr class="progress">
    <td>
      Additional UI features for IM and multi-user chat
    </td>
@@ -359,14 +359,14 @@ Target Release Date: 2/16/2007
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
   </td>
  </tr>
 
-  <tr class="not done">
+  <tr class="progress">
    <td>
    Complete bulletin board API, get IP approval for contribution, and integrate in with ECF on dev.eclipse.org
    </td>
@@ -379,7 +379,7 @@ Target Release Date: 2/16/2007
    </td>
  </tr>
 
-  <tr class="notdone">
+  <tr class="progress">
    <td>
      Create New Connect Wizard for JXTA Client
    </td>
