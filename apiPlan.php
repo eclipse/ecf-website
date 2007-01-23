@@ -51,20 +51,18 @@ ob_start();
 
 	<div id="midcolumn">
         <div class="homeitem3col">
-	<h3>ECF Plan </h3>
-           <p>To look at the project plan, click 
-           <a href="http://www.eclipse.org/ecf/plan.php">here</a>.
+	<h3>ECF Milestone Plan</h3>
+           <p><a href="http://www.eclipse.org/ecf/plan.php">Click here to look at the ECF Project Milestone plan</a>.
            </p>
 
         <h3></h3>
-	</div>
+	</div></div>
 
 	<div id="midcolumn">
         <div class="homeitem3col">
-	<h3>ECF API Plan </h3>
-           <p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. To look
-            at the API documentation, click
-           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">here</a>.
+	<h3>ECF API Plan</h3>
+           <p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. 
+           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">Click here to look at the ECF API documentation</a>.
            </p>
 
         <h3></h3>
