@@ -130,9 +130,9 @@
      - it will be delivered.
     -->
     
-  <project-plan url="/ecf/plan.php"/>
+  <!-- <project-plan url="/ecf/plan.php"/> --> 
 
-  <api-plan url="/ecf/apiPlan.php"/>
+  <api-plan url="/ecf/plan.php"/>
 
   
   <!--
