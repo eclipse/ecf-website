@@ -82,7 +82,7 @@
      - other legal information as well, it can use the <legal> element
      - instead and then include the IP Log information on the Legal web page.
     -->
-  <legal url="/ecf/legal.php"/>
+  <ip-log url="/ecf/legal.php"/>
     
 
   <!--
