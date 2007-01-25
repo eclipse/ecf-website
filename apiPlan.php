@@ -25,7 +25,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Resources";
-	$pageKeywords	        = "Type, page, keywords, here";
+	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
 	# Add page-specific Nav bars here
