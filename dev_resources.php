@@ -22,8 +22,8 @@ include($App->getProjectCommon());
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "ECF Resources";
-	$pageKeywords	        = "Type, page, keywords, here";
+	$pageTitle 		= "ECF Developer Resources";
+	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
 	# Add page-specific Nav bars here
@@ -50,7 +50,7 @@ ob_start();
 
 <div id="midcolumn">
  <div class="homeitem3col">
-  <h3>ECF Contributors</h3>
+  <h3>ECF Developer Resources</h3>
 
       <h4>Mailing List</h4>
       <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br>

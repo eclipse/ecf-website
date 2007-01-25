@@ -63,7 +63,7 @@
      - get started using and extending the project's tools and frameworks.
     -->
     
-  <getting-started url="/ecf/user_resources.php"/>
+  <getting-started url="/ecf/dev_resources.php"/>
   
   <!--
      - It is also important to help new contributors get started with an Eclipse project.
@@ -73,7 +73,7 @@
      - get started developing on, and contributing to, the project.
     -->
     
-  <contributing url="/ecf/dev_resources.php"/>
+  <contributing url="/ecf/user_resources.php"/>
   
   <!--
      - Each Eclipse project is required to maintain a current Project IP Log.
