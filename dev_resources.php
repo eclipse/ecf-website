@@ -50,7 +50,7 @@ ob_start();
 
 <div id="midcolumn">
 	<div class="homeitem3col">
-		<h3>ECF API Plan</h3>
+		<h3>ECF API's</h3>
 		<p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. 
 			<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">Click here to look at the ECF API documentation</a>.
 		</p>

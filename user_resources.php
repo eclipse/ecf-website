@@ -24,8 +24,8 @@ include($App->getProjectCommon());
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "ECF Resources";
-	$pageKeywords	        = "Type, page, keywords, here";
+	$pageTitle 		= "ECF User Resources";
+	$pageKeywords	= "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
 	# Add page-specific Nav bars here
@@ -52,7 +52,7 @@ ob_start();
 
 <div id="midcolumn">
  <div class="homeitem3col">
-  <h3>ECF Users</h3>
+  <h3>ECF User Resources</h3>
    <h4>Newsgroup</h4>
       <p>The Eclipse Communications Framework newsgroup is for anything and everything ECF related.<br>
       You will need a newsgroup
