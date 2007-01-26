@@ -24,8 +24,8 @@ include($App->getProjectCommon());
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "ECF User Resources";
-	$pageKeywords	= "Type, page, keywords, here";
+	$pageTitle 		= "ECF Resources";
+	$pageKeywords	        = "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
 	# Add page-specific Nav bars here
@@ -45,16 +45,17 @@ ob_start();
  <div class="sideitem">
    <h6>Incubation</h6>
    <div align="center"><a href="/projects/gazoo.php"><img
-        align="center" src="/images/gazoo-incubation.jpg"
-        border="0" /></a></div>
+        align="middle" src="/images/gazoo-incubation.jpg"
+        border="0" alt="[gazoo-incubation]"/></a>
+   </div>
  </div>
 </div>
 
 <div id="midcolumn">
  <div class="homeitem3col">
-  <h3>ECF User Resources</h3>
+  <h3>ECF Users</h3>
    <h4>Newsgroup</h4>
-      <p>The Eclipse Communications Framework newsgroup is for anything and everything ECF related.<br>
+      <p>The Eclipse Communications Framework newsgroup is for anything and everything ECF related.<br/>
       You will need a newsgroup
       <a href="http://dev.eclipse.org/newsManager/newsRequestForm.html">username
       and password from Eclipse.org</a> to participate</p>
@@ -66,11 +67,10 @@ ob_start();
 
    <h3>Bug Reporting</h3>
     <p>Please use Bugzilla to report any bugs you find.
-      <blockquote>
-        <p> <a href="https://bugs.eclipse.org/bugs/">https://bugs.eclipse.org/bugs</a> 
-        </p>
-      </blockquote>
     </p>
+      <blockquote>
+        <a href="https://bugs.eclipse.org/bugs/">https://bugs.eclipse.org/bugs</a> 
+      </blockquote>
 
    <h3>ECF Wiki</h3>
    <p>You can find a great deal of information about ECF on the 
@@ -81,7 +81,7 @@ ob_start();
    <p>The following are introductory presentations and tutorials.</p>
 
    <ul>
-   <li><b>June 19, 2006 - ECF Tutorial by Chris Aniszczyk for the 2006 Rational Software Developer's Conference.
+   <li><b>June 19, 2006 - ECF Tutorial by Chris Aniszczyk for the 2006 Rational Software Developer's Conference.</b>
    <a href="presentations/ecf_rsdc2006.pdf">Here are the tutorial slides (pdf)</a>.
    </li>
 
@@ -105,6 +105,8 @@ ob_start();
    Interview with ECF project lead Scott Lewis</a> at <a href="http://www.eclipsezone.com">EclipseZone</a></b>
    </li>
    </ul>
+  </div>
+  </div>
 
 <?php
 	$html = ob_get_contents();

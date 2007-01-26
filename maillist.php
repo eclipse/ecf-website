@@ -45,29 +45,32 @@ ob_start();
  <div class="sideitem">
    <h6>Incubation</h6>
    <div align="center"><a href="/projects/gazoo.php"><img
-        align="center" src="/images/gazoo-incubation.jpg"
-        border="0" /></a></div>
+        align="middle" src="/images/gazoo-incubation.jpg"
+        border="0" alt="[gazoo-incubation]"/></a></div>
  </div>
 </div>
 
 	<div id="midcolumn">
         <div class="homeitem3col">
 	<h3>ECF Mailing Lists</h3>
-        <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br>
-        If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br>
+        <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br/>
+        If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br/>
         please post questions on the <b><u>newsgroup</u> </b>rather than the
         developers mailing list.</p>
 
         <blockquote>
-        <p><a href="mailto:ecf-dev@eclipse.org">ecf-dev@eclipse.org</a></p>
+        <a href="mailto:ecf-dev@eclipse.org">ecf-dev@eclipse.org</a>
         </blockquote>
+<p>
         You must <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev"> subscribe to the
         ecf-dev mailing list</a> if you want to send email to that list.
-        </p>
+</p>
         <p> You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> 
         without joining the list.
+        </p>
 
-        <pNewsgroups>The ECF mailing list is for developers working on ECF code to discuss development related issues.
+        <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.
+        </p>
         <h3></h3>
 	</div>
 	</div>

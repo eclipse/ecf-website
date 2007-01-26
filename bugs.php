@@ -30,8 +30,8 @@ ob_start();
  <div class="sideitem">
    <h6>Incubation</h6>
    <div align="center"><a href="/projects/gazoo.php"><img
-        align="center" src="/images/gazoo-incubation.jpg"
-        border="0" /></a></div>
+        align="middle" src="/images/gazoo-incubation.jpg"
+        border="0" alt="[gazoo-incubation]"/></a></div>
  </div>
 </div>
 
@@ -39,7 +39,7 @@ ob_start();
  <div class="homeitem3col">
     <h3>Bugs</h3>
     <p>To report and view ECF bugs click 
-    <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&product=ECF&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED">here.</a> </p>
+    <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;product=ECF&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">here.</a> </p>
     <p>The Eclipse Communications Framework uses Bugzilla to track bugs. To Report and view Eclipse bugs click
     <a href="https://bugs.eclipse.org/bugs/">here.</a> </p>
     <h3></h3>

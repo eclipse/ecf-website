@@ -22,8 +22,8 @@ include($App->getProjectCommon());
 	
 	#
 	# Begin: page-specific settings.  Change these. 
-	$pageTitle 		= "ECF Developer Resources";
-	$pageKeywords	= "Type, page, keywords, here";
+	$pageTitle 		= "ECF Resources";
+	$pageKeywords	        = "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
 	# Add page-specific Nav bars here
@@ -43,28 +43,24 @@ ob_start();
  <div class="sideitem">
    <h6>Incubation</h6>
    <div align="center"><a href="/projects/gazoo.php"><img
-        align="center" src="/images/gazoo-incubation.jpg"
-        border="0" /></a></div>
+        align="middle" src="/images/gazoo-incubation.jpg"
+        border="0" alt="[gazoo-incubation]"/></a></div>
  </div>
-</div>
-
-<div id="midcolumn">
-	<div class="homeitem3col">
-		<h3>ECF API's</h3>
-		<p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. 
-			<a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">Click here to look at the ECF API documentation</a>.
-		</p>
-		<h3></h3>
-	</div>
 </div>
 
 <div id="midcolumn">
  <div class="homeitem3col">
   <h3>ECF Developer Resources</h3>
+      <h5>ECF API</h5>
+          <p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. To look
+            at the API documentation, click
+           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">here</a>.
+           </p>
 
-      <h4>Mailing List</h4>
-      <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br>
-      If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br>
+
+      <h5>Mailing List</h5>
+      <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br/>
+      If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br/>
       please post questions on the <b><u>newsgroup</u> </b>rather than the
       developers mailing list.</p>
       <blockquote>
@@ -75,7 +71,7 @@ ob_start();
       <p></p>
       You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> without joining the list.
       <p></p>
-      <h4>Anonymous CVS Access to ECF Source Code</h4>
+      <h5>Anonymous CVS Access to ECF Source Code</h5>
       <p></p>
       To load ECF source code into your workspace download and use one of the project set files below
       <p>Save one of the below project set files to local disk by choosing File -> Save Link As... in your browser</p>
@@ -87,11 +83,12 @@ ob_start();
       <li><a href="org.eclipse.ecf.docs/ecf-anonymous-tests.psf">ECF test plugins</a></li>
       </ul>
       
-      <ol>
       <p>Instructions for Using Project Set Files</p>
+      <ul>
       <li>Download/Save Link As... the desired project set file to local disk</li>
       <li>Within Eclipse, choose <b>File -> Import -> Team Project Set</b> and open the .psf file downloaded in step 1</li>
-      </ol>
+      </ul>
+
       <h5>Anonymous CVS server info</h5>
       <ul>
       <li>Host: <b>dev.eclipse.org</b></li>

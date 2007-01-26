@@ -1,4 +1,5 @@
-<?php  																	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
 $App 	= new App();
@@ -19,22 +20,23 @@ include($App->getProjectCommon());
 
 	# End: page-specific settings
 	#
-		
 	# Paste your HTML content between the markers!	
 ob_start();
-?>		
+?>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="table.css"/>
+ <link rel="stylesheet" type="text/css" href="table.css"/>
 </head>
+
+
 <div id="maincontent">
 		
 <div id="rightcolumn">
  <div class="sideitem">
    <h6>Incubation</h6>
    <div align="center"><a href="/projects/gazoo.php"><img
-        align="center" src="/images/gazoo-incubation.jpg"
-        border="0" /></a></div>
+        align="middle" src="/images/gazoo-incubation.jpg"
+        border="0" alt="[gazoo-incubation]"/></a></div>
  </div>
 </div>
 
@@ -44,21 +46,21 @@ ob_start();
 		<p></p>
 
 		<div class="right">
-            Last modified on Jan 21, 2007 by slewis
+            Last modified on December 22, 2006 by slewis
         </div>
 
 <p></p>
 <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">See Wiki for Sub-Project Info, Conference Call Schedule, and Longer-Range Planning</a>
 <p></p>
 <!-- Milestone 0.9.4 -->
-<a name="0.9.4"><h2>0.9.4</h2></a>
+<h2><a name="0.9.4">0.9.4</a></h2>
 
 <b>Target Release Date: 12/02/2006
-<br>
+<br/>
 Actual Release Date: 12/03/2006
-<br>
+<br/>
 <a href="downloads.php">Download</a>
-<br>
+<br/>
 <a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy</a></b>
 
 <p></p>
@@ -90,15 +92,15 @@ Actual Release Date: 12/03/2006
 <p></p>
 
 <!-- Milestone 0.9.5 -->
-<a name="0.9.5"><h2>0.9.5</h2></a>
+<h2><a name="0.9.5">0.9.5</a></h2>
 <p></p>
 
 <b>Target Release Date: 12/15/2006
-<br>
+<br/>
 Actual Release Date: 12/22/2006
-<br>
+<br/>
 <a href="downloads.php">Download</a>
-<br>
+<br/>
 <a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy</a>
 </b>
 
@@ -183,16 +185,15 @@ Actual Release Date: 12/22/2006
 <p></p>
 
 <!-- Milestone 0.9.6 -->
-<a name="0.9.6"><h2>0.9.6</h2></a>
+<h2><a name="0.9.6">0.9.6</a></h2>
 <p></p>
 
 <b>Target Release Date: 1/12/2007
-<br>
+<br/>
 Actual Release Date: 1/13/2007
-<br>
-<br>
+<br/>
 <a href="downloads.php">Download</a>
-<br>
+<br/>
 <a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy</a></b>
 
 
@@ -273,7 +274,7 @@ Actual Release Date: 1/13/2007
 </table>
 
 <!-- Milestone 0.9.7 -->
-<a name="0.9.7"><h2>0.9.7</h2></a>
+<h2><a name="0.9.7">0.9.7</a></h2>
 <p></p>
 
 Target Release Date: 2/16/2007
@@ -310,7 +311,7 @@ Target Release Date: 2/16/2007
    </td>
    <td>
      <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111218">#111218</a>
-     <br><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
+     <br/><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
    </td>
  </tr>
 
@@ -328,7 +329,7 @@ Target Release Date: 2/16/2007
    </td>
  </tr>
 
-   <tr class="progress">
+   <tr class="notdone">
    <td>
      Additional UI features for IM and multi-user chat
    </td>
@@ -359,14 +360,14 @@ Target Release Date: 2/16/2007
    </td>
 
    <td>
-      Scott Lewis
+      Unassigned
    </td>
    <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
   </td>
  </tr>
 
-  <tr class="progress">
+  <tr class="not done">
    <td>
    Complete bulletin board API, get IP approval for contribution, and integrate in with ECF on dev.eclipse.org
    </td>
@@ -379,7 +380,7 @@ Target Release Date: 2/16/2007
    </td>
  </tr>
 
-  <tr class="progress">
+  <tr class="notdone">
    <td>
      Create New Connect Wizard for JXTA Client
    </td>

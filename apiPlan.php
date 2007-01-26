@@ -1,5 +1,5 @@
 <?php  	
-  require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+        require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
  	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
  	$App 	= new App();
@@ -25,7 +25,7 @@
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Resources";
-	$pageKeywords	= "Type, page, keywords, here";
+	$pageKeywords	        = "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
 	
 	# Add page-specific Nav bars here
@@ -44,25 +44,18 @@ ob_start();
  <div class="sideitem">
    <h6>Incubation</h6>
    <div align="center"><a href="/projects/gazoo.php"><img
-        align="center" src="/images/gazoo-incubation.jpg"
-        border="0" /></a></div>
+        align="middle" src="/images/gazoo-incubation.jpg"
+        border="0" alt="[gazoo-incubation]"/></a></div>
  </div>
 </div>
 
-	<div id="midcolumn">
-        <div class="homeitem3col">
-	<h3>ECF Milestone Plan</h3>
-           <p><a href="http://www.eclipse.org/ecf/plan.php">Click here to look at the ECF Project Milestone plan</a>.
-           </p>
-
-        <h3></h3>
-	</div></div>
 
 	<div id="midcolumn">
         <div class="homeitem3col">
-	<h3>ECF API Plan</h3>
-           <p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. 
-           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">Click here to look at the ECF API documentation</a>.
+	<h3>ECF API Plan </h3>
+           <p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. To look
+            at the API documentation, click
+           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">here</a>.
            </p>
 
         <h3></h3>
