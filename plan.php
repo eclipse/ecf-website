@@ -46,7 +46,7 @@ ob_start();
 		<p></p>
 
 		<div class="right">
-            Last modified on December 22, 2006 by slewis
+            Last modified on January 28, 2007 by slewis
         </div>
 
 <p></p>
@@ -354,7 +354,7 @@ Target Release Date: 2/16/2007
        <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>
    </tr>
 
-  <tr class="notdone">
+  <tr class="done">
    <td>
      Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
    </td>
