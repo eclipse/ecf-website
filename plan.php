@@ -46,7 +46,7 @@ ob_start();
 		<p></p>
 
 		<div class="right">
-            Last modified on January 28, 2007 by slewis
+            Last modified on Feb 5, 2007 by slewis
         </div>
 
 <p></p>
@@ -316,20 +316,6 @@ Target Release Date: 2/16/2007
    <td>
      <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111218">#111218</a>
      <br/><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
-   </td>
- </tr>
-
-
- <tr class="notdone">
-   <td>
-   Move ECF source into separate plugin for Europa deployment
-   </td>
-
-   <td>
-      Scott Lewis/Pete Mackie
-   </td>
-   <td>
-     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166679">#166679</a>
    </td>
  </tr>
 
