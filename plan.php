@@ -277,8 +277,8 @@ Actual Release Date: 1/13/2007
  </tr>
 </table>
 
-<!-- Milestone 0.9.7 -->
-<h2><a name="0.9.7">0.9.7</a></h2>
+<!-- Milestone 1.0.0.M5 -->
+<h2><a name="1.0.0.M5">1.0.0.M5</a></h2>
 <p></p>
 
 Target Release Date: 2/16/2007

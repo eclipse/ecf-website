@@ -179,7 +179,7 @@
        plan="/ecf/plan.php" />
     <release 
        status="scheduled"
-       name="0.9.7"
+       name="1.0.0.M5"
        date="2/16/2007"
        plan="/ecf/plan.php" />
     <release 
