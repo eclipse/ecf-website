@@ -49,6 +49,8 @@ ob_start();
             Last modified on January 28, 2007 by slewis
         </div>
 
+<a href="org.eclipse.ecf.docs/api">See here for Javadocs of ECF APIs</a>
+<p></p>
 <p></p>
 <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">See Wiki for Sub-Project Info, Conference Call Schedule, and Longer-Range Planning</a>
 <p></p>
