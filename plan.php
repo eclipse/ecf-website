@@ -223,7 +223,7 @@ Actual Release Date: 1/13/2007
    </td>
  </tr>
 
-       <tr class="progress">
+       <tr class="done">
    <td>
      [provider] BitTorrent provider for file transfer (receive) API
    </td>
@@ -298,7 +298,7 @@ Target Release Date: 2/16/2007
    </td>
 
    <td>
-      Unassigned
+      Scott Lewis
    </td>
    <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=126505">#126505</a>
@@ -319,7 +319,7 @@ Target Release Date: 2/16/2007
    </td>
  </tr>
 
-   <tr class="notdone">
+   <tr class="done">
    <td>
      Additional UI features for IM and multi-user chat
    </td>
@@ -357,7 +357,7 @@ Target Release Date: 2/16/2007
   </td>
  </tr>
 
-  <tr class="not done">
+  <tr class="progress">
    <td>
    Complete bulletin board API, get IP approval for contribution, and integrate in with ECF on dev.eclipse.org
    </td>
@@ -370,7 +370,7 @@ Target Release Date: 2/16/2007
    </td>
  </tr>
 
-  <tr class="notdone">
+  <tr class="progress">
    <td>
      Create New Connect Wizard for JXTA Client
    </td>
@@ -384,6 +384,14 @@ Target Release Date: 2/16/2007
  </tr>
 
 </table>
+
+<p></p>
+
+ECF is part of the <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</a>.  We are planning now on having
+our 1.0.0 final release with the Europa release (June 29, 2007).  As part of Europa, we will be having 1.0 milestone release as per the schedule <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release#Milestones_and_Release_Candidates">here</a>.
+
+<p></p>
+Stay tuned here for details of features and bug fixes for each remaining milestone release (M6, M7, RCn).
 
 </div>
 
