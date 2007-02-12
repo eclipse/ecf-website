@@ -292,7 +292,7 @@ Target Release Date: 2/16/2007
    <th>Enhancement Request/Bug</th>
  </tr>
 
-      <tr class="notdone">
+      <tr class="progress">
    <td>
      Documentation about running the test suite
    </td>
@@ -302,20 +302,6 @@ Target Release Date: 2/16/2007
    </td>
    <td>
    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=126505">#126505</a>
-   </td>
- </tr>
-
-  <tr class="notdone">
-   <td>
-   Integration of ECF Roster with Mylar 1.0
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>
-     <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=111218">#111218</a>
-     <br/><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=106562">#106562</a>
    </td>
  </tr>
 
