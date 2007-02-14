@@ -56,6 +56,13 @@ ob_start();
 <p></p>
 <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">See Wiki for Sub-Project Info, Conference Call Schedule, and Longer-Range Planning</a>
 <p></p>
+
+ECF is part of the <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</a>.  We are planning now on having
+our 1.0.0 final release with the Europa release (June 29, 2007).  As part of Europa, we will be having 1.0 milestone release as per the schedule <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release#Milestones_and_Release_Candidates">here</a>.
+
+<p></p>
+Stay tuned here for details of features and bug fixes for each remaining milestone release (M6, M7, RCn).
+
 <!-- Milestone 1.0.0.M5 -->
 <h2><a name="1.0.0.M5">1.0.0.M5</a></h2>
 <p></p>
@@ -359,14 +366,6 @@ Actual Release Date: 12/03/2006
  </tr>
  
 </table>
-
-<p></p>
-
-ECF is part of the <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</a>.  We are planning now on having
-our 1.0.0 final release with the Europa release (June 29, 2007).  As part of Europa, we will be having 1.0 milestone release as per the schedule <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release#Milestones_and_Release_Candidates">here</a>.
-
-<p></p>
-Stay tuned here for details of features and bug fixes for each remaining milestone release (M6, M7, RCn).
 
 </div>
 
