@@ -56,136 +56,86 @@ ob_start();
 <p></p>
 <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">See Wiki for Sub-Project Info, Conference Call Schedule, and Longer-Range Planning</a>
 <p></p>
-<!-- Milestone 0.9.4 -->
-<h2><a name="0.9.4">0.9.4</a></h2>
-
-<b>Target Release Date: 12/02/2006
-<br/>
-Actual Release Date: 12/03/2006
-<br/>
-<a href="downloads.php">Download</a>
-<br/>
-<a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy</a></b>
-
+<!-- Milestone 1.0.0.M5 -->
+<h2><a name="1.0.0.M5">1.0.0.M5</a></h2>
 <p></p>
+
+Target Release Date: 2/16/2007
+
 <table class="milestones">
- 
+
  <tr>
 
    <th>Features</th>
    <th>Committer/Contributor</th>
    <th>Enhancement Request/Bug</th>
  </tr>
- 
- <tr class="done">   
+
+   <tr class="done">
    <td>
-      Document new <b>org.eclipse.ecf.ui.configurationWizards</b> and <b>org.eclipse.ecf.ui.connectWizards</b> extension points
+     Additional UI features for IM and multi-user chat
    </td>
 
    <td>
-      Scott Lewis
+      Unassigned
    </td>
    <td>
-     See <a href="http://www.eclipse.org/ecf/NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a>   
-   </td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
+   </td>
  </tr>
- 
-</table>
 
-
-<p></p>
-
-<!-- Milestone 0.9.5 -->
-<h2><a name="0.9.5">0.9.5</a></h2>
-<p></p>
-
-<b>Target Release Date: 12/15/2006
-<br/>
-Actual Release Date: 12/22/2006
-<br/>
-<a href="downloads.php">Download</a>
-<br/>
-<a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy</a>
-</b>
-
-<p></p>
-
-<table class="milestones">
- 
- <tr>
-
-   <th>Features</th>
-   <th>Committer/Contributor</th>
-   <th>Enhancement Request/Bug</th>
- </tr>
-  
- <tr class="done">   
+   <tr class="done">
    <td>
-      Refactor test code and move into org.eclipse.ecf.tests plugin
+      Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
    </td>
    <td>
       Scott Lewis
    </td>
 
-   <td>   
-       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
+   <td>
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>
    </tr>
- 
-  <tr class="done">   
-   <td>
-     Refactor RosterView to allow easier extension
-   </td>
 
+  <tr class="done">
    <td>
-      Scott Lewis
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166675">#166675</a>
-   </td>   
- </tr>
- 
- 
-   <tr class="done">   
-   <td>
-     Update IRCLib to v1.10
-   </td>
-
-   <td>
-      Scott Lewis
-   </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166418">#166418</a>
-   </td>   
- </tr>
- 
-<tr class="done">
-   <td>
-     Refactor presence API in <b>org.eclipse.ecf.presence</b> bundle
+     Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
    </td>
 
    <td>
       Scott Lewis
    </td>
    <td>
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=167363">#167363</a>
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
+  </td>
+ </tr>
+
+  <tr class="progress">
+   <td>
+   Complete bulletin board API, get IP approval for contribution, and integrate in with ECF on dev.eclipse.org
+   </td>
+
+   <td>
+     Erkki Lindpere and Scott Lewis
+   </td>
+   <td>
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150756">#150756</a>
    </td>
  </tr>
 
-     <tr class="done">   
+  <tr class="progress">
    <td>
-     [provider] filetransfer provider based upon httpclient 3.0.1
+     Create New Connect Wizard for JXTA Client
    </td>
 
    <td>
-      Scott Lewis
+      Pierre Henry-Perret
    </td>
-   <td>   
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166079">#166079</a>
-   </td>   
+   <td>
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165514">#165514</a>
+   </td>
  </tr>
- 
 </table>
-
+    
 <p></p>
 
 <!-- Milestone 0.9.6 -->
@@ -277,98 +227,137 @@ Actual Release Date: 1/13/2007
  </tr>
 </table>
 
-<!-- Milestone 1.0.0.M5 -->
-<h2><a name="1.0.0.M5">1.0.0.M5</a></h2>
 <p></p>
 
-Target Release Date: 2/16/2007
+<!-- Milestone 0.9.5 -->
+<h2><a name="0.9.5">0.9.5</a></h2>
+<p></p>
+
+<b>Target Release Date: 12/15/2006
+<br/>
+Actual Release Date: 12/22/2006
+<br/>
+<a href="downloads.php">Download</a>
+<br/>
+<a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy</a>
+</b>
+
+<p></p>
 
 <table class="milestones">
+ 
+ <tr>
 
+   <th>Features</th>
+   <th>Committer/Contributor</th>
+   <th>Enhancement Request/Bug</th>
+ </tr>  
+  
+ <tr class="done">   
+   <td>
+      Refactor test code and move into org.eclipse.ecf.tests plugin
+   </td>
+   <td>
+      Scott Lewis
+   </td>
+
+   <td>   
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>   
+   </tr>
+ 
+  <tr class="done">   
+   <td>
+     Refactor RosterView to allow easier extension
+   </td>
+
+   <td>
+      Scott Lewis
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166675">#166675</a>
+   </td>   
+ </tr>
+ 
+ 
+   <tr class="done">   
+   <td>
+     Update IRCLib to v1.10
+   </td>
+
+   <td>
+      Scott Lewis
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166418">#166418</a>
+   </td>   
+ </tr>
+ 
+<tr class="done">
+   <td>
+     Refactor presence API in <b>org.eclipse.ecf.presence</b> bundle
+   </td>
+
+   <td>
+      Scott Lewis
+   </td>
+   <td>
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=167363">#167363</a>
+   </td>
+ </tr>
+
+     <tr class="done">   
+   <td>
+     [provider] filetransfer provider based upon httpclient 3.0.1
+   </td>
+
+   <td>
+      Scott Lewis
+   </td>
+   <td>   
+   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166079">#166079</a>
+   </td>   
+ </tr>
+ 
+</table>
+
+<p></p>
+
+<p></p>
+
+<!-- Milestone 0.9.4 -->
+<h2><a name="0.9.4">0.9.4</a></h2>
+
+<b>Target Release Date: 12/02/2006
+<br/>
+Actual Release Date: 12/03/2006
+<br/>
+<a href="downloads.php">Download</a>
+<br/>
+<a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy</a></b>
+
+<p></p>
+<table class="milestones">
+ 
  <tr>
 
    <th>Features</th>
    <th>Committer/Contributor</th>
    <th>Enhancement Request/Bug</th>
  </tr>
-
-      <tr class="progress">
+ 
+ <tr class="done">   
    <td>
-     Documentation about running the test suite
+      Document new <b>org.eclipse.ecf.ui.configurationWizards</b> and <b>org.eclipse.ecf.ui.connectWizards</b> extension points
    </td>
 
    <td>
       Scott Lewis
    </td>
    <td>
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=126505">#126505</a>
-   </td>
+     See <a href="http://www.eclipse.org/ecf/NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a>   
+   </td>   
  </tr>
-
-   <tr class="done">
-   <td>
-     Additional UI features for IM and multi-user chat
-   </td>
-
-   <td>
-      Unassigned
-   </td>
-   <td>
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=110896">#110896</a>
-   </td>
- </tr>
-
-   <tr class="progress">
-   <td>
-      Refactor test code for presence and datashare APIs and move into org.eclipse.ecf.tests plugin
-   </td>
-   <td>
-      Scott Lewis
-   </td>
-
-   <td>
-       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=161497">#161497</a>   </td>
-   </tr>
-
-  <tr class="done">
-   <td>
-     Move org.eclipse.ecf.provider.rss from Higgins' repository to ECF's
-   </td>
-
-   <td>
-      Scott Lewis
-   </td>
-   <td>
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=166016">#166016</a>
-  </td>
- </tr>
-
-  <tr class="progress">
-   <td>
-   Complete bulletin board API, get IP approval for contribution, and integrate in with ECF on dev.eclipse.org
-   </td>
-
-   <td>
-     Erkki Lindpere and Scott Lewis
-   </td>
-   <td>
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=150756">#150756</a>
-   </td>
- </tr>
-
-  <tr class="progress">
-   <td>
-     Create New Connect Wizard for JXTA Client
-   </td>
-
-   <td>
-      Pierre Henry-Perret
-   </td>
-   <td>
-   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=165514">#165514</a>
-   </td>
- </tr>
-
+ 
 </table>
 
 <p></p>
