@@ -46,7 +46,7 @@ ob_start();
 		<p></p>
 
 		<div class="right">
-            Last modified on Feb 5, 2007 by slewis
+            Last modified on Feb 14, 2007 by slewis
         </div>
 
 <p></p>
