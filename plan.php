@@ -67,7 +67,13 @@ Stay tuned here for details of features and bug fixes for each remaining milesto
 <h2><a name="1.0.0.M5">1.0.0.M5</a></h2>
 <p></p>
 
-Target Release Date: 2/16/2007
+<b>Target Release Date: 2/16/2007
+<br/>
+Actual Release Date: 2/15/2007
+<br/>
+<a href="downloads.php">Download</a>
+<br/>
+<a href="NewAndNoteworthy_1.0.0.html">New and Noteworthy</a></b>
 
 <table class="milestones">
 
