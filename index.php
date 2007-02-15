@@ -59,28 +59,34 @@
 	</div>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
-          <table cellspacing="5" cellpadding="2" width="100%" border="0">
+ <table cellspacing="5" cellpadding="2" width="100%" border="0">
 
-       <tr>
-         <td align="left" valign="top" height="12" width="23">
-          <img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-         </td>
-         <td valign="top">
-	  <b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. </b>
-          See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  
-          <a href="downloads.php">Click here to download</a>.
-	 </td>
-       </tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>February 15, 2007 - ECF 1.0.1-stable build released on eclipse.org. </b>
+			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+		</td>
+	</tr>
 
-       <tr>
-         <td align="left" valign="top" height="12" width="23">
-          <img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-         </td>
-         <td valign="top">
-	  <b>December 22, 2006 - ECF 0.9.5-stable build released on eclipse.org. </b>
-          See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  
-	 </td>
-       </tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>January 13, 2007 - ECF 0.9.6-stable build released on eclipse.org. </b>  
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>December 22, 2006 - ECF 0.9.5-stable build released on eclipse.org. </b>
+		</td>
+	</tr>
 
        <tr>
          <td align="left" valign="top" height="12" width="23">
@@ -88,10 +94,6 @@
          </td>
          <td valign="top">
 	  <b>December 2, 2006 - ECF 0.9.4-stable build released on eclipse.org. </b>
-          NOTE:  0.9.3 is 
-	  a compatibility-breaking release, with major API changes and improvements.  
-          If you are using 0.9.2 or previous versions it will 
-	  be necessary to recompile applications.
 	 </td>
        </tr>
 
@@ -101,9 +103,8 @@
          </td>
          <td valign="top">
 	  <b>November 15, 2006 - ECF 0.9.3-stable build released on eclipse.org. </b>
-          See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  
-          NOTE:  0.9.3 is 
-	  a compatibility-breaking release, with major API changes and improvements.  
+            
+  		NOTE: 0.9.3 is a compatibility-breaking release, with major API changes and improvements.  
           If you are using 0.9.2 or previous versions it will 
 	  be necessary to recompile applications.
 	 </td>

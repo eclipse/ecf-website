@@ -51,7 +51,7 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-     <b>Eclipse Communication Framework 0.9.6</b> <b>Stable build is now available.</b>
+     <b>Eclipse Communication Framework 1.0.0</b> <b>Stable build is now available.</b>
     </p>
     <h4><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
      <b>IMPORTANT:  The 0.9.3, and newer, releases are a compatibility-breaking release</b>, meaning that:
@@ -59,7 +59,7 @@ ob_start();
 
     <ul>
      <li>If you are using a previous version of ECF (&gt;&#61; 0.9.2), it is necessary to <b>uninstall</b> this
-     version <b>before</b> installing 0.9.6.  To uninstall the previous version:
+     version <b>before</b> installing 1.0.0.  To uninstall the previous version:
 
       <ul>
        <li>In Eclipse, go to <b>Help -> Software Updates -> Manage Configuration</b>
@@ -73,19 +73,19 @@ ob_start();
        <li>Stop and restart Eclipse
        </li>
        <li>
-       Now you may install 0.9.6 (via update site or zip).  See below for instructions.
+       Now you may install 1.0.0 (via update site or zip).  See below for instructions.
        </li>
       </ul>
      </li>
-     <li>Applications based upon 0.9.6 will not work with older servers (&gt;&#61; 0.9.2).  
+     <li>Applications based upon 1.0.0 will not work with older servers (&gt;&#61; 0.9.2).  
      </li>
      <li>Applications created with ECF releases previous to 0.9.3 will not work with new servers.  
      The public ECF server at 
-     <b>ecftcp://ecf.eclipse.org:3282/server has moved to 0.9.6. The ECF server no longer support old clients (0.9.2).</b>
+     <b>ecftcp://ecf.eclipse.org:3282/server has moved to 1.0.0. The ECF server no longer support old clients (0.9.2).</b>
      </li>
     </ul>
 
-    <h4><b>Please see <a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy for 0.9.6</a> for details about API changes</b></h4>
+    <h4><b>Please see <a href="NewAndNoteworthy_1.0.0.html">New and Noteworthy for 1.0.0</a> for details about API changes</b></h4>
     <p></p>
 
     <h3>ECF Install via Update Site (preferred method)</h3>
@@ -125,19 +125,19 @@ ob_start();
 
            <tr>
             <td>
-             <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-0.9.6.S20070113.zip">
-  	     org.eclipse.ecf.sdk-0.9.6.S20070113.zip</a>&nbsp;
+             <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk-1.0.0.v20070215.S20070215.zip">
+  	     org.eclipse.ecf.sdk-1.0.0.v20070215.S20070215.zip</a>&nbsp;
             </td>
-            <td align="center">2007-01-13
+            <td align="center">2007-02-15
             </td>
            </tr>
 
            <tr>
             <td>
-             <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk- 0.9.5.S20061222.zip">
-  	     org.eclipse.ecf.sdk- 0.9.5.S20061222.zip</a>&nbsp;
+             <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.sdk- 0.9.6.S20070113.zip">
+  	     org.eclipse.ecf.sdk- 0.9.6.S20070113.zip</a>&nbsp;
             </td>
-            <td align="center">2006-12-22
+            <td align="center">2007-01-13
             </td>
            </tr>
          </tbody>
@@ -156,17 +156,17 @@ ob_start();
                </tr>
                <tr>
                 <td>
-                 <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-0.9.6.S20070113.zip">
-                 org.eclipse.ecf.core-0.9.6.S20070113.zip</a>&nbsp;
+                 <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core-1.0.0.v20070215.S20070215.zip">
+                 org.eclipse.ecf.core-1.0.0.v20070215.S20070215.zip</a>&nbsp;
                 </td>
-                <td align="center">2007-01-13</td>
+                <td align="center">2007-02-15</td>
                </tr>
                <tr>
            	<td>
-                 <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core- 0.9.5.S20061222.zip">
-  		 org.eclipse.ecf.core- 0.9.5.S20061222.zip</a>&nbsp;
+                 <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.core- 0.9.6.S20070113.zip">
+  		 org.eclipse.ecf.core- 0.9.6.S20070113.zip</a>&nbsp;
                 </td>
-                <td align="center">2006-12-22
+                <td align="center">2007-01-13
                 </td>
                </tr>
             </tbody>
@@ -185,17 +185,17 @@ ob_start();
                </tr>
 	       <tr>
                 <td>
-  	         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples-0.9.6.S20070113.zip">
-  	          org.eclipse.ecf.examples-0.9.6.S20070113.zip</a>&nbsp;
+  	         <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples-1.0.0.v20070215.S20070215.zip">
+  	          org.eclipse.ecf.examples-1.0.0.v20070215.S20070215.zip</a>&nbsp;
                 </td>
-                <td align="center">2007-01-13</td>
+                <td align="center">2007-02-15</td>
                </tr>
               <tr>
            	<td>
-                 <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples- 0.9.5.S20061222.zip">
-  		 org.eclipse.ecf.examples- 0.9.5.S20061222.zip</a>&nbsp;
+                 <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/org.eclipse.ecf.examples- 0.9.6.S20070113.zip">
+  		 org.eclipse.ecf.examples- 0.9.6.S20070113.zip</a>&nbsp;
                 </td>
-                <td align="center">2006-12-22
+                <td align="center">2007-01-13
                 </td>
               </tr>
            </tbody>
