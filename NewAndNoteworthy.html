@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.9.6 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>1.0.0 Milestone 5</font>
         <br><br><br>
         Return to <a href="downloads.php">ECF download page</a></br>
         Return to <a href="comm_resources.php">ECF communication resources page</a>
@@ -44,6 +44,7 @@
         <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a><br>
         <a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a><br>
         <a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy for 0.9.5</a><br>
+        <a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy for 0.9.6</a><br>
       </td>
       <td width="31%">
         <div align="center">
@@ -63,53 +64,32 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Able to open links in internal browser</B>
+	<B>Additions to IRC UI, IM Roster UI, and ECF generic collaboration UI.</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      For the IRC chat window, URLs now appear as underlined, and when clicked on will open the internal browser window for the given page.  
-      Here's a screenshot:<p></p>
-      <img src="images/screens/ircweblink.png">
+      Screenshot:<p></p>
+      <img src="images/screens/ircandroster1.0.0M5.png">
       <p></p>
     </tr>
 
-  </TR>
-  
   <TR>
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>New Connect Wizards for IRC, XMPP providers</B>
+	<B>Enhanced Support for IRC command handling</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      Using the <b>org.eclipse.ecf.ui.connectWizard</b> extension point, there are new connectWizards for IRC and XMPP providers.  The wizard classes may be
-      found in the two (new) plugins:  <b>org.eclipse.ecf.provider.xmpp.ui</b> and <b>org.eclipse.ecf.provider.irc.ui</b>.
-      <p></p>
-    </tr>
-
-  </TR>
-  
-    <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Simplified RosterView class</B>
-        </P>
+      Added greater support for IRC command handling.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172958">#172958</a> for details.  
+      Thanks to Mark Kropf for code contributions.
     </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      Using the Presence API Refactoring described below, a simplified and extensible roster view class was created in the <b>org.eclipse.ecf.presence.ui</b>
-      plugin:  MultiRosterView.  This view presents multiple rosters, using the MultiRosterContentProvider class present in the same package.  This 
-      replacement roster view will be used to introduce other features into the roster user interface, and is also suitable for extension
-      by subclasses or replacement.
-      <p></p>
-    </tr>
+   </tr>
+
 
   </TR>
-  
   
   <TR></TR>
   <TR><TD colSpan=2><H2>API Enhancements</H2></TD>
@@ -118,36 +98,28 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Presence API Refactoring to Support JFace Content Providers</B>
+	<B>Presence API Addition</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      The presence API (plugin: <b>org.eclipse.ecf.presence</b>) has been enhanced to support JFace viewers.  Specifically,
-      the roster interface classes (IRosterManager, IRoster, IRosterEntry, IRosterGroup, IRosterItem) have been enhanced
-      so that they can easily be used as the basis of an JFace ITreeContentProvider.  This allows the
-      use and automatic update of a roster (buddy) list by an ECF provider that implements the presence API (e.g. the XMPP provider).  For example, here is code in the new plugin 
-      <b>org.eclipse.ecf.presence.ui</b> that creates a tree viewer to display multiple rosters:
-      <pre>
-      	protected void setupTreeViewer(Composite parent) {
-		    treeViewer = new TreeViewer(parent, SWT.BORDER | SWT.MULTI
-				| SWT.V_SCROLL);
-		    getSite().setSelectionProvider(treeViewer);
-		    multiRosterContentProvider = new MultiRosterContentProvider();
-		    multiRosterLabelProvider = new MultiRosterLabelProvider();
-		    treeViewer.setLabelProvider(multiRosterLabelProvider);
-		    treeViewer.setContentProvider(multiRosterContentProvider);
-		    treeViewer.setInput(new Object());
-	    }
-      </pre>
-      With this approach, the UI/viewer code does not need to know anything about the messaging to change/update the roster
-      model.  This model is managed by the ECF provider (XMPP) and when 
-      The MultiRosterContentProvider class (and others to support this new approach) are available
-      in the (new) plugin:  <b>org.eclipse.ecf.presence.ui</b>.  See the classes in the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/ui/package-summary.html">org.eclipse.ecf.presence.ui package</a>
-      for example usage and reusable base classes.
-      
-      <p></p>
-    </tr>
+      Added <b>org.eclipse.ecf.presence.chatroom.IChatRoomAdminListener</b>
+      to notify registered listeners (listener registration via IChatRoomContainer.addChatRoomAdminListener) when the chat room subject changes/is changed asynchronously.
+    </TD>
+   </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>Shared Object API Addition</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      Added event notification for shared object message send and receive.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172349">#172349</a> for details.
+    </TD>
+   </tr>
 
 </table>
 
