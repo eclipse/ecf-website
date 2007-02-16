@@ -62,26 +62,21 @@
 
   <TR>
     <TD vAlign=top align=left width="40%">
-    <p><br></p>
         <P align=left>
 	<B>Additions to IRC UI, IM Roster UI, and ECF generic collaboration UI.</B>
         </P>
     </TD>
     <TD vAlign=top width="60%">
-      <p><br></p>
       <img src="images/screens/ircandroster1.0.0M5.png">
-      <p></p>
     </tr>
 
   <TR>
     <TD vAlign=top align=left width="40%">
-    <p><br></p>
         <P align=left>
 	<B>Enhanced Support for IRC command handling</B>
         </P>
     </TD>
     <TD vAlign=top width="60%">
-      <p><br></p>
       Added greater support for IRC command handling.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172958">#172958</a> for details.  
       Thanks to Mark Kropf for code contributions.
     </TD>
@@ -91,17 +86,16 @@
   </TR>
   
   <TR></TR>
-  <TR><p></p><TD colSpan=2><H2>API Enhancements</H2></TD>
+  <hr>
+  <TR><TD colSpan=2><H2>API Enhancements</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="40%">
-    <p><br></p>
         <P align=left>
 	<B>Presence API Addition</B>
         </P>
     </TD>
     <TD vAlign=top width="60%">
-      <p><br></p>
       Added <b>org.eclipse.ecf.presence.chatroom.IChatRoomAdminListener</b>
       to notify registered listeners (listener registration via IChatRoomContainer.addChatRoomAdminListener) when the chat room subject changes/is changed asynchronously.
     </TD>
@@ -109,13 +103,11 @@
 
   <TR>
     <TD vAlign=top align=left width="40%">
-    <p><br></p>
         <P align=left>
 	<B>Shared Object API Addition</B>
         </P>
     </TD>
     <TD vAlign=top width="60%">
-      <p><br></p>
       Added event notification for shared object message send and receive.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172349">#172349</a> for details.
     </TD>
    </tr>
@@ -173,6 +165,7 @@ public class TestURLStreamHandlerService extends
 
 }
       </pre>
+      See also the extension point documentation for the <b>org.eclipse.ecf.filetransfer.urlStreamHandlerService</b> extension point.
     </TD>
    </tr>
 
