@@ -61,26 +61,26 @@
   <TR><TD colSpan=2><H2>ECF UI Additions</H2></TD>
 
   <TR>
-    <TD vAlign=top align=left width="30%">
+    <TD vAlign=top align=left width="40%">
     <p><br></p>
         <P align=left>
 	<B>Additions to IRC UI, IM Roster UI, and ECF generic collaboration UI.</B>
         </P>
     </TD>
-    <TD vAlign=top width="70%">
+    <TD vAlign=top width="60%">
       <p><br></p>
       <img src="images/screens/ircandroster1.0.0M5.png">
       <p></p>
     </tr>
 
   <TR>
-    <TD vAlign=top align=left width="30%">
+    <TD vAlign=top align=left width="40%">
     <p><br></p>
         <P align=left>
 	<B>Enhanced Support for IRC command handling</B>
         </P>
     </TD>
-    <TD vAlign=top width="70%">
+    <TD vAlign=top width="60%">
       <p><br></p>
       Added greater support for IRC command handling.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172958">#172958</a> for details.  
       Thanks to Mark Kropf for code contributions.
@@ -94,13 +94,13 @@
   <TR><p></p><TD colSpan=2><H2>API Enhancements</H2></TD>
 
   <TR>
-    <TD vAlign=top align=left width="30%">
+    <TD vAlign=top align=left width="40%">
     <p><br></p>
         <P align=left>
 	<B>Presence API Addition</B>
         </P>
     </TD>
-    <TD vAlign=top width="70%">
+    <TD vAlign=top width="60%">
       <p><br></p>
       Added <b>org.eclipse.ecf.presence.chatroom.IChatRoomAdminListener</b>
       to notify registered listeners (listener registration via IChatRoomContainer.addChatRoomAdminListener) when the chat room subject changes/is changed asynchronously.
@@ -108,26 +108,26 @@
    </tr>
 
   <TR>
-    <TD vAlign=top align=left width="30%">
+    <TD vAlign=top align=left width="40%">
     <p><br></p>
         <P align=left>
 	<B>Shared Object API Addition</B>
         </P>
     </TD>
-    <TD vAlign=top width="70%">
+    <TD vAlign=top width="60%">
       <p><br></p>
       Added event notification for shared object message send and receive.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172349">#172349</a> for details.
     </TD>
    </tr>
 
   <TR>
-    <TD vAlign=top align=left width="30%">
+    <TD vAlign=top align=left width="40%">
     <p><br></p>
         <P align=left>
 	<B>New Extension Point:  URL Stream Handler Service</B>
         </P>
     </TD>
-    <TD vAlign=top width="70%">
+    <TD vAlign=top width="60%">
       <p><br></p>
       Normally, when creating an instance of <b>java.net.URL</b>, it's necessary to use one of the 'built-in' protocols...e.g. http, ftp, file, etc.  Any other protocols
       will not have an URLStreamHandler associated with them, and the <b>java.net.URL</b> constructor will throw a MalformedURLException.  For example:
