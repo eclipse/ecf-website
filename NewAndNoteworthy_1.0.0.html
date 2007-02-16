@@ -58,52 +58,59 @@
 <hr>
 
 <table>
-  <TR><TD colSpan=2><H2>ECF UI Additions</H2></TD>
+  <TR><TD colSpan=2><H2>UI Additions</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
         <P align=left>
 	<B>Additions to IRC UI, IM Roster UI, and ECF generic collaboration UI.</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <p><br></p>
-      <img src="images/screens/ircandroster1.0.0M5.png">
-      <p></p>
-    </tr>
+      <a href="images/screens/ircandroster1.0.0M5.png"><img src="images/screens/ircandroster1.0.0M5.png"></a>
+      <br><br>
+    </td>
+  </TR>
 
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
         <P align=left>
 	<B>Enhanced Support for IRC command handling</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <p><br></p>
       Added greater support for IRC command handling.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172958">#172958</a> for details.  
       Thanks to Mark Kropf for code contributions.
     </TD>
    </tr>
 
-
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
   </TR>
-  
-  <TR></TR>
-  <TR><p></p><TD colSpan=2><H2>API Enhancements</H2></TD>
+  <TR><TD colSpan=2><H2>API Enhancements</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
         <P align=left>
 	<B>Presence API Addition</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <p><br></p>
       Added <b>org.eclipse.ecf.presence.chatroom.IChatRoomAdminListener</b>
       to notify registered listeners (listener registration via IChatRoomContainer.addChatRoomAdminListener) when the chat room subject changes/is changed asynchronously.
+      <br><br>
+    </TD>
+   </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Shared Object API Addition</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      Added event notification for shared object message send and receive.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172349">#172349</a> for details.
+      <br><br>
     </TD>
    </tr>
 
@@ -111,12 +118,56 @@
     <TD vAlign=top align=left width="30%">
     <p><br></p>
         <P align=left>
-	<B>Shared Object API Addition</B>
+	<B>New Extension Point:  URL Stream Handler Service</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
       <p><br></p>
-      Added event notification for shared object message send and receive.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172349">#172349</a> for details.
+      Normally, when creating an instance of <b>java.net.URL</b>, it's necessary to use one of the 'built-in' protocols...e.g. http, ftp, file, etc.  Any other protocols
+      will not have an URLStreamHandler associated with them, and the <b>java.net.URL</b> constructor will throw a MalformedURLException.  For example:
+      <p></p>
+      <pre>
+      // throws MalformedURLException
+      URL anURL = new URL("foobar://whateverIwanttohave/here/and/there/and/everywhere");
+      </pre>
+      The new ECF filetransfer extension point <b>org.eclipse.ecf.filetransfer.urlStreamHandlerService</b> allows plugins to add new URL protocols
+      to the Platform, and register a class for handling the parsing of the URL and/or the creation of URLConnection instances (via the URL.openConnection()
+      method).  So, for example the following extension will setup a 'foobar' protocol handler service:
+      <p></p>
+      <pre>
+   &lt;extension
+         point=&quot;org.eclipse.ecf.filetransfer.urlStreamHandlerService&quot;&gt;
+      &lt;urlStreamHandlerService
+            protocol=&quot;foobar&quot;
+            serviceClass=&quot;org.eclipse.ecf.tests.filetransfer.TestURLStreamHandlerService&quot;&gt;
+      &lt;/urlStreamHandlerService&gt;
+   &lt;/extension&gt;
+	</pre>
+
+      With such an extension defined, and the ECF filetransfer API plugin started, the following code will no longer throw an exception:
+      <pre>
+      // does not throw MalformedURLException
+      URL anURL = new URL("foobar://whateverIwanttohave/here/and/there/and/everywhere");
+      URLConnection connection = anURL.openConnection();
+      </pre>
+      Note that the 'serviceClass' must be a valid subclass of <b>org.osgi.service.url.AbstractURLStreamHandlerService</b>.
+      Here is a trivial example implementation class:
+      <p></p>
+      <pre>
+public class TestURLStreamHandlerService extends
+  AbstractURLStreamHandlerService {
+
+ }
+ /* (non-Javadoc)
+  * @see org.osgi.service.url.AbstractURLStreamHandlerService#openConnection(java.net.URL)
+  */
+ public URLConnection openConnection(URL u) throws IOException {
+  return new TestHttpURLConnection(u);
+ }
+
+}
+      </pre>
+      See also the extension point documentation for the <b>org.eclipse.ecf.filetransfer.urlStreamHandlerService</b> extension point.
     </TD>
    </tr>
 
