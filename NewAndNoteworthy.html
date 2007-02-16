@@ -120,6 +120,63 @@
     </TD>
    </tr>
 
+  <TR>
+    <TD vAlign=top align=left width="30%">
+    <p><br></p>
+        <P align=left>
+	<B>New Extension Point:  org.eclipse.ecf.filetransfer.urlStreamHandlerService</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      <p><br></p>
+      Normally, when creating an instance of <b>java.net.URL</b>, it's necessary to use one of the 'built-in' protocols...e.g. http, ftp, file, etc.  Any other protocols
+      will not have an URLStreamHandler associated with them, and the <b>java.net.URL</b> constructor will throw a MalformedURLException.  For example:
+      <p></p>
+      <pre>
+      // throws MalformedURLException
+      URL anURL = new URL("foobar://whateverIwanttohave/here/and/there/and/everywhere");
+      </pre>
+      The new ECF filetransfer extension point <b>org.eclipse.ecf.filetransfer.urlStreamHandlerService</b> allows plugins to add new URL protocols
+      to the Platform, and register a class for handling the parsing of the URL and/or the creation of URLConnection instances (via the URL.openConnection()
+      method).  So, for example the following extension will setup a 'foobar' protocol handler service:
+      <p></p>
+      <pre>
+      <pre>
+   <extension
+         point="org.eclipse.ecf.filetransfer.urlStreamHandlerService">
+      <urlStreamHandlerService
+            protocol="foobar"
+            serviceClass="org.eclipse.ecf.tests.filetransfer.TestURLStreamHandlerService">
+      </urlStreamHandlerService>
+   </extension>
+</pre>
+      </pre>
+      With such an extension defined, and the ECF filetransfer API plugin started, the following code will no longer throw an exception:
+      <pre>
+      // does not throw MalformedURLException
+      URL anURL = new URL("foobar://whateverIwanttohave/here/and/there/and/everywhere");
+      URLConnection connection = anURL.openConnection();
+      </pre>
+      Note that the 'serviceClass' must be a valid subclass of <b>org.osgi.service.url.AbstractURLStreamHandlerService</b>.
+      Here is a trivial example implementation class:
+      <p></p>
+      <pre>
+public class TestURLStreamHandlerService extends
+  AbstractURLStreamHandlerService {
+
+ }
+ /* (non-Javadoc)
+  * @see org.osgi.service.url.AbstractURLStreamHandlerService#openConnection(java.net.URL)
+  */
+ public URLConnection openConnection(URL u) throws IOException {
+  return new TestHttpURLConnection(u);
+ }
+
+}
+      </pre>
+    </TD>
+   </tr>
+
 </table>
 
 </body>
