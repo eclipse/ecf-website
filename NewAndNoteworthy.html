@@ -140,7 +140,7 @@
       to the Platform, and register a class for handling the parsing of the URL and/or the creation of URLConnection instances (via the URL.openConnection()
       method).  So, for example the following extension will setup a 'foobar' protocol handler service:
       <p></p>
-&lt;pre&gt;
+      <pre>
    &lt;extension
          point=&quot;org.eclipse.ecf.filetransfer.urlStreamHandlerService&quot;&gt;
       &lt;urlStreamHandlerService
@@ -148,7 +148,7 @@
             serviceClass=&quot;org.eclipse.ecf.tests.filetransfer.TestURLStreamHandlerService&quot;&gt;
       &lt;/urlStreamHandlerService&gt;
    &lt;/extension&gt;
-&lt;/pre&gt;
+	</pre>
 
       With such an extension defined, and the ECF filetransfer API plugin started, the following code will no longer throw an exception:
       <pre>
