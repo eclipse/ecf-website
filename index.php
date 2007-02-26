@@ -64,8 +64,8 @@
 	<tr>
 	    <td align="left" valign="top" height="12" width="23">
 	    </td>
-	    <td>
-			<b>Events coming up at </b><a href="http://eclipsecon.org/2007"><img border=0 src="images/logo-eclipsecon.gif"></a>
+	    <td align="center" valign="top" >
+			<b>ECF Events coming up at </b><a href="http://eclipsecon.org/2007"><img border=0 src="images/logo-eclipsecon.gif"></a>
 		</td>
 	</tr>
 	
@@ -73,7 +73,7 @@
 	    <td align="left" valign="top" height="12" width="23">
 	    </td>
 	    <td>
-	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4199">ECF BOF</a>.  (March 7, 20:45 Grand Ballroom C)</b>
+	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4199">ECF BOF</a></b>.  (March 7, 20:45 Grand Ballroom C)
 		</td>
 	</tr>
 	
@@ -81,7 +81,7 @@
 	    <td align="left" valign="top" height="12" width="23">
 	    </td>
 	    <td>
-	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4081">ECF for Collaborating Within Eclipse...and on Eclipse</a>.  Short talk by Scott Lewis.  (March 7, 10:30am, Ballroom GHAB)</b>
+	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4081">ECF for Collaborating Within Eclipse...and on Eclipse</a></b>.  Short talk by Scott Lewis.  (March 7, 10:30am, Ballroom GHAB)
 		</td>
 	</tr>
 	
