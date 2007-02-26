@@ -72,6 +72,7 @@
 	<tr>
 	    <td align="left" valign="top" height="12" width="23">
 	    </td>
+	    <td>
 	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4199">ECF BOF</a>.  (March 7, 20:45 Grand Ballroom C)</b>
 		</td>
 	</tr>
