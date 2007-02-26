@@ -62,9 +62,7 @@
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
 
 	<tr>
-		<td align="left" valign="top">
-			<a href="http://eclipsecon.org/2007"><img border=0 src="images/logo-eclipsecon.gif"></a>
-		</td>
+		<a href="http://eclipsecon.org/2007"><img border=0 src="images/logo-eclipsecon.gif"></a>
 	</tr>
 	
 	<tr>
