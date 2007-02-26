@@ -65,7 +65,7 @@
 	    <td align="left" valign="top" height="12" width="23">
 	    </td>
 	    <td>
-			<a href="http://eclipsecon.org/2007"><img border=0 src="images/logo-eclipsecon.gif"></a>
+			<b>Events coming up at </b><a href="http://eclipsecon.org/2007"><img border=0 src="images/logo-eclipsecon.gif"></a>
 		</td>
 	</tr>
 	
@@ -85,6 +85,12 @@
 		</td>
 	</tr>
 	
+	<tr>
+	    <hr>
+	    <td align="left" valign="top" height="12" width="23">
+	    </td>
+	    <td>
+		</td>
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
