@@ -72,7 +72,7 @@
 	<tr>
 	    <td align="center" valign="top" height="12" width="23">
 	    </td>
-	    <td>
+	    <td align="center" >
 	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4199">ECF BOF</a></b>.  (March 7, 20:45 Grand Ballroom C)
 		</td>
 	</tr>
@@ -80,7 +80,7 @@
 	<tr>
 	    <td align="center" valign="top" height="12" width="23">
 	    </td>
-	    <td>
+	    <td align="center" >
 	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4081">ECF for Collaborating Within Eclipse...and on Eclipse</a></b>.  Short talk by Scott Lewis.  (March 7, 10:30am, Ballroom GHAB)
 		</td>
 	</tr>
