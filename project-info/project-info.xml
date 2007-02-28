@@ -2,7 +2,9 @@
   <name>Eclipse Communication Framework Project</name>
   <short-name>ECF</short-name>
 
-  <bugzilla url="/ecf/bugs.php">
+  <bugs url="/ecf/bugs.php">
+  </bugs>
+  <bugzilla>
     <product name="ECF"/>
   </bugzilla>
 
@@ -39,7 +41,7 @@
      -       url would be something like "/tptp/project-info/description.html".
     -->
     
-    <description url="/ecf/about.php"
+    <description url="/ecf/project-info/project-description.html"
      paragraph-url="/ecf/project-info/project-page-paragraph.html"/>
 
   <!--
@@ -63,7 +65,7 @@
      - get started using and extending the project's tools and frameworks.
     -->
     
-  <getting-started url="/ecf/dev_resources.php"/>
+  <getting-started url="/ecf/user_resources.php"/>
   
   <!--
      - It is also important to help new contributors get started with an Eclipse project.
@@ -73,7 +75,7 @@
      - get started developing on, and contributing to, the project.
     -->
     
-  <contributing url="/ecf/user_resources.php"/>
+  <contributing url="/ecf/dev_resources.php"/>
   
   <!--
      - Each Eclipse project is required to maintain a current Project IP Log.
@@ -82,7 +84,7 @@
      - other legal information as well, it can use the <legal> element
      - instead and then include the IP Log information on the Legal web page.
     -->
-  <ip-log url="/ecf/legal.php"/>
+  <legal url="/ecf/legal.php"/>
     
 
   <!--
@@ -155,33 +157,22 @@
     <release  
        status="completed"
        name="0.9.2"
-       date="10/2006" />
+       date="10/2006"
+       download="/ecf/downloads.php" />
     <release 
        status="completed"
        name="0.9.3"
-       date="11/2006" />
-    <release 
-       status="completed"
-       name="0.9.4"
-       date="12/03/2006" 
-       plan="/ecf/plan.php" />
-    <release 
-       status="completed"
-       name="0.9.5"
-       date="12/22/2006" 
-       download="/ecf/downloads.php"
-       plan="/ecf/plan.php" />
-    <release 
-       status="completed"
-       name="0.9.6"
-       date="01/13/2007"
-       download="/ecf/downloads.php"
-       plan="/ecf/plan.php" />
+       date="11/2006"
+       download="/ecf/downloads.php" />
     <release 
        status="scheduled"
-       name="1.0.0.v20070206"
-       date="2/16/2007"
-       plan="/ecf/plan.php" />
+       name="0.9.4"
+       date="12/03/2006"
+       plan="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project#Current_Projects" />
+    <release 
+       status="scheduled"
+       name="0.9.5"
+       date="12/15/2006" />
     <release 
        status="tentative"
        name="1.0"

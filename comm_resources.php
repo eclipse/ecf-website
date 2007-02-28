@@ -87,7 +87,7 @@ ob_start();
 				<li><a href="#">Test &amp; Performance Tools Platform</a></li>
 				<li><a href="#">Web Tools</a></li>
 				<li><a href="#">Project Proposals</a></li>
-				<li><img src="../images/jdj.jpg" width="40" height="42" class="inset" /><a href="#">Cast your vote for Eclipse</a></li>
+				<li><img src="images/jdj.jpg" width="40" height="42" class="inset" /><a href="#">Cast your vote for Eclipse</a></li>
 				<li><a href="#">Eclipse wins Jolt Award</a><br /><img src="images/jolt.jpg" width="100" height="68" /></li>
 			</ul>
 		</div>

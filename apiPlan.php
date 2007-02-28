@@ -7,23 +7,6 @@
 	$Menu 	= new Menu();
 	include($App->getProjectCommon());
 
-	#*****************************************************************************
-	#
-	# template.php
-	#
-	# Author: 		Denis Roy
-	# Date:			2005-06-16
-        #
-        # Modified:		Ted Kubaska
-	# Date:                 2006-12-08
-	#      
-	# Description: Type your page comments here - these are not sent to the browser
-	#
-	#
-	#****************************************************************************
-	
-	#
-	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Resources";
 	$pageKeywords	        = "Type, page, keywords, here";
 	$pageAuthor		= "Scott Lewis, Pete Mackie";
@@ -42,10 +25,11 @@ ob_start();
 ?>		
 <div id="rightcolumn">
  <div class="sideitem">
-   <h6>Incubation</h6>
-   <div align="center"><a href="/projects/gazoo.php"><img
-        align="middle" src="/images/gazoo-incubation.jpg"
-        border="0" alt="[gazoo-incubation]"/></a></div>
+   <h6>Under Construction</h6>
+   <div align="center"><img
+        align="center" src="/images/under_construction.jpg"
+        border="0" alt="[under_construction]"/>
+   </div>
  </div>
 </div>
 
@@ -55,9 +39,15 @@ ob_start();
 	<h3>ECF API Plan </h3>
            <p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. To look
             at the API documentation, click
-           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">here</a>.
+           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">javadocs</a>.
            </p>
 
+        <h3></h3>
+           <p>
+            We are not sure what to put under this tag. 
+            The term API Plan is confusing. Is it intended to be a plan for modified or future APIs?
+            I decided to link it to the API javadocs.
+           </p>
         <h3></h3>
 	</div>
 	</div>

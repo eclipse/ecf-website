@@ -1,4 +1,13 @@
-<?php  																														require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); 	require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); 	$App 	= new App();	$Nav	= new Nav();	$Menu 	= new Menu();		include($App->getProjectCommon());    # All on the same line to unclutter the user's desktop'
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
+$App 	= new App();
+$Nav	= new Nav();
+$Menu 	= new Menu();
+include($App->getProjectCommon());
+
+    # All on the same line to unclutter the user's desktop'
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Committers";
 	$pageKeywords	= "ECF, Eclipse, committer, contributor";
@@ -16,7 +25,6 @@
 ob_start();
 ?>
 	<div id="midcolumn">
-		<h1><?= $pageTitle ?></h1>
 		<div class="homeitem3col">
 			<a name="committers"></a>
 			<h3>ECF Committers</h3>
@@ -35,6 +43,13 @@ ob_start();
                 <td width="25%"><p align="center"><img src="pete_mackie.jpg" alt="Pete Mackie" width="200" height="280"></p>
                   <p align="center"><strong>Pete Mackie</strong></p>
                   <p align="center">Committer, Seaquest Software</p>
+                  <p align="center">&nbsp;</p>
+                </td>
+              </tr>
+              <tr>
+                <td width="25%"><p align="center"><img src="Pierre-HenryPerret.gif" alt="Pierre-Henry Perret" width="200" height="280"></p>
+                  <p align="center"><strong>Pierre-Henry Perret</strong></p>
+                  <p align="center">Committer</p>
                   <p align="center">&nbsp;</p>
                 </td>
               </tr>

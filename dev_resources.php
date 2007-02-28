@@ -7,19 +7,6 @@ $Nav	= new Nav();
 $Menu 	= new Menu();
 include($App->getProjectCommon());
 
-	#*****************************************************************************
-	#
-	# template.php
-	#
-	# Author: 		Denis Roy
-	# Date:			2005-06-16
-        #
-	#      
-	# Description: Type your page comments here - these are not sent to the browser
-	#
-	#
-	#****************************************************************************
-	
 	#
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Resources";
@@ -43,66 +30,53 @@ ob_start();
  <div class="sideitem">
    <h6>Incubation</h6>
    <div align="center"><a href="/projects/gazoo.php"><img
-        align="middle" src="/images/gazoo-incubation.jpg"
-        border="0" alt="[gazoo-incubation]"/></a></div>
+        align="center" src="/images/gazoo-incubation.jpg"
+        border="0" /></a></div>
  </div>
 </div>
 
 <div id="midcolumn">
  <div class="homeitem3col">
-  <h3>ECF Developer Resources</h3>
-      <h5>ECF API</h5>
-          <p>The Eclipse Communication Framework (ECF) API documentation uses Javadocs. To look
-            at the API documentation, click
-           <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api">here</a>.
-           </p>
+  <h3>ECF Contributors</h3>
+   <p>
+      This page provides information about resources for Eclipse ECF contributors.
+   </p> 
 
+   <p>
+      If you are writing code to make
+      ECF itself better, consider yourself a contributor.
+      If you are a user taking advantage of ECF's
+      incredible features to write your own software, then consider yourself a user. 
+   </p>
 
-      <h5>Mailing List</h5>
-      <p>The ECF mailing list is for developers working on ECF code to discuss development related issues.<br/>
-      If you are &quot;kicking the tires&quot; or using ECF to develop your own communications applications,<br/>
-      please post questions on the <b><u>newsgroup</u> </b>rather than the
-      developers mailing list.</p>
-      <blockquote>
-        <p><a href="mailto:ecf-dev@eclipse.org">ecf-dev@eclipse.org</a></p>
-      </blockquote>
-      You must <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev"> subscribe to the
-      ecf-dev mailing list</a> if you want to send email to that list.
-      <p></p>
-      You can read the <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/maillist.html">mailing list archive</a> without joining the list.
-      <p></p>
-      <h5>Anonymous CVS Access to ECF Source Code</h5>
-      <p></p>
-      To load ECF source code into your workspace download and use one of the project set files below
-      <p>Save one of the below project set files to local disk by choosing File -> Save Link As... in your browser</p>
+   <p>
+     Contributors should look for information mainly at the mailing list.
+     while users should focus on the Eclipse newsgroup.
+     Both groups may be interested in the Eclipse Wiki.
+   </p>
 
-      <ul>
-      <li><a href="org.eclipse.ecf.docs/ecf-anonymous.psf">ECF core, examples, and test plugins</a></li>
-      <li><a href="org.eclipse.ecf.docs/ecf-anonymous-core.psf">ECF core plugins</a></li>
-      <li><a href="org.eclipse.ecf.docs/ecf-anonymous-examples.psf">ECF example plugins</a></li>
-      <li><a href="org.eclipse.ecf.docs/ecf-anonymous-tests.psf">ECF test plugins</a></li>
-      </ul>
-      
-      <p>Instructions for Using Project Set Files</p>
-      <ul>
-      <li>Download/Save Link As... the desired project set file to local disk</li>
-      <li>Within Eclipse, choose <b>File -> Import -> Team Project Set</b> and open the .psf file downloaded in step 1</li>
-      </ul>
+   <p>
+      The distinction between users and contributors is somewhat blurred if you are using ECF to contribute software to
+      another Eclipse project. If you fall in that category, look at both user and contributor information.
+   </p>
+   <p><a href="/ecf/contributing.php">Contributing</a></p>
 
-      <h5>Anonymous CVS server info</h5>
-      <ul>
-      <li>Host: <b>dev.eclipse.org</b></li>
-      <li>Repository Path:  <b>/cvsroot/technology</b></li>
-      <li>User: <b>anonymous</b></li>
-      <li>Password:  &lt;empty&gt;</li>
-      <li>Connection method: <b>pserver</b></li>
-      <li>Module:  <b>org.eclipse.ecf/plugins</b></li>
-      </ul> 
-	</div>
-	</div>
 
 <?php
-	$html = ob_get_contents();
+        $html = ob_get_contents();
+        include 'getNugget.php';
+
+        $html = getNugget("EcfJavadocs.html",$html);
+        $html = getNugget("EcfMailingList.html",$html);
+        $html = getNugget("EcfAnonCVSaccess.html",$html);
+        $html = getNugget("EcfWiki.html",$html);
+        $html = getNugget("EcfBugReporting.html",$html);
+        $html = getNugget("EcfNewsgroup.html",$html);
+        $html = getNugget("EcfPresentations.html",$html);
+
+
+ $html = $html . "</div></div>";
+
 	ob_end_clean();
 
 	# Generate the web page
