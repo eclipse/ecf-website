@@ -41,7 +41,7 @@
      -       url would be something like "/tptp/project-info/description.html".
     -->
     
-    <description url="/ecf/project-info/project-description.html"
+    <description url="http://www.eclipse.org/ecf/about.php"
      paragraph-url="/ecf/project-info/project-page-paragraph.html"/>
 
   <!--
