@@ -130,6 +130,9 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 ?>
                                 </li>
 				<li>
+				Mark Kropf
+				</li>
+				<li>
 				Erkki Lindpere
 				</li>
 				<li>
