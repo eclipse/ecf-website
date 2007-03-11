@@ -43,12 +43,12 @@
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.collab.editor,org.eclipse.ecf.example.collab.editor"/>
         
         <!-- tests -->
-        <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test,org.eclipse.ecf.test"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.discovery,org.eclipse.ecf.test.discovery"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.filetransfer,org.eclipse.ecf.test.filetransfer"/>
-		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.test.datashare,org.eclipse.ecf.test.datashare"/>
-        
-        <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests,org.eclipse.ecf.tests"/>
-        
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests,org.eclipse.ecf.tests"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.datashare,org.eclipse.ecf.tests.datashare"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.discovery,org.eclipse.ecf.tests.discovery"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.filetransfer,org.eclipse.ecf.tests.filetransfer"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.presence,org.eclipse.ecf.tests.presence"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.remoteservice,org.eclipse.ecf.tests.remoteservice"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.sharedobject,org.eclipse.ecf.tests.sharedobject"/>
 	</provider>
 </psf>
