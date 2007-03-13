@@ -36,7 +36,6 @@ org.eclipse.ecf.provider.generic.gmm
 org.eclipse.ecf.provider.util
 org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.events
-org.eclipse.ecf.server
 org.eclipse.ecf.ui
 org.eclipse.ecf.ui.actions
 org.eclipse.ecf.ui.dialogs
