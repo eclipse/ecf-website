@@ -94,7 +94,7 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>March 30, 2007 - ECF 1.0.0 Release build released on eclipse.org. </b>
+	  	<b>March 30, 2007 - ECF 1.0.0 milestone 6 build released on eclipse.org. </b>
 			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
 		</td>
 	</tr>
