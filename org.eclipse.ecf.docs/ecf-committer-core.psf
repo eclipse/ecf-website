@@ -11,6 +11,7 @@
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.filetransfer.ui,org.eclipse.ecf.filetransfer.ui"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.core.identity,org.eclipse.ecf.core.identity"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.presence,org.eclipse.ecf.presence"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.presence.bot,org.eclipse.ecf.presence.bot"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.presence.ui,org.eclipse.ecf.presence.ui"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.remoteservice,org.eclipse.ecf.remoteservice"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.core.sharedobject,org.eclipse.ecf.core.sharedobject"/>
