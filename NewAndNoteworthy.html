@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>0.9.6 Stable Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>1.0.0 Milestone 6</font>
         <br><br><br>
         Return to <a href="downloads.php">ECF download page</a></br>
         Return to <a href="comm_resources.php">ECF communication resources page</a>
@@ -44,6 +44,8 @@
         <a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a><br>
         <a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a><br>
         <a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy for 0.9.5</a><br>
+        <a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy for 0.9.6</a><br>
+        <a href="NewAndNoteworthy_1.0.0M5.html">New and Noteworthy for 1.0.0 Milestone 5</a><br>
       </td>
       <td width="31%">
         <div align="center">
@@ -57,98 +59,151 @@
 <hr>
 
 <table>
-  <TR><TD colSpan=2><H2>ECF UI Additions</H2></TD>
+  <TR><TD colSpan=2><H2>New ECF Providers for MSN and Bittorrent Protocol Support</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
         <P align=left>
-	<B>Able to open links in internal browser</B>
+	<B>MSN Provider</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <p><br></p>
-      For the IRC chat window, URLs now appear as underlined, and when clicked on will open the internal browser window for the given page.  
-      Here's a screenshot:<p></p>
-      <img src="../images/screens/ircweblink.png">
-      <p></p>
-    </tr>
-
+        Microsoft Network Messenger provider added to support ECF-based instant message and presence via Microsoft Messenger Accounts.  
+        <p></p>
+              <a href="images/screens/dropdownui.png"><img src="images/screens/dropdownui.png"></a>
+              <p></p>
+              <a href="images/screens/msnconnect.png"><img src="images/screens/msnconnect.png"></a>
+              <p></p>
+    </td>
   </TR>
-  
+
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
         <P align=left>
-	<B>New Connect Wizards for IRC, XMPP providers</B>
+	<B>Bittorrent Provider</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <p><br></p>
-      Using the <b>org.eclipse.ecf.ui.connectWizard</b> extension point, there are new connectWizards for IRC and XMPP providers.  The wizard classes may be
-      found in the two (new) plugins:  <b>org.eclipse.ecf.provider.xmpp.ui</b> and <b>org.eclipse.ecf.provider.irc.ui</b>.
-      <p></p>
-    </tr>
-
+        Bittorrent provider added for file retrieval.  
+        <p></p>
+              <a href="images/screens/btdropdownui.png"><img src="images/screens/dropdownui.png"></a>
+              <p></p>
+              <a href="images/screens/bittorrent.png"><img src="images/screens/bittorrent.png"></a>
+              <p></p>
+    </td>
   </TR>
-  
-    <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>Simplified RosterView class</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      Using the Presence API Refactoring described below, a simplified and extensible roster view class was created in the <b>org.eclipse.ecf.presence.ui</b>
-      plugin:  MultiRosterView.  This view presents multiple rosters, using the MultiRosterContentProvider class present in the same package.  This 
-      replacement roster view will be used to introduce other features into the roster user interface, and is also suitable for extension
-      by subclasses or replacement.
-      <p></p>
-    </tr>
 
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
   </TR>
-  
-  <TR></TR>
   <TR><TD colSpan=2><H2>API Enhancements</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
-    <p><br></p>
         <P align=left>
-	<B>Presence API Refactoring to Support JFace Content Providers</B>
+	<B>Instant Messaging History API</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <p><br></p>
-      The presence API (plugin: <b>org.eclipse.ecf.presence</b>) has been enhanced to support JFace viewers.  Specifically,
-      the roster interface classes (IRosterManager, IRoster, IRosterEntry, IRosterGroup, IRosterItem) have been enhanced
-      so that they can easily be used as the basis of an JFace ITreeContentProvider.  This allows the
-      use and automatic update of a roster (buddy) list by an ECF provider that implements the presence API (e.g. the XMPP provider).  For example, here is code in the new plugin 
-      <b>org.eclipse.ecf.presence.ui</b> that creates a tree viewer to display multiple rosters:
-      <pre>
-      	protected void setupTreeViewer(Composite parent) {
-		    treeViewer = new TreeViewer(parent, SWT.BORDER | SWT.MULTI
-				| SWT.V_SCROLL);
-		    getSite().setSelectionProvider(treeViewer);
-		    multiRosterContentProvider = new MultiRosterContentProvider();
-		    multiRosterLabelProvider = new MultiRosterLabelProvider();
-		    treeViewer.setLabelProvider(multiRosterLabelProvider);
-		    treeViewer.setContentProvider(multiRosterContentProvider);
-		    treeViewer.setInput(new Object());
-	    }
-      </pre>
-      With this approach, the UI/viewer code does not need to know anything about the messaging to change/update the roster
-      model.  This model is managed by the ECF provider (XMPP) and when 
-      The MultiRosterContentProvider class (and others to support this new approach) are available
-      in the (new) plugin:  <b>org.eclipse.ecf.presence.ui</b>.  See the classes in the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/ui/package-summary.html">org.eclipse.ecf.presence.ui package</a>
-      for example usage and reusable base classes.
+      Added history API for accessing chat history information.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=177014">bug #177014</a>
+      for details.
+            <br><br>
+    </TD>
+   </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Chat Robot API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+      Added robot API and extension points for creating robots that can chat via IM or chat rooms.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=180078">180078</a>
+      for details.  This API allows robots to be defined via two new extension points in the new plugin <b>org.eclipse.ecf.presence.bot</b>.
+      <p></p>
+      For example, here's the definition of an imrobot 'Fliwatuet' that will connect to the account at <b>fliwatuet@ecf.eclipse.org</b> and
+      then receive messages and notifications via the imcommand handler class <b>org.eclipse.ecf.presence.bot.DefaultIMMessageHandler</b>:
+      </p>
+      <p>
+      
+            <pre>
+   &lt;extension
+         point=&quot;org.eclipse.ecf.presence.bot.imrobot&quot;&gt;
+      &lt;imrobot
+            connectID=&quot;fliwatuet@ecf.eclipse.org&quot;
+            containerFactoryName=&quot;ecf.xmpp.smack&quot;
+            id=&quot;org.eclipse.ecf.presence.imbot&quot;
+            connectpassword=&quot;password&quot;/&gt;
+      &lt;/chatroomrobot&gt;
+   &lt;/extension&gt;
+
+   &lt;extension
+         point=&quot;org.eclipse.ecf.presence.bot.immessagehandler&quot;&gt;
+      &lt;handler
+            imrobotid=&quot;org.eclipse.ecf.presence.imbot&quot;
+            class=&quot;org.eclipse.ecf.presence.imbot.MyIMMessageHandler&quot;&gt;
+      &lt;/handler&gt;
+   &lt;/extension&gt;
+	</pre>
       
       <p></p>
-    </tr>
+      Here's an example for use of the chatroomrobot extension point for connecting to an IRC channel:
+      
+      <pre>
+   &lt;extension
+         point=&quot;org.eclipse.ecf.presence.bot.chatroomrobot&quot;&gt;
+      &lt;chatroomrobot
+            chatroom=&quot;#eclipse-ecf&quot;
+            connectID=&quot;irc://slewis2_@irc.freenode.net&quot;
+            containerFactoryName=&quot;ecf.irc.irclib&quot;
+            id=&quot;org.eclipse.ecf.presence.bot.ircbot&quot;&gt;
+      &lt;/chatroomrobot&gt;
+   &lt;/extension&gt;
+
+   &lt;extension
+         point=&quot;org.eclipse.ecf.presence.bot.chatroommessagehandler&quot;&gt;
+      &lt;handler
+            chatroomrobotid=&quot;org.eclipse.ecf.presence.bot.ircbot&quot;
+            class=&quot;org.eclipse.ecf.presence.bot.MyChatRoomMessageHandler&quot;&gt;
+      &lt;/handler&gt;
+   &lt;/extension&gt;
+      </pre>
+      
+      </p>
+            <br><br>
+    </TD>
+   </tr>
+
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Discovery API Simplification</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      Small simplifications to the discovery API.  For example, removed some methods from <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/IDiscoveryContainerAdapter.html">IDiscoveryContainerAdapter</a>.
+      <br><br>
+    </TD>
+   </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Support for All Equinox-based Runtimes</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    Removed references to packages and classes that are Eclipse-based.  For details see
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=176322">bug #176322</a>.  With this change, all non-ui ECF
+    bundles (i.e. those whose name does not end with *.ui) are able to operate in all Equinox configurations...e.g. 
+    servers, RCP apps, eRCP, and/or Eclipse.
+      <br><br>
+    </TD>
+   </tr>
 
 </table>
 
 </body>
-</<bhtml>
+</html>

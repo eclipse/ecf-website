@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology subproject</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>1.0.0 Milestone 5</font>
+        <font class="indextop style2">New and Noteworthy</font><br>1.0.0 Milestone 6</font>
         <br><br><br>
         Return to <a href="downloads.php">ECF download page</a></br>
         Return to <a href="comm_resources.php">ECF communication resources page</a>
@@ -45,6 +45,7 @@
         <a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a><br>
         <a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy for 0.9.5</a><br>
         <a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy for 0.9.6</a><br>
+        <a href="NewAndNoteworthy_1.0.0M5.html">New and Noteworthy for 1.0.0 Milestone 5</a><br>
       </td>
       <td width="31%">
         <div align="center">
@@ -58,31 +59,39 @@
 <hr>
 
 <table>
-  <TR><TD colSpan=2><H2>UI Additions</H2></TD>
+  <TR><TD colSpan=2><H2>New ECF Providers for MSN and Bittorrent Protocol Support</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Additions to IRC UI, IM Roster UI, and ECF generic collaboration UI.</B>
+	<B>MSN Provider</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      <a href="images/screens/ircandroster1.0.0M5.png"><img src="images/screens/ircandroster1.0.0M5.png"></a>
-      <br><br>
+        Microsoft Network Messenger provider added to support ECF-based instant message and presence via Microsoft Messenger Accounts.  
+        <p></p>
+              <a href="images/screens/dropdownui.png"><img src="images/screens/dropdownui.png"></a>
+              <p></p>
+              <a href="images/screens/msnconnect.png"><img src="images/screens/msnconnect.png"></a>
+              <p></p>
     </td>
   </TR>
 
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Enhanced Support for IRC command handling</B>
+	<B>Bittorrent Provider</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      Added greater support for IRC command handling.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172958">#172958</a> for details.
-      Thanks to Mark Kropf for code contributions.
-    </TD>
-   </tr>
+        Bittorrent provider added for file retrieval.  
+        <p></p>
+              <a href="images/screens/btdropdownui.png"><img src="images/screens/dropdownui.png"></a>
+              <p></p>
+              <a href="images/screens/bittorrent.png"><img src="images/screens/bittorrent.png"></a>
+              <p></p>
+    </td>
+  </TR>
 
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
@@ -92,82 +101,105 @@
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Presence API Addition</B>
+	<B>Instant Messaging History API</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      Added <b>org.eclipse.ecf.presence.chatroom.IChatRoomAdminListener</b>
-      to notify registered listeners (listener registration via IChatRoomContainer.addChatRoomAdminListener) when the chat room subject changes/is changed asynchronously.
-      <br><br>
+      Added history API for accessing chat history information.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=177014">bug #177014</a>
+      for details.
+            <br><br>
     </TD>
    </tr>
 
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Shared Object API Addition</B>
+	<B>Chat Robot API</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-      Added event notification for shared object message send and receive.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172349">#172349</a> for details.
-      <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-    <p><br></p>
-        <P align=left>
-	<B>New Extension Point:  URL Stream Handler Service</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p><br></p>
-      Normally, when creating an instance of <b>java.net.URL</b>, it's necessary to use one of the 'built-in' protocols...e.g. http, ftp, file, etc.  Any other protocols
-      will not have an URLStreamHandler associated with them, and the <b>java.net.URL</b> constructor will throw a MalformedURLException.  For example:
+    <p>
+      Added robot API and extension points for creating robots that can chat via IM or chat rooms.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=180078">180078</a>
+      for details.  This API allows robots to be defined via two new extension points in the new plugin <b>org.eclipse.ecf.presence.bot</b>.
       <p></p>
-      <pre>
-      // throws MalformedURLException
-      URL anURL = new URL("foobar://whateverIwanttohave/here/and/there/and/everywhere");
-      </pre>
-      The new ECF filetransfer extension point <b>org.eclipse.ecf.filetransfer.urlStreamHandlerService</b> allows plugins to add new URL protocols
-      to the Platform, and register a class for handling the parsing of the URL and/or the creation of URLConnection instances (via the URL.openConnection()
-      method).  So, for example the following extension will setup a 'foobar' protocol handler service:
-      <p></p>
-      <pre>
+      For example, here's the definition of an imrobot 'Fliwatuet' that will connect to the account at <b>fliwatuet@ecf.eclipse.org</b> and
+      then receive messages and notifications via the imcommand handler class <b>org.eclipse.ecf.presence.bot.DefaultIMMessageHandler</b>:
+      </p>
+      <p>
+      
+            <pre>
    &lt;extension
-         point=&quot;org.eclipse.ecf.filetransfer.urlStreamHandlerService&quot;&gt;
-      &lt;urlStreamHandlerService
-            protocol=&quot;foobar&quot;
-            serviceClass=&quot;org.eclipse.ecf.tests.filetransfer.TestURLStreamHandlerService&quot;&gt;
-      &lt;/urlStreamHandlerService&gt;
+         point=&quot;org.eclipse.ecf.presence.bot.imrobot&quot;&gt;
+      &lt;imrobot
+            connectID=&quot;fliwatuet@ecf.eclipse.org&quot;
+            containerFactoryName=&quot;ecf.xmpp.smack&quot;
+            id=&quot;org.eclipse.ecf.presence.imbot&quot;
+            connectpassword=&quot;password&quot;/&gt;
+      &lt;/chatroomrobot&gt;
+   &lt;/extension&gt;
+
+   &lt;extension
+         point=&quot;org.eclipse.ecf.presence.bot.immessagehandler&quot;&gt;
+      &lt;handler
+            imrobotid=&quot;org.eclipse.ecf.presence.imbot&quot;
+            class=&quot;org.eclipse.ecf.presence.imbot.MyIMMessageHandler&quot;&gt;
+      &lt;/handler&gt;
    &lt;/extension&gt;
 	</pre>
-
-      With such an extension defined, and the ECF filetransfer API plugin started, the following code will no longer throw an exception:
-      <pre>
-      // does not throw MalformedURLException
-      URL anURL = new URL("foobar://whateverIwanttohave/here/and/there/and/everywhere");
-      URLConnection connection = anURL.openConnection();
-      </pre>
-      Note that the 'serviceClass' must be a valid subclass of <b>org.osgi.service.url.AbstractURLStreamHandlerService</b>.
-      Here is a trivial example implementation class:
+      
       <p></p>
+      Here's an example for use of the chatroomrobot extension point for connecting to an IRC channel:
+      
       <pre>
-public class TestURLStreamHandlerService extends
-  AbstractURLStreamHandlerService {
+   &lt;extension
+         point=&quot;org.eclipse.ecf.presence.bot.chatroomrobot&quot;&gt;
+      &lt;chatroomrobot
+            chatroom=&quot;#eclipse-ecf&quot;
+            connectID=&quot;irc://slewis2_@irc.freenode.net&quot;
+            containerFactoryName=&quot;ecf.irc.irclib&quot;
+            id=&quot;org.eclipse.ecf.presence.bot.ircbot&quot;&gt;
+      &lt;/chatroomrobot&gt;
+   &lt;/extension&gt;
 
- }
- /* (non-Javadoc)
-  * @see org.osgi.service.url.AbstractURLStreamHandlerService#openConnection(java.net.URL)
-  */
- public URLConnection openConnection(URL u) throws IOException {
-  return new TestHttpURLConnection(u);
- }
-
-}
+   &lt;extension
+         point=&quot;org.eclipse.ecf.presence.bot.chatroommessagehandler&quot;&gt;
+      &lt;handler
+            chatroomrobotid=&quot;org.eclipse.ecf.presence.bot.ircbot&quot;
+            class=&quot;org.eclipse.ecf.presence.bot.MyChatRoomMessageHandler&quot;&gt;
+      &lt;/handler&gt;
+   &lt;/extension&gt;
       </pre>
-      See also the extension point documentation for the <b>org.eclipse.ecf.filetransfer.urlStreamHandlerService</b> extension point.
+      
+      </p>
+            <br><br>
+    </TD>
+   </tr>
+
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Discovery API Simplification</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+      Small simplifications to the discovery API.  For example, removed some methods from <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/IDiscoveryContainerAdapter.html">IDiscoveryContainerAdapter</a>.
+      <br><br>
+    </TD>
+   </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Support for All Equinox-based Runtimes</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    Removed references to packages and classes that are Eclipse-based.  For details see
+    <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=176322">bug #176322</a>.  With this change, all non-ui ECF
+    bundles (i.e. those whose name does not end with *.ui) are able to operate in all Equinox configurations...e.g. 
+    servers, RCP apps, eRCP, and/or Eclipse.
+      <br><br>
     </TD>
    </tr>
 
