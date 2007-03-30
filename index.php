@@ -89,16 +89,25 @@
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>March 30, 2007 - ECF 1.0.0 Release build released on eclipse.org. </b>
+			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+		</td>
+	</tr>
 
-        <tr>
-         <td align="left" valign="top" height="12" width="23">
-          <img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-         </td>
-         <td valign="top">
-          <b>March 7, 2007 - ECF Short talk by <b>Ken Gilmer</b> at <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&id=4081">EclipseCon 2007</a>. </b>
-          <a href="presentations/eclipsecon2007/ecf_talk.pdf">Here are the talk slides (pdf)</a>.
-         </td>
-    	</tr>
+		<tr>
+		 <td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		 </td>
+		 <td valign="top">
+			<b>March 7, 2007 - ECF Short talk by <b>Ken Gilmer</b> at <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&id=4081">EclipseCon 2007</a>. </b>
+			<a href="presentations/eclipsecon2007/ecf_talk.pdf">Here are the talk slides (pdf)</a>.
+		 </td>
+	</tr>
 
 
 	<tr>
@@ -107,7 +116,6 @@
 		</td>
 		<td valign="top">
 	  	<b>February 15, 2007 - ECF 1.0.0-stable build released on eclipse.org. </b>
-			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
 		</td>
 	</tr>
 

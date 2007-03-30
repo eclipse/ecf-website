@@ -41,7 +41,7 @@ ob_start();
 
 
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-     <b>Eclipse Communication Framework 1.0.0</b> <b>Stable build is now available.</b>
+     <b>Eclipse Communication Framework 1.0.0</b> <b>Release build is now available.</b>
     <p></p>
 
     <h4><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
