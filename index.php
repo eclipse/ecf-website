@@ -95,7 +95,8 @@
 		</td>
 		<td valign="top">
 	  	<b>March 30, 2007 - ECF 1.0.0 milestone 6 build released on eclipse.org. </b>
-			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  See also a 
+			new <a href="http://wiki.eclipse.org/index.php/Bot_Framework">Bot Tutorial</a> by Remy Suen for the new <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/bot/package-summary.html">ECF Robot API</a>.
 		</td>
 	</tr>
 
