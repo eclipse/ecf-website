@@ -94,6 +94,15 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>April 2, 2007 - ECF blog</b>
+			Scott has (re)-started a <a href="http://eclipseecf.blogspot.com/">blog for ECF</a>.
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>March 30, 2007 - ECF 1.0.0 milestone 6 build released on eclipse.org. </b>
 			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  See also a 
 			new <a href="http://wiki.eclipse.org/index.php/Bot_Framework">Bot Framework Tutorial</a> by Remy Suen for the new <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/bot/package-summary.html">ECF Robot API</a>.
