@@ -1,5 +1,6 @@
 org.eclipse.ecf.call
 org.eclipse.ecf.call.events
+org.eclipse.ecf.call.ui.actions
 org.eclipse.ecf.core
 org.eclipse.ecf.core.events
 org.eclipse.ecf.core.identity
