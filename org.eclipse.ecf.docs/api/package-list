@@ -1,6 +1,3 @@
-org.eclipse.ecf.call
-org.eclipse.ecf.call.events
-org.eclipse.ecf.call.service
 org.eclipse.ecf.call.ui.actions
 org.eclipse.ecf.core
 org.eclipse.ecf.core.events
@@ -52,6 +49,9 @@ org.eclipse.ecf.provider.util
 org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.events
 org.eclipse.ecf.remoteservice.service
+org.eclipse.ecf.telephony.call
+org.eclipse.ecf.telephony.call.events
+org.eclipse.ecf.telephony.call.service
 org.eclipse.ecf.ui
 org.eclipse.ecf.ui.actions
 org.eclipse.ecf.ui.dialogs
