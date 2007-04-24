@@ -1,4 +1,3 @@
-org.eclipse.ecf.call.ui.actions
 org.eclipse.ecf.core
 org.eclipse.ecf.core.events
 org.eclipse.ecf.core.identity
@@ -36,6 +35,7 @@ org.eclipse.ecf.presence.roster
 org.eclipse.ecf.presence.service
 org.eclipse.ecf.presence.ui
 org.eclipse.ecf.presence.ui.chatroom
+org.eclipse.ecf.presence.ui.roster
 org.eclipse.ecf.provider.app
 org.eclipse.ecf.provider.comm
 org.eclipse.ecf.provider.comm.tcp
@@ -52,6 +52,7 @@ org.eclipse.ecf.remoteservice.service
 org.eclipse.ecf.telephony.call
 org.eclipse.ecf.telephony.call.events
 org.eclipse.ecf.telephony.call.service
+org.eclipse.ecf.telephony.call.ui.actions
 org.eclipse.ecf.ui
 org.eclipse.ecf.ui.actions
 org.eclipse.ecf.ui.dialogs
