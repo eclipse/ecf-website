@@ -94,6 +94,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>April 28, 2007 - ECF 1.0.0 dev build released on eclipse.org. </b>
+			See <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg00786.html">Mailing List/Newsgroup Posting</a>.  Note this
+			includes a new <a href="http://wiki.eclipse.org/index.php/Skype_Provider">Skype Provider for ECF</a>.
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>April 2, 2007 - ECF blog</b>
 			Scott has (re)-started a <a href="http://eclipseecf.blogspot.com/">blog for ECF</a>.
 		</td>
