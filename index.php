@@ -57,35 +57,6 @@
      	<div style="margin:10px;">
          $desc
 	</div>
-	<div class="homeitem3col">	
- 	<h3>ECF Events</h3>
- <table cellspacing="5" cellpadding="2" width="100%" border="0">
-
-	<tr>
-	    <td align="left" valign="top" height="12" width="23">
-	    </td>
-	    <td align="center" valign="top" >
-			<a href="http://eclipsecon.org/2007"><img border=0 src="images/logo-eclipsecon.gif"></a>
-		</td>
-	</tr>
-	
-	<tr>
-	    <td align="center" valign="top" height="12" width="23">
-	    </td>
-	    <td>
-	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4199">ECF BOF</a></b>.  (Wed March 7, 8:45pm Grand Ballroom C)
-		</td>
-	</tr>
-	
-	<tr>
-	    <td align="center" valign="top" height="12" width="23">
-	    </td>
-	    <td >
-	    	<b><a href="http://eclipsezilla.eclipsecon.org/show_bug.cgi?id=4081">ECF for Collaborating Within Eclipse...and on Eclipse</a></b>.  Short talk by Ken Gilmer.  <a href="presentations/eclipsecon2007/ecf_talk.pdf">Talk slides</a>
-		</td>
-	</tr>
-	</table>
-	</div>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
