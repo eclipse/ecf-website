@@ -29,6 +29,7 @@ org.eclipse.ecf.presence.bot
 org.eclipse.ecf.presence.bot.application
 org.eclipse.ecf.presence.bot.impl
 org.eclipse.ecf.presence.chatroom
+org.eclipse.ecf.presence.collab.ui
 org.eclipse.ecf.presence.history
 org.eclipse.ecf.presence.im
 org.eclipse.ecf.presence.roster
