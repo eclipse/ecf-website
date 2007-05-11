@@ -43,7 +43,7 @@ ob_start();
 
 <div id="midcolumn">
 <h3 style="color:#fff;background-image:url(/eclipse.org-common/themes/Phoenix/images/header_bg.gif)">ECF Project Milestone Plan</h3>
-   <div class="right"> Last modified on Feb 14, 2007 by slewis </div>
+   <div class="right"> Last modified on May 11, 2007 by slewis </div>
 
 <p>
  See the <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF Wiki</a>
@@ -66,6 +66,7 @@ Stay tuned here for details of features and bug fixes for each remaining milesto
 	$html = ob_get_contents();
         include 'getNugget.php';
 
+        $html = getNugget("EcfRelease1.0.0.M7.html",$html);
         $html = getNugget("EcfRelease1.0.0.M6.html",$html);
         $html = getNugget("EcfRelease1.0.0.M5.html",$html);
         $html = getNugget("EcfRelease0.9.6.html",$html);
