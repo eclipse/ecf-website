@@ -43,6 +43,7 @@ ob_start();
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
      <b>Eclipse Communication Framework 1.0.0 milestone 7 build is now available.</b>
     <p></p>
+    See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
 
 <?php
 	$html = ob_get_contents();
