@@ -86,6 +86,15 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 				<li>
                 	Ken Gilmer
                 </li>
+                                <li>
+                	<a href="http://www.markcasimer.com">Ted Kubaska</a>
+<?php
+$pathBIG = "http://".$serverName."/ecf/images/TedKubaska.png";
+$path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/TedKubaska.png";
+$size=50;
+echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "." alt=\"[Ted Kubaska]\"/></a>";
+?>
+                                </li>
                 <li>
                 	<a href="http://www.seaquest.com">Pete Mackie</a>
 <?php
@@ -96,6 +105,9 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 ?>
 
                 </li>
+				<li>
+				Marcelo Mayworm
+				</li>
                 <li>
                 	Peter Nehrer
                 </li>
@@ -120,23 +132,11 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 				<li>
 				Mustafa Isik
 				</li>
-                                <li>
-                	<a href="http://www.markcasimer.com">Ted Kubaska</a>
-<?php
-$pathBIG = "http://".$serverName."/ecf/images/TedKubaska.png";
-$path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/TedKubaska.png";
-$size=50;
-echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "." alt=\"[Ted Kubaska]\"/></a>";
-?>
-                                </li>
 				<li>
 				Mark Kropf
 				</li>
 				<li>
 				Erkki Lindpere
-				</li>
-				<li>
-				Marcello Mayworm 
 				</li>
 				<li>
 				Christoph Schwering
