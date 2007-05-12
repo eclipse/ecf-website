@@ -50,7 +50,7 @@ ob_start();
 
 	<div id="midcolumn">
 		<!--	<div align="center"><h1>$pageTitle</h1></div> -->
-		<i>Last updated: 2007-2-10</i><p/>
+		<i>Last updated: 2007-5-11</i><p/>
 		<div class="homeitem3col">
 		    <h3>ECF Team</h3>
                     <p>The ECF Team consists of Contributors and Committers. 
