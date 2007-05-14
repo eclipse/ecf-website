@@ -65,7 +65,15 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>April 28, 2007 - ECF 1.0.0 M7 released on eclipse.org. </b>
+	  	<b>May 14, 2007 - <a href="http://www.eclipsezone.com/eclipse/forums/t94530.html">Podcast with ECF project lead Scott Lewis.</a></b>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>May 11, 2007 - ECF 1.0.0 M7 released on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
 		</td>
 	</tr>
