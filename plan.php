@@ -50,7 +50,10 @@ ob_start();
  for Sub-Project Info, Conference Call Schedule, and Longer-Range Planning.
 </p>
 <p>
- See <a href="org.eclipse.ecf.docs/api">Javadocs</a> for ECF API documentation.
+ See <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs">ECF API documentation</a>.
+</p>
+<p>
+ See <a href="org.eclipse.ecf.docs/api">Javadocs API documentation</a>.
 </p>
 <p>
  ECF is part of the <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</a>.  

@@ -43,11 +43,12 @@ ob_start();
            </p>
 
         <h3></h3>
-           <p>
-            We are not sure what to put under this tag. 
-            The term API Plan is confusing. Is it intended to be a plan for modified or future APIs?
-            I decided to link it to the API javadocs.
-           </p>
+<p>
+ See <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs">ECF API documentation</a>.
+</p>
+<p>
+ See <a href="org.eclipse.ecf.docs/api">Javadocs API documentation</a>.
+</p>
         <h3></h3>
 	</div>
 	</div>
