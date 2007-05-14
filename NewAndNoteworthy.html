@@ -22,11 +22,6 @@
         Return to <a href="downloads.php">ECF download page</a></br>
         Return to <a href="comm_resources.php">ECF communication resources page</a>
         <br><br>
-        <a href="NewAndNoteworthy_0.4.0.html">New and Noteworthy for 0.4.0</a><br>
-        <a href="NewAndNoteworthy_0.5.2.html">New and Noteworthy for 0.5.2</a><br>
-        <a href="NewAndNoteworthy_0.5.4.html">New and Noteworthy for 0.5.4</a><br>
-        <a href="NewAndNoteworthy_0.6.0.html">New and Noteworthy for 0.6.0</a><br>
-        <a href="NewAndNoteworthy_0.6.2.html">New and Noteworthy for 0.6.2</a><br>
         <a href="NewAndNoteworthy_0.7.0.html">New and Noteworthy for 0.7.0</a><br>
         <a href="NewAndNoteworthy_0.7.5.html">New and Noteworthy for 0.7.5</a><br>
         <a href="NewAndNoteworthy_0.7.6.html">New and Noteworthy for 0.7.6</a><br>
@@ -103,7 +98,15 @@
         </P>
     </TD>
     <TD vAlign=top width="70%">
-    	MultiRosterView.  TODO with pictures.
+    <p>
+    	There are new roster and messages views:
+    	</p>
+    	<p>
+    	            <img src="images/screens/contactsandmessages.png">
+       These views also are significantly refactored, simplifed, and made more extensible.  See the classes
+       <b>org.eclipse.ecf.presence.ui.MultiRosterView</b> for the Contacts view, and <b>org.eclipse.ecf.presence.ui.MessagesView</b>
+       for the Messages View.  Both are in the <b>org.eclipse.ecf.presence.ui</b> bundle.
+       </p>
        <br><br>
        <br><br>
     </td>
@@ -116,7 +119,11 @@
         </P>
     </TD>
     <TD vAlign=top width="70%">
-    	Communications Perspective Added.  TODO with pictures.
+        <p>
+    	Communications Perspective Added. </p>
+    	<p>
+    	            <img src="images/screens/communicationsperspective.png">
+    	            </p>
         <br><br>
        <br><br>
     </td>
@@ -132,7 +139,11 @@
         </P>
     </TD>
     <TD vAlign=top width="70%">
-        ShareCode plugins available.  TODO with pictures.
+        ShareCode plugin available after IP approval.  The <a href="http://wiki.eclipse.org/index.php/Shared_Code_Plugin">ShareCode plugin, by Marcelo Mayworm</a> for the
+        <a href="http://wiki.eclipse.org/index.php/Google_Summer_of_Code_2006">2006 Google Summer of Code</a> are now availble in the EF repository.  These plugins are available via 
+        anonymous CVS with the following path:  <b>/cvsroot/technology</b>, the following module <b>org.eclipse.ecf/examples/plugins/org.eclipse.ecf.example.sharecode</b>.  
+        See the <a href="http://wiki.eclipse.org/index.php/Shared_Code_Plugin">ShareCode wiki page</a> for more info.  This plugin will also be in a future distribution
+        of ECF.
         <br><br>
        <br><br>
     </td>
@@ -141,7 +152,7 @@
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>All Chat and Messages Views support Hyperlinks</B>
+	<B>All ECF Chat and Messages Views support viewing Hyperlinks</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -159,7 +170,7 @@
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>ECF Hyperlink Recognition</B>
+	<B>Hyperlink Recognition for Communication Protocols</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
@@ -218,6 +229,77 @@
         ECF now has an automated build and server setup to run automated builds.  It will be going active sometime within the next
         week (5.11.2007), and we will be doing daily, and weekly integration builds.  Thanks particularly to Pete Mackie and
         Ted Kubaska for making this possible, and getting the build environment together.
+        <br><br>
+       <br><br>
+    </TD>
+   </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Examples of Extending MultiRosterView Context Menus</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    The ECF MultiRosterView can now be easily extended with additional functionality.  
+    To do this, all that is necessary is to implement the new Platform UI extension point:
+    <b>org.eclipse.ui.menus.menuContribution</b>.  Here's an example that adds an URL
+    sharing capability to the MultiRosterView context menu, when a roster entry is 
+    selected.  The following is from the <b>org.eclipse.ecf.presence.collab.ui</b> plugin.
+    <p>
+    First, the extension declaration:
+    <pre>
+   &lt;extension
+         point="org.eclipse.ui.menus"&gt
+      &lt;menuContribution
+            locationURI="popup:org.eclipse.ecf.presence.ui.MultiRosterView?before=additions"&gt
+         &lt;dynamic
+               class="org.eclipse.ecf.presence.collab.ui.URLShareRosterEntryContributionItem"
+               id="org.eclipse.ecf.presence.collab.ui.dynamic2"&gt
+         &lt;/dynamic&gt
+      &lt;/menuContribution>
+   &lt;/extension&gt;
+    </pre>
+    With this declaration, the following code will be invoked when the user clicks the
+    right menu button on a roster entry (from URLShareRosterEntryContributionItem):
+    <pre>
+	protected IAction[] makeActions() {
+		// check for Roster entry
+		final IRosterEntry entry = getSelectedRosterEntry();
+		IContainer c = getContainerForRosterEntry(entry);
+		// If roster entry is selected and it has a container
+		if (entry != null && c != null) {
+			final IChannelContainerAdapter channelAdapter = (IChannelContainerAdapter) c
+					.getAdapter(IChannelContainerAdapter.class);
+			// If the container has channel container adapter and is online/available
+			if (channelAdapter != null && isAvailable(entry)) {
+				URLShare tmp = URLShareRosterContributionItem.getURLShare(c
+						.getID());
+				// If there is an URL share associated with this container
+				if (tmp != null) {
+					final URLShare urlshare = tmp;
+					// Create action for sending
+					IAction action = new Action() {
+						public void run() {
+						    // Actually send URL to selected user
+							urlshare.sendURL(entry.getRoster().getUser().getName(),entry.getUser().getID());
+						}
+					};
+					action
+							.setText(Messages.URLShareRosterEntryContributionItem_SEND_URL_MENU_TEXT);
+					action.setImageDescriptor(Activator.imageDescriptorFromPlugin(
+							Activator.PLUGIN_ID, Messages.URLShareRosterContributionItem_BROWSER_ICON));
+					// Return action for sending
+					return new IAction[] { action };
+				}
+			}
+		}
+		// Else return null...meaning we have no menu contribution to make
+		return null;
+	}
+    </pre>
+    
+    </p>
         <br><br>
        <br><br>
     </TD>
