@@ -63,19 +63,63 @@
     </td>
   </TR>
 
-  <TR> <!----------------------------------------------------->
-    <TD colSpan=2> <HR> </TD>
-  </TR>
-  
- <TR><TD colSpan=2><H2>UI Features</H2></TD>
+ <TR><TD colSpan=2><H2>ECF Hyperlink Handling</H2></TD>
 
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>TBD</B>
+	<B>Click ECF hyperlinks to communicate with user</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
+       If the user is connected, when a hyperlink is clicked upon an IM session
+       is started with the person given in the hyperlink.  For example,
+       <p></p>
+       // Click here to talk with me:  xmpps://fliwatuet@ecf.eclipse.org
+       <p></p>
+       when clicked upon, this hyperlink will start IM/Chat with fliwatuet@ecf.eclipse.org.  This allows embedding
+       real-time communication sessions within source documents, text documents, etc.
+       <p></p>
+       See example below:
+       <p></p>
+       <img src="images/screens/hyperlinkchat1.png">
+       <p></p>
+       See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=187060">Bug #187060</a>.
+       <br><br>
+    </TD>
+   </tr>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Persistence for Login Info</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+       <p></p>
+       <img src="images/screens/connectpersistence.png">
+       <p></p>
+       <br><br>
+    </TD>
+   </tr>
+
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  
+
+ <TR><TD colSpan=2><H2>ECF API Changes</H2></TD>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Simplified APIs</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+       Clean up plugins <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=160633">org.eclipse.ecf.example.collab</a> and 
+       <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=188412">org.eclipse.ecf.ui</a> plugins.
        <br><br>
     </TD>
    </tr>
