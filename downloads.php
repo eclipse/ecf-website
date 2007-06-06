@@ -39,9 +39,9 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-     <b>Eclipse Communication Framework 1.0.0 Release Candidate 1 build is now available.</b>
+     <b>Eclipse Communication Framework 1.0.0 Release Candidate 2 build is now available.</b>
     <p></p>
-    Note that ECF 1.0.0 RC 1 requires <b>Eclipse 3.3M6</b> or newer.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    Note that ECF 1.0.0 RC 2 requires <b>Eclipse 3.3M6</b> or newer.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.
     <p></p>
     See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
