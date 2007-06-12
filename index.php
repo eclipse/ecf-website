@@ -65,7 +65,7 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>May 23, 2007 - ECF 1.0.0 RC1 released on eclipse.org. </b>
+	  	<b>June 12, 2007 - ECF 1.0.0 RC4 released on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
 		</td>
 	</tr>
