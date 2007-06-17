@@ -387,7 +387,7 @@ ob_start();
 		// connect
 		client.connect(targetID, getJoinContext(username, connectData));
        </pre>
-       UNDER CONSTRUCTION 7/13/06
+       UNDER CONSTRUCTION 6/17/07
 <br><a href="#top"><i>back to top</i></a>
   </td>
   </tr>
