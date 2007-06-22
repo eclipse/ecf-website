@@ -65,6 +65,14 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>June 22, 2007 - <a href="http://villane.blogspot.com/2007/06/equinox-ecf-serving-interactive-fiction.html">Really cool:  Server-side interactive fiction done with Equinox and ECF</a>. </b>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>June 20, 2007 - ECF 1.0.0 RC4+1 released on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
 		</td>
