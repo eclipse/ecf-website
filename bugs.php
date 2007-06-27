@@ -26,15 +26,6 @@ include($App->getProjectCommon());
 ob_start();
 ?>		
 
-<div id="rightcolumn">
- <div class="sideitem">
-   <h6>Incubation</h6>
-   <div align="center"><a href="/projects/gazoo.php"><img
-        align="middle" src="/images/gazoo-incubation.jpg"
-        border="0" alt="[gazoo-incubation]"/></a></div>
- </div>
-</div>
-
 <div id="midcolumn">
  <div class="homeitem3col">
     <h3>Bugs</h3>

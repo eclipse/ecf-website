@@ -31,16 +31,6 @@ ob_start();
 
 <div id="maincontent">
 		
-<div id="rightcolumn">
- <div class="sideitem">
-   <h6>Incubation</h6>
-   <div align="center"><a href="/projects/gazoo.php"><img
-        align="middle" src="/images/gazoo-incubation.jpg"
-        border="0" alt="[gazoo-incubation]"/></a>
-   </div>
- </div>
-</div>
-
 <div id="midcolumn">
 <h3 style="color:#fff;background-image:url(/eclipse.org-common/themes/Phoenix/images/header_bg.gif)">ECF Project Milestone Plan</h3>
    <div class="right"> Last modified on May 23, 2007 by slewis </div>
