@@ -39,11 +39,6 @@
 	$html = <<<EOHTML
 <div id="rightcolumn">
  <div class="sideitem">
-   <h6>Incubation</h6>
-   <div align="center"><a href="/projects/gazoo.php"><img 
-        align="middle" src="/images/gazoo-incubation.jpg" 
-        border="0" alt="[gazoo-incubation]"/></a>
-   </div>
  </div>
 </div>
 
