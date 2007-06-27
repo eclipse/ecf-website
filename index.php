@@ -37,11 +37,6 @@
 	
 	# Place your html content in a file called content/en_pagename.php
 	$html = <<<EOHTML
-<div id="rightcolumn">
- <div class="sideitem">
- </div>
-</div>
-
 <div id="midcolumn">
     
     <h1>$pageTitle</h1>
