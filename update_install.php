@@ -68,6 +68,9 @@ to select it before clicking Next.</p>
 
 <h4>Step 6:</h4>
 <p>This next screen shows all of the features that are available to install.</p>
+<p><b>IMPORTANT: Please install both the 'Eclipse Communication Framework Core API' and 
+'Eclipse Communication Framework Application' features.</b></p>.
+
 <img src="images/install-6.png" alt="Install screen" />
 
 <h4>Step 7:</h4>
