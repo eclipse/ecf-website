@@ -124,7 +124,7 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			   Abner Ballardo - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193136">bug 193136</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192756">bug 192756</a>
 			   </li>
 			   <li>
-			   Catagay Calli - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192759">bug 192759</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=196812">bug 196812</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192757">bug 192757</a>
+			   Cagatay Calli - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192759">bug 192759</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=196812">bug 196812</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192757">bug 192757</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=198170">bug 198170</a>
 			   </li>
 			   <li>
 			   Joern Dinkla - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192574">bug 192574</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197821">bug 197821</a>
