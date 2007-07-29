@@ -124,6 +124,9 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			   Abner Ballardo - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193136">bug 193136</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192756">bug 192756</a>
 			   </li>
 			   <li>
+			   Ferenc Boldog - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=198193">bug 198193</a>
+			   </li>
+			   <li>
 			   Cagatay Calli - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192759">bug 192759</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=196812">bug 196812</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192757">bug 192757</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=198170">bug 198170</a>
 			   </li>
 			   <li>
@@ -134,6 +137,9 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			   </li>
 			   <li>
 			   Jacek Pospychala - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197604">bug 197604</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192762">bug 192762</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149912">bug 149912</a>
+			   </li>
+			   <li>
+			   Ferenc Boldog - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=198193">bug 198193</a>
 			   </li>
 			</ul>
 			<h3>Other Contributors</h3>
