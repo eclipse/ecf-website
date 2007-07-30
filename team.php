@@ -138,9 +138,6 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			   <li>
 			   Jacek Pospychala - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197604">bug 197604</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192762">bug 192762</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149912">bug 149912</a>
 			   </li>
-			   <li>
-			   Ferenc Boldog - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=198193">bug 198193</a>
-			   </li>
 			</ul>
 			<h3>Other Contributors</h3>
 			<ul>
