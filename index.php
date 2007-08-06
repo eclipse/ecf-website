@@ -55,6 +55,15 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>August 5, 2007 - ECF 1.0.2 released on eclipse.org. </b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>July 27, 2007 - Great ECF Contributions for BugDay.</b>
 			Several great contributions from <a href="team.php">new contributors</a> for <a href="http://wiki.eclipse.org/BugDayJuly2007">BugDay July 2007</a>.  Thanks to all who participated.
 		</td>
