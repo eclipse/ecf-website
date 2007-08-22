@@ -67,6 +67,7 @@ ob_start();
         $html = getNugget("EcfJavadocs.html",$html);
         $html = getNugget("EcfMailingList.html",$html);
         $html = getNugget("EcfAnonCVSaccess.html",$html);
+        $html = getNugget("EcfCodeConventions.html",$html);
         $html = getNugget("EcfWiki.html",$html);
         $html = getNugget("EcfBugReporting.html",$html);
         $html = getNugget("EcfNewsgroup.html",$html);
