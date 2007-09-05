@@ -40,7 +40,6 @@ org.eclipse.ecf.presence.ui
 org.eclipse.ecf.presence.ui.chatroom
 org.eclipse.ecf.presence.ui.dnd
 org.eclipse.ecf.presence.ui.roster
-org.eclipse.ecf.provider.app
 org.eclipse.ecf.provider.comm
 org.eclipse.ecf.provider.comm.tcp
 org.eclipse.ecf.provider.datashare
