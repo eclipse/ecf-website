@@ -17,7 +17,7 @@
         <br><br>
         <font class="indexsub">an eclipse technology project</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>1.0.0</font>
+        <font class="indextop style2">New and Noteworthy</font><br>1.1.0</font>
         <br><br>
       </td>
       <td width="31%">
@@ -37,14 +37,12 @@
   
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Real-Time Collaboration Features on IM</B>
+	<B>Presence and Chat UI Improvements</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
     
-    <p>URL sharing and view sharing are now enabled on XMPP/XMPPS/Google Talk/Skype providers using 
-    the ECF <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs#Datashare_API">datashare API</a>.  See <a href="http://wiki.eclipse.org/ECF_Tips_Tricks_Url_Sharing">URL Sharing</a>
-    and <a href="http://wiki.eclipse.org/ECF_Tips_Tricks_View_Sharing">View Sharing</a> for description.</p>
+       TBD
        <br><br>
        <br><br>
     </td>
@@ -52,240 +50,19 @@
 
   <TR>
   
-       <br><br>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>New Graphics</B>
+	<B>Bug Fixes/Enhancements</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-        <p></p>
-           	            <img src="images/screens/rc1communicationsperspective.png">
-           	            <p></p>
-        See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=183015">bug #183015</a>
-       
+    
+       ECF had a fair number of <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=Technology&product=ECF&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2007-06-25&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=">bugs fixed</a>.  Both via
+       <a href="http://wiki.eclipse.org/BugDay">Bug Day</a>.
        <br><br>
        <br><br>
     </td>
   </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Click hyperlinks in text files to initiate communication</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-       If the user is connected, when a hyperlink is clicked upon an IM session
-       is started with the person given in the hyperlink.  For example,
-       <p></p>
-       // Click here to talk with me:  xmpps://fliwatuet@ecf.eclipse.org
-       <p></p>
-       when clicked upon, this hyperlink will start IM/Chat with fliwatuet@ecf.eclipse.org.  This allows embedding
-       real-time communication sessions within source documents, text documents, etc.
-       <p></p>
-       See example below:
-       <p></p>
-       <img src="images/screens/hyperlinkchat1.png">
-       <p></p>
-       See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=187060">Bug #187060</a>.
-       <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Persistence for Login</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-       <p></p>
-       <img src="images/screens/connectpersistence.png">
-       <p></p>
-       See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=181509">Bug #181509</a>.
-       <br><br>
-        <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-  
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Skype Provider</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-        Skype Provider Available at <a href="http://ecf1.osuosl.org">ECF OSU Open Source Lab site</a>.  See
-        also <a href="http://wiki.eclipse.org/index.php/Skype_Provider">here for some screen shots</a>
-       <br><br>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>IRC Bot Loose at irc.freenode.net</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-     	An IRC bot based upon the ECF <a href="http://wiki.eclipse.org/index.php/Bot_Framework">Bot Framework</a> is
-     	running at irc.freenode.net.  See <a href="http://wiki.eclipse.org/index.php/IRC_Bot">IRC Bot</a> for details.
-       <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>New Roster and Messages Views</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>
-    	There are new roster and messages views:
-    	</p>
-    	<p>
-    	            <img src="images/screens/contactsandmessages.png">
-       These views also are significantly refactored, simplifed, and made more extensible.  See the classes
-       <b>org.eclipse.ecf.presence.ui.MultiRosterView</b> for the Contacts view, and <b>org.eclipse.ecf.presence.ui.MessagesView</b>
-       for the Messages View.  Both are in the <b>org.eclipse.ecf.presence.ui</b> bundle.
-       </p>
-       <br><br>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Communications Perspective</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    	            <img src="images/screens/communicationsperspective.png">
-    	            </p>
-        <br><br>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>ShareCode Available in Incubation</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-        ShareCode plugin available after IP approval.  The <a href="http://wiki.eclipse.org/index.php/Shared_Code_Plugin">ShareCode plugin, by Marcelo Mayworm</a> for the
-        <a href="http://wiki.eclipse.org/index.php/Google_Summer_of_Code_2006">2006 Google Summer of Code</a> are now availble in the EF repository.  These plugins are available via 
-        anonymous CVS with the following path:  <b>/cvsroot/technology</b>, the following module <b>org.eclipse.ecf/examples/plugins/org.eclipse.ecf.example.sharecode</b>.  
-        See the <a href="http://wiki.eclipse.org/index.php/Shared_Code_Plugin">ShareCode wiki page</a> for more info.  This plugin will also be in a future distribution
-        of ECF.
-        <br><br>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>All ECF Chat and Messages Views support viewing Hyperlinks</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>
-       All ECF Chat, Messages, and Collaboration views now support embedded hyperlinks.  To activate, 
-       simply hold down the <b>CTRL</b> key
-       while pointing at the link:
-       </p>
-            <img src="images/screens/hyperlinkchat.png">
-        <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>MSN Provider</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-        MSN Messenger provider added to support ECF-based instant message and presence via MSN Messenger Accounts.  
-        <p></p>
-              <img src="images/screens/dropdownui.png">
-              <p></p>
-              <img src="images/screens/msnconnect.png">
-        <br><br>
-        <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Bittorrent Provider</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-        Bittorrent provider added for file retrieval.  
-        <p></p>
-              <img src="images/screens/dropdownui.png">
-              <p></p>
-              <img src="images/screens/bittorrent.png">
-              <p></p>
-       <br><br>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Peer-to-Peer File Transfer for XMPP Accounts</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-        Peer-to-peer file transfer (using the ECF file transfer API) was added for XMPP accounts.
-        
-        <p></p>
-              <img src="images/screens/imfiletransfermenu.png">
-              <p></p>
-       <br><br>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Enhanced Support for IRC command handling</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      Added greater support for IRC command handling.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172958">#172958</a> for details.
-      Thanks to Mark Kropf for code contributions.
-      <br><br>
-       <br><br>
-  <p>Also see N&N's for older milestone releases:</p>
-  
-  <ul>
-        <li><a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy for 0.9.6</a></li>
-        <li><a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy for 0.9.5</a></li>
-        <li><a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a></li>
-        <li><a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a></li>
-        <li><a href="NewAndNoteworthy_0.9.2.html">New and Noteworthy for 0.9.2</a></li>
-        <li><a href="NewAndNoteworthy_0.9.1.html">New and Noteworthy for 0.9.1</a></li>
-        <li><a href="NewAndNoteworthy_0.9.0.html">New and Noteworthy for 0.9.0</a></li>
-  </ul>
-  
-    </TD>
-   </tr>
 
   <TR> <!----------------------------------------------------->
     <TD colSpan=2> <HR> </TD>
@@ -294,20 +71,35 @@
 
  <TR><TD colSpan=2><H2>ECF API Changes</H2></TD>
 
-  <TR>
+    <TR>
+  
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Dynamic Menu Contributions to Roster View</B>
+	<B>Presence API Improvements</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-        The MultiRosterView now can be extended using the org.eclipse.ui.menus.menuContribution extension point.  This can be done
-        using the new menuContribution extension point in the platform.  See <a href="http://wiki.eclipse.org/Menu_Contributions">Menu Contributions</a> 
-        for more info.
-         <br><br>
+    
+       TBD
        <br><br>
+       <br><br>
+    </td>
+  </TR>
+
+  <TR>
+  
+       <br><br>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>New Providers:  IBM Websphere CE, BEA Weblogic, JGroups Multicast</B>
+        </P>
     </TD>
-   </tr>
+    <TD vAlign=top width="70%">
+        See the <a href="http://ecf1.osuosl.org">ECF @ OSUOSL website</a>.
+       <br><br>
+       <br><br>
+    </td>
+  </TR>
 
   <TR>
     <TD vAlign=top align=left width="30%">
@@ -325,172 +117,6 @@
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Examples of Extending MultiRosterView Context Menus</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    The ECF MultiRosterView can now be easily extended with additional functionality.  
-    To do this, all that is necessary is to implement the new Platform UI extension point:
-    <b>org.eclipse.ui.menus.menuContribution</b>.  Here's an example that adds an URL
-    sharing capability to the MultiRosterView context menu, when a roster entry is 
-    selected.  The following is from the <b>org.eclipse.ecf.presence.collab.ui</b> plugin.
-    <p>
-    First, the extension declaration:
-    <pre>
-   &lt;extension
-         point="org.eclipse.ui.menus"&gt
-      &lt;menuContribution
-            locationURI="popup:org.eclipse.ecf.presence.ui.MultiRosterView?before=additions"&gt
-         &lt;dynamic
-               class="org.eclipse.ecf.presence.collab.ui.URLShareRosterEntryContributionItem"
-               id="org.eclipse.ecf.presence.collab.ui.dynamic2"&gt
-         &lt;/dynamic&gt
-      &lt;/menuContribution>
-   &lt;/extension&gt;
-    </pre>
-    With this declaration, the following code will be invoked when the user clicks the
-    right menu button on a roster entry (from URLShareRosterEntryContributionItem):
-    <pre>
-	protected IAction[] makeActions() {
-		// check for Roster entry
-		final IRosterEntry entry = getSelectedRosterEntry();
-		IContainer c = getContainerForRosterEntry(entry);
-		// If roster entry is selected and it has a container
-		if (entry != null && c != null) {
-			final IChannelContainerAdapter channelAdapter = (IChannelContainerAdapter) c
-					.getAdapter(IChannelContainerAdapter.class);
-			// If the container has channel container adapter and is online/available
-			if (channelAdapter != null && isAvailable(entry)) {
-				URLShare tmp = URLShareRosterContributionItem.getURLShare(c
-						.getID());
-				// If there is an URL share associated with this container
-				if (tmp != null) {
-					final URLShare urlshare = tmp;
-					// Create action for sending
-					IAction action = new Action() {
-						public void run() {
-						    // Actually send URL to selected user
-							urlshare.sendURL(entry.getRoster().getUser().getName(),entry.getUser().getID());
-						}
-					};
-					action
-							.setText(Messages.URLShareRosterEntryContributionItem_SEND_URL_MENU_TEXT);
-					action.setImageDescriptor(Activator.imageDescriptorFromPlugin(
-							Activator.PLUGIN_ID, Messages.URLShareRosterContributionItem_BROWSER_ICON));
-					// Return action for sending
-					return new IAction[] { action };
-				}
-			}
-		}
-		// Else return null...meaning we have no menu contribution to make
-		return null;
-	}
-    </pre>
-    
-    </p>
-        <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Instant Messaging History API</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      Added history API for accessing chat history information.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=177014">bug #177014</a>
-      for details.
-            <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Chat Robot API</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>
-      Added robot API and extension points for creating robots that can chat via IM or chat rooms.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=180078">180078</a>
-      for details.  This API allows robots to be defined via two new extension points in the new plugin <b>org.eclipse.ecf.presence.bot</b>.
-      <p></p>
-      For example, here's the definition of an imrobot 'Fliwatuet' that will connect to the account at <b>fliwatuet@ecf.eclipse.org</b> and
-      then receive messages and notifications via the imcommand handler class <b>org.eclipse.ecf.presence.bot.DefaultIMMessageHandler</b>:
-      </p>
-      <p>
-      
-            <pre>
-   &lt;extension
-         point=&quot;org.eclipse.ecf.presence.bot.imRobot&quot;&gt;
-      &lt;imRobot
-            connectId=&quot;fliwatuet@ecf.eclipse.org&quot;
-            containerFactoryName=&quot;ecf.xmpp.smack&quot;
-            id=&quot;org.eclipse.ecf.presence.imbot&quot;
-            connectPassword=&quot;password&quot;/&gt;
-      &lt;/imRobot&gt;
-   &lt;/extension&gt;
-
-   &lt;extension
-         point=&quot;org.eclipse.ecf.presence.bot.imMessageHandler&quot;&gt;
-      &lt;handler
-            imRobotId=&quot;org.eclipse.ecf.presence.imbot&quot;
-            class=&quot;org.eclipse.ecf.presence.imbot.MyIMMessageHandler&quot;&gt;
-      &lt;/handler&gt;
-   &lt;/extension&gt;
-	</pre>
-      
-      <p></p>
-      Here's an example for use of the chatroomrobot extension point for connecting to an IRC channel:
-      
-      <pre>
-   &lt;extension
-         point=&quot;org.eclipse.ecf.presence.bot.chatRoomRobot&quot;&gt;
-      &lt;chatRoomRobot
-            chatRoom=&quot;#eclipse-ecf&quot;
-            connectId=&quot;irc://slewis2_@irc.freenode.net&quot;
-            containerFactoryName=&quot;ecf.irc.irclib&quot;
-            id=&quot;org.eclipse.ecf.presence.bot.ircbot&quot;&gt;
-      &lt;/chatRoomRobot&gt;
-   &lt;/extension&gt;
-
-   &lt;extension
-         point=&quot;org.eclipse.ecf.presence.bot.chatRoomMessageHandler&quot;&gt;
-      &lt;handler
-            chatRoomRobotId=&quot;org.eclipse.ecf.presence.bot.ircbot&quot;
-            class=&quot;org.eclipse.ecf.presence.bot.MyChatRoomMessageHandler&quot;&gt;
-      &lt;/handler&gt;
-   &lt;/extension&gt;
-      </pre>
-      
-      </p>
-      See also the <a href="http://wiki.eclipse.org/index.php/Bot_Framework">Bot Framework</a> tutorial.
-            <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Discovery API Simplification</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      <p>Small simplifications to the discovery API.  For example, removed some methods from <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/IDiscoveryContainerAdapter.html">IDiscoveryContainerAdapter</a>.
-      </p>
-      <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
 	<B>Use ECF in RCP, eRCP, Equinox Servers</B>
         </P>
     </TD>
@@ -501,46 +127,6 @@
     servers, RCP apps, eRCP, and/or Eclipse.</p>
       <br><br>
        <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Presence API Addition</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      Added <b>org.eclipse.ecf.presence.chatroom.IChatRoomAdminListener</b>
-      to notify registered listeners (listener registration via IChatRoomContainer.addChatRoomAdminListener) when the chat room subject changes/is changed asynchronously.
-      <br><br>
-       <br><br>
-    </TD>
-   </tr>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B>Shared Object API Addition</B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-      Added event notification for shared object message send and receive.  See bug <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=172349">#172349</a> for details.
-       <br><br>
-      <br><br>
-  <p>Also see N&N's for older milestone releases:</p>
-  
-  <ul>
-        <li><a href="NewAndNoteworthy_0.9.6.html">New and Noteworthy for 0.9.6</a></li>
-        <li><a href="NewAndNoteworthy_0.9.5.html">New and Noteworthy for 0.9.5</a></li>
-        <li><a href="NewAndNoteworthy_0.9.4.html">New and Noteworthy for 0.9.4</a></li>
-        <li><a href="NewAndNoteworthy_0.9.3.html">New and Noteworthy for 0.9.3</a></li>
-        <li><a href="NewAndNoteworthy_0.9.2.html">New and Noteworthy for 0.9.2</a></li>
-        <li><a href="NewAndNoteworthy_0.9.1.html">New and Noteworthy for 0.9.1</a></li>
-        <li><a href="NewAndNoteworthy_0.9.0.html">New and Noteworthy for 0.9.0</a></li>
-  </ul>
-  
-
     </TD>
    </tr>
 
