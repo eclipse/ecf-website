@@ -159,6 +159,16 @@
   <releases>
     <release  
        status="completed"
+       name="1.1.0"
+       date="9/8/2007"
+       download="/ecf/downloads.php" />
+    <release  
+       status="completed"
+       name="1.0.0"
+       date="6/2007"
+       download="/ecf/downloads.php" />
+    <release  
+       status="completed"
        name="0.9.2"
        date="10/2006"
        download="/ecf/downloads.php" />
