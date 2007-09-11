@@ -33,11 +33,11 @@ ob_start();
 		
 <div id="midcolumn">
 <h3 style="color:#fff;background-image:url(/eclipse.org-common/themes/Phoenix/images/header_bg.gif)">ECF Project Milestone Plan</h3>
-   <div class="right"> Last modified on May 23, 2007 by slewis </div>
+   <div class="right"> Last modified on Sept 11, 2007 by slewis </div>
 
 <p>
- See the <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF Wiki</a>
- for Sub-Project Info, Conference Call Schedule, and Longer-Range Planning.
+ See the <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF Ganymede Roadmap</a>
+ for plans and schedules for the Ganymede Release.
 </p>
 <p>
  See <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs">ECF API documentation</a>.
@@ -46,10 +46,9 @@ ob_start();
  See <a href="org.eclipse.ecf.docs/api">Javadocs API documentation</a>.
 </p>
 <p>
- ECF is part of the <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</a>.  
- We are planning now on having our 1.0.0 final release with the Europa release (June 29, 2007).  As part of Europa, 
- we will be having 1.0 milestone release as per the schedule 
- <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release#Milestones_and_Release_Candidates">here</a>.
+ ECF was part of the <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</a>.  
+ We had our 1.0.0 release with the Europa release (June 29, 2007).  ECF is now no longer in incubation, in accord with the 
+ <a href="http://wiki.eclipse.org/Development_Process_2006_Revision_Final">Eclipse Development Process</a>.
 </p>
 <p>
 Stay tuned here for details of features and bug fixes for each remaining milestone release (M6, M7, RCn).
