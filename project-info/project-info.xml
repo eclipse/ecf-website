@@ -107,7 +107,7 @@
     <list name="ecf-dev"/>
   </mailing-lists>
   
-  <newsgroups url="/ecf/newsgroups.php">
+  <newsgroups url="/ecf/user_resources.php">
     <newsgroup name="eclipse.technology.ecf"/>
   </newsgroups>
   
