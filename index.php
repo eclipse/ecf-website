@@ -55,6 +55,19 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>September 19, 2007 - ECF 1.1.0 revoked from Eclipse.org. </b>
+     <b>Eclipse Communication Framework 1.1.0 build had to be removed from the site.  Unfortunately, the Eclipse Foundation requires that
+     we go through a release review for the 1.1 release and we have not done that as required by the Eclipse Development Process.  For those interested, see postings and follow ups
+     <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg01036.html"> on the ecf-dev mailing list</a>.  My (Scott's) apologies 
+     to the community.  We will get 1.1 (back) out as soon as possible.  In the mean time, hopefully people can use the automated daily builds (on the download page).</b>
+    <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>September 8, 2007 - ECF 1.1.0 released on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
 		</td>
