@@ -57,7 +57,7 @@
 		<td valign="top">
 	  	<b>September 27, 2007 - ECF 1.0.3 available via Eclipse.org. </b>
 	  	<p></p>
-     Eclipse Communication Framework 1.0.3 build is now available.  See the <a href="http://www.eclipse.org/ecf/downloads.php">download page</a>.
+     Eclipse Communication Framework 1.0.3 build is now available.  See <a href="http://www.eclipse.org/ecf/downloads.php">here for download</a>.
 		</td>
 	</tr>
 	<tr>
