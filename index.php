@@ -56,8 +56,8 @@
 		</td>
 		<td valign="top">
 	  	<b>September 27, 2007 - ECF 1.0.3 available via Eclipse.org. </b>
-     <b>Eclipse Communication Framework 1.0.3 build is now available.  See the <a href="http://www.eclipse.org/ecf/downloads.php>download page</a>.</b>
-    <p></p>
+	  	<p></p>
+     Eclipse Communication Framework 1.0.3 build is now available.  See the <a href="http://www.eclipse.org/ecf/downloads.php>download page</a>.
 		</td>
 	</tr>
 	<tr>
@@ -66,10 +66,9 @@
 		</td>
 		<td valign="top">
 	  	<b>September 19, 2007 - ECF 1.1.0 revoked from Eclipse.org. </b>
-     <b>Eclipse Communication Framework 1.1.0 build had to be removed from the site.  Unfortunately, the Eclipse Foundation requires that
+     Eclipse Communication Framework 1.1.0 build had to be removed from the site.  Unfortunately, the Eclipse Foundation requires that
      we go through a release review for the 1.1 release and we have not done that as required by the Eclipse Development Process.  For those interested, see postings and follow ups
-     <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg01036.html"> on the ecf-dev mailing list</a>.  My (Scott's) apologies 
-     to the community.  We will get 1.1 (back) out as soon as possible.  In the mean time, hopefully people can use the automated daily builds (on the download page).</b>
+     <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg01036.html"> on the ecf-dev mailing list</a>. 
     <p></p>
 		</td>
 	</tr>
