@@ -55,6 +55,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>September 27, 2007 - ECF 1.0.3 available via Eclipse.org. </b>
+     <b>Eclipse Communication Framework 1.0.3 build is now available.  See the <a href="http://www.eclipse.org/ecf/downloads.php>download page</a>.</b>
+    <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>September 19, 2007 - ECF 1.1.0 revoked from Eclipse.org. </b>
      <b>Eclipse Communication Framework 1.1.0 build had to be removed from the site.  Unfortunately, the Eclipse Foundation requires that
      we go through a release review for the 1.1 release and we have not done that as required by the Eclipse Development Process.  For those interested, see postings and follow ups
