@@ -1,4 +1,3 @@
-org.eclipse.ecf.core-20071003-1258-DAILY.zip
 org.eclipse.ecf.core-20071003-1501-DAILY.zip
 org.eclipse.ecf.examples-20071003-1258-DAILY.zip
 org.eclipse.ecf.examples-20071003-1501-DAILY.zip
