@@ -12,7 +12,7 @@
 </p>
 <?php
     $files=file("filelist.txt");
-    rsirt($files);
+    rsort($files);
     foreach ($files as $file) {
        echo '<tr> <td><p>
        <a href="http://www.eclipse.org/downloads/download.php?file=/technology/ecf/dailies/' . $file .'">' . $file .'</a>
