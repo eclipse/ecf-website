@@ -74,8 +74,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>September 8, 2007 - ECF 1.1.0 released on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+	  	<b>September 27, 2007 - ECF 1.0.3 available via Eclipse.org. </b>
+     Eclipse Communication Framework 1.0.3 build is now available.  See <a href="http://www.eclipse.org/ecf/downloads.php">here for download</a>.
 		</td>
 	</tr>
 	<tr>
