@@ -158,43 +158,24 @@
     -->
   <releases>
     <release  
-       status="completed"
-       name="1.2.0"
-       date="10/5/2007"
+       status="scheduled"
+       name="2.0.0"
+       date="06/25/2008"
+       download="/ecf/downloads.php" />
+    <release  
+       status="scheduled"
+       name="2.0.0M4"
+       date="12/15/2007"
        download="/ecf/downloads.php" />
     <release  
        status="completed"
-       name="1.1.0"
-       date="9/8/2007"
+       name="1.2.0"
+       date="10/19/2007"
        download="/ecf/downloads.php" />
     <release  
        status="completed"
        name="1.0.0"
-       date="6/2007"
+       date="6/29/2007"
        download="/ecf/downloads.php" />
-    <release  
-       status="completed"
-       name="0.9.2"
-       date="10/2006"
-       download="/ecf/downloads.php" />
-    <release 
-       status="completed"
-       name="0.9.3"
-       date="11/2006"
-       download="/ecf/downloads.php" />
-    <release 
-       status="scheduled"
-       name="0.9.4"
-       date="12/03/2006"
-       plan="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project#Current_Projects" />
-    <release 
-       status="scheduled"
-       name="0.9.5"
-       date="12/15/2006" />
-    <release 
-       status="tentative"
-       name="1.0"
-       date="2Q2007" />
-
   </releases>
 </project>
