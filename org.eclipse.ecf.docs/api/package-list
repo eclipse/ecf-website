@@ -39,6 +39,7 @@ org.eclipse.ecf.presence.service
 org.eclipse.ecf.presence.ui
 org.eclipse.ecf.presence.ui.chatroom
 org.eclipse.ecf.presence.ui.dnd
+org.eclipse.ecf.presence.ui.menu
 org.eclipse.ecf.presence.ui.roster
 org.eclipse.ecf.provider.comm
 org.eclipse.ecf.provider.comm.tcp
