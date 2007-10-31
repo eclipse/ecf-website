@@ -2,11 +2,14 @@ org.eclipse.ecf.core-20071023-1120-DAILY.zip
 org.eclipse.ecf.core-20071026-1501-DAILY.zip
 org.eclipse.ecf.core-20071031-1029-DAILY.zip
 org.eclipse.ecf.core-20071031-1049-DAILY.zip
+org.eclipse.ecf.core-20071031-1312-DAILY.zip
 org.eclipse.ecf.examples-20071023-1120-DAILY.zip
 org.eclipse.ecf.examples-20071026-1501-DAILY.zip
 org.eclipse.ecf.examples-20071031-1029-DAILY.zip
 org.eclipse.ecf.examples-20071031-1049-DAILY.zip
+org.eclipse.ecf.examples-20071031-1312-DAILY.zip
 org.eclipse.ecf.sdk-20071023-1120-DAILY.zip
 org.eclipse.ecf.sdk-20071026-1501-DAILY.zip
 org.eclipse.ecf.sdk-20071031-1029-DAILY.zip
 org.eclipse.ecf.sdk-20071031-1049-DAILY.zip
+org.eclipse.ecf.sdk-20071031-1312-DAILY.zip
