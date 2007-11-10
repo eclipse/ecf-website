@@ -103,12 +103,12 @@
      - the separate project-info/maillist file as well.
     -->
     
-  <mailing-lists url="/ecf/maillist.php">
+  <mailing-lists url="/maillist.php">
     <list name="ecf-dev"/>
   </mailing-lists>
   
   <newsgroups url="http://www.eclipse.org/ecf/newsgroups.php">
-    
+    <newsgroup name="eclipse.technology.ecf"/>
   </newsgroups>
   
   <!--
