@@ -4,7 +4,7 @@
 
   <bugs url="http://www.eclipse.org/ecf/bugs.php">
   </bugs>
-  <bugzilla>
+  <bugzilla url="/ecf/bugs.php">
     <product name="ECF"/>
   </bugzilla>
   
