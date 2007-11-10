@@ -103,7 +103,7 @@
      - the separate project-info/maillist file as well.
     -->
     
-  <mailing-lists url="/maillist.php">
+  <mailing-lists url="/ecf/maillist.php">
     <list name="ecf-dev"/>
   </mailing-lists>
   
