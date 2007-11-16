@@ -97,6 +97,16 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 
                 </li>
 				<li>
+<a href="http://www.lemmster.de/">Markus Kuppe</a>
+<?php
+$pathBIG = "http://".$serverName."/ecf/images/markuskuppe.jpg";
+$path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/markuskuppe.jpg";
+$size=50;
+echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "." alt=\"[Markus Kuppe]\"/></a>";
+?>
+
+                </li>
+				<li>
 				<a href="http://weblogs.java.net/blog/mayworm/">Marcelo Mayworm</a>
 				</li>
                 <li>
