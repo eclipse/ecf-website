@@ -86,6 +86,15 @@ $size=50;
 echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "." alt=\"[Ted Kubaska]\"/></a>";
 ?>
                                 </li>
+                                <li>
+                	<a href="http://codesurgeon.blogspot.com">Mustafa Isik</a>
+<?php
+$pathBIG = "http://".$serverName."/ecf/images/team/mustafa.jpg";
+$path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/team/mustafa.jpg";
+$size=50;
+echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "." alt=\"[Mustafa Isik]\"/></a>";
+?>
+                                </li>
                 <li>
                 	<a href="http://www.seaquest.com">Pete Mackie</a>
 <?php
