@@ -49,7 +49,9 @@ org.eclipse.ecf.provider.comm.tcp
 org.eclipse.ecf.provider.datashare
 org.eclipse.ecf.provider.discovery
 org.eclipse.ecf.provider.filetransfer.identity
+org.eclipse.ecf.provider.filetransfer.outgoing
 org.eclipse.ecf.provider.filetransfer.retrieve
+org.eclipse.ecf.provider.filetransfer.util
 org.eclipse.ecf.provider.generic
 org.eclipse.ecf.provider.generic.gmm
 org.eclipse.ecf.provider.remoteservice
