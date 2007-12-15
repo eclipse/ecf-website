@@ -30,9 +30,9 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-     <b>Eclipse Communication Framework 1.2.0 now available.</b>
+     <b>Eclipse Communication Framework 2.0.0 M4 now available.</b>
     <p></p>
-    Note that ECF 1.2.0 requires <b>Eclipse 3.3</b> or newer.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    Note that ECF 2.0.0M4 requires <b>Eclipse 3.3</b> or newer (3.3 or 3.4 stream).  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.
     <p></p>
     See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
