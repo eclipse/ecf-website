@@ -58,6 +58,7 @@ Stay tuned here for details of features and bug fixes for each remaining milesto
 	$html = ob_get_contents();
         include 'getNugget.php';
 
+        $html = getNugget("EcfRelease2.0.0M4.html",$html);
         $html = getNugget("EcfRelease1.2.0.html",$html);
         $html = getNugget("EcfRelease1.1.0.html",$html);
         $html = getNugget("EcfRelease1.0.0.RC1.html",$html);
