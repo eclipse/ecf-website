@@ -52,7 +52,7 @@
     The ECF team is working on supporting several use cases based upon real-time shared editing.  For example, online code reviews, collborative
     debugging and testing, and distributed pair programming.  We've just started this work, and there is now some 'signs-of-life' work
     that works on the XMPP/Google Talk and Skype providers.  See the page <a href="http://wiki.eclipse.org/DocShare_Plugin">DocShare plugin wiki page</a>
-    for screen shots and usage information.  Please feel free to provide input/feedback about desired features at both the UI level and the 
+    for usage instructions and screen shots.  Please feel free to provide input/feedback about desired features at both the UI level and the 
     API level via the ECF mailing list <mailto:ecf-dev@eclipse.org> or the <a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=ECF&bug_severity=enhancement">ECF bugs/enhancements list.</a>
     </p>
        <br><br>
@@ -62,12 +62,26 @@
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Integration with Mylyn</B>
+	<B>URL and Eclipse View sharing</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-       See <a href="http://wiki.eclipse.org/Integration_with_Mylyn">here</a> for information on this work.  
+       It's now possible to immediately share URLs and to remotely open Eclipse views via ECF the XMPP/Google Talk and/or Skype providers.
+       To do so, open the context menu (right click) on the buddy of your choice in the contacts list:
+       
+              <p></p>       
+       <img src="images/screens/showurl.png"></li>
        <br><br>
+       Then the receiver will see a notification like this
+       <p></p>
+       <img src="images/screens/showurlreceive.png"></li>
+       <br><br>
+       And if they accept the request will then see
+       <p></p>
+       <img src="images/screens/showurlreceive1.png"></li>
+       <br><br>
+       The 'Send Show View Request...' has a similar sequence.
+       
        <br><br>
     </td>
   </TR>
@@ -88,6 +102,9 @@
        The discovery API has been simplified and extended.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=209774">bug #209774</a> and the
        <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs#Discovery_API">ECF Discovery API</a> documentation.
        <br><br>
+       <b>IMPORTANT NOTE:</b>The discovery API has undergone a number of simplifications that make it easier to use, but have broken backward compatibility.  Applications
+       that have been written to a previous version of the discovery API will have to be changed to use the new API.  See the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/IDiscoveryContainerAdapter.html">IDiscoveryContainerAdapter</a>
+       class for more information.
     </td>
   </TR>
 
@@ -99,7 +116,7 @@
     <TD vAlign=top width="70%">
     	Added support improvided simplified outgoing file transfer.  Added new provider for SCP-based file retrieve (download)
     	and file send (upload).  See documentation for <a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">ECF File Transfer API</a>.
-    	       <br><br>
+       <br><br>
     </td>
   </TR>
 
