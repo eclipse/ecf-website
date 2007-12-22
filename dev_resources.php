@@ -32,14 +32,9 @@ ob_start();
    <p>
       This page provides information about resources for Eclipse ECF contributors.
    </p> 
-
 <p>
- See <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs">ECF API documentation</a>.
+ See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, meetings, etc.
 </p>
-<p>
- See <a href="org.eclipse.ecf.docs/api">Javadocs API documentation</a>.
-</p>
-
    <p>
       If you are writing code to make
       ECF itself better, consider yourself a contributor.
