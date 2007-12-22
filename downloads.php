@@ -35,8 +35,13 @@ ob_start();
     Note that ECF 2.0.0M4 requires <b>Eclipse 3.3</b> or newer (3.3 or 3.4 streams).  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.
     <p></p>
+    <p>
     See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
-
+	</p>
+	<p>
+ See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, meetings, etc.
+</p>
+	
 <?php
 	$html = ob_get_contents();
 

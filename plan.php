@@ -36,14 +36,11 @@ ob_start();
    <div class="right"> Last modified on Sept 11, 2007 by slewis </div>
 
 <p>
+ See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, meetings, etc.
+</p>
+<p>
  See the <a href="http://wiki.eclipse.org/index.php/Eclipse_Communication_Framework_Project">ECF Ganymede Roadmap</a>
  for plans and schedules for the Ganymede Release.
-</p>
-<p>
- See <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs">ECF API documentation</a>.
-</p>
-<p>
- See <a href="org.eclipse.ecf.docs/api">Javadocs API documentation</a>.
 </p>
 <p>
  ECF was part of the <a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</a>.  
