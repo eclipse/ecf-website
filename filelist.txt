@@ -1,6 +1,9 @@
 org.eclipse.ecf.core-20071227-1500-DAILY.zip
 org.eclipse.ecf.core-20080101-1500-DAILY.zip
+org.eclipse.ecf.core-20080102-1500-DAILY.zip
 org.eclipse.ecf.examples-20071227-1500-DAILY.zip
 org.eclipse.ecf.examples-20080101-1500-DAILY.zip
+org.eclipse.ecf.examples-20080102-1500-DAILY.zip
 org.eclipse.ecf.sdk-20071227-1500-DAILY.zip
 org.eclipse.ecf.sdk-20080101-1500-DAILY.zip
+org.eclipse.ecf.sdk-20080102-1500-DAILY.zip
