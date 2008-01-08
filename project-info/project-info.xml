@@ -164,6 +164,11 @@
        download="/ecf/downloads.php" />
     <release  
        status="scheduled"
+       name="2.0.0M5"
+       date="2/11/2008"
+       download="/ecf/downloads.php" />
+    <release  
+       status="completed"
        name="2.0.0M4"
        date="12/15/2007"
        download="/ecf/downloads.php" />
