@@ -20,9 +20,13 @@
   <team url="/ecf/team.php"/>
   
   <cvs repository="/cvsroot/technology/">
+    <module path="org.eclipse.ecf/applications" /> 
     <module path="org.eclipse.ecf/builds" /> 
+    <module path="org.eclipse.ecf/examples" /> 
     <module path="org.eclipse.ecf/features" /> 
+    <module path="org.eclipse.ecf/incubation" /> 
     <module path="org.eclipse.ecf/plugins" /> 
+    <module path="org.eclipse.ecf/providers" /> 
     <module path="org.eclipse.ecf/tests" /> 
     <module path="org.eclipse.ecf/tutorials" /> 
   </cvs>
