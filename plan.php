@@ -33,7 +33,7 @@ ob_start();
 		
 <div id="midcolumn">
 <h3 style="color:#fff;background-image:url(/eclipse.org-common/themes/Phoenix/images/header_bg.gif)">ECF Project Milestone Plan</h3>
-   <div class="right"> Last modified on Sept 11, 2007 by slewis </div>
+   <div class="right"> Last modified on Jan 9, 2008 by slewis </div>
 
 <p>
  See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, meetings, etc.
