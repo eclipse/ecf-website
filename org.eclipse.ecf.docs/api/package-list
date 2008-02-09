@@ -18,6 +18,8 @@ org.eclipse.ecf.datashare.service
 org.eclipse.ecf.discovery
 org.eclipse.ecf.discovery.identity
 org.eclipse.ecf.discovery.service
+org.eclipse.ecf.discovery.ui
+org.eclipse.ecf.discovery.ui.handlers
 org.eclipse.ecf.discovery.ui.views
 org.eclipse.ecf.filetransfer
 org.eclipse.ecf.filetransfer.events
@@ -46,6 +48,7 @@ org.eclipse.ecf.provider.comm.tcp
 org.eclipse.ecf.provider.datashare
 org.eclipse.ecf.provider.discovery
 org.eclipse.ecf.provider.filetransfer.browse
+org.eclipse.ecf.provider.filetransfer.httpclient
 org.eclipse.ecf.provider.filetransfer.identity
 org.eclipse.ecf.provider.filetransfer.outgoing
 org.eclipse.ecf.provider.filetransfer.retrieve
@@ -74,5 +77,6 @@ org.eclipse.ecf.ui
 org.eclipse.ecf.ui.actions
 org.eclipse.ecf.ui.dialogs
 org.eclipse.ecf.ui.hyperlink
+org.eclipse.ecf.ui.screencapture
 org.eclipse.ecf.ui.util
 org.eclipse.ecf.ui.wizards
