@@ -83,7 +83,7 @@
 </li><li>(p) = proxy -- calling thread calls a proxy instance of service interface) with normal call/return semantics
 </li></ul>
 <p>These access methods are made available via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" class="external text" title="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" rel="nofollow">IRemoteService</a>.  
-</p><p><b>Note that the proxy can also be accessed directly in the OSGi service registry via BundleContext.getServiceReference() or a ServiceTracker.</b>  In this way, if complete API transparency is desired by the programmer, then the service can be transparently accessed.
+</p><p><b>Note that the proxy can also be accessed directly in the OSGi service registry via BundleContext.getServiceReference() or a ServiceTracker.</b>  In this way, if complete API transparency is desired by the programmer, then the remote service can be transparently accessed.
 </p>    
 <p>
 Note also that we currently have provider implementations of the remote services API based upon ECF generic (included in ECF), XMPP (included in ECF), <a href="http://activemq.apache.org/">ActiveMQ</a> and <a href="http://www.bea.com">BEA Weblogic</a>-based <a href="http://java.sun.com/jms">JMS</a> implementations (<a href="http://ecf1.osuosl.org">found here</a>), and a <a href="http://www.jgroups.org/javagroupsnew/docs/index.html">Javagroups</a>-based implementation (<a href="http://ecf1.osuosl.org">found here</a>).  We also have a pending contribution
