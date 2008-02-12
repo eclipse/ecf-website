@@ -55,27 +55,17 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Feb 11, 2008 - ECF 2.0.0 milestone 5 released on eclipse.org. </b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Jan 31, 2008 - ECF 2.0.0 milestone 4d released on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Jan 7, 2008 - ECF 2.0.0 milestone 4b released on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>December 27, 2007 - ECF 2.0.0 milestone 4a released on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
            <p></p>
 		</td>
@@ -114,26 +104,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>August 5, 2007 - ECF 1.0.2 released on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
 	  	<b>July 27, 2007 - Great ECF Contributions for BugDay.</b>
 			Several great contributions from <a href="team.php">new contributors</a> for <a href="http://wiki.eclipse.org/BugDayJuly2007">BugDay July 2007</a>.  Thanks to all who participated.
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>July 14, 2007 - ECF 1.0.1 released on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
 		</td>
 	</tr>
 	<tr>
@@ -161,37 +133,6 @@
 			Scott has (re)-started a <a href="http://eclipseecf.blogspot.com/">blog for ECF</a>.
 		</td>
 	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>March 30, 2007 - ECF 1.0.0 milestone 6 build released on eclipse.org. </b>
-			See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.  See also a 
-			new <a href="http://wiki.eclipse.org/index.php/Bot_Framework">Bot Framework Tutorial</a> by Remy Suen for the new <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/presence/bot/package-summary.html">ECF Robot API</a>.
-		</td>
-	</tr>
-
-		<tr>
-		 <td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		 </td>
-		 <td valign="top">
-			<b>March 7, 2007 - ECF Short talk by <b>Ken Gilmer</b> at <a href="http://www.eclipsecon.org/2007/index.php?page=sub/&id=4081">EclipseCon 2007</a>. </b>
-			<a href="presentations/eclipsecon2007/ecf_talk.pdf">Here are the talk slides (pdf)</a>.
-		 </td>
-	</tr>
-
-
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>February 15, 2007 - ECF 1.0.0-stable build released on eclipse.org. </b>
-		</td>
-	</tr>
-
       </table>    
 	</div>
 
