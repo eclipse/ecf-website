@@ -51,7 +51,7 @@
     </TD>
     <TD vAlign=top width="70%">
     <p>
-    TBD
+    We have added a <a href="http://jslp.sourceforge.net/">jSLP-based</a> implementation of the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a>.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=200804">bug 200804</a> for details.
     </p>
        <br><br>
     </td>
@@ -60,11 +60,11 @@
   <TR>
     <TD vAlign=top align=left width="30%">
         <P align=left>
-	<B>Updatesite Discovery</B>
+	<B>Peer-to-Peer Updatesite Discovery</B>
         </P>
     </TD>
     <TD vAlign=top width="70%">
-    See screen shots and explanation <a href="http://wiki.eclipse.org/Update_Site_Discovery">here</a>.
+    There is now an example of using the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a> for peer-to-peer update site discovery.  <a href="http://wiki.eclipse.org/Update_Site_Discovery">See here screenshots and for details.</a>.
     </td>
   </TR>
 
@@ -75,7 +75,19 @@
         </P>
     </TD>
     <TD vAlign=top width="70%">
-    See screen shots and explanation <a href="http://wiki.eclipse.org/Discovery_of_Remote_Services">here</a>.
+    There is now an example of using the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a> for peer-to-peer discovery of remote OSGi services.  The example remote service (in this case remote access to the EnvironmentInfo Equinox Service) can then be accessed
+    in several ways:
+<ul><li>(s) = synchronously -- block calling thread until service host responds
+</li><li>(a) = asynchronously -- calling thread does not block and result is provided via notification to a listener
+</li><li>(f) = future -- calling thread does not block, and an instance of IAsynchResult is returned immediately  Receiver can inspect IAsynchResult for completion.
+</li><li>(p) = proxy -- calling thread calls a proxy instance of service interface) with normal call/return semantics
+</li></ul>
+<p>These access methods are made available via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" class="external text" title="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" rel="nofollow">IRemoteService</a>.  
+</p><p><b>Note that the proxy can also be accessed directly in the OSGi service registry via BundleContext.getServiceReference() or a ServiceTracker.</b>  In this way, if complete API transparency is desired by the programmer, then the service can be transparently accessed.
+</p>    
+<p>
+<a href="http://wiki.eclipse.org/Discovery_of_Remote_Services">See here for screen shots and details</a>.
+       <br><br>
     </td>
   </TR>
 
@@ -83,9 +95,6 @@
     <TD colSpan=2> <HR> </TD>
   </TR>
   
- <TR><TD colSpan=2><H2>ECF API Changes</H2></TD>
-
-
 </table>
 
 </body>
