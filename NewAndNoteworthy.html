@@ -75,7 +75,7 @@
         </P>
     </TD>
     <TD vAlign=top width="70%">
-    There is now an example of using the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a> for peer-to-peer discovery of remote OSGi services.  The example remote service (in this case remote access to the EnvironmentInfo Equinox Service) can then be accessed
+    There is an example of using the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a> for peer-to-peer discovery of remote OSGi services.  The example remote service (in this case remote access to the EnvironmentInfo Equinox Service) can then be accessed
     in several ways:
 <ul><li>(s) = synchronously -- block calling thread until service host responds
 </li><li>(a) = asynchronously -- calling thread does not block and result is provided via notification to a listener
@@ -86,6 +86,9 @@
 </p><p><b>Note that the proxy can also be accessed directly in the OSGi service registry via BundleContext.getServiceReference() or a ServiceTracker.</b>  In this way, if complete API transparency is desired by the programmer, then the service can be transparently accessed.
 </p>    
 <p>
+Note also that we currently have provider implementations of the remote services API based upon ECF generic (included in ECF), XMPP (included in ECF), <a href="http://activemq.apache.org/">ActiveMQ</a> and <a href="http://www.bea.com">BEA Weblogic</a>-based <a href="http://java.sun.com/jms">JMS</a> implementations (<a href="http://ecf1.osuosl.org">found here</a>), and a <a href="http://www.jgroups.org/javagroupsnew/docs/index.html">Javagroups</a>-based implementation (<a href="http://ecf1.osuosl.org">found here</a>).  We also have a pending contribution
+of the <a href="http://r-osgi.sourceforge.net/">r-OSGI</a>-based provider, expected to be included in ECF milestone 6 pending Eclipse Foundation IP approval (CQs <a href="http://dev.eclipse.org/ipzilla/show_bug.cgi?id=2063">2063</a> and <a href="http://dev.eclipse.org/ipzilla/show_bug.cgi?id=2064">2064</a>). 
+</p>
 <a href="http://wiki.eclipse.org/Discovery_of_Remote_Services">See here for screen shots and details</a>.
        <br><br>
     </td>
