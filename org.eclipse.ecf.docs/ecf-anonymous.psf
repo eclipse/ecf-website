@@ -83,5 +83,6 @@
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.presence,org.eclipse.ecf.tests.presence"/>
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.remoteservice,org.eclipse.ecf.tests.remoteservice"/>
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.sharedobject,org.eclipse.ecf.tests.sharedobject"/>
+		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.provider.jslp,org.eclipse.ecf.tests.provider.jslp"/>
 	</provider>
 </psf>
