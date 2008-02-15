@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
+	<!-- Required Eclipse CVS repository connections:          -->
+	<!--  :pserver:anonymous@dev.eclipse.org:/cvsroot/technology  -->
 	<provider id="org.eclipse.team.cvs.core.cvsnature">
+	
+	    <!-- core updatesite projects -->
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/features/org.eclipse.ecf.updatesite,org.eclipse.ecf.updatesite"/>
+	    
+		<!-- core feature projects -->
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/features/org.eclipse.ecf.core-feature,org.eclipse.ecf.core-feature"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/features/org.eclipse.ecf.example-feature,org.eclipse.ecf.example-feature"/>
+
+        <!-- other feature projects -->
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/features/org.eclipse.ecf.discovery-feature,org.eclipse.ecf.discovery-feature"/>
+	
 	    <!-- api projects -->
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.core.identity,org.eclipse.ecf.core.identity"/>
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf,org.eclipse.ecf"/>
@@ -61,5 +74,31 @@
         <!-- documentation project -->
 		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.doc,org.eclipse.ecf.doc"/>
         
+		<!-- examples projects -->
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.clients,org.eclipse.ecf.example.clients"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.collab,org.eclipse.ecf.example.collab"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.example.collab.editor,org.eclipse.ecf.example.collab.editor"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.example.sharededitor.cola,org.eclipse.ecf.example.sharededitor.cola"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.provider.trivial,org.eclipse.ecf.examples.provider.trivial"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.remoteservices.client,org.eclipse.ecf.examples.remoteservices.client"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.remoteservices.common,org.eclipse.ecf.examples.remoteservices.common"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.remoteservices.server,org.eclipse.ecf.examples.remoteservices.server"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.updatesite.client,org.eclipse.ecf.examples.updatesite.client"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.updatesite.server,org.eclipse.ecf.examples.updatesite.server"/>
+
+		<!-- test projects -->
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests,org.eclipse.ecf.tests"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.datashare,org.eclipse.ecf.tests.datashare"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.discovery,org.eclipse.ecf.tests.discovery"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.filetransfer,org.eclipse.ecf.tests.filetransfer"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.presence,org.eclipse.ecf.tests.presence"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.provider.filetransfer.efs,org.eclipse.ecf.tests.provider.filetransfer.efs"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.provider.filetransfer.scp,org.eclipse.ecf.tests.provider.filetransfer.scp"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.provider.filetransfer.xmpp,org.eclipse.ecf.tests.provider.filetransfer.xmpp"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.provider.jmdns,org.eclipse.ecf.tests.provider.jmdns"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.provider.xmpp,org.eclipse.ecf.tests.provider.xmpp"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.remoteservice,org.eclipse.ecf.tests.remoteservice"/>
+		<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/tests/org.eclipse.ecf.tests.sharedobject,org.eclipse.ecf.tests.sharedobject"/>
+	
 	</provider>
 </psf>
