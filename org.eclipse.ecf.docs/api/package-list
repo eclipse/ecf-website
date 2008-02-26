@@ -19,7 +19,6 @@ org.eclipse.ecf.discovery
 org.eclipse.ecf.discovery.identity
 org.eclipse.ecf.discovery.service
 org.eclipse.ecf.discovery.ui
-org.eclipse.ecf.discovery.ui.handlers
 org.eclipse.ecf.discovery.ui.views
 org.eclipse.ecf.filetransfer
 org.eclipse.ecf.filetransfer.events
