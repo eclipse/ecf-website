@@ -41,15 +41,15 @@ ob_start();
 ?>		
 	<div id="midcolumn">
 		<!--	<div align="center"><h1>$pageTitle</h1></div> -->
-		<i>Last updated: 2007-5-11</i><p/>
+		<i>Last updated: 2008-3-3</i><p/>
 		<div class="homeitem3col">
 		    <h3>ECF Team</h3>
                     <p>The ECF Team consists of Contributors and Committers. 
-                    We also list past Committers and Contributors and thank them for their work.</p>
+                    We also list past Committers and Contributors and thank them kindly for their work.</p>
 		    <h3>Committers</h3>
 			<ul>
 				<li>
-<a href="http://eclipseecf.blogspot.com">Scott Lewis</a>, project lead <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailqa_contact1=1&amp;emailcc1=1&amp;emaillongdesc1=1&amp;emailtype1=substring&amp;email1=slewis&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="> 
+<a href="http://eclipseecf.blogspot.com">Scott Lewis (IRC: slewis2)</a>, project lead <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=RESOLVED&amp;bug_status=CLOSED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailqa_contact1=1&amp;emailcc1=1&amp;emaillongdesc1=1&amp;emailtype1=substring&amp;email1=slewis&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="> 
 [bugs resolved]</a>
 <?php
 $pathBIG = "http://".$serverName."/ecf/images/slewis.png";
@@ -60,7 +60,7 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 
                 </li>
 				<li>
-			<a href="http://mea-bloga.blogspot.com/">Chris Aniszcxyk</a>
+			<a href="http://mea-bloga.blogspot.com/">Chris Aniszcxyk (IRC: zx)</a>
 <?php
 $pathBIG = "http://".$serverName."/ecf/images/ChrisAniszcxyk.gif";
 $path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/ChrisAniszcxyk.gif";
@@ -106,7 +106,7 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 
                 </li>
 				<li>
-<a href="http://www.lemmster.de/">Markus Kuppe</a>
+<a href="http://www.lemmster.de/">Markus Kuppe (IRC: lemmy)</a>
 <?php
 $pathBIG = "http://".$serverName."/ecf/images/markuskuppe.jpg";
 $path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/markuskuppe.jpg";
@@ -119,10 +119,10 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 				<a href="http://weblogs.java.net/blog/mayworm/">Marcelo Mayworm</a>
 				</li>
                 <li>
-                	<a href="http://pnehrer.freeshell.org">Peter Nehrer</a>
+                	<a href="http://pnehrer.freeshell.org">Peter Nehrer (IRC: pnehrer)</a>
                 </li>
                 <li>
-                	Pierre-Henry Perret
+                	Pierre-Henry Perret (IRC: phperret)
 <?php
 $pathBIG = "http://".$serverName."/ecf/images/Pierre-HenryPerret.gif";
 $path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/Pierre-HenryPerret.gif";
@@ -130,8 +130,14 @@ $size=50;
 echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "."alt=\"[Pierre-Henry Perret]\"/></a>";
 ?>
                 </li>
+                <li>
+                	<a href="http://moritzpost.de/blog/">Moritz Post</a> (IRC: soulreaper)
+                </li>
 				<li>
-				Remy Suen
+				<a href="http://people.inf.ethz.ch/rjan/">Jan Rellermeyer</a> (IRC: rjan)
+				</li>
+				<li>
+				Remy Chi Jian Suen (IRC: rcjsuen)
 				</li>
 			</ul> 
 		</div>
@@ -140,7 +146,7 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			<h3>Bug Day 7/2007 Contributors</h3>
 			<ul>
 			   <li>
-			   Abner Ballardo - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193136">bug 193136</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192756">bug 192756</a>
+			   Abner Ballardo - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193136">bug 193136</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192756">bug 192756</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=205532">bug 205532</a>
 			   </li>
 			   <li>
 			   Ferenc Boldog - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=198193">bug 198193</a>
@@ -152,6 +158,14 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			   Joern Dinkla - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192574">bug 192574</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197821">bug 197821</a>
 			   </li>
 			   <li>
+			   Jakub Jurkiewicz - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197332">bug 197332</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=221139">bug 221139</a>, 
+			   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=196541">bug 196541</a>
+			   </li>
+			   <li>
+			   Hiroyuki Inaba - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=219247">bug 219247</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=219253">bug 219253</a>, 
+			   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=220059">bug 220059</a>
+			   </li>
+			   <li>
 			   Willian Mitsuda - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192589">bug 192589</a>
 			   </li>
 			   <li>
@@ -160,9 +174,6 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			</ul>
 			<h3>Other Contributors</h3>
 			<ul>
-				<li>
-				Mustafa Isik
-				</li>
 				<li>
 				Mark Kropf
 				</li>
