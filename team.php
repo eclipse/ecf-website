@@ -46,6 +46,7 @@ ob_start();
 		    <h3>ECF Team</h3>
                     <p>The ECF Team consists of Contributors and Committers. 
                     We also list past Committers and Contributors and thank them kindly for their work.</p>
+            <h3>ECF committers and contributors often hang out on the #eclipse-ecf channel on irc.freenode.net.  See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project#Public_and_Private_Chat_Groups">here</a> for more information.</h3>
 		    <h3>Committers</h3>
 			<ul>
 				<li>
