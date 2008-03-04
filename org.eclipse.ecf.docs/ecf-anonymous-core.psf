@@ -20,6 +20,7 @@
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.discovery.ui,org.eclipse.ecf.discovery.ui"/>
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.filetransfer.ui,org.eclipse.ecf.filetransfer.ui"/>
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.presence.ui,org.eclipse.ecf.presence.ui"/>
+		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.remoteservice.ui,org.eclipse.ecf.remoteservice.ui"/>
 		<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf.presence.collab.ui,org.eclipse.ecf.presence.collab.ui"/>
 		
 		<!-- provider projects -->
