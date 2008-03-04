@@ -144,7 +144,7 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 		</div>
 
 		<div class="homeitem3col">
-			<h3>Bug Day 7/2007 Contributors</h3>
+			<h3>Contributors</h3>
 			<ul>
 			   <li>
 			   Abner Ballardo - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193136">bug 193136</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192756">bug 192756</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=205532">bug 205532</a>
@@ -162,30 +162,27 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			   Jakub Jurkiewicz - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197332">bug 197332</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=221139">bug 221139</a>, 
 			   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=196541">bug 196541</a>
 			   </li>
+				<li>
+				Mark Kropf
+				</li>
 			   <li>
 			   Hiroyuki Inaba - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=219247">bug 219247</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=219253">bug 219253</a>, 
 			   <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=220059">bug 220059</a>
 			   </li>
+				<li>
+				Erkki Lindpere.  Erkki has contributed the bulletin board API to ECF.  We need some additional work on BBAPI before we can
+				distribute it as part of ECF.  If you are able to contribute please see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=180796">bug 180796</a> and 
+				<a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=164199">bug 164199</a>.
+				</li>
 			   <li>
 			   Willian Mitsuda - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192589">bug 192589</a>
 			   </li>
 			   <li>
-			   Jacek Pospychala - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197604">bug 197604</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192762">bug 192762</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149912">bug 149912</a>
+			   <a href="http://eclipser-blog.blogspot.com/">Jacek Pospychala</a> - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197604">bug 197604</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192762">bug 192762</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149912">bug 149912</a>
 			   </li>
-			</ul>
-			<h3>Other Contributors</h3>
-			<ul>
 				<li>
-				Mark Kropf
-				</li>
-				<li>
-				Erkki Lindpere
-				</li>
-				<li>
-				<a href="http://eclipser-blog.blogspot.com/">Jacek Pospychala</a>
-				</li>
-				<li>
-				Christoph Schwering
+				Christoph Schwering.  Christoph is the author of <a href="http://moepii.sourceforge.net/">IRCLib</a>, which ECF is using for it's IRC provider.  He's currently
+				working on enhancing IRCLib to support CTCP via <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=220264">bug 220264</a>.
 				</li>
 			</ul> 
 		</div>
@@ -193,10 +190,13 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			<h3>Past Committers and Contributors</h3>
 			<ul>
 				<li> 
-				Paul Trevithick
+				Rick Hamnett
+				</li>
+				<li>
+				Mary Ruddy
 				</li>
 				<li> 
-				Rick Hamnett
+				Paul Trevithick
 				</li>
 			</ul> 
 		</div>
