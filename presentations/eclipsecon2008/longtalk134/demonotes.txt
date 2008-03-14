@@ -1,0 +1,98 @@
+Demo Notes for EclipseCon 2008 ECF Talk
+
+http://www.eclipsecon.org/2008/index.php?page=sub/&id=134
+
+Connect to following accounts
+1) irc://irc.freenode.net/eclipse-ecf
+2) ecftcp://ecf.eclipse.org:3282/server
+3) ecf.eclipse.org XMPPS
+4) skype
+
+Slide 8:  Demos
+
+IRC Chat
+
+1) Scott
+	Will join eclipse-ecf channel
+2) Ted
+	Type chat...greetings and ask question:  Are there any bugs to look at?
+3) Scott
+	Use KOS-MOS to show bugzilla entry:  https://bugs.eclipse.org/bugs/show_bug.cgi?id=219014
+
+Collaboration
+
+1) Scott
+	Join ecftcp://ecf.eclipse.org:3282/server
+2) Ted
+	Type chat...greetings 
+3) Scott
+	Sends request for web page
+4) Ted 
+	Sends URL via Co-Browse URL:  http://wiki.eclipse.org/Eclipse_Communication_Framework_Project
+5) Scott
+	Sends request for createContainer() method in ContainerFactory class
+6) Ted
+	Using editor context menu in ContainerFactory.java editor
+		Select createContainer method
+		Context Menu->Select "Share Resource to Collaboration"
+
+IM Collaboration
+
+1) Scott
+	Join XMPPS account:  slewis@ecf.eclipse.org
+2) Ted
+	Sends IM Message to slewis (comes up in Messages view)
+3) Scott
+	Requests send of screen capture
+4) Ted
+	Sends screen capture to Scott
+5) Scott 
+	Sends screen capture to Ted
+6) Scott
+	Requests file
+7) Ted 
+	Sends file that can be displayed (perhaps jpg or some other image)
+
+
+Shared Editing
+
+1) Scott
+	Requests editor share 
+
+2) Ted
+	Initiates editor share
+	
+3) Scott receives editor share
+
+4) Ted
+	Types some new text into file (output appears for Scott/audience)
+
+5) Scott requests direct to specific method
+
+6) Ted
+	Selects method and chooses "Send selection to slewis"
+	
+7) Scott
+	Stops editor sharing
+
+8) Scott
+	Initiates editor sharing with text file
+	
+Skype/VOIP
+
+1) Scott initiates call to Ted via Contacts list
+
+2) Ted answers and call started
+
+3) Scott says hello
+
+4) Scott hangs up
+
+
+	
+
+
+
+
+
+
