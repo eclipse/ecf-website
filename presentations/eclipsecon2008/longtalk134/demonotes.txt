@@ -3,25 +3,25 @@ Demo Notes for EclipseCon 2008 ECF Talk
 http://www.eclipsecon.org/2008/index.php?page=sub/&id=134
 
 Connect to following accounts
-1) irc://slewis@irc.freenode.net/eclipse-ecf
-2) ecftcp://ecf.eclipse.org:3282/server
-3) xmpps://slewis@ecf.eclipse.org
-4) skype
+1) IRC:  irc://slewis2@irc.freenode.net/eclipse-ecf
+2) ECF Generic: ecftcp://ecf.eclipse.org:3282/server
+3) XMPPS: xmpps://slewis@ecf.eclipse.org and xmpps://scottslewis@gmail.com
+4) Skype
 
 File Download URLs
 
-scp://ecf.eclipse.org/test.txt
+scp://slewis@ecf.eclipse.org/apache.txt
 
 Slide 8:  Demos
 
 IRC Chat
 
 1) Scott
-	Will join eclipse-ecf channel
+	Will join irc://irc.freenode.net/eclipse-ecf channel
 2) Ted
 	Type chat...greetings and ask question:  Are there any bugs to look at?
 3) Scott
-	Use KOS-MOS to show bugzilla entry:  https://bugs.eclipse.org/bugs/show_bug.cgi?id=219014
+	Use KOS-MOS to show bugzilla entry ~219014:  https://bugs.eclipse.org/bugs/show_bug.cgi?id=219014
 
 Collaboration
 
@@ -77,9 +77,12 @@ Shared Editing
 	Selects method and chooses "Send selection to slewis"
 	
 7) Scott
+	Selects another method and chooses "Send selection to ted"
+	
+8) Scott
 	Stops editor sharing
 
-8) Scott
+9) Scott
 	Initiates editor sharing with text file
 	
 Skype/VOIP
