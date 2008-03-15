@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.team.cvs.core.cvsnature">
+<project reference="1.0,:pserver:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/ch.ethz.iks.slp,ch.ethz.iks.slp_1.0.0,v200802052042"/>
 <project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype,com.skype"/>
 <project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype.examples,com.skype.examples"/>
 <project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype.linux.x86,com.skype.linux.x86"/>
 <project reference="1.0,:extssh:ecf1.osuosl.org:/home/cvs/ecf,plugins/com.skype.linux.x86_64,com.skype.linux.x86_64"/>
 <project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype.win32.win32.x86,com.skype.win32.win32.x86"/>
+<project reference="1.0,:pserver:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.apache.commons.codec,org.apache.commons.codec,v1_2_0"/>
+<project reference="1.0,:pserver:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.apache.commons.httpclient,org.apache.commons.httpclient,v3_0_1"/>
+<project reference="1.0,:pserver:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.apache.commons.logging,org.apache.commons.logging,v1_0_4"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/providers/org.eclipse.bittorrent,org.eclipse.bittorrent"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf,org.eclipse.ecf"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/incubation/plugins/org.eclipse.ecf.bulletinboard,org.eclipse.ecf.bulletinboard"/>

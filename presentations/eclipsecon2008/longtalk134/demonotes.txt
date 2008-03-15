@@ -3,7 +3,7 @@ Demo Notes for EclipseCon 2008 ECF Talk
 http://www.eclipsecon.org/2008/index.php?page=sub/&id=134
 
 Connect to following accounts
-1) IRC:  irc://slewis2@irc.freenode.net/eclipse-ecf
+1) IRC:  slewis2@irc.freenode.net/eclipse-ecf,eclipse-soc,eclipse-dev,eclipse-bugs,equinox-dev
 2) ECF Generic: ecftcp://ecf.eclipse.org:3282/server
 3) XMPPS: xmpps://slewis@ecf.eclipse.org and xmpps://scottslewis@gmail.com
 4) Skype
