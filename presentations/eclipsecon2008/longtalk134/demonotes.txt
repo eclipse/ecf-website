@@ -3,10 +3,14 @@ Demo Notes for EclipseCon 2008 ECF Talk
 http://www.eclipsecon.org/2008/index.php?page=sub/&id=134
 
 Connect to following accounts
-1) irc://irc.freenode.net/eclipse-ecf
+1) irc://slewis@irc.freenode.net/eclipse-ecf
 2) ecftcp://ecf.eclipse.org:3282/server
-3) ecf.eclipse.org XMPPS
+3) xmpps://slewis@ecf.eclipse.org
 4) skype
+
+File Download URLs
+
+scp://ecf.eclipse.org/test.txt
 
 Slide 8:  Demos
 
