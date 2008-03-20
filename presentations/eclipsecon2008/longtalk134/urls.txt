@@ -1,0 +1,3 @@
+scp://slewis@ecf1.osuosl.org/apache.txt
+
+scp://slewis@ecf1.osuosl.org/eclipse-examples-I20080318-0800-win32.zip

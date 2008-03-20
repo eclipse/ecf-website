@@ -1,7 +1,5 @@
 Demo Notes for EclipseCon 2008 ECF Talk
 
-http://www.eclipsecon.org/2008/index.php?page=sub/&id=134
-
 Connect to following accounts
 1) IRC:  slewis2@irc.freenode.net/eclipse-ecf,eclipse-soc,eclipse-dev,eclipse-bugs,equinox-dev
 2) ECF Generic: ecftcp://ecf.eclipse.org:3282/server
@@ -12,12 +10,11 @@ File Download URLs
 
 scp://slewis@ecf1.osuosl.org/apache.txt
 
-Slide 8:  Demos
 
 IRC Chat
 
 1) Scott
-	Will join irc://irc.freenode.net/eclipse-ecf channel
+	join irc://slewis2@irc.freenode.net/eclipse-ecf channel
 2) Ted
 	Type chat...greetings and ask question:  Are there any bugs to look at?
 3) Scott
