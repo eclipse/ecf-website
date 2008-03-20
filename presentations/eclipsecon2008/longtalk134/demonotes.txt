@@ -22,7 +22,9 @@ IRC Chat
 	Type chat...greetings and ask question:  Are there any bugs to look at?
 3) Scott
 	Use KOS-MOS to show bugzilla entry ~219014:  https://bugs.eclipse.org/bugs/show_bug.cgi?id=219014
-
+4) Ted
+	Thanks I see the bug
+	
 Collaboration
 
 1) Scott
