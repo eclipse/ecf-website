@@ -6,11 +6,6 @@ Connect to following accounts
 3) XMPPS: xmpps://slewis@ecf.eclipse.org and xmpps://scottslewis@gmail.com
 4) Skype
 
-File Download URLs
-
-scp://slewis@ecf1.osuosl.org/apache.txt
-
-
 IRC Chat
 
 1) Scott
