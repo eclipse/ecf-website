@@ -6,6 +6,7 @@ org.eclipse.ecf.core-v20080320-1500-DAILY.zip
 org.eclipse.ecf.core-v20080321-1500-DAILY.zip
 org.eclipse.ecf.core-v20080322-1500-DAILY.zip
 org.eclipse.ecf.core-v20080323-1500-DAILY.zip
+org.eclipse.ecf.core-v20080324-1500-DAILY.zip
 org.eclipse.ecf.examples-v20080316-1735-DAILY.zip
 org.eclipse.ecf.examples-v20080317-1500-DAILY.zip
 org.eclipse.ecf.examples-v20080318-1500-DAILY.zip
@@ -14,6 +15,7 @@ org.eclipse.ecf.examples-v20080320-1500-DAILY.zip
 org.eclipse.ecf.examples-v20080321-1500-DAILY.zip
 org.eclipse.ecf.examples-v20080322-1500-DAILY.zip
 org.eclipse.ecf.examples-v20080323-1500-DAILY.zip
+org.eclipse.ecf.examples-v20080324-1500-DAILY.zip
 org.eclipse.ecf.sdk-v20080316-1735-DAILY.zip
 org.eclipse.ecf.sdk-v20080317-1500-DAILY.zip
 org.eclipse.ecf.sdk-v20080318-1500-DAILY.zip
@@ -22,3 +24,4 @@ org.eclipse.ecf.sdk-v20080320-1500-DAILY.zip
 org.eclipse.ecf.sdk-v20080321-1500-DAILY.zip
 org.eclipse.ecf.sdk-v20080322-1500-DAILY.zip
 org.eclipse.ecf.sdk-v20080323-1500-DAILY.zip
+org.eclipse.ecf.sdk-v20080324-1500-DAILY.zip
