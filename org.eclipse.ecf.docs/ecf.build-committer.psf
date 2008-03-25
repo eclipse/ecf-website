@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.team.cvs.core.cvsnature">
-<project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype,com.skype"/>
-<project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype.examples,com.skype.examples"/>
-<project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype.linux.x86,com.skype.linux.x86"/>
 <project reference="1.0,:extssh:ecf1.osuosl.org:/home/cvs/ecf,plugins/com.skype.linux.x86_64,com.skype.linux.x86_64"/>
-<project reference="1.0,:extssh:cvs.sourceforge.jp:/cvsroot/skype,eclipse/plugins/com.skype.win32.win32.x86,com.skype.win32.win32.x86"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/providers/org.eclipse.bittorrent,org.eclipse.bittorrent"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/plugins/org.eclipse.ecf,org.eclipse.ecf"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/incubation/plugins/org.eclipse.ecf.bulletinboard,org.eclipse.ecf.bulletinboard"/>
