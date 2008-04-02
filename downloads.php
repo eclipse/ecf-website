@@ -46,7 +46,7 @@ ob_start();
 	$html = ob_get_contents();
 
         include 'getNugget.php';
-
+        $html = getNugget("EcfInstallViaUpdate3.4.html",$html);
         $html = getNugget("EcfInstallViaUpdate.html",$html);
         $html = getNugget("EcfInstallViaZip.html",$html);
         $html = getNugget("EcfSourceCode.html",$html);
