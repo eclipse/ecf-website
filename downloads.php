@@ -30,9 +30,13 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-     <b>Eclipse Communication Framework 2.0.0 M5d now available (3/16/2008).</b>
+    <b>ECF for Eclipse M6 now available (4/2/2008).</b>
+    <p>
+    <b>NOTE:  For Eclipse 3.4M6 it is necessary to use a new update site.  See ECF Install via Update Site -- version 2.0.0M6 below.</b>
+    <p>
+    If you are using Eclipse 3.3 or Eclipse 3.4M1-M5, please use one of the other ECF installs below.
     <p></p>
-    Note that ECF 2.0.0M5d requires <b>Eclipse 3.3</b> or newer (3.3 or 3.4 streams).  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    Note that ECF 2.0.0 requires <b>Eclipse 3.3</b> or newer (3.3 or 3.4 streams).  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.
     <p></p>
     <p>

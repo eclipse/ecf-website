@@ -1,25 +1,27 @@
     <h3>ECF Install via Update Site -- version 2.0.0M6 </h3>
      <p>
-     Note that for Eclipse 3.4M6 and greater, you must use this update site.
-     For <a href="update_install.php">detailed instructions on using the Eclipse install/update mechanism to install ECF see here</a>.
-     See below for quick install.
-     </p>
+     <b>NOTE</b>:  For Eclipse 3.4M6 and greater, you <b>must</b> use this update site and not any of the other update sites
+     given below.  The reason for this is that in Eclipse M6 a new install/update mechanism was introduced, and a long with
+     it four bundles from ECF are included.  This makes it necessary for us to distribute only the ECF bundles that are <b>not</b>
+     included with the platform, and so the rest of ECF for M6 must be made available via this update site.
+     <p>
       <ul>
-       <li>In Eclipse, choose <b>Help -> Software Updates -> Find and Install...</b>
+       <li>In Eclipse M6, choose <b>Help -> Software Updates...</b>
+       
        </li>
-       <li>Choose <b>Search for New Features to Install -> Next</b>
+       <li>Click on <b>Available Features</b> tab.
        </li>
-       <li>Choose <b>New Remote Site</b>
+       <li>Click on <b>Manage Sites...</b> button.
        </li>
-      </ul>
-      <ul>
-       <li>Name: <b>ECF</b>
+       <li>Drag and drop the following URL from your browser to the list in the Manage Sites window:
+       <p>
+       <b>http://download.eclipse.org/technology/ecf/2.0/3.4/updateSite/site.xml</b>
+       <p>
        </li>
-       <li>URL: <b><a href="http://download.eclipse.org/technology/ecf/2.0/3.4/updateSite">http://download.eclipse.org/technology/ecf/2.0/3.4/updateSite</a></b><p></p>
-       <img border="0" src="images/2.0-3.4-update-site.jpg" width="373" height="170" alt="[new update]"/>
-       </li>
-       <li>Choose <b>both</b> the <b>Eclipse Communication Framework Core API</b> and 
-       the <b>Eclipse Communication Framework Application</b> features to install.
-       </li>
+       <li>As a result of the drag and drop, you should see the above URL appear as an update site in the list.</li>
+       <li>Click OK in the Manage Sites window</li>.
+       <li>You should see the <b>Eclipse Communication Framework (ECF)</b> category in the Available Features window.</li>
+       <li>Open the category and select the two ECF features.</li>
+       <li>Click Install...</li>
       </ul>
      <p></p>
