@@ -40,6 +40,7 @@ org.eclipse.ecf.presence.ui.chatroom
 org.eclipse.ecf.presence.ui.dnd
 org.eclipse.ecf.presence.ui.menu
 org.eclipse.ecf.presence.ui.roster
+org.eclipse.ecf.protocol.bittorrent
 org.eclipse.ecf.protocol.msn
 org.eclipse.ecf.protocol.msn.events
 org.eclipse.ecf.provider.comm
