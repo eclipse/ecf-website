@@ -34,7 +34,7 @@ ob_start();
     <p>
     <b>NOTE:  For Eclipse 3.4M6 it is necessary to use a new update site.  See <a href="#2.0.0M6">ECF Install via Update Site -- version 2.0.0M6</a> below.</b>
     <p>
-    If you are using Eclipse 3.3 or Eclipse 3.4M1-M5, please use one the <a href="#2.0.0M5">2.0.0 milestone install below</a>.
+    If you are using Eclipse 3.3 or Eclipse 3.4M1-M5, please use the <a href="#2.0.0M5">ECF Install via Update Site -- version 2.0.0M5 install below</a>.
     <p></p>
     Note that ECF 2.0.0 requires <b>Eclipse 3.3</b> or newer (3.3 or 3.4 streams).  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.
