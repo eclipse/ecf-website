@@ -20,6 +20,12 @@ org.eclipse.ecf.discovery.identity
 org.eclipse.ecf.discovery.service
 org.eclipse.ecf.discovery.ui
 org.eclipse.ecf.discovery.ui.views
+org.eclipse.ecf.docshare
+org.eclipse.ecf.docshare.cola
+org.eclipse.ecf.docshare.menu
+org.eclipse.ecf.docshare.messages
+org.eclipse.ecf.example.clients
+org.eclipse.ecf.example.clients.applications
 org.eclipse.ecf.filetransfer
 org.eclipse.ecf.filetransfer.events
 org.eclipse.ecf.filetransfer.identity
@@ -31,6 +37,11 @@ org.eclipse.ecf.presence.bot
 org.eclipse.ecf.presence.bot.application
 org.eclipse.ecf.presence.bot.impl
 org.eclipse.ecf.presence.chatroom
+org.eclipse.ecf.presence.collab.ui
+org.eclipse.ecf.presence.collab.ui.console
+org.eclipse.ecf.presence.collab.ui.screencapture
+org.eclipse.ecf.presence.collab.ui.url
+org.eclipse.ecf.presence.collab.ui.view
 org.eclipse.ecf.presence.history
 org.eclipse.ecf.presence.im
 org.eclipse.ecf.presence.roster
@@ -59,6 +70,7 @@ org.eclipse.ecf.provider.jmdns.container
 org.eclipse.ecf.provider.jmdns.identity
 org.eclipse.ecf.provider.jslp.container
 org.eclipse.ecf.provider.jslp.identity
+org.eclipse.ecf.provider.r_osgi.identity
 org.eclipse.ecf.provider.remoteservice
 org.eclipse.ecf.provider.remoteservice.generic
 org.eclipse.ecf.provider.ui.wizards
