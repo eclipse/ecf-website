@@ -54,6 +54,8 @@ ob_start();
         $html = getNugget("EcfInstallViaZip3.4.html",$html);
         $html = getNugget("EcfInstallViaUpdate.html",$html);
         $html = getNugget("EcfInstallViaZip.html",$html);
+        $html = getNugget("Ecf1.2InstallViaUpdate.html",$html);
+        $html = getNugget("Ecf1.2InstallViaZip.html",$html);
         $html = getNugget("EcfSourceCode.html",$html);
         $html = getNugget("EcfExtraPlugins.html",$html);
         $html = getNugget("EcfBuildTypes.html",$html);
