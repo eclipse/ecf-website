@@ -30,7 +30,7 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 2.0.0RC1a now available (5/21/2008).</b>
+    <b>ECF 2.0.0RC2 now available (5/27/2008).</b>
     <p>
     <b>NOTE:  For Eclipse 3.4M6 and later it is necessary to use a distinct update site.  See <a href="#2.0.0M6">ECF Install via Update Site</a> below.</b>
     <p>
