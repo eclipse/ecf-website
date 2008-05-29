@@ -55,7 +55,7 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>May 27, 2008 - ECF 2.0.0 Release Candidate 1a (RC2) released on eclipse.org. </b>
+	  	<b>May 27, 2008 - ECF 2.0.0 Release Candidate 2 (RC2) released on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
            <p></p>
 		</td>
