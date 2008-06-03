@@ -75,9 +75,6 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 				<li>
                 	Roland Fru
                 </li>
-				<li>
-                	Ken Gilmer
-                </li>
                                 <li>
                 	<a href="http://www.markcasimer.com">Ted Kubaska</a>
 <?php
@@ -189,6 +186,9 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 		   <div class="homeitem3col">
 			<h3>Past Committers and Contributors</h3>
 			<ul>
+				<li>
+                	Ken Gilmer
+                </li>
 				<li> 
 				Rick Hamnett
 				</li>
