@@ -36,14 +36,10 @@ ob_start();
     <p>
     For Eclipse 3.3, please use the <a href="#2.0.0M5">ECF 2.0 Install via Update Site -- <b>for use with Eclipse 3.3</b></a>.
     <p></p>
-    ECF 2.0.0 requires <b>Eclipse 3.3</b> or 3.4.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
-    appropriate version of Eclipse</a>.
-    <p></p>
     <p>
-    See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
-	</p>
-	<p>
- See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, meetings, etc.
+    ECF 2.0.0 requires <b>Eclipse 3.3</b> or 3.4.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    appropriate version of Eclipse</a>. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
+ See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, project team meetings, etc.
 </p>
 	
 <?php
