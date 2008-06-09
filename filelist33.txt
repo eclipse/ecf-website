@@ -4,8 +4,7 @@ org.eclipse.ecf.core-2.0.0.v20080605-1600-DAILY.zip
 org.eclipse.ecf.core-2.0.0.v20080606-1600-DAILY.zip
 org.eclipse.ecf.core-2.0.0.v20080607-1600-DAILY.zip
 org.eclipse.ecf.core-2.0.0.v20080608-1601-DAILY.zip
-org.eclipse.ecf.core-v20080531-1600-DAILY.zip
-org.eclipse.ecf.core-v20080531-1800-DAILY.zip
+org.eclipse.ecf.core-2.0.0.v20080609-1600-DAILY.zip
 org.eclipse.ecf.core-v20080601-1600-DAILY.zip
 org.eclipse.ecf.core-v20080601-1800-DAILY.zip
 org.eclipse.ecf.core-v20080601-2308-DAILY.zip
@@ -27,8 +26,7 @@ org.eclipse.ecf.examples-2.0.0.v20080605-1600-DAILY.zip
 org.eclipse.ecf.examples-2.0.0.v20080606-1600-DAILY.zip
 org.eclipse.ecf.examples-2.0.0.v20080607-1600-DAILY.zip
 org.eclipse.ecf.examples-2.0.0.v20080608-1601-DAILY.zip
-org.eclipse.ecf.examples-v20080531-1600-DAILY.zip
-org.eclipse.ecf.examples-v20080531-1800-DAILY.zip
+org.eclipse.ecf.examples-2.0.0.v20080609-1600-DAILY.zip
 org.eclipse.ecf.examples-v20080601-1600-DAILY.zip
 org.eclipse.ecf.examples-v20080601-1800-DAILY.zip
 org.eclipse.ecf.examples-v20080601-2308-DAILY.zip
@@ -50,8 +48,7 @@ org.eclipse.ecf.sdk-2.0.0.v20080605-1600-DAILY.zip
 org.eclipse.ecf.sdk-2.0.0.v20080606-1600-DAILY.zip
 org.eclipse.ecf.sdk-2.0.0.v20080607-1600-DAILY.zip
 org.eclipse.ecf.sdk-2.0.0.v20080608-1601-DAILY.zip
-org.eclipse.ecf.sdk-v20080531-1600-DAILY.zip
-org.eclipse.ecf.sdk-v20080531-1800-DAILY.zip
+org.eclipse.ecf.sdk-2.0.0.v20080609-1600-DAILY.zip
 org.eclipse.ecf.sdk-v20080601-1600-DAILY.zip
 org.eclipse.ecf.sdk-v20080601-1800-DAILY.zip
 org.eclipse.ecf.sdk-v20080601-2308-DAILY.zip
