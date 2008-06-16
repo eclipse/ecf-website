@@ -20,10 +20,6 @@ org.eclipse.ecf.discovery.identity
 org.eclipse.ecf.discovery.service
 org.eclipse.ecf.discovery.ui
 org.eclipse.ecf.discovery.ui.views
-org.eclipse.ecf.docshare
-org.eclipse.ecf.docshare.cola
-org.eclipse.ecf.docshare.menu
-org.eclipse.ecf.docshare.messages
 org.eclipse.ecf.example.clients
 org.eclipse.ecf.example.clients.applications
 org.eclipse.ecf.filetransfer
