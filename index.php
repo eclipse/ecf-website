@@ -65,6 +65,24 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>June 16, 2008 - Article about <a href="http://www.infoq.com/news/2008/06/eclipse-ganymede-ecf">ECF on InfoQ</a>. </b>
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>May 30, 2008 - <a href="http://java.dzone.com/news/the-ecf-project-an-interview-w">Interview with ECF project lead Scott Lewis at Dzone</a>. </b>
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Mar 24, 2008 - ECF committers <a href="http://eclipseecf.blogspot.com/">Scott Lewis</a>, <a href="http://www.lemmster.de/blog/">Markus Kuppe</a>, Ted Kubaska, and <a href="http://people.inf.ethz.ch/rjan/">Jan Rellermeyer</a> present at <a href="http://www.eclipsecon.org">EclipseCon 2008</a>. </b>
 			Presentation slides can be found <a href="http://www.eclipse.org/ecf/presentations/eclipsecon2008/longtalk134/ecf_eclipsecon2008_134.pdf">here</a>.  
            <p></p>
