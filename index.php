@@ -55,8 +55,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>June 18, 2008 - ECF Committers Markus Kuppe and Jan Rellermeyer present ECF at <a href="http://www.osgi.org/CommunityEvent2008/HomePage">OSGi Community Event, June 10 and 11, 2008</a>. </b>
-			See <a href="http://www.osgi.org/wiki/uploads/CommunityEvent2008/21_RemoteServices_OSGi_CommEvent08.pdf">here for the slides of their presentation</a>.  <a href="http://www.osgi.org/CommunityEvent2008/Program">Here is the entire program</a>.
+	  	<b>June 24, 2008 - ECF 2.0.0/Ganymede Release available on eclipse.org. </b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
            <p></p>
 		</td>
 	</tr>
@@ -65,8 +65,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>June 17, 2008 - ECF 2.0.0 Release Candidate 5 (RC5) released on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+	  	<b>June 18, 2008 - ECF Committers Markus Kuppe and Jan Rellermeyer present ECF at <a href="http://www.osgi.org/CommunityEvent2008/HomePage">OSGi Community Event, June 10 and 11, 2008</a>. </b>
+			See <a href="http://www.osgi.org/wiki/uploads/CommunityEvent2008/21_RemoteServices_OSGi_CommEvent08.pdf">here for the slides of their presentation</a>.  <a href="http://www.osgi.org/CommunityEvent2008/Program">Here is the entire program</a>.
            <p></p>
 		</td>
 	</tr>
