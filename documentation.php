@@ -104,7 +104,7 @@ ob_start();
 				<P ALIGN=CENTER>Container Factory Name</P>
 			</TH>
 			<TH WIDTH=164>
-				<P ALIGN=CENTER>Plugin</P>
+				<P ALIGN=CENTER>Plugin(s)</P>
 			</TH>
 			<TH WIDTH=266>
 
@@ -121,7 +121,7 @@ ob_start();
 				<P ALIGN=CENTER><FONT SIZE=2>ecf.base</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.filetransfer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf,org.eclipse.ecf.provider.filetransfer</FONT></P>
 			</TD>
 			<TD WIDTH=266>
 				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
@@ -135,7 +135,7 @@ ob_start();
 				<P ALIGN=CENTER><FONT SIZE=2>ecf.base</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.filetransfer.httpclient</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf,org.eclipse.ecf.provider.filetransfer.httpclient</FONT></P>
 			</TD>
 			<TD WIDTH=266>
 				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
@@ -340,7 +340,7 @@ ob_start();
 				<P ALIGN=CENTER>Container Factory Name</P>
 			</TH>
 			<TH WIDTH=164>
-				<P ALIGN=CENTER>Plugin</P>
+				<P ALIGN=CENTER>Plugin(s)</P>
 			</TH>
 			<TH WIDTH=266>
 
