@@ -88,7 +88,7 @@ ob_start();
        </pre>
        Once constructed, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances may be used in the manner appropriate for the given application.  
        <br/><br/>
-       Here is a table of available ecf container types and their associated required plugins:<br>
+       Container Types Available at dev.eclipse.org<br>
        <br/>
 <TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
 	<COL WIDTH=96>
@@ -98,60 +98,80 @@ ob_start();
 	<THEAD>
 		<TR VALIGN=TOP>
 			<TH WIDTH=96>
-				<P ALIGN=CENTER>Protocol</P>
-
+				<P ALIGN=CENTER>PROTOCOL(s)</P>
 			</TH>
 			<TH WIDTH=109>
-				<P ALIGN=CENTER>Container Type</P>
+				<P ALIGN=CENTER>Container Factory Name</P>
 			</TH>
 			<TH WIDTH=164>
-				<P ALIGN=CENTER>Implementing Plugin</P>
+				<P ALIGN=CENTER>Defined in Plugin</P>
 			</TH>
 			<TH WIDTH=266>
 
-				<P ALIGN=CENTER>Adapters</P>
+				<P ALIGN=CENTER>Supported APIs</P>
 			</TH>
 		</TR>
 	</THEAD>
 	<TBODY>
 		<TR VALIGN=TOP>
 			<TD WIDTH=96>
-				<P ALIGN=CENTER><FONT SIZE=2>XMPP</FONT></P>
-
+				<P ALIGN=CENTER><FONT SIZE=2>HTTP/HTTPS, file, all other protocols supported JRE URLConnection</FONT></P>
 			</TD>
 			<TD WIDTH=109>
-				<P ALIGN=CENTER><FONT SIZE=2>ecf.xmpp.smack</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.base</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.xmpp</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf</FONT></P>
 			</TD>
 			<TD WIDTH=266>
-
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.presence.IPresenceContainer</FONT></P>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
 			</TD>
 		</TR>
 		<TR VALIGN=TOP>
 			<TD WIDTH=96>
-				<P ALIGN=CENTER><FONT SIZE=2>XMPP SSL</FONT></P>
-
+				<P ALIGN=CENTER><FONT SIZE=2>HTTP/HTTPS via Httpclient 3.0.1</FONT></P>
 			</TD>
 			<TD WIDTH=109>
-				<P ALIGN=CENTER><FONT SIZE=2>ecf.xmpps.smack</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.base</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.xmpp</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.filetransfer.httpclient</FONT></P>
 			</TD>
 			<TD WIDTH=266>
-
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.presence.IPresenceContainer</FONT></P>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>None</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.container.trivial</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.examples.provider.trivial</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+			<a href="http://wiki.eclipse.org/ECF_API_Docs#ECF_Core>Core API</a> Only (Example)
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>None</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.container.trivial</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.examples.provider.trivial</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+			<a href="http://wiki.eclipse.org/ECF_API_Docs#ECF_Core>Core API</a> Only (Example)
 			</TD>
 		</TR>
 		<TR VALIGN=TOP>
 			<TD WIDTH=96>
 				<P ALIGN=CENTER><FONT SIZE=2>ECF Generic Client</FONT></P>
-
 			</TD>
 			<TD WIDTH=109>
 				<P ALIGN=CENTER><FONT SIZE=2>ecf.generic.client</FONT></P>
@@ -160,40 +180,9 @@ ob_start();
 				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider</FONT></P>
 			</TD>
 			<TD WIDTH=266>
-
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
-			</TD>
-		</TR>
-		<TR VALIGN=TOP>
-			<TD WIDTH=96>
-				<P ALIGN=CENTER><FONT SIZE=2>ECF Datashare Client</FONT></P>
-
-			</TD>
-			<TD WIDTH=109>
-				<P ALIGN=CENTER><FONT SIZE=2>ecf.generic.channel</FONT></P>
-			</TD>
-			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.datashare</FONT></P>
-			</TD>
-			<TD WIDTH=266>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.datashare.IChannelContainer</FONT></P>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
-			</TD>
-		</TR>
-		<TR VALIGN=TOP>
-			<TD WIDTH=96>
-				<P ALIGN=CENTER><FONT SIZE=2>ECF Fileshare Client</FONT></P>
-
-			</TD>
-			<TD WIDTH=109>
-				<P ALIGN=CENTER><FONT SIZE=2>ecf.generic.fileshare</FONT></P>
-			</TD>
-			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.fileshare</FONT></P>
-			</TD>
-			<TD WIDTH=266>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.fileshare.IFileShareContainer</FONT></P>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
 			</TD>
 		</TR>
 		<TR VALIGN=TOP>
@@ -201,33 +190,31 @@ ob_start();
 				<P ALIGN=CENTER><FONT SIZE=2>ECF Generic Server</FONT></P>
 			</TD>
 			<TD WIDTH=109>
-
 				<P ALIGN=CENTER><FONT SIZE=2>ecf.generic.server</FONT></P>
 			</TD>
 			<TD WIDTH=164>
 				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider</FONT></P>
 			</TD>
 			<TD WIDTH=266>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
-
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
 			</TD>
 		</TR>
 		<TR VALIGN=TOP>
 			<TD WIDTH=96>
-				<P ALIGN=CENTER><FONT SIZE=2>Zeroconf/Bonjour</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>ECF Bittorrent Filetransfer</FONT></P>
 			</TD>
 			<TD WIDTH=109>
-				<P ALIGN=CENTER><FONT SIZE=2>ecf.discovery.jmdns</FONT></P>
-
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.filetransfer.bittorrent</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jmdns</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.bittorrent</FONT></P>
 			</TD>
 			<TD WIDTH=266>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.discovery.IDiscoveryContainer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
 			</TD>
 		</TR>
-
 		<TR VALIGN=TOP>
 			<TD WIDTH=96>
 				<P ALIGN=CENTER><FONT SIZE=2>IRC</FONT></P>
@@ -236,31 +223,261 @@ ob_start();
 				<P ALIGN=CENTER><FONT SIZE=2>ecf.irc.irclib</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-
 				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.irc</FONT></P>
 			</TD>
 			<TD WIDTH=266>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.presence.chat.IChatRoomManager</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Presence_API">Presence</a></FONT></P>
 			</TD>
 		</TR>
 		<TR VALIGN=TOP>
 			<TD WIDTH=96>
-
-				<P ALIGN=CENTER><FONT SIZE=2>JMS</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>Zeroconf/Bonjour/Rendevous</FONT></P>
 			</TD>
 			<TD WIDTH=109>
-				<P ALIGN=CENTER><FONT SIZE=2>ecf.jms.tcp.client</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.discovery.jmdns</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jms</FONT></P>
-
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jmdns</FONT></P>
 			</TD>
 			<TD WIDTH=266>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.core.ISharedObjectContainer</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">Discovery</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://jslp.sourceforge.net/">Java Service Locator Protocol (RFC 2608)</a></FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.discovery.jslp</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jslp</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">Discovery</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>MSN</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.msn.msnp</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.msn</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Presence_API">Presence</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>r-OSGi</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.r_osgi.peer</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.r-osgi</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>XMPP</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.xmpp.smack</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.xmpp</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Presence_API">Presence</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>XMPP SSL</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.xmpps.smack</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.xmpp</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Presence_API">Presence</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
 			</TD>
 		</TR>
 	</TBODY>
 </TABLE>
+
+
+       <br/><br/>
+       Container Types Available at <a href="http://ecf1.osuosl.org">OSU Open Source Lab</a><br>
+       <br/>
+<TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+	<COL WIDTH=96>
+	<COL WIDTH=109>
+	<COL WIDTH=164>
+	<COL WIDTH=266>
+	<THEAD>
+		<TR VALIGN=TOP>
+			<TH WIDTH=96>
+				<P ALIGN=CENTER>PROTOCOL(s)</P>
+			</TH>
+			<TH WIDTH=109>
+				<P ALIGN=CENTER>Container Factory Name</P>
+			</TH>
+			<TH WIDTH=164>
+				<P ALIGN=CENTER>Defined in Plugin</P>
+			</TH>
+			<TH WIDTH=266>
+
+				<P ALIGN=CENTER>Supported APIs</P>
+			</TH>
+		</TR>
+	</THEAD>
+	<TBODY>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>Yahoo</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.yahoo.jymsg</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.yahoo</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Presence_API">Presence</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://www.jgroups.org">JavaGroups Client</a></FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jgroups.client</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jgroups</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://www.jgroups.org">JavaGroups Manager</a></FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jgroups.manager</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jgroups</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://activemq.apache.org/">ActiveMQ Client</a></FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jms.activemq.tcp.client</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jms.activemq</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://activemq.apache.org/">ActiveMQ Manager</a></FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jms.activemq.tcp.manager</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jms.activemq</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://www.bea.com/framework.jsp?CNT=index.htm&FP=/content/products/weblogic">Weblogic Client</a></FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jms.activemq.tcp.client</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jms.weblogic.client</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://www.bea.com/framework.jsp?CNT=index.htm&FP=/content/products/weblogic">Weblogic Manager</a></FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.jms.weblogic.server</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.jms.weblogic</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">Remote Services</a></FONT></P>
+			</TD>
+		</TR>
+		<TR VALIGN=TOP>
+			<TD WIDTH=96>
+				<P ALIGN=CENTER><FONT SIZE=2>Skype</FONT></P>
+			</TD>
+			<TD WIDTH=109>
+				<P ALIGN=CENTER><FONT SIZE=2>ecf.call.skype</FONT></P>
+			</TD>
+			<TD WIDTH=164>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.skype</FONT></P>
+			</TD>
+			<TD WIDTH=266>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">Shared Object</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Datashare_API">Datashare</a></FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Presence_API">Presence</a></FONT></P>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+
        <h4><a name="Container Instance Disposal"></a>Container Instance Disposal</h4>       
        When
        no longer required the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html#dispose()">IContainer.dispose()</a> method should be called to release any resources associated with
