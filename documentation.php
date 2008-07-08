@@ -104,7 +104,7 @@ ob_start();
 				<P ALIGN=CENTER>Container Factory Name</P>
 			</TH>
 			<TH WIDTH=164>
-				<P ALIGN=CENTER>Defined in Plugin</P>
+				<P ALIGN=CENTER>Plugin</P>
 			</TH>
 			<TH WIDTH=266>
 
@@ -340,7 +340,7 @@ ob_start();
 				<P ALIGN=CENTER>Container Factory Name</P>
 			</TH>
 			<TH WIDTH=164>
-				<P ALIGN=CENTER>Defined in Plugin</P>
+				<P ALIGN=CENTER>Plugin</P>
 			</TH>
 			<TH WIDTH=266>
 
