@@ -121,7 +121,7 @@ ob_start();
 				<P ALIGN=CENTER><FONT SIZE=2>ecf.base</FONT></P>
 			</TD>
 			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf</FONT></P>
+				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.filetransfer</FONT></P>
 			</TD>
 			<TD WIDTH=266>
 				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
