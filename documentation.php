@@ -90,7 +90,7 @@ ob_start();
        <br/><br/>
        Container Types Available at dev.eclipse.org<br>
        <br/>
-<a href="#devcontainers"></a><TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+<a name="devcontainers"></a><TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
 	<COL WIDTH=96>
 	<COL WIDTH=109>
 	<COL WIDTH=164>
@@ -326,7 +326,7 @@ ob_start();
        <br/><br/>
        Container Types Available at <a href="http://ecf1.osuosl.org">OSU Open Source Lab</a><br>
        <br/>
-<a href="#osuoslcontainers"></a><TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
+<a name="osuoslcontainers"></a><TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
 	<COL WIDTH=96>
 	<COL WIDTH=109>
 	<COL WIDTH=164>
