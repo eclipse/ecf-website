@@ -55,6 +55,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>July 24, 2008 - Two ECF video demos available on <a href="http://live.eclipse.org">live.eclipse.org</a></b>
+			See <a href="http://live.eclipse.org/node/543">here for Cola Real-Time Shared Editing</a> and <a href="http://live.eclipse.org/node/571">here for ECF 2.0.0 - Some New Features</a>.
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>June 24, 2008 - ECF 2.0.0/Ganymede Release available on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
            <p></p>
