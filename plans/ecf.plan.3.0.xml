@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
 <plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml"
       name="Eclipse Communication Framework">
-   <release projectid="technology.ecf" version="3.0"/>
+   <release projectid="rt.ecf" version="3.0"/>
    <introduction>
      <html:div><html:p>Previously, ECF has had two major releases: <html:a href="http://www.eclipse.org/ecf/downloads.php">ECF 1.0.0</html:a> as part of <html:a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</html:a>, and ECF 2.0.0 as part of <html:a href="http://wiki.eclipse.org/Ganymede_Simultaneous_Release">Ganymede Simultaneous Release</html:a>.  This plan describes the work for ECF 3.0.0, which will occur in June, 2009 as part of the <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">Galileo Simultaneous Release</html:a>.</html:p></html:div>
    </introduction>
