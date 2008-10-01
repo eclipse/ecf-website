@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.team.cvs.core.cvsnature">
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.remoteservices.client,org.eclipse.ecf.examples.remoteservices.client"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.remoteservices.common,org.eclipse.ecf.examples.remoteservices.common"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/examples/plugins/org.eclipse.ecf.examples.remoteservices.server,org.eclipse.ecf.examples.remoteservices.server"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/server-side/examples/bundles/org.eclipse.ecf.examples.remoteservices.client,org.eclipse.ecf.examples.remoteservices.client"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/server-side/examples/bundles/org.eclipse.ecf.examples.remoteservices.common,org.eclipse.ecf.examples.remoteservices.common"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/server-side/examples/bundles/org.eclipse.ecf.examples.remoteservices.server,org.eclipse.ecf.examples.remoteservices.server"/>
 </provider>
 </psf>

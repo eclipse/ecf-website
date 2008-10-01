@@ -4,8 +4,8 @@
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.apache.commons.codec,org.apache.commons.codec,v1_2_0"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.apache.commons.httpclient,org.apache.commons.httpclient,v3_0_1"/>
 <project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/tools,org.eclipse.orbit/org.apache.commons.logging,org.apache.commons.logging,v1_0_4"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/providers/org.eclipse.ecf.provider.filetransfer.httpclient,org.eclipse.ecf.provider.filetransfer.httpclient"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/providers/org.eclipse.ecf.provider.filetransfer.httpclient.ssl,org.eclipse.ecf.provider.filetransfer.httpclient.ssl"/>
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/technology,org.eclipse.ecf/features/org.eclipse.ecf.provider.filetransfer.httpclient-feature,org.eclipse.ecf.provider.filetransfer.httpclient-feature"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/providers/bundles/org.eclipse.ecf.provider.filetransfer.httpclient,org.eclipse.ecf.provider.filetransfer.httpclient"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/providers/bundles/org.eclipse.ecf.provider.filetransfer.httpclient.ssl,org.eclipse.ecf.provider.filetransfer.httpclient.ssl"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/releng/features/org.eclipse.ecf.provider.filetransfer.httpclient-feature,org.eclipse.ecf.provider.filetransfer.httpclient-feature"/>
 </provider>
 </psf>
