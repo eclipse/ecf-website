@@ -3,11 +3,6 @@ org.eclipse.ecf.core.events
 org.eclipse.ecf.core.identity
 org.eclipse.ecf.core.provider
 org.eclipse.ecf.core.security
-org.eclipse.ecf.core.sharedobject
-org.eclipse.ecf.core.sharedobject.events
-org.eclipse.ecf.core.sharedobject.provider
-org.eclipse.ecf.core.sharedobject.security
-org.eclipse.ecf.core.sharedobject.util
 org.eclipse.ecf.core.start
 org.eclipse.ecf.core.user
 org.eclipse.ecf.core.util
@@ -77,6 +72,12 @@ org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.events
 org.eclipse.ecf.remoteservice.service
 org.eclipse.ecf.remoteservice.util
+org.eclipse.ecf.remoteservices.ui
+org.eclipse.ecf.server.generic
+org.eclipse.ecf.server.generic.app
+org.eclipse.ecf.storage
+org.eclipse.ecf.sync
+org.eclipse.ecf.sync.doc
 org.eclipse.ecf.telephony.call
 org.eclipse.ecf.telephony.call.events
 org.eclipse.ecf.telephony.call.service
