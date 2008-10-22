@@ -30,14 +30,14 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 2.0.0 Release now available (6/24/2008).</b>
+    <b>ECF 2.0.1 Service Release now available (9/16/2008).</b>
     <p>
     <b>NOTE:  For Eclipse 3.4 it is necessary to use a distinct update site.  See <a href="#2.0.0M6">ECF 2.0 Install via Update Site -- for use with Eclipse 3.4</a> below.</b>
     <p>
     For Eclipse 3.3, please use the <a href="#2.0.0M5">ECF 2.0 Install via Update Site -- <b>for use with Eclipse 3.3</b></a>.
     <p></p>
     <p>
-    ECF 2.0.0 requires <b>Eclipse 3.3</b> or 3.4.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 2.0.1 requires <b>Eclipse 3.3</b> or 3.4.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
  See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, project team meetings, etc.
 </p>
