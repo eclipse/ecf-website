@@ -16,6 +16,7 @@ org.eclipse.ecf.core-2.0.1.v20081106-1700.zip
 org.eclipse.ecf.core-2.0.1.v20081106-1900.zip
 org.eclipse.ecf.core-2.0.1.v20081106-2046.zip
 org.eclipse.ecf.core-2.0.1.v20081107-1500.zip
+org.eclipse.ecf.core-2.0.1.v20081107-1700.zip
 org.eclipse.ecf.examples-2.0.1.v20081030-1700.zip
 org.eclipse.ecf.examples-2.0.1.v20081030-1900.zip
 org.eclipse.ecf.examples-2.0.1.v20081031-1700.zip
@@ -34,6 +35,7 @@ org.eclipse.ecf.examples-2.0.1.v20081106-1700.zip
 org.eclipse.ecf.examples-2.0.1.v20081106-1900.zip
 org.eclipse.ecf.examples-2.0.1.v20081106-2046.zip
 org.eclipse.ecf.examples-2.0.1.v20081107-1500.zip
+org.eclipse.ecf.examples-2.0.1.v20081107-1700.zip
 org.eclipse.ecf.sdk-2.0.1.v20081030-1700.zip
 org.eclipse.ecf.sdk-2.0.1.v20081030-1900.zip
 org.eclipse.ecf.sdk-2.0.1.v20081031-1700.zip
@@ -52,3 +54,4 @@ org.eclipse.ecf.sdk-2.0.1.v20081106-1700.zip
 org.eclipse.ecf.sdk-2.0.1.v20081106-1900.zip
 org.eclipse.ecf.sdk-2.0.1.v20081106-2046.zip
 org.eclipse.ecf.sdk-2.0.1.v20081107-1500.zip
+org.eclipse.ecf.sdk-2.0.1.v20081107-1700.zip
