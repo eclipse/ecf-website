@@ -1,7 +1,7 @@
 <?php
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
 	$projectInfo = new ProjectInfo("rt.ecf");
-	$projectInfo->generate_common_nav($Nav);
+#	$projectInfo->generate_common_nav($Nav);
 
 	# set default theme
 	$_theme = "Phoenix";
@@ -26,6 +26,7 @@
     $Nav->addCustomNav("Downloads","http://www.eclipse.org/ecf/downloads.php","_self",1);
     
     $Nav->addCustomNav("Newsgroups","http://dev.eclipse.org/newslists/news.eclipse.technology.ecf/maillist.html","_self",1);
+    $Nav->addCustomNav("Bugs","http://www.eclipse.org/ecf/bugs.php","_self",1);
     $Nav->addCustomNav("Plan","http://www.eclipse.org/ecf/plans/ecf.plan.3.0.xml","_self",1);
     $Nav->addCustomNav("Contributing","http://www.eclipse.org/ecf/dev_resources.php","_self",1);
     $Nav->addCustomNav("Mail Lists","https://dev.eclipse.org/mailman/listinfo/ecf-dev","_self",1);
