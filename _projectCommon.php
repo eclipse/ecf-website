@@ -1,7 +1,7 @@
 <?php
 	require_once($_SERVER['DOCUMENT_ROOT'] . "/projects/common/project-info.class.php");
 	$projectInfo = new ProjectInfo("rt.ecf");
-	$projectInfo->generate_common_nav($Nav);
+#	$projectInfo->generate_common_nav($Nav);
 
 	# set default theme
 	$_theme = "Phoenix";
