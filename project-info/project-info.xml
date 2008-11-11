@@ -8,7 +8,7 @@
     <product name="ECF"/>
   </bugzilla>
   
-  <integrators url="integrators.php"/>
+  <integrators url="http://www.eclipse.org/ecf/integrators.php"/>
 
   <!--
      - Committers and non-committer Contributors are the raison d'etre of 
