@@ -19,7 +19,7 @@
     -->
   <team url="/ecf/team.php"/>
   
-  <cvs repository="/cvsroot/technology/">
+  <cvs repository="/cvsroot/rt/">
     <module path="org.eclipse.ecf/applications" /> 
     <module path="org.eclipse.ecf/builds" /> 
     <module path="org.eclipse.ecf/examples" /> 
@@ -58,7 +58,7 @@
      - containing a number of simple HTML paragraphs with an executive summary
      - of the project status.
      - This file is often stored in the /project-info/ directory, thus the
-     - url would be something like "/technology/project-info/executive-summary.html".
+     - url would be something like "/rt/project-info/executive-summary.html".
     -->
 
   <summary paragraph-url="/ecf/project-info/executive-summary.html"/>
@@ -112,7 +112,7 @@
   </mailing-lists>
   
   <newsgroups url="http://www.eclipse.org/ecf/newsgroups.php">
-    <newsgroup name="eclipse.technology.ecf"/>
+    <newsgroup name="eclipse.rt.ecf"/>
   </newsgroups>
   
   <!--
