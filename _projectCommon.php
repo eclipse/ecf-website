@@ -22,7 +22,12 @@
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
  	$Nav->addNavSeparator("ECF Home", "/ecf/");
     $Nav->addCustomNav("About This Project","http://www.eclipse.org/projects/project_summary.php?projectid=rt.ecf","_self",1);
-    $Nav->addCustomNav("Getting Started","http://www.eclipse.org/ecf/gettingStarted.php","_self",1);
+    
+    $Nav->addCustomNav("Contact US","http://www.eclipse.org/ecf/contact.php","_self",1);
+    $Nav->addCustomNav("Contact US","contact.php","_self",1);
+    $Nav->addCustomNav("Contact US","/ecf/contact.php","_self",1);
+    
+    $Nav->addCustomNav("Getting Started","/ecf/gettingStarted.php","_self",1);
     $Nav->addCustomNav("Downloads","http://www.eclipse.org/ecf/downloads.php","_self",1);
     
     $Nav->addCustomNav("Newsgroups","http://dev.eclipse.org/newslists/news.eclipse.technology.ecf/maillist.html","_self",1);
