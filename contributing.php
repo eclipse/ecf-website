@@ -25,12 +25,7 @@
 	<div class="homeitem3col">	
      	   <h3>ECF Contributing</h3>
      	<div style="margin:10px;">
-           <p>
-            The Contributing tag appears to be hard-linked to the Contributors tag.
-           </p>
-           <p>
-            We are not clear on how we should distinguish the content between these two links.
-           </p>
+           
 	</div>
 
 <h3></h3>
