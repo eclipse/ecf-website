@@ -21,8 +21,17 @@
 	# Define your project-wide Nav bars here.
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
 # 	$Nav->addNavSeparator("ECF Home", "/ecf/");
-    $Nav->addCustomNav("More About","http://www.eclipse.org/projects/project_summary.php?projectid=rt.ecf","_self",1);
+    $Nav->addCustomNav("About This Project","http://www.eclipse.org/projects/project_summary.php?projectid=rt.ecf","_self",1);
     $Nav->addCustomNav("Getting Started","http://www.eclipse.org/ecf/gettingStarted.php","_self",1);
+    $Nav->addCustomNav("Downloads","http://www.eclipse.org/ecf/downloads.php","_self",1);
+    
+    $Nav->addCustomNav("Newsgroups","http://dev.eclipse.org/newslists/news.eclipse.technology.ecf/maillist.html","_self",1);
+    $Nav->addCustomNav("Plan","http://www.eclipse.org/ecf/plans/ecf.plan.3.0.xml","_self",1);
+    $Nav->addCustomNav("Contributing","http://www.eclipse.org/ecf/dev_resources.php","_self",1);
+    $Nav->addCustomNav("Mail Lists","https://dev.eclipse.org/mailman/listinfo/ecf-dev","_self",1);
+
+        
+    
 # 	$Nav->addCustomNav("Team", "team.php", 	"_self", 1);
 # 	$Nav->addCustomNav("Team", "team.php", 	"_self", 1);
 # 	$Nav->addCustomNav("Downloads", "downloads.php", 	"_self", 1);
