@@ -49,7 +49,7 @@
             </li>
             <li>
              an examples nugget. This describes available examples. It should list them in order of increasing complexity 
-             and sophistication. It should recommend an example that is more than “hello-world,” but one that comes up 
+             and sophistication. It should recommend an example that is more than hello-world, but one that comes up 
              quickly and is bug-free and that demonstrates that ECF has been installed correctly.
             </li>
            </ul>
