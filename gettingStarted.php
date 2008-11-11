@@ -9,7 +9,9 @@
 	$Nav	= new Nav();
 	$Menu 	= new Menu();
 	include($App->getProjectCommon());
-
+	$Nav->addCustomNav("More About","http://www.eclipse.org/projects/project_summary.php?projectid=rt.ecf","_self",1);
+	$Nav->addCustomNav("Getting Started","http://www.eclipse.org/ecf/gettingStarted.php","_self",1);
+	
 	$html = <<<EOHTML
 <div id="rightcolumn">
  <div class="sideitem">
