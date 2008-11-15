@@ -1,4 +1,4 @@
-rg.eclipse.ecf.core-2.0.1.v20081101-1700.zip
+org.eclipse.ecf.core-2.0.1.v20081101-1700.zip
 org.eclipse.ecf.core-2.0.1.v20081102-1700.zip
 org.eclipse.ecf.core-2.0.1.v20081103-1700.zip
 org.eclipse.ecf.core-2.0.1.v20081104-1700.zip
