@@ -56,7 +56,7 @@
 		</td>
 		<td valign="top">
 	  	<b>Nov 21, 2008 - Scott Lewis, Jan Rellermeyer and Markus Alexander Kuppe gave a talk titled "Service Discovery and Remote Services with the Eclipse Communication Framework" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
-			Slides can be found <a href="http://www.eclipse.org/ecf/presentations/ese2008/ESE_2008_ECF.pdf">here</a>
+			Slides can be found <a href="http://www.eclipse.org/ecf/presentations/ese08/ESE_2008_ECF.pdf">here</a>
            <p></p>
 		</td>
 	</tr>
