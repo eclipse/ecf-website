@@ -55,7 +55,17 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Nov 21, 2008 - Scott Lewis, Jan Rellermeyer and Markus Alexander Kuppe gave a talk titled "Service Discovery and Remote Services with the Eclipse Communication Framework" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
+	  	<b>Nov 24, 2008 - Marcelo Mayworm, and Scott Lewis gave a talk titled "ECF Inside and Out" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
+			A description of the talk, and slide will soon be found <a href="http://www.eclipsecon.org/summiteurope2008/sessions?id=206">here</a>
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>Nov 21, 2008 - Jan Rellermeyer, Markus Alexander Kuppe, and Scott Lewis gave a talk titled "Service Discovery and Remote Services with the Eclipse Communication Framework" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
 			Slides can be found <a href="http://www.eclipse.org/ecf/presentations/ese08/ESE_2008_ECF.pdf">here</a>
            <p></p>
 		</td>
