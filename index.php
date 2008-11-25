@@ -55,8 +55,9 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Nov 24, 2008 - Marcelo Mayworm, and Scott Lewis gave a talk titled "ECF Inside and Out" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
-			A description of the talk, and slide will soon be found <a href="http://www.eclipsecon.org/summiteurope2008/sessions?id=206">here</a>
+	  	<b>Nov 24, 2008 - Marcelo Mayworm and Scott Lewis gave a talk titled "ECF Inside and Out" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
+			A description of the talk is <a href="http://www.eclipsecon.org/summiteurope2008/sessions?id=206">here</a>, and the slides
+			are available <a href="http://www.eclipse.org/ecf/presentations/ese2008/ECF_Eclipse_Summit_2008_Inside_and_Out.pdf">here</a>.
            <p></p>
 		</td>
 	</tr>
