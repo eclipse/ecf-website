@@ -3,11 +3,6 @@ org.eclipse.ecf.core.events
 org.eclipse.ecf.core.identity
 org.eclipse.ecf.core.provider
 org.eclipse.ecf.core.security
-org.eclipse.ecf.core.sharedobject
-org.eclipse.ecf.core.sharedobject.events
-org.eclipse.ecf.core.sharedobject.provider
-org.eclipse.ecf.core.sharedobject.security
-org.eclipse.ecf.core.sharedobject.util
 org.eclipse.ecf.core.start
 org.eclipse.ecf.core.user
 org.eclipse.ecf.core.util
@@ -62,8 +57,6 @@ org.eclipse.ecf.provider.filetransfer.retrieve
 org.eclipse.ecf.provider.filetransfer.util
 org.eclipse.ecf.provider.generic
 org.eclipse.ecf.provider.generic.gmm
-org.eclipse.ecf.provider.irc.bot
-org.eclipse.ecf.provider.irc.bot.handler
 org.eclipse.ecf.provider.jmdns.container
 org.eclipse.ecf.provider.jmdns.identity
 org.eclipse.ecf.provider.jslp.container
@@ -79,6 +72,7 @@ org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.events
 org.eclipse.ecf.remoteservice.service
 org.eclipse.ecf.remoteservice.util
+org.eclipse.ecf.remoteservice.util.tracker
 org.eclipse.ecf.remoteservices.ui
 org.eclipse.ecf.server.generic
 org.eclipse.ecf.server.generic.app
