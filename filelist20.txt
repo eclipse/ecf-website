@@ -1,3 +1,6 @@
 org.eclipse.ecf.core-2.0.1.v20081130-1755.zip
+org.eclipse.ecf.core-2.0.1.v20081201-1605.zip
 org.eclipse.ecf.examples-2.0.1.v20081130-1755.zip
+org.eclipse.ecf.examples-2.0.1.v20081201-1605.zip
 org.eclipse.ecf.sdk-2.0.1.v20081130-1755.zip
+org.eclipse.ecf.sdk-2.0.1.v20081201-1605.zip
