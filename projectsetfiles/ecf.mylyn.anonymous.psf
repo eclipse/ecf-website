@@ -4,7 +4,7 @@
 
 <!-- ecf api projects -->
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf,org.eclipse.ecf"/>
-<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf.core.identity,org.eclipse.ecf.core.identity"/>
+<project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf.identity,org.eclipse.ecf.identity"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf.core.sharedobject,org.eclipse.ecf.core.sharedobject"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf.datashare,org.eclipse.ecf.datashare"/>
 <project reference="1.0,:pserver:anonymous@dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf.filetransfer,org.eclipse.ecf.filetransfer"/>

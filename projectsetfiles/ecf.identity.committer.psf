@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <psf version="2.0">
 <provider id="org.eclipse.team.cvs.core.cvsnature">
-<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf.core.identity,org.eclipse.ecf.core.identity"/>
+<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/framework/bundles/org.eclipse.ecf.identity,org.eclipse.ecf.identity"/>
 </provider>
 </psf>
