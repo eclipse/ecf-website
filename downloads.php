@@ -33,7 +33,7 @@ ob_start();
     <b>ECF 2.1 Release Now Available (12/24/2008).</b>
     <p></p>
     <p>
-    ECF 2.1 requires <b>Eclipse 3.4</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 2.1 requires <b>Eclipse 3.4.1</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
  See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, project team meetings, etc.
     </p>
