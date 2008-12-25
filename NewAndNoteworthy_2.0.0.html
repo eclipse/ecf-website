@@ -1,0 +1,295 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css" type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border=0 cellspacing=5 cellpadding=2 width="100%">
+  <tbody>
+    <tr>
+      <td width="69%" class="bannertext">
+        <font class="indextop style">eclipse communication framework</font>
+        <br><br>
+        <font class="indexsub">an eclipse technology project</font>
+        <br><br>
+        <font class="indextop style2">New and Noteworthy</font><br>2.0.0 Release</font>
+        <br><br><br>
+        Return to <a href="downloads.php">ECF download page</a></br>
+        <br><br>
+        <a href="NewAndNoteworthy_1.0.0.html">New and Noteworthy for 1.0.0</a><br>
+        <a href="NewAndNoteworthy_1.1.0.html">New and Noteworthy for 1.1.0</a><br>
+        <a href="NewAndNoteworthy_1.2.0.html">New and Noteworthy for 1.2.0</a><br>
+        <br><br>
+      </td>
+      <td width="31%">
+        <div align="center">
+          <img src="../images/Idea.jpg" width="120" height="86" hspace="50" align="middle">
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<table>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Real-Time Shared Editing</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    In ECF 2.0.0/Ganymede, we introduce <a href="http://wiki.eclipse.org/DocShare_Plugin">Real-Time Shared Editing</a> that works over
+    public IM protocols like Google Talk/XMPP and Skype.  This allows two developers
+    to work collaboratively in real-time to edit source code and/or documents with change conflicts resolved in real time.  Usage documentation as well as links to technical
+    documentation and source code are available <a href="http://wiki.eclipse.org/DocShare_Plugin">here</a>.  There is also <a href="http://live.eclipse.org/node/543">a video showing the
+    usage of the technology available</a>.
+    </p>
+       <br><br>
+    </td>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Adding Real-Time Shared Editing to Other Text Editors</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>It's possible to add real-time shared editing capabilities to other editors, and documentation on how to do this 
+    is now available <a href="http://wiki.eclipse.org/Extending_Real-Time_Shared_Editing_for_Use_with_Other_Editors">here</a>.
+    </p>
+       <br><br>
+    </td>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>r-OSGi added as ECF Remote Services provider</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    We have added an implementation of the <a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">ECF remote services API</a> based upon <a href="http://r-OSGi.sourceforge.net/">r-OSGi</a>.  This
+    implementation allows clients to access and use distributed OSGi services.  
+    </p>
+    <p>
+    Remote services may be accessed in either of two ways:
+    </p>
+    <ol>
+    <li>Transparently, via the 
+    OSGi service registry.  With transparent remote service access, clients can access both local and remote services in exactly the same way, by looking up
+    ServiceReferences and the underlying service via the BundleContext.getServiceReference(..) or by using a ServiceTracker.</li>
+    <li>Explicitly, via the <a href="http://wiki.eclipse.org/ECF_API_Docs#Remote_Services_API">ECF remote services API</a>.  This 
+    way of accessing the remote service allows clients to have greater control over how they invoke remote methods and handing
+    of partial failure.  For example, the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" class="external text" title="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" rel="nofollow">IRemoteService</a> interface allows clients to use 
+    advanced asynchronous and asynchronous-with-listener remote method invocation, as well as create and use future results.</li>
+    </ol>
+    <p>
+    This provider includes consists of two bundles
+    </p>
+    <ol>
+    <li>r-OSGi RC 2 itself in plugin <b>ch.ethz.iks.r_osgi.remote</b>.  Click <a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ecf/providers/ch.ethz.iks.r_osgi.remote/?root=Technology_Project">here to browse source</a>.</li>
+    <li>An implementation of the ECF remote services API based upon 1.  In plugin org.eclipse.ecf.provider.r_osgi.   Click <a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ecf/providers/org.eclipse.ecf.provider.r_osgi/?root=Technology_Project">here to browse source</a>.</li>
+    </ol>
+    <p>
+    There is example and test code available for the r-OSGi provider (and the ECF generic provider) available <a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ecf/tests/org.eclipse.ecf.tests.remoteservice/?root=Technology_Project">here</a>.
+    </p>
+       <br><br>
+    </td>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Discovery API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+       The discovery API has been simplified and extended.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=209774">bug #209774</a> and the
+       <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs#Discovery_API">ECF Discovery API</a> documentation.
+       <br><br>
+       <b>IMPORTANT NOTE:</b>The discovery API has undergone a number of simplifications that make it easier to use, but have broken backward compatibility.  Applications
+       that have been written to a previous version of the discovery API will have to be changed to use the new API.  See the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/IDiscoveryContainerAdapter.html">IDiscoveryContainerAdapter</a>
+       class for more information.
+    </td>
+  </TR>
+
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>ECF Core and Filetransfer plugins added to Eclipse Platform for P2</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    ECF's core (org.eclipse.ecf, org.eclipse.ecf.identity) and filetransfer (org.eclipse.ecf.filetransfer, org.eclipse.ecf.provider.filetransfer, org.eclipse.ecf.ssl, org.eclipse.ecf.provider.filetransfer.ssl) have
+    been added to the Eclipse Platform distribution for usage in P2, the new Equinox Provisioning system.
+    </p>
+       <br><br>
+    </td>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  
+    <TR>
+  
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Service Locator Protocol</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    We have added a <a href="http://jslp.sourceforge.net/">jSLP-based</a> implementation of the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a>.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=200804">bug 200804</a> for details.
+    </p>
+       <br><br>
+    </td>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Peer-to-Peer Updatesite Discovery</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    There is now an example of using the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a> for peer-to-peer update site discovery.  <a href="http://wiki.eclipse.org/Update_Site_Discovery">See here screenshots and for details.</a>.
+    </td>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Peer-to-Peer Remote Services</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    There is an example of using the <a href="http://wiki.eclipse.org/ECF_API_Docs#Discovery_API">ECF discovery API</a> for peer-to-peer discovery of remote OSGi services.  The example remote service (in this case remote access to the EnvironmentInfo Equinox Service) can then be accessed
+    in several ways:
+<ul><li>(s) = synchronously -- block calling thread until service host responds
+</li><li>(a) = asynchronously -- calling thread does not block and result is provided via notification to a listener
+</li><li>(f) = future -- calling thread does not block, and an instance of IAsynchResult is returned immediately  Receiver can inspect IAsynchResult for completion.
+</li><li>(p) = proxy -- calling thread calls a proxy instance of service interface) with normal call/return semantics
+</li></ul>
+<p>These access methods are made available via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" class="external text" title="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/IRemoteService.html" rel="nofollow">IRemoteService</a>.  
+</p><p><b>Note that the proxy can also be accessed directly in the OSGi service registry via BundleContext.getServiceReference() or a ServiceTracker.</b>  In this way, if complete API transparency is desired by the programmer, then the remote service can be transparently accessed.
+</p>    
+<p>
+Note also that we currently have provider implementations of the remote services API based upon ECF generic (included in ECF), XMPP (included in ECF), <a href="http://activemq.apache.org/">ActiveMQ</a> and <a href="http://www.bea.com">BEA Weblogic</a>-based <a href="http://java.sun.com/jms">JMS</a> implementations (<a href="http://ecf1.osuosl.org">found here</a>), and a <a href="http://www.jgroups.org/javagroupsnew/docs/index.html">Javagroups</a>-based implementation (<a href="http://ecf1.osuosl.org">found here</a>).  We also have a pending contribution
+of the <a href="http://r-osgi.sourceforge.net/">r-OSGI</a>-based provider, expected to be included in ECF milestone 6 pending Eclipse Foundation IP approval (CQs <a href="http://dev.eclipse.org/ipzilla/show_bug.cgi?id=2063">2063</a> and <a href="http://dev.eclipse.org/ipzilla/show_bug.cgi?id=2064">2064</a>). 
+</p>
+<a href="http://wiki.eclipse.org/Discovery_of_Remote_Services">See here for screen shots and details</a>.
+       <br><br>
+    </td>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>URL and Eclipse View sharing</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+       It's now possible to immediately share URLs and to remotely open Eclipse views via ECF the XMPP/Google Talk and/or Skype providers.
+       To do so, open the context menu (right click) on the buddy of your choice in the contacts list:
+       
+              <p></p>       
+       <img src="images/screens/showurl.png"></li>
+       <br><br>
+       Then the receiver will see a notification like this
+       <p></p>
+       <img src="images/screens/showurlreceive.png"></li>
+       <br><br>
+       And if they accept the request will then see
+       <p></p>
+       <img src="images/screens/showurlreceive1.png"></li>
+       <br><br>
+       The 'Send Show View Request...' has a similar sequence.
+       
+       <br><br>
+    </td>
+  </TR>
+  
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Screen Captures sent through IM</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+       Screen captures can now be made and sent via ECF Datashare API directly to buddies on the users Contacts List.  See <a href="http://wiki.eclipse.org/Screen_Captures_over_IM">Screen Captures over IM Wiki Page</a> for more information.
+       <br><br>
+    </td>
+  </TR>
+
+  <TR> <!----------------------------------------------------->
+    <TD colSpan=2> <HR> </TD>
+  </TR>
+  
+ <TR><TD colSpan=2><H2>ECF API Changes</H2></TD>
+
+<TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>FileTransfer API Enhanced</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    	Added support improvided simplified outgoing file transfer.  Added new provider for SCP-based file retrieve (download)
+    	and file send (upload).  See documentation for <a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">ECF File Transfer API</a>.
+       <br><br>
+    </td>
+  </TR>
+
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>P2/Eclipse Platform used ECF Filetransfer</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%"><p>
+    ECF's <a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer API</a> is now being used by the <a href="http://wiki.eclipse.org/Equinox_Provisioning">Equinox P2</a> effort and so along the ECF core plugins are included
+    in the Eclipse SDK (org.eclipse.ecf.*.jar).
+    </p>
+           <br><br>
+    
+    </td>
+  </TR>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Discovery API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+       The discovery API has been simplified and extended.  See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=209774">bug #209774</a> and the
+       <a href="http://wiki.eclipse.org/index.php/ECF_API_Docs#Discovery_API">ECF Discovery API</a> documentation.
+       <br><br>
+       <b>IMPORTANT NOTE:</b>The discovery API has undergone a number of simplifications that make it easier to use, but have broken backward compatibility.  Applications
+       that have been written to a previous version of the discovery API will have to be changed to use the new API.  See the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/discovery/IDiscoveryContainerAdapter.html">IDiscoveryContainerAdapter</a>
+       class for more information.
+    </td>
+  </TR>
+
+  
+</table>
+
+</body>
+</html>
