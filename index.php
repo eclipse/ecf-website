@@ -50,18 +50,16 @@
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
- 
-    <tr>
+	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Dec 24, 2008 - ECF 2.1.0/Ganymede Release available on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
+	  	<b>Dec 24, 2008 - ECF 2.1 Release available on eclipse.org. </b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 2.1 New and Noteworthy</a> release documentation.
            <p></p>
 		</td>
 	</tr>
-	
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
