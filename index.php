@@ -56,7 +56,6 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-				<td valign="top">
 	  	<b>Dec 24, 2008 - ECF 2.1.0/Ganymede Release available on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
            <p></p>
