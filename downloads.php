@@ -44,7 +44,7 @@ ob_start();
         include 'getNugget.php';
         $html = getNugget("EcfInstallViaUpdate3.4.html",$html);
         $html = getNugget("EcfInstallViaZip3.4.html",$html);
-        $html = getNugget("EcfInstallViaUpdate.html",$html);
+        
         
         $html = getNugget("EcfDailies.html",$html);
         $html = getNugget("EcfDailiesUpdate.html",$html);
