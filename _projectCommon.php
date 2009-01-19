@@ -5,7 +5,7 @@
 
 	# set default theme
 	$_theme = "Phoenix";
-	$theme = "Phoenix";
+	$theme = "Nova";
 	if(isset($_POST['theme'])) {
 		$_theme = $_POST['theme'];
 	}
