@@ -9,6 +9,7 @@ org.eclipse.ecf.core.sharedobject.provider
 org.eclipse.ecf.core.sharedobject.security
 org.eclipse.ecf.core.sharedobject.util
 org.eclipse.ecf.core.start
+org.eclipse.ecf.core.status
 org.eclipse.ecf.core.user
 org.eclipse.ecf.core.util
 org.eclipse.ecf.datashare
@@ -19,6 +20,11 @@ org.eclipse.ecf.discovery
 org.eclipse.ecf.discovery.identity
 org.eclipse.ecf.discovery.service
 org.eclipse.ecf.discovery.ui
+org.eclipse.ecf.discovery.ui.model
+org.eclipse.ecf.discovery.ui.model.impl
+org.eclipse.ecf.discovery.ui.model.provider
+org.eclipse.ecf.discovery.ui.model.resource
+org.eclipse.ecf.discovery.ui.model.util
 org.eclipse.ecf.docshare
 org.eclipse.ecf.docshare.menu
 org.eclipse.ecf.docshare.messages
@@ -45,6 +51,7 @@ org.eclipse.ecf.presence.collab.ui.view
 org.eclipse.ecf.presence.history
 org.eclipse.ecf.presence.im
 org.eclipse.ecf.presence.roster
+org.eclipse.ecf.presence.search
 org.eclipse.ecf.presence.service
 org.eclipse.ecf.presence.ui
 org.eclipse.ecf.presence.ui.chatroom
