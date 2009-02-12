@@ -1,0 +1,39 @@
+<h3>Futures for Concurrency</h3>
+
+<p>
+This milestone includes a new, provisional API for futures.  Futures allow easier handling of 
+concurrency and synchronization in multi-threaded and/or distributed systems, 
+by introducing an object (the future result aka IFuture) that serves as a proxy for a result that 
+is not known, because the computation of the result is not (yet) complete.
+</p>
+<p>
+For example, here is an API that would normally return an Integer 
+as the result of some synchronous computation
+</p>
+<p>
+<blockquote>
+<pre>
+// foo() may be a long-running operation, and if so will block in order to 
+// synchronously return the result
+Integer result = foo();
+</pre>
+</blockquote>
+With futures, foo() could instead return an IFuture, and thereby guarantee  
+that foo() would not block indefinitely.
+<blockquote>
+<pre>
+// foo will return the future immediately and operation will complete
+// asynchronously
+IFuture future = foo();
+// do other things while operation is completed asynchronously
+...
+Integer result = (Integer) future.get();
+</pre>
+</blockquote>
+</p>
+See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=253777">bug 253777</a>
+to comment on or contribute to the ongoing work in this area.  Note that work is ongoing
+to integrate this API with the <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=261952">Jobs API</a>, as well as 
+integration with the futures support in JRE 1.5.
+
+
