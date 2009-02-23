@@ -1,6 +1,7 @@
 org.eclipse.ecf.core
 org.eclipse.ecf.core.events
 org.eclipse.ecf.core.identity
+org.eclipse.ecf.core.jobs
 org.eclipse.ecf.core.provider
 org.eclipse.ecf.core.security
 org.eclipse.ecf.core.sharedobject
@@ -30,14 +31,18 @@ org.eclipse.ecf.docshare.menu
 org.eclipse.ecf.docshare.messages
 org.eclipse.ecf.example.clients
 org.eclipse.ecf.example.clients.applications
+org.eclipse.ecf.examples.provider.trivial
 org.eclipse.ecf.filetransfer
 org.eclipse.ecf.filetransfer.events
+org.eclipse.ecf.filetransfer.events.socket
+org.eclipse.ecf.filetransfer.events.socketfactory
 org.eclipse.ecf.filetransfer.identity
 org.eclipse.ecf.filetransfer.service
 org.eclipse.ecf.filetransfer.ui
 org.eclipse.ecf.filetransfer.ui.actions
 org.eclipse.ecf.internal.docshare
-org.eclipse.ecf.internal.server
+org.eclipse.ecf.osgi.services.discovery
+org.eclipse.ecf.osgi.services.distribution
 org.eclipse.ecf.presence
 org.eclipse.ecf.presence.bot
 org.eclipse.ecf.presence.bot.application
@@ -66,6 +71,7 @@ org.eclipse.ecf.provider.comm.tcp
 org.eclipse.ecf.provider.datashare
 org.eclipse.ecf.provider.discovery
 org.eclipse.ecf.provider.filetransfer.browse
+org.eclipse.ecf.provider.filetransfer.events.socket
 org.eclipse.ecf.provider.filetransfer.httpclient
 org.eclipse.ecf.provider.filetransfer.identity
 org.eclipse.ecf.provider.filetransfer.outgoing
@@ -86,7 +92,6 @@ org.eclipse.ecf.provider.xmpp
 org.eclipse.ecf.provider.xmpp.identity
 org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.events
-org.eclipse.ecf.remoteservice.service
 org.eclipse.ecf.remoteservice.util
 org.eclipse.ecf.remoteservice.util.tracker
 org.eclipse.ecf.remoteservices.ui
