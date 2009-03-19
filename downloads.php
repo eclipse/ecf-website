@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 2.1 Release Now Available (12/24/2008).</b>
+    <b>ECF 3.0 Milestone 6 Now Available (3/18/2009).</b>
     <p></p>
     <p>
-    ECF 2.1 requires <b>Eclipse 3.4.1</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.0 requires <b>Eclipse 3.5M6</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>. See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
  See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, project team meetings, etc.
     </p>
@@ -42,6 +42,8 @@ ob_start();
 	$html = ob_get_contents();
 
         include 'getNugget.php';
+        $html = getNugget("EcfInstallViaUpdate3.5.html",$html);
+        $html = getNugget("EcfInstallViaZip3.5.html",$html);
         $html = getNugget("EcfInstallViaUpdate3.4.html",$html);
         $html = getNugget("EcfInstallViaZip3.4.html",$html);
         
