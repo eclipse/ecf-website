@@ -55,7 +55,7 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Mar 18, 2009 - ECF 3.0 Milestone 6 available on eclipse.org. </b>
+	  	<b>March 19, 2009 - ECF 3.0 Milestone 6 available on eclipse.org. </b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
            <p></p>
 		</td>

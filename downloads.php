@@ -30,7 +30,7 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.0 Milestone 6 Now Available (3/18/2009).</b>
+    <b>ECF 3.0 Milestone 6 Now Available (3/19/2009).</b>
     <p></p>
     <p>
     ECF 3.0 requires <b>Eclipse 3.5M6</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
