@@ -95,6 +95,7 @@ org.eclipse.ecf.remoteservice.events
 org.eclipse.ecf.remoteservice.util
 org.eclipse.ecf.remoteservice.util.tracker
 org.eclipse.ecf.remoteservices.ui
+org.eclipse.ecf.server
 org.eclipse.ecf.server.generic
 org.eclipse.ecf.server.generic.app
 org.eclipse.ecf.storage
