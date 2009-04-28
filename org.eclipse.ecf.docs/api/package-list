@@ -57,6 +57,7 @@ org.eclipse.ecf.presence.history
 org.eclipse.ecf.presence.im
 org.eclipse.ecf.presence.roster
 org.eclipse.ecf.presence.search
+org.eclipse.ecf.presence.search.message
 org.eclipse.ecf.presence.service
 org.eclipse.ecf.presence.ui
 org.eclipse.ecf.presence.ui.chatroom
