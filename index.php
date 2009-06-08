@@ -55,6 +55,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>June 8, 2009 - ECF 3.0 Release Candidate 4 available on eclipse.org. </b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>March 26, 2009 - Markus Alexander Kuppe and Scott Lewis present a talk about <a href="http://www.eclipsecon.org/2009/sessions?id=757">"Best Practices with distributed OSGi services"</a> during <a href="http://www.eclipsecon.org/2009">EclipseCON 2009</a>. </b>
 			As always the slides are <a href="http://ecf2.osuosl.org/Best_Practices_with_Distributed_OSGi.pdf">available online</a>.
            <p></p>
@@ -67,16 +77,6 @@
 		<td valign="top">
 	  	<b>March 23, 2009 - Scott Lewis and Markus Alexander Kuppe gave a tutorial titled <a href="http://www.eclipsecon.org/2009/sessions?id=618">"Distributed OSGi - The ECF way"</a> at <a href="http://www.eclipsecon.org/2009">EclipseCON 2009</a>. </b>
 			The slides are available <a href="http://ecf2.osuosl.org/Distributed_OSGi_-_The_ECF_way_rev02.pdf">on ecf2.osuosl.org</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>March 19, 2009 - ECF 3.0 Milestone 6 available on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
            <p></p>
 		</td>
 	</tr>

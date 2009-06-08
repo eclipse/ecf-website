@@ -30,7 +30,7 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.0 RC3 Now Available (5/27/2009).</b>
+    <b>ECF 3.0 RC4 Now Available (6/8/2009).</b>
     <p></p>
     <p>
     ECF 3.0 requires <b>Eclipse 3.5RC2 or newer</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
