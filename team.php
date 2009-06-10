@@ -93,16 +93,6 @@ $size=50;
 echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "." alt=\"[Mustafa Isik]\"/></a>";
 ?>
                                 </li>
-                <li>
-                	<a href="http://www.seaquest.com">Pete Mackie</a>
-<?php
-$pathBIG = "http://".$serverName."/ecf/images/PeteMackie.jpg";
-$path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/PeteMackie.jpg";
-$size=50;
-echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "."alt=\"[Pete Mackie]\"/></a>";
-?>
-
-                </li>
 				<li>
 <a href="http://www.lemmster.de/">Markus Kuppe (IRC: lemmy)</a>
 <?php
@@ -177,6 +167,9 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 			   <li>
 			   <a href="http://eclipser-blog.blogspot.com/">Jacek Pospychala</a> - <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=197604">bug 197604</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=192762">bug 192762</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=149912">bug 149912</a>
 			   </li>
+			   <li>
+			   <a href="http://java.dzone.com/users/jsugrue">James Sugrue</a> - Working on TwitterHub RCP client
+			   </li>
 				<li>
 				Christoph Schwering.  Christoph is the author of <a href="http://moepii.sourceforge.net/">IRCLib</a>, which ECF is using for it's IRC provider.  He's currently
 				working on enhancing IRCLib to support CTCP via <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=220264">bug 220264</a>.
@@ -192,12 +185,23 @@ echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=
 				<li> 
 				Rick Hamnett
 				</li>
+				                <li>
+                	<a href="http://www.seaquest.com">Pete Mackie</a>
+<?php
+$pathBIG = "http://".$serverName."/ecf/images/PeteMackie.jpg";
+$path = $_SERVER['DOCUMENT_ROOT'] . "/ecf/images/PeteMackie.jpg";
+$size=50;
+echo "<a href=\"". $pathBIG ."\"> <img align=\"middle\" src=\"getthumb.php?path=$path&amp;size=$size\" "."alt=\"[Pete Mackie]\"/></a>";
+?>
+
+                </li>
 				<li>
 				Mary Ruddy
 				</li>
 				<li> 
 				Paul Trevithick
 				</li>
+				
 			</ul> 
 		</div>
 
