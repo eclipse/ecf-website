@@ -17,14 +17,12 @@
         <br><br>
         <font class="indexsub">an eclipse technology project</font>
         <br><br>
-        <font class="indextop style2">New and Noteworthy</font><br>2.1.0 Release</font>
+        <font class="indextop style2">New and Noteworthy</font><br>3.0.0 Release</font>
         <br><br><br>
         Return to <a href="downloads.php">ECF download page</a></br>
         <br><br>
-        <a href="NewAndNoteworthy_1.0.0.html">New and Noteworthy for 1.0.0</a><br>
-        <a href="NewAndNoteworthy_1.1.0.html">New and Noteworthy for 1.1.0</a><br>
-        <a href="NewAndNoteworthy_1.2.0.html">New and Noteworthy for 1.2.0</a><br>
         <a href="NewAndNoteworthy_2.0.0.html">New and Noteworthy for 2.0.0</a><br>
+        <a href="NewAndNoteworthy_2.1.0.html">New and Noteworthy for 2.1.0</a><br>
         <br><br>
       </td>
       <td width="31%">
@@ -38,79 +36,143 @@
 
 <hr>
 
-<ul>
-<li>
-With ECF Release 2.1, ECF moved to the Eclipse RT Project. 
-</li>
-<li>
-There are also two videos 
-available online at <a href="http://live.eclipse.org/">live.eclipse.org</a>. 
-</li>
-<li>
-ECF also presented at the OSGI Community event. See 
-<a href="http://www.osgi.org/wiki/uploads/CommunityEvent2008/21_RemoteServices_OSGi_CommEvent08.pdf">
-Distributed OSGi Services with the Eclipse Communication Framework</a>
-</li>
-<li>
-ECF Release 2.1 has also fixed a large number of bugs. See
-<a 
-href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&short_desc_type=allwordssubstr&short_desc=&classification=RT&product=ECF&long_desc_type=allwordssubstr&long_desc=&bug_file_loc_type=allwordssubstr&bug_file_loc=&status_whiteboard_type=allwordssubstr&status_whiteboard=&keywords_type=allwords&keywords=&bug_status=RESOLVED&bug_status=VERIFIED&bug_status=CLOSED&emailtype1=substring&email1=&emailtype2=substring&email2=&bugidtype=include&bug_id=&votes=&chfieldfrom=2008-06-20&chfieldto=Now&chfieldvalue=&cmdtype=doit&order=Reuse+same+sort+as+last+time&field0-0-0=noop&type0-0-0=noop&value0-0-0=o">
-113 bugs</a>
-</li>
-</ul>
 <table>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Distributed OSGi</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    ECF 3.0 has support for a draft version a new <b>Distributed <a href="http://www.osgi.org">OSGi</a></b> standard.  The <a href="http://www.osgi.org/EEG/HomePage">OSGi Enterprise Experts group</a> has 
+    created a <a href="http://www.osgi.org/download/osgi-4.2-early-draft3.pdf">DRAFT specification known as RFC119</a>, and ECF 3.0
+    has implemented the latest available draft.  Note that RFC119 will change before OSGi 4.2 final 
+    release, and this implies subsequent API changes for ECF's implementation to remain compatible with the final version of the specification.
+    </p>
+    <p>
+    Here is a screenshot of debugging into the consumer of a simple 'hello' remote service
+    </p>
+    <p>
+    <img src="images/helloclient1.png"/>
+    </p>
+    <p>
+    Usage of this example remote service is described on <a href="http://wiki.eclipse.org/Getting_Started_with_ECF%27s_RFC119_Implementation">Getting Started with ECF's RFC119 Implementation</a>, as well
+    as access to the source code.  
+    </p>
+    <p>
+    Also available is an architecture diagram showing the relationship between various ECF components in <a href="http://wiki.eclipse.org/Distributed_OSGi_Services_with_ECF">Distributed OSGi Services with ECF</a>.
+    </p>
+    <p>
+    Other features of the ECF implementation of RFC 119:
+    <ul>
+    <li>Asynchronous messaging via the <a href="http://wiki.eclipse.org/ECF_API_Docs">ECF remote services API</a></li>
+    <li>Support for dynamic network discovery (as well as static discovery) via multiple providers (e.g. <a href="http://en.wikipedia.org/wiki/Service_Location_Protocol">SLP</a> and <a href="http://en.wikipedia.org/wiki/Bonjour_(software)">Bonjour/Zeroconf</a>) with the <a href="http://wiki.eclipse.org/ECF_API_Docs">ECF discovery API</a></li>
+    <li>Support for <a href="http://eclipsesource.com/blogs/2009/02/21/rfc-119-and-ecf-part-2/">multiple transport providers</a> (e.g. r-OSGi, XMPP, ActiveMQ/JMS, ECF generic, Skype, JavaGroups, others).</li>
+    <li>Extensibility...to allow new/other transport protocols to be used/introduced for both discovery and distribution, and to allow the <a href="http://wiki.eclipse.org/Discovery_and_Distribution_Listeners">customization of the RFC 119 implementation itself</a>.</li>
+    </ul>
+    </p>
+    <p>
+    See also an example implementation of the <a href="http://wiki.eclipse.org/Distributed_EventAdmin_Service">OSGi EventAdmin service</a> using ECF's shared object API, ActiveMQ (and other messaging providers), and efficient and scalable publish/subscribe messaging.
+    </p>
+       <br><br>
+    </td>
+  </TR>
+  
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Discovery API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    In addition to supporting the distributed OSGi implementation described above, a number of feature additions and were made to the <a href="http://wiki.eclipse.org/ECF_API_Docs">ECF Discovery API</a>.
+    For technical details, see <a href="http://www.eclipsecon.org/2009/sessions?id=618">Distributed OSGi - The ECF Way</a>.
+    </p>
+    <p>
+    The ECF service discovery view was overhauled to present more information about discovered network services, and to be much more extensible
+    </p>
+    <p>
+    <img src="images/discoveryview1.png">
+    </p>
+       <br><br>
+    </td>
+  </TR>
 
-<tr>
-<td vAlign=top><b>Sync API</b></td>
-<td>
-Abstracted from popular real-time Shared Editing. Opens up ability for other applications
-to use real-time document synchronization (Cola).
-</td>
-</tr>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Twitter Client</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    Community-initiated work is underway on a Twitter client (called TweetHub) that uses ECF APIs, 
+    as well as Eclipse RCP user interface technologies.  For details of this work, and to participate, see <a href="http://wiki.eclipse.org/TweetHub">here</a>.
+    </p>
+       <br><br>
+    </td>
+  </TR>
 
-<tr>
-<td vAlign=top><b>Storage API</b></td>
-<td>
-Uses Equinox secure storage (IsecurePreferences) to store and retrieve ECV Ids
-securely/persistently, along with any associated properties (for example, passwords). Will
-enable secure storage of user login and credential info for ECF accounts.
-</td>
-</tr>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>User Search API</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    A user-search API was introduced to the <a href="http://wiki.eclipse.org/ECF_API_Docs">ECF Presence API</a> to allow for user searches
+    </p>
+    <p>
+    <img src="images/usersearch1.png">
+    </p>
+       <br><br>
+    </td>
+  </TR>
 
-<tr>
-<td vAlign=top><b>Real-Time Shared Editing</b></td>
-<td>
-Many improvements.
-<br/>
-Inclusion of RT shared editing in WTP point release (for several text editors).
-</td>
-</tr>
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Extending Real-Time Shared Editing to Projects</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    An implementation of real-time synchronization of resources using the Eclipse Team API was done.  This allows the use of the Eclipse Team
+    API to synchronize workspace resources in real-time using instant messaging protocols (like XMPP, others).  See <a href="http://blog.hantsuki.org/2009/05/10/extending-real-time-shared-editing-to-projects/">here for
+    more description of the functionality, and <a href="http://www.hantsuki.org/screencasts/ecf-team.htm">here for a screencast</a>.
+    </p>
+       <br><br>
+    </td>
+  </TR>
 
-<tr>
-<td vAlign=top><b>JSLP <br/>(Discovery API provider)</b></td>
-<td vAlign=top>
-Additions and bug fixes.
-</td>
-</tr>
-
-<tr>
-<td vAlign=top><b>XMPP provider</b></td>
-<td>
-Critical bug fixes.
-</td>
-</tr>
-
-<tr>
-<td vAlign=top><b>Remote Services provider</b></td>
-<td vAlign=top>
-Bug fixes (generic and r-OSGI).
-</td>
-</tr>
-
-
+  <TR>
+    <TD vAlign=top align=left width="30%">
+        <P align=left>
+	<B>Generalizing Real-time Shared Editing</B>
+        </P>
+    </TD>
+    <TD vAlign=top width="70%">
+    <p>
+    As part of ECF 2.0, we introduced an Eclipse application called <a href="http://wiki.eclipse.org/DocShare_Plugin">Docshare</a>.  See also <a href="http://live.eclipse.org/node/543">this video</a>, showing the usage 
+    of Docshare in a pair-programming context.
+    </p>
+    <p>
+    For ECF 3.0, the approach used to perform real-time conflict detection and synchronization (<a href="http://en.wikipedia.org/wiki/Operational_transformation">Operational Transformation</a>), was abstracted away
+    from the DocShare user interface, so that other applications can/could be created that took advantage of the underlying synchronization.  This generalization is represented
+    by <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=234142">bug 234142</a>.
+    </p>
+    <p>
+    To address this issue, we have created the <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/sync/package-frame.html">ECF Sync API</a> for (synchronization).  This API is exposed as an OSGi service, and allows applications to 
+    use the operational transformation algorithm in their own applications.  DocShare also has been back ported to use the ECF Sync API rather than have it's own OT implementation.
+    </p>
+       <br><br>
+    </td>
+  </TR>
 
 </table>
-
 
 </body>
 </html>
