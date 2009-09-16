@@ -153,3 +153,4 @@ org.eclipse.ecf.sdk-3.0.1.v20090915-1900.zip
 org.eclipse.ecf.sdk-3.1.0.v20090916-1006.zip
 org.eclipse.ecf.sdk-3.1.0.v20090916-1025.zip
 org.eclipse.ecf.sdk-3.1.0.v20090916-1124.zip
+org.eclipse.ecf.sdk-3.1.0.v20090916-1423.zip
