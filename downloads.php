@@ -49,7 +49,7 @@ ob_start();
         
         
         $html = getNugget("EcfDailies.html",$html);
-        $html = getNugget("EcfDailiesUpdate.html",$html);
+ 
         $html = getNugget("EcfSourceCode.html",$html);
         $html = getNugget("EcfExtraPlugins.html",$html);
         $html = getNugget("EcfBuildTypes.html",$html);
