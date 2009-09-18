@@ -15,7 +15,7 @@
     rsort($files);
     foreach ($files as $file) {
        echo '<tr> <td><p>
-       <a href="http://www.eclipse.org/downloads/download.php?file=/rt/ecf/3.5dailies3.0/' . $file .'">' . $file .'</a>
+       <a href="http://www.eclipse.org/downloads/download.php?file=/rt/ecf/3.5dailiesHEAD-zip/' . $file .'">' . $file .'</a>
        </p></td></tr>';
        
     }
