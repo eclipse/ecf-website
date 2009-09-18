@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="default_style.css" type="text/css">
 </head>
 <body text="#000000" bgcolor="#ffffff" link="#0000ee" vlink="#551a8b" alink="#ff0000"><table width=100% BORDER=0 CELLPADDING=2 CELLSPACING=5 STYLE="page-break-before: always">
-<h1>ECF 3.0 Daily Downloads</h1>
+<h1>ECF Daily Downloads from HEAD</h1>
 <div>
 <p>
 </p>
