@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml"
+      name="Eclipse Communication Framework">
+   <release projectid="rt.ecf" version="3.0"/>
+   <introduction>
+     <html:div><html:p>Previously, ECF has had two major releases: <html:a href="http://www.eclipse.org/ecf/downloads.php">ECF 1.0.0</html:a> as part of <html:a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</html:a>, and ECF 2.0.0 as part of <html:a href="http://wiki.eclipse.org/Ganymede_Simultaneous_Release">Ganymede Simultaneous Release</html:a>.  This plan describes the work for ECF 3.0.0, which will occur in June, 2009 as part of the <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">Galileo Simultaneous Release</html:a>.</html:p></html:div>
+   </introduction>
+   <release_deliverables>
+     <html:div><html:p>The major ECF 3.0.0 release deliverables are as follows:
+     <html:ol><html:li>Contribute to <html:a href="http://wiki.eclipse.org/E4">E4 Project</html:a> via work on a common connection framework, synchronization of replicated models, and support for/use of asynchronous communication patterns</html:li>
+     <html:li>Contribute to <html:a href="http://wiki.eclipse.org/Equinox_p2">Equinox P2 Project</html:a> via additions to ECF File Transfer, and usage of ECF Discovery, and ECF Remote Services</html:li>
+     <html:li>Improve and Extend the ECF Example Applications</html:li>
+     <html:li>Enable easier creation and use of Equinox+ECF-based Server Runtimes</html:li>
+     <html:li>Harden ECF Discovery and Remote OSGi Services, create more provider implementations, and provide open reference implementations for
+     emerging standards (e.g. RFC 119)</html:li>
+     <html:li>Improve IM and Chat for usage with Eclipse</html:li>
+     <html:li>Deliver improved application integration with Eclipse projects:  Mylyn and DSDP-TM VNC screen sharing</html:li>
+     <html:li>Restructure ECF's packaging and deployment for easier external consumption</html:li>
+     <html:li>Create selected providers based upon community input about emerging popular protocols</html:li></html:ol>
+     
+     </html:p></html:div>
+   </release_deliverables>
+   <release_milestones>
+      <preamble>
+         <html:div>ECF plans on delivering milestone on the same general schedule as the <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">Galileo Simultaneous Release</html:a> schedule, starting with M4.  ECF has both +0 and +1 components.  The +0 components will be
+         on same release schedule as the Platform, and the +1 components will be as specified below.</html:div>
+      </preamble>
+      <milestone date="12/17/2008" milestone="M4"><html:div></html:div></milestone>
+      <milestone date="2/3/2009" milestone="M5"><html:div></html:div></milestone>
+      <milestone date="3/16/2009" milestone="M6"><html:div>API Freeze</html:div></milestone>
+      <milestone date="5/4/2009" milestone="M7"><html:div>3.0.0 Feature Freeze</html:div></milestone>
+      <milestone date="5/18/2009" milestone="RC1"><html:div></html:div></milestone>
+      <milestone date="5/18/2009" milestone="RC1"><html:div></html:div></milestone>
+      <milestone date="5/25/2009" milestone="RC2"><html:div></html:div></milestone>
+      <milestone date="6/1/2009" milestone="RC3"><html:div></html:div></milestone>
+      <milestone date="6/8/2009" milestone="RC4"><html:div></html:div></milestone>
+      <milestone date="6/15/2009" milestone="RC5"><html:div></html:div></milestone>
+      <milestone date="6/26/2009" milestone="3.0.0"><html:div>Galileo GA</html:div></milestone>
+      <postamble><html:div></html:div></postamble>
+   </release_milestones>
+   <target_environments>
+     <html:div>ECF's target environments are:
+     <html:ul>
+     	<html:li>Eclipse</html:li>
+     	<html:li>Eclipse-based Applications</html:li>
+     	<html:li>Other Equinox-Based Runtimes (e.g. Equinox servers)</html:li>
+     </html:ul>
+     </html:div>
+     <internationalization>
+          <html:div>ECF doesn't perform internationalization directly, although we develop our plugins following 
+          common rules about string externalization to make the automation possible</html:div>
+     </internationalization>
+   </target_environments>
+   <compatibility_with_previous_releases>
+       <html:div><html:p>ECF has a policy of maintaining API backward compatibility with minor and service releases.  API is considered all
+       exported packages (i.e. packages that do not have <html:pre>x-internal:=true</html:pre> in their Export-Package declaration.  As an example, 
+       with the following declaration in the org.eclipse.ecf MANIFEST.MF</html:p>
+       <html:pre>Export-Package: org.eclipse.ecf.core, org.eclipse.ecf.internal.core;x-internal:=true
+       </html:pre>
+       <html:p>The org.eclipse.ecf.core package is API, and the org.eclipse.ecf.internal.core package is not</html:p>
+       <html:p>Only with major releases (e.g. 2.0.0, 3.0.0) are incompatible API changes to be introduced (e.g. refactorings, renames), and even then only after discussion
+       among multiple committers.  For the parts of ECF used by the Platform (e.g. the core and file transfer bundles), NO incompatible
+       API changes will be introduced, even for major releases, in order to maintain the platform backward compatibility
+       constraints.</html:p>
+       </html:div>
+   </compatibility_with_previous_releases>
+   <themes_and_priorities>
+     <preamble>
+         <html:div></html:div>
+     </preamble>
+     <theme name="Model Synchronization">
+     <description><html:p>ECF's docshare capabilities will be generalized to support synchronization of distributed models of multiple forms</html:p></description>
+     <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[modelsync]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
+	</theme>
+     <theme name="Real-Time Collaboration for IDE">
+     <description><html:p></html:p></description>
+     <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[rtcollab]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
+	</theme>
+	<theme name="ECF for Runtimes">
+	<description></description>
+	<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[runtime]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
+	</theme>
+	<theme name="Remote OSGi Services">
+	<description><html:p>As ECF moves to the Runtime top-level project, the ECF remote services API will be potentially use in
+	non-Eclipse runtimes and in combination with work from other projects (e.g. P2/remote Equinox managment, etc)</html:p></description>
+	<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[remotesvcs]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
+	</theme>
+	<theme name="IM/Chat Features">
+	<description></description>
+	<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[imchat]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
+	</theme>
+	<theme name="Application Integration">
+	<description><html:p>Currently, there are only a few examples of effective integrations of ECF with existing products.  We will focus on creating other integrations...e.g. with Mylyn and DSDP-TM's VNC implementation</html:p></description>
+	<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[appint]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
+	</theme>
+	<theme name="Packaging and Deployment">
+	<description><html:p>ECF is currently deployed as a small set (2) of features via update site.  This makes the consumption of sub-components of ECF (e.g. discovery, remote services, docshare, etc) difficult.  Probably using P2, ECF will make the piecewise consumption of ECF bundles easier.</html:p></description>
+	<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[deploy]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
+	</theme>
+	</themes_and_priorities>
+</plan>
