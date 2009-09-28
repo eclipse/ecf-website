@@ -64,50 +64,5 @@
      <preamble>
          <html:div></html:div>
      </preamble>
-	<theme name="Remote Services">
-	<description><html:p>In our Galileo/ECF 3.0 release, ECF included support for the OSGi Enterprise Experts group's RFC119 (Distributed OSGI).  This DRAFT specification
-	provides consistent service property constants, as well as java classes for making services registered as local services available
-	as remote services.  The two major technical components of the RFC119 DRAFT spec were discovery (for allowing client to discoverying in some
-	manner services exposed by other frameworks), and distribution (for actually accessing and calling the service).  In ECF 3.0, ECF included
-	full support for the DRAFT RFC119 specification, and implemented this support via the ECF discovery API, and the ECF remote services API (distribution).
-	The use of these two APIs, independent of provider transport, uniquely allows multiple transports to be used without application-level code changes (e.g.
-	using JMS, r-OSGi, and/or new providers without code changes).
-	</html:p>
-	<html:p>
-	In the summer of 2009,
-	the OSGi standards organization chose to simplify and rename the RFC119 specification, as well as rename it 'Remote Services'.  One simplification
-	that was made in the Remote Services chapter of the OSGi 4.2 specification
-	was to *only* define service constants that clients must/can use to register, publish, discover, and access remote services, while leaving out
-	all java interfaces and classes from the specification itself.  One of our efforts during the last few months of 2009 will be to 
-	rename our existing constants to support these new constants.  This will then give our existing implementation full compliance
-	with the new Remote Services specification.</html:p>
-	</description>
-	<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[remotesvcs]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
-	</theme>
-
-     <theme name="Google Wave">
-     <description><html:p>In spring of 2009, Google announced a new system called Google Wave.  In ECF 2.0, ECF introduced a real-time 
-     shared editor called DocShare, and the underlying synchronization engine based upon operational transformation was generalized in 
-     ECF 3.0 to provide a generic synchronization API.  This API is based upon our own operational transformation implementation refered to
-     publicly as Cola.</html:p>
-     <html:p>
-     ECF's existing provider architecture allows us to easily support new protocols (such as the Google Wave server protocol described
-     at <html:a href="http://waveprotocol.org">waveprotocol.org</html:a>), our existing synchronization API (org.eclipse.ecf.sync), as well as 
-     our existing XMPP provider (based upon Smack XMPP implementation), allow us to relatively easily create modules that allow an 
-     Equinox+ECF-based web server to interoperate with a Google Wave server.  We propose to implement such a Wave-protocol-compliant server, using
-     Equinox+ECF+other EclipseRT technologies.
-     </html:p></description>
-     <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[wave]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
-	<theme name="ECF Remote Services and REST-based Webservices">
-	<description><html:p>As part of his 2009 Google Summer of Code project, Holger Staudacher used and extended the ECF remote service API to allow 
-	REST-based (Representational State Transfer) APIs to easily be accessed as remote services.  REST-style APIs are increasingly 
-	popular for web services, and ECF now has a REST API for accessing and using REST-based remote services, and treating them
-	as with every other remote service (i.e. via the ECF remote service API).</html:p>
-	<html:p>ECF 3.1 (for Oct 7, 2009 release) will include this REST API, but during the ECF 3.2/Helios release cycle we will extend the existing 
-	API, and include additional API to support the easy creation and publication of REST-based web services.
-	</html:p>
-	</description>
-	<proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[websvcs]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed>
-	</theme>
 	</themes_and_priorities>
 </plan>
