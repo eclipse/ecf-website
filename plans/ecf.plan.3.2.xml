@@ -17,7 +17,8 @@
      <html:li>Improve IM and Chat for usage with Eclipse</html:li>
      <html:li>Deliver improved application integration with Eclipse projects:  Mylyn and DSDP-TM VNC screen sharing</html:li>
      <html:li>Restructure ECF's packaging and deployment for easier external consumption</html:li>
-     <html:li>Create selected providers based upon community input about emerging popular protocols</html:li></html:ol>
+     <html:li>Create selected providers based upon community input about emerging popular protocols</html:li>
+     <html:li>Publish ECF remote services through Webservice</html:li></html:ol>
      
      </html:p></html:div>
    </release_deliverables>
