@@ -22,15 +22,15 @@
          <html:div>ECF plans on delivering milestone on the same general schedule as the <html:a href="http://wiki.eclipse.org/Helios_Simultaneous_Release">Helios Simultaneous Release</html:a> schedule, starting with M4.  ECF has both +0 and +1 components.  The +0 components will be
          on same release schedule as the Platform, and the +1 components will be as specified below.</html:div>
       </preamble>
-      <milestone date="12/18/2008" milestone="M4"><html:div></html:div></milestone>
-      <milestone date="2/5/2009" milestone="M5"><html:div></html:div></milestone>
-      <milestone date="3/19/2009" milestone="M6"><html:div>ECF 3.3 API Freeze</html:div></milestone>
-      <milestone date="5/7/2009" milestone="M7"><html:div>ECF 3.3 Feature Freeze</html:div></milestone>
-      <milestone date="5/21/2009" milestone="RC1"><html:div></html:div></milestone>
-      <milestone date="5/28/2009" milestone="RC2"><html:div></html:div></milestone>
-      <milestone date="6/4/2009" milestone="RC3"><html:div></html:div></milestone>
-      <milestone date="6/11/2009" milestone="RC4"><html:div></html:div></milestone>
-      <milestone date="6/23/2009" milestone="3.2"><html:div>Helios GA/ECF 3.2</html:div></milestone>
+      <milestone date="12/18/2009" milestone="M4"><html:div></html:div></milestone>
+      <milestone date="2/5/2010" milestone="M5"><html:div></html:div></milestone>
+      <milestone date="3/19/2010" milestone="M6"><html:div>ECF 3.2 API Freeze</html:div></milestone>
+      <milestone date="5/7/2010" milestone="M7"><html:div>ECF 3.2 Feature Freeze</html:div></milestone>
+      <milestone date="5/21/2010" milestone="RC1"><html:div></html:div></milestone>
+      <milestone date="5/28/2010" milestone="RC2"><html:div></html:div></milestone>
+      <milestone date="6/4/2010" milestone="RC3"><html:div></html:div></milestone>
+      <milestone date="6/11/2010" milestone="RC4"><html:div></html:div></milestone>
+      <milestone date="6/23/2010" milestone="3.2"><html:div>Helios GA/ECF 3.2</html:div></milestone>
       <postamble><html:div></html:div></postamble>
    </release_milestones>
    <target_environments>
