@@ -32,6 +32,8 @@ org.eclipse.ecf.docshare.messages
 org.eclipse.ecf.example.clients
 org.eclipse.ecf.example.clients.applications
 org.eclipse.ecf.examples.provider.trivial
+org.eclipse.ecf.examples.remoteservices.hello
+org.eclipse.ecf.examples.remoteservices.hello.impl
 org.eclipse.ecf.filetransfer
 org.eclipse.ecf.filetransfer.events
 org.eclipse.ecf.filetransfer.events.socket
@@ -42,6 +44,7 @@ org.eclipse.ecf.filetransfer.ui
 org.eclipse.ecf.filetransfer.ui.actions
 org.eclipse.ecf.internal.docshare
 org.eclipse.ecf.osgi.services.discovery
+org.eclipse.ecf.osgi.services.discovery.local
 org.eclipse.ecf.osgi.services.distribution
 org.eclipse.ecf.presence
 org.eclipse.ecf.presence.bot
@@ -84,6 +87,7 @@ org.eclipse.ecf.provider.jmdns.container
 org.eclipse.ecf.provider.jmdns.identity
 org.eclipse.ecf.provider.jslp.container
 org.eclipse.ecf.provider.jslp.identity
+org.eclipse.ecf.provider.localdiscovery
 org.eclipse.ecf.provider.r_osgi.identity
 org.eclipse.ecf.provider.remoteservice
 org.eclipse.ecf.provider.remoteservice.generic
@@ -92,7 +96,12 @@ org.eclipse.ecf.provider.util
 org.eclipse.ecf.provider.xmpp
 org.eclipse.ecf.provider.xmpp.identity
 org.eclipse.ecf.remoteservice
+org.eclipse.ecf.remoteservice.eventadmin
 org.eclipse.ecf.remoteservice.events
+org.eclipse.ecf.remoteservice.rest
+org.eclipse.ecf.remoteservice.rest.identity
+org.eclipse.ecf.remoteservice.rest.resource
+org.eclipse.ecf.remoteservice.rest.util
 org.eclipse.ecf.remoteservice.util
 org.eclipse.ecf.remoteservice.util.tracker
 org.eclipse.ecf.remoteservices.ui
