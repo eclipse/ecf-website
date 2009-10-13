@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.0 Now Available (6/24/2009).</b>
+    <b>ECF 3.1 Now Available (10/12/2009).</b>
     <p></p>
     <p>
-    ECF 3.0 requires <b>Eclipse 3.5RC2 or newer</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.1 requires <b>Eclipse 3.5 (Galileo) or newer</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>. ECF UI requires <a href="http://dev.eclipse.org/viewcvs/index.cgi/org.eclipse.ecf/releng/org.eclipse.ecf.releng/projectSet-anonymous.psf?root=RT_Project&view=markup">parts</a> or the SDK of EMF 2.2 or newer.<br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
  See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> for further information about plans, sub-projects, project team meetings, etc.
     </p>
