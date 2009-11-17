@@ -99,6 +99,7 @@ org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.eventadmin
 org.eclipse.ecf.remoteservice.events
 org.eclipse.ecf.remoteservice.rest
+org.eclipse.ecf.remoteservice.rest.client
 org.eclipse.ecf.remoteservice.rest.identity
 org.eclipse.ecf.remoteservice.rest.resource
 org.eclipse.ecf.remoteservice.rest.util
