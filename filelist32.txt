@@ -1,0 +1,13 @@
+org.eclipse.ecf.sdk_3.2.0.v20091121-1532.zip
+org.eclipse.ecf.sdk_3.2.0.v20091122-1557.zip
+org.eclipse.ecf.sdk_3.2.0.v20091123-1555.zip
+org.eclipse.ecf.sdk_3.2.0.v20091124-1656.zip
+org.eclipse.ecf.sdk_3.2.0.v20091125-1536.zip
+org.eclipse.ecf.sdk_3.2.0.v20091126-1558.zip
+org.eclipse.ecf.sdk_3.2.0.v20091127-1542.zip
+org.eclipse.ecf.sdk_3.2.0.v20091128-1537.zip
+org.eclipse.ecf.sdk_3.2.0.v20091129-1533.zip
+org.eclipse.ecf.sdk_3.2.0.v20091130-1537.zip
+org.eclipse.ecf.sdk_3.2.0.v20091201-1532.zip
+org.eclipse.ecf.sdk_3.2.0.v20091202-0354.zip
+org.eclipse.ecf.sdk_3.2.0.v20091202-1742.zip
