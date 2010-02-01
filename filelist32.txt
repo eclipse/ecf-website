@@ -7,3 +7,4 @@ org.eclipse.ecf.sdk_3.2.0.v20100128-1531.zip
 org.eclipse.ecf.sdk_3.2.0.v20100129-1532.zip
 org.eclipse.ecf.sdk_3.2.0.v20100130-1533.zip
 org.eclipse.ecf.sdk_3.2.0.v20100131-1531.zip
+org.eclipse.ecf.sdk_3.2.0.v20100201-1535.zip
