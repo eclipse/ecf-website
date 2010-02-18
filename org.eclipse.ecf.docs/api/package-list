@@ -73,6 +73,7 @@ org.eclipse.ecf.protocol.msn.events
 org.eclipse.ecf.provider.comm
 org.eclipse.ecf.provider.comm.tcp
 org.eclipse.ecf.provider.datashare
+org.eclipse.ecf.provider.datashare.nio
 org.eclipse.ecf.provider.discovery
 org.eclipse.ecf.provider.filetransfer.browse
 org.eclipse.ecf.provider.filetransfer.events.socket
@@ -103,6 +104,8 @@ org.eclipse.ecf.remoteservice.rest
 org.eclipse.ecf.remoteservice.rest.client
 org.eclipse.ecf.remoteservice.rest.identity
 org.eclipse.ecf.remoteservice.rest.util
+org.eclipse.ecf.remoteservice.soap.client
+org.eclipse.ecf.remoteservice.soap.identity
 org.eclipse.ecf.remoteservice.util
 org.eclipse.ecf.remoteservice.util.tracker
 org.eclipse.ecf.remoteservices.ui
