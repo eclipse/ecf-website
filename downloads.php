@@ -34,10 +34,10 @@ ob_start();
     <p></p>
     <p>
     ECF 3.2 requires <b>Eclipse Galileo (3.5.X) or Eclipse Helios 3.6 Milestone 5 (or more recent milestones/releases)</b>.  <br>
-    See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    <br>See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
-    See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
- See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a>for further information about plans and ongoing project activities.
+    <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
+ <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a>for further information about plans and ongoing project activities.
     </p>
 	
 <?php
