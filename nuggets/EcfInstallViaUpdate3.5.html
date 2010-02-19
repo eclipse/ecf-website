@@ -1,31 +1,27 @@
-    <h3><a name="2.0.0M6">ECF 3.1 Install via P2 Repository -- <b>for use with Eclipse 3.5/3.5.1</b></a></h3>
-     <p>
-     <b>NOTE</b>:  For Eclipse 3.5/Galileo, you <b>must</b> use this update site and not the other update sites
-     given below.  These instructions have been tested with Eclipse 3.5 and 3.5.1.
+    <h3><a name="2.0.0M6">ECF 3.2 Install via P2 Repository -- <b>for use with Eclipse Galileo (3.5.X) or Helios (3.6)</b></a></h3>
      <p>
       <ul>
-       <li>In Eclipse 3.5/Galileo, choose <b>Help -> Install New Software...</b>
+       <li>In Eclipse, choose <b>Help -> Install New Software...</b>
        
        </li>
-       <li>Click on the <b>Add</b> button.
+       <li>Click on the <b>Add</b> button on the right.
        </li>
        
-       <li>Type in the following URL into the Location Textbox. For some versions of Eclipse, you can
-       drag and drop the following URL from your browser to the Location textbox. 
-       <br/>
-       <b><a href="http://download.eclipse.org/rt/ecf/3.1/3.5/repo">http://download.eclipse.org/rt/ecf/3.1/3.5/repo</a></b>
-       </li>
+       <li>Type in a Name in the textbox. For example, type: <b>ECF 3.2 SDK</b>.</li>
        
-       <li>Type in a name in the Name textbox. For example, type ECF.
+       <li>Type the following URL into the Location field. <br/>
+       <b><a href="http://download.eclipse.org/rt/ecf/3.2/3.6/repo">http://download.eclipse.org/rt/ecf/3.2/3.6/repo</a></b>
        </li>
        
        <li> Click OK. </li>
        
-       <li>Select the Eclipse Communication Framework (ECF). </li>
+       <li>Select the Eclipse Communication Framework (ECF) check box.  NOTE:  This check box will result in including 4 sub-items <ol><li>ECF 3.2 Patch for Eclipse 3.5.X</li><li>Eclipse Communication Framework SDK</li><li>Source for ECF 3.2 Patch for Eclipse 3.5.X</li><li>Source for Eclipse Communication Framework SDK</li></ol>.  
+       <b>All four of these sub-items should be included/selected for install.</b>.  The <b>ECF 3.2 Patch for Eclipse 3.5.X</b> is necessary because part of ECF is included with the
+       Eclipse platform itself, and this patch will update these relatively old bundles that were installed with Eclipse 3.5.X.  The source code for the ECF can be removed, but *both* the <b>ECF 3.2 Patch for Eclipse 3.5.X</b> and the <b>Eclipse Communication Framework SDK</b> must be installed to properly use ECF 3.2</li>
        
        <li>Click on Next.</li>
        
-       <li>Follow through the remaining dialog to complete the installation.</li>
+       <li>Follow through the remaining dialogs to complete the installation.</li>
       </ul>
      <p>
      To uninstall ECF ...
@@ -37,14 +33,6 @@
      <li>Click on <b>Uninstall ...</b></li>
      </ul>
      </p>
-     <p>
-     The method described above uses the new P2 update mechanism. Eclipse by default does not enable the classic 
-     update mechanism, but you can do that manually. To do so, go to <b>Preferences ...</b>. On the Mac, this is
-     under the <b>Eclipse</b> menu. Then, go to <b>General -> Capabilities</b> and click on Classic Update. Note, however,
-     that this method does not automatically take care of prerequisites for you. If you use the classic method to install ECF
-     on a freshly installed Eclipse, you will most likely get an error message that tells you what you must install
-     before the ECF installation can be successful.
-     </p> 
      
      
          

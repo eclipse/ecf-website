@@ -55,18 +55,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>October 12, 2009 - ECF 3.1 Release available on eclipse.org. </b>
+	  	<b>Feb 19, 2010 - ECF 3.2 Release available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 24, 2009 - ECF 3.0 Release available on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy_3.0.0.html">ECF New and Noteworthy</a>.
            <p></p>
 		</td>
 	</tr>
@@ -126,16 +116,6 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>June 24, 2008 - ECF 2.0.0/Ganymede Release available on eclipse.org. </b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> release documentation.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
 	  	<b>June 18, 2008 - ECF Committers Markus Kuppe and Jan Rellermeyer present ECF at <a href="http://www.osgi.org/CommunityEvent2008/HomePage">OSGi Community Event, June 10 and 11, 2008</a>. </b>
 			See <a href="http://www.osgi.org/wiki/uploads/CommunityEvent2008/21_RemoteServices_OSGi_CommEvent08.pdf">here for the slides of their presentation</a>.  <a href="http://www.osgi.org/CommunityEvent2008/Program">Here is the entire program</a>.
            <p></p>
@@ -147,25 +127,6 @@
 		</td>
 		<td valign="top">
 	  	<b>June 16, 2008 - Article about <a href="http://www.infoq.com/news/2008/06/eclipse-ganymede-ecf">ECF on InfoQ</a>. </b>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>May 30, 2008 - <a href="http://java.dzone.com/news/the-ecf-project-an-interview-w">Interview with ECF project lead Scott Lewis at Dzone</a>. </b>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Mar 24, 2008 - ECF committers <a href="http://eclipseecf.blogspot.com/">Scott Lewis</a>, <a href="http://www.lemmster.de/blog/">Markus Kuppe</a>, Ted Kubaska, and <a href="http://people.inf.ethz.ch/rjan/">Jan Rellermeyer</a> present at <a href="http://www.eclipsecon.org">EclipseCon 2008</a>. </b>
-			Presentation slides can be found <a href="http://www.eclipse.org/ecf/presentations/eclipsecon2008/longtalk134/ecf_eclipsecon2008_134.pdf">here</a>.  
            <p></p>
 		</td>
 	</tr>

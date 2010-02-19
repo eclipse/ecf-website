@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.1 Now Available (10/12/2009).</b>
+    <b>ECF 3.2 Now Available (2/19/2010).</b>
     <p></p>
     <p>
-    ECF 3.1 requires <b>Eclipse 3.5 (Galileo) or newer</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.2 requires <b>Eclipse Galileo (3.5.X) or Eclipse Helios 3.6 Milestone 5 (or more recent milestones/releases)</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.
  See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a>for further information about plans and ongoing project activities.
     </p>
@@ -45,8 +45,6 @@ ob_start();
         $html = getNugget("EcfInstallViaUpdate3.5.html",$html);
         $html = getNugget("EcfInstallViaZip3.5.html",$html);
         $html = getNugget("EcfDailies.html",$html);    
-        $html = getNugget("EcfInstallViaUpdate3.4.html",$html);
-        $html = getNugget("EcfInstallViaZip3.4.html",$html);
  
         $html = getNugget("EcfSourceCode.html",$html);
         $html = getNugget("EcfExtraPlugins.html",$html);
