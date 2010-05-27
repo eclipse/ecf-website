@@ -73,7 +73,7 @@
     <TD vAlign=top width="85%"> 
     
     <p>ECF 3.2 provided the initial implementation of the Remote Services in OSGi 4.2 specification. This specification provides destils for Synchrnous Remote Services but not for Asynchrnous Remote Services. The main
-	issue in the synchronous Remote Services. In distributed applications the time for method calls over network might have a large performance variability due to unoredictable behaviour of underlying network, etc. So
+	issue in the synchronous Remote Services is, in distributed applications the time for method calls over network might have a large performance variability due to unpredictable behaviour of underlying network, etc. So
 	the response time for a Synchronous Remote Service call might take a longer time than expected when the network traffic is high. Therefore the Thread which is responsible of handling the Remote Service call might be
 	blocked for a very long time due to the blocking feature of synchronous systems. In order to avoid these types of problems, we need to use non blocking Asynchronous Remote Services where the result is sent back to the
 	caller using a callback handler. Hence ECF provides the ability to create Asynchronous Remote Services as well. This support is added with the OSGi 4.2 initial implementation. Now there are several examples and documentation 
