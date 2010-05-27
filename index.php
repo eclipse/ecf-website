@@ -66,7 +66,7 @@
 		</td>
 		<td valign="top">
 	  	<b>March 26, 2009 - Markus Alexander Kuppe and Scott Lewis present a talk about <a href="http://www.eclipsecon.org/2009/sessions?id=757">"Best Practices with distributed OSGi services"</a> during <a href="http://www.eclipsecon.org/2009">EclipseCON 2009</a>. </b>
-			As always the slides are <a href="http://ecf2.osuosl.org/Best_Practices_with_Distributed_OSGi.pdf">available online</a>.
+			As always the slides are <a href="presentations/Best_Practices_with_Distributed_OSGi.pdf">available online</a>.
            <p></p>
 		</td>
 	</tr>
@@ -76,7 +76,7 @@
 		</td>
 		<td valign="top">
 	  	<b>March 23, 2009 - Scott Lewis and Markus Alexander Kuppe gave a tutorial titled <a href="http://www.eclipsecon.org/2009/sessions?id=618">"Distributed OSGi - The ECF way"</a> at <a href="http://www.eclipsecon.org/2009">EclipseCON 2009</a>. </b>
-			The slides are available <a href="http://ecf2.osuosl.org/Distributed_OSGi_-_The_ECF_way_rev02.pdf">on ecf2.osuosl.org</a>.
+			The slides are available <a href="presentations/Distributed_OSGi_-_The_ECF_way_rev02.pdf">here</a>.
            <p></p>
 		</td>
 	</tr>
