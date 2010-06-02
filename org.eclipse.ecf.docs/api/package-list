@@ -98,8 +98,6 @@ org.eclipse.ecf.provider.xmpp
 org.eclipse.ecf.provider.xmpp.identity
 org.eclipse.ecf.provider.zookeeper
 org.eclipse.ecf.provider.zookeeper.core
-org.eclipse.ecf.provider.zookeeper.core.internal
-org.eclipse.ecf.provider.zookeeper.node.internal
 org.eclipse.ecf.provider.zookeeper.util
 org.eclipse.ecf.remoteservice
 org.eclipse.ecf.remoteservice.client
