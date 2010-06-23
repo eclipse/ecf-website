@@ -1,30 +1,32 @@
-    <h3><a name="2.0.0M6">ECF 3.2 Install -- <b>for use with Eclipse Galileo (3.5.X) or Helios (3.6)</b></a></h3>
+    <h3><a name="2.0.0M6">ECF 3.3/Helios Install -- <b>for use with Eclipse Galileo (3.5.X) or Helios (3.6)</b></a></h3>
+     <p>
+     <b>Note</b>:  ECF is part of the Helios Release Train, and as such is available via Helios repository, which is built into Eclipse.  You can 
+     access this repository by going to <b>Help -> Install New Software...->Work With (select Helios - http://download.eclipse.org/releases/helios from 
+     combo box)</b>.  Then under <b>Eclipse Runtime Target Platform Components</b> find <b>Eclipse Communication Framework Target Components</b>.
+     </p>
+     <p>
+     Below is the procedure to install ECF via the ECF Repository directly (rather than the Helios repository as described above).
+     </p>
      <p>
       <ul>
-       <li>In Eclipse, choose <b>Help -> Install New Software...</b>
-       
-       </li>
-       <li>Click on the <b>Add</b> button on the right.
-       </li>
-       
-       <li>Type in a Name in the textbox. For example, type: <b>ECF 3.2 SDK</b>.</li>
+       <li>In Eclipse, choose <b>Help -> Install New Software...</b></li>
+       <li>Click on the <b>Add</b> button on the right. </li>
+       <li>Type in a Name in the textbox. For example, type: <b>ECF 3.3/Helios</b>.</li>
        
        <li>Type the following URL into the Location field. <br/>
-       <b><a href="http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2">http://download.eclipse.org/rt/ecf/3.2/3.6/site.p2</a></b>
-       </li>
-       
+       <b><a href="http://download.eclipse.org/rt/ecf/3.3/helios/site.p2">http://download.eclipse.org/rt/ecf/3.3/helios/site.p2</a></b></li>
        <li> Click OK. </li>
        
        <li>Select the Eclipse Communication Framework (ECF) check box.  NOTE:  This check box will result in including 4 sub-items 
        
        <ol>
-       <li><b>ECF 3.2 Patch for Eclipse 3.5.X</b></li>
+       <li><b>ECF 3.3 Patch for Eclipse 3.5.X</b></li>
        <li><b>Eclipse Communication Framework SDK</b></li>
-       <li><b>Source for ECF 3.2 Patch for Eclipse 3.5.X</b></li>
+       <li><b>Source for ECF 3.3 Patch for Eclipse 3.5.X</b></li>
        <li><b>Source for Eclipse Communication Framework SDK</b></li>
        </ol>
-       <b>Under normal conditions, all four of these sub-items should be included/selected for install.</b>.  The <b>ECF 3.2 Patch for Eclipse 3.5.X</b> is necessary because part of ECF is included with the
-       Eclipse platform itself, and this patch will update these relatively old bundles that were installed with Eclipse 3.5.X.  The source code for the ECF can be removed, but *both* the <b>ECF 3.2 Patch for Eclipse 3.5.X</b> and the <b>Eclipse Communication Framework SDK</b> must be installed to properly use ECF 3.2</li>
+       <b>Under normal conditions, all four of these sub-items should be included/selected for install.</b>.  The <b>ECF 3.3 Patch for Eclipse 3.5.X</b> is necessary because part of ECF is included with the
+       Eclipse platform itself, and this patch will update these relatively old bundles that were installed with Eclipse 3.5.X.  The source code for the ECF can be removed, but *both* the <b>ECF 3.3 Patch for Eclipse 3.5.X</b> and the <b>Eclipse Communication Framework Target Components</b> must be installed to properly use ECF 3.3</li>
        
        <li>Click on Next.</li>
        
@@ -36,7 +38,7 @@
      <li>Choose <b>Help -> Install New Software...</b></li>
      <li>Click on <b>already installed</b> </li>
      <li>Click on <b>Installed Software</b></li>
-     <li>Click on <b>Eclipse Communication Framework (SDK)</b></li>
+     <li>Click on <b>Eclipse Communication Framework Target Components</b></li>
      <li>Click on <b>Uninstall ...</b></li>
      </ul>
      </p>
