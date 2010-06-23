@@ -33,7 +33,7 @@ ob_start();
     <b>ECF 3.3/Helios Now Available (6/23/2010).</b>
     <p></p>
     <p>
-    ECF 3.3/Helios requires <b>Eclipse Galileo (3.5.X) or Eclipse Helios 3.6 (or more recent milestones/releases)</b>.  <br>
+    ECF 3.3/Helios requires <b>Eclipse Helios (3.6) or Galileo (3.5.X)</b>.  <br>
     <br>See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
