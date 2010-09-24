@@ -55,6 +55,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Sept 24, 2010 - ECF 3.3.1/Helios Service Release 1 available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>June 23, 2010 - ECF 3.3/Helios Release available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
            <p></p>
