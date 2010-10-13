@@ -18,11 +18,12 @@
         <font class="indexsub">an eclipse runtime project</font> 
         <br><br> 
         <font class="indextop style2">New and Noteworthy</font><br>
-        3.3.0 Release</font> 
+        3.4.0 Release</font> 
         <br>
         <br><br> 
         Return to <a href="downloads.php">ECF download page</a></br> 
         <br><br> 
+        <a href="NewAndNoteworthy_3.3.0.html">New and Noteworthy for 3.3.0</a><br>         
         <a href="NewAndNoteworthy_3.2.0.html">New and Noteworthy for 3.2.0</a><br>         
         <a href="NewAndNoteworthy_3.1.0.html">New and Noteworthy for 3.1.0</a><br> 
 		<a href="NewAndNoteworthy_3.0.0.html">New and Noteworthy for 3.0.0</a><br> 
@@ -43,23 +44,16 @@
  <TR> 
     <TD vAlign=top align=left width="15%"> 
         <P align=left> 
-	<B><a href="http://wiki.eclipse.org/Zookeeper_Based_ECF_Discovery">Zookeeper Based ECF Discovery</a></B> 
+	<B><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=310580">DNS-Service Discovery</a></B> 
         </P> 
     </TD> 
     <TD vAlign=top width="85%"> 
     
-    <p>ECF 3.3 contains Apache Zookeeper based Discovery provider. <a href="http://hadoop.apache.org/zookeeper/">Apache Zookeeper</a> is a centralized service for maintaining configuration information, naming, providing 
-	distributed synchronization, and providing group services. All of these kinds of services are used in some form or another by Check the <a href="http://wiki.apache.org/hadoop/ZooKeeper/PoweredBy" target="blank">distributed applications</a>.
-	 ZooDiscovery is a discovery mechanism that runs as an OSGi service. It leverages Apache ZooKeeper robustness and implements Eclipse ECF Discovery API. For more details on Zookeeper based Service Discovery, please 
-	 check <a href="http://wiki.eclipse.org/Zookeeper_Based_ECF_Discovery" target="_blank">Eclipse Wiki</a>. ECF 3.3 contains helloworld examples explaining how to use Zookeeper for your distributed application development.
+    <p>ECF 3.4 includes a remote services <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=310580">discovery provider based upon DNS-SD</a>.  DNS-SD is a WAN network service discovery
+    protocol based upon standard DNS. This allows <a href="http://wiki.eclipse.org/OSGi_4.2_Remote_Services_and_ECF">OSGi 4.2 standard remote services</a> to be exposed for WAN-based service discovery using DNS. 
+    DNS-SD requires configuring an authoritative DNS server in order to work, so to use ECF DNS-SD please see the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf-dev mailing list</a> 
+    and <a href="http://wiki.eclipse.org/DNS-SD_based_wide-area_ECF_discovery_provider">this wiki page</a>.
 	</p>
-		<p><table width="90%"  border="0">
-  <tr>
-    <td><img src="images/zookeeper_small.gif"></td>
-    <td><img src="images/zkservice.jpg"></td>
-  </tr>
-</table>
-</p>
 	<br>
 	<br>
     </td> 
@@ -67,19 +61,14 @@
    <TR> 
     <TD vAlign=top align=left width="15%"> 
         <P align=left> 
-	<B><a href="http://eclipseecf.blogspot.com/2010/04/osgi-remote-services-and-ecf.html">Asynchronous Implementation of OSGi Remote Services.</a></B> 
+	<B>Atom/RSS-based REST API Implementation</B> 
         </P> 
     </TD> 
     <TD vAlign=top width="85%"> 
     
-    <p>ECF 3.2 provided the initial implementation of the Remote Services in OSGi 4.2 specification. This specification provides destils for Synchrnous Remote Services but not for Asynchrnous Remote Services. The main
-	issue in the synchronous Remote Services is, in distributed applications the time for method calls over network might have a large performance variability due to unpredictable behaviour of underlying network, etc. So
-	the response time for a Synchronous Remote Service call might take a longer time than expected when the network traffic is high. Therefore the Thread which is responsible of handling the Remote Service call might be
-	blocked for a very long time due to the blocking feature of synchronous systems. In order to avoid these types of problems, we need to use non blocking Asynchronous Remote Services where the result is sent back to the
-	caller using a callback handler. Hence ECF provides the ability to create Asynchronous Remote Services as well. This support is added with the OSGi 4.2 initial implementation. Now there are several examples and documentation 
-	guides for the users on Asynchronous Remote Services. Please visit <a href="http://eclipseecf.blogspot.com/2010/02/osgi-remote-services-and-sync-vs-async.html" target="_blank">OSGi Remote Services and Sync vs. Async</a>,
-	<a href="http://eclipseecf.blogspot.com/2010/04/osgi-remote-services-and-ecf.html" target="_blank">OSGi Remote Services and ECF - Asynchronous services</a>, <a href="http://eclipseecf.blogspot.com/2010/04/asynchronous-remote-services-part-2.html" target="_blank">Asynchronous Remote Services - part 2</a> 
-	and <a href="http://eclipseecf.blogspot.com/2010/04/asynchronous-remote-services-future-or.html" target="_blank">Asynchronous Remote Services - The future or the callback </a> in the <a href="http://eclipseecf.blogspot.com/" target="_blank">Eclipse Blog</a> for more infomation.
+    <p><a href="http://wiki.eclipse.org/REST_abstraction_for_ECF">ECF 3.3 has a REST Remote Services API</a>.  This API allows the usage of several serialization
+    formats...with JSON and XML supported in ECF 3.3.  Now, support for Atom/RSS-based serialization for REST-based remote services has
+    been added.  This makes it easy for clients to use Atom/RSS in their REST clients (that use the ECF's REST API).
 	</p>
 	<br>
 	<br>
@@ -88,19 +77,21 @@
   <TR> 
     <TD vAlign=top align=left width="15%"> 
         <P align=left> 
-	<B><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=307360">Inclusion of ECF Remote Services in SOA Package</a></B> 
+	<B><a href="">Improvements to Distributed EventAdmin</a></B> 
         </P> 
     </TD> 
     <TD vAlign=top width="85%"> 
     
-    <p> ECF has provided the support for OSGi 4.2 remote services in the ECF 3.2 release. Now ECF has created a new feature, org.eclipse.ecf.remoteservice.sdk.feature.
-	This feature is a part of the org.eclipse.ecf.core and it  feature includes around 10 other features that break up the ECF remoteservice implementation logically (i.e.
-	discovery api, remote service api, osgi 4.2 implementation, various providers for apis, etc). This new feature is now hosted at the Helios contribution repository for 
-	ECF. The repository location is <a href="http://download.eclipse.org/rt/ecf/3.3/helios/site.p2" target="_blank">http://download.eclipse.org/rt/ecf/3.3/helios/site.p2</a>. 
-	Eclipse community had strongly supported the idea of including ECF OSGi 4.2 Remote Services in the SOA-IWG package. So with the consent of the SOA committers, ECF Remote 
-	Services feature ( org.eclipse.ecf.remoteservice.sdk.feature) is now a part of the SOA-IWG package and ECF Remote Services are distributed with SOA package as well.
+    <p>ECF 3.3 includes an implementation of Distributed EventAdmin as described <a href="http://wiki.eclipse.org/Distributed_EventAdmin_Service">here</a>.  
+    This release includes a number of
+    enhancements to the DistributedEventAdmin implementation API, to allow for easy customization of Distributed EventAdmin...e.g. to allow for
+    custom Event serialization/deserialization of OSGi Event instances, and to easily customize/add Event persistence.  See the javadocs for
+    the DistributeEventAdmin class <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/eventadmin/DistributedEventAdmin.html">here</a>.
     </p>
 	<br>
+    <p>
+    <img src="http://wiki.eclipse.org/images/a/a9/Distributedeventadmin.png">
+    </p>
 	<br>
     </td> 
   </TR> 
@@ -112,7 +103,7 @@
     </TD> 
     <TD vAlign=top width="85%"> 
     
-    <p>ECF 3.3 release contains a new set of examples and documetation guides for Remote Services. <a href="http://wiki.eclipse.org/Getting_Started_with_ECF%27s_OSGi_Remote_Services_Implementation" target="_blank">Getting Started with ECF's OSGi Remote Services Implementation</a>,
+    <p>ECF 3.3 release contains a new set of examples and documentation guides for Remote Services. <a href="http://wiki.eclipse.org/Getting_Started_with_ECF%27s_OSGi_Remote_Services_Implementation" target="_blank">Getting Started with ECF's OSGi Remote Services Implementation</a>,
 	<a href="http://wiki.eclipse.org/Asynchronous_Proxies_for_Remote_Services" target="_blank">Asynchronous Proxies for Remote Services</a>,<a href="http://wiki.eclipse.org/Using_Spring_with_ECF_Remote_Services" target="_blank">Using Spring with ECF Remote Services</a>,
 	<a href="http://wiki.eclipse.org/Load_Balancing_Remote_Services" target="_blank">Load Balancing Remote Services</a> are some of the new additions to the ECF. Please visit <a href="http://wiki.eclipse.org/ECF" target="_blank">ECF Wiki</a> for moer information.
      </p>
@@ -123,17 +114,12 @@
     <TR> 
     <TD vAlign=top align=left width="15%"> 
         <P align=left> 
-	<B><a href="https://ecf2.osuosl.org/hudson/">Hudson Continuous Server for ECF</a></B> 
+	<B><a href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git/">Migration to GIT</a></B> 
         </P> 
     </TD> 
     <TD vAlign=top width="85%"> 
     
-    <p>ECF now mainstains a Hudson Continuous Integration Server which is running at Origon State University Open Source Lab (OSUOSL). ECF Hudson CI Server runs an instance of Eclipse Buckminster to build the Eclipse Plugins and 
-	Eclipse Buckminster Project is developed with the aim of providing Component Assembly for Eclipse. Buckminster is a component resolution & materialization framework. Hudson CI server is one of the widely used CI server in the 
-	software industry today. Hudson Server runs in a servlet container and supports SCM tools such as CVS, Subversion, Git and Clearcase. Not only these SCM integrations but also it supports Apache Ant and Apache Maven project executions.
-	Hudson is capable of executing the Windows Batch scripts and Shell scripts as well. It provides users to build system automatically without human intervention upon set of triggers such as SCM commits using post commit hooks, 
-	time based triggers such as nightly builds. Currently several ECF committers working on ECF Hudson Server. The location of the ECF Hudson Server is <a href="https://ecf2.osuosl.org/hudson/" target="_blank">https://ecf2.osuosl.org/hudson/</a> and you can access this server to download latest build artifacts of ECF.
-    </p>
+    <p>ECF is moving to using GIT for source code control.  See <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg04345.html">this ecf-dev mailing list thread</a> for more information.</p>
 	
 	</P>
 	<br>
@@ -141,191 +127,6 @@
     </td> 
   </TR> 
 
-<!-- This is the start of 3.2 section -->
-  <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="http://eclipseecf.blogspot.com/2010/01/osgi-remote-services-from-ecf.html">OSGi 4.2 remote <br>services standard </a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
-    
-    <p> 
-     ECF 3.2 has support for the <a href="http://www.osgi.org/Specifications/HomePage">OSGi 4.2 remote services specification</a> which is specified in chapter 13 in compendium section.  This is the initial mplementation of this specification. The notable features of this ECF's implementation are 
-	 Transport Independence, Lightweight, Standard Open Source Open Team Open Process, Extensibility and etc. See <a href="http://eclipseecf.blogspot.com/2010/01/osgi-remote-services-from-ecf.html">ECF Blog</a>, <a href="http://wiki.eclipse.org/OSGi_4.2_Remote_Services_and_ECF">ECF Wiki on OSGi 4.2 and ECF</a> and <a href="http://wiki.eclipse.org/Getting_Started_with_ECF's_OSGi_Remote_Services_Implementation">ECF Wiki on Getting started with OSGi Remote Services</a> for more details about this. 
-	</p>
-	<p><img src="images/Distributedosgi1.png"></p>
-	<br>
-	<br>
-    </td> 
-  </TR> 
-  
-  <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="http://eclipseecf.blogspot.com/2010/01/soap-rest-and-ecf-remote-services.html">SOAP and REST APIs for Remote services</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
-    <p>ECF 3.2 is consists of SOAP based provider support for remote services. REST based remote service support was added to the ECF 3.1 release and ECF 3.2 now have OSGi 4.2 remote services implementation along with SOAP based remote services support.
-	SOAP is not a protocol but it is a rpc style and it works as a serialization format as well. Hence ECF's does not have a single SOAP provider. Instead of a single implementation of a SOAP provider ECF 3.2 has included some utility and implementation
-	classes for creating SOAP based providers. See <a href="http://wiki.eclipse.org/SOAP-based_Providers">ECF Wiki</a> and <a href="http://eclipseecf.blogspot.com/2010/01/soap-rest-and-ecf-remote-services.html">ECF blog</a> for more details.</p> 
-	<p>REST API support for Remote Services was initially added to the ECF 3.1 release and See <a href="http://wiki.eclipse.org/REST_abstraction_for_ECF">ECF Wiki</a> and <a href="http://eclipseecf.blogspot.com/2009/11/ecf-provides-some-additional-rest.html">ECF Blog</a>
-	for more details about the ECF REST support for Remote services.
-	</p>
-    <br><br> 
-    </td> 
-  </TR> 
- 
-  <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="http://wiki.eclipse.org/Load_Balancing_Remote_Services">Load Balancing for Remote Services</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
-    <p>ECF remote services API allows arbitrary services to be exposed for remote access and invocation. Some of these services are long running and/or computationally intensive. So it is a good practice to use multiple servers to execute these services. Dynamic load balanacing among these servers helps to prevent servers being overloaded. ECF now has dynamic load balancing 
-	example  that uses a JMS Queue via <a href="http://ecf1.osuosl.org/">ECF ActiveMQ provider</a> implementation of JMS to do dynamic load balancing for ECF remote service  method/request invocations.
-	See <a href="http://wiki.eclipse.org/Load_Balancing_Remote_Services">ECF Wiki</a> for more details.
-    </p> 
-    
-   
-       <br><br> 
-    </td> 
-  </TR> 
- 
-
-  <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="http://wiki.eclipse.org/ECF">Remote Services Examples</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
-    <p>Remote services API is an major API in the ECF and it has been there for a quite long time. Though the API was there, number of exmaples existed in the ECF was very few. So in this ECF 3.2 release a set of examples for ECF remote services being included. These examples 
-	give a thorough knowledge on using ECF Remote Rervices API. See <a href="http://wiki.eclipse.org/Getting_Started_with_Using_the_ECF_Remote_Services_API">ECF Wiki</a> for more.
-    </p> 
-       <br><br> 
-    </td> 
-  </TR> 
-  
-  <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280347">Google Wave Provider</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
-    <p>Google's wave protocol is an emerging server-to-server protocol for real-time updates and replicated state synchronization.  The protocol is being specified and developed in the open at www.waveprotocol.org.
-    Using the following 3 ECF characteristics <br><br> 1) ECF's provider architecture <br>2) the ECF sync API for implementing operational transformation and<br>3) Our existing XMPP provider <br><br>
-    it is straightforward to implement a Wave provider in ECF, allowing
-	Equinox-based runtimes to both host Waves/wavelets, and participate in waves/wavelets hosted by google and by other implementers.
-</p>
-    <p>Currently the implementation is not completed  and it is under construction. See <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=280347">ECF Bug request</a> for more details.</p>
-	 <br>
-  <br>
-    </td> 
-  </TR> 
- 
-  
-  <!-- End of 3.2 section -->
-  <!-- Start of 3.1 section -->
-   <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B><a href="http://wiki.eclipse.org/REST_abstraction_for_ECF">Representational State Transfer (REST) API</a></B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>
-    ECF 3.1 has support for creating REST-based remote services.  ECF's existing <a href="http://wiki.eclipse.org/Getting_Started_with_Using_the_ECF_Remote_Services_API">remote services API</a> has been extended to specifically
-    support the access of REST-based services (such as the Twitter API).  See <a href="http://wiki.eclipse.org/REST_abstraction_for_ECF">ECF REST API wiki page</a> for more details and examples.</p>
-    <p>
-       <br><br>
-    </td>
-  </TR>
-  
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B><a href="http://wiki.eclipse.org/Distributed_EventAdmin_Service">Distributed EventAdmin</a></B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>OSGi 4.1 defines an EventAdmin service for delivering events asynchronously or synchronously to an arbitrary set of listeners.  ECF
-    has created a distributed version of the EventAdmin service, which uses publish and subscribe to deliver Events to remote listeners.  The 
-    This implementation uses the abstract <a href="http://wiki.eclipse.org/ECF_API_Docs#Shared_Object_API">ECF shared object API</a>, which abstracts publish/subscribe 
-    communication above the transport, so that that the use the Distributed EventAdmin service may be bound at runtime to a selected message bus.  For example, ActiveMQ/JMS may
-    be used as the message bus, or ECF generic groups, or JavaGroups/reliable multicast, or other transports.  See the <a href="http://wiki.eclipse.org/Distributed_EventAdmin_Service">Distributed EventAdmin wiki page</a>
-    for documentation and examples.
-    </p>
-    <p>
-    <img src="http://wiki.eclipse.org/images/a/a9/Distributedeventadmin.png">
-    </p>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B><a href="http://wiki.eclipse.org/newsreader">Salvo, the Eclipse Newsreader</a></B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>
-    Committer work is underway on a NNTP Newsreader client (called Salvo) together with an ECF Container implementing the NNTP protocol. For details of this work, and to participate, see <a href="http://wiki.eclipse.org/newsreader">here</a>.
-    </p>
-    <p>
-    Here is a screen shot from a recent version of the Salvo work
-    </p>
-    <p>
-    <img src="images/Salvo1.gif">
-    </p>
-       <br><br>
-    </td>
-  </TR>
-  
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B><a href="http://wiki.eclipse.org/TweetHub">TweetHub</a></B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>
-    Community-initiated work is underway on a Twitter client (called TweetHub) that uses ECF APIs, 
-    as well as Eclipse RCP user interface technologies.  For details of this work, and to participate, see <a href="http://wiki.eclipse.org/TweetHub">here</a>.
-    </p>
-    <p>
-    Here is a screen shot from a recent version of the TweetHub work
-    </p>
-    <p>
-    <img src="images/TweetHub1.png">
-    </p>
-       <br><br>
-    </td>
-  </TR>
-
-  <TR>
-    <TD vAlign=top align=left width="30%">
-        <P align=left>
-	<B><a href="http://wiki.eclipse.org/File-based_Discovery">File-based Discovery</a></B>
-        </P>
-    </TD>
-    <TD vAlign=top width="70%">
-    <p>
-    As part of the ECF RFC119/Distributed OSGi implementation in ECF 3.0/Galileo, two discovery providers were previously released:  one based upon
-    jSLP (Service Location Protocol aka RFC 2608) and the other based upon Apple's Bonjour/zeroconf protocol.  File-based discovery
-    provides a way to publish and discover remote service endpoints without using a network protocol at all (or in addition to a network protocol), but
-    rather using an XML file that describes the endpoints of the remote services available.  See the <a href="http://wiki.eclipse.org/File-based_Discovery">File-based Discovery</a>
-    wiki page for documentation and examples.
-    </p>
-       <br><br>
-    </td>
-  </TR>
-
- 
 </table> 
  
 </body> 
