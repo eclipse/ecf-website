@@ -84,8 +84,9 @@ ob_start();
        Container instance creation is done via ECF-provided factory APIs.  For example, here's code to create 
        and IContainer instance:
        <pre>
-       IContainer container = ContainerFactory.getDefault().createContainer(&lt;Container Type&gt;);
+       IContainer container = getContainerFactory().createContainer(&lt;Container Type&gt;);
        </pre>
+       Note that the getContainerFactory() method should return an IContainerFactory instance and this can be accessed as a singleton OSGi Service (via OSGi ServiceReferece, ServiceTracker or Declarative Services).
        Once constructed, <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/IContainer.html">IContainer</a> instances may be used in the manner appropriate for the given application.  
        <br/><br/>
        Container Types Available at dev.eclipse.org<br>
@@ -324,7 +325,7 @@ ob_start();
 
 
        <br/><br/>
-       Container Types Available at <a href="http://ecf1.osuosl.org">OSU Open Source Lab</a><br>
+       Container Types Available at <a href="http://github.com/ECF">ECF Github site</a><br>
        <br/>
 <a name="osuoslcontainers"></a><TABLE WIDTH=669 BORDER=1 BORDERCOLOR="#000000" CELLPADDING=4 CELLSPACING=0>
 	<COL WIDTH=96>
@@ -500,9 +501,9 @@ ob_start();
        Here's an example code snippet that shows the creation and connection of an ECF container:
        <pre>
        // make container instance
-       IContainer cont = ContainerFactory.getDefault().createContainer("ecf.generic.client");
+       IContainer cont = getContainerFactory().createContainer("ecf.generic.client");
        // make targetID
-       ID targetID = IDFactory.getDefault().createID(cont.getConnectNamespace(),"ecftcp://ecf1.osuosl.org:3282/server");
+       ID targetID = IDFactory.getDefault().createID(cont.getConnectNamespace(),"ecftcp://foo.com:3282/server");
        // then connect to targetID with null authentication data
        cont.connect(targetID,null);
        </pre>       
@@ -525,14 +526,14 @@ ob_start();
        constructing new ID instances via the ECF <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/IIDFactory.html">IDFactory</a>.
        For example, to construct an instance of and XMPP ID, a client could use the following code:
        <pre>
-       ID newID = IDFactory.getDefault().createID("ecf.xmpp","slewis@ecf1.osuosl.org");
+       ID newID = IDFactory.getDefault().createID("ecf.xmpp","slewis@foo.com");
        </pre>
        Underneath the covers of the IDFactory.createID method the following occurs:
        <ol>
        <li>The name "ecf.xmpp" is used to lookup it's associated Namespace class (in this case XMPPNamespace).  This lookup is done via the
        Eclipse extension registry.
        <li>The XMPPNamespace.createInstance method is called to manufacture an <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a>
-       that is in the XMPPNamespace from the string "slewis@ecf1.osuosl.org"
+       that is in the XMPPNamespace from the string "slewis@foo.com"
        <li>The new <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/core/identity/ID.html">ID</a> is
        returned to the caller
        </ol>
@@ -576,7 +577,7 @@ ob_start();
       fqdn            = (sub-domain 1*("." sub-domain))
       sub-domain      = (internationalized domain label)
       address-literal = IPv4address / IPv6address
-      example         = slewis@ecf1.osuosl.org/ecf
+      example         = slewis@foo.com/ecf
        </pre>
       The ECF XMPP provider implementation restricts jids to this syntax by providing a Namespace subclass responsible
       for constructing ID instances that follow the rules defined by the protocol specification.  Other communications protocols 
