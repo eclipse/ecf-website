@@ -55,8 +55,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Oct 26, 2010 - ECF committer Pavel Samolisov has written a nice article <a href="http://psamolisov.blogspot.com/2010/10/ecf-for-eclipse-customers.html">ECF for Eclipse Customers</a></b> that describes
-	  	some of the Eclipse developer collaboration features from ECF.
+	  	<b>Oct 26, 2010 - ECF committer Pavel Samolisov has written a nice article: <a href="http://psamolisov.blogspot.com/2010/10/ecf-for-eclipse-customers.html">ECF for Eclipse Customers</a></b>.  It describes
+	  	some of the Eclipse developer collaboration features that come with ECF.
            <p></p>
 		</td>
 	</tr>
