@@ -55,6 +55,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Oct 26, 2010 - ECF committer Pavel Samolisov has written a nice article <a href="http://psamolisov.blogspot.com/2010/10/ecf-for-eclipse-customers.html">ECF for Eclipse Customers</a></b> that describes
+	  	some of the Eclipse developer collaboration features from ECF.
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Oct 13, 2010 - ECF has changed its source code repository from CVS to git The git repo can be found at <a href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git">http://git.eclipse.org/c/ecf/org.eclipse.ecf.git</a>.</b>
 			The CVS repository remains online read-only for the moment but _won't be_ synced with git!.
            <p></p>
