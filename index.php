@@ -47,6 +47,12 @@
      	<div style="margin:10px;">
          $desc
 	</div>
+	<div class="homeitem3col">
+         <h3>Next Release Status</h3>
+     	<div style="margin:10px;">
+     	The next release is <b>ECF 3.4</b>, on schedule to occur <b>October 29, 2010</b> (later this week).  ECF has completed it's Eclipse Foundation
+     	<a href="http://www.eclipse.org/projects/whatsnew.php">project review</a> and is doing final testing and release engineering.
+	</div>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
