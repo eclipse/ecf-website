@@ -50,12 +50,20 @@
 	<div class="homeitem3col">
          <h3>Next Release Status</h3>
      	<div style="margin:10px;">
-     	The next release is <b>ECF 3.4</b>, on schedule to occur <b>October 29, 2010</b> (later this week).  ECF has completed it's Eclipse Foundation
-     	<a href="http://www.eclipse.org/projects/whatsnew.php">project review</a> and is doing final testing and release engineering.
-	</div>
+     	<b>October 29, 2010:  ECF 3.4.0 has just been released</div>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>Oct 29, 2010 - ECF 3.4.0 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
+           <p></p>
+		</td>
+	</tr>
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
