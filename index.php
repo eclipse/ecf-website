@@ -50,7 +50,7 @@
 	<div class="homeitem3col">
          <h3>Next Release Status</h3>
      	<div style="margin:10px;">
-     	<b>October 29, 2010:  ECF 3.4.0 has just been released</div>
+     	<b>ECF 3.4.0 has just been released (10/29/2010).  See <a href="downloads.php">here for download</a></div>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
@@ -60,7 +60,7 @@
 		</td>
 		<td valign="top">
 	  	<b>Oct 29, 2010 - ECF 3.4.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
