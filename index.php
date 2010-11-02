@@ -59,6 +59,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Nov 2, 2010 - Committer Scott Lewis has two new blog posts: <a href="http://eclipseecf.blogspot.com/2010/11/ecf-34-remote-services.html">ECF 3.4 Remote Services</a></b> and 
+	  	<a href="http://eclipseecf.blogspot.com/2010/10/ecf-34-released.html">ECF 3.4 Released</a>.
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Oct 29, 2010 - ECF 3.4.0 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
