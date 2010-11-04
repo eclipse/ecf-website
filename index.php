@@ -59,7 +59,7 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Nov 3, 2010 - Wim Jongman and Markus Alexander Kuppe presented ECF remote services at ESE2010 in Ludwigsburg. <a href="http://www.eclipsecon.org/summiteurope2010/sessions/?page=sessions&id=1916">Slides are available online from the conference website.</a></b>.
+	  	<b>Nov 3, 2010 - Wim Jongman and Markus Alexander Kuppe presented ECF remote services at ESE2010 in Ludwigsburg. <a href="http://www.eclipsecon.org/summiteurope2010/sessions/?page=sessions&id=1916">More information can be found at the conference website.</a></b>.
            <p></p>
 		</td>
 	</tr>
