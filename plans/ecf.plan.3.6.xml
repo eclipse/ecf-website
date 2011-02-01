@@ -55,10 +55,10 @@
 			<html:div></html:div>
 		</milestone>
 		<milestone date="3/18/2011" milestone="M6">
-			<html:div>ECF 3.5 API Freeze</html:div>
+			<html:div>ECF 3.6 API Freeze</html:div>
 		</milestone>
 		<milestone date="5/6/2011" milestone="M7">
-			<html:div>ECF 3.5 Feature Freeze</html:div>
+			<html:div>ECF 3.6 Feature Freeze</html:div>
 		</milestone>
 		<milestone date="5/20/2011" milestone="RC1">
 			<html:div></html:div>
