@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan"
+	xmlns:html="http://www.w3.org/1999/xhtml" name="Eclipse Communication Framework">
+	<release projectid="rt.ecf" version="3.5" />
+	<introduction>
+		<html:div>
+			<html:p>
+				Previously, ECF has had three major releases:
+				ECF 1.0.0 as part of <html:a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</html:a>, 
+				ECF 2.0.0 as part of <html:a href="http://wiki.eclipse.org/Ganymede_Simultaneous_Release">Ganymede Simultaneous Release</html:a>, 
+				ECF 3.0.0 as part of <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">Galileo Simultaneous Release</html:a>, 
+				and ECF 3.3.0 as part of <html:a href="http://wiki.eclipse.org/Helios_Simultaneous_Release">Helios Simultaneous Release</html:a>. 
+				This plan describes the work for ECF 3.6, which will occur in June, 2011 as part of the
+				<html:a href="http://wiki.eclipse.org/Indigo_Simultaneous_Release">Indigo Simultaneous Release</html:a>.
+			</html:p>
+		</html:div>
+	</introduction>
+	<release_deliverables>
+		<html:div>
+			<html:p>
+				The major ECF 3.6 release deliverables are as follows:
+				<html:ol>
+					<html:li>Fully support OSGi 4.2's Remote Services Admin standard (chapter 122 in enterprise specification)</html:li>
+					<html:li>Use and extend the ECF Google Wave provider to implement a multiplayer game</html:li>
+					<html:li>Introduce xml-rpc-based ECF remote services provider</html:li>
+					<html:li>Introduce SIP provider and improve/update/extend the ECF call API (VOIP/telephony)</html:li>
+					<html:li>Improve and Extend the ECF Example Applications, with
+						special emphasis on OSGi remote services and remote service admin examples
+					</html:li>
+					<html:li>Enable easier creation and use of Equinox+ECF-based Server
+						Runtimes</html:li>
+				</html:ol>
+
+			</html:p>
+		</html:div>
+	</release_deliverables>
+	<release_milestones>
+		<preamble>
+			<html:div>
+				ECF plans on delivering milestone on the same general schedule as
+				the
+				<html:a href="http://wiki.eclipse.org/Helios_Simultaneous_Release">Helios Simultaneous Release</html:a>
+				schedule, starting with M4. ECF has both +0 and +1 components. The
+				+0 components will be
+				on same release schedule as the Platform, and the +1 components will
+				be as specified below.
+			</html:div>
+		</preamble>
+		<milestone date="12/17/2010" milestone="M4">
+			<html:div></html:div>
+		</milestone>
+		<milestone date="2/4/2011" milestone="M5">
+			<html:div></html:div>
+		</milestone>
+		<milestone date="3/18/2011" milestone="M6">
+			<html:div>ECF 3.5 API Freeze</html:div>
+		</milestone>
+		<milestone date="5/6/2011" milestone="M7">
+			<html:div>ECF 3.5 Feature Freeze</html:div>
+		</milestone>
+		<milestone date="5/20/2011" milestone="RC1">
+			<html:div></html:div>
+		</milestone>
+		<milestone date="5/27/2011" milestone="RC2">
+			<html:div></html:div>
+		</milestone>
+		<milestone date="6/3/2011" milestone="RC3">
+			<html:div></html:div>
+		</milestone>
+		<milestone date="6/10/2011" milestone="RC4">
+			<html:div></html:div>
+		</milestone>
+		<milestone date="6/22/2011" milestone="3.5">
+			<html:div>Indigo GA/ECF 3.5</html:div>
+		</milestone>
+		<postamble>
+			<html:div></html:div>
+		</postamble>
+	</release_milestones>
+	<target_environments>
+		<html:div>
+			ECF's target environments are:
+			<html:ul>
+				<html:li>Eclipse</html:li>
+				<html:li>Eclipse-based Applications</html:li>
+				<html:li>Eclipse RCP</html:li>
+				<html:li>Other Equinox-Based Runtimes (e.g. Equinox servers and
+					CDC1.1/Foundation 1.1 environments)</html:li>
+			</html:ul>
+		</html:div>
+		<internationalization>
+			<html:div>ECF doesn't perform internationalization directly, although
+				we develop our plugins following
+				common rules about string externalization to make the automation possible
+			</html:div>
+		</internationalization>
+	</target_environments>
+	<compatibility_with_previous_releases>
+		<html:div>
+			<html:p>
+				ECF has a policy of maintaining API backward compatibility with
+				minor and service releases. API is considered all
+				exported packages (i.e. packages that do not have
+				<html:pre>x-internal:=true</html:pre>
+				in their Export-Package declaration. As an example,
+				with the following declaration in the org.eclipse.ecf MANIFEST.MF
+			</html:p>
+			<html:pre>Export-Package: org.eclipse.ecf.core,
+				org.eclipse.ecf.internal.core;x-internal:=true
+       </html:pre>
+			<html:p>The org.eclipse.ecf.core package is API, and the
+				org.eclipse.ecf.internal.core package is not</html:p>
+			<html:p>Only with major releases (e.g. 2.0.0, 3.0.0) are incompatible
+				API changes to be introduced (e.g. refactorings, renames), and even
+				then only after discussion
+				among multiple committers. For the parts of ECF used by the Platform
+				(e.g. the core and file transfer bundles), NO incompatible
+				API changes will be introduced, even for major releases, in order to
+				maintain the platform backward compatibility
+				constraints.</html:p>
+		</html:div>
+	</compatibility_with_previous_releases>
+	<themes_and_priorities>
+		<preamble>
+			<html:div></html:div>
+		</preamble>
+		<theme name="Remote Services Standards">
+			<description>
+				<html:p>Implement Remote Services Admin specification (impl of OSGI
+					Remote Services Admin spec). 
+				</html:p>
+			</description>
+			<!-- <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[remotesvcs]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed> -->
+		</theme>
+
+		<theme name="Providers">
+			<description>
+				<html:p>Add xml-rpc provider 
+    			</html:p>
+			</description>
+			<!-- <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[wave]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed> -->
+		</theme>
+		<theme name="VOIP">
+			<description>
+				<html:p>Add SIP provider 
+				</html:p>
+			</description>
+			<!-- <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[websvcs]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed> -->
+		</theme>
+		<theme name="Eclipse 4.1">
+			<description>
+				<html:p>No support, no testing on 4.1
+				</html:p>
+			</description>
+		</theme>
+	</themes_and_priorities>
+</plan>
