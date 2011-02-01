@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
 <plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan"
 	xmlns:html="http://www.w3.org/1999/xhtml" name="Eclipse Communication Framework">
-	<release projectid="rt.ecf" version="3.5" />
+	<release projectid="rt.ecf" version="3.6" />
 	<introduction>
 		<html:div>
 			<html:p>
@@ -21,14 +21,15 @@
 			<html:p>
 				The major ECF 3.6 release deliverables are as follows:
 				<html:ol>
-					<html:li>Fully support OSGi 4.2's Remote Services Admin standard (chapter 122 in enterprise specification)</html:li>
-					<html:li>Use and extend the ECF Google Wave provider to implement a multiplayer game</html:li>
-					<html:li>Introduce xml-rpc-based ECF remote services provider</html:li>
+					<html:li>Fully implement OSGi 4.2 Remote Services Admin standard (chapter 122 in OSGi enterprise specification)</html:li>
+					<html:li>Use (and extend) Google Wave provider to implement a multiplayer game</html:li>
+					<html:li>Extend DNSSD discovery provider</html:li>
+					<html:li>Introduce XML-RPC-based remote services provider</html:li>
 					<html:li>Introduce SIP provider and improve/update/extend the ECF call API (VOIP/telephony)</html:li>
 					<html:li>Improve and Extend the ECF Example Applications, with
 						special emphasis on OSGi remote services and remote service admin examples
 					</html:li>
-					<html:li>Enable easier creation and use of Equinox+ECF-based Server
+					<html:li>Enable easier creation and use of Equinox+ECF remote services-based Server
 						Runtimes</html:li>
 				</html:ol>
 
@@ -72,7 +73,7 @@
 			<html:div></html:div>
 		</milestone>
 		<milestone date="6/22/2011" milestone="3.5">
-			<html:div>Indigo GA/ECF 3.5</html:div>
+			<html:div>Indigo GA/ECF 3.6</html:div>
 		</milestone>
 		<postamble>
 			<html:div></html:div>
@@ -131,28 +132,24 @@
 					Remote Services Admin spec). 
 				</html:p>
 			</description>
-			<!-- <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[remotesvcs]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed> -->
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324215"></proposed>
 		</theme>
 
-		<theme name="Providers">
+		<theme name="ECF Providers">
 			<description>
-				<html:p>Add xml-rpc provider 
+				<html:p>Add XML-RPC-based provider 
+    			</html:p>
+				<html:p>Extend DNSSD provider 
     			</html:p>
 			</description>
-			<!-- <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[wave]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed> -->
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325813"></proposed>
 		</theme>
 		<theme name="VOIP">
 			<description>
 				<html:p>Add SIP provider 
 				</html:p>
 			</description>
-			<!-- <proposed bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;short_desc_type=allwordssubstr&amp;short_desc=[websvcs]&amp;classification=RT&amp;product=ECF&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;status_whiteboard_type=allwordssubstr&amp;status_whiteboard=&amp;keywords_type=allwords&amp;keywords=plan&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0="></proposed> -->
-		</theme>
-		<theme name="Eclipse 4.1">
-			<description>
-				<html:p>No support, no testing on 4.1
-				</html:p>
-			</description>
+			<proposed bugzilla="https://bugs.eclipse.org/bugs/show_bug.cgi?id=193388"></proposed>
 		</theme>
 	</themes_and_priorities>
 </plan>
