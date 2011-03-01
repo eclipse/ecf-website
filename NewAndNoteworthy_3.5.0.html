@@ -1,4 +1,5 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en"> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
 <html> 
  
 <head> 
@@ -18,10 +19,10 @@
         <font class="indexsub">an eclipse runtime project</font> 
         <br><br> 
         <font class="indextop style2">New and Noteworthy</font><br>
-        3.5.0 Release</font> 
+        3.5.0 Release 
         <br>
         <br><br> 
-        Return to <a href="downloads.php">ECF download page</a></br> 
+        Return to <a href="downloads.php">ECF download page</a><br> 
         <br><br> 
         <a href="NewAndNoteworthy_3.4.0.html">New and Noteworthy for 3.3.0</a><br>     
         <a href="NewAndNoteworthy_3.3.0.html">New and Noteworthy for 3.3.0</a><br>         
@@ -32,7 +33,7 @@
       </td> 
       <td width="31%"> 
         <div align="center"> 
-          <img src="images/Idea.jpg" width="120" height="86" hspace="50" align="middle"> 
+          <img src="images/Idea.jpg" width="120" height="86" hspace="50" align="middle" alt="Idea Icon"> 
         </div> 
       </td> 
     </tr> 
@@ -42,77 +43,74 @@
 <hr> 
  
 <table> 
- <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324215">Remote Service Admin</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+ <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324215">Remote Service Admin</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     
-    <p>ECF 3.5 includes an implementation of OSGi 4.2 enterprise admin spec chapter 122, which describes a Remote Service Admin. The implementation aims to ease the introduction of discovery/distribution systems with the help of ECF's provider architechture.  
-
-	</p>
+    <p>ECF 3.5 includes an full implementation of OSGi 4.2 Remote Service Admin (RSA), chapter 122 in the enterprise specification. The implementation aims to ease the replacement of discover and distribution systems with ECF's provider architechture. Through the support of the standardized OSGi endpoint description extender format (section 122.8), the new implementation obsoletes the old / RFC 119 file-based discovery.</p>
 	<br>
     <br>
     </td> 
-  </TR>
-   <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325813">XML-RPC Provider</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+  </tr>
+   <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325813">XML-RPC Provider</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     
     <p>
-    ECF 3.5 includes a XML-RPC Provider. It implements the ECF Remote Services API (org.eclipse.ecf.remoteservice). The provider therefore adds the possibility to use a XML-RPC based infrastructure for the registration, distribution and use of remote services. Remote Service invocation through a proxy is possible, too.     
+    ECF 3.5 includes a XML-RPC Provider. It implements the ECF Remote Services API (org.eclipse.ecf.remoteservice). The provider therefore adds the possibility to use a XML-RPC based infrastructure for the registration, distribution and use of remote services. Remote Service invocation through a proxy and/or async proxy is supported, too.     
 	</p>
 	<br>
     <br>
     </td> 
-  </TR>
-  <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=310114">ECF4Felix</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
-    
+  </tr>
+  <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=310114">ECF4Felix</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     <p>ECF4Felix relax the dependency between ECF and Equinox. Until the release of ECF 3.5 the Eclipse Communication Framework runs on Equinox only. ECF4Felix now adds a second option to run ECF: Apache Felix. Using the <a href="https://github.com/ECF/ECF4Felix">github-project</a> ECF remote services are possible to run on Apache Felix with pax-runner.  
     </p>
     <br>
     <br>
     </td> 
-  </TR> 
-    <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="http://wiki.eclipse.org/ECF#ECF_Documentation_Project">ECF Documentation Project</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+  </tr> 
+    <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="http://wiki.eclipse.org/ECF#ECF_Documentation_Project">ECF Documentation Project</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     
     <p>ECF recently started the ECF Documentation Project. This project is an approach to improve the quality of the ECF documentation with the help of the community. It also aims to lower the entry barrier of ECF for new consumers and thus attract new consumers to use ECF.</p>
 	<br>
 	<br>
     </td> 
-  </TR> 
-    <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B>Major Infrastructure Improvements</B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+  </tr> 
+    <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b>Major Infrastructure Improvements</b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     
     <p>ECF received a donation by Remain Software to buy new hardware. The donation results in a new server hosted by OSU labs, which is a huge improvement of the ECF infrastructure. ECF was able to introduce Maven releases and nightly repositorys lately. Thus, the new hardware is used to improve consumers access to ECF on the one hand. On the other hand it allows to improve our continuous integration and testing infrastructure.   
-	</P>
+	</p>
 	<br>
 	<br>
     </td> 
-  </TR> 
+  </tr> 
 
 </table> 
  
