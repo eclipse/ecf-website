@@ -50,7 +50,7 @@
 	<div class="homeitem3col">
          <h3>Next Release Status</h3>
      	<div style="margin:10px;">
-     	<b>ECF 3.4.0 has just been released (10/29/2010).  See <a href="downloads.php">here for download</a></div>
+     	<b>ECF 3.5.0 will be released on 3/14/2011.  The project review is scheduled for Wed, March 9, 2011.  See <a href="http://www.eclipse.org/projects/whatsnew.php">here</a> for project review materials and the details about the review.  
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
