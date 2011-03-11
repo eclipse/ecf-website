@@ -1,4 +1,5 @@
-<!doctype html public "-//w3c//dtd html 4.0 transitional//en"> 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
 <html> 
  
 <head> 
@@ -18,11 +19,12 @@
         <font class="indexsub">an eclipse runtime project</font> 
         <br><br> 
         <font class="indextop style2">New and Noteworthy</font><br>
-        3.4.0 Release</font> 
+        3.5.0 Release 
         <br>
         <br><br> 
-        Return to <a href="downloads.php">ECF download page</a></br> 
+        Return to <a href="downloads.php">ECF download page</a><br> 
         <br><br> 
+        <a href="NewAndNoteworthy_3.4.0.html">New and Noteworthy for 3.3.0</a><br>     
         <a href="NewAndNoteworthy_3.3.0.html">New and Noteworthy for 3.3.0</a><br>         
         <a href="NewAndNoteworthy_3.2.0.html">New and Noteworthy for 3.2.0</a><br>         
         <a href="NewAndNoteworthy_3.1.0.html">New and Noteworthy for 3.1.0</a><br> 
@@ -31,7 +33,7 @@
       </td> 
       <td width="31%"> 
         <div align="center"> 
-          <img src="images/Idea.jpg" width="120" height="86" hspace="50" align="middle"> 
+          <img src="images/Idea.jpg" width="120" height="86" hspace="50" align="middle" alt="Idea Icon"> 
         </div> 
       </td> 
     </tr> 
@@ -41,91 +43,83 @@
 <hr> 
  
 <table> 
- <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=310580">DNS-Service Discovery</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+ <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324215">Remote Service Admin (RSA)</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     
-    <p>ECF 3.4 includes a remote services <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=310580">discovery provider based upon DNS-SD</a>.  DNS-SD is a WAN network service discovery
-    protocol based upon standard DNS. This allows <a href="http://wiki.eclipse.org/OSGi_4.2_Remote_Services_and_ECF">OSGi 4.2 standard remote services</a> to be exposed for WAN-based service discovery using DNS. 
-    DNS-SD requires configuring an authoritative DNS server in order to work, so to use ECF DNS-SD please see the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf-dev mailing list</a> 
-    and <a href="http://wiki.eclipse.org/DNS-SD_based_wide-area_ECF_discovery_provider">this wiki page</a>.
-	</p>
-	<br>
+    <p>ECF 3.5 includes an full implementation of <a href="http://www.osgi.org/download/r4v42/r4.enterprise.pdf">OSGi 4.2 Remote Service Admin (RSA), chapter 122 in the enterprise specification</a>. The is a full and complete implementation 
+    of the enterprise specification chapter 122, which defines a management agent service for remote service administration.  ECF's provider architecture allows
+    the flexible, dynamic replacement of discovery and distribution modules while assuring full compliance with the OSGi specification.  More on the Remote Service Admin
+    agent and the unique features of the ECF RSA implementation is available <a href="http://wiki.eclipse.org/Remote_Services_Admin">here</a>.  See also <a href="http://wiki.eclipse.org/ECF#OSGi_Remote_Services">here</a>
+     for more information about ECF's implementation of OSGi remote services.  
+     <p>ECF will soon be running it's implementation through the OSGi Test Compatibility Kit (TCK) to assure compliance with the specification.  The TCK was
+     not available to us in time for ECF 3.5, but it is available to us now, and this will allow us to assure consumers of full
+     compliance with the specification.
+     
+     <p>Additionally, through the 
+    support of the RSA-specified endpoint description extender format (EDEF...described in section 122.8 of the <a href="http://www.osgi.org/download/r4v42/r4.enterprise.pdf">enterprise specification</a>), the new implementation obsoletes the old / RFC 119-based file-based discovery.
+      See <a href="http://wiki.eclipse.org/File-based_Discovery_with_the_Endpoint_Description_Extender_Format">here for more information</a> about this aspect of the RSA specification support.</p>
 	<br>
     </td> 
-  </TR>
-   <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B>Atom/RSS-based REST API Implementation</B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
-    
-    <p><a href="http://wiki.eclipse.org/REST_abstraction_for_ECF">ECF 3.3 has a REST Remote Services API</a>.  This API allows the usage of several serialization
-    formats...with JSON and XML supported in ECF 3.3.  Now, support for Atom/RSS-based serialization for REST-based remote services has
-    been added.  This makes it easy for clients to use Atom/RSS in their REST clients (that use the ECF's REST API).
-	</p>
-	<br>
-	<br>
+  </tr>
+   <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=325813">XML-RPC Provider</a></b> 
+        </p> 
     </td> 
-  </TR>
-  <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="">Improvements to Distributed EventAdmin</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+    <td valign="top" width="85%"> 
     
-    <p>ECF 3.3 includes an implementation of Distributed EventAdmin as described <a href="http://wiki.eclipse.org/Distributed_EventAdmin_Service">here</a>.  
-    This release includes a number of
-    enhancements to the DistributedEventAdmin implementation API, to allow for easy customization of Distributed EventAdmin...e.g. to allow for
-    custom Event serialization/deserialization of OSGi Event instances, and to easily customize/add Event persistence.  See the javadocs for
-    the DistributeEventAdmin class <a href="http://www.eclipse.org/ecf/org.eclipse.ecf.docs/api/org/eclipse/ecf/remoteservice/eventadmin/DistributedEventAdmin.html">here</a>.
-    </p>
-	<br>
     <p>
-    <img src="http://wiki.eclipse.org/images/a/a9/Distributedeventadmin.png">
+    ECF 3.5 includes a XML-RPC Provider. It implements the ECF Remote Services API (org.eclipse.ecf.remoteservice). The provider therefore adds the possibility to use a XML-RPC based infrastructure for the registration, distribution and use of remote services. Remote Service invocation through a proxy and/or async proxy is supported, too.     
+	</p>
+	<br>
+    </td> 
+  </tr>
+  <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=310114">ECF4Felix</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
+    <p>ECF4Felix allows ECF to run on the <a href="http://felix.apache.org/site/index.html">Felix framework</a>. Until the release of ECF 3.4 ECF ran on the Equinox framework only because of unnecessary dependencies.  ECF can now run on other
+    frameworks.  So far, we've tested on <a href="http://felix.apache.org/site/index.html">Felix</a> only, but we are interested in testing on other frameworks also.  If you are willing to help with testing ECF Remote Services/RSA on
+    another framework, please send an email to the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf-dev mailing list</a>).  
     </p>
-	<br>
+    <br>
     </td> 
-  </TR> 
-    <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="http://wiki.eclipse.org/ECF#New_Stuff">Remote Services Examples and Documentations</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+  </tr> 
+    <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="http://wiki.eclipse.org/ECF#ECF_Documentation_Project">ECF Documentation Project</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     
-    <p>ECF 3.3 release contains a new set of examples and documentation guides for Remote Services. <a href="http://wiki.eclipse.org/Getting_Started_with_ECF%27s_OSGi_Remote_Services_Implementation" target="_blank">Getting Started with ECF's OSGi Remote Services Implementation</a>,
-	<a href="http://wiki.eclipse.org/Asynchronous_Proxies_for_Remote_Services" target="_blank">Asynchronous Proxies for Remote Services</a>,<a href="http://wiki.eclipse.org/Using_Spring_with_ECF_Remote_Services" target="_blank">Using Spring with ECF Remote Services</a>,
-	<a href="http://wiki.eclipse.org/Load_Balancing_Remote_Services" target="_blank">Load Balancing Remote Services</a> are some of the new additions to the ECF. Please visit <a href="http://wiki.eclipse.org/ECF" target="_blank">ECF Wiki</a> for moer information.
-     </p>
-	<br>
+    <p>ECF recently started the ECF Documentation Project. This project is an approach to improve the amount and quality of the ECF documentation with the help of the committer, contributor, and consumer communities. It also aims to use of ECF for new and existing consumers.</p>
 	<br>
     </td> 
-  </TR> 
-    <TR> 
-    <TD vAlign=top align=left width="15%"> 
-        <P align=left> 
-	<B><a href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git/">Migration to GIT</a></B> 
-        </P> 
-    </TD> 
-    <TD vAlign=top width="85%"> 
+  </tr> 
+    <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b>Maven Support and other Build Infrastructure Improvements</b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
     
-    <p>ECF is moving to using GIT for source code control.  See <a href="http://dev.eclipse.org/mhonarc/lists/ecf-dev/msg04345.html">this ecf-dev mailing list thread</a> for more information.</p>
-	
-	</P>
+    <p>ECF received a donation from Remain Software to buy new build hardware (many thanks to Remain Software!).  This new build server is hosted by OSU labs, and is available <a href="https://build.ecf-project.org/jenkins/">here</a>. ECF was able to introduce Maven releases and nightly repositories, and these are avalable <a href="http://download.ecf-project.org/">here</a>.   
+	</p>
 	<br>
 	<br>
     </td> 
-  </TR> 
+  </tr> 
 
 </table> 
  
