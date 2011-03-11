@@ -46,14 +46,24 @@
  <tr> 
     <td valign="top" align="left" width="15%"> 
         <p align="left"> 
-	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324215">Remote Service Admin</a></b> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=324215">Remote Service Admin (RSA)</a></b> 
         </p> 
     </td> 
     <td valign="top" width="85%"> 
     
-    <p>ECF 3.5 includes an full implementation of OSGi 4.2 Remote Service Admin (RSA), chapter 122 in the enterprise specification. The implementation aims to ease the replacement of discover and distribution systems with ECF's provider architechture. Through the support of the standardized OSGi endpoint description extender format (section 122.8), the new implementation obsoletes the old / RFC 119 file-based discovery.</p>
+    <p>ECF 3.5 includes an full implementation of <a href="http://www.osgi.org/download/r4v42/r4.enterprise.pdf">OSGi 4.2 Remote Service Admin (RSA), chapter 122 in the enterprise specification</a>. The is a full and complete implementation 
+    of the enterprise specification chapter 122, which defines a management agent service for remote service administration.  ECF's provider architecture allows
+    the flexible, dynamic replacement of discovery and distribution modules while assuring full compliance with the OSGi specification.  More on the Remote Service Admin
+    agent and the unique features of the ECF RSA implementation is available <a href="http://wiki.eclipse.org/Remote_Services_Admin">here</a>.  See also <a href="http://wiki.eclipse.org/ECF#OSGi_Remote_Services">here</a>
+     for more information about ECF's implementation of OSGi remote services.  
+     <p>ECF will soon be running it's implementation through the OSGi Test Compatibility Kit (TCK) to assure compliance with the specification.  The TCK was
+     not available to us in time for ECF 3.5, but it is available to us now, and this will allow us to assure consumers of full
+     compliance with the specification.
+     
+     <p>Additionally, through the 
+    support of the RSA-specified endpoint description extender format (EDEF...described in section 122.8 of the <a href="http://www.osgi.org/download/r4v42/r4.enterprise.pdf">enterprise specification</a>), the new implementation obsoletes the old / RFC 119-based file-based discovery.
+      See <a href="http://wiki.eclipse.org/File-based_Discovery_with_the_Endpoint_Description_Extender_Format">here for more information</a> about this aspect of the RSA specification support.</p>
 	<br>
-    <br>
     </td> 
   </tr>
    <tr> 
@@ -68,7 +78,6 @@
     ECF 3.5 includes a XML-RPC Provider. It implements the ECF Remote Services API (org.eclipse.ecf.remoteservice). The provider therefore adds the possibility to use a XML-RPC based infrastructure for the registration, distribution and use of remote services. Remote Service invocation through a proxy and/or async proxy is supported, too.     
 	</p>
 	<br>
-    <br>
     </td> 
   </tr>
   <tr> 
@@ -78,9 +87,10 @@
         </p> 
     </td> 
     <td valign="top" width="85%"> 
-    <p>ECF4Felix relax the dependency between ECF and Equinox. Until the release of ECF 3.5 the Eclipse Communication Framework runs on Equinox only. ECF4Felix now adds a second option to run ECF: Apache Felix. Using the <a href="https://github.com/ECF/ECF4Felix">github-project</a> ECF remote services are possible to run on Apache Felix with pax-runner.  
+    <p>ECF4Felix allows ECF to run on the <a href="http://felix.apache.org/site/index.html">Felix framework</a>. Until the release of ECF 3.4 ECF ran on the Equinox framework only because of unnecessary dependencies.  ECF can now run on other
+    frameworks.  So far, we've tested on <a href="http://felix.apache.org/site/index.html">Felix</a> only, but we are interested in testing on other frameworks also.  If you are willing to help with testing ECF Remote Services/RSA on
+    another framework, please send an email to the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf-dev mailing list</a>).  
     </p>
-    <br>
     <br>
     </td> 
   </tr> 
@@ -92,20 +102,19 @@
     </td> 
     <td valign="top" width="85%"> 
     
-    <p>ECF recently started the ECF Documentation Project. This project is an approach to improve the quality of the ECF documentation with the help of the community. It also aims to lower the entry barrier of ECF for new consumers and thus attract new consumers to use ECF.</p>
-	<br>
+    <p>ECF recently started the ECF Documentation Project. This project is an approach to improve the amount and quality of the ECF documentation with the help of the committer, contributor, and consumer communities. It also aims to use of ECF for new and existing consumers.</p>
 	<br>
     </td> 
   </tr> 
     <tr> 
     <td valign="top" align="left" width="15%"> 
         <p align="left"> 
-	<b>Major Infrastructure Improvements</b> 
+	<b>Maven Support and other Build Infrastructure Improvements</b> 
         </p> 
     </td> 
     <td valign="top" width="85%"> 
     
-    <p>ECF received a donation by Remain Software to buy new hardware. The donation results in a new server hosted by OSU labs, which is a huge improvement of the ECF infrastructure. ECF was able to introduce Maven releases and nightly repositorys lately. Thus, the new hardware is used to improve consumers access to ECF on the one hand. On the other hand it allows to improve our continuous integration and testing infrastructure.   
+    <p>ECF received a donation from Remain Software to buy new build hardware (many thanks to Remain Software!).  This new build server is hosted by OSU labs, and is available <a href="https://build.ecf-project.org/jenkins/">here</a>. ECF was able to introduce Maven releases and nightly repositories, and these are avalable <a href="http://download.ecf-project.org/">here</a>.   
 	</p>
 	<br>
 	<br>
