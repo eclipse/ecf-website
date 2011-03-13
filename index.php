@@ -50,7 +50,7 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<b>ECF 3.5.0 released on 3/14/2011.</b> See <a href="downloads.php">here for download</a>.<br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.5.0 released on 3/14/2011.</b> See <a href="downloads.php">here for download</a>.<br><br>
      	See the link <a href="http://www.eclipse.org/projects/whatsnew.php">on this page</a> for the successful review materials.  
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
