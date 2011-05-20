@@ -50,11 +50,21 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.5.0 released on 3/14/2011.</b> See <a href="downloads.php">here for download</a>.<br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.5.1 released on 5/20/2011.</b> See <a href="downloads.php">here for download</a>.<br><br>
      	See the link <a href="http://www.eclipse.org/projects/whatsnew.php">on this page</a> for the successful review materials.  
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>May 20, 2011 - ECF 3.5.1 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
@@ -81,16 +91,6 @@
 		<td valign="top">
 	  	<b>Nov 2, 2010 - Committer Scott Lewis has two new blog posts: <a href="http://eclipseecf.blogspot.com/2010/11/ecf-34-remote-services.html">ECF 3.4 Remote Services</a></b> and 
 	  	<a href="http://eclipseecf.blogspot.com/2010/10/ecf-34-released.html">ECF 3.4 Released</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Oct 29, 2010 - ECF 3.4.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
