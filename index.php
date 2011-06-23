@@ -50,8 +50,8 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.5.1 released on 5/20/2011.</b> See <a href="downloads.php">here for download</a>.<br><br>
-     	See the link <a href="http://www.eclipse.org/projects/whatsnew.php">on this page</a> for the successful review materials.  
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Indigo released on 6/22/2011.</b>.<br><br>
+			See also <a href="NewAndNoteworthy.html">ECF 3.5.1 New and Noteworthy</a>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
@@ -60,7 +60,7 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>A new EclipseZone article is available on ECF's Indigo release:  <a href="">Eclipse Indigo Highlights: Five Reasons to Check Out ECF</a></b>
+	  	<b>A new EclipseZone article on ECF Indigo release:  <a href="http://eclipse.dzone.com/articles/eclipse-indigo-highlights-ecf">Eclipse Indigo Highlights: Five Reasons to Check Out ECF</a></b>
 			See also <a href="NewAndNoteworthy.html">ECF 3.5.1 New and Noteworthy</a>
            <p></p>
 		</td>
