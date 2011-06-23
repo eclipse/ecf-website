@@ -60,6 +60,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>A new EclipseZone article is available on ECF's Indigo release:  <a href="">Eclipse Indigo Highlights: Five Reasons to Check Out ECF</a></b>
+			See also <a href="NewAndNoteworthy.html">ECF 3.5.1 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>May 20, 2011 - ECF 3.5.1 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
            <p></p>
