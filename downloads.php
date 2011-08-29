@@ -11,7 +11,7 @@ include($App->getProjectCommon());    # All on the same line to unclutter the us
 	# Begin: page-specific settings.  Change these. 
 	$pageTitle 		= "ECF Downloads";
 	$pageKeywords	= "Type, page, keywords, here";
-	$pageAuthor		= "Scott Lewis, Pete Mackie";
+	$pageAuthor		= "Scott Lewis";
 	
 	# Add page-specific Nav bars here
 	# Format is Link text, link URL (can be http://www.someothersite.com/), target (_self, _blank), level (1, 2 or 3)
@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.5.1 Now Available (5/20/2011)</b>
+    <b>ECF 3.5.2 Now Available (8/29/2011)</b>
     <p></p>
     <p>
-    ECF 3.5.1 requires <b>Eclipse Helios (3.6.*) or Eclipse Indigo (3.7.*)</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.5.2 requires <b>Eclipse Helios (3.6.*) or Eclipse Indigo (3.7.*)</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
  <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a> for further information about plans and ongoing project activities.
