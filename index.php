@@ -80,16 +80,6 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Aug 29, 2011 - ECF 3.5.2 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
 	  	<b>A new EclipseZone article on ECF Indigo release:  <a href="http://eclipse.dzone.com/articles/eclipse-indigo-highlights-ecf">Eclipse Indigo Highlights: Five Reasons to Check Out ECF</a></b>
 			See also <a href="NewAndNoteworthy.html">ECF 3.5.1 New and Noteworthy</a>
            <p></p>
@@ -131,16 +121,6 @@
 		<td valign="top">
 	  	<b>Oct 13, 2010 - ECF has changed its source code repository from CVS to git The git repo can be found at <a href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git">http://git.eclipse.org/c/ecf/org.eclipse.ecf.git</a>.</b>
 			The CVS repository remains online read-only for the moment but _won't be_ synced with git!.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Sept 24, 2010 - ECF 3.3.1/Helios Service Release 1 available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>.
            <p></p>
 		</td>
 	</tr>
