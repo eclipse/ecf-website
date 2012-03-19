@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.5.4 Now Available (12/30/2011)</b>
+    <b>ECF 3.5.5 Now Available (3/19/2012)</b>
     <p></p>
     <p>
-    ECF 3.5.4 requires <b>Eclipse Helios (3.6.*), Eclipse Indigo (3.7.*), or Eclipse Juno (3.8 milestones)</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.5.5 requires <b>Eclipse Helios (3.6.*), Eclipse Indigo (3.7.*), or Eclipse Juno (3.8 milestones)</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
  <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a> for further information about plans and ongoing project activities.
