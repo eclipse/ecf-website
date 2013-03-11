@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.5.6 (Juno) Now Available (6/27/2012)</b>
+    <b>ECF 3.6.0 Now Available (3/11/2013)</b>
     <p></p>
     <p>
-    ECF 3.5.6 requires <b>Eclipse Indigo (3.7.*), or Eclipse Juno (3.8)</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.6.0 requires <b>Eclipse Indigo (3.7.*), or Eclipse Juno (3.8)</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
  <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a> for further information about plans and ongoing project activities.
@@ -43,8 +43,8 @@ ob_start();
 	$html = ob_get_contents();
 
         include 'getNugget.php';
-        $html = getNugget("EcfInstallViaUpdate3.5.html",$html);
-        $html = getNugget("EcfInstallViaZip3.5.html",$html);
+        $html = getNugget("EcfInstallViaUpdate3.6.html",$html);
+        $html = getNugget("EcfInstallViaZip3.6.html",$html);
         $html = getNugget("EcfDailies.html",$html);    
  
         $html = getNugget("EcfSourceCode.html",$html);

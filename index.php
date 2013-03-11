@@ -50,11 +50,21 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.5.6 (Juno) released on 6/27/2012.</b>.<br><br>
-			See also <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.6.0 released on 3/10/2013.</b>.<br><br>
+			See also <a href="NewAndNoteworthy.html">ECF 3.6.0 New and Noteworthy</a>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>March 10, 2013 - ECF 3.6.0 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.6.0 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
@@ -72,36 +82,6 @@
 		<td valign="top">
 	  	<b>March 19, 2012 - ECF 3.5.5 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Dec 30, 2011 - ECF 3.5.4 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Nov 11, 2011 - ECF 3.5.3 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>A new EclipseZone article on ECF Indigo release:  <a href="http://eclipse.dzone.com/articles/eclipse-indigo-highlights-ecf">Eclipse Indigo Highlights: Five Reasons to Check Out ECF</a></b>
-			See also <a href="NewAndNoteworthy.html">ECF 3.5.1 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
