@@ -140,6 +140,31 @@ After fixing some compatibility problems (see <a href="https://bugs.eclipse.org/
 	<br>
     </td> 
   </tr>  
+    <tr> 
+    <td valign="top" align="left" width="15%"> 
+        <p align="left"> 
+	<b><a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=408034">IRemoteCallParameterSerializer.serializeParameter can only serialize to a single parameter</a></b> 
+        </p> 
+    </td> 
+    <td valign="top" width="85%"> 
+    
+    <p>Incompatibilities between ECF 3.6.0 and 3.6.1:<br>
+
+ECF changed in an incompatible way between 3.6.0 and 3.6.1 in ways that affect 
+consumers of ECF remote services. The following entry describes the area that changed and provides 
+instructions for migrating from 3.6.0 to 3.6.1.
+<br>
+What is affected: Consumers that provide an implementation for o.e.e.remoteservice.client.IRemoteCallParameterSerializer.
+<br>
+Description: ECF 3.6.1 has added a second method to the interface. This change brings improved support for advanced serialization of call parameters. 
+However, this change also is an incompatible change for pre 3.6.1 implementers of the interface.
+<br>
+Action required: Consumers that directly implement IRemoteCallParameterSerializer have to choose a migration path. Either provide a method implementation for the newly introduced interface method, or inherit from o.e.e.remoteservice.client.AbstractParameterSerializer. AbstractParameterSerializer provides a default implementation for the new interface method behavior compatible to ECF 3.6.0. Number two is generally preferred.
+	</p>
+	<br>
+	<br>
+    </td> 
+  </tr>  
 		<tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
