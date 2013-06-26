@@ -14,16 +14,22 @@
        <b>http://download.eclipse.org/rt/ecf/3.6.1/site.p2</b></li>
        <li> Click OK. </li>
        
-       <li>Select the Eclipse Communication Framework (ECF) check box.  NOTE:  This check box will result in including 5 sub-items.  If you de-select
-       the '<b>Group Items by Category</b>' check box in the lower part of the install manager
-       dialog, several more options for ECF components will be made visible and available to install. 
+       <li>Select the Eclipse Communication Framework (ECF) check box only.  NOTE:  This check box will result in including 2 sub-items:  
        <ol>
-       <li><b>ECF Filetransfer Patch for Eclipse</b></li>
        <li><b>ECF Target Components for Eclipse</b></li>
-       <li><b>ECF Remote Services Target Components</b></li>
-       <li><b>Source for ECF Filetransfer Patch for Eclipse</b></li>
-       <li><b>Source for ECF Target Components</b></li>
+       <li><b>Source for ECF Target Components for Eclipse</b></li>
        </ol>
+       <li><b>NOTE:</b>Only this first feature and it's two sub-items should be selected for install into Eclipse.  Explanation:  
+       The ECF Repo has three top-level features:  </li>
+       <ol>
+       <li><b>Eclipse Communication Framework (ECF)</b></li>
+       <li><b>Eclipse Communication Framework File Transfer Features (ECF)</b></li>
+       <li><b>Eclipse Communication Framework Remote Services (ECF)</b></li>
+       </ol>
+       <li>the <b>Eclipse Communication Framework File Transfer Features (ECF)</b> and
+       <b>Eclipse Communication Framework Remote Services (ECF)</b> are are <b>included</b> in 
+       the <b>ECF Target Components for Eclipse</b> and <b>Source for ECF Target Components for Eclipse</b> and so should *not* be
+       checked.   These two other features are intended for use in non-Eclipse OSGi environments (e.g. servers).  
        <li>Click on Next.</li>
        
        <li>Follow through the remaining dialogs to complete the installation.</li>
