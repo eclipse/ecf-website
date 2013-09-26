@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
+<plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan"
+	xmlns:html="http://www.w3.org/1999/xhtml" name="Eclipse Communication Framework">
+	<release projectid="rt.ecf" version="3.6" />
+	<introduction>
+		<html:div>
+			<html:p>
+				Previously, ECF has had three major releases:
+				ECF 1.0.0 as part of <html:a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</html:a>, 
+				ECF 2.0.0 as part of <html:a href="http://wiki.eclipse.org/Ganymede_Simultaneous_Release">Ganymede Simultaneous Release</html:a>, 
+				ECF 3.0.0 as part of <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">Galileo Simultaneous Release</html:a>, 
+				and ECF 3.6.1 as part of <html:a href="http://wiki.eclipse.org/Kepler/Simultaneous_Release_Plan</html:a>. 
+				This plan describes the work for ECF 3.7.0, which will occur in October 8, 2013.
+			</html:p>
+		</html:div>
+	</introduction>
+	<release_deliverables>
+		<html:div>
+			<html:p>
+				The major ECF 3.7 release deliverables are as follows:
+				<html:ol>
+					<html:li>Fully implement OSGi 5 Remote Services (RS) and Remote Service Admin (RSA) standard (chapters 13 and 122 in OSGi enterprise specification)</html:li>
+					<html:li>Improve DNSSD discovery provider</html:li>
+					<html:li>Improve and Extend the ECF Example Applications, with
+						special emphasis on OSGi remote services and remote service admin examples
+					</html:li>
+					<html:li>Enable easier creation and use of Equinox+ECF remote services-based Server
+						Runtimes</html:li>
+				</html:ol>
+
+			</html:p>
+		</html:div>
+	</release_deliverables>
+	<release_milestones>
+		<preamble>
+			<html:div>
+			No milestones.
+			</html:div>
+		</preamble>
+		<milestone date="10/8/2013" milestone="3.7.0">
+			<html:div>ECf 3.7.0 release</html:div>
+		</milestone>
+		<postamble>
+			<html:div></html:div>
+		</postamble>
+	</release_milestones>
+	<target_environments>
+		<html:div>
+			ECF's target environments are:
+			<html:ul>
+				<html:li>Eclipse</html:li>
+				<html:li>Eclipse-based Applications</html:li>
+				<html:li>Eclipse RCP</html:li>
+				<html:li>Other Equinox-Based Runtimes (e.g. Equinox servers)</html:li>
+			</html:ul>
+		</html:div>
+		<internationalization>
+			<html:div>ECF doesn't perform internationalization directly, although
+				we develop our plugins following
+				common rules about string externalization to make the automation possible
+			</html:div>
+		</internationalization>
+	</target_environments>
+	<compatibility_with_previous_releases>
+		<html:div>
+			<html:p>
+				ECF has a policy of maintaining API backward compatibility with
+				minor and service releases. API is considered all
+				exported packages (i.e. packages that do not have
+				<html:pre>x-internal:=true</html:pre>
+				in their Export-Package declaration. As an example,
+				with the following declaration in the org.eclipse.ecf MANIFEST.MF
+			</html:p>
+			<html:pre>Export-Package: org.eclipse.ecf.core,
+				org.eclipse.ecf.internal.core;x-internal:=true
+       </html:pre>
+			<html:p>The org.eclipse.ecf.core package is API, and the
+				org.eclipse.ecf.internal.core package is not</html:p>
+			<html:p>Only with major releases (e.g. 2.0.0, 3.0.0) are incompatible
+				API changes to be introduced (e.g. refactorings, renames), and even
+				then only after discussion
+				among multiple committers. For the parts of ECF used by the Platform
+				(e.g. the core and file transfer bundles), NO incompatible
+				API changes will be introduced, even for major releases, in order to
+				maintain the platform backward compatibility
+				constraints.</html:p>
+		</html:div>
+	</compatibility_with_previous_releases>
+	<themes_and_priorities>
+		<preamble>
+			<html:div></html:div>
+		</preamble>
+		<theme name="OSGI Remote Services and RSA Standards">
+			<description>
+				<html:p>Implement OSGi R5 version of Remote Services Admin specification (impl of OSGI
+					Remote Services Admin spec). 
+				</html:p>
+			</description>
+		</theme>
+		<theme name="ECF Providers">
+			<description>
+				<html:p>Add support for Servlet/HttpService-based remote service providers
+    			</html:p>
+			</description>
+		</theme>
+	</themes_and_priorities>
+</plan>
