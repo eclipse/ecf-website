@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
 <plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan"
 	xmlns:html="http://www.w3.org/1999/xhtml" name="Eclipse Communication Framework">
-	<release projectid="rt.ecf" version="3.6" />
+	<release projectid="rt.ecf" version="3.7" />
 	<introduction>
 		<html:div>
 			<html:p>
@@ -20,13 +20,13 @@
 			<html:p>
 				The major ECF 3.7 release deliverables are as follows:
 				<html:ol>
+					<html:li>Enable easier creation and use of Equinox+ECF remote services-based Server
+						Runtimes by introducing support for use of HttpService/Servlets for OSGi Remote Service provider implementation</html:li>
 					<html:li>Fully implement OSGi 5 Remote Services (RS) and Remote Service Admin (RSA) standard (chapters 13 and 122 in OSGi enterprise specification)</html:li>
 					<html:li>Improve DNSSD discovery provider</html:li>
 					<html:li>Improve and Extend the ECF Example Applications, with
 						special emphasis on OSGi remote services and remote service admin examples
 					</html:li>
-					<html:li>Enable easier creation and use of Equinox+ECF remote services-based Server
-						Runtimes</html:li>
 				</html:ol>
 
 			</html:p>
