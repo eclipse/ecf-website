@@ -50,11 +50,21 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.6.1 released on 6/26/2013.</b>.<br><br>
-			See also <a href="NewAndNoteworthy.html">ECF 3.6.1 New and Noteworthy</a>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.7 released on 10/14/2013.</b>.<br><br>
+			See also <a href="NewAndNoteworthy.html">ECF 3.7 New and Noteworthy</a>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>October 14, 2013 - ECF 3.7.0 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.7.0 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
@@ -90,7 +100,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Nov 3, 2010 - Wim Jongman and Markus Alexander Kuppe presented ECF remote services at ESE2010 in Ludwigsburg. <a href="http://www.eclipsecon.org/summiteurope2010/sessions/?page=sessions&id=1916">More information can be found at the conference website.</a></b>
+	  	<b>August 2013 - Committer Scott Lewis has two new blog posts: <a href="http://eclipseecf.blogspot.com/2013/06/ecf-kepler361-remote-services-takes.html">ECF Kepler Remote Services take Center Stage</a></b> and 
+	  	<a href="http://eclipseecf.blogspot.com/2013/07/article-on-osgi-remote-services-in.html">Article on ECF Remote Services in Eclipse Newsletter</a>.
            <p></p>
 		</td>
 	</tr>
@@ -99,18 +110,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Nov 2, 2010 - Committer Scott Lewis has two new blog posts: <a href="http://eclipseecf.blogspot.com/2010/11/ecf-34-remote-services.html">ECF 3.4 Remote Services</a></b> and 
-	  	<a href="http://eclipseecf.blogspot.com/2010/10/ecf-34-released.html">ECF 3.4 Released</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Oct 26, 2010 - ECF committer Pavel Samolisov has written a nice article: <a href="http://psamolisov.blogspot.com/2010/10/ecf-for-eclipse-customers.html">ECF for Eclipse Customers</a></b>.  It describes
-	  	some of the Eclipse developer collaboration features that come with ECF.
+	  	<b>October 2013 - Wim Jongman and Markus Alexander Kuppe are presenting at <a href="http://www.eclipsecon.org/europe2013/">EclipseCon Europe 2013 in Ludwigsburg.  The title of their presentation
+	  	is <a href="http://www.eclipsecon.org/europe2013/discover-remote-osgi-services">Discover Remote OSGi Services</a></b>
            <p></p>
 		</td>
 	</tr>
@@ -139,68 +140,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>March 26, 2009 - Markus Alexander Kuppe and Scott Lewis present a talk about <a href="http://www.eclipsecon.org/2009/sessions?id=757">"Best Practices with distributed OSGi services"</a> during <a href="http://www.eclipsecon.org/2009">EclipseCON 2009</a>. </b>
-			As always the slides are <a href="presentations/Best_Practices_with_Distributed_OSGi.pdf">available online</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
 	  	<b>March 23, 2009 - Scott Lewis and Markus Alexander Kuppe gave a tutorial titled <a href="http://www.eclipsecon.org/2009/sessions?id=618">"Distributed OSGi - The ECF way"</a> at <a href="http://www.eclipsecon.org/2009">EclipseCON 2009</a>. </b>
 			The slides are available <a href="presentations/Distributed_OSGi_-_The_ECF_way_rev02.pdf">here</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Nov 24, 2008 - Marcelo Mayworm and Scott Lewis gave a talk titled "ECF Inside and Out" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
-			A description of the talk is <a href="http://www.eclipsecon.org/summiteurope2008/sessions?id=206">here</a>, and the slides
-			are available <a href="http://www.eclipse.org/ecf/presentations/ese08/ECF_Eclipse_Summit_2008_Inside_and_Out.pdf">here</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Nov 21, 2008 - Jan Rellermeyer, Markus Alexander Kuppe, and Scott Lewis gave a talk titled "Service Discovery and Remote Services with the Eclipse Communication Framework" at <a href="http://www.eclipsecon.org/summiteurope2008">ESE08</a>. </b>
-			Slides can be found <a href="http://www.eclipse.org/ecf/presentations/ese08/ESE_2008_ECF.pdf">here</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>July 24, 2008 - Two ECF video demos available on <a href="http://live.eclipse.org">live.eclipse.org</a></b>
-			See <a href="http://live.eclipse.org/node/543">here for Cola Real-Time Shared Editing</a> and <a href="http://live.eclipse.org/node/571">here for ECF 2.0.0 - Some New Features</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 18, 2008 - ECF Committers Markus Kuppe and Jan Rellermeyer present ECF at <a href="http://www.osgi.org/CommunityEvent2008/HomePage">OSGi Community Event, June 10 and 11, 2008</a>. </b>
-			See <a href="http://www.osgi.org/wiki/uploads/CommunityEvent2008/21_RemoteServices_OSGi_CommEvent08.pdf">here for the slides of their presentation</a>.  <a href="http://www.osgi.org/CommunityEvent2008/Program">Here is the entire program</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 16, 2008 - Article about <a href="http://www.infoq.com/news/2008/06/eclipse-ganymede-ecf">ECF on InfoQ</a>. </b>
            <p></p>
 		</td>
 	</tr>
