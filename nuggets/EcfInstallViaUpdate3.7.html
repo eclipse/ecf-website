@@ -1,0 +1,52 @@
+    <h3>ECF 3.7.0 Install via p2 repository</h3>
+     <p>
+     For a detailed step-by-step description of how to install OSGi Remote Services into Eclipse 
+     see <a href="http://wiki.eclipse.org/Installing_OSGi_Remote_Services#Install_into_Eclipse">Installing Into Eclipse</a>.  For a 
+     step-by-step description of how to add OSGi Remote Services into your <b>Target Platform</b> see 
+     <a href="http://wiki.eclipse.org/Installing_OSGi_Remote_Services">Add to Target Platform</a>.
+     <p>
+      <ul>
+       <li>In Eclipse, choose <b>Help -> Install New Software...</b></li>
+       <li>Click on the <b>Add</b> button on the right. </li>
+       <li>Type in a Name in the textbox. For example, type: <b>ECF 3.7.0</b>.</li>
+       
+       <li>Paste the following URL into the Location field. <br><br>
+       <b>http://download.eclipse.org/rt/ecf/3.7.0/site.p2</b></li>
+       <li> Click OK. </li>
+       
+       <li>Select the <b>Eclipse Communication Framework (ECF)</b> check box.  
+       
+       NOTE:  Selecting this check box will result in including 2 sub-items:  
+       <ol>
+       <li><b>ECF Target Components for Eclipse</b></li>
+       <li><b>Source for ECF Target Components for Eclipse</b></li>
+       </ol>
+       <li>Only this first item and it's two sub-items should be selected for install into Eclipse.  
+       To explain:  The ECF repository has three top-level items for install:  </li>
+       <ol>
+       <li><b>Eclipse Communication Framework (ECF)</b></li>
+       <li><b>Eclipse Communication Framework File Transfer Features (ECF)</b></li>
+       <li><b>Eclipse Communication Framework Remote Services (ECF)</b></li>
+       </ol>
+       The Eclipse Communication Framework File Transfer Features (2) and
+       Eclipse Communication Framework Remote Services Features (3) are <b>already included</b> in 
+       the ECF Target Components for Eclipse and so <b>should not</b> be
+       separately checked for install into Eclipse.   These two features are intended for use in non-Eclipse OSGi environments (e.g. servers)
+       and will conflict with install into Eclipse.  
+       <li>Click on Next.
+       
+       <li>Follow through the remaining dialogs to complete the installation.</li>
+      </ul>
+     <p>
+     To uninstall ECF SDK...
+     <ul>
+     <li>Choose <b>Help -> Install New Software...</b></li>
+     <li>Click on <b>already installed</b> (lower part of install manager dialog)</li>
+     <li>Click on <b>Installed Software tab</b></li>
+     <li>Click on <b>ECF Target Components</b></li>
+     <li>Click on <b>Uninstall ...</b></li>
+     </ul>
+     </p>
+     
+     
+         
