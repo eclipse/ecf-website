@@ -60,6 +60,15 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>December 2013 - New Tutorial: <a href="http://wiki.eclipse.org/Tutorial:_Building_your_first_OSGi_Remote_Service">Building your first OSGi Remote Service</a>
+           <p></p>
+		</td>
+	</tr>
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>November 2013 - Markus Alexander Kuppe demoed ECF's OSGi remote services at <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2013/Hamburg">Democamp</a> in Hamburg. The (few) slides of the talk
 	  	can be found online <a href="http://www.lemmster.de/publications/Discover_Remote_Services_-_Democamp_HH_2013_-_Markus_Alexander_Kuppe.pdf">at his personal blog</a>.
 		More importantly, the code of the example Chat app and server are hosted at <a href="http://github.com/ECF/Chat">ECF's github repo</a>.</b>
