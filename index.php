@@ -39,6 +39,7 @@
 	$html = <<<EOHTML
 <div id="midcolumn">
     
+    <img src="https://wiki.eclipse.org/images/b/b8/Logo128x37.png" alt="ECF Logo" align="right"/>
     <h1>$pageTitle</h1>
     
     <br/>	
