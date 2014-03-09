@@ -16,16 +16,18 @@
 			<tr>
 				<td width="69%" class="bannertext">
 				<img src="https://wiki.eclipse.org/images/b/b8/Logo128x37.png" alt="ECF Logo"/>
-				<font class="indextop style">eclipse
-						communication framework</font> <br>
+				<font class="indextop style">eclipse communication framework</font>
+						
+						<br>
 				<br> <font class="indexsub">an eclipse runtime project</font> <br>
 				<br> <font class="indextop style2">New and Noteworthy</font><br>
-					3.7.0 Release <br> <br>
+					3.8.0 Release <br> <br>
 				<br> Return to <a href="downloads.php">ECF download page</a><br>
 					<br>
-				<br> <a href="NewAndNoteworthy_3.6.1.html">New and
-						Noteworthy for 3.6.1/Kepler</a><br> <a
-					href="NewAndNoteworthy_3.6.0.html">New and Noteworthy for 3.6.0</a><br>
+				<br> <a href="NewAndNoteworthy_3.6.0.html">New and
+						Noteworthy for 3.6.0</a><br>
+						<a
+					href="NewAndNoteworthy_3.7.0.html">New and Noteworthy for 3.7.1/Kepler</a><br>
 					<br>
 				<br></td>
 				<td width="31%">
@@ -44,95 +46,88 @@
 		<tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
-					<b>Servlet API for Remote Services</b>
+					<b>ECF Remote Service SDK for Apache Karaf</b>
 				</p>
 			</td>
 			<td valign="top" width="85%">
-				<p>There is a new API in the new plugin <b>org.eclipse.ecf.remoteservice.servlet</b>.  This API
-				supports the creation of OSGi remote service providers that are implemented via a Servlet along
-				with some implementation of the OSGi HttpService (e.g. Jetty, Tomcat, etc).  An example of
-				using this new API for creating an OSGi Remote Service provider based upon a simple http/REST protocol
-				is available in the following bundles: <br>
-				
-				<b><a href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git/tree/examples/bundles/com.mycorp.examples.timeservice.provider.rest.common">com.mycorp.examples.timeservice.provider.rest.common</a></b>
-				<br>
-				<b><a href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git/tree/examples/bundles/com.mycorp.examples.timeservice.provider.rest.host">com.mycorp.examples.timeservice.provider.rest.host</a></b>
-				<br>
-				<b><a href="http://git.eclipse.org/c/ecf/org.eclipse.ecf.git/tree/examples/bundles/com.mycorp.examples.timeservice.provider.rest.consumer">com.mycorp.examples.timeservice.provider.rest.consumer</a></b>
-				<br>
-				</td>
-		</tr>
-		<tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>OSGi Remote Services Robustness Improvements</b>
-				</p>
-			</td>
-			<td valign="top" width="85%">
-				<p>
-					There were several significant robustness improvements to the OSGi Remote Services/Remote Service Admin
-					implementation.  For example, see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=414448">bug 414448</a>.
+				<p><a href="http://karaf.apache.org">Apache Karaf is an OSGi runtime that supports the easy install of 
+				frameworks such as <a href="https://wiki.eclipse.org/ECF#OSGi_Remote_Services">ECF's OSGi Remote Services/RSA implementation</a>.
+				With the ECF 3.8.0 release, we are now creating Karaf features, to allow easy install of the ECF RS/RSA bundles into a Karaf runtime.
+				See <a href="https://wiki.eclipse.org/EIG:Install_into_Apache_Karaf">here for instructions on installing ECF RS SDK into Apacke Karaf</a>.
+			    </p><br>
 			</td>
 		</tr>
 		<tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
-					<b>Article with New Example OSGi Remote Services</b>
+					<b>Improvements to OSGi Remote Services Admin Discovery</b>
+				</p><br>
+			</td>
+			<td valign="top" width="85%">
+				<p>ECF's implementation of RSA discovery has been made easier to use through the introduction of the use of whiteboard-pattern
+				registration of IServiceInfo instances.  For details please see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=424060">bug 424060</a>.
+			    </p><br>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left"><b>Metadata to support use of BndTools 2.0+</b>
 				</p>
 			</td>
 			<td valign="top" width="85%">
-
-				<p>An <a
-						href="http://www.eclipse.org/community/eclipse_newsletter/2013/july/article3.php">article</a> about ECF's implementation of the OSGi Remote Services (and Remote Service Admin)
-				specification provides some new example remote services along with explanation of how they
-				work with the OSGi standards.
+		        <p>To make our OSGi RS/RSA framework more accessible to more tooling, ECF is creating metadata to allow use with BndTools 2.0</b>
 				</p> <br>
 			</td>
 		</tr>
 		<tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
-					<b>Support for Version 5 of OSGi Remote Services/Remote Service Admin Standards</b>
+					<b>New Tutorials and Examples for OSGi Remote Services</b>
 				</p>
 			</td>
 			<td valign="top" width="85%">
-				<p> As part of the 3.7.0 release ECF has successfully tested both our Remote Services (chapter 100) and our Remote Service Admin (chapter 122)
-				implementations against the OSGi R5 Compatibility Test (CT) suite.
+			    <p>We've added and enhanced several tutorials and created additional examples
+				<ul>
+				<li><a href="https://wiki.eclipse.org/Tutorial:_Building_your_first_OSGi_Remote_Service">Introductory Tutorial:  Building First OSGi Remote Service</a></li>
+				<li><a href="https://wiki.eclipse.org/Tutorial:_Building_your_first_Asynchronous_OSGi_Remote_Service">Tutorial:  Building First Asynchronous OSGi Remote Service</a></li>
+				<li><a href="https://wiki.eclipse.org/Tutorial:_Creating_a_RESTful_Remote_Service_Provider">Tutorial:  Creating a RESTful Remote Service Provider</a></li>
+				</ul>
                 </p>
     <br>
 			</td> 
   </tr> 
-    <tr> 
-    <td valign="top" align="left" width="15%"> 
-        <p align="left"> 
-	<b>Apache HttpComponents version 4.2 for ECF Filetransfer</b> 
-        </p> 
-    </td> 
-    <td valign="top" width="85%"> 
-    
-    <p>ECF's file transfer API implementation is now provided by <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=414591">Apache HttpComponents version 4.2</a>.  With the prior
-    Kepler/ECF 3.6.1 release, HttpComponents version 3.1 was used.
-    </p>
-	<br>
-    </td> 
+		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Remote Services Based upon MQTT Protocol</b>
+				</p>
+			</td>
+			<td valign="top" width="85%">
+			    <p>We now have a remote services provider that's based upon the MQTT protocol (Internet of things...Iot).  For information
+			    on how to install, and use this new provider please <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=420896">see bug 420896</a>
+                </p>
+    <br>
+			</td> 
   </tr> 
-    <tr> 
-    <td valign="top" align="left" width="15%"> 
-        <p align="left"> 
-	<b>Standalone Zookeeper Discovery Server</b> 
-        </p> 
-    </td> 
-    <td valign="top" width="85%"> 
-    
-    <p>A standalone discovery server using the Apache Zookeeper discovery protocol was created.  This server
-    can be used for WAN discovery of remote services or as a standalone Zookeeper server run from the command line 
-    as an Eclipse product.   The source code is available <a href="https://github.com/ECF/ZooServer">here</a>. See
-    the README.md file for instructions on building and running this server.
-	</p>
-	<br>
-	<br>
-    </td> 
-  </tr>  
+  		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Better Support for Provisioning into Non-Eclipse Runtimes</b>
+				</p>
+			</td>
+			<td valign="top" width="85%">
+			    <p>ECF has done a lot of work to <a href=="https://bugs.eclipse.org/bugs/show_bug.cgi?id=409787">refactor our features</a> so that they are now more easily usable in all OSGi runtimes.  This
+			    includes Eclipse, and the work makes the installation of ECF features into Eclipse both easier and more flexible, but it also makes
+			    the use of ECF features (e.g. OSGi Remote Service Admin) into non-Eclipse runtimes much easier and more flexible as well.  For details
+			    about what was done, see <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=409787">bug 409787</a>.
+			    
+			    We now have a remote services provider that's based upon the MQTT protocol (Internet of things...Iot).  For information
+			    on how to install, and use this new provider please <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=420896">see bug 420896</a>
+                </p>
+    <br>
+			</td> 
+  </tr> 
+  
 </table> 
  
 </body> 
