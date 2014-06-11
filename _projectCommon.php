@@ -4,8 +4,8 @@
 #	$projectInfo->generate_common_nav($Nav);
 
 	# set default theme
-	$_theme = "Nova";
-	$theme = "Nova";
+	$_theme = "solstice";
+	$theme = "solstice";
 	if(isset($_POST['theme'])) {
 		$_theme = $_POST['theme'];
 	}
