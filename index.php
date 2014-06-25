@@ -51,7 +51,7 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.8.1/Luna released on 6/25/2014.</b>.<br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.8.1/Luna released on 6/25/2014.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF 3.8.1 New and Noteworthy</a>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
