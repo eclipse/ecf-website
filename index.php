@@ -73,7 +73,7 @@
 		</td>
 		<td valign="top">
 	  	<b>March 10, 2014 - ECF 3.8.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.8.0 New and Noteworthy</a>
+			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy_3.8.0.html">ECF 3.8.0 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
@@ -115,56 +115,6 @@
 	  	<b>October 2013 - Wim Jongman and Markus Alexander Kuppe presented at <a href="http://www.eclipsecon.org/europe2013/">EclipseCon Europe 2013</a> in Ludwigsburg. The slides of the talk
 	  	can be found on the conference session page: <a href="http://www.eclipsecon.org/europe2013/discover-remote-osgi-services">Discover Remote OSGi Services</a>.
 		The code of the example Chat app and server can be found at <a href="http://github.com/ECF/Chat">ECF's github repo</a>.</b>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 27, 2013 - ECF 3.7.1 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.7.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 16, 2013 - ECF 3.7.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.7.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 26, 2013 - ECF 3.6.1 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.6.1 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>March 10, 2013 - ECF 3.6.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.6.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 27, 2012 - ECF 3.5.6 (Juno) is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.5 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
