@@ -52,7 +52,7 @@
          <h3>Next Release</h3>
      	<div style="margin:10px;">
      	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.9.0 released on 8/18/2014.</b><br><br>
-			See also <a href="NewAndNoteworthy.html">ECF 3.8.1 New and Noteworthy</a>
+			See also <a href="NewAndNoteworthy.html">ECF 3.9.0 New and Noteworthy</a>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
@@ -61,8 +61,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>June 25, 2014 - ECF 3.9 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.9 release is focused on supporting OSGi R6 specification, specifically the Remote Services and Remote Service Admin chapters.  See <a href="NewAndNoteworthy.html">ECF 3.8.1 New and Noteworthy</a>
+	  	<b>June 25, 2014 - ECF 3.9.0 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.9.0 release is focused on supporting OSGi R6 specification, specifically the Remote Services and Remote Service Admin chapters.  See <a href="NewAndNoteworthy.html">ECF 3.9.0 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
