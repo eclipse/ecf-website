@@ -30,7 +30,7 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.0.0 Now Available (8/18/2014)</b>
+    <b>ECF 3.9.0 Now Available (8/18/2014)</b>
     <p></p>
     <p>
     ECF 3.9.0 requires <b>Eclipse Kepler or Eclipse Luna</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
