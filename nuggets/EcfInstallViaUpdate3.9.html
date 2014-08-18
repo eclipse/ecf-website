@@ -1,0 +1,53 @@
+    <h3>3.9.0 Install via p2 repository</h3>
+     <p>
+     For a detailed step-by-step description of how to install OSGi Remote Services into Eclipse 
+     see <a href="http://wiki.eclipse.org/Installing_OSGi_Remote_Services#Install_into_Eclipse">Installing Into Eclipse</a>.  For a 
+     step-by-step description of how to add OSGi Remote Services into your <b>Target Platform</b> see 
+     <a href="http://wiki.eclipse.org/Installing_OSGi_Remote_Services">Add to Target Platform</a>.
+     <p>
+      <ul>
+       <li>In Eclipse, choose <b>Help -> Install New Software...</b></li>
+       <li>Click on the <b>Add</b> button on the right. </li>
+       <li>Type in a Name in the textbox. For example, type: <b>ECF 3.8.1</b>.</li>
+       
+       <li>Paste the following URL into the Location field. <br><br>
+       <b>http://download.eclipse.org/rt/ecf/3.9.0/site.p2</b></li>
+       <li> Click OK. </li>
+       
+       <li>Select the first <b>two</b> check boxes for install into Eclipse..i.e.
+       <b>ECF OSGi Remote Services/Remote Service Admin SDK</b> and the <b>ECF SDK for Eclipse</b>.
+       To explain:  The ECF repository has four top-level items for install:  </li>
+       <ol>
+       <li><b>ECF OSGi Remote Services SDK</b></li>
+       <li><b>ECF Patch for Eclipse Kepler (4.3).  Not needed for Eclipse Luna (4.4).</b></li>
+       <li><b>ECF SDK for Eclipse</b></li>
+       <li><b>ECF Supplemental File Transfer Providers.  Not needed for Eclipse Luna or Kepler.</b></li>
+       </ol>
+       <p>
+       <b>PLEASE NOTE:  
+       <ul>
+       <li>If you are installing ECF into to Eclipse Kepler (4.3)</b> you must check the item <b>ECF Patch for Eclipse Kepler (4.3)</b>...in addition to any other items</b>.  
+       If, however, you are installing into Eclipse Luna (4.4), <b>you must not check this item</b>.</li>
+       <li>For nearly all cases, you should select the <b>ECF SDK for Eclipse</b> and/or the <b>ECF OSGi Remote Services SDK</b>.   The <b>ECF SDK for Eclipse</b> includes the
+       <b>ECF Remote Services SDK</b>.   Generally, you should <b>not</b> install the ECF Supplemental File Transfer Providers and so you should make
+       sure that this category is <b>unchecked</b>.</li>
+       </ul>
+       <p>
+       Of course, you may also uncheck the <b>Group items by category</b> checkbox and choose the individual ECF features ala carte to get only the features of ECF that you wish.
+       <li>Click on Next.
+       
+       <li>Follow through the remaining dialogs to complete the installation.</li>
+      </ul>
+     <p>
+     To uninstall ECF SDK
+     <ul>
+     <li>Choose <b>Help -> Install New Software...</b></li>
+     <li>Click on <b>already installed</b> (lower part of install manager dialog)</li>
+     <li>Click on <b>Installed Software tab</b></li>
+     <li>Click on <b>ECF SDK</b></li>
+     <li>Click on <b>Uninstall ...</b></li>
+     </ul>
+     </p>
+     
+     
+         

@@ -61,6 +61,17 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>June 25, 2014 - ECF 3.9 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.9 release is focused on supporting OSGi R6 specification, specifically the Remote Services and Remote Service Admin chapters.  See <a href="NewAndNoteworthy.html">ECF 3.8.1 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+
+ 	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>June 25, 2014 - ECF 3.8.1/Luna is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.8.1 New and Noteworthy</a>
            <p></p>
