@@ -63,11 +63,10 @@
 		<td valign="top">
 	  	<b>October 30, 2014</b>:  Wim Jongman presented <b><a href="https://www.eclipsecon.org/europe2014/session/how-cook-egg-eclipse-communication-framework-and-nebula">How to Cook an Egg with the Eclipse Communication
 	  	Framework and Nebula</a></b> at <a href="https://www.eclipsecon.org/europe2014/">EclipseCon Europe 2014</a>.  
-	  	The slides are available <a href="https://www.eclipsecon.org/europe2014/session/how-cook-egg-eclipse-communication-framework-and-nebula"> on the EclipseCon website</a> or from ECF's web area <a href="http://www.eclipse.org/ecf/presentations/ese2014/How%20to%20Cook%20an%20Egg%20with%20the%20Eclipse%20Communication%20Framework.pdf">here</a></p>.
+	  	The slides are available <a href="https://www.eclipsecon.org/europe2014/session/how-cook-egg-eclipse-communication-framework-and-nebula"> on the EclipseCon website</a> or from ECF's web area <a href="http://www.eclipse.org/ecf/presentations/ese2014/How%20to%20Cook%20an%20Egg%20with%20the%20Eclipse%20Communication%20Framework.pdf">here</a></p>
            <p></p>
 		</td>
 	</tr>
- 
  	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
