@@ -88,9 +88,16 @@
 				</html:p>
 			</description>
 		</theme>
+		<theme name="Maintenance">
+			<description>
+				<html:p>Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others). Move build to Tycho-based build.  Update releng to use
+				Java 8.  Better support automated creation of Karaf distribution meta-data.
+    			</html:p>
+			</description>
+		</theme>
 		<theme name="ECF Providers">
 			<description>
-				<html:p>Add support for Servlet/HttpService-based remote service providers
+				<html:p>Add support for websocket distribution provider, mqtt provider, http providers.  
     			</html:p>
 			</description>
 		</theme>
