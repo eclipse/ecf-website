@@ -2,33 +2,21 @@
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
 <plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan"
 	xmlns:html="http://www.w3.org/1999/xhtml" name="Eclipse Communication Framework">
-	<release projectid="rt.ecf" version="3.7" />
+	<release projectid="rt.ecf" version="3.10" />
 	<introduction>
 		<html:div>
 			<html:p>
-				Previously, ECF has had three major releases:
-				ECF 1.0.0 as part of <html:a href="http://wiki.eclipse.org/index.php/Europa_Simultaneous_Release">Europa Simultaneous Release</html:a>, 
-				ECF 2.0.0 as part of <html:a href="http://wiki.eclipse.org/Ganymede_Simultaneous_Release">Ganymede Simultaneous Release</html:a>, 
-				ECF 3.0.0 as part of <html:a href="http://wiki.eclipse.org/Galileo_Simultaneous_Release">Galileo Simultaneous Release</html:a>, 
-				and ECF 3.6.1 as part of <html:a href="http://wiki.eclipse.org/Kepler/Simultaneous_Release_Plan</html:a>. 
-				This plan describes the work for ECF 3.7.0, which will occur in October 8, 2013.
+			    ECF released version 3.9.0 as part of the <html:a href="https://wiki.eclipse.org/Luna">Luna Simultaneous Release</html:a>, and in August 2014 
+			    ECF <html:a href="http://www.eclipse.org/ecf/downloads.php">released version 3.9.1</html:a>.  
+			    The plan below describes the intended work for ECF 3.10, which will occur on or before the <html:a href="https://wiki.eclipse.org/Mars">Mars Simultaneous Release</html:a> scheduled 
+			    for June 2015.
 			</html:p>
 		</html:div>
 	</introduction>
 	<release_deliverables>
 		<html:div>
 			<html:p>
-				The major ECF 3.7 release deliverables are as follows:
-				<html:ol>
-					<html:li>Enable easier creation and use of Equinox+ECF remote services-based Server
-						Runtimes by introducing support for use of HttpService/Servlets for OSGi Remote Service provider implementation</html:li>
-					<html:li>Fully implement OSGi 5 Remote Services (RS) and Remote Service Admin (RSA) standard (chapters 13 and 122 in OSGi enterprise specification)</html:li>
-					<html:li>Improve DNSSD discovery provider</html:li>
-					<html:li>Improve and Extend the ECF Example Applications, with
-						special emphasis on OSGi remote services and remote service admin examples
-					</html:li>
-				</html:ol>
-
+				The major ECF 3.10 release deliverables are as follows:
 			</html:p>
 		</html:div>
 	</release_deliverables>
@@ -38,8 +26,8 @@
 			No milestones.
 			</html:div>
 		</preamble>
-		<milestone date="10/8/2013" milestone="3.7.0">
-			<html:div>ECf 3.7.0 release</html:div>
+		<milestone date="6/24/2014" milestone="3.10.0">
+			<html:div>ECF 3.10.0 release</html:div>
 		</milestone>
 		<postamble>
 			<html:div></html:div>
@@ -49,10 +37,11 @@
 		<html:div>
 			ECF's target environments are:
 			<html:ul>
-				<html:li>Eclipse</html:li>
+				<html:li>Eclipse Tools and Eclipse-based tooling/products</html:li>
 				<html:li>Eclipse-based Applications</html:li>
-				<html:li>Eclipse RCP</html:li>
-				<html:li>Other Equinox-Based Runtimes (e.g. Equinox servers)</html:li>
+				<html:li>Eclipse RCP-based Applications</html:li>
+				<html:li>Equinox servers</html:li>
+				<html:li>Karaf-based servers</html:li>
 			</html:ul>
 		</html:div>
 		<internationalization>
@@ -91,10 +80,11 @@
 		<preamble>
 			<html:div></html:div>
 		</preamble>
-		<theme name="OSGI Remote Services and RSA Standards">
+		<theme name="Tooling for ECF Remote Services">
 			<description>
-				<html:p>Implement OSGi R5 version of Remote Services Admin specification (impl of OSGI
-					Remote Services Admin spec). 
+				<html:p>Consumers of ECF Remote Services can/could benefit from the creation of Eclipse-based tooling for declaring, implementing, testing,
+				 debugging, deploying, monitoring, and managing Remote Services.  A major theme for ECF will be creation of tooling to ease the burden on the 
+				 consumer of ECF's Remote Services implementation.
 				</html:p>
 			</description>
 		</theme>
