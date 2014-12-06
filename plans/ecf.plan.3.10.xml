@@ -118,8 +118,8 @@
 				<html:p>Add the following new ECF providers
 				<html:ul>
 				<html:li>Websockets provider (remote services distribution). <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=426186">enhancement</html:a></html:li>
-				<html:li>Etcd-based provider (discovery).  <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=440824">enhancement</html:a></li>
-				<html:li>Example custom HTTP+REST/JSON|xml providers</li>
+				<html:li>Etcd-based provider (discovery).  <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=440824">enhancement</html:a></html:li>
+				<html:li>Example custom HTTP+REST/JSON|xml providers (TBD)</html:li>
 				</html:ul>
 			    </html:p>
 			</description>
