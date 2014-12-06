@@ -23,11 +23,29 @@
 	<release_milestones>
 		<preamble>
 			<html:div>
-			No milestones.
+			The ECF 3.10 milestones will generally occur approximately 1 week prior to the Mars Simultaneous Release Milestone Schedule. 
 			</html:div>
 		</preamble>
-		<milestone date="6/24/2014" milestone="3.10.0">
-			<html:div>ECF 3.10.0 release</html:div>
+		<milestone date="1/30/2015" milestone="M5">
+			<html:div>ECF 3.10.0 M5</html:div>
+		</milestone>
+		<milestone date="3/13/2015" milestone="M6">
+			<html:div>ECF 3.10.0 M6</html:div>
+		</milestone>
+		<milestone date="4/25/2014" milestone="M7">
+			<html:div>ECF 3.10.0 M7</html:div>
+		</milestone>
+		<milestone date="5/15/2014" milestone="RC1">
+			<html:div>ECF 3.10.0 RC1</html:div>
+		</milestone>
+		<milestone date="5/22/2014" milestone="RC2">
+			<html:div>ECF 3.10.0 RC2</html:div>
+		</milestone>
+		<milestone date="5/29/2014" milestone="RC3">
+			<html:div>ECF 3.10.0 RC3</html:div>
+		</milestone>
+		<milestone date="6/5/2014" milestone="RC4">
+			<html:div>ECF 3.10.0 RC4</html:div>
 		</milestone>
 		<postamble>
 			<html:div></html:div>
@@ -95,10 +113,15 @@
     			</html:p>
 			</description>
 		</theme>
-		<theme name="ECF Providers">
+		<theme name="New ECF Providers">
 			<description>
-				<html:p>Add support for websocket distribution provider, mqtt provider, http providers.  
-    			</html:p>
+				<html:p>Add the following new ECF providers
+				<html:ul>
+				<html:li>Websockets provider (remote services distribution). <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=426186">enhancement</html:a></html:li>
+				<html:li>Etcd-based provider (discovery).  <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=440824">enhancement</html:a></li>
+				<html:li>Example custom HTTP+REST/JSON|xml providers</li>
+				</html:ul>
+			    </html:p>
 			</description>
 		</theme>
 	</themes_and_priorities>
