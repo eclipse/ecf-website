@@ -126,7 +126,7 @@
 				Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others). Move build to Tycho-based build.  Update releng to use
 				Java 8.  Better support automated creation of Karaf distribution meta-data.
 					<html:ul>
-					  <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=378350">zookeeper</html:a></htm:li>
+					  <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=378350">zookeeper</html:a></html:li>
 					  <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326228">tracking</html:a></html:li>
 					</html:ul>
     			</html:p>
