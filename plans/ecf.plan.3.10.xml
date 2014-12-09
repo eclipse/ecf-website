@@ -123,12 +123,18 @@
 		<theme name="Maintenance">
 			<description>
 				<html:p>
-				Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others). Move build to Tycho-based build.  Update releng to use
-				Java 8.  Better support automated creation of Karaf distribution meta-data.
+				Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others).
 					<html:ul>
 					  <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=378350">zookeeper</html:a></html:li>
 					  <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326228">jmdns</html:a></html:li>
 					</html:ul>
+    			</html:p>
+    			<html:p>ECF Releng , Build and Distributions
+    				<html:ul>
+    	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=396457">Move build to Tycho-based build</html:a></html:li>
+    	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454632">Update releng to use Java 8.</html:a></html:li>
+    	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=429939">Better support automated creation of Karaf distribution meta-data.</html:a></html:li>
+    	            </html:ul>
     			</html:p>
 				<html:p>
 				ECF UI maintenance <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454620">(tracking)</html:a>
