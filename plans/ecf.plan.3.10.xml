@@ -107,7 +107,7 @@
 				</html:p>
 				<html:p>
 					<html:ul>
-					  <html:li>Evaluate and Import the GSoC 2014 work into an official plugin. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454062">enhancement</html:a></htm:li>
+					  <html:li>Evaluate and Import the GSoC 2014 work into an official plugin. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454062">enhancement</html:a></html:li>
 					  <html:li>Remote services information <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454609">tracking</html:a></html:li>
 						<html:ul>
     		              <html:li>Provide a dedicated ECF remote services view<html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454610">enhancement</html:a></html:li>
