@@ -103,13 +103,36 @@
 				<html:p>Consumers of ECF Remote Services can/could benefit from the creation of Eclipse-based tooling for declaring, implementing, testing,
 				 debugging, deploying, monitoring, and managing Remote Services.  A major theme for ECF will be creation of tooling to ease the burden on the 
 				 consumer of ECF's Remote Services implementation.
+				 Tooling:
+				</html:p>
+				<html:p>
+					<html:ul>
+					  <html:li>Evaluate and Import the GSoC 2014 work into an official plugin.</html:li>
+					  <html:li>Remote services information</html:li>
+						<html:ul>
+    		              <html:li>Provide a dedicated ECF remote services view</html:li>
+        		          <html:li>Show available data from the remote service</html:li>
+            		      <html:li>Hook remote service discovery into UI notification</html:li>
+                		  <html:li>Provide statistics on remote service registrations</html:li>
+         	      	 	  <html:li>Extend PDE Registry views to provide RS info</html:li>
+						</html:ul>
+					</html:ul>
 				</html:p>
 			</description>
 		</theme>
 		<theme name="Maintenance">
 			<description>
-				<html:p>Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others). Move build to Tycho-based build.  Update releng to use
+				<html:p>
+				Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others). Move build to Tycho-based build.  Update releng to use
 				Java 8.  Better support automated creation of Karaf distribution meta-data.
+    			</html:p>
+				<html:p>
+				ECF UI maintenance
+   					<html:ul>
+    	              <html:li>Overhaul of the current communications perspective</html:li>
+        	          <html:li>Rename of perspective, provide logo</html:li>
+            	      <html:li>Gear perspectives towards remote services</html:li>
+					</html:ul>
     			</html:p>
 			</description>
 		</theme>
