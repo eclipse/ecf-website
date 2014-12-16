@@ -133,7 +133,7 @@
     			<html:p>ECF Releng , Build and Distributions. Ongoing maintenance with respect to release engineering. Move build to Tycho-based build.  Update releng to use
 				Java 8.  Better support automated creation of Karaf distribution meta-data. Routinely build maven repo.
     				<html:ul>
-					  <html:li><html:a href="https://bugs.eclipse.org/bugs/buglist.cgi?classification=RT&component=ecf.releng&list_id=10675699&product=ECF&query_format=advanced&version=3.10.0">ECF 3.10.0 Releng Bugs</html:a></html:li>
+					  <html:li><html:a href="http://eclip.se/3k">ECF 3.10.0 Releng Bugs</html:a></html:li>
     	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=396457">Move build to Tycho-based build</html:a></html:li>
     	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454632">Update releng to use Java 8.</html:a></html:li>
     	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=429939">Better support automated creation of Karaf distribution meta-data.</html:a></html:li>
