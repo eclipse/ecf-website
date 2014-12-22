@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.9.1 Now Available (11/16/2014)</b>
+    <b>ECF 3.9.2 Now Available (12/22/2014)</b>
     <p></p>
     <p>
-    ECF 3.9.1 requires <b>Eclipse Kepler or Eclipse Luna</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.9.2 requires <b>Eclipse Kepler or Eclipse Luna</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
  <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a> for further information about plans and ongoing project activities.
