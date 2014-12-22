@@ -103,13 +103,49 @@
 				<html:p>Consumers of ECF Remote Services can/could benefit from the creation of Eclipse-based tooling for declaring, implementing, testing,
 				 debugging, deploying, monitoring, and managing Remote Services.  A major theme for ECF will be creation of tooling to ease the burden on the 
 				 consumer of ECF's Remote Services implementation.
+				 Tooling:
+				</html:p>
+				<html:p>
+					<html:ul>
+					  <html:li>Evaluate and Import the GSoC 2014 work into an official plugin. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454062">(enhancement)</html:a></html:li>
+					  <html:li>Remote services information. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454609">(tracking)</html:a></html:li>
+						<html:ul>
+    		              <html:li>Provide a dedicated ECF remote services view. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454610">(enhancement)</html:a></html:li>
+        		          <html:li>Show available data from the remote service. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454612">(enhancement)</html:a></html:li>
+            		      <html:li>Hook remote service discovery into UI notification. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454615">(enhancement)</html:a></html:li>
+                		  <html:li>Provide statistics on remote service registrations. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454616">(enhancement)</html:a></html:li>
+         	      	 	  <html:li>Extend PDE Registry views to provide RS info. <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454618">(enhancement)</html:a></html:li>
+						</html:ul>
+					</html:ul>
 				</html:p>
 			</description>
 		</theme>
 		<theme name="Maintenance">
 			<description>
-				<html:p>Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others). Move build to Tycho-based build.  Update releng to use
-				Java 8.  Better support automated creation of Karaf distribution meta-data.
+			https://bugs.eclipse.org/bugs/show_bug.cgi?id=455300
+				<html:p>
+				Update existing providers to more recent upstream versions (jmdns, zookeeper, apache httpclient, others).
+					<html:ul>
+					  <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=378350">zookeeper</html:a></html:li>
+					  <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=326228">jmdns</html:a></html:li>
+					</html:ul>
+    			</html:p>
+    			<html:p>ECF Releng , Build and Distributions. Ongoing maintenance with respect to release engineering. Move build to Tycho-based build.  Update releng to use
+				Java 8.  Better support automated creation of Karaf distribution meta-data. Routinely build maven repo.
+    				<html:ul>
+					  <html:li><html:a href="http://eclip.se/3k">ECF 3.10.0 Releng Bugs</html:a></html:li>
+    	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=396457">Move build to Tycho-based build</html:a></html:li>
+    	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454632">Update releng to use Java 8.</html:a></html:li>
+    	              <html:li><html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=429939">Better support automated creation of Karaf distribution meta-data.</html:a></html:li>
+    	            </html:ul>
+    			</html:p>
+				<html:p>
+				ECF UI maintenance <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454620">(tracking)</html:a>
+   					<html:ul>
+    	              <html:li>Overhaul of the current communications perspective</html:li>
+        	          <html:li>Rename of perspective, provide logo</html:li>
+            	      <html:li>Gear perspectives towards remote services</html:li>
+					</html:ul>
     			</html:p>
 			</description>
 		</theme>
@@ -117,8 +153,8 @@
 			<description>
 				<html:p>Add the following new ECF providers
 				<html:ul>
-				<html:li>Websockets provider (remote services distribution). <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=426186">enhancement</html:a></html:li>
-				<html:li>Etcd-based provider (discovery).  <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=440824">enhancement</html:a></html:li>
+				<html:li>Websockets provider (remote services distribution). <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=426186">(enhancement)</html:a></html:li>
+				<html:li>Etcd-based provider (discovery).  <html:a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=440824">(enhancement)</html:a></html:li>
 				<html:li>Example custom HTTP+REST/JSON|xml providers (TBD)</html:li>
 				</html:ul>
 			    </html:p>
