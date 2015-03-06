@@ -30,11 +30,14 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.9.2 Now Available (12/22/2014)</b>
+    <b>ECF 3.9.3 Now Available (3/6/2015)</b>
     <p></p>
     <p>
-    ECF 3.9.2 requires <b>Eclipse Kepler or Eclipse Luna</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.9.3 requires <b>Eclipse Luna or Mars</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
+    <br>THOSE USING JAVA 7 PLEASE NOTE:  Some people have been experiencing a PDE bug that affects the running of the ECF
+    TimeService Remote Service examples.  For a description of this problem, link to the bug, and a work-around, please
+    see <a href="https://wiki.eclipse.org/Running_TimeService_examples_on_Java7">Running TimeService Examples on Java7</a>.<br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
  <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a> for further information about plans and ongoing project activities.
     </p>
