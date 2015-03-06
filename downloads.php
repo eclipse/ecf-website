@@ -35,7 +35,7 @@ ob_start();
     <p>
     ECF 3.9.3 requires <b>Eclipse Luna or Mars</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
-    <br><b>THOSE USING JAVA 7 PLEASE NOTE<b>:  Some people have been experiencing a PDE bug that affects the running of the ECF
+    <br><b>THOSE USING JAVA 7 PLEASE NOTE</b>:  Some people have been experiencing a PDE bug that affects the running of the ECF
     TimeService Remote Service examples.  For a description of this problem, link to the bug, and a work-around, please
     see <a href="https://wiki.eclipse.org/Running_TimeService_examples_on_Java7">Running TimeService Examples on Java7</a>.<br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
