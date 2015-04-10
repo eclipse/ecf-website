@@ -1,0 +1,110 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css"
+	type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+	<table border=0 cellspacing=5 cellpadding=2 width="100%">
+		<tbody>
+			<tr>
+				<td width="69%" class="bannertext">
+				<img src="https://wiki.eclipse.org/images/b/b8/Logo128x37.png" alt="ECF Logo"/>
+				<font class="indextop style">Eclipse Communication Framework (ECF)</font>
+						
+						<br>
+				<br> <font class="indexsub">an eclipse runtime project</font> <br>
+				<br> <font class="indextop style2">New and Noteworthy</font><br>
+					3.9.1 Release <br> <br>
+				<br> Return to <a href="downloads.php">ECF download page</a><br>
+					<br>
+				<br><a
+					href="NewAndNoteworthy_3.9.1.html">New and Noteworthy for 3.9.1</a><br>
+					<br>
+				<br><a
+					href="NewAndNoteworthy_3.8.0.html">New and Noteworthy for 3.8.0/Luna</a><br>
+					<br>
+				<br></td>
+				<td width="31%">
+					<div align="center">
+						<img src="images/Idea.jpg" width="120" height="86" hspace="50"
+							align="middle" alt="Idea Icon">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr>
+
+	<table>
+		 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Remote Services Tooling</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>A theme for ECF in the Mars SR Cycle has been the creation of new Tooling to support development, debugging, and deployment
+			of <a href="">ECF Remote Services</a>.  This <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454609">ongoing community effort</a> includes in this release a new Remote Service perspective.  
+			Screen shots of this new Remote Services perspective appear below></p>
+			<p>
+			Opening the Remote Services Perspective
+			<img src="images/screens/remoteserviceperspective1.png">
+			</p>
+			<p>
+			When opened, the Remote Services Perspective shows the new Endpoint Discovery view (lower left).  The Endpoint Discovery view will be dynamically updated to display Endpoints 
+			that have been discovered via network discovery (i.e. using ECF-supported network protocols like zeroconf, slp, zookeeper, dnssd, etcd, or custom).  To the right of the Endpoint
+			Discovery View is the Eclipse-standard Properties view to display the properties present in the selected Endpoint.  To the right of
+			the Properties view is the Eclipse-PDE-provided Plug-in Registry, which can be used to show Remote Services that have been imported.  Note that the Plugin-Registry
+			defaults to grouping the presentation based upon Plugins rather than Services, and so should be set to Group By/Services view the view menu to display
+			the OSGi Services currently active in Eclipse.
+			<img src="images/screens/remoteserviceperspective2.png">
+			</p>
+			<p>
+			Discovered Endpoints can be Imported into Eclipse by opening the Endpoint's context menu.  Importing the Endpoint means that ECF creates and locally registers a proxy for the remote service, allowing application 
+			code to actually use the remote service (call it's methods).   As shown below, the Plugin Registry and the Endpoint Discovery view are graphically updated to show
+			that the Remote Service is currently active in the Eclipse Framework, and that the Endpoint has been imported.
+			<img src="images/screens/remoteserviceperspective3.png">
+			</p>
+			</td>
+		</tr>
+		 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>New Etcd-based Discovery Provider</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>There is a new discovery provider based upon Etcd available via <a href="https://github.com/ECF">ECF's github repositories</a></p>
+			</td>
+		</tr>
+		 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Support for OSGi R6 Remote Service and Remote Service Admin (1.1) Specifications</b>
+				</p>
+			</td>
+			<td valign="top" width="85%">
+				<p>ECF provides a compliant and CT-test implementation of <a href="https://wiki.eclipse.org/ECF#OSGi_Remote_Services">OSGi Remote Services</a>
+				and <a href="https://wiki.eclipse.org/Remote_Services_Admin">Remote Services Admin</a>.  In <a href="http://www.osgi.org/Release6/HomePage">OSGi R6 specification</a> work
+				done in early 2014, the <a href="http://www.osgi.org/EEG/HomePage">Enterprise Experts Group (EEG)</a> made additions
+				and some small changes to the Remote Service Admin specification (v1.1).  Remote Services is specified in Chapter 100 of the enterprise specification,
+				and Remote Service Admin in Chapter 122 of the specification.  You can download the R6 enterprise specification at the <a href="http://www.osgi.org/Release6/HomePage">OSGi web site</a>.<p>
+				<p>
+				With this 3.9.0 release, ECF's implementation is fully compliant with the OSGi R6 Remote Service and Remote
+				Service Admin (1.1) specifications.  This includes testing against the OSGi R6 Compatibilty Test suite for remote services/remote service admin 
+				parts of the specification.
+				</p>
+                <br>
+			</td>
+		</tr>
+	
+</table> 
+ 
+</body> 
+</html> 
