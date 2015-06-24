@@ -51,11 +51,21 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.9.3 released on 3/6/2015.</b><br><br>
-			See also <a href="NewAndNoteworthy.html">ECF 3.9.3 New and Noteworthy</a>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.10.0 released on 6/24/2015.</b><br><br>
+			See also <a href="NewAndNoteworthy.html">ECF 3.10.0 New and Noteworthy</a>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+ 	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>June 24, 2015 - ECF Mars/3.10.0 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.10.0 release is ECF's release corresponding to the <a href="https://wiki.eclipse.org/Mars/Simultaneous_Release_Plan">Mars Simultaneous Release</a>.  See <a href="NewAndNoteworthy.html">ECF 3.10.0 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
  	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
@@ -73,16 +83,6 @@
 		<td valign="top">
 	  	<b>December 22, 2014 - ECF 3.9.2 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.9.2 release is a maintenance release for the ECF 3.9 release.  See <a href="NewAndNoteworthy.html">ECF 3.9.2 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 25, 2014 - ECF 3.9.1 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.9.1 release is a maintenance release for the ECF 3.9 release.  See <a href="NewAndNoteworthy.html">ECF 3.9.1 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
