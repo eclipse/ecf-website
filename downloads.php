@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF Mars/3.10.0 Now Available (6/24/2015)</b>
+    <b>ECF Mars/3.10.1 Now Available (7/10/2015)</b>
     <p></p>
     <p>
-    ECF Mars/3.10.0 requires <b>Eclipse Luna or Mars</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF Mars/3.10.1 requires <b>Eclipse Luna or Mars</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br><b>THOSE USING JAVA 7 PLEASE NOTE</b>:  Some people have been experiencing a PDE bug that affects the running of the ECF
     TimeService Remote Service examples.  For a description of this problem, link to the bug, and a work-around, please
