@@ -21,14 +21,11 @@
 						<br>
 				<br> <font class="indexsub">an eclipse runtime project</font> <br>
 				<br> <font class="indextop style2">New and Noteworthy</font><br>
-					3.10.0 Release <br> <br>
+					3.11.0 Release <br> <br>
 				<br> Return to <a href="downloads.php">ECF download page</a><br>
 					<br>
 				<br><a
-					href="NewAndNoteworthy_3.9.1.html">New and Noteworthy for 3.9.1</a><br>
-					<br>
-				<br><a
-					href="NewAndNoteworthy_3.8.0.html">New and Noteworthy for 3.8.0/Luna</a><br>
+					href="NewAndNoteworthy_3.10.0.html">New and Noteworthy for 3.10.0/Mars</a><br>
 					<br>
 				<br></td>
 				<td width="31%">
@@ -44,92 +41,52 @@
 	<hr>
 
 	<table>
-		 <tr>
+			 <tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
-					<b>Remote Services Tooling</b>
+					<b>Remote Services Distribution Provider API</b>
 				</p>
 			</td>
-			<td valign="top" width="85%"><p>A theme for ECF in the Mars SR Cycle has been the creation of new Tooling to support development, debugging, and deployment
-			of <a href="https://wiki.eclipse.org/ECF#OSGi_Remote_Services">ECF Remote Services</a>.  This <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=454609">ongoing community effort</a> includes 
-			in this release a new Remote Service perspective.  
-			<p>
-			<img src="images/screens/remoteserviceperspective1.png">
-			</p>
-			<p></p>
-			<p>
-			Once the Remote Service perspective is opened, it shows the new Endpoint Discovery view (lower left).  The Endpoint Discovery view will be dynamically updated to display Endpoints 
-			that have been discovered via network discovery (i.e. using ECF-supported network protocols like zeroconf, slp, zookeeper, dnssd, etcd, or custom).  To the right of the Endpoint
-			Discovery View is the Eclipse-standard Properties view to display the properties present in the selected Endpoint.  To the right of
-			the Properties view is the Eclipse-PDE-provided Plug-in Registry, which can be used to show Remote Services that have been imported.  Note that the Plugin-Registry
-			defaults to grouping the presentation based upon Plugins rather than Services, and so should be set to Group By/Services view the view menu to display
-			the OSGi Services currently active in Eclipse.
+			<td valign="top" width="85%"><p>Remote Services distribution providers are responsible for implementing the remote method call...i.e. the 
+			serialization of parameters and return values, and the communications protocol used to communicate between the caller and the
+			remote service.
+			caller.  
 			</p>
 			<p>
-			<img src="images/screens/remoteserviceperspective2.png">
+			ECF's Remote Services implementation allows the use of custom or alternative distribution providers.  Allows ECF's
+			Remote Services implementation to be used with any desired serialization mechanism and any suitable communications protocol.
+			</p> 
+			<p>For easy creation of distribution providers, we've added a new <a href="http://download.eclipse.org/rt/ecf/3.11.0/javadoc/org/eclipse/ecf/remoteservice/provider/IRemoteServiceDistributionProvider.html">IRemoteServiceDistributionProvider</a>
+			interface so that a distribution provider may be registered for use via the <a href="http://www.osgi.org/wiki/uploads/Links/whiteboard.pdf">OSGi whiteboard pattern</a>.  
+			<a href="http://download.eclipse.org/rt/ecf/3.11.0/javadoc/org/eclipse/ecf/remoteservice/provider/package-frame.html">Here is the org.eclipse.ecf.remoteservice.provider</a> package.
 			</p>
 			<p>
-			Discovered Endpoints can be Imported into Eclipse by opening the Endpoint's context menu.  Importing the Endpoint means that ECF creates and locally registers a proxy for the remote service, allowing application 
-			code to actually use the remote service (call it's methods).   As shown below, the Plugin Registry and the Endpoint Discovery view are graphically updated to show
-			that the Remote Service is currently active in the Eclipse Framework, and that the Endpoint has been imported.
-			<p>
+			For example, <a href="https://github.com/ECF/JaxRSProviders/blob/master/bundles/org.eclipse.ecf.provider.jersey.client/src/org/eclipse/ecf/provider/jersey/client/JerseyClientDistributionProvider.java">here is a distribution
+			provider</a> implemented using <a href="http://jersey.java.net">Jersey Jax-RS</a> REST framework.   A single instance of this class
+			is <a href="https://github.com/ECF/JaxRSProviders/blob/master/bundles/org.eclipse.ecf.provider.jersey.server/OSGI-INF/distributionprovider.xml">registered via Declarative Services</a> and any remote services using the 'ecf.jaxrs.jersey.server' config type will
+			use Jersey as the distribution mechanism.  See the <a href="https://github.com/ECF/JaxRSProviders/tree/master/examples">examples</a> in 
+			the <a href="https://github.com/ECF/JaxRSProviders">JaxRSProviders</a> repo for complete examples of using this provider. 
 			</p>
-			<p>
-			<img src="images/screens/remoteserviceperspective3.png">
-			</p>
-			</td>
-		</tr>
-		 <tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>New Etcd-based Discovery Provider</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>A new discovery provider based upon Etcd service protocol is available via <a href="https://github.com/ECF/etcd-provider">ECF's Etcd github repository</a></p>
-			</td>
-		</tr>
-		<tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>Websockets Support</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>Websockets support added via a <a href="https://github.com/ECF/Websockets">ECF's Websockets github repository</a></p>
-			</td>
-		</tr>
-		<tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>OSGi Remote Management</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>OSGi Remote Services may be used to remotely manage OSGi servers (Karaf, etc).  New bundles have been created to manage
-			many aspects of an OSGi-based server.   Remote Service APIs and implementations for the OSGi framework (bundles, services, wiring, others), ECF, Declarative Services/SCR, P2, ECF, RSA, Equinox Extension Registry and others have been
-			created and  <a href="https://github.com/ECF/OSGIRemoteManagement">ECF's OSGi Remote Management github repository</a></p>
-			</td>
-		</tr>
-		
-		 <tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>Support for OSGi R6 Remote Service and Remote Service Admin (1.1) Specifications</b>
-				</p>
-			</td>
-			<td valign="top" width="85%">
-				<p>ECF provides a compliant and CT-test implementation of <a href="https://wiki.eclipse.org/ECF#OSGi_Remote_Services">OSGi Remote Services</a>
-				and <a href="https://wiki.eclipse.org/Remote_Services_Admin">Remote Services Admin</a>.  In <a href="http://www.osgi.org/Release6/HomePage">OSGi R6 specification</a> work
-				done in early 2014, the <a href="http://www.osgi.org/EEG/HomePage">Enterprise Experts Group (EEG)</a> made additions
-				and some small changes to the Remote Service Admin specification (v1.1).  Remote Services is specified in Chapter 100 of the enterprise specification,
-				and Remote Service Admin in Chapter 122 of the specification.  You can download the R6 enterprise specification at the <a href="http://www.osgi.org/Release6/HomePage">OSGi web site</a>.<p>
-				<p>
-				With this 3.9.0 release, ECF's implementation is fully compliant with the OSGi R6 Remote Service and Remote
-				Service Admin (1.1) specifications.  This includes testing against the OSGi R6 Compatibilty Test suite for remote services/remote service admin 
-				parts of the specification.
-				</p>
-                <br>
 			</td>
 		</tr>
 	
+				 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>New Distribution Providers</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>Using the remote services distribution provider API above, several new 
+			distribution providers have been created:
+			<ul>
+			<li><a href="https://github.com/ECF/JaxRSProviders">Jax-RS Providers (Jersey, CXF, Resteasy)</a></li>
+			<li><a href="https://github.com/ECF/HazelcastProvider">Hazelcast</a></li>
+			<li><a href="https://github.com/ECF/Mqtt-Provider">MQTT</a></li>
+			</ul>
+			</p>
+			</td>
+		</tr>
+		
 </table> 
  
 </body> 
