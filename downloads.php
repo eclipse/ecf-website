@@ -30,7 +30,7 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF Mars/3.11.0 Now Available (9/28/2015)</b>
+    <b>ECF Mars/3.11.0 Now Available (9/26/2015)</b>
     <p></p>
     <p>
     ECF Mars/3.11.0 requires <b>Eclipse Luna or Mars</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
