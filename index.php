@@ -76,26 +76,6 @@
            <p></p>
 		</td>
 	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 24, 2015 - ECF Mars/3.10.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.10.0 release is ECF's release corresponding to the <a href="https://wiki.eclipse.org/Mars/Simultaneous_Release_Plan">Mars Simultaneous Release</a>.  See <a href="NewAndNoteworthy.html">ECF 3.10.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>March 6, 2015 - ECF 3.9.3 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.9.3 release is a maintenance release for the ECF 3.9 release.  See <a href="NewAndNoteworthy.html">ECF 3.9.3 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
   	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
@@ -107,39 +87,6 @@
            <p></p>
 		</td>
 	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 25, 2014 - ECF 3.9.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.9.0 release is focused on supporting OSGi R6 specification, specifically the Remote Services and Remote Service Admin chapters.  See <a href="NewAndNoteworthy.html">ECF 3.9.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 25, 2014 - ECF 3.8.1/Luna is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy.html">ECF 3.8.1 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>March 10, 2014 - ECF 3.8.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  See <a href="NewAndNoteworthy_3.8.0.html">ECF 3.8.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
