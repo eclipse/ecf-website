@@ -51,8 +51,8 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.11.0 released on 9/26/2015.</b><br><br>
-			See also <a href="NewAndNoteworthy.html">ECF 3.11.0 New and Noteworthy</a>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.12.0 released on 11/30/2015.</b><br><br>
+			See also <a href="NewAndNoteworthy.html">ECF 3.12.0 New and Noteworthy</a>
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
