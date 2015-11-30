@@ -61,12 +61,22 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>September 26, 2015 - ECF Mars/3.11.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.11.0 release is a maintenance/bug fix release.  See <a href="NewAndNoteworthy.html">ECF 3.11.0 New and Noteworthy</a>
+	  	<b>November 30, 2015 - ECF Mars/3.12.0 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.12.0 release is a minor release that includes new Eclipse-based tooling for Remote Services
+			developers.  See <a href="NewAndNoteworthy.html">ECF 3.12.0 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
  	<tr>
+ 		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>September 26, 2015 - ECF Mars/3.11.0 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.11.0 release is a maintenance/bug fix release.  See <a href="NewAndNoteworthy.html">ECF 3.11.0 New and Noteworthy</a>
+           <p></p>
+		</td>
+ 	
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>

@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF Mars/3.11.0 Now Available (9/26/2015)</b>
+    <b>ECF Mars/3.12.0 Now Available (11/30/2015)</b>
     <p></p>
     <p>
-    ECF Mars/3.11.0 requires <b>Eclipse Luna or Mars</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF Mars/3.12.0 requires <b>Eclipse Luna or Mars</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br><b>THOSE USING JAVA 7 PLEASE NOTE</b>:  Some people have been experiencing a PDE bug that affects the running of the ECF
     TimeService Remote Service examples.  For a description of this problem, link to the bug, and a work-around, please
@@ -47,11 +47,11 @@ ob_start();
 
         include 'getNugget.php';
 
-        $html = getNugget("EcfInstallViaKaraf3.11.html",$html);
+        $html = getNugget("EcfInstallViaKaraf3.12.html",$html);
         
-        $html = getNugget("EcfInstallViaUpdate3.11.html",$html);
+        $html = getNugget("EcfInstallViaUpdate3.12.html",$html);
         
-        $html = getNugget("EcfInstallViaZip3.11.html",$html);
+        $html = getNugget("EcfInstallViaZip3.12.html",$html);
         
         $html = getNugget("EcfDailies.html",$html);    
  
