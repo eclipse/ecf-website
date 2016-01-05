@@ -56,6 +56,18 @@
 	<div class="homeitem3col">		
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>December 30, 2015 - Christoph Keimel recently presented a very cool 
+	  	<a href="http://de.slideshare.net/keimel/how-to-diffuse-a-bomb-with-ecf-and-efxclipse">Internet of Things game based upon ECF Remote Services</a>
+	  	 at <a href="http://eclipsesource.com/blogs/2015/12/23/eclipse-democamp-december-munich-2015">Eclipse Democamp</a>.   
+	  	 <a href="http://de.slideshare.net/keimel/how-to-diffuse-a-bomb-with-ecf-and-efxclipse">Check it out</a>...it's really cool!
+           <p></p>
+		</td>
+	</tr>
  	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
