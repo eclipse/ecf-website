@@ -45,96 +45,8 @@
 	<hr>
 
 	<table>
-			 <tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>Enhanced Remote Services/Remote Service Admin Tooling</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>In <a
-					href="NewAndNoteworthy_3.10.0.html">ECF 3.10.0/Mars a Remote Services Perspective</a> was introduced.   This perspective included
-					an Endpoint Discovery View allowing endpoints to be discovered (via network discovery and/or xml/EDEF-file-based discovery), examined,
-					and imported for use as a remote service.   
-			<p>
-			<p>
-			In this release, there's a new Remote Service Admin (RSA) manager view.  This view presents the Exported Services and Imported Endpoints 
-			for the RSA running within Eclipse, allowing the programmer to <a href="http://wiki.eclipse.org/Remote_Services_Admin">examine and manipulate exported services and imported endpoints</a>.  
-			This tooling may be used to test and debug ECF Remote Services by monitoring and managing the remote services export, discovery, and import.
-			<p>
-			<p>
-			For example, here is a screenshot showing an endpoint that has been exported and published for 
-			by a remote  
-			host (e.g. by a <a href="http://wiki.eclipse.org/EIG:Install_Timeline_Example_into_Apache_Karaf">Karaf-based host</a>),
-			and then <a href="http://wiki.eclipse.org/Discovery_Providers">discovered via the Zeroconf protocol</a> (presented
-			in the Endpoint Discovery View)<p>
-			<p>
-			<img src="images/screens/remoteserviceperspective.3.12.1.png">
-			</p>
-			The user can select this Discovered Endpoint, open the context menu, and select the 'Import Remote Service' menu.
-			The selected Endpoint will then be imported, and the Imported Endpoint will appear in the RSA Manager view.
-			<p>
-			<p>
-			<img src="images/screens/remoteserviceperspective.3.12.2.png">
-			</p>
-			<p>
-			Note that the imported endpoint (the remote service proxy) is also presented in the OSGi Services View, and the properties
-			associated with the selected mported endpoint are presented in the properties view.<p>
-			<p>
-			The Imported Endpoints presented in the RSA Manager view can be Unimported (again via context menu).  As well,
-			if remote service hosts are exported, they will appear under the Exported Services group in the RSA Manager, and
-			can also be unexported via the RSA Manager context menu.
-			</p>
-			</td>
-		</tr>
 	
-			 <tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>Remote Services Distribution Provider API</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>Remote Services distribution providers are responsible for implementing the remote method call...i.e. the 
-			serialization of parameters and return values, and the communications protocol used to communicate between the caller and the
-			remote service.
-			caller.  
-			</p>
-			<p>
-			ECF's Remote Services implementation allows the use of custom or alternative distribution providers.  Allows ECF's
-			Remote Services implementation to be used with any desired serialization mechanism and any suitable communications protocol.
-			</p> 
-			<p>For easy creation of distribution providers, we've added a new <a href="http://download.eclipse.org/rt/ecf/3.11.0/javadoc/org/eclipse/ecf/remoteservice/provider/IRemoteServiceDistributionProvider.html">IRemoteServiceDistributionProvider</a>
-			interface so that a distribution provider may be registered for use via the <a href="http://www.osgi.org/wiki/uploads/Links/whiteboard.pdf">OSGi whiteboard pattern</a>.  
-			<a href="http://download.eclipse.org/rt/ecf/3.11.0/javadoc/org/eclipse/ecf/remoteservice/provider/package-frame.html">Here is the org.eclipse.ecf.remoteservice.provider</a> package.
-			</p>
-			<p>
-			For example, <a href="https://github.com/ECF/JaxRSProviders/blob/master/bundles/org.eclipse.ecf.provider.jersey.client/src/org/eclipse/ecf/provider/jersey/client/JerseyClientDistributionProvider.java">here is a distribution
-			provider</a> implemented using <a href="http://jersey.java.net">Jersey Jax-RS</a> REST framework.   A single instance of this class
-			is <a href="https://github.com/ECF/JaxRSProviders/blob/master/bundles/org.eclipse.ecf.provider.jersey.server/OSGI-INF/distributionprovider.xml">registered via Declarative Services</a> and any remote services using the 'ecf.jaxrs.jersey.server' config type will
-			use Jersey as the distribution mechanism.  See the <a href="https://github.com/ECF/JaxRSProviders/tree/master/examples">examples</a> in 
-			the <a href="https://github.com/ECF/JaxRSProviders">JaxRSProviders</a> repo for complete examples of using this provider. 
-			</p>
-			</td>
-		</tr>
-	
-				 <tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>New Distribution Providers and Distribution Provider documentation</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>Using the remote services distribution provider API above, several new 
-			distribution providers have been created:
-			<ul>
-			<li><a href="https://github.com/ECF/JaxRSProviders">Jax-RS Providers (Jersey, CXF, Resteasy)</a></li>
-			<li><a href="https://github.com/ECF/HazelcastProvider">Hazelcast</a></li>
-			<li><a href="https://github.com/ECF/Mqtt-Provider">MQTT</a></li>
-			</ul>
-			</p>
-			<p><a href="https://wiki.eclipse.org/Distribution_Providers">Detailed documentation of existing distribution providers</a>
-			</td>
-		</tr>
-		
-				 <tr>
+					 <tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
 					<b>Remote Management for OSGi Runtimes and Eclipse</b>
@@ -225,6 +137,96 @@
 			</p>
 			</td>
 		</tr>
+	
+			 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Enhanced Remote Services/Remote Service Admin Tooling</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>In <a
+					href="NewAndNoteworthy_3.10.0.html">ECF 3.10.0/Mars a Remote Services Perspective</a> was introduced.   This perspective included
+					an Endpoint Discovery View allowing endpoints to be discovered (via network discovery and/or xml/EDEF-file-based discovery), examined,
+					and imported for use as a remote service.   
+			<p>
+			<p>
+			In this release, there's a new Remote Service Admin (RSA) manager view.  This view presents the Exported Services and Imported Endpoints 
+			for the RSA running within Eclipse, allowing the programmer to <a href="http://wiki.eclipse.org/Remote_Services_Admin">examine and manipulate exported services and imported endpoints</a>.  
+			This tooling may be used to test and debug ECF Remote Services by monitoring and managing the remote services export, discovery, and import.
+			<p>
+			<p>
+			For example, here is a screenshot showing an endpoint that has been exported and published for 
+			by a remote  
+			host (e.g. by a <a href="http://wiki.eclipse.org/EIG:Install_Timeline_Example_into_Apache_Karaf">Karaf-based host</a>),
+			and then <a href="http://wiki.eclipse.org/Discovery_Providers">discovered via the Zeroconf protocol</a> (presented
+			in the Endpoint Discovery View)<p>
+			<p>
+			<img src="images/screens/remoteserviceperspective.3.12.1.png">
+			</p>
+			The user can select this Discovered Endpoint, open the context menu, and select the 'Import Remote Service' menu.
+			The selected Endpoint will then be imported, and the Imported Endpoint will appear in the RSA Manager view.
+			<p>
+			<p>
+			<img src="images/screens/remoteserviceperspective.3.12.2.png">
+			</p>
+			<p>
+			Note that the imported endpoint (the remote service proxy) is also presented in the OSGi Services View, and the properties
+			associated with the selected mported endpoint are presented in the properties view.<p>
+			<p>
+			The Imported Endpoints presented in the RSA Manager view can be Unimported (again via context menu).  As well,
+			if remote service hosts are exported, they will appear under the Exported Services group in the RSA Manager, and
+			can also be unexported via the RSA Manager context menu.
+			</p>
+			</td>
+		</tr>
+	
+			 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Remote Services Distribution Provider API</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>Remote Services distribution providers are responsible for implementing the remote method call...i.e. the 
+			serialization of parameters and return values, and the communications protocol used to communicate between the caller and the
+			remote service.
+			caller.  
+			</p>
+			<p>
+			ECF's Remote Services implementation allows the use of custom or alternative distribution providers.  Allows ECF's
+			Remote Services implementation to be used with any desired serialization mechanism and any suitable communications protocol.
+			</p> 
+			<p>For easy creation of distribution providers, we've added a new <a href="http://download.eclipse.org/rt/ecf/3.11.0/javadoc/org/eclipse/ecf/remoteservice/provider/IRemoteServiceDistributionProvider.html">IRemoteServiceDistributionProvider</a>
+			interface so that a distribution provider may be registered for use via the <a href="http://www.osgi.org/wiki/uploads/Links/whiteboard.pdf">OSGi whiteboard pattern</a>.  
+			<a href="http://download.eclipse.org/rt/ecf/3.11.0/javadoc/org/eclipse/ecf/remoteservice/provider/package-frame.html">Here is the org.eclipse.ecf.remoteservice.provider</a> package.
+			</p>
+			<p>
+			For example, <a href="https://github.com/ECF/JaxRSProviders/blob/master/bundles/org.eclipse.ecf.provider.jersey.client/src/org/eclipse/ecf/provider/jersey/client/JerseyClientDistributionProvider.java">here is a distribution
+			provider</a> implemented using <a href="http://jersey.java.net">Jersey Jax-RS</a> REST framework.   A single instance of this class
+			is <a href="https://github.com/ECF/JaxRSProviders/blob/master/bundles/org.eclipse.ecf.provider.jersey.server/OSGI-INF/distributionprovider.xml">registered via Declarative Services</a> and any remote services using the 'ecf.jaxrs.jersey.server' config type will
+			use Jersey as the distribution mechanism.  See the <a href="https://github.com/ECF/JaxRSProviders/tree/master/examples">examples</a> in 
+			the <a href="https://github.com/ECF/JaxRSProviders">JaxRSProviders</a> repo for complete examples of using this provider. 
+			</p>
+			</td>
+		</tr>
+	
+				 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>New Distribution Providers and Distribution Provider documentation</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>Using the remote services distribution provider API above, several new 
+			distribution providers have been created:
+			<ul>
+			<li><a href="https://github.com/ECF/JaxRSProviders">Jax-RS Providers (Jersey, CXF, Resteasy)</a></li>
+			<li><a href="https://github.com/ECF/HazelcastProvider">Hazelcast</a></li>
+			<li><a href="https://github.com/ECF/Mqtt-Provider">MQTT</a></li>
+			</ul>
+			</p>
+			<p><a href="https://wiki.eclipse.org/Distribution_Providers">Detailed documentation of existing distribution providers</a>
+			</td>
+		</tr>
+		
 		
 </table> 
  
