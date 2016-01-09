@@ -205,8 +205,23 @@
 			</ul>
 			</p><p></p>
 			<p>
-			Each of the above services also has an async proxy interface, allowing the remote service to be accessed via a non-blocking<a href="https://wiki.eclipse.org/ECF/Asynchronous_Remote_Services">async proxy</a> create automatically for the 
-			remote service by ECF's Remote Services implementation.  Host implementations of each of these services are also available.
+			Each of the above services also has an associated async proxy service interface (e.g. IServiceManagerAsync), allowing the remote service to be accessed via a non-blocking<a href="https://wiki.eclipse.org/ECF/Asynchronous_Remote_Services">async proxy</a> create automatically for the 
+			remote service by ECF's Remote Services implementation.  Host implementations of each of these services are also available in associated <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework.host">host bundles</a>.
+			</p>
+			<p>
+			Also included in the OSGi Remote Management repository are Eclipse plugins to expose a running Eclipse as a host for remote management, or to use Eclipse views as a consumer to manage a remote host.  
+			For example, here is a new Eclipse Preferences user interface for exporting a Service Manager and an RSA Manager remote services:
+			</p>
+	        <p>
+			<img src="images/screens/remotemanagementhost.png">
+			</p>
+			<p>
+			Once exported, then on Eclipse consumers where the service can be discovered (e.g. on same LAN), a Remote OSGi Service view and 
+			a Remote RSA Manager views may be displayed, showing the remote host's currently Exported remote services (above) and the remote host's
+			currently running OSGi services.
+			</p>
+	        <p>
+			<img src="images/screens/remotemanagementhost.png">
 			</p>
 			</td>
 		</tr>
