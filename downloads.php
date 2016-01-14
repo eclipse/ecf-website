@@ -44,11 +44,11 @@ ob_start();
 
         include 'getNugget.php';
 
-        $html = getNugget("EcfInstallViaKaraf3.12.1,html",$html);
+        $html = getNugget("EcfInstallViaKaraf3.12.1.html",$html);
         
-        $html = getNugget("EcfInstallViaUpdate3.12.1,html",$html);
+        $html = getNugget("EcfInstallViaUpdate3.12.1.html",$html);
         
-        $html = getNugget("EcfInstallViaZip3.12.1,html",$html);
+        $html = getNugget("EcfInstallViaZip3.12.1.html",$html);
         
         $html = getNugget("EcfDailies.html",$html);    
  
