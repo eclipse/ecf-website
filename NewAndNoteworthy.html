@@ -21,16 +21,15 @@
 						<br>
 				<br> <font class="indexsub">an eclipse runtime project</font> <br>
 				<br> <font class="indextop style2">New and Noteworthy</font><br>
-					3.12.0 Release <br> <br>
+					3.12.1 Release <br> <br>
 				<br> Return to <a href="downloads.php">ECF download page</a><br>
 					<br>
 
 				<br><a
-					href="NewAndNoteworthy_3.10.0.html">New and Noteworthy for 3.10.0/Mars</a><br>
-					<br>
-				<br>
-				<br><a
 					href="NewAndNoteworthy_3.11.0.html">New and Noteworthy for 3.11.0/Mars</a><br>
+					<br>
+				<br><a
+					href="NewAndNoteworthy_3.12.0.html">New and Noteworthy for 3.12.0</a><br>
 					<br>
 				<br></td>
 				<td width="31%">
@@ -46,6 +45,101 @@
 	<hr>
 
 	<table>
+	
+					 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Remote Management for OSGi Runtimes and Eclipse</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>At the <a href="https://github.com/ECF">ECF Github organization</a>, we've created OSGi Remote Services allow remote monitoring and management
+			of any OSGi container (e.g. Eclipse, Equinox, Karaf, Concierge, others).   The repository containing the service APIs, implementations, and tooling for Remote Management are 
+			<a href="https://github.com/ECF/OSGIRemoteManagement">here</a>.  Each management service is declared and implemented in separate bundles,
+			so that only relevant services may be installed and used in appropriate environments.  For example, if <a href="https://wiki.eclipse.org/EIG:Install_into_Apache_Karaf">Karaf server environments</a> the
+			OSGi management services would be completely appropriate, and the Eclipse-specific services listed below would not be needed.
+			
+			<ul>
+			   <li><b>Framework Management Services</b>
+			      <ul>
+			         <li>
+			           <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework/src/org/eclipse/ecf/mgmt/framework/IFrameworkManager.java">Framework Manager</a> - Remotely access framework-level information such as framework properties, and get/set start levels.
+			         </li>
+			      	 <li>
+			           <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework/src/org/eclipse/ecf/mgmt/framework/IServiceManager.java">Service Manager</a> - Remotely access information about running services.
+			         </li>
+			      	 <li>
+			           <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework/src/org/eclipse/ecf/mgmt/framework/IBundleManager.java">Bundle Manager</a> - Remotely access information about bundles in framework, and remotely start/stop bundles.
+			         </li>
+
+			          <li>
+			           <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework/src/org/eclipse/ecf/mgmt/framework/wiring/IWiringManager.java">Wiring Manager</a> - Remotely access information about bundle wiring.
+			         </li>
+			          <li>
+			           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.application/src/org/eclipse/ecf/mgmt/application/IApplicationManager.java">Application Manager</a> - Remotely access information about OSGi applications.  Also allows remotely starting/stopping applications.
+			         </li>
+			          <li>
+			           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.scr/src/org/eclipse/ecf/mgmt/scr/ISCRManager.java">Service Component Runtime (SCR) Manager</a> - Remotely access meta-data about SCR/DS components.  Also allows remotely enabling/disabling components.
+			         </li>
+			          <li>
+			           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.rsa/src/org/eclipse/ecf/mgmt/rsa/IRemoteServiceAdminManager.java">Remote Service Admin Manager</a> - Remotely access meta-data about RSA such as RSA events, and remote service registrations and references.  Also allows remotely exporting, importing, updating, and closing remote services.
+			         </li>
+			      </ul>
+			   </li>
+			   			      <li><b>ECF Management Services</b>
+				      <ul>
+				         <li>
+				           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.identity/src/org/eclipse/ecf/mgmt/identity/IIdentityFactoryManager.java">Identity Manager</a> - Remotely access meta-data about ECF Namespaces and IDs, and remotely create/add namespaces and IDs.
+				         </li>
+				      	 <li>
+				           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.container/src/org/eclipse/ecf/mgmt/container/IContainerFactoryManager.java">Container Manager</a> - Remotely access meta-data about existing and active ECF Containers, and remotely create new containers.
+				         </li>
+				      	 <li>
+				           <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.sharedobject">Shared Object Manager</a> - Remotely access information about existing meta-data about shared object containers and shared objects, and remotely create and delete shared objects.
+				         </li>
+				      </ul>
+				  </li>
+			   
+			   <li><b>Eclipse-specific Management Services</b>
+			      <ul>
+			      <li><b>P2 Management Services</b>
+				      <ul>
+				         <li>
+				           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.p2.install/src/org/eclipse/ecf/mgmt/p2/install/IFeatureInstallManager.java">Feature Install Manager</a> - Remotely access feature meta-data and install, update, and install P2 feature groups.
+				         </li>
+				      	 <li>
+				           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.p2.profile/src/org/eclipse/ecf/mgmt/p2/profile/IProfileManager.java">Profile Manager</a> - Remotely access meta-data about existing and active P2 profiles.
+				         </li>
+				      	 <li>
+				           <a href="https://github.com/ECF/OSGIRemoteManagement/blob/master/bundles/org.eclipse.ecf.mgmt.p2.repository/src/org/eclipse/ecf/mgmt/p2/repository/IRepositoryManager.java">Repository Manager</a> - Remotely access meta-data about repositories and their contents, and remotely add, refresh, and remove repositories.
+				         </li>
+				      </ul>
+				  </li>
+			      </ul>
+			   </li>  
+			</ul>
+			</p><p></p>
+			<p>
+			Each of the above services also has an async proxy service interface (e.g. IServiceManagerAsync), allowing the remote service to be accessed via a non-blocking<a href="https://wiki.eclipse.org/ECF/Asynchronous_Remote_Services">async proxy</a> created automatically for the 
+			service by ECF's Remote Services implementation.  Host implementations of each of these services are also available in corresponding <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework.host">host bundles</a>.
+			</p>
+			<p>
+			Also included in the OSGi Remote Management repository are Eclipse plugins to expose a running Eclipse as a host for remote management, or to use Eclipse views as a consumer to manage a remote host.  
+			For example, here is a new Eclipse Preferences user interface for exporting a Service Manager and an RSA Manager remote services:
+			</p>
+	        <p>
+			<img src="images/screens/remotemanagementhost.png">
+			</p>
+			<p>
+			Once exported, then on Eclipse consumers where the service can be discovered (e.g. on same LAN), a Remote OSGi Service view and 
+			a Remote RSA Manager views may be displayed, showing the remote host's currently Exported remote services (above) and the remote host's
+			currently running OSGi services.
+			</p>
+	        <p>
+			<img src="images/screens/remotemanagementconsumer.png">
+			</p>
+			</td>
+		</tr>
+	
 			 <tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
@@ -120,7 +214,7 @@
 				 <tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
-					<b>New Distribution Providers</b>
+					<b>New Distribution Providers and Distribution Provider documentation</b>
 				</p>
 			</td>
 			<td valign="top" width="85%"><p>Using the remote services distribution provider API above, several new 
@@ -131,6 +225,7 @@
 			<li><a href="https://github.com/ECF/Mqtt-Provider">MQTT</a></li>
 			</ul>
 			</p>
+			<p><a href="https://wiki.eclipse.org/Distribution_Providers">Detailed documentation of existing distribution providers</a>
 			</td>
 		</tr>
 		
