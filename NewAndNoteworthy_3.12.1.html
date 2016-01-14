@@ -52,10 +52,11 @@
 					<b>Remote Management for OSGi Runtimes and Eclipse</b>
 				</p>
 			</td>
-			<td valign="top" width="85%"><p>At the <a href="https://github.com/ECF">ECF Github site</a>, we've made new services...implemented as 
-			OSGi remote service...that allow OSGi frameworks to be remotely monitored and managed.   The <a href="https://github.com/ECF/OSGIRemoteManagement">OSGiRemoteManagement repository is here</a>.  Each remote management service is defined and implemented separately,
-			so that relevant services can be installed and used in appropriate environments.  For example, if <a href="https://wiki.eclipse.org/EIG:Install_into_Apache_Karaf">Karaf server environments</a> the
-			OSGi management services would be completely appropriate, and the Eclipse-specific services from the list below would not be appropriate.
+			<td valign="top" width="85%"><p>At the <a href="https://github.com/ECF">ECF Github organization</a>, we've created OSGi Remote Services allow remote monitoring and management
+			of any OSGi container (e.g. Eclipse, Equinox, Karaf, Concierge, others).   The repository containing the service APIs, implementations, and tooling for Remote Management are 
+			<a href="https://github.com/ECF/OSGIRemoteManagement">here</a>.  Each management service is declared and implemented in separate bundles,
+			so that only relevant services may be installed and used in appropriate environments.  For example, if <a href="https://wiki.eclipse.org/EIG:Install_into_Apache_Karaf">Karaf server environments</a> the
+			OSGi management services would be completely appropriate, and the Eclipse-specific services listed below would not be needed.
 			
 			<ul>
 			   <li><b>Framework Management Services</b>
@@ -118,8 +119,8 @@
 			</ul>
 			</p><p></p>
 			<p>
-			Each of the above services also has an associated async proxy service interface (e.g. IServiceManagerAsync), allowing the remote service to be accessed via a non-blocking<a href="https://wiki.eclipse.org/ECF/Asynchronous_Remote_Services">async proxy</a> create automatically for the 
-			remote service by ECF's Remote Services implementation.  Host implementations of each of these services are also available in associated <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework.host">host bundles</a>.
+			Each of the above services also has an async proxy service interface (e.g. IServiceManagerAsync), allowing the remote service to be accessed via a non-blocking<a href="https://wiki.eclipse.org/ECF/Asynchronous_Remote_Services">async proxy</a> created automatically for the 
+			service by ECF's Remote Services implementation.  Host implementations of each of these services are also available in corresponding <a href="https://github.com/ECF/OSGIRemoteManagement/tree/master/bundles/org.eclipse.ecf.mgmt.framework.host">host bundles</a>.
 			</p>
 			<p>
 			Also included in the OSGi Remote Management repository are Eclipse plugins to expose a running Eclipse as a host for remote management, or to use Eclipse views as a consumer to manage a remote host.  
