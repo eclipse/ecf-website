@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF Mars/3.13.0 Now Available (3/16/2016)</b>
+    <b>ECF Mars/3.13.1 Now Available (4/5/2016)</b>
     <p></p>
     <p>
-    ECF Mars/3.13.0 requires <b>Eclipse Luna, Mars, or Neon</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF Mars/3.13.1 requires <b>Eclipse Luna, Mars, or Neon</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a>.  <br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
  <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a> for further information about plans and ongoing project activities.
@@ -44,11 +44,11 @@ ob_start();
 
         include 'getNugget.php';
 
-        $html = getNugget("EcfInstallViaKaraf3.13.0.html",$html);
+        $html = getNugget("EcfInstallViaKaraf3.13.1.html",$html);
         
-        $html = getNugget("EcfInstallViaUpdate3.13.0.html",$html);
+        $html = getNugget("EcfInstallViaUpdate3.13.1.html",$html);
         
-        $html = getNugget("EcfInstallViaZip3.13.0.html",$html);
+        $html = getNugget("EcfInstallViaZip3.13.1.html",$html);
         
         $html = getNugget("EcfDailies.html",$html);    
  
