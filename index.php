@@ -53,7 +53,10 @@
      	<div style="margin:10px;">
      	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.13.1 released on 4/5/2016.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF 3.13.1 New and Noteworthy</a>
-	<div class="homeitem3col">		
+	<div class="homeitem3col">	
+	<h3>Training, Support, and Integration</h3>
+	   For Remote Services training, support, or expert OSGi or Eclipse development please contact <a href="mailto:slewis@composent.com">Composent.com via email</a> or bring it up
+	   on the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ECF dev mailing list</a>.	
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
  	<tr>
