@@ -66,6 +66,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>January 12, 2017 - ECF Mars/3.13.4 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.13.4 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF 3.13.3 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+ 	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>December 6, 2016 - ECF Mars/3.13.3 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.13.3 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF 3.13.3 New and Noteworthy</a>
            <p></p>
@@ -88,27 +98,6 @@
 		<td valign="top">
 	  	<b>April 5, 2016 - ECF Mars/3.13.1 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.13.1 release is a maintenance release.  See <a href="NewAndNoteworthy.html">ECF 3.13.1 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>March 16, 2016 - ECF Mars/3.13.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.0 release is a minor update release.  See <a href="NewAndNoteworthy.html">ECF 3.13.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>January 15, 2016 - ECF Mars/3.12.1 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.12.1 release is a minor release that includes new Eclipse-based tooling for Remote Services
-			developers.  See <a href="NewAndNoteworthy_3.12.1.html">ECF 3.12.1 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
