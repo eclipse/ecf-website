@@ -56,7 +56,7 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.13.5 released on 1/16/2017.</b><br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.13.6 released on 5/72017.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
 	</div>
  	<h3>What's New</h3>
