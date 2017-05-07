@@ -66,6 +66,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>May 7, 2017 - ECF 3.13.6 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.13.6 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF 3.13.3 New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+ 	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>February 16, 2017 - ECF Mars/3.13.5 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.13.5 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF 3.13.3 New and Noteworthy</a>
            <p></p>
