@@ -66,8 +66,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>May 7, 2017 - ECF 3.13.6 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.6 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+	  	<b>May 18, 2017 - ECF 3.13.7 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.13.7 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
