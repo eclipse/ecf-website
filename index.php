@@ -56,7 +56,7 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.13.6 released on 5/7/2017.</b><br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF Mars/3.13.7 released on 5/18/2017.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
 	</div>
  	<h3>What's New</h3>
@@ -76,8 +76,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>May 18, 2017 - ECF 3.13.7 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.7 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+	  	<b>May 7, 2017 - ECF 3.13.6 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.13.6 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
