@@ -56,11 +56,21 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.13.7 (Oxygen) released on 5/18/2017.</b><br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.13.8 (Oxygen.1) released on 9/2/2017.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
 	</div>
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+ 	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>September 2, 2017 - ECF 3.13.8 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.13.8 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
  	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
