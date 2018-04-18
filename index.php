@@ -22,7 +22,7 @@
 	#****************************************************************************
 	
 	#
-	# Begin: page-specific settings.  Change these. 
+	# Begin: page-specific settings.  Change these.
 	$pageTitle 		= "Eclipse Communication Framework Project Home";
 	$pageKeywords	= "eclipse,project,plug-ins,plugins,java,ide,swt,refactoring,free java ide,tools,platform,open source,development environment,development,ide";
 	$pageAuthor		= "Eclipse Foundation, Inc.";
@@ -47,7 +47,7 @@
          <h3>About the ECF Project</h3>
      	<div style="margin:10px;">
          $desc
-	</div>
+	</div></div>
     <div class="homeitem3col">	
 	<h3>ECF Remote Services Training, Support, and Integration</h3>
 	   For Remote Services training, support, or expert OSGi or Eclipse development please contact <a href="mailto:slewis@composent.com">Composent.com via email</a> or bring it up
@@ -58,7 +58,7 @@
      	<div style="margin:10px;">
      	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.13.8 (Oxygen.1) released on 9/2/2017.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-	</div>
+	</div></div>
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
  	<tr>
@@ -267,10 +267,6 @@
 	</tr>
       </table>    
 	</div>
-	</div>
-    </div>
-</div>
-
 
 EOHTML;
 
