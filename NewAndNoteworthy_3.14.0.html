@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+       "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>ECF New and Noteworthy</title>
+<link rel="stylesheet" href="http://www.eclipse.org/default_style.css"
+	type="text/css">
+
+</head>
+
+<body bgcolor="#FFFFFF">
+	<table border=0 cellspacing=5 cellpadding=2 width="100%">
+		<tbody>
+			<tr>
+				<td width="69%" class="bannertext">
+				<img src="https://wiki.eclipse.org/images/b/b8/Logo128x37.png" alt="ECF Logo"/>
+				<font class="indextop style">Eclipse Communication Framework (ECF)</font>
+						
+						<br>
+				<br> <font class="indexsub">an eclipse runtime project</font> <br>
+				<br> <font class="indextop style2">New and Noteworthy</font><br>
+					3.14.0 Release <br> <br>
+				<br> Return to <a href="downloads.php">ECF download page</a><br>
+					<br>
+
+				<br><a
+					href="NewAndNoteworthy_3.13.0.html">New and Noteworthy for 3.13.0/Oxygen</a><br>
+					<br>
+				<br><a
+					href="NewAndNoteworthy_3.12.1.html">New and Noteworthy for 3.12.1</a><br>
+					<br>
+				<br></td>
+				<td width="31%">
+					<div align="center">
+						<img src="images/Idea.jpg" width="120" height="86" hspace="50"
+							align="middle" alt="Idea Icon">
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<hr>
+
+	<table>
+		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Support for OSGi Remote Services R7</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>ECF provides implementations of the <a href="https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html">Remote Services</a> 
+			and <a href="https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteserviceadmin.html">Remote Service Admin OSGi specifications</a>.
+			OSGi R7 includes some additions to the Remote Services specification, specifically focusing on 
+			the use of <a href="https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html#i1693415">remote service intents</a>.
+		    ECF Photon fully supports the R7 specification, and implements the OSGi standard intents via
+		    several of the <a href="https://wiki.eclipse.org/Distribution_Providers">ECF distribution providers</a>.</p>
+		    <p></p>
+		    <p></p>
+		    <p>
+		    For more information about the use of service intents see 
+		    <a href="http://eclipseecf.blogspot.com/2018/05/ecf-photon-supports-osgi-async-intent.html">ECF Photon supports OSGi Async Intent</a> 
+		    and <a href="http://eclipseecf.blogspot.com/2018/04/ecf-photon-supports-osgi-r7.html">ECF Photon supports OSGi R7</a>
+		    </p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Support for using Bndtools for Remote Services Development</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p><a href="http://bndtools.org/">Bndtools</a> is a set of Eclipse plugins that
+			aid the development, testing, and deployment of OSGi bundles.  ECF's Photon release has added workspace, project, and bndrun
+			templates to help the remote service developer define, implement, and test OSGi Remote Services.   </p>
+			<p></p>
+			<p></p>
+			<p>
+			See <a href="https://wiki.eclipse.org/Bndtools_Support_for_Remote_Services_Development">here</a> for
+			a short tutorial on how to use bndtools and the new templates.</p>
+			</td>
+		</tr>
+	
+		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>OSGi Gogo Commands for RSA</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>
+			ECF Photon has added a set of console commands for exposing the use and management of remote services
+			in server environments.  For example, 
+			with these new commands it's
+			possible to export or import a local OSGi service via ECF's implementation of the OSGi-standard RemoteServiceAdmin
+			service.  It's also possible to query/view the existing imported and exported services, as well as the
+			ECF endpoint.   </p>
+			<p></p>
+			<p></p>
+			<p>
+			See <a href="http://eclipseecf.blogspot.com/2018/04/ecf-photon-adds-gogo-commands.html">ECF Photon adds Gogo
+			Commands</a> for a list of the new commands, their expected/required arguments and example of their output.</p>
+			</td>
+		</tr>
+	
+		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Distribution Provider for Remote Services between Java and Python</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>
+			There is now an ECF distribution provider that allows for remote services between <a href="https://github.com/ECF/Py4j-RemoteServicesProvider">Java and Python</a>. 
+			This allows for OSGi service implemented in Java that are consumed/used from within Python applications,
+			as well as Python-implemented OSGi services consumed by Java bundles.</p>
+			<p></p>
+			<p></p>
+			<p>This distribution provider allows the optional use of 
+			<a href="https://developers.google.com/protocol-buffers/">Google Protocol Buffers</a> for high-performance
+			object serialization between the Python interpreter and the Java interpreter.  See <a href="https://wiki.eclipse.org/Tutorial:_Python_for_OSGi_Services">here for a tutorial</a>
+			on how this distribution provider can be used to create dynamic Java <-> Python remote services.</p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>Etcd Discovery Provider</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>
+			ECF has an extensible/pluggable approach for discovering remote services on a network.  
+			There are <a href="https://wiki.eclipse.org/Discovery_Providers">several discovery providers</a> available 
+			including JSLP, Zeroconf, Zookeeper, and <a href="https://coreos.com/etcd/">Etcd</a>.   ECF now has an 
+			<a href="https://github.com/ECF/etcd-provider">etcd discovery provider</a> that use an etcd cluster to publish 
+			and discover remote services.
+			</td>
+		</tr>
+		
+</table> 
+ 
+</body> 
+</html> 
