@@ -145,11 +145,19 @@
 				</p>
 			</td>
 			<td valign="top" width="85%"><p>
-			ECF now has <a href="https://github.com/ECF/Py4j-RemoteServicesProvider">remote service distribution provider that supports remote services between Java and Python runtimes.
+			ECF now has <a href="https://github.com/ECF/Py4j-RemoteServicesProvider">remote service distribution</a> provider that supports remote services between Java and Python runtimes.
 			This provider allow OSGi R7 remote services (including async remote services) between Java/OSGi runtimes
-			and Python runtimes.  Services may be exported for consumption in Python, or exported from Python
-			for consumption via Java.  Additionally, the <a href="http://ipopo.readthedocs.io/en/0.7.1/">Python Ipopo project</a> will be soon (0.8.0) introducing
+			and Python runtimes.  Services may be exported for consumption/usage by Python components, or exported from Python
+			for consumption/usage by Java components.  
+			</p>
+			<p></p>
+			<p>There is a provider based upon call-by-reference (via Py4j) and a provider based upon call-by-value using
+			Google's protocol buffers for efficient serialization/deserialization</p>
+			<p></p>
+			<p>
+			Additionally, the <a href="http://ipopo.readthedocs.io/en/0.7.1/">Python Ipopo project</a> will be soon (0.8.0) introducing
 			an implementation of the OSGi RSA (Remote Service Admin) capabilities.
+			</p>
 			</td>
 		</tr>
 		
