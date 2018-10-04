@@ -56,11 +56,21 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.14.1 (Photon) was released on 7/30/2018.</b><br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.14.3 was released on 10/4/2018.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
 	</div></div>
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+ 	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
+	  	<b>October 4, 2018 - ECF 3.14.3 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.3 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
  	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
@@ -81,86 +91,6 @@
            <p></p>
 		</td>
 	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>September 2, 2017 - ECF 3.13.8 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.8 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>May 18, 2017 - ECF 3.13.7 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.7 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>May 7, 2017 - ECF 3.13.6 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.6 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>February 16, 2017 - ECF Mars/3.13.5 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.5 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>January 12, 2017 - ECF Mars/3.13.4 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.4 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF 3.13.3 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>December 6, 2016 - ECF Mars/3.13.3 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.3 release is a maintenance (bug fix) release.  See <a href="NewAndNoteworthy.html">ECF 3.13.3 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>August 25, 2016 - ECF Mars/3.13.2 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.2 release is a maintenance release.  See <a href="NewAndNoteworthy.html">ECF 3.13.1 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>April 5, 2016 - ECF Mars/3.13.1 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.13.1 release is a maintenance release.  See <a href="NewAndNoteworthy.html">ECF 3.13.1 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
 	<tr>
 		<td align="left" valign="top" height="12" width="23">
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
@@ -170,37 +100,6 @@
 	  	<a href="http://de.slideshare.net/keimel/how-to-diffuse-a-bomb-with-ecf-and-efxclipse">Internet of Things game based upon ECF Remote Services</a>
 	  	 at <a href="http://eclipsesource.com/blogs/2015/12/23/eclipse-democamp-december-munich-2015">Eclipse Democamp</a>.   
 	  	 <a href="http://de.slideshare.net/keimel/how-to-diffuse-a-bomb-with-ecf-and-efxclipse">Check it out</a>...it's really cool!
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>November 30, 2015 - ECF Mars/3.12.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.12.0 release is a minor release that includes new Eclipse-based tooling for Remote Services
-			developers.  See <a href="NewAndNoteworthy.html">ECF 3.12.0 New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
- 		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>September 26, 2015 - ECF Mars/3.11.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.11.0 release is a maintenance/bug fix release.  See <a href="NewAndNoteworthy.html">ECF 3.11.0 New and Noteworthy</a>
-           <p></p>
-		</td>
- 	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>August 10, 2015 - ECF Mars/3.10.1 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.10.1 release is a maintenance/bug fix release.  See <a href="NewAndNoteworthy.html">ECF 3.10.0 New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
