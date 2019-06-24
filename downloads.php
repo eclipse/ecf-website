@@ -30,7 +30,7 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.14.4 Now Available (10/20/2018)</b>
+    <b>ECF 3.14.5 Now Available (6/20/2019)</b>
     <p></p>
     <p>
     ECF 3.14.5 requires <b>Eclipse Photon, 2018-06 or newer, or Apache Karaf 4.2+ with Java 8+</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
