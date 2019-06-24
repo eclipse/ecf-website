@@ -56,7 +56,7 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.14.4 was released on 10/20/2018.</b><br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.14.5 was released on 6/20/2019.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
 	</div></div>
  	<h3>What's New</h3>
