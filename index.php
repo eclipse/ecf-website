@@ -66,6 +66,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>June 20, 2019 - ECF 3.14.5 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.6 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+ 	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>October 20, 2018 - ECF 3.14.4 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.14.4 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
