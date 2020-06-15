@@ -21,15 +21,12 @@
 						<br>
 				<br> <font class="indexsub">an eclipse runtime project</font> <br>
 				<br> <font class="indextop style2">New and Noteworthy</font><br>
-					3.14.0 Release <br> <br>
+					3.14.8 Release <br> <br>
 				<br> Return to <a href="downloads.php">ECF download page</a><br>
 					<br>
 
 				<br><a
-					href="NewAndNoteworthy_3.13.0.html">New and Noteworthy for 3.13.0/Oxygen</a><br>
-					<br>
-				<br><a
-					href="NewAndNoteworthy_3.12.1.html">New and Noteworthy for 3.12.1</a><br>
+					href="NewAndNoteworthy_3.14.7.html">New and Noteworthy for 3.14.7</a><br>
 					<br>
 				<br></td>
 				<td width="31%">
@@ -45,10 +42,58 @@
 	<hr>
 
 	<table>
+		 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>New Distribution Provider using gRPC</b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>There is a new distribution provider available at ECF's 
+			github repo <a href="https://github.com/ECF/grpc-RemoteServicesProvider">https://github.com/ECF/grpc-RemoteServicesProvider</a> that is based upon <a href="https://grpc.io/">gRPC</a>.  
+			This provider, along with <a href="https://github.com/ECF/grpc-osgi-generator">another project for
+			generating OSGi service interfaces</a> from the protocol buffers (.proto) definition of the service makes it very easy to generate the java service interface classes, and then export them (and import them) 
+			as <a href="https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html">OSGi Remote Services</a>. 
+			See also the <a href="https://wiki.eclipse.org/Distribution_Providers">ECF Distribution Providers</a> wiki page.</p>
+		    <p></p>
+		    <p></p>
+			</td>
+		</tr>
+		 
+		 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>New Distribution and Discovery Provider using Hazelcast 4</a></b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>There is a new distribution provider available at ECF's 
+			github repo <a href="https://github.com/ECF/HazelcastProvider">https://github.com/ECF/HazelcastProvider</a> that is based upon <a href="https://hazelcast.org/">Hazelcast 4</a>.  
+			This provider makes it easy to export, discover, and import  
+			as <a href="https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html">OSGi Remote Services</a> using Hazelcast 4. 
+		    See also the <a href="https://wiki.eclipse.org/Distribution_Providers">ECF Distribution Providers</a> wiki page.</p>
+		    <p></p>
+		    <p></p>
+			</td>
+		</tr>
+	
+		 <tr>
+			<td valign="top" align="left" width="15%">
+				<p align="left">
+					<b>New Distribution and Discovery Provider using Apache Dubbo</a></b>
+				</p>
+			</td>
+			<td valign="top" width="85%"><p>There is a new distribution provider available at ECF's 
+			github repo <a href="https://github.com/ECF/DubboProvider">https://github.com/ECF/DubboProvider</a> that is based upon <a href="http://dubbo.apache.org/en-us/">Apache Dubbo</a>.  
+			This provider makes it easy to export and import  
+			as <a href="https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html">OSGi Remote Services</a> using Apache Dubbo. 
+            See also the <a href="https://wiki.eclipse.org/Distribution_Providers">ECF Distribution Providers</a> wiki page.</p> <p></p>
+		    <p></p>
+			</td>
+		</tr>
+	
 		<tr>
 			<td valign="top" align="left" width="15%">
 				<p align="left">
-					<b>Support for OSGi Remote Services R7</b>
+					<b>Improved Support for R7 OSGi Remote Services and RSA</b>
 				</p>
 			</td>
 			<td valign="top" width="85%"><p>ECF provides implementations of the <a href="https://osgi.org/specification/osgi.cmpn/7.0.0/service.remoteservices.html">Remote Services</a> 
@@ -83,65 +128,6 @@
 			</td>
 		</tr>
 	
-		<tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>OSGi Gogo Commands for RSA</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>
-			ECF Photon has added a set of console commands for exposing the use and management of remote services
-			in server environments.  For example, 
-			with these new commands it's
-			possible to export or import a local OSGi service via ECF's implementation of the OSGi-standard RemoteServiceAdmin
-			service.  It's also possible to query/view the existing imported and exported services, as well as the
-			ECF endpoint.   </p>
-			<p></p>
-			<p></p>
-			<p>
-			See <a href="http://eclipseecf.blogspot.com/2018/04/ecf-photon-adds-gogo-commands.html">ECF Photon adds Gogo
-			Commands</a> for a list of the new commands, their expected/required arguments and example of their output.</p>
-			</td>
-		</tr>
-	
-		<tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>Etcd Discovery Provider</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>
-			ECF has an extensible/pluggable approach for discovering remote services on a network.  
-			There are <a href="https://wiki.eclipse.org/Discovery_Providers">several discovery providers</a> available 
-			including JSLP, Zeroconf, Zookeeper, and <a href="https://coreos.com/etcd/">Etcd</a>.   ECF now has an 
-			<a href="https://github.com/ECF/etcd-provider">etcd discovery provider</a> that use an etcd cluster to publish 
-			and discover remote services.
-			</td>
-		</tr>
-		
-				<tr>
-			<td valign="top" align="left" width="15%">
-				<p align="left">
-					<b>Python.Java Remote Service Distribution Provider</b>
-				</p>
-			</td>
-			<td valign="top" width="85%"><p>
-			ECF now has <a href="https://github.com/ECF/Py4j-RemoteServicesProvider">remote service distribution</a> provider that supports remote services between Java and Python runtimes.
-			This provider allow OSGi R7 remote services (including async remote services) between Java/OSGi runtimes
-			and Python runtimes.  Services may be exported for consumption/usage by Python components, or exported from Python
-			for consumption/usage by Java components.  
-			</p>
-			<p></p>
-			<p>There is a provider based upon call-by-reference (via Py4j) and a provider based upon call-by-value using
-			Google's protocol buffers for efficient serialization/deserialization</p>
-			<p></p>
-			<p>
-			Additionally, the <a href="http://ipopo.readthedocs.io/en/0.7.1/">Python Ipopo project</a> will be soon (0.8.0) introducing
-			an implementation of the OSGi RSA (Remote Service Admin) capabilities.
-			</p>
-			</td>
-		</tr>
-		
 </table> 
  
 </body> 
