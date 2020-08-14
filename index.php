@@ -66,7 +66,7 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Friday, August 14, 2020 - ECF 3.14.113 is available on eclipse.org.</b>
+	  	<b>Friday, August 14, 2020 - ECF 3.14.13 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.14.13 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
