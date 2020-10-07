@@ -56,7 +56,7 @@
 	<div class="homeitem3col">
          <h3>Next Release</h3>
      	<div style="margin:10px;">
-     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.14.15 will be released on 10/5/2020.</b><br><br>
+     	<img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/><b>ECF 3.14.16 was released on 10/7/2020.</b><br><br>
 			See also <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
 	</div></div>
  	<h3>What's New</h3>
@@ -66,8 +66,8 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Wednesday, October 7, 2020 - ECF 3.14.15 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.15 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+	  	<b>Wednesday, October 7, 2020 - ECF 3.14.16 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.16 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>

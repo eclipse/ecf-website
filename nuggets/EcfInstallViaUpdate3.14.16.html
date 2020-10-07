@@ -1,0 +1,46 @@
+    <h3>Install via p2 repository</h3>
+     <p>
+     For a detailed step-by-step description of how to install OSGi Remote Services into Eclipse 
+     see <a href="http://wiki.eclipse.org/Installing_OSGi_Remote_Services#Install_into_Eclipse">Installing Into Eclipse</a>.  For a 
+     step-by-step description of how to add OSGi Remote Services into your <b>Target Platform</b> see 
+     <a href="http://wiki.eclipse.org/Installing_OSGi_Remote_Services">Add to Target Platform</a>.
+     <p>
+      <ul>
+       <li>In Eclipse, choose <b>Help -> Install New Software...</b></li>
+       <li>Click on the <b>Add</b> button on the right. </li>
+       <li>Type in a Name in the textbox. For example: <b>ECF 3.14.16</b>.</li>
+       
+       <li>Paste the following URL into the Location field. <br><br>
+       <b>http://download.eclipse.org/rt/ecf/3.14.16/site.p2</b><br><br></li>
+       <li> Click OK. </li>
+       
+       <li>Select the first <b>two</b> check boxes for install into Eclipse..i.e.
+       <b>ECF Remote Services/Remote Service Admin SDK</b> and the <b>ECF SDK for Eclipse</b>.
+       To explain:  The ECF repository has four top-level items for install:  </li>
+       <ol>
+       <li><b>ECF Core Features</b></li>
+       <li><b>ECF Core Source Features</b></li>
+       <li><b>ECF Remote Services SDK</b></li>
+       <li><b>ECF SDK for Eclipse</b></li>
+       <li><b>Other ECF Features</b></li>
+        </ol>
+        <p>
+       <li>The first two (ECF Core Features and ECF Core Source Features) are already installed in Eclipse and so do
+       not have to be installed.   If they are selected, then they will update the existing Core feature.</li>
+       <li>Select both of ECF Remote Services SDK and ECF SDK for Eclipse and then follow through the remaining dialogs to complete the installation.</li>
+      </ul>
+     <h3>Install via Maven</h3>
+     <p>
+       ECF Remote Services/RSA is now available via <a href="https://search.maven.org/search?q=g:org.eclipse.ecf">Maven Central</a>.  The group id is <a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.eclipse.ecf%22">org.eclipse.ecf</a>.
+       There are also now <a href="https://wiki.eclipse.org/EIG:Install_into_Apache_Karaf">Karaf Features</a> based upon Maven.
+     </p>
+     <h3>Installing with Bndtools</h3>
+     <p>
+       ECF provides a bndtools workspace template, along with a number of project and bndrun templates.
+       See <a href="https://wiki.eclipse.org/Bndtools_Support_for_Remote_Services_Development">Bndtools
+       support for Remote Services Development</a> for instructions.
+     </p>
+     
+     
+     
+         
