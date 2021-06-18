@@ -60,8 +60,18 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Friday, June 18, 2021 - ECF 3.14.22 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.22 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+  	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Saturday, April 3, 2021 - ECF 3.14.20 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.1420 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.20 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
