@@ -60,6 +60,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Tuesday, October 5, 2021 - ECF 3.14.25 is available on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.25 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+  	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Sunday, September 26, 2021 - ECF 3.14.24 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.14.24 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
@@ -102,136 +112,6 @@
 		<td valign="top">
 	  	<b>Wednesday, November 5, 2020 - ECF 3.14.18 is available on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.14.18 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Wednesday, October 28, 2020 - ECF 3.14.17 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.17 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Wednesday, October 7, 2020 - ECF 3.14.16 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.16 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Sunday, August 16, 2020 - ECF 3.14.14 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.14 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Friday, August 14, 2020 - ECF 3.14.13 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.13 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, July 13, 2020 - ECF 3.14.12 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.12 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, June 15, 2020 - ECF 3.14.8 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.8 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Wednesday, Feb 19, 2019 - ECF 3.14.7 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.7 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 31, 2019 - ECF 3.14.6 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.6 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 20, 2019 - ECF 3.14.5 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.5 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 20, 2018 - ECF 3.14.4 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.4 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 4, 2018 - ECF 3.14.3 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.3 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>July 30, 2018 - ECF 3.14.1 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.1/Photon.1 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
- 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>June 20, 2018 - ECF 3.14.0 is available on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.0/Photon release is a minor release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
