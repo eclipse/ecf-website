@@ -60,6 +60,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Monday, November 7, 2022 - ECF 3.14.34 has been released on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.34 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+  	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Friday, April 1, 2022 - ECF has moved it's project repository to Eclpse Github:  https://github.com/eclipse/ecf.</b>
 			See <a href="downloads.php">here for binary download</a>.  See <a href="https://github.com/eclipse/ecf">ECF's github repo</a>.   
 			Special thanks to ECF committer Wim Jongman for doing the work of moving from Eclipse git/gerrit to github.
@@ -246,26 +256,6 @@
 		<td valign="top">
 	  	<b>August 2013 - Committer Scott Lewis has two new blog posts: <a href="http://eclipseecf.blogspot.com/2013/06/ecf-kepler361-remote-services-takes.html">ECF Kepler Remote Services take Center Stage</a></b> and 
 	  	<a href="http://eclipseecf.blogspot.com/2013/07/article-on-osgi-remote-services-in.html">Article on ECF Remote Services in Eclipse Newsletter</a>.
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 2013 - Wim Jongman and Markus Alexander Kuppe are presenting at <a href="http://www.eclipsecon.org/europe2013/">EclipseCon Europe 2013 in Ludwigsburg.  The title of their presentation
-	  	is <a href="http://www.eclipsecon.org/europe2013/discover-remote-osgi-services.html">Discover Remote OSGi Services</a></b>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Oct 08, 2010 - Markus Alexander Kuppe gave a one day tutorial about ECF remote services as part of OSGi Summerschool at University Hamburg.</b>
-			Slides can be found <a href="http://github.com/lemmy/org.eclipse.ecf.winterschool/raw/master/org.eclipse.ecf.winterschool/EclipseCommunicationFramework.odp">online</a> (German only).
            <p></p>
 		</td>
 	</tr>
