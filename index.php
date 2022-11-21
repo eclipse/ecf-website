@@ -60,6 +60,16 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
+	  	<b>Monday, November 20, 2022 - ECF 3.14.37 has been released on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.14.37 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+  	<tr>
+		<td align="left" valign="top" height="12" width="23">
+			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
+		</td>
+		<td valign="top">
 	  	<b>Monday, November 7, 2022 - ECF 3.14.34 has been released on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.14.34 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
