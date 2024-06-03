@@ -94,67 +94,6 @@
            <p></p>
 		</td>
 	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 30, 2014</b>:  Wim Jongman presented <b><a href="https://www.eclipsecon.org/europe2014/session/how-cook-egg-eclipse-communication-framework-and-nebula">How to Cook an Egg with the Eclipse Communication
-	  	Framework and Nebula</a></b> at <a href="https://www.eclipsecon.org/europe2014/">EclipseCon Europe 2014</a>.  
-	  	The slides are available <a href="https://www.eclipsecon.org/europe2014/session/how-cook-egg-eclipse-communication-framework-and-nebula"> on the EclipseCon website</a> or from ECF's web area <a href="http://www.eclipse.org/ecf/presentations/ese2014/How%20to%20Cook%20an%20Egg%20with%20the%20Eclipse%20Communication%20Framework.pdf">here</a></p>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Jan 2014 - New Tutorial: <a href="http://wiki.eclipse.org/Tutorial:_Creating_a_RESTful_Remote_Service_Provider">Creating a RESTful Remote Service Provider</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>December 2013 - New Tutorial: <a href="http://wiki.eclipse.org/Tutorial:_Building_your_first_OSGi_Remote_Service">Building your first OSGi Remote Service</a>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>November 2013 - Markus Alexander Kuppe demoed ECF's OSGi remote services at <a href="http://wiki.eclipse.org/Eclipse_DemoCamps_November_2013/Hamburg">Democamp</a> in Hamburg. The (few) slides of the talk
-	  	can be found online <a href="http://www.lemmster.de/publications/Discover_Remote_Services_-_Democamp_HH_2013_-_Markus_Alexander_Kuppe.pdf">at his personal blog</a>.
-		More importantly, the code of the example Chat app and server are hosted at <a href="http://github.com/ECF/Chat">ECF's github repo</a>.</b>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>October 2013 - Wim Jongman and Markus Alexander Kuppe presented at <a href="http://www.eclipsecon.org/europe2013/">EclipseCon Europe 2013</a> in Ludwigsburg. The slides of the talk
-	  	can be found on the conference session page: <a href="http://www.eclipsecon.org/europe2013/discover-remote-osgi-services.html">Discover Remote OSGi Services</a>.
-		The code of the example Chat app and server can be found at <a href="http://github.com/ECF/Chat">ECF's github repo</a>.</b>
-           <p></p>
-		</td>
-	</tr>
-	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>August 2013 - Committer Scott Lewis has two new blog posts: <a href="http://eclipseecf.blogspot.com/2013/06/ecf-kepler361-remote-services-takes.html">ECF Kepler Remote Services take Center Stage</a></b> and 
-	  	<a href="http://eclipseecf.blogspot.com/2013/07/article-on-osgi-remote-services-in.html">Article on ECF Remote Services in Eclipse Newsletter</a>.
-           <p></p>
-		</td>
-	</tr>
       </table>    
 	</div>
 
