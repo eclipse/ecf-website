@@ -56,9 +56,6 @@
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
   	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
 		<td valign="top">
 	  	<b>Sunday, June 2, 2024 - ECF 3.15.0 has been released on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.15.0 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
@@ -66,9 +63,6 @@
 		</td>
 	</tr>
   	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
 		<td valign="top">
 	  	<b>Sunday, January 14, 2024 - ECF 3.14.41 has been released on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.14.41 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
@@ -76,49 +70,6 @@
 		</td>
 	</tr>
   	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, November 20, 2023 - ECF 3.14.40 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.40 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, May 29, 2023 - ECF 3.14.39 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.39 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, November 20, 2022 - ECF 3.14.37 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.37 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, November 7, 2022 - ECF 3.14.34 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.34 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
 		<td valign="top">
 	  	<b>Friday, April 1, 2022 - ECF has moved it's project repository to Eclpse Github:  https://github.com/eclipse/ecf.</b>
 			See <a href="downloads.php">here for binary download</a>.  See <a href="https://github.com/eclipse/ecf">ECF's github repo</a>.   
@@ -127,9 +78,6 @@
 		</td>
 	</tr>
 	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
 		<td valign="top">
 	  	<b>December 30, 2015 - Christoph Keimel recently presented a very cool 
 	  	<a href="http://de.slideshare.net/keimel/how-to-diffuse-a-bomb-with-ecf-and-efxclipse">Internet of Things game based upon ECF Remote Services</a>
