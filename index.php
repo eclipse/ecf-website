@@ -80,46 +80,6 @@
 			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
 		</td>
 		<td valign="top">
-	  	<b>Monday, November 20, 2023 - ECF 3.14.40 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.40 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, May 29, 2023 - ECF 3.14.39 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.39 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, November 20, 2022 - ECF 3.14.37 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.37 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
-	  	<b>Monday, November 7, 2022 - ECF 3.14.34 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.34 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-			<img src="../images/Adarrow.gif" border="0" width="16" height="16" alt="[Adarrow]"/>
-		</td>
-		<td valign="top">
 	  	<b>Friday, April 1, 2022 - ECF has moved it's project repository to Eclpse Github:  https://github.com/eclipse/ecf.</b>
 			See <a href="downloads.php">here for binary download</a>.  See <a href="https://github.com/eclipse/ecf">ECF's github repo</a>.   
 			Special thanks to ECF committer Wim Jongman for doing the work of moving from Eclipse git/gerrit to github.
