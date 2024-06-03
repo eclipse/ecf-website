@@ -30,10 +30,10 @@ ob_start();
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
     <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
-    <b>ECF 3.14.41 Now Available (1/13/20249)</b>
+    <b>ECF 3.15.0 Now Available (6/2/2024)</b>
     <p></p>
     <p>
-    ECF 3.14.41 requires <b>Eclipse 2022-6 or newer, or Apache Karaf 4.4+ with Java 17+</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
+    ECF 3.15.0 requires <b>Eclipse 2022-6 or newer, or Apache Karaf 4.4+ with Java 17+</b>.  See <a href="http://download.eclipse.org/eclipse/downloads/">here to get
     appropriate version of Eclipse</a> and <a href="http://karaf.apache.org">here for the appropriate version of Karaf</a>.  <br>
     <br>See <a href="NewAndNoteworthy.html">New and Noteworthy</a> for details of the contents of this release.<br>
  <br>See <a href="http://wiki.eclipse.org/Eclipse_Communication_Framework_Project">ECF Wiki</a> and/or the <a href="https://dev.eclipse.org/mailman/listinfo/ecf-dev">ecf dev at eclipse.org mailing list</a> for further information about plans and ongoing project activities.
@@ -44,11 +44,11 @@ ob_start();
 
         include 'getNugget.php';
 
-        $html = getNugget("EcfInstallViaKaraf3.14.41.html",$html);
+        $html = getNugget("EcfInstallViaKaraf3.15.0.html",$html);
         
-        $html = getNugget("EcfInstallViaUpdate3.14.41.html",$html);
+        $html = getNugget("EcfInstallViaUpdate3.15.0.html",$html);
         
-        $html = getNugget("EcfInstallViaZip3.14.41.html",$html);
+        $html = getNugget("EcfInstallViaZip3.15.0.html",$html);
         
         $html = getNugget("EcfDailies.html",$html);    
  
