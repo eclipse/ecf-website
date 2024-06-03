@@ -206,12 +206,6 @@ ob_start();
 			<TD WIDTH=96>
 				<P ALIGN=CENTER><FONT SIZE=2>ECF Bittorrent Filetransfer</FONT></P>
 			</TD>
-			<TD WIDTH=109>
-				<P ALIGN=CENTER><FONT SIZE=2>ecf.filetransfer.bittorrent</FONT></P>
-			</TD>
-			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.bittorrent</FONT></P>
-			</TD>
 			<TD WIDTH=266>
 				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#File_Transfer_API">File Transfer</a></FONT></P>
 			</TD>
@@ -264,9 +258,6 @@ ob_start();
 			</TD>
 			<TD WIDTH=109>
 				<P ALIGN=CENTER><FONT SIZE=2>ecf.msn.msnp</FONT></P>
-			</TD>
-			<TD WIDTH=164>
-				<P ALIGN=CENTER><FONT SIZE=2>org.eclipse.ecf.provider.msn</FONT></P>
 			</TD>
 			<TD WIDTH=266>
 				<P ALIGN=CENTER><FONT SIZE=2><a href="http://wiki.eclipse.org/ECF_API_Docs#Presence_API">Presence</a></FONT></P>

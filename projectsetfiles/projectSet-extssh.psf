@@ -100,8 +100,6 @@
 	
 	<!-- protocol support -->
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/protocols/bundles/ch.ethz.iks.r_osgi.remote,ch.ethz.iks.r_osgi.remote"/>
-	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/protocols/bundles/org.eclipse.ecf.protocol.bittorrent,org.eclipse.ecf.protocol.bittorrent"/>
-	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/protocols/bundles/org.eclipse.ecf.protocol.msn,org.eclipse.ecf.protocol.msn"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/protocols/bundles/org.jivesoftware.smack31,org.jivesoftware.smack31"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/protocols/bundles/ch.ethz.iks.slp,ch.ethz.iks.slp"/>
 
@@ -116,9 +114,7 @@
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/server-side/bundles/org.eclipse.ecf.remoteservice.eventadmin,org.eclipse.ecf.remoteservice.eventadmin"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/examples/bundles/org.eclipse.ecf.examples.eventadmin.app,org.eclipse.ecf.examples.eventadmin.app"/>
 	
-	<!-- json parser -->
-	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/incubation/bundles/org.json,org.json"/>
-	
+
 	<!-- ECF help documentation -->
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/doc/bundles/org.eclipse.ecf.doc,org.eclipse.ecf.doc"/>
 
@@ -140,11 +136,8 @@
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests,org.eclipse.ecf.tests"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.datashare,org.eclipse.ecf.tests.datashare"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.discovery,org.eclipse.ecf.tests.discovery"/>
-	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.apache.httpclient.server,org.eclipse.ecf.tests.apache.httpclient.server"/>
-	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.filetransfer.httpserver,org.eclipse.ecf.tests.filetransfer.httpserver"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.filetransfer,org.eclipse.ecf.tests.filetransfer"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.presence,org.eclipse.ecf.tests.presence"/>
-	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.protocol.msn,org.eclipse.ecf.tests.protocol.msn"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.provider.datashare.nio,org.eclipse.ecf.tests.provider.datashare.nio"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.provider.filetransfer.efs,org.eclipse.ecf.tests.provider.filetransfer.efs"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.provider.filetransfer.scp,org.eclipse.ecf.tests.provider.filetransfer.scp"/>
@@ -156,6 +149,5 @@
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.sharedobject,org.eclipse.ecf.tests.sharedobject"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.storage,org.eclipse.ecf.tests.storage"/>
 	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.sync,org.eclipse.ecf.tests.sync"/>
-	<project reference="1.0,:extssh:dev.eclipse.org:/cvsroot/rt,org.eclipse.ecf/tests/bundles/org.eclipse.ecf.tests.remoteservice.rest,org.eclipse.ecf.tests.remoteservice.rest"/>
 </provider>
 </psf>
