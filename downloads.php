@@ -29,7 +29,7 @@ ob_start();
 <div id="midcolumn">
  <div class="homeitem3col">
     <h3><?= $pageTitle ?></h3>
-    <p><img border="0" src="../images/new.gif" width="31" height="14" alt="[new]"/>
+    <p>
     <b>ECF 3.15.0 Now Available (6/2/2024)</b>
     <p></p>
     <p>
