@@ -28,7 +28,7 @@
     $Nav->addCustomNav("Downloads","http://www.eclipse.org/ecf/downloads.php","_self",1);
     $Nav->addCustomNav("Documentation/Wiki","http://wiki.eclipse.org/Eclipse_Communication_Framework_Project","_self",1);
  
-    $Nav->addCustomNav("Bugs","http://www.eclipse.org/ecf/bugs.php","_self",1);
+    $Nav->addCustomNav("Bugs","https://github.com/eclipse/ecf/issues","_self",1);
     $Nav->addCustomNav("Legal","legal.php","_self",1);
      
     $Nav->addCustomNav("Developer Mail List","https://dev.eclipse.org/mailman/listinfo/ecf-dev","_self",2);
