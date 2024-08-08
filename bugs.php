@@ -30,9 +30,9 @@ ob_start();
  <div class="homeitem3col">
     <h3>Bugs</h3>
     <p>To report and view ECF bugs click 
-    <a href="https://bugs.eclipse.org/bugs/buglist.cgi?query_format=advanced&amp;product=ECF&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED">here.</a> </p>
-    <p>The Eclipse Communications Framework uses Bugzilla to track bugs. To Report and view Eclipse bugs click
-    <a href="https://bugs.eclipse.org/bugs/">here.</a> </p>
+    <a href="https://github.com/eclipse/ecf/issues">here.</a> </p>
+    <p>The Eclipse Communications Framework uses Github Issues to track bugs. To Report and view Eclipse Platform bugs click
+    <a href="https://github.com/eclipse-platform/">here.</a> </p>
     <h3></h3>
  </div>
 </div>
