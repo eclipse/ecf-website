@@ -59,7 +59,16 @@
 		<td align="left" valign="top" height="12" width="23">
 		</td>
 		<td valign="top">
-	  	<b>Wedmesdau, June 3, 2024 - ECF 3.15.1 has been released on eclipse.org.</b>
+	  	<b>Wednesday, August 21, 2024 - ECF 3.15.2 has been released on eclipse.org.</b>
+			See <a href="downloads.php">here for download</a>.  The ECF 3.15.2 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+           <p></p>
+		</td>
+	</tr>
+  	<tr>
+		<td align="left" valign="top" height="12" width="23">
+		</td>
+		<td valign="top">
+	  	<b>Wednesday, June 3, 2024 - ECF 3.15.1 has been released on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.15.1 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
