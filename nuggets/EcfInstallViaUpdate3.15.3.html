@@ -1,0 +1,38 @@
+	<h3>Installing ECF SDK into Eclipse with Bndtools 7.1 (Recommended)</h3>
+		<p>
+			<a href="https://bndtools.org/">Bndtools</a> is a set of Eclipse plugins to simplify the creation, development, testing, and deployment of OSGi bundles. 
+			We recommend that Bndtools be installed into <a href="https://www.eclipse.org/downloads/packages/">Eclipse</a> prior to installing our Remote Services SDK.  ECF's
+			SDK now has support for Bndtools' Workspace, Project, and Launch templates for Remote Services development, and adds Remote Service Creation Wizards, built upon new Bndtools' Service Templates.
+		</p>
+		<p>
+			See the <a href="https://bndtools.org/installation.html">Bndtools Installation</a> to install Bndtools 7.1+ into a new or recently installed <a href="https://www.eclipse.org/downloads/packages/">Eclipse</a>.
+		</p>
+    <h3>SDK Install via Update</h3>
+      <ul>
+       <li>In Eclipse, choose <b>Help -> Install New Software...</b></li>
+       <li>Click on the <b>Add</b> button on the right</li>
+       <li>Type in a Name in the textbox. For example: <b>ECF 3.15.3</b></li>
+       
+       <li>Paste the following URL into the Location field (or choose Local button on right to use a downloaded/local repo)<br><br>
+       <b>https://download.eclipse.org/rt/ecf/3.15.3/site.p2</b><br><br></li>
+       <li>Click OK</li>
+       <li>There will be three SDKs available underneath <b>ECF Remote Services SDKs</b>:</li>
+       <ul>
+       <li><b>ECF Remote Services SDKs</b></li>
+	   	<ul>
+			<li>SDK for Bndtools 7.1+ &lt;-- Requires prior installation of <a href="https://bndtools.org/installation.html">Bndtools 7.1+</a> as described above</li>
+			<li>SDK for Eclipse</li>
+			<li>SDK for OSGi-based Clients and Servers (e.g. Apache Karaf)</li>
+		</ul>
+       <li><b>Other ECF Features</b></li>
+       </ul>
+      </ul>
+     <h3>Maven Central</h3>
+     <p>
+       ECF Remote Services/RSA jars are also available via <a href="https://search.maven.org/search?q=g:org.eclipse.ecf">Maven Central</a>.  The group id is <a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.eclipse.ecf%22">org.eclipse.ecf</a>.
+       They can also be installed directly into Karaf via Karaf features as described in <a href="https://wiki.eclipse.org/EIG:Install_into_Apache_Karaf">Karaf Features</a>.
+     </p>
+     
+     
+     
+         
