@@ -55,39 +55,21 @@
 	</div>
  	<h3>What's New</h3>
  <table cellspacing="5" cellpadding="2" width="100%" border="0">
+	 <tr>
+	 	<td align="left" valign="top" height="12" width="23">
+	 	</td>
+	 	<td valign="top">
+	   	<b>Wednesday, August 21, 2024 - ECF 3.15.2 has been released on eclipse.org.</b>
+	 		See <a href="downloads.php">here for download</a>.  The ECF 3.15.2 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
+	        <p></p>
+	 	</td>
+	 </tr>
   	<tr>
 		<td align="left" valign="top" height="12" width="23">
 		</td>
 		<td valign="top">
 	  	<b>Wednesday, August 21, 2024 - ECF 3.15.2 has been released on eclipse.org.</b>
 			See <a href="downloads.php">here for download</a>.  The ECF 3.15.2 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-		</td>
-		<td valign="top">
-	  	<b>Wednesday, June 3, 2024 - ECF 3.15.1 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.15.1 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-		</td>
-		<td valign="top">
-	  	<b>Sunday, June 2, 2024 - ECF 3.15.0 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.15.0 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
-           <p></p>
-		</td>
-	</tr>
-  	<tr>
-		<td align="left" valign="top" height="12" width="23">
-		</td>
-		<td valign="top">
-	  	<b>Sunday, January 14, 2024 - ECF 3.14.41 has been released on eclipse.org.</b>
-			See <a href="downloads.php">here for download</a>.  The ECF 3.14.41 release is a bug-fix release.  See <a href="NewAndNoteworthy.html">ECF New and Noteworthy</a>
            <p></p>
 		</td>
 	</tr>
